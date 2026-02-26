@@ -1,40 +1,27 @@
 # b2bleadgenerationtools.com
 
-Production-ready Next.js App Router project for an English SEO blog focused on B2B lead generation software.
+Production-ready Next.js App Router project for an English SEO authority site focused on B2B lead generation with Apollo-first workflows.
 
 ## Stack
 - Next.js (App Router) + TypeScript
 - Tailwind CSS
-- MDX content in repo (`src/content/posts/*.mdx`)
-- JSON tool data in repo (`src/content/tools/*.json`)
+- Structured content in repo (`src/lib/content.ts`)
 - SSG/ISR-ready architecture (no database)
 - Built-in `sitemap.xml`, `robots.txt`, and `rss.xml`
 
 ## Routes
 - `/` homepage
-- `/best`
-- `/categories/[slug]`
-- `/tags/[slug]`
-- `/tools`
-- `/tool/[slug]`
-- `/blog`
-- `/blog/page/[page]`
-- `/blog/[slug]`
-- `/comparisons`
-- `/comparisons/[slug]`
-- `/about`, `/contact`, `/privacy`, `/terms`, `/affiliate-disclosure`
+- Intent hubs: `/find-clients`, `/outreach`, `/sales-pipeline`, `/for-startups`, `/guides`
+- Industry hub: `/by-industry` and `/by-industry/[slug]`
+- Guide pages: `/guides/[slug]`
+- Legal/contact: `/contact`, `/privacy`, `/terms`, `/affiliate-disclosure`
+- SEO feeds: `/sitemap.xml`, `/robots.txt`, `/rss.xml`
 
 ## Content model
-### MDX frontmatter
-Each post uses:
-- `title`, `description`, `date`, `updated`, `author`, `category`
-- `tags[]`, `ogImage?`, `toolSlug?`, `comparisonSlugs?`, `affiliateDisclaimer?`
-
-### Tool data
-Each tool JSON uses:
-- `name`, `slug`, `tagline`, `websiteUrl`, `pricingTier`
-- `bestFor[]`, `toolType[]`, `pros[]`, `cons[]`, `alternatives[]`
-- `rating?`, `affiliateUrl?`, `lastReviewed`
+- `src/lib/content.ts` contains:
+  - `hubContent`
+  - `industries`
+  - `guides[]` with `slug/title/description/hub/industries/steps/useCases/tips/faqs/relatedSlugs`
 
 ## Local setup
 1. Install dependencies:
@@ -62,12 +49,13 @@ npm run build
 ## Forms
 ### Newsletter (`/api/subscribe`)
 - Validates email.
-- In development, appends subscribers to `data/subscribers.txt`.
-- In production, returns success response (safe placeholder).
+- In development, writes subscribers to `data/subscribers-dev.json`.
+- In production, returns success response (placeholder for provider integration).
 
 ### Contact (`/api/contact`)
-- Validates name/email/message.
-- Honeypot field (`companyWebsite`) blocks basic bots.
+- Validates `name/email/message`.
+- Honeypot field: `website` (hidden input).
+- Returns mock success payload.
 
 ## Integrating ConvertKit or Beehiiv later
 Replace logic in `app/api/subscribe/route.ts`:
@@ -77,10 +65,10 @@ Replace logic in `app/api/subscribe/route.ts`:
 
 ## SEO implemented
 - Canonical URLs via metadata
-- OpenGraph + Twitter metadata
+- OpenGraph + Twitter metadata (+ OG image)
 - JSON-LD:
-  - `Article` on blog post pages
-  - `SoftwareApplication` on tool pages
+  - `WebSite` on home
+  - `Article` on guide pages
   - `BreadcrumbList` on internal routes
 - `app/sitemap.ts`, `app/robots.ts`, `app/rss.xml/route.ts`
 
@@ -100,3 +88,6 @@ Replace logic in `app/api/subscribe/route.ts`:
 - `npm run build`
 - `npm run start`
 - `npm run lint`
+- `npm run check:images`
+- `npm run check:interlinking`
+- `npm run publish:check`

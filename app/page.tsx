@@ -8,6 +8,7 @@ import { GuideCard } from '@/components/guide-card';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { Icons } from '@/components/icons';
 import { InteractiveParticleHeading } from '@/components/interactive-particle-heading';
+import { NewsletterForm } from '@/components/newsletter-form';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
@@ -157,6 +158,10 @@ export default function HomePage() {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="py-8">
+        <NewsletterForm />
       </section>
 
       <section className="py-12">

@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/by-industry',
     '/for-startups',
     '/guides',
+    '/contact',
     '/privacy',
     '/terms',
     '/affiliate-disclosure'

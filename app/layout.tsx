@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Suspense } from 'react';
 
 import { Footer } from '@/components/footer';
+import { GA4 } from '@/components/ga4';
 import { Header } from '@/components/header';
 import { siteConfig } from '@/lib/site';
 
@@ -29,6 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${inter.variable} min-h-screen`}>
+        <Suspense fallback={null}>
+          <GA4 />
+        </Suspense>
         <Header />
         <main>{children}</main>
         <Footer />

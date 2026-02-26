@@ -48,6 +48,9 @@ export const Footer = () => (
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Legal</p>
+          <Link href="/contact" className="block hover:text-blue-700">
+            Contact
+          </Link>
           <Link href="/privacy" className="block hover:text-blue-700">
             Privacy
           </Link>
