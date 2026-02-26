@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
@@ -59,6 +60,15 @@ export default async function GuidePage({ params }: Props) {
         <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
         <h1 className="mt-2 max-w-4xl text-4xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
         <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
+        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+          <Image
+            src={`/images/guides/${guide.slug}-1.svg`}
+            alt={`${guide.title} visual`}
+            width={1400}
+            height={780}
+            className="h-auto w-full rounded-xl"
+          />
+        </div>
       </section>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
@@ -82,6 +92,16 @@ export default async function GuidePage({ params }: Props) {
               <li key={step}>{renderApolloText(step)}</li>
             ))}
           </ol>
+
+          <div className="my-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+            <Image
+              src={`/images/guides/${guide.slug}-2.svg`}
+              alt={`${guide.title} data graphic`}
+              width={1400}
+              height={780}
+              className="h-auto w-full rounded-xl"
+            />
+          </div>
 
           <section className="rounded-xl border border-blue-100 bg-blue-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Tip Box</p>
