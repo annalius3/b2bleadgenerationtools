@@ -19,6 +19,8 @@ export default function ByIndustryPage() {
         title={hubContent['by-industry'].title}
         description={hubContent['by-industry'].description}
         subtopics={hubContent['by-industry'].subtopics}
+        imageSrc="/images/menu/by-industry.jpg"
+        imageAlt="Business people from different industries discussing growth strategies"
       />
       <section className="pb-16">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">

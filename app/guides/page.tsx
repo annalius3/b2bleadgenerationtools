@@ -17,6 +17,8 @@ export default function GuidesPage() {
         title={hubContent.guides.title}
         description={hubContent.guides.description}
         subtopics={hubContent.guides.subtopics}
+        imageSrc="/images/menu/guides.jpg"
+        imageAlt="Team reviewing tutorial resources and campaign playbooks"
       />
       <section className="pb-16">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
