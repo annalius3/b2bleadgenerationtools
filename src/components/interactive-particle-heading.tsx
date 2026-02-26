@@ -52,11 +52,13 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     let raf = 0;
     let width = 0;
     let height = 0;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
     const mouse = { x: -9999, y: -9999, active: false };
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let resizeRaf = 0;
 
     const setupParticles = () => {
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
       width = wrapper.clientWidth;
       const fontSize = width >= 1024 ? 64 : width >= 768 ? 56 : width >= 640 ? 46 : 36;
       const lineHeight = Math.round(fontSize * 1.2);
@@ -172,7 +174,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       mouse.y = -9999;
     };
 
-    const handleResize = () => setupParticles();
+    const handleResize = () => {
+      cancelAnimationFrame(resizeRaf);
+      resizeRaf = requestAnimationFrame(setupParticles);
+    };
 
     setupParticles();
     tick();
@@ -180,12 +185,19 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     canvas.addEventListener('mousemove', handleMove);
     canvas.addEventListener('mouseleave', handleLeave);
     window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', handleResize);
+
+    const resizeObserver = new ResizeObserver(() => handleResize());
+    resizeObserver.observe(wrapper);
 
     return () => {
       cancelAnimationFrame(raf);
+      cancelAnimationFrame(resizeRaf);
       canvas.removeEventListener('mousemove', handleMove);
       canvas.removeEventListener('mouseleave', handleLeave);
       window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+      resizeObserver.disconnect();
     };
   }, [text]);
 
