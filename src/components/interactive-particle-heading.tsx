@@ -93,7 +93,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       const data = context.getImageData(0, 0, width, height).data;
       context.clearRect(0, 0, width, height);
 
-      const step = 2;
+      const step = 1;
       particles = [];
       for (let y = 0; y < height; y += step) {
         for (let x = 0; x < width; x += step) {
@@ -107,7 +107,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
               oy: y,
               vx: 0,
               vy: 0,
-              size: 2.2 + Math.random() * 1.6
+              size: 0.65 + Math.random() * 0.55
             });
           }
         }
