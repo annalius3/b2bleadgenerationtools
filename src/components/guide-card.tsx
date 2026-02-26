@@ -19,7 +19,7 @@ export const GuideCard = ({ guide }: { guide: Guide }) => (
     <h3 className="mt-2 text-xl font-semibold text-slate-900 group-hover:text-blue-700">{guide.title}</h3>
     <p className="mt-3 text-sm leading-relaxed text-slate-600">{renderApolloText(guide.description)}</p>
     <div className="mt-4 border-t border-slate-100 pt-4">
-      <Link href={`/guides/${guide.slug}`} className="text-sm font-semibold text-blue-700">
+      <Link href={`/guides/${guide.slug}`} className="btn-ghost text-sm">
         Read guide
       </Link>
     </div>

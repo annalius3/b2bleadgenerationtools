@@ -30,7 +30,7 @@ export const Header = () => (
           <button
             type="button"
             aria-label="Search"
-            className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition hover:border-blue-200 hover:text-blue-700"
+            className="btn-icon"
           >
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
               <circle cx="11" cy="11" r="7" />
@@ -45,7 +45,7 @@ export const Header = () => (
           <Link
             key={item.href}
             href={item.href}
-            className="whitespace-nowrap rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700"
+            className="btn-pill"
           >
             {item.label}
           </Link>

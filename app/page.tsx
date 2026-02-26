@@ -49,7 +49,7 @@ export default function HomePage() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/guides"
-                  className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 transition hover:border-blue-200 hover:text-blue-700"
+                  className="btn-secondary px-5 py-2.5"
                 >
                   Explore Guides
                 </Link>
@@ -90,7 +90,7 @@ export default function HomePage() {
       <section className="py-8">
         <div className="mb-5 flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">Featured Guides</h2>
-          <Link href="/guides" className="text-sm font-semibold text-blue-700">
+          <Link href="/guides" className="btn-ghost text-sm">
             View all
           </Link>
         </div>
@@ -104,7 +104,7 @@ export default function HomePage() {
       <section className="py-8">
         <div className="mb-5 flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">By Industry</h2>
-          <Link href="/by-industry" className="text-sm font-semibold text-blue-700">
+          <Link href="/by-industry" className="btn-ghost text-sm">
             Browse industries
           </Link>
         </div>
