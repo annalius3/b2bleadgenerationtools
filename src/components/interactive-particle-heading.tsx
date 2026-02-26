@@ -94,13 +94,13 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       context.clearRect(0, 0, width, height);
 
       const step = 1;
-      particles = [];
+      const candidates: Particle[] = [];
       for (let y = 0; y < height; y += step) {
         for (let x = 0; x < width; x += step) {
           const alpha = data[(y * width + x) * 4 + 3];
           if (alpha > 80) {
             const scatter = 18;
-            particles.push({
+            candidates.push({
               x: x + (Math.random() - 0.5) * scatter,
               y: y + (Math.random() - 0.5) * scatter,
               ox: x,
@@ -112,22 +112,37 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
           }
         }
       }
+
+      // Keep visual density high, but cap total particles for smooth interaction.
+      const maxParticles = width >= 1024 ? 26000 : width >= 768 ? 22000 : 17000;
+      if (candidates.length <= maxParticles) {
+        particles = candidates;
+      } else {
+        const stride = candidates.length / maxParticles;
+        particles = [];
+        for (let i = 0; i < maxParticles; i += 1) {
+          particles.push(candidates[Math.floor(i * stride)]);
+        }
+      }
     };
 
     const tick = () => {
       context.clearRect(0, 0, width, height);
       context.fillStyle = '#000000';
       const radius = 110;
+      const radiusSq = radius * radius;
 
       for (const particle of particles) {
         if (mouse.active && !reducedMotion) {
           const dx = particle.x - mouse.x;
           const dy = particle.y - mouse.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
-          if (dist < radius && dist > 0.01) {
+          const distSq = dx * dx + dy * dy;
+          if (distSq < radiusSq && distSq > 0.0001) {
+            const dist = Math.sqrt(distSq);
             const force = (1 - dist / radius) * 0.7;
-            particle.vx += (dx / dist) * force;
-            particle.vy += (dy / dist) * force;
+            const invDist = 1 / dist;
+            particle.vx += dx * invDist * force;
+            particle.vy += dy * invDist * force;
           }
         }
 
