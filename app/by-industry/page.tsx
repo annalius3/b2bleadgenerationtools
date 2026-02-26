@@ -30,7 +30,7 @@ export default function ByIndustryPage() {
               href={`/by-industry/${industry.slug}`}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200"
             >
-              <span>{Icons.industry()}</span>
+              <div className="mb-3 block">{Icons.industry()}</div>
               <h2 className="text-lg font-semibold text-slate-900">{industry.name}</h2>
               <p className="mt-2 text-sm text-slate-600">{industry.description}</p>
               <p className="mt-3 text-xs font-medium text-blue-700">

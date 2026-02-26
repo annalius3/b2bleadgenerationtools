@@ -79,7 +79,7 @@ export default function HomePage() {
               href={item.href}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200"
             >
-              <span>{Icons[item.icon]()}</span>
+              <div className="mb-3 block">{Icons[item.icon]()}</div>
               <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{item.description}</p>
             </Link>
@@ -136,17 +136,17 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold text-slate-900">Growth Resources</h2>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <span>{Icons.guide()}</span>
+            <div className="mb-3 block">{Icons.guide()}</div>
             <p className="text-sm font-semibold text-slate-900">Guides</p>
             <p className="mt-2 text-sm text-slate-600">Step-by-step workflows for lead generation and outbound execution.</p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <span>{Icons.template()}</span>
+            <div className="mb-3 block">{Icons.template()}</div>
             <p className="text-sm font-semibold text-slate-900">Templates</p>
             <p className="mt-2 text-sm text-slate-600">Message templates and sequence structures for common campaign goals.</p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <span>{Icons.tutorial()}</span>
+            <div className="mb-3 block">{Icons.tutorial()}</div>
             <p className="text-sm font-semibold text-slate-900">Tutorials</p>
             <p className="mt-2 text-sm text-slate-600">
               {renderApolloText('Hands-on Apollo tutorials to move from setup to pipeline quickly.')}
