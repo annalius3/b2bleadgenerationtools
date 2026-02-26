@@ -1800,6 +1800,426 @@ export const guides: Guide[] = [
       { question: 'Should multi-step outreach include multiple channels?', answer: 'It can, but email-first playbooks are often enough initially.' }
     ],
     relatedSlugs: ['outreach-campaign-setup', 'building-email-sequences', 'how-to-get-replies-to-cold-emails']
+  },
+  {
+    slug: 'building-a-sales-funnel-with-apollo',
+    title: 'Building a Sales Funnel with Apollo',
+    description: 'How to build a practical B2B sales funnel in Apollo from first outreach touch to qualified opportunity.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
+    steps: [
+      'Define funnel stages with clear exit criteria.',
+      'Build high-fit lead segments in Apollo.',
+      'Launch outreach sequence tied to funnel objective.',
+      'Qualify responses before pipeline handoff.',
+      'Review stage conversion weekly and fix bottlenecks.'
+    ],
+    useCases: ['Startup funnel setup', 'Agency outbound funnel', 'Service sales process launch'],
+    tips: ['Keep stages simple.', 'Track time-in-stage.', 'Align outreach with funnel math.'],
+    faqs: [
+      { question: 'What is the first funnel stage to optimize?', answer: 'Qualified reply to meeting conversion is a strong early leverage point.' },
+      { question: 'Can Apollo manage top-of-funnel alone?', answer: 'Yes for many teams, if qualification and handoff workflows are defined.' }
+    ],
+    relatedSlugs: ['how-to-build-a-sales-pipeline', 'from-lead-to-deal-using-apollo', 'outreach-campaign-setup']
+  },
+  {
+    slug: 'lead-qualification-strategy',
+    title: 'Lead Qualification Strategy',
+    description: 'A practical lead qualification strategy to prioritize high-value opportunities and reduce wasted sales effort.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'financial-services', 'it-services'],
+    steps: [
+      'Define qualification dimensions: fit, pain, urgency, and process.',
+      'Apply consistent scoring in Apollo notes and tags.',
+      'Route low-score leads into nurture workflows.',
+      'Align qualification thresholds with close-rate targets.',
+      'Audit qualification accuracy monthly.'
+    ],
+    useCases: ['SDR to AE handoff', 'RevOps process cleanup', 'Pipeline quality control'],
+    tips: ['Qualification protects team capacity.', 'Score quality beats meeting volume.', 'Review against closed-won data.'],
+    faqs: [
+      { question: 'How many criteria should a qualification model include?', answer: 'Four to six criteria is usually enough for reliable decisions.' },
+      { question: 'When should qualification be updated?', answer: 'Update when market, offer, or deal profile shifts materially.' }
+    ],
+    relatedSlugs: ['lead-qualification-system', 'identifying-high-quality-leads', 'managing-sales-pipeline']
+  },
+  {
+    slug: 'managing-sales-pipeline',
+    title: 'Managing Sales Pipeline',
+    description: 'How to manage a B2B sales pipeline with clear ownership, stage rules, and weekly inspection cadence.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
+    steps: [
+      'Set clear owner for each stage and account.',
+      'Enforce stage entry and exit conditions.',
+      'Track pipeline health and risk weekly.',
+      'Prioritize deals by fit and close probability.',
+      'Use post-mortems on slipped opportunities.'
+    ],
+    useCases: ['Pipeline stabilization', 'Scaling sales team process', 'Forecast reliability improvement'],
+    tips: ['Weekly reviews beat monthly cleanups.', 'Pipeline hygiene is operational, not optional.', 'Focus on conversion leakage points.'],
+    faqs: [
+      { question: 'What defines a healthy pipeline?', answer: 'Consistent stage progression, low stale-deal count, and predictable conversion ratios.' },
+      { question: 'How often should pipeline be reviewed?', answer: 'Weekly is baseline for outbound-heavy B2B teams.' }
+    ],
+    relatedSlugs: ['pipeline-management-playbook', 'b2b-sales-process-optimization', 'closing-more-deals-with-better-leads']
+  },
+  {
+    slug: 'from-lead-to-deal-using-apollo',
+    title: 'From Lead to Deal Using Apollo',
+    description: 'A full workflow showing how Apollo supports the path from lead sourcing to closed-won deal progression.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Source high-fit leads using Apollo account and role filters.',
+      'Run sequence and qualify responses quickly.',
+      'Move qualified leads into defined opportunity stages.',
+      'Advance deals with structured next-step plans.',
+      'Analyze won/lost patterns to improve future targeting.'
+    ],
+    useCases: ['Lead-to-revenue mapping', 'GTM playbook onboarding', 'Founder to team handoff'],
+    tips: ['Keep handoffs explicit.', 'Use one source of truth for stage status.', 'Tie outbound data to close outcomes.'],
+    faqs: [
+      { question: 'What usually breaks between lead and deal?', answer: 'Weak qualification and unclear next-step ownership are common gaps.' },
+      { question: 'How can Apollo help close rates indirectly?', answer: 'Better lead quality and clearer engagement history improve downstream sales execution.' }
+    ],
+    relatedSlugs: ['building-a-sales-funnel-with-apollo', 'lead-qualification-strategy', 'tracking-outreach-performance']
+  },
+  {
+    slug: 'b2b-sales-process-optimization',
+    title: 'B2B Sales Process Optimization',
+    description: 'How to optimize B2B sales processes by tightening qualification, stage discipline, and conversion feedback loops.',
+    hub: 'guides',
+    industries: ['saas-companies', 'financial-services', 'manufacturing'],
+    steps: [
+      'Map current process and identify conversion drop points.',
+      'Standardize qualification and handoff logic.',
+      'Set measurable targets for each stage.',
+      'Automate repetitive tasks without losing context.',
+      'Run weekly optimization experiments.'
+    ],
+    useCases: ['RevOps transformation', 'Pipeline efficiency project', 'Team scaling readiness'],
+    tips: ['Optimize one bottleneck at a time.', 'Process clarity beats extra tooling.', 'Use conversion data to prioritize work.'],
+    faqs: [
+      { question: 'Where should optimization begin?', answer: 'Start at the stage with biggest conversion leakage and high volume impact.' },
+      { question: 'How fast should process changes be rolled out?', answer: 'Iterative weekly changes reduce disruption and improve learning speed.' }
+    ],
+    relatedSlugs: ['managing-sales-pipeline', 'increasing-conversion-rates', 'sales-automation-with-apollo']
+  },
+  {
+    slug: 'increasing-conversion-rates',
+    title: 'Increasing Conversion Rates',
+    description: 'Practical conversion-rate improvements for B2B sales funnels using better targeting, messaging, and qualification.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Identify stage-level conversion baselines.',
+      'Improve top-of-funnel lead quality first.',
+      'Refine messaging and CTA by buyer role.',
+      'Tighten qualification standards before proposal stage.',
+      'Measure conversion impact per change.'
+    ],
+    useCases: ['Underperforming outbound funnel', 'Deal-stage conversion repair', 'Growth efficiency optimization'],
+    tips: ['Conversion gains compound across stages.', 'Small weekly improvements outperform big monthly resets.', 'Track quality-adjusted conversion.'],
+    faqs: [
+      { question: 'Which conversion stage matters most?', answer: 'Qualified meeting to opportunity is often the strongest leverage point.' },
+      { question: 'Can conversion improve without increasing lead volume?', answer: 'Yes, better lead quality and stage discipline can improve revenue with same volume.' }
+    ],
+    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'closing-more-deals-with-better-leads']
+  },
+  {
+    slug: 'identifying-high-quality-leads',
+    title: 'Identifying High-Quality Leads',
+    description: 'A method to identify high-quality leads in Apollo based on fit, intent, and likelihood to convert.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Define quality criteria from past wins.',
+      'Use Apollo filters for fit and buying signals.',
+      'Score leads by quality tier.',
+      'Exclude low-probability profiles early.',
+      'Recalibrate scoring with sales outcome data.'
+    ],
+    useCases: ['Lead quality framework setup', 'SDR prioritization', 'High-ticket B2B prospecting'],
+    tips: ['Quality scoring should be simple.', 'Disqualify aggressively.', 'Revisit criteria monthly.'],
+    faqs: [
+      { question: 'What makes a lead high quality?', answer: 'Clear fit, urgent pain, and realistic buying process typically define high-quality leads.' },
+      { question: 'Should lead quality models differ by segment?', answer: 'Yes. Different segments often require different quality thresholds.' }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'lead-qualification-strategy']
+  },
+  {
+    slug: 'sales-automation-with-apollo',
+    title: 'Sales Automation with Apollo',
+    description: 'How to automate sales workflows in Apollo without losing personalization, quality control, and pipeline visibility.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'marketing-agencies', 'financial-services'],
+    steps: [
+      'Map repetitive tasks across prospecting and follow-up.',
+      'Set automation rules with clear guardrails.',
+      'Use branch logic by reply type and lead status.',
+      'Monitor automation output quality weekly.',
+      'Blend automation with manual qualification checkpoints.'
+    ],
+    useCases: ['Lean sales team productivity', 'RevOps process automation', 'Agency outbound scaling'],
+    tips: ['Automate workflows, not judgment.', 'Set fail-safe pause rules.', 'Audit regularly for quality drift.'],
+    faqs: [
+      { question: 'What should not be automated?', answer: 'Critical qualification and deal strategy decisions should remain human-led.' },
+      { question: 'How to prevent automation mistakes?', answer: 'Use tight rules, small rollout batches, and weekly QA checks.' }
+    ],
+    relatedSlugs: ['follow-up-automation', 'tracking-outreach-performance', 'b2b-sales-process-optimization']
+  },
+  {
+    slug: 'tracking-outreach-performance',
+    title: 'Tracking Outreach Performance',
+    description: 'A practical performance tracking framework for outbound campaigns and lead-to-pipeline conversion.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Define one dashboard with stage-level metrics.',
+      'Track positive replies, meetings, and qualified pipeline value.',
+      'Compare performance by segment and campaign type.',
+      'Identify weak stages and root causes.',
+      'Run weekly improvement loop and document changes.'
+    ],
+    useCases: ['Outbound KPI dashboards', 'RevOps reporting cadence', 'Agency campaign reporting'],
+    tips: ['Track outcomes, not vanity metrics.', 'Segment-level views are more actionable.', 'Use weekly snapshots.'],
+    faqs: [
+      { question: 'Which outreach metrics matter most?', answer: 'Positive reply rate, meeting conversion, and qualified pipeline are core metrics.' },
+      { question: 'How often should outreach data be reviewed?', answer: 'Weekly review is ideal for active outbound teams.' }
+    ],
+    relatedSlugs: ['email-outreach-strategy', 'increasing-conversion-rates', 'sales-automation-with-apollo']
+  },
+  {
+    slug: 'closing-more-deals-with-better-leads',
+    title: 'Closing More Deals with Better Leads',
+    description: 'How better lead quality improves close rates and shortens sales cycles in B2B outbound motions.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
+    steps: [
+      'Audit current lead quality against closed-won profile.',
+      'Improve targeting to match best customer patterns.',
+      'Enforce qualification rules before pipeline advancement.',
+      'Align messaging with buyer urgency and business impact.',
+      'Review close-rate changes and refine quality model.'
+    ],
+    useCases: ['Low close-rate recovery', 'Pipeline quality overhaul', 'High-ticket sales optimization'],
+    tips: ['Better leads reduce downstream friction.', 'Close-rate gains begin at targeting stage.', 'Quality control should be continuous.'],
+    faqs: [
+      { question: 'Can better leads really increase close rate quickly?', answer: 'Yes, lead-quality improvements can impact close performance within one to two sales cycles.' },
+      { question: 'What is the fastest quality improvement step?', answer: 'Tightening ICP filters and role targeting is often the fastest win.' }
+    ],
+    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'from-lead-to-deal-using-apollo']
+  },
+  {
+    slug: 'how-to-find-business-emails-with-apollo',
+    title: 'How to Find Business Emails with Apollo',
+    description: 'A practical method to find and verify business emails in Apollo for high-fit B2B outreach campaigns.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Define ICP and role filters before searching contacts.',
+      'Build account-first lists and map target decision-makers.',
+      'Use Apollo contact filters to surface relevant emails.',
+      'Validate and clean contact list before campaign launch.',
+      'Track deliverability and reply quality by segment.'
+    ],
+    useCases: ['Outbound list building', 'SDR prospecting workflows', 'Agency campaign prep'],
+    tips: ['Start narrow.', 'Prioritize fit over volume.', 'Refresh lists regularly.'],
+    faqs: [
+      { question: 'How many contacts should be verified before launch?', answer: 'Enough to run one focused campaign segment, typically 150 to 300 records.' },
+      { question: 'Should emails be collected from any matching title?', answer: 'No. Role relevance and account fit should come first.' }
+    ],
+    relatedSlugs: ['finding-verified-contacts', 'building-contact-lists-for-b2b', 'how-to-find-b2b-leads-with-apollo-io']
+  },
+  {
+    slug: 'finding-phone-numbers-of-decision-makers',
+    title: 'Finding Phone Numbers of Decision Makers',
+    description: 'How to find decision-maker phone numbers in Apollo and use them responsibly in multichannel B2B outreach.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'financial-services'],
+    steps: [
+      'Identify priority accounts and buying roles first.',
+      'Use Apollo filters to map decision-makers by seniority.',
+      'Extract and organize phone contacts by campaign priority.',
+      'Validate contact relevance and outreach context.',
+      'Coordinate phone + email cadence for warm follow-up.'
+    ],
+    useCases: ['Enterprise account penetration', 'Consulting outbound', 'High-value account targeting'],
+    tips: ['Use phone touchpoints strategically.', 'Start with warm signals.', 'Document outcomes by role.'],
+    faqs: [
+      { question: 'Should phone outreach replace email?', answer: 'Usually no. It works best as a supporting channel to email campaigns.' },
+      { question: 'How many contacts per account are enough?', answer: 'Three to five relevant stakeholders is a practical range.' }
+    ],
+    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'multi-step-outreach-playbook']
+  },
+  {
+    slug: 'building-contact-lists-for-b2b',
+    title: 'Building Contact Lists for B2B',
+    description: 'A repeatable framework for building clean B2B contact lists with Apollo account and role targeting.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
+    steps: [
+      'Define list criteria based on ICP and deal profile.',
+      'Build account segments before adding contacts.',
+      'Map contacts by function and decision influence.',
+      'Run quality checks and remove weak-fit records.',
+      'Tag lists by campaign purpose and ownership.'
+    ],
+    useCases: ['Outbound list operations', 'Agency niche targeting', 'ABM pilot setup'],
+    tips: ['Account-first approach improves list quality.', 'Use naming standards.', 'Audit duplicates weekly.'],
+    faqs: [
+      { question: 'What is the best list size to start?', answer: 'Start with manageable campaign batches rather than large mixed lists.' },
+      { question: 'How often should lists be refreshed?', answer: 'Every two to four weeks for active outreach teams.' }
+    ],
+    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-verified-contacts', 'identifying-high-quality-leads']
+  },
+  {
+    slug: 'data-enrichment-using-apollo',
+    title: 'Data Enrichment Using Apollo',
+    description: 'How to enrich B2B lead data in Apollo to improve targeting, personalization, and qualification quality.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'healthcare', 'financial-services'],
+    steps: [
+      'Define enrichment fields that matter for your sales process.',
+      'Apply enrichment to high-priority lead segments first.',
+      'Use enriched attributes for smarter segmentation.',
+      'Update qualification rules using new data points.',
+      'Monitor enrichment impact on conversion quality.'
+    ],
+    useCases: ['RevOps data quality improvement', 'Vertical-specific targeting', 'Pipeline qualification upgrades'],
+    tips: ['Enrich with purpose.', 'Avoid overloading records.', 'Tie data fields to decisions.'],
+    faqs: [
+      { question: 'What enrichment fields matter most?', answer: 'Fields tied directly to ICP fit and buying intent usually matter most.' },
+      { question: 'Should all leads be enriched equally?', answer: 'No. Prioritize high-value segments to control cost and complexity.' }
+    ],
+    relatedSlugs: ['identifying-buying-signals', 'lead-qualification-strategy', 'identifying-high-quality-leads']
+  },
+  {
+    slug: 'finding-verified-contacts',
+    title: 'Finding Verified Contacts',
+    description: 'A practical approach to building verified contact lists in Apollo before launch to reduce bounce and wasted effort.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Segment targets by account fit and role relevance.',
+      'Collect contacts and validate key data fields.',
+      'Remove low-confidence and duplicate entries.',
+      'Run small validation batches before scaling sends.',
+      'Track list quality against campaign outcomes.'
+    ],
+    useCases: ['Cold email deliverability protection', 'SDR data QA workflow', 'Agency campaign quality control'],
+    tips: ['Validate before scale.', 'Keep QA checklist simple.', 'Treat data quality as weekly process.'],
+    faqs: [
+      { question: 'Why verified contacts matter so much?', answer: 'Higher data quality improves deliverability and preserves sending reputation.' },
+      { question: 'When should verification happen?', answer: 'Before every new campaign launch and after major list refresh.' }
+    ],
+    relatedSlugs: ['how-to-find-business-emails-with-apollo', 'building-contact-lists-for-b2b', 'tracking-outreach-performance']
+  },
+  {
+    slug: 'targeting-specific-industries',
+    title: 'Targeting Specific Industries',
+    description: 'How to target specific industries in Apollo with niche segmentation and tailored outbound messaging.',
+    hub: 'guides',
+    industries: ['saas-companies', 'manufacturing', 'healthcare'],
+    steps: [
+      'Choose one industry and define its buying context.',
+      'Build industry-specific account filters in Apollo.',
+      'Map roles and stakeholder priorities by vertical.',
+      'Craft industry-relevant messaging angles.',
+      'Measure performance by vertical segment.'
+    ],
+    useCases: ['Vertical GTM expansion', 'Niche campaign launches', 'ABM-lite industry targeting'],
+    tips: ['One vertical at a time.', 'Use industry language.', 'Document segment learnings.'],
+    faqs: [
+      { question: 'Should each industry have a unique sequence?', answer: 'Usually yes, because pains and buying processes differ by vertical.' },
+      { question: 'How long to validate a vertical?', answer: 'Two to four weeks is often enough for initial directional signal.' }
+    ],
+    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'building-target-account-lists']
+  },
+  {
+    slug: 'finding-ceos-and-founders',
+    title: 'Finding CEOs and Founders',
+    description: 'How to find CEOs and founders in Apollo for founder-led and executive-level B2B outreach campaigns.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Build account list aligned to your ideal buyer profile.',
+      'Filter contacts by founder and executive roles.',
+      'Prioritize accounts with active growth and clear fit.',
+      'Customize outreach for executive context and outcomes.',
+      'Track executive response patterns separately.'
+    ],
+    useCases: ['Founder-to-founder outreach', 'High-ticket consulting sales', 'Early-stage partnership prospecting'],
+    tips: ['Executive outreach must be concise.', 'Lead with business impact.', 'Avoid generic intros.'],
+    faqs: [
+      { question: 'Is CEO outreach worth the effort?', answer: 'Yes for high-value or founder-led offers where executive ownership is high.' },
+      { question: 'How should messaging differ for founders?', answer: 'Focus on speed, risk, and measurable business outcomes.' }
+    ],
+    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'how-founders-get-first-customers-with-apollo']
+  },
+  {
+    slug: 'account-based-prospecting',
+    title: 'Account-Based Prospecting',
+    description: 'A practical account-based prospecting workflow with Apollo for high-value B2B account penetration.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
+    steps: [
+      'Select target accounts by strategic value and fit.',
+      'Map buying committee contacts for each account.',
+      'Create role-based message variants.',
+      'Run multithread outreach across stakeholders.',
+      'Track account-level progression and next steps.'
+    ],
+    useCases: ['Mid-market ABM motion', 'Enterprise pilot targeting', 'Strategic account expansion'],
+    tips: ['Account context is critical.', 'Multithread early.', 'Track account-level KPIs.'],
+    faqs: [
+      { question: 'How many accounts should reps run simultaneously?', answer: 'A focused set is better than broad coverage for account-based motion.' },
+      { question: 'What metric matters most in AB prospecting?', answer: 'Account-level opportunity progression and meeting quality.' }
+    ],
+    relatedSlugs: ['account-based-prospecting-framework', 'building-target-account-lists', 'finding-decision-makers-with-apollo']
+  },
+  {
+    slug: 'building-target-account-lists',
+    title: 'Building Target Account Lists',
+    description: 'How to build target account lists in Apollo that align with deal quality, segment strategy, and pipeline goals.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'financial-services'],
+    steps: [
+      'Define account criteria from closed-won patterns.',
+      'Build account cohorts by vertical and size.',
+      'Rank accounts by strategic and near-term potential.',
+      'Assign account owners and campaign goals.',
+      'Review and refresh list monthly.'
+    ],
+    useCases: ['ABM list design', 'RevOps targeting alignment', 'Sales planning by segment'],
+    tips: ['Use clear ranking logic.', 'Limit list sprawl.', 'Tie lists to campaign outcomes.'],
+    faqs: [
+      { question: 'How many target accounts should be active?', answer: 'Active account count should match team capacity and follow-up quality.' },
+      { question: 'Should target lists include low-fit accounts?', answer: 'No. Target lists are for priority accounts with clear probability of conversion.' }
+    ],
+    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'identifying-buying-signals']
+  },
+  {
+    slug: 'identifying-buying-signals',
+    title: 'Identifying Buying Signals',
+    description: 'A framework to identify and prioritize buying signals in Apollo for smarter timing and higher conversion outreach.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'it-services', 'financial-services'],
+    steps: [
+      'Define signal types relevant to your offer.',
+      'Build segment filters around active signal patterns.',
+      'Score leads and accounts by signal strength.',
+      'Launch outreach with signal-specific message angles.',
+      'Measure conversion by signal source and intensity.'
+    ],
+    useCases: ['Intent-based prospecting', 'Timing-sensitive outreach', 'Pipeline acceleration programs'],
+    tips: ['Signal quality beats signal quantity.', 'Use signal context in copy.', 'Keep scoring model simple.'],
+    faqs: [
+      { question: 'Which buying signals are most useful?', answer: 'Signals tied to active initiatives and clear business urgency usually perform best.' },
+      { question: 'Should outreach timing depend on signal recency?', answer: 'Yes. Recent signals often indicate stronger short-term conversion potential.' }
+    ],
+    relatedSlugs: ['data-enrichment-using-apollo', 'identifying-high-quality-leads', 'building-target-account-lists']
   }
 ];
 
