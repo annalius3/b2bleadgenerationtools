@@ -1,0 +1,185 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
+
+type Particle = {
+  x: number;
+  y: number;
+  ox: number;
+  oy: number;
+  vx: number;
+  vy: number;
+};
+
+const wrapLines = (ctx: CanvasRenderingContext2D, text: string, maxWidth: number) => {
+  const words = text.split(' ');
+  const lines: string[] = [];
+  let line = '';
+
+  for (const word of words) {
+    const test = line ? `${line} ${word}` : word;
+    if (ctx.measureText(test).width > maxWidth && line) {
+      lines.push(line);
+      line = word;
+    } else {
+      line = test;
+    }
+  }
+  if (line) {
+    lines.push(line);
+  }
+  return lines;
+};
+
+export const InteractiveParticleHeading = ({ text }: { text: string }) => {
+  const wrapperRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const wrapper = wrapperRef.current;
+    const canvas = canvasRef.current;
+    if (!wrapper || !canvas) {
+      return;
+    }
+
+    const context = canvas.getContext('2d');
+    if (!context) {
+      return;
+    }
+
+    let particles: Particle[] = [];
+    let raf = 0;
+    let width = 0;
+    let height = 0;
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const mouse = { x: -9999, y: -9999, active: false };
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const setupParticles = () => {
+      width = wrapper.clientWidth;
+      const fontSize = width >= 1024 ? 64 : width >= 768 ? 56 : width >= 640 ? 46 : 36;
+      const lineHeight = Math.round(fontSize * 1.2);
+      const maxTextWidth = Math.max(width - 14, 280);
+
+      const temp = document.createElement('canvas');
+      const tctx = temp.getContext('2d');
+      if (!tctx) {
+        return;
+      }
+
+      tctx.font = `700 ${fontSize}px Inter, sans-serif`;
+      const lines = wrapLines(tctx, text, maxTextWidth);
+      height = Math.max(lines.length * lineHeight + 40, fontSize + 40);
+
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      context.clearRect(0, 0, width, height);
+      context.fillStyle = '#0f172a';
+      context.textBaseline = 'middle';
+      context.textAlign = 'left';
+      context.font = `700 ${fontSize}px Inter, sans-serif`;
+
+      const blockHeight = lines.length * lineHeight;
+      const startY = (height - blockHeight) / 2 + lineHeight / 2;
+      lines.forEach((line, index) => {
+        context.fillText(line, 0, startY + index * lineHeight);
+      });
+
+      const data = context.getImageData(0, 0, width, height).data;
+      context.clearRect(0, 0, width, height);
+
+      const step = width >= 1024 ? 5 : 4;
+      particles = [];
+      for (let y = 0; y < height; y += step) {
+        for (let x = 0; x < width; x += step) {
+          const alpha = data[(y * width + x) * 4 + 3];
+          if (alpha > 140) {
+            particles.push({
+              x: x + (Math.random() - 0.5) * 2.5,
+              y: y + (Math.random() - 0.5) * 2.5,
+              ox: x,
+              oy: y,
+              vx: 0,
+              vy: 0
+            });
+          }
+        }
+      }
+    };
+
+    const tick = () => {
+      context.clearRect(0, 0, width, height);
+      context.fillStyle = '#1d4ed8';
+      const radius = 90;
+
+      for (const particle of particles) {
+        if (mouse.active && !reducedMotion) {
+          const dx = particle.x - mouse.x;
+          const dy = particle.y - mouse.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < radius && dist > 0.01) {
+            const force = (1 - dist / radius) * 0.7;
+            particle.vx += (dx / dist) * force;
+            particle.vy += (dy / dist) * force;
+          }
+        }
+
+        particle.vx += (particle.ox - particle.x) * 0.03;
+        particle.vy += (particle.oy - particle.y) * 0.03;
+        particle.vx *= 0.88;
+        particle.vy *= 0.88;
+        particle.x += particle.vx;
+        particle.y += particle.vy;
+
+        context.fillRect(particle.x, particle.y, 1.8, 1.8);
+      }
+
+      raf = requestAnimationFrame(tick);
+    };
+
+    const handleMove = (event: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = event.clientX - rect.left;
+      mouse.y = event.clientY - rect.top;
+      mouse.active = true;
+    };
+
+    const handleLeave = () => {
+      mouse.active = false;
+      mouse.x = -9999;
+      mouse.y = -9999;
+    };
+
+    const handleResize = () => setupParticles();
+
+    setupParticles();
+    tick();
+
+    canvas.addEventListener('mousemove', handleMove);
+    canvas.addEventListener('mouseleave', handleLeave);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      cancelAnimationFrame(raf);
+      canvas.removeEventListener('mousemove', handleMove);
+      canvas.removeEventListener('mouseleave', handleLeave);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [text]);
+
+  return (
+    <h1 className="max-w-4xl" aria-label={text}>
+      <span className="sr-only">{text}</span>
+      <div ref={wrapperRef} className="w-full">
+        <canvas ref={canvasRef} className="block h-auto w-full" />
+      </div>
+      <noscript>
+        <span className="text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">{text}</span>
+      </noscript>
+    </h1>
+  );
+};
