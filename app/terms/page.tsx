@@ -1,4 +1,5 @@
 import { Container } from '@/components/container';
+import { HubHero } from '@/components/hub-hero';
 import { buildMetadata } from '@/lib/seo';
 
 export const metadata = buildMetadata({
@@ -10,12 +11,11 @@ export const metadata = buildMetadata({
 export default function TermsPage() {
   return (
     <Container>
-      <section className="py-12">
-        <h1 className="text-4xl font-semibold text-slate-900">Terms of Use</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">
-          Content is for educational business software guidance only. Validate all vendor terms and pricing independently.
-        </p>
-      </section>
+      <HubHero
+        title="Terms of Use"
+        description="Content is for educational business software guidance only. Validate all vendor terms and pricing independently."
+        subtopics={['Educational content', 'No legal advice', 'Independent verification']}
+      />
     </Container>
   );
 }

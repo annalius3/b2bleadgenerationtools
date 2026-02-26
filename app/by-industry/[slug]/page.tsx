@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
+import { HubHero } from '@/components/hub-hero';
 import { getGuidesByIndustry, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 
@@ -40,10 +41,13 @@ export default async function IndustryPage({ params }: Props) {
 
   return (
     <Container>
-      <section className="py-12">
-        <h1 className="text-4xl font-semibold text-slate-900">{industry.name}</h1>
-        <p className="mt-3 max-w-3xl text-slate-700">{industry.description}</p>
-      </section>
+      <HubHero
+        title={industry.name}
+        description={industry.description}
+        subtopics={['ICP definition', 'Targeted outreach', 'Pipeline conversion']}
+        imageSrc="/images/menu/by-industry.jpg"
+        imageAlt={`${industry.name} team planning B2B growth`}
+      />
       <section className="pb-16">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {industryGuides.map((guide) => (

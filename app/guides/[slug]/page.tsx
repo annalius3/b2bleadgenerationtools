@@ -103,9 +103,18 @@ export default async function GuidePage({ params }: Props) {
   return (
     <Container>
       <section className="py-12">
-        <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
-        <h1 className="mt-2 max-w-4xl text-4xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
+        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/55 to-cyan-50/35 p-7 shadow-[0_24px_56px_-44px_rgba(37,99,235,0.5)] sm:p-9">
+          <div className="pointer-events-none absolute -right-24 -top-24 h-60 w-60 rounded-full bg-blue-200/35 blur-3xl" />
+          <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
+          <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
+          <h1 className="mt-2 max-w-4xl text-4xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
+          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
+          <div className="mt-5 flex flex-wrap gap-2 text-xs">
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">US B2B focus</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Actionable framework</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Updated 2026</span>
+          </div>
+        </div>
         <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
           <Image
             src={`/images/guides/${guide.slug}-1.jpg`}
