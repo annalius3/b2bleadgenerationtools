@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Route } from 'next';
+import Image from 'next/image';
 
 import { ApolloButton } from '@/components/apollo-button';
 import { Container } from '@/components/container';
@@ -33,25 +34,39 @@ export default function HomePage() {
   return (
     <Container>
       <section className="py-12 sm:py-16">
-        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50 to-slate-50 p-8 shadow-[0_28px_60px_-44px_rgba(37,99,235,0.55)] sm:p-12">
+        <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50 to-slate-50 p-8 shadow-[0_28px_60px_-44px_rgba(37,99,235,0.55)] sm:p-10">
           <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-200/35 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-cyan-200/25 blur-3xl" />
-          <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">
-            Get B2B Clients Faster with Proven Outbound Strategies
-          </h1>
-          <p className="mt-5 max-w-2xl text-slate-700">
-            {renderApolloText(
-              'Learn how to find leads, contact decision-makers, and build a predictable sales pipeline.'
-            )}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              href="/guides"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 transition hover:border-blue-200 hover:text-blue-700"
-            >
-              Explore Guides
-            </Link>
-            <ApolloButton label="Try Apollo" className="px-5 py-2.5" />
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div>
+              <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">
+                Get B2B Clients Faster with Proven Outbound Strategies
+              </h1>
+              <p className="mt-5 max-w-2xl text-slate-700">
+                {renderApolloText(
+                  'Learn how to find leads, contact decision-makers, and build a predictable sales pipeline.'
+                )}
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link
+                  href="/guides"
+                  className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-800 transition hover:border-blue-200 hover:text-blue-700"
+                >
+                  Explore Guides
+                </Link>
+                <ApolloButton label="Try Apollo" className="px-5 py-2.5" />
+              </div>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+              <Image
+                src="/images/home/hero-team.jpg"
+                alt="B2B sales team reviewing outbound performance"
+                width={1024}
+                height={768}
+                className="h-auto w-full rounded-xl object-cover"
+                priority
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -106,6 +121,16 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+          <Image
+            src="/images/home/industry-business.jpg"
+            alt="Business team discussing growth strategy by industry"
+            width={1024}
+            height={768}
+            className="h-auto w-full rounded-xl object-cover"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       <section className="py-8">
@@ -132,7 +157,19 @@ export default function HomePage() {
       </section>
 
       <section className="py-12">
-        <ApolloCtaBlock title="Start generating B2B leads today with Apollo" />
+        <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+          <ApolloCtaBlock title="Start generating B2B leads today with Apollo" />
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+            <Image
+              src="/images/home/cta-founder.jpg"
+              alt="Founder analyzing pipeline metrics with modern B2B tools"
+              width={1024}
+              height={768}
+              className="h-full w-full rounded-xl object-cover"
+              loading="lazy"
+            />
+          </div>
+        </div>
       </section>
     </Container>
   );
