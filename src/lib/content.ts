@@ -350,6 +350,356 @@ export const guides: Guide[] = [
       { question: 'Should every positive reply get a meeting?', answer: 'No. Qualify first to protect calendar quality and close rate.' }
     ],
     relatedSlugs: ['apollo-cold-email-sequence-template', 'pipeline-management-playbook']
+  },
+  {
+    slug: 'what-is-apollo-io',
+    title: 'What is Apollo.io',
+    description: 'A plain-English breakdown of what Apollo.io does, who it is for, and where it fits in a B2B GTM stack.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Define Apollo as a prospecting and outbound execution platform.',
+      'Map its role in your stack: data, enrichment, sequencing, and workflow speed.',
+      'Identify core jobs-to-be-done for your sales motion.',
+      'Compare Apollo use by team stage: founder-led, SDR team, and RevOps-led.',
+      'Run a 14-day pilot with one segment before broader rollout.'
+    ],
+    useCases: [
+      'New SaaS team building first outbound process',
+      'Agency owner creating repeatable lead sourcing',
+      'IT services team improving decision-maker coverage'
+    ],
+    tips: [
+      'Start with one ICP and one offer before scaling.',
+      'Use Apollo as an operating layer, not only a contact list.',
+      'Track meeting quality, not just activity volume.'
+    ],
+    faqs: [
+      {
+        question: 'Is Apollo.io only a lead database?',
+        answer: 'No. It combines contact data, enrichment, and outbound execution workflows.'
+      },
+      {
+        question: 'Who should use Apollo first?',
+        answer: 'Startup and SMB teams that need speed and clear outbound process ownership.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-review-2026', 'how-apollo-io-works', 'apollo-io-features-overview']
+  },
+  {
+    slug: 'apollo-io-review-2026',
+    title: 'Apollo.io Review (2026)',
+    description: 'A practical Apollo.io review for US B2B teams: performance, data quality, workflow fit, and execution tradeoffs.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'financial-services'],
+    steps: [
+      'Define review criteria: fit, workflow speed, data quality, and scalability.',
+      'Evaluate data quality by segment and region.',
+      'Test list-building and sequence launch time.',
+      'Review team adoption and process overhead.',
+      'Summarize strengths, weaknesses, and best-fit scenarios.'
+    ],
+    useCases: [
+      'Founder-led outbound review before annual tool decisions',
+      'RevOps audit for SDR efficiency',
+      'Agency tool recommendation benchmark'
+    ],
+    tips: [
+      'Judge Apollo by pipeline outcomes, not feature checklists.',
+      'Segment-level data quality matters more than global averages.',
+      'Re-test performance every quarter as process changes.'
+    ],
+    faqs: [
+      {
+        question: 'Is Apollo.io good for startups in 2026?',
+        answer: 'For many startups, yes. It often balances speed, usability, and cost better than enterprise-heavy stacks.'
+      },
+      {
+        question: 'What is Apollo weakest at?',
+        answer: 'It can underperform when teams lack segmentation discipline or process QA.'
+      }
+    ],
+    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-pros-and-cons', 'apollo-io-pricing-explained']
+  },
+  {
+    slug: 'is-apollo-io-worth-it',
+    title: 'Is Apollo.io Worth It',
+    description: 'A decision framework to evaluate Apollo ROI by team size, sales motion, and expected pipeline output.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Set baseline outbound metrics before using Apollo.',
+      'Estimate expected ROI from list quality and workflow speed.',
+      'Model credit usage and team process capacity.',
+      'Run 30-day pilot and compare against baseline.',
+      'Decide keep, adjust, or replace based on measured results.'
+    ],
+    useCases: [
+      'Bootstrapped startup deciding first outbound platform',
+      'Agency reducing tool sprawl',
+      'Consulting firm validating outbound economics'
+    ],
+    tips: [
+      'Worth is context-dependent: segment fit and process quality drive outcomes.',
+      'If your offer is weak, no tool can fix conversion.',
+      'Use one KPI set across the full pilot window.'
+    ],
+    faqs: [
+      {
+        question: 'When is Apollo not worth it?',
+        answer: 'When team execution discipline is low or ICP is undefined.'
+      },
+      {
+        question: 'What is a realistic trial period?',
+        answer: 'At least 30 days with weekly iteration and quality checks.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-review-2026', 'apollo-io-pricing-explained', 'apollo-io-for-beginners']
+  },
+  {
+    slug: 'apollo-io-pricing-explained',
+    title: 'Apollo.io Pricing Explained',
+    description: 'How Apollo.io pricing works in practice: plan logic, credit usage, and cost control by team type.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
+    steps: [
+      'Map plan tiers to your workflow needs.',
+      'Estimate monthly credit burn by segment volume.',
+      'Build cost-control rules for exports and enrichment.',
+      'Align seat allocation with campaign ownership.',
+      'Review spend against pipeline contribution each month.'
+    ],
+    useCases: [
+      'CFO + RevOps budgeting discussion',
+      'Startup GTM stack planning',
+      'Agency scaling campaign accounts'
+    ],
+    tips: [
+      'Most overspend comes from weak segmentation and duplicate workflows.',
+      'Set simple credit governance before team expansion.',
+      'Tie spend review to meeting quality and pipeline velocity.'
+    ],
+    faqs: [
+      {
+        question: 'What drives Apollo cost the most?',
+        answer: 'Credit consumption and team process quality usually drive total cost more than headline plan price.'
+      },
+      {
+        question: 'How often should pricing fit be re-evaluated?',
+        answer: 'Monthly for fast-growing teams and quarterly for stable teams.'
+      }
+    ],
+    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-review-2026', 'pipeline-management-playbook']
+  },
+  {
+    slug: 'apollo-io-features-overview',
+    title: 'Apollo.io Features Overview',
+    description: 'A practical features walkthrough of Apollo.io with context on what matters for real outbound execution.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'recruiters', 'it-services'],
+    steps: [
+      'Review core modules: search, enrichment, sequencing, and reporting.',
+      'Prioritize features by your current bottleneck.',
+      'Configure only what is needed for first campaign launch.',
+      'Test feature usage against process speed and quality.',
+      'Document feature decisions for team consistency.'
+    ],
+    useCases: [
+      'SDR onboarding and enablement',
+      'Founder-led setup before first campaign',
+      'Recruiting outreach process design'
+    ],
+    tips: [
+      'Feature depth matters less than operational clarity.',
+      'Choose fewer workflows and run them consistently.',
+      'Treat setup as GTM operations, not just UI clicks.'
+    ],
+    faqs: [
+      {
+        question: 'What Apollo features matter most at the start?',
+        answer: 'Search filters, list quality control, and sequence execution are usually the highest-impact early features.'
+      },
+      {
+        question: 'Should every feature be enabled immediately?',
+        answer: 'No. Start narrow and expand only when process maturity supports it.'
+      }
+    ],
+    relatedSlugs: ['what-is-apollo-io', 'how-apollo-io-works', 'apollo-io-setup-guide']
+  },
+  {
+    slug: 'apollo-io-pros-and-cons',
+    title: 'Apollo.io Pros and Cons',
+    description: 'An honest breakdown of Apollo.io strengths and tradeoffs for startups, agencies, and scaling B2B teams.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'List strengths by direct business impact.',
+      'Document limitations by team stage and motion.',
+      'Compare tradeoffs against alternatives and budget.',
+      'Map known risks to mitigation steps.',
+      'Decide fit by your current bottleneck.'
+    ],
+    useCases: [
+      'Buyer committee evaluation before procurement',
+      'Agency internal stack review',
+      'Startup tool migration assessment'
+    ],
+    tips: [
+      'Pros and cons are motion-dependent, not universal.',
+      'Strong process can reduce most common Apollo drawbacks.',
+      'Review tradeoffs quarterly as GTM model changes.'
+    ],
+    faqs: [
+      {
+        question: 'What is Apollo strongest at?',
+        answer: 'Speed from list-building to campaign launch for lean outbound teams.'
+      },
+      {
+        question: 'What is Apollo weakest at?',
+        answer: 'It can become noisy when teams over-export and under-qualify leads.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-review-2026', 'is-apollo-io-worth-it', 'apollo-io-features-overview']
+  },
+  {
+    slug: 'apollo-io-for-beginners',
+    title: 'Apollo.io for Beginners',
+    description: 'A beginner-friendly Apollo.io guide to launch your first outbound workflow without unnecessary complexity.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
+    steps: [
+      'Set one ICP and one campaign goal.',
+      'Build your first clean lead list.',
+      'Create a short 4-touch sequence.',
+      'Launch and monitor replies daily.',
+      'Run weekly review and improve one variable.'
+    ],
+    useCases: [
+      'First-time founder using outbound',
+      'Junior SDR onboarding',
+      'Agency operator learning modern prospecting'
+    ],
+    tips: [
+      'Beginner success comes from process consistency, not complexity.',
+      'Do not scale volume until first segment works.',
+      'Use simple message structures and clear CTA.'
+    ],
+    faqs: [
+      {
+        question: 'How long does beginner setup take?',
+        answer: 'Most teams can launch a first practical campaign in one focused day.'
+      },
+      {
+        question: 'What is the biggest beginner mistake?',
+        answer: 'Trying too many segments before validating one repeatable workflow.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step', 'what-is-apollo-io']
+  },
+  {
+    slug: 'how-apollo-io-works',
+    title: 'How Apollo.io Works',
+    description: 'A practical explanation of the Apollo workflow from targeting to outreach execution and pipeline handoff.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Build list segments by ICP and role.',
+      'Enrich and clean records before activation.',
+      'Launch sequence with role-based messaging.',
+      'Process replies and qualify opportunities.',
+      'Sync learnings back into segmentation and messaging.'
+    ],
+    useCases: [
+      'SDR workflow design',
+      'Founder-led outbound system build',
+      'RevOps process documentation'
+    ],
+    tips: [
+      'Workflow clarity beats feature overload.',
+      'Reply handling quality determines downstream close rate.',
+      'Use weekly loops, not one-time setup.'
+    ],
+    faqs: [
+      {
+        question: 'Does Apollo replace CRM workflows?',
+        answer: 'Usually no. Apollo works best as prospecting and outbound execution layer alongside CRM discipline.'
+      },
+      {
+        question: 'Where do most teams lose performance?',
+        answer: 'Between list quality and follow-up quality, not in campaign launch itself.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-features-overview', 'apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step']
+  },
+  {
+    slug: 'apollo-io-setup-guide',
+    title: 'Apollo.io Setup Guide',
+    description: 'A complete setup guide for Apollo.io including account structure, campaign foundations, and QA checks.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Define workspace structure and naming conventions.',
+      'Configure list filters and segmentation standards.',
+      'Build sequence templates for core offers.',
+      'Set QA rules for list and message quality.',
+      'Launch first campaign and run post-launch inspection.'
+    ],
+    useCases: [
+      'New outbound team onboarding',
+      'Agency standard operating process setup',
+      'Startup first outbound infrastructure launch'
+    ],
+    tips: [
+      'Good setup is 80% process decisions, 20% tool configuration.',
+      'Document standards so multiple reps can execute consistently.',
+      'Keep first rollout narrow and measurable.'
+    ],
+    faqs: [
+      {
+        question: 'What should be configured first?',
+        answer: 'ICP filters, segment naming, and first sequence template should be prioritized.'
+      },
+      {
+        question: 'How do we avoid setup chaos?',
+        answer: 'Use one owner, one rollout plan, and clear naming conventions for every campaign asset.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-for-beginners', 'apollo-io-tutorial-step-by-step', 'how-apollo-io-works']
+  },
+  {
+    slug: 'apollo-io-tutorial-step-by-step',
+    title: 'Apollo.io Tutorial Step-by-Step',
+    description: 'A step-by-step Apollo tutorial from first list to first booked meeting with practical execution checkpoints.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Create ICP segment and build first target list.',
+      'Review and enrich contact quality.',
+      'Write sequence with role-specific value proposition.',
+      'Launch campaign and monitor reply flow.',
+      'Qualify replies and convert into booked meetings.'
+    ],
+    useCases: [
+      'Hands-on new team training',
+      'Founder outbound implementation sprint',
+      'Agency campaign SOP tutorial'
+    ],
+    tips: [
+      'Follow the same sequence for at least one week before major changes.',
+      'Keep one clear success metric per stage.',
+      'Document each iteration so team learning compounds.'
+    ],
+    faqs: [
+      {
+        question: 'Can this tutorial be completed in one day?',
+        answer: 'Initial setup can be done in one day, but meaningful optimization requires weekly iteration.'
+      },
+      {
+        question: 'What defines tutorial success?',
+        answer: 'First qualified meeting with clear repeatable process notes.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-for-beginners', 'apollo-cold-email-sequence-template']
   }
 ];
 

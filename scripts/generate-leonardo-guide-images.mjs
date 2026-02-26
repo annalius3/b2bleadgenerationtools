@@ -111,6 +111,11 @@ let completed = 0;
 for (const guide of guides) {
   for (const index of [1, 2]) {
     const outPath = path.join(outputDir, `${guide.slug}-${index}.jpg`);
+    if (fs.existsSync(outPath)) {
+      completed += 1;
+      console.log(`SKIP ${guide.slug}-${index}: already exists`);
+      continue;
+    }
     const prompt = makePrompt(guide.title, index);
     try {
       const generationId = await createGeneration(prompt);
