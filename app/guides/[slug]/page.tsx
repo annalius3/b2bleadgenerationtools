@@ -1,11 +1,12 @@
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
 import Image from 'next/image';
+import Link from 'next/link';
+import type { Route } from 'next';
+import { notFound } from 'next/navigation';
 
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
-import { getGuideBySlug, guides } from '@/lib/content';
+import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 
@@ -44,6 +45,14 @@ const metricSeed = (slug: string) => {
   };
 };
 
+const hubPath: Record<(typeof guides)[number]['hub'], Route> = {
+  'find-clients': '/find-clients',
+  outreach: '/outreach',
+  'sales-pipeline': '/sales-pipeline',
+  'for-startups': '/for-startups',
+  guides: '/guides'
+};
+
 export async function generateStaticParams() {
   return guides.map((guide) => ({ slug: guide.slug }));
 }
@@ -76,6 +85,19 @@ export default async function GuidePage({ params }: Props) {
   const related = guide.relatedSlugs
     .map((item) => getGuideBySlug(item))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
+
+  const sameHubGuides = guides
+    .filter((item) => item.hub === guide.hub && item.slug !== guide.slug && !guide.relatedSlugs.includes(item.slug))
+    .slice(0, 2);
+
+  const crossHubGuides = guides
+    .filter((item) => item.hub !== guide.hub && item.slug !== guide.slug && !guide.relatedSlugs.includes(item.slug))
+    .slice(0, 2);
+
+  const industryRefs = guide.industries
+    .map((industrySlug) => industries.find((item) => item.slug === industrySlug))
+    .filter((item): item is NonNullable<typeof item> => Boolean(item));
+
   const metrics = metricSeed(guide.slug);
 
   return (
@@ -108,10 +130,11 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="who-for">Who this is for</h2>
           <p>
-            Best for teams in {guide.industries.map((industry, index) => (
-              <span key={industry}>
+            Best for teams in{' '}
+            {industryRefs.map((item, index) => (
+              <span key={item.slug}>
                 {index > 0 ? ', ' : ''}
-                <Link href={`/by-industry/${industry}`}>{industry.replaceAll('-', ' ')}</Link>
+                <Link href={`/by-industry/${item.slug}`}>{item.name}</Link>
               </span>
             ))}{' '}
             that need consistent outbound execution. It is usually a strong fit for startup GTM teams, agencies, and lean sales orgs.
@@ -170,9 +193,28 @@ export default async function GuidePage({ params }: Props) {
           </p>
           <p>
             Another thing we observed in practice: teams that documented one clear weekly hypothesis improved faster than teams running
-            broad, unfocused experiments. Example: “Will role-based personalization increase positive reply rate from {metrics.replyRate.toFixed(1)}% to{' '}
-            {(metrics.replyRate + 0.8).toFixed(1)}% in 14 days?”
+            broad, unfocused experiments. Example: &quot;Will role-based personalization increase positive reply rate from {metrics.replyRate.toFixed(1)}% to{' '}
+            {(metrics.replyRate + 0.8).toFixed(1)}% in 14 days?&quot;
           </p>
+
+          <h3>Internal navigation</h3>
+          <ul>
+            <li>
+              Primary hub: <Link href={hubPath[guide.hub]}>{hubContent[guide.hub].title}</Link>
+            </li>
+            <li>
+              Industry context:{' '}
+              {industryRefs.map((item, index) => (
+                <span key={item.slug}>
+                  {index > 0 ? ', ' : ''}
+                  <Link href={`/by-industry/${item.slug}`}>{item.name}</Link>
+                </span>
+              ))}
+            </li>
+            <li>
+              Evergreen hub: <Link href="/guides">Guides</Link>
+            </li>
+          </ul>
 
           <h2 id="steps">Actionable Steps</h2>
           <ol>
@@ -293,16 +335,14 @@ export default async function GuidePage({ params }: Props) {
           <p>
             Practical example from a recent sprint: a 6-person US B2B SaaS team selling to operations leaders started with three segments
             and weak positioning. Week 1 they narrowed to one segment, rewrote their offer in plain language, and dropped message length
-            from 180 words to 96 words. Week 2 they changed CTA from “quick chat?” to a specific problem-based prompt and saw reply quality
+            from 180 words to 96 words. Week 2 they changed CTA from &quot;quick chat?&quot; to a specific problem-based prompt and saw reply quality
             improve. Week 3 they introduced role-based follow-ups and separated decision-maker messaging from influencer messaging. By week 4,
             they moved from random responses to predictable positive replies, better meeting acceptance, and cleaner qualification notes. This
-            was not a “hack.” It was process discipline: smaller segment, stronger offer, cleaner follow-up logic, and weekly review cadence.
+            was not a &quot;hack.&quot; It was process discipline: smaller segment, stronger offer, cleaner follow-up logic, and weekly review cadence.
           </p>
           <p>
-            Another thing we saw: when teams track only open rates, performance looks better than reality. When they track positive reply
-            rate, meeting rate, and show rate together, weak campaigns become obvious very fast. That is why this guide emphasizes business
-            outcomes over vanity metrics. For outbound-heavy teams, the metric that usually predicts success is meeting quality by segment,
-            not total send volume.
+            Also, compare with <Link href="/find-clients">Find Clients</Link>, <Link href="/sales-pipeline">Sales Pipeline</Link>, and{' '}
+            <Link href="/for-startups">For Startups</Link> to choose the right operating model for your team size and deal cycle.
           </p>
 
           <h2 id="checklist">Implementation checklist</h2>
@@ -318,11 +358,6 @@ export default async function GuidePage({ params }: Props) {
             <li>Keep a short objection library and update response templates weekly.</li>
             <li>Link campaign outcomes back to pipeline stage conversion, not just top-of-funnel activity.</li>
           </ul>
-          <p>
-            If this checklist feels too much, start with the first four items only and execute for two weeks. Most teams get better signal
-            from consistent simple execution than from adding more tools. Plus, once process quality is stable, scaling list volume becomes
-            much safer and cheaper.
-          </p>
 
           <h2 id="alternatives">Alternatives and strategy options</h2>
           <p>
@@ -332,7 +367,7 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="related">Related Guides</h2>
           <ul>
-            {related.map((item) => (
+            {related.concat(sameHubGuides).slice(0, 5).map((item) => (
               <li key={item.slug}>
                 <Link href={`/guides/${item.slug}`}>{item.title}</Link>
               </li>
@@ -359,6 +394,28 @@ export default async function GuidePage({ params }: Props) {
 
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
           <ArticleToc items={toc} />
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Recommended Reads</p>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              {related.concat(sameHubGuides, crossHubGuides).slice(0, 5).map((item) => (
+                <li key={item.slug}>
+                  <Link className="hover:text-blue-700" href={`/guides/${item.slug}`}>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link className="hover:text-blue-700" href={hubPath[guide.hub]}>
+                  {hubContent[guide.hub].title}
+                </Link>
+              </li>
+              <li>
+                <Link className="hover:text-blue-700" href="/guides">
+                  All Guides
+                </Link>
+              </li>
+            </ul>
+          </section>
           <ApolloCtaBlock />
         </aside>
       </div>
