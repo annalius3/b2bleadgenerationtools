@@ -1320,6 +1320,276 @@ export const guides: Guide[] = [
       }
     ],
     relatedSlugs: ['how-to-build-a-sales-pipeline', 'lead-qualification-system', 'building-pipeline-without-marketing']
+  },
+  {
+    slug: 'apollo-io-for-small-business',
+    title: 'Apollo.io for Small Business',
+    description: 'How small business teams use Apollo to build targeted lists, run outreach, and create steady pipeline.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Define a narrow ICP and one clear offer.',
+      'Build focused account lists and decision-maker contacts in Apollo.',
+      'Launch a short sequence with problem-first messaging.',
+      'Qualify replies and route opportunities by deal potential.',
+      'Run weekly review to improve conversion stage by stage.'
+    ],
+    useCases: ['Small B2B service firm', 'Local-to-national expansion', 'Founder-led outbound setup'],
+    tips: ['Keep setup simple.', 'Measure meetings and qualified pipeline.', 'Document one learning per week.'],
+    faqs: [
+      {
+        question: 'Is Apollo suitable for very small teams?',
+        answer: 'Yes. Lean teams often benefit most when they keep one clear workflow and avoid tool sprawl.'
+      },
+      {
+        question: 'What should be optimized first?',
+        answer: 'ICP fit and response speed are usually the first high-impact levers.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-for-startups', 'how-small-businesses-find-clients', 'how-to-build-a-lead-list-in-apollo']
+  },
+  {
+    slug: 'how-small-businesses-find-clients',
+    title: 'How Small Businesses Find Clients',
+    description: 'A practical outbound framework for small businesses to find and win B2B clients consistently.',
+    hub: 'for-startups',
+    industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Choose one niche and define your strongest use case.',
+      'Build targeted Apollo lists by account fit and buyer role.',
+      'Launch a role-specific outreach sequence.',
+      'Handle positive replies within same business day.',
+      'Track close feedback and improve targeting weekly.'
+    ],
+    useCases: ['Small agency growth', 'Consulting pipeline build', 'IT service prospecting'],
+    tips: ['Niche focus beats broad targeting.', 'Short clear offers convert better.', 'Follow-up discipline matters.'],
+    faqs: [
+      {
+        question: 'How many prospects should a small business start with?',
+        answer: 'A focused list of 150 to 300 high-fit prospects per segment is usually enough.'
+      },
+      {
+        question: 'Do small businesses need multi-channel outreach?',
+        answer: 'Not initially. Email-first workflows can perform well with strong segmentation.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-for-small-business', 'how-to-get-clients-using-apollo-io', 'first-100-customers-strategy']
+  },
+  {
+    slug: 'client-acquisition-for-consultants',
+    title: 'Client Acquisition for Consultants',
+    description: 'How consultants use Apollo to identify ideal buyers, start conversations, and close retainers.',
+    hub: 'guides',
+    industries: ['consulting-firms', 'financial-services', 'healthcare'],
+    steps: [
+      'Clarify your consulting offer and target buyer profile.',
+      'Build Apollo segments by industry and decision-maker role.',
+      'Send value-led outreach with specific business outcomes.',
+      'Qualify interested prospects by urgency and budget fit.',
+      'Convert discovery calls into proposal-ready opportunities.'
+    ],
+    useCases: ['Solo consultant pipeline', 'Boutique advisory growth', 'Specialist service expansion'],
+    tips: ['Lead with outcome proof.', 'Avoid generic positioning.', 'Use objections to sharpen offer.'],
+    faqs: [
+      {
+        question: 'Should consultants use cold outreach?',
+        answer: 'Yes, especially when referrals are inconsistent and target niche is well-defined.'
+      },
+      {
+        question: 'What is a strong consultant CTA?',
+        answer: 'A short problem diagnosis call with one concrete business objective.'
+      }
+    ],
+    relatedSlugs: ['growing-a-consulting-business', 'how-founders-get-first-customers-with-apollo', 'prospecting-with-apollo-io']
+  },
+  {
+    slug: 'how-agencies-use-apollo',
+    title: 'How Agencies Use Apollo',
+    description: 'A proven agency workflow in Apollo for niche targeting, outreach execution, and retainer growth.',
+    hub: 'outreach',
+    industries: ['marketing-agencies', 'consulting-firms', 'saas-companies'],
+    steps: [
+      'Define agency ICP by service and contract value.',
+      'Build account segments and role-specific contact sets.',
+      'Launch sequence with case-led credibility and clear CTA.',
+      'Use reply tagging to separate warm, nurture, and no-fit leads.',
+      'Review performance by niche and refine campaign angles.'
+    ],
+    useCases: ['Agency outbound engine', 'New niche expansion', 'Retainer pipeline stabilization'],
+    tips: ['Case evidence improves reply quality.', 'Niche-specific copy outperforms generic agency messaging.', 'Track meetings by service line.'],
+    faqs: [
+      {
+        question: 'Can small agencies run Apollo without SDRs?',
+        answer: 'Yes. Founder or account lead can run focused outbound with documented process.'
+      },
+      {
+        question: 'What agency metric matters most?',
+        answer: 'Qualified discovery calls that match service fit and retainer potential.'
+      }
+    ],
+    relatedSlugs: ['apollo-guide-for-agencies', 'predictable-client-flow-for-agencies', 'apollo-cold-email-sequence-template']
+  },
+  {
+    slug: 'sales-strategy-for-service-companies',
+    title: 'Sales Strategy for Service Companies',
+    description: 'How service companies build a practical B2B sales strategy from targeting to close.',
+    hub: 'sales-pipeline',
+    industries: ['consulting-firms', 'it-services', 'manufacturing'],
+    steps: [
+      'Define service-market fit and ideal buyer persona.',
+      'Use Apollo for account selection and contact mapping.',
+      'Build qualification gates before proposal stage.',
+      'Create pipeline stages with clear ownership and SLA.',
+      'Improve close rates with structured follow-up plans.'
+    ],
+    useCases: ['Professional services growth', 'IT services pipeline cleanup', 'Operations services outbound'],
+    tips: ['Service strategy needs strong qualification.', 'Protect proposal time with stricter filters.', 'Track time-in-stage.'],
+    faqs: [
+      {
+        question: 'Why do service deals stall?',
+        answer: 'Most stalls happen from unclear buyer ownership or weak qualification before proposal.'
+      },
+      {
+        question: 'How many stages should service pipelines have?',
+        answer: 'Usually five to seven stages with explicit entry and exit criteria.'
+      }
+    ],
+    relatedSlugs: ['b2b-sales-strategy-for-new-companies', 'how-to-build-a-sales-pipeline', 'lead-qualification-system']
+  },
+  {
+    slug: 'growing-a-consulting-business',
+    title: 'Growing a Consulting Business',
+    description: 'A repeatable growth model for consulting businesses using Apollo for acquisition and pipeline control.',
+    hub: 'for-startups',
+    industries: ['consulting-firms', 'financial-services', 'saas-companies'],
+    steps: [
+      'Pick one profitable consulting niche and offer format.',
+      'Build Apollo lists for high-fit target accounts.',
+      'Run authority-based outreach and book strategy calls.',
+      'Qualify for budget, urgency, and implementation readiness.',
+      'Standardize proposal-to-close workflow to reduce leakage.'
+    ],
+    useCases: ['Solo consultant scaling', 'Boutique firm growth', 'New advisory vertical launch'],
+    tips: ['Clarity beats complexity.', 'One niche with strong proof compounds faster.', 'Pipeline hygiene drives stability.'],
+    faqs: [
+      {
+        question: 'Can consultants scale without paid ads?',
+        answer: 'Yes. Many firms scale first through outbound and referrals before ad spend.'
+      },
+      {
+        question: 'What should be systemized first?',
+        answer: 'Lead qualification and follow-up process should be systemized before team hiring.'
+      }
+    ],
+    relatedSlugs: ['client-acquisition-for-consultants', 'how-small-businesses-find-clients', 'how-to-scale-client-acquisition']
+  },
+  {
+    slug: 'lead-generation-for-freelancers',
+    title: 'Lead Generation for Freelancers',
+    description: 'A lightweight outbound system for freelancers to get consistent B2B leads using Apollo.',
+    hub: 'for-startups',
+    industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Define one freelance offer and ideal buyer.',
+      'Create a compact Apollo list of high-fit accounts.',
+      'Send short personalized outreach with clear value.',
+      'Qualify replies and schedule quick discovery calls.',
+      'Track which niches produce strongest close rates.'
+    ],
+    useCases: ['Freelance marketer growth', 'Independent consultant outreach', 'Freelance dev services pipeline'],
+    tips: ['Keep message short.', 'Use one CTA.', 'Follow up consistently for 2 to 3 weeks.'],
+    faqs: [
+      {
+        question: 'Is Apollo overkill for freelancers?',
+        answer: 'No, if used simply. It helps freelancers target better and avoid random prospecting.'
+      },
+      {
+        question: 'How many leads should freelancers contact weekly?',
+        answer: 'Quality-first freelancers often start with 40 to 100 targeted contacts weekly.'
+      }
+    ],
+    relatedSlugs: ['apollo-io-for-small-business', 'how-to-build-a-client-base-from-scratch', 'outbound-sales-for-startups']
+  },
+  {
+    slug: 'how-to-build-a-client-base-from-scratch',
+    title: 'How to Build a Client Base from Scratch',
+    description: 'A zero-to-first-clients framework using Apollo lists, outreach, and conversion discipline.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Choose one niche and problem statement.',
+      'Build first target list with Apollo account and role filters.',
+      'Launch first outreach cycle with one strong offer.',
+      'Qualify calls and focus on close-ready opportunities.',
+      'Repeat weekly with improved targeting and messaging.'
+    ],
+    useCases: ['New business launch', 'Founder first revenue sprint', 'Service firm market entry'],
+    tips: ['Start with one offer.', 'Track objections.', 'Do weekly campaign retrospectives.'],
+    faqs: [
+      {
+        question: 'How long does it take to build first client base?',
+        answer: 'Most teams get reliable early signals in 2 to 6 weeks with focused outreach.'
+      },
+      {
+        question: 'What is the biggest early mistake?',
+        answer: 'Trying multiple segments before validating one repeatable motion.'
+      }
+    ],
+    relatedSlugs: ['first-100-customers-strategy', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-freelancers']
+  },
+  {
+    slug: 'b2b-marketing-without-ads',
+    title: 'B2B Marketing Without Ads',
+    description: 'How B2B teams generate pipeline without paid ads by combining Apollo outreach and direct response positioning.',
+    hub: 'guides',
+    industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
+    steps: [
+      'Define message-market fit and niche positioning.',
+      'Build high-fit target lists in Apollo.',
+      'Run outreach campaigns with strong value proposition.',
+      'Collect response insights to refine messaging.',
+      'Scale best-performing campaigns with process controls.'
+    ],
+    useCases: ['Bootstrapped B2B growth', 'Services without ad budget', 'Early-stage outbound-first GTM'],
+    tips: ['Ads are optional when segmentation is strong.', 'Outbound plus content can compound.', 'Measure pipeline, not clicks.'],
+    faqs: [
+      {
+        question: 'Can B2B teams grow without ad spend?',
+        answer: 'Yes, especially early-stage teams that execute focused outbound well.'
+      },
+      {
+        question: 'What replaces ad optimization?',
+        answer: 'Segment testing, message iteration, and conversion-stage analysis.'
+      }
+    ],
+    relatedSlugs: ['building-pipeline-without-marketing', 'lead-generation-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io']
+  },
+  {
+    slug: 'predictable-client-flow-for-agencies',
+    title: 'Predictable Client Flow for Agencies',
+    description: 'How agencies build predictable monthly client flow with Apollo targeting, outreach cadence, and pipeline discipline.',
+    hub: 'outreach',
+    industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Define monthly client flow targets and service mix.',
+      'Build niche-specific Apollo account segments.',
+      'Run weekly outreach sprints with strict QA.',
+      'Qualify opportunities by fit and retainer potential.',
+      'Review funnel metrics and improve weakest stage.'
+    ],
+    useCases: ['Agency growth stabilization', 'Predictable monthly retainers', 'Outbound-led agency pipeline'],
+    tips: ['Consistency beats sporadic campaign bursts.', 'Niche offer clarity drives better meetings.', 'Protect team capacity with qualification rules.'],
+    faqs: [
+      {
+        question: 'What creates predictable client flow?',
+        answer: 'Structured weekly execution, reliable targeting, and disciplined follow-up.'
+      },
+      {
+        question: 'How should agencies forecast client flow?',
+        answer: 'Use stage conversion and time-in-stage trends, not top-of-funnel volume alone.'
+      }
+    ],
+    relatedSlugs: ['how-agencies-use-apollo', 'apollo-guide-for-agencies', 'pipeline-management-playbook']
   }
 ];
 
