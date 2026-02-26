@@ -1590,6 +1590,216 @@ export const guides: Guide[] = [
       }
     ],
     relatedSlugs: ['how-agencies-use-apollo', 'apollo-guide-for-agencies', 'pipeline-management-playbook']
+  },
+  {
+    slug: 'cold-email-with-apollo-io',
+    title: 'Cold Email with Apollo.io',
+    description: 'A practical framework for running effective cold email campaigns in Apollo.io from list to reply handling.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Build one high-fit segment and define campaign goal.',
+      'Write one clear offer message with simple CTA.',
+      'Set up a multi-touch sequence in Apollo.',
+      'Monitor replies daily and qualify quickly.',
+      'Iterate messaging based on reply quality each week.'
+    ],
+    useCases: ['Startup outbound launch', 'Agency pipeline sprint', 'Service company email motion'],
+    tips: ['Keep first email short.', 'Use one CTA.', 'Track qualified replies, not just opens.'],
+    faqs: [
+      { question: 'Can Apollo handle full cold email workflow?', answer: 'Yes, for most teams Apollo covers targeting, sequencing, and reply operations.' },
+      { question: 'What is the first metric to optimize?', answer: 'Positive reply rate by segment is a strong first optimization metric.' }
+    ],
+    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'apollo-cold-email-sequence-template', 'how-to-get-replies-to-cold-emails']
+  },
+  {
+    slug: 'how-to-send-cold-emails-using-apollo',
+    title: 'How to Send Cold Emails Using Apollo',
+    description: 'Step-by-step setup for sending cold emails in Apollo with better deliverability and response quality.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
+    steps: [
+      'Prepare sending domain and mailbox basics.',
+      'Build clean list in Apollo with strict fit criteria.',
+      'Create sequence with 4 to 6 touches.',
+      'Launch in controlled batches and monitor early signal.',
+      'Refine copy and targeting weekly.'
+    ],
+    useCases: ['Founder-led outbound', 'SDR onboarding', 'Agency outbound ops'],
+    tips: ['Start with low volume.', 'Avoid generic copy.', 'Respond to warm replies fast.'],
+    faqs: [
+      { question: 'How many emails should I send at first?', answer: 'Start small and scale after list quality and response patterns are stable.' },
+      { question: 'How long should a cold email be?', answer: 'Most winning first emails stay concise and focused on one outcome.' }
+    ],
+    relatedSlugs: ['cold-email-with-apollo-io', 'outreach-campaign-setup', 'building-email-sequences']
+  },
+  {
+    slug: 'email-outreach-strategy',
+    title: 'Email Outreach Strategy',
+    description: 'A strategic email outreach model for B2B teams using segmentation, messaging clarity, and response workflows.',
+    hub: 'guides',
+    industries: ['saas-companies', 'financial-services', 'consulting-firms'],
+    steps: [
+      'Define segment-level strategy before writing copy.',
+      'Map message angles to buyer pain and urgency.',
+      'Set sequence structure by campaign objective.',
+      'Align reply handling with qualification rules.',
+      'Review outcomes weekly and reallocate effort.'
+    ],
+    useCases: ['Quarterly outreach planning', 'RevOps process design', 'Agency strategy standardization'],
+    tips: ['Strategy beats volume.', 'Segment-first decisions improve conversion.', 'Document test hypotheses.'],
+    faqs: [
+      { question: 'What makes outreach strategy sustainable?', answer: 'Clear segmentation, measurable process, and weekly iteration cadence.' },
+      { question: 'Should every segment use the same sequence?', answer: 'No. Role and pain differences require message variation.' }
+    ],
+    relatedSlugs: ['email-prospecting-strategy', 'lead-generation-strategy-using-apollo', 'prospecting-with-apollo-io']
+  },
+  {
+    slug: 'building-email-sequences',
+    title: 'Building Email Sequences',
+    description: 'How to design email sequences that create conversations instead of spam-like follow-ups.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
+    steps: [
+      'Start with one core message and clear CTA.',
+      'Add 3 to 5 follow-ups with different angles.',
+      'Use role-specific relevance in each touch.',
+      'Set stop conditions for replies and no-fit signals.',
+      'Improve weak steps using reply-level feedback.'
+    ],
+    useCases: ['SDR sequence creation', 'Agency campaign templates', 'Recruitment outreach'],
+    tips: ['Each touch needs a purpose.', 'Avoid repeating identical follow-ups.', 'Track reply quality by step.'],
+    faqs: [
+      { question: 'How many touches are ideal?', answer: 'Most teams perform best with 4 to 7 touches depending on market.' },
+      { question: 'Should sequences be personalized heavily?', answer: 'Segment-level relevance plus one contextual line is often enough.' }
+    ],
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'follow-up-automation', 'personalization-techniques']
+  },
+  {
+    slug: 'follow-up-automation',
+    title: 'Follow-Up Automation',
+    description: 'How to automate follow-ups in Apollo while keeping messaging relevant and human.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'it-services', 'marketing-agencies'],
+    steps: [
+      'Define follow-up trigger logic by reply type.',
+      'Build sequence branches for warm and neutral responses.',
+      'Set safe timing cadence to avoid over-messaging.',
+      'Pause automation when manual qualification is needed.',
+      'Audit automation outcomes weekly.'
+    ],
+    useCases: ['SDR productivity workflows', 'Agency campaign scaling', 'Founder time optimization'],
+    tips: ['Automation needs clear guardrails.', 'Don’t automate low-context replies blindly.', 'Use pause rules aggressively.'],
+    faqs: [
+      { question: 'Can follow-up automation hurt reply quality?', answer: 'Yes, if messaging is repetitive and not tied to segment context.' },
+      { question: 'How often should automation be audited?', answer: 'Weekly in active campaigns is a good baseline.' }
+    ],
+    relatedSlugs: ['building-email-sequences', 'outreach-campaign-setup', 'how-to-send-cold-emails-using-apollo']
+  },
+  {
+    slug: 'personalization-techniques',
+    title: 'Personalization Techniques',
+    description: 'Practical personalization methods for cold outreach that improve replies without killing campaign speed.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'consulting-firms', 'healthcare'],
+    steps: [
+      'Segment audience before adding any personalization.',
+      'Personalize pain, context, and desired outcome.',
+      'Use one concise relevant line for higher-tier targets.',
+      'Test personalized vs non-personalized variants.',
+      'Scale only what improves positive replies.'
+    ],
+    useCases: ['Mid-market outreach', 'Consulting lead gen', 'Vertical prospecting campaigns'],
+    tips: ['Context > first-name tokens.', 'Personalize offer framing first.', 'Avoid fake personalization.'],
+    faqs: [
+      { question: 'What should be personalized first?', answer: 'Pain point and role context should be personalized before any cosmetic tokens.' },
+      { question: 'Does personalization always increase performance?', answer: 'No. Poor personalization can reduce trust and replies.' }
+    ],
+    relatedSlugs: ['personalization-at-scale-with-apollo', 'building-email-sequences', 'how-to-get-replies-to-cold-emails']
+  },
+  {
+    slug: 'how-to-get-replies-to-cold-emails',
+    title: 'How to Get Replies to Cold Emails',
+    description: 'A conversion-focused approach to increase cold email replies through targeting, offer clarity, and follow-up quality.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'financial-services'],
+    steps: [
+      'Improve segment quality before rewriting copy.',
+      'Use problem-first messaging with one concrete outcome.',
+      'Shorten first-touch email and simplify CTA.',
+      'Run follow-ups with varied intent, not repetition.',
+      'Measure positive replies and meetings by segment.'
+    ],
+    useCases: ['Low-reply campaign recovery', 'New outbound setup', 'Reply-rate optimization sprint'],
+    tips: ['Better targeting beats clever phrasing.', 'Clear CTA improves response rates.', 'Fast response handling increases meeting conversion.'],
+    faqs: [
+      { question: 'Why are cold emails not getting replies?', answer: 'Most failures come from weak targeting, unclear value, or repetitive follow-ups.' },
+      { question: 'How quickly should teams reply to positive responses?', answer: 'Same-day responses usually perform better for meeting conversion.' }
+    ],
+    relatedSlugs: ['cold-email-with-apollo-io', 'reply-strategy-for-b2b-outreach', 'email-prospecting-strategy']
+  },
+  {
+    slug: 'email-prospecting-strategy',
+    title: 'Email Prospecting Strategy',
+    description: 'How to design a prospecting strategy around email with clear segments, sequence logic, and qualification flow.',
+    hub: 'guides',
+    industries: ['saas-companies', 'manufacturing', 'it-services'],
+    steps: [
+      'Define segment priorities by potential deal value.',
+      'Build account and contact lists in Apollo by fit.',
+      'Map sequence approach to role and buying stage.',
+      'Create qualification criteria for reply triage.',
+      'Scale winning segments with controlled volume growth.'
+    ],
+    useCases: ['New market prospecting', 'ABM-lite campaigns', 'Service sales expansion'],
+    tips: ['Prospecting strategy should link to pipeline math.', 'Keep segment count low initially.', 'Use weekly scorecards.'],
+    faqs: [
+      { question: 'How is prospecting strategy different from campaign setup?', answer: 'Strategy defines who and why; setup defines how and when.' },
+      { question: 'When should new segments be added?', answer: 'After at least one segment shows repeatable qualified reply performance.' }
+    ],
+    relatedSlugs: ['email-outreach-strategy', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo']
+  },
+  {
+    slug: 'outreach-campaign-setup',
+    title: 'Outreach Campaign Setup',
+    description: 'A complete outreach campaign setup guide in Apollo from list prep to sequence launch and QA.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Define campaign objective and ICP slice.',
+      'Prepare list with account-first filters.',
+      'Create sequence steps and reply handling logic.',
+      'Launch in controlled batches with QA checks.',
+      'Inspect results and optimize weakest stage weekly.'
+    ],
+    useCases: ['New outbound campaign launch', 'Agency client campaign setup', 'Startup GTM sprint'],
+    tips: ['Setup quality determines downstream performance.', 'Avoid launching without reply workflow.', 'Keep first sprint narrow.'],
+    faqs: [
+      { question: 'What should be checked before launch?', answer: 'List quality, message relevance, and reply ownership are core pre-launch checks.' },
+      { question: 'How long before first optimization?', answer: 'Most teams can run first practical optimization within one week.' }
+    ],
+    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'follow-up-automation', 'multi-step-outreach-playbook']
+  },
+  {
+    slug: 'multi-step-outreach-playbook',
+    title: 'Multi-Step Outreach Playbook',
+    description: 'A practical multi-step outreach playbook for consistent B2B replies and pipeline conversion.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Build one segment and one offer hypothesis.',
+      'Design 5-step sequence with varied message intent.',
+      'Set timing rules and stop logic in Apollo.',
+      'Process responses with qualification-first workflow.',
+      'Use weekly metrics to adjust sequence and targeting.'
+    ],
+    useCases: ['Outbound playbook standardization', 'SDR onboarding process', 'Agency campaign operations'],
+    tips: ['Each step should add new value.', 'Measure by qualified outcomes.', 'Keep playbook documented.'],
+    faqs: [
+      { question: 'How many steps should a playbook include?', answer: 'Five to seven steps is common for B2B outbound without overfatigue.' },
+      { question: 'Should multi-step outreach include multiple channels?', answer: 'It can, but email-first playbooks are often enough initially.' }
+    ],
+    relatedSlugs: ['outreach-campaign-setup', 'building-email-sequences', 'how-to-get-replies-to-cold-emails']
   }
 ];
 
