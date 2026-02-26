@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
 import { renderApolloText } from '@/lib/render-apollo-text';
 
@@ -8,7 +9,7 @@ export const Footer = () => (
     <Container>
       <div className="grid gap-8 py-12 text-sm text-slate-600 md:grid-cols-4">
         <div>
-          <p className="font-semibold text-slate-900">B2B Lead Generation Authority Hub</p>
+          <BrandLogo />
           <p className="mt-2 max-w-xs">
             {renderApolloText(
               'Find the right outbound strategy, learn proven workflows, and move faster with Apollo.'

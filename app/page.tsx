@@ -5,6 +5,7 @@ import { ApolloButton } from '@/components/apollo-button';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
+import { Icons } from '@/components/icons';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
@@ -16,11 +17,16 @@ export const metadata = buildMetadata({
   path: '/'
 });
 
-const topSolutions: Array<{ title: string; href: Route; description: string }> = [
-  { title: 'Find Clients', href: '/find-clients', description: 'Build high-fit lead lists and identify decision-makers.' },
-  { title: 'Start Outreach', href: '/outreach', description: 'Launch sequences, follow-ups, and reply systems.' },
-  { title: 'Build Pipeline', href: '/sales-pipeline', description: 'Turn replies into opportunities and revenue.' },
-  { title: 'Grow Revenue', href: '/guides', description: 'Use proven templates, frameworks, and case-driven playbooks.' }
+const topSolutions: Array<{ title: string; href: Route; description: string; icon: keyof typeof Icons }> = [
+  {
+    title: 'Find Clients',
+    href: '/find-clients',
+    description: 'Build high-fit lead lists and identify decision-makers.',
+    icon: 'clients'
+  },
+  { title: 'Start Outreach', href: '/outreach', description: 'Launch sequences, follow-ups, and reply systems.', icon: 'outreach' },
+  { title: 'Build Pipeline', href: '/sales-pipeline', description: 'Turn replies into opportunities and revenue.', icon: 'pipeline' },
+  { title: 'Grow Revenue', href: '/guides', description: 'Use proven templates, frameworks, and case-driven playbooks.', icon: 'revenue' }
 ];
 
 export default function HomePage() {
@@ -59,6 +65,7 @@ export default function HomePage() {
               href={item.href}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200"
             >
+              <span>{Icons[item.icon]()}</span>
               <h3 className="text-lg font-semibold text-slate-900">{item.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{item.description}</p>
             </Link>
@@ -105,14 +112,17 @@ export default function HomePage() {
         <h2 className="text-2xl font-semibold text-slate-900">Growth Resources</h2>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span>{Icons.guide()}</span>
             <p className="text-sm font-semibold text-slate-900">Guides</p>
             <p className="mt-2 text-sm text-slate-600">Step-by-step workflows for lead generation and outbound execution.</p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span>{Icons.template()}</span>
             <p className="text-sm font-semibold text-slate-900">Templates</p>
             <p className="mt-2 text-sm text-slate-600">Message templates and sequence structures for common campaign goals.</p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <span>{Icons.tutorial()}</span>
             <p className="text-sm font-semibold text-slate-900">Tutorials</p>
             <p className="mt-2 text-sm text-slate-600">
               {renderApolloText('Hands-on Apollo tutorials to move from setup to pipeline quickly.')}

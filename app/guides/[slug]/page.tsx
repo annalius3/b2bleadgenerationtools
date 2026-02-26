@@ -86,7 +86,7 @@ export default async function GuidePage({ params }: Props) {
         <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
         <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
           <Image
-            src={`/images/guides/${guide.slug}-1.svg`}
+            src={`/images/guides/${guide.slug}-1.jpg`}
             alt={`${guide.title} visual`}
             width={1400}
             height={780}
@@ -183,7 +183,7 @@ export default async function GuidePage({ params }: Props) {
 
           <div className="my-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
             <Image
-              src={`/images/guides/${guide.slug}-2.svg`}
+              src={`/images/guides/${guide.slug}-2.jpg`}
               alt={`${guide.title} data graphic`}
               width={1400}
               height={780}

@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Route } from 'next';
 
 import { ApolloButton } from '@/components/apollo-button';
+import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
 
 const menu: Array<{ href: Route; label: string }> = [
@@ -17,9 +18,7 @@ export const Header = () => (
   <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-lg">
     <Container>
       <div className="flex h-16 items-center justify-between gap-3">
-        <Link href="/" className="truncate text-sm font-semibold text-slate-900 sm:text-base">
-          b2bleadgenerationtools.com
-        </Link>
+        <BrandLogo compact />
         <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 lg:flex">
           {menu.map((item) => (
             <Link key={item.href} href={item.href} className="transition hover:text-blue-700">
