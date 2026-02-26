@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
+import { ApolloButton } from '@/components/apollo-button';
 import { renderApolloText } from '@/lib/render-apollo-text';
 
 export const HubHero = ({
@@ -15,15 +17,15 @@ export const HubHero = ({
   imageSrc?: string;
   imageAlt?: string;
 }) => (
-  <section className="py-12">
-    <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/60 to-cyan-50/40 p-7 shadow-[0_26px_64px_-46px_rgba(37,99,235,0.55)] sm:p-10">
+  <section className="py-8 sm:py-10">
+    <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/60 to-cyan-50/40 p-6 shadow-[0_26px_64px_-46px_rgba(37,99,235,0.55)] sm:p-8">
       <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-200/35 blur-3xl" />
       <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
-      <div className={`grid gap-6 ${imageSrc ? 'lg:grid-cols-[1.1fr_0.9fr] lg:items-center' : ''}`}>
+      <div className={`grid gap-5 ${imageSrc ? 'lg:grid-cols-[1.15fr_0.85fr] lg:items-center' : ''}`}>
         <div>
-          <h1 className="text-4xl font-semibold text-slate-900 sm:text-5xl">{title}</h1>
-          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(description)}</p>
-          <div className="mt-6 flex flex-wrap gap-2">
+          <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{title}</h1>
+          <p className="mt-3 max-w-3xl text-slate-700">{renderApolloText(description)}</p>
+          <div className="mt-4 flex flex-wrap gap-2">
             {subtopics.map((topic) => (
               <span
                 key={topic}
@@ -33,18 +35,39 @@ export const HubHero = ({
               </span>
             ))}
           </div>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link href="/guides" className="btn-secondary">
+              Explore Guides
+            </Link>
+            <ApolloButton label="Try Apollo" />
+          </div>
+          <div className="mt-4 grid gap-2 sm:grid-cols-3">
+            <div className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Lead Quality</p>
+              <p className="mt-1 text-sm text-slate-700">Higher-fit accounts first</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Execution</p>
+              <p className="mt-1 text-sm text-slate-700">Weekly campaign iteration</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white/90 p-3 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Pipeline</p>
+              <p className="mt-1 text-sm text-slate-700">Replies to revenue focus</p>
+            </div>
+          </div>
         </div>
         {imageSrc ? (
           <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-            <div className="absolute left-5 top-5 z-10 rounded-xl border border-slate-200/80 bg-white/90 px-3 py-2 text-xs shadow-sm backdrop-blur">
-              <p className="font-semibold text-slate-900">Outbound Score</p>
-              <p className="text-slate-600">+34% qualified pipeline</p>
+            <div className="aspect-[4/3] overflow-hidden rounded-xl">
+              <Image
+                src={imageSrc}
+                alt={imageAlt ?? title}
+                width={1024}
+                height={768}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
             </div>
-            <div className="absolute bottom-5 right-5 z-10 rounded-xl border border-slate-200/80 bg-white/90 px-3 py-2 text-xs shadow-sm backdrop-blur">
-              <p className="font-semibold text-slate-900">Weekly Sprint</p>
-              <p className="text-slate-600">Predictable execution</p>
-            </div>
-            <Image src={imageSrc} alt={imageAlt ?? title} width={1024} height={768} className="h-auto w-full rounded-xl object-cover" loading="lazy" />
           </div>
         ) : (
           <div className="grid gap-3 sm:grid-cols-2">

@@ -700,6 +700,316 @@ export const guides: Guide[] = [
       }
     ],
     relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-for-beginners', 'apollo-cold-email-sequence-template']
+  },
+  {
+    slug: 'how-to-find-b2b-leads-with-apollo-io',
+    title: 'How to Find B2B Leads with Apollo.io',
+    description: 'A practical playbook to find high-fit B2B leads in Apollo.io using ICP filters, enrichment, and segmentation.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Define a strict ICP with company size, geography, and pain-point fit.',
+      'Build account-first lists and then map the right buying roles.',
+      'Use intent and growth signals to prioritize warm opportunities.',
+      'Enrich and clean records before launching any outreach.',
+      'Score and route leads into Tier 1, Tier 2, and nurture tracks.'
+    ],
+    useCases: ['Founder-led SaaS outbound', 'Agency client acquisition', 'IT service regional expansion'],
+    tips: [
+      'Start narrow with one segment and scale only after message-market fit.',
+      'Measure positive replies and qualified meetings, not list volume.',
+      'Refresh lead quality weekly to avoid pipeline decay.'
+    ],
+    faqs: [
+      {
+        question: 'How many leads should I start with in Apollo?',
+        answer: 'A focused set of 150 to 300 high-fit leads per segment is usually enough for fast iteration.'
+      },
+      {
+        question: 'Should I prioritize contacts or companies first?',
+        answer: 'Companies first, then contacts. Better account selection improves outreach performance downstream.'
+      }
+    ],
+    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo', 'apollo-io-setup-guide']
+  },
+  {
+    slug: 'how-to-get-clients-using-apollo-io',
+    title: 'How to Get Clients Using Apollo.io',
+    description: 'A direct system to turn Apollo prospecting into booked meetings and paying B2B clients.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
+    steps: [
+      'Choose one service offer and one ICP before building campaigns.',
+      'Create targeted Apollo lists by role, urgency, and account fit.',
+      'Launch a simple role-based sequence with one clear CTA.',
+      'Respond fast to positive replies and qualify for real buying intent.',
+      'Track win themes and refine your offer every week.'
+    ],
+    useCases: ['New agency client acquisition', 'Consulting lead generation', 'Startup first revenue push'],
+    tips: [
+      'Clear offer positioning beats long email copy.',
+      'Fast response handling often doubles meeting conversion from replies.',
+      'Use objection notes to improve future campaign angles.'
+    ],
+    faqs: [
+      {
+        question: 'Can Apollo work for small teams without SDRs?',
+        answer: 'Yes. Founder-led and lean teams can run effective outbound if process ownership is clear.'
+      },
+      {
+        question: 'How soon can I get first client results?',
+        answer: 'Most focused teams see early signal in 2 to 4 weeks with weekly iteration.'
+      }
+    ],
+    relatedSlugs: ['startup-outbound-first-customers', 'apollo-cold-email-sequence-template', 'is-apollo-io-worth-it']
+  },
+  {
+    slug: 'generate-sales-leads-with-apollo',
+    title: 'Generate Sales Leads with Apollo',
+    description: 'A repeatable lead generation workflow in Apollo for teams that need steady top-of-funnel pipeline.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'recruiters', 'financial-services'],
+    steps: [
+      'Define target verticals and buyer roles with clear disqualification rules.',
+      'Use Apollo filters to build high-intent prospect pools.',
+      'Validate data quality with sampling before full campaign launch.',
+      'Segment leads by urgency and value potential.',
+      'Feed qualified segments into outreach and track conversion quality.'
+    ],
+    useCases: ['Recruitment business development', 'SaaS outbound expansion', 'Finance services niche targeting'],
+    tips: [
+      'Avoid over-exporting low-fit lists just to increase activity numbers.',
+      'Lead quality consistency beats one-time volume spikes.',
+      'Align lead scoring with downstream pipeline stages.'
+    ],
+    faqs: [
+      {
+        question: 'What is the main lead generation mistake in Apollo?',
+        answer: 'Most teams scale list size too quickly before validating segment quality and message fit.'
+      },
+      {
+        question: 'Should I enrich every lead automatically?',
+        answer: 'Enrich core segments first. Apply deeper enrichment where pipeline value justifies the cost.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'lead-generation-strategy-using-apollo', 'apollo-io-features-overview']
+  },
+  {
+    slug: 'how-to-build-a-lead-list-in-apollo',
+    title: 'How to Build a Lead List in Apollo',
+    description: 'Step-by-step list building in Apollo with account filters, contact mapping, and quality control.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
+    steps: [
+      'Set list criteria by ICP and expected deal size.',
+      'Build account segments first and add role-specific contacts.',
+      'Exclude weak-fit industries and titles to protect quality.',
+      'Run list QA checks for duplicates and invalid records.',
+      'Tag lists for campaign ownership and testing purpose.'
+    ],
+    useCases: ['Outbound list prep for SDRs', 'Agency niche prospect list creation', 'Manufacturing ABM account mapping'],
+    tips: [
+      'A smaller high-fit list usually outperforms a large mixed list.',
+      'Track which list source drives meetings, not just replies.',
+      'Use clear naming conventions to reduce ops confusion.'
+    ],
+    faqs: [
+      {
+        question: 'How large should one Apollo lead list be?',
+        answer: 'A practical starting size is 200 to 500 records per campaign segment.'
+      },
+      {
+        question: 'How often should I rebuild lists?',
+        answer: 'Review and refresh every 2 to 4 weeks depending on campaign velocity.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'apollo-io-tutorial-step-by-step']
+  },
+  {
+    slug: 'finding-decision-makers-with-apollo',
+    title: 'Finding Decision Makers with Apollo',
+    description: 'How to identify true decision-makers, champions, and buying influencers using Apollo filters and context.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Map buying committee roles before collecting contacts.',
+      'Filter by seniority, function, and reporting structure.',
+      'Prioritize accounts with clear initiative ownership signals.',
+      'Build multithread contact sets for each target account.',
+      'Customize outreach by role-specific outcomes and risk.'
+    ],
+    useCases: ['Enterprise pilot outreach', 'Consulting proposal targeting', 'Technical service deal qualification'],
+    tips: [
+      'Champion + economic buyer coverage improves close probability.',
+      'Do not rely on title alone; validate actual decision context.',
+      'Use role-specific messaging for each stakeholder.'
+    ],
+    faqs: [
+      {
+        question: 'How many contacts per account should I target?',
+        answer: 'Three to five stakeholders per account is a practical range for most B2B deals.'
+      },
+      {
+        question: 'Is multithreading necessary for SMB deals?',
+        answer: 'Often yes. Even SMB deals can stall without influencer and approver alignment.'
+      }
+    ],
+    relatedSlugs: ['account-based-prospecting-framework', 'how-to-build-a-lead-list-in-apollo', 'how-to-find-companies-to-sell-to']
+  },
+  {
+    slug: 'how-to-find-companies-to-sell-to',
+    title: 'How to Find Companies to Sell To',
+    description: 'A practical framework to identify target companies with the highest probability of buying.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
+    steps: [
+      'Define your best-fit customer profile from past wins.',
+      'Create account filters for size, region, and market maturity.',
+      'Use growth and hiring indicators to find active buyers.',
+      'Score accounts by urgency, strategic fit, and accessibility.',
+      'Prioritize top accounts for multithread outreach.'
+    ],
+    useCases: ['New vertical market entry', 'Agency service repositioning', 'Manufacturing solution expansion'],
+    tips: [
+      'Prioritize accounts with strong pain and clear owner.',
+      'Past-win analysis is one of the best targeting inputs.',
+      'Keep a disqualification list to protect outbound focus.'
+    ],
+    faqs: [
+      {
+        question: 'What if I have no closed-won history yet?',
+        answer: 'Use competitor customers and ICP assumptions, then refine targeting from early campaign feedback.'
+      },
+      {
+        question: 'How often should target account criteria change?',
+        answer: 'Quarterly is a good baseline, with monthly tweaks based on response and pipeline quality.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'account-based-prospecting-framework']
+  },
+  {
+    slug: 'prospecting-with-apollo-io',
+    title: 'Prospecting with Apollo.io',
+    description: 'A modern prospecting system in Apollo.io from account selection to first qualified conversation.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
+    steps: [
+      'Build focused prospect pools by use case and buyer role.',
+      'Create campaign angles tied to each segment pain point.',
+      'Launch sequences with clear CTA and practical next step.',
+      'Handle replies with qualification-first workflow.',
+      'Review segment performance weekly and reallocate effort.'
+    ],
+    useCases: ['SDR team sprint planning', 'Agency outbound operations', 'Recruiter business development'],
+    tips: [
+      'Prospecting quality improves when segmentation and message strategy are linked.',
+      'Reply quality is a stronger signal than open rate.',
+      'Always log objection patterns for faster iteration.'
+    ],
+    faqs: [
+      {
+        question: 'How many prospecting segments should I run at once?',
+        answer: 'Two to three segments is usually the best balance of speed and control.'
+      },
+      {
+        question: 'Should prospecting and sequencing be owned by one person?',
+        answer: 'In lean teams yes, but role clarity and process docs are essential.'
+      }
+    ],
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'reply-strategy-for-b2b-outreach', 'how-apollo-io-works']
+  },
+  {
+    slug: 'how-to-build-a-sales-pipeline',
+    title: 'How to Build a Sales Pipeline',
+    description: 'How to design a predictable B2B sales pipeline from first reply to closed-won opportunity.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'financial-services'],
+    steps: [
+      'Define pipeline stages with strict entry and exit criteria.',
+      'Set qualification standards before handoff to account executives.',
+      'Implement response-time SLA for warm replies and meetings.',
+      'Track stage conversion and time-in-stage every week.',
+      'Run continuous improvements on bottleneck stages.'
+    ],
+    useCases: ['First pipeline architecture build', 'RevOps process standardization', 'Sales team scaling initiative'],
+    tips: [
+      'Pipeline hygiene is a weekly discipline, not a quarterly cleanup.',
+      'Faster follow-up after positive reply increases meeting rate materially.',
+      'Stage definitions should be binary to avoid fuzzy forecasting.'
+    ],
+    faqs: [
+      {
+        question: 'What is the most important early pipeline metric?',
+        answer: 'Qualified meeting-to-opportunity conversion is one of the clearest early indicators.'
+      },
+      {
+        question: 'How many pipeline stages are ideal?',
+        answer: 'Most B2B teams operate effectively with five to seven well-defined stages.'
+      }
+    ],
+    relatedSlugs: ['pipeline-management-playbook', 'lead-qualification-system', 'deal-closing-strategies-b2b']
+  },
+  {
+    slug: 'lead-generation-strategy-using-apollo',
+    title: 'Lead Generation Strategy Using Apollo',
+    description: 'A strategic lead generation framework using Apollo for consistent pipeline growth across outbound motions.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Choose one market segment and define core buying triggers.',
+      'Build account and contact strategy with clear prioritization tiers.',
+      'Align message strategy to segment-specific pains and outcomes.',
+      'Launch, inspect, and iterate campaigns on weekly cadence.',
+      'Tie campaign outcomes to real pipeline and revenue metrics.'
+    ],
+    useCases: ['Quarterly GTM planning', 'Agency outbound strategy design', 'Consulting pipeline growth system'],
+    tips: [
+      'Strategy should define what not to target as much as what to target.',
+      'One clear weekly hypothesis improves execution quality.',
+      'Link campaign decisions to revenue outcomes, not vanity metrics.'
+    ],
+    faqs: [
+      {
+        question: 'What makes an Apollo strategy sustainable?',
+        answer: 'Strong segmentation discipline, documented workflows, and weekly decision loops.'
+      },
+      {
+        question: 'Should strategy differ by industry?',
+        answer: 'Yes. ICP assumptions, deal cycle, and stakeholder mapping vary significantly by vertical.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'prospecting-with-apollo-io', 'how-to-scale-client-acquisition']
+  },
+  {
+    slug: 'how-to-scale-client-acquisition',
+    title: 'How to Scale Client Acquisition',
+    description: 'A practical scale-up model for client acquisition using Apollo workflows, process controls, and team cadence.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Stabilize one repeatable acquisition motion before adding channels.',
+      'Document playbooks for list quality, messaging, and reply handling.',
+      'Expand segments gradually with clear quality thresholds.',
+      'Add team capacity only after process metrics stay stable.',
+      'Build weekly review rituals for conversion and pipeline quality.'
+    ],
+    useCases: ['Startup moving from founder-led sales', 'Agency scaling from 3 to 10 clients monthly', 'IT services outbound expansion'],
+    tips: [
+      'Scale process quality first, then campaign volume.',
+      'Hiring before process clarity usually creates more noise than growth.',
+      'Protect unit economics while increasing outbound activity.'
+    ],
+    faqs: [
+      {
+        question: 'When is a team ready to scale client acquisition?',
+        answer: 'When one segment repeatedly produces qualified pipeline with stable conversion metrics.'
+      },
+      {
+        question: 'What breaks most scaling efforts?',
+        answer: 'Inconsistent list quality, weak handoff rules, and slow response management are common failure points.'
+      }
+    ],
+    relatedSlugs: ['how-to-get-clients-using-apollo-io', 'low-budget-lead-generation-startups', 'lead-generation-strategy-using-apollo']
   }
 ];
 
