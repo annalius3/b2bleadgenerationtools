@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+[id] {
+  scroll-margin-top: 110px;
+}
+
 @layer components {
   .btn-primary {
     @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 px-4 py-2 text-sm font-semibold !text-white shadow-[0_12px_28px_-16px_rgba(37,99,235,0.9)] transition duration-200 hover:-translate-y-0.5 hover:from-blue-700 hover:to-cyan-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 focus-visible:ring-offset-2;
