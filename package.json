@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "check:images": "node scripts/check-image-duplicates.mjs",
+    "publish:check": "npm run lint && npm run build && npm run check:images"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
