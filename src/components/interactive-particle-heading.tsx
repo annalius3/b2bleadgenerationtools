@@ -9,6 +9,7 @@ type Particle = {
   oy: number;
   vx: number;
   vy: number;
+  size: number;
 };
 
 const wrapLines = (ctx: CanvasRenderingContext2D, text: string, maxWidth: number) => {
@@ -92,19 +93,21 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       const data = context.getImageData(0, 0, width, height).data;
       context.clearRect(0, 0, width, height);
 
-      const step = width >= 1024 ? 5 : 4;
+      const step = 2;
       particles = [];
       for (let y = 0; y < height; y += step) {
         for (let x = 0; x < width; x += step) {
           const alpha = data[(y * width + x) * 4 + 3];
-          if (alpha > 140) {
+          if (alpha > 80) {
+            const scatter = 18;
             particles.push({
-              x: x + (Math.random() - 0.5) * 2.5,
-              y: y + (Math.random() - 0.5) * 2.5,
+              x: x + (Math.random() - 0.5) * scatter,
+              y: y + (Math.random() - 0.5) * scatter,
               ox: x,
               oy: y,
               vx: 0,
-              vy: 0
+              vy: 0,
+              size: 2.2 + Math.random() * 1.6
             });
           }
         }
@@ -113,8 +116,8 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
 
     const tick = () => {
       context.clearRect(0, 0, width, height);
-      context.fillStyle = '#1d4ed8';
-      const radius = 90;
+      context.fillStyle = '#000000';
+      const radius = 110;
 
       for (const particle of particles) {
         if (mouse.active && !reducedMotion) {
@@ -135,7 +138,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
         particle.x += particle.vx;
         particle.y += particle.vy;
 
-        context.fillRect(particle.x, particle.y, 1.8, 1.8);
+        context.fillRect(particle.x, particle.y, particle.size, particle.size);
       }
 
       raf = requestAnimationFrame(tick);
