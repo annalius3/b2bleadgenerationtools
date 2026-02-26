@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
 import { Icons } from '@/components/icons';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { getGuidesByIndustry, hubContent, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'By Industry Hub',
@@ -15,6 +17,12 @@ export const metadata = buildMetadata({
 export default function ByIndustryPage() {
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'By Industry', item: `${siteConfig.url}/by-industry` }
+        ]}
+      />
       <HubHero
         title={hubContent['by-industry'].title}
         description={hubContent['by-industry'].description}

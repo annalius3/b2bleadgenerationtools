@@ -3,8 +3,10 @@ import { notFound } from 'next/navigation';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { HubHero } from '@/components/hub-hero';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { getGuidesByIndustry, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -41,6 +43,13 @@ export default async function IndustryPage({ params }: Props) {
 
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'By Industry', item: `${siteConfig.url}/by-industry` },
+          { name: industry.name, item: `${siteConfig.url}/by-industry/${industry.slug}` }
+        ]}
+      />
       <HubHero
         title={industry.name}
         description={industry.description}

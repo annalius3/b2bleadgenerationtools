@@ -1,6 +1,8 @@
 import { Container } from '@/components/container';
 import { HubPage } from '@/components/hub-page';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Find Clients Hub',
@@ -11,6 +13,12 @@ export const metadata = buildMetadata({
 export default function FindClientsPage() {
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'Find Clients', item: `${siteConfig.url}/find-clients` }
+        ]}
+      />
       <HubPage hub="find-clients" />
     </Container>
   );

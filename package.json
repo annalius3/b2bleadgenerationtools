@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "check:images": "node scripts/check-image-duplicates.mjs",
-    "publish:check": "npm run lint && npm run build && npm run check:images"
+    "check:interlinking": "node scripts/check-interlinking.mjs",
+    "publish:check": "npm run lint && npm run build && npm run check:images && npm run check:interlinking"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

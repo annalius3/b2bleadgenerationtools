@@ -18,7 +18,11 @@ export const metadata: Metadata = {
     default: 'B2B Lead Generation Hub',
     template: `%s | ${siteConfig.name}`
   },
-  description: siteConfig.description
+  description: siteConfig.description,
+  icons: {
+    icon: '/icon.svg',
+    apple: '/apple-icon.svg'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

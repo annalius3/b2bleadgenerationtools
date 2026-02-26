@@ -1,8 +1,10 @@
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { HubHero } from '@/components/hub-hero';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { guides, hubContent } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Guides Hub',
@@ -13,6 +15,12 @@ export const metadata = buildMetadata({
 export default function GuidesPage() {
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'Guides', item: `${siteConfig.url}/guides` }
+        ]}
+      />
       <HubHero
         title={hubContent.guides.title}
         description={hubContent.guides.description}

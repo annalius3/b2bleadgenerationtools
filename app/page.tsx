@@ -11,6 +11,8 @@ import { InteractiveParticleHeading } from '@/components/interactive-particle-he
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
+import { siteConfig } from '@/lib/site';
+import { BreadcrumbSchema, WebSiteSchema } from '@/components/seo-schemas';
 
 export const metadata = buildMetadata({
   title: 'Get B2B Clients Faster with Proven Outbound Strategies',
@@ -34,6 +36,8 @@ const topSolutions: Array<{ title: string; href: Route; description: string; ico
 export default function HomePage() {
   return (
     <Container>
+      <WebSiteSchema url={siteConfig.url} name={siteConfig.name} />
+      <BreadcrumbSchema items={[{ name: 'Home', item: siteConfig.url }]} />
       <section className="py-12 sm:py-16">
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50 to-slate-50 p-8 shadow-[0_28px_60px_-44px_rgba(37,99,235,0.55)] sm:p-10">
           <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-200/35 blur-3xl" />

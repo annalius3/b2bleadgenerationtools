@@ -1,6 +1,8 @@
 import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Affiliate Disclosure',
@@ -11,6 +13,12 @@ export const metadata = buildMetadata({
 export default function AffiliateDisclosurePage() {
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'Affiliate Disclosure', item: `${siteConfig.url}/affiliate-disclosure` }
+        ]}
+      />
       <HubHero
         title="Affiliate Disclosure"
         description="Some pages include affiliate links. If you sign up through these links, we may earn a commission at no extra cost. Editorial opinions remain independent and based on practical usability."

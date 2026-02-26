@@ -1,6 +1,8 @@
 import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
+import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -11,6 +13,12 @@ export const metadata = buildMetadata({
 export default function PrivacyPage() {
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'Privacy Policy', item: `${siteConfig.url}/privacy` }
+        ]}
+      />
       <HubHero
         title="Privacy Policy"
         description="We collect minimal analytics and form data to improve site experience. We do not sell personal data."

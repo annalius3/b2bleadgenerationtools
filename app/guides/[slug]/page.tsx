@@ -6,9 +6,11 @@ import { notFound } from 'next/navigation';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
+import { ArticleSchema, BreadcrumbSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
+import { siteConfig } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -71,7 +73,8 @@ export async function generateMetadata({ params }: Props) {
   return buildMetadata({
     title: guide.title,
     description: guide.description,
-    path: `/guides/${guide.slug}`
+    path: `/guides/${guide.slug}`,
+    type: 'article'
   });
 }
 
@@ -102,6 +105,19 @@ export default async function GuidePage({ params }: Props) {
 
   return (
     <Container>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', item: siteConfig.url },
+          { name: 'Guides', item: `${siteConfig.url}/guides` },
+          { name: guide.title, item: `${siteConfig.url}/guides/${guide.slug}` }
+        ]}
+      />
+      <ArticleSchema
+        title={guide.title}
+        description={guide.description}
+        url={`${siteConfig.url}/guides/${guide.slug}`}
+        image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
+      />
       <section className="py-12">
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/55 to-cyan-50/35 p-7 shadow-[0_24px_56px_-44px_rgba(37,99,235,0.5)] sm:p-9">
           <div className="pointer-events-none absolute -right-24 -top-24 h-60 w-60 rounded-full bg-blue-200/35 blur-3xl" />
