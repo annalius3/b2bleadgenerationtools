@@ -37,7 +37,7 @@ export default function HomePage() {
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50 to-slate-50 p-8 shadow-[0_28px_60px_-44px_rgba(37,99,235,0.55)] sm:p-10">
           <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-200/35 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-cyan-200/25 blur-3xl" />
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
               <h1 className="max-w-4xl text-4xl font-semibold leading-tight text-slate-900 sm:text-5xl">
                 Get B2B Clients Faster with Proven Outbound Strategies
@@ -57,7 +57,7 @@ export default function HomePage() {
                 <ApolloButton label="Try Apollo" className="px-5 py-2.5" />
               </div>
             </div>
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+            <div className="mx-auto w-full max-w-[520px] overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
               <Image
                 src="/images/home/hero-team.jpg"
                 alt="B2B sales team reviewing outbound performance"
@@ -121,7 +121,7 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-        <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+        <div className="mx-auto mt-6 w-full max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
           <Image
             src="/images/home/industry-business.jpg"
             alt="Business team discussing growth strategy by industry"
@@ -159,7 +159,7 @@ export default function HomePage() {
       <section className="py-12">
         <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <ApolloCtaBlock title="Start generating B2B leads today with Apollo" />
-          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
+          <div className="mx-auto w-full max-w-xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
             <Image
               src="/images/home/cta-founder.jpg"
               alt="Founder analyzing pipeline metrics with modern B2B tools"
