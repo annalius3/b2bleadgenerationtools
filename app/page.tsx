@@ -5,6 +5,7 @@ import { ApolloButton } from '@/components/apollo-button';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
+import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
 
@@ -33,7 +34,9 @@ export default function HomePage() {
             Get B2B Clients Faster with Proven Outbound Strategies
           </h1>
           <p className="mt-5 max-w-2xl text-slate-700">
-            Learn how to find leads, contact decision-makers, and build a predictable sales pipeline.
+            {renderApolloText(
+              'Learn how to find leads, contact decision-makers, and build a predictable sales pipeline.'
+            )}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -111,7 +114,9 @@ export default function HomePage() {
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold text-slate-900">Tutorials</p>
-            <p className="mt-2 text-sm text-slate-600">Hands-on Apollo tutorials to move from setup to pipeline quickly.</p>
+            <p className="mt-2 text-sm text-slate-600">
+              {renderApolloText('Hands-on Apollo tutorials to move from setup to pipeline quickly.')}
+            </p>
           </div>
         </div>
       </section>

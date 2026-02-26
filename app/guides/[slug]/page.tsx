@@ -5,6 +5,7 @@ import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
 import { getGuideBySlug, guides } from '@/lib/content';
+import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 
 type Props = { params: Promise<{ slug: string }> };
@@ -57,7 +58,7 @@ export default async function GuidePage({ params }: Props) {
       <section className="py-12">
         <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
         <h1 className="mt-2 max-w-4xl text-4xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
-        <p className="mt-4 max-w-3xl text-slate-700">{guide.description}</p>
+        <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
       </section>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
@@ -78,7 +79,7 @@ export default async function GuidePage({ params }: Props) {
           <h2 id="steps">Actionable Steps</h2>
           <ol>
             {guide.steps.map((step) => (
-              <li key={step}>{step}</li>
+              <li key={step}>{renderApolloText(step)}</li>
             ))}
           </ol>
 
@@ -92,7 +93,7 @@ export default async function GuidePage({ params }: Props) {
           <h2 id="use-cases">Real Business Use Cases</h2>
           <ul>
             {guide.useCases.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>{renderApolloText(item)}</li>
             ))}
           </ul>
 
@@ -101,7 +102,7 @@ export default async function GuidePage({ params }: Props) {
           <h2 id="tips">Execution Tips</h2>
           <ul>
             {guide.tips.map((tip) => (
-              <li key={tip}>{tip}</li>
+              <li key={tip}>{renderApolloText(tip)}</li>
             ))}
           </ul>
 
@@ -119,7 +120,7 @@ export default async function GuidePage({ params }: Props) {
             {guide.faqs.map((faq) => (
               <div key={faq.question} className="rounded-xl border border-slate-200 bg-slate-50 p-4">
                 <h3 className="mt-0 text-base">{faq.question}</h3>
-                <p className="mt-2 text-sm text-slate-700">{faq.answer}</p>
+                <p className="mt-2 text-sm text-slate-700">{renderApolloText(faq.answer)}</p>
               </div>
             ))}
           </div>

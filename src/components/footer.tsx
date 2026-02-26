@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import { Container } from '@/components/container';
+import { renderApolloText } from '@/lib/render-apollo-text';
 
 export const Footer = () => (
   <footer className="mt-20 border-t border-slate-200 bg-white/95">
@@ -9,7 +10,9 @@ export const Footer = () => (
         <div>
           <p className="font-semibold text-slate-900">B2B Lead Generation Authority Hub</p>
           <p className="mt-2 max-w-xs">
-            Find the right outbound strategy, learn proven workflows, and move faster with Apollo.
+            {renderApolloText(
+              'Find the right outbound strategy, learn proven workflows, and move faster with Apollo.'
+            )}
           </p>
         </div>
         <div className="space-y-2">
