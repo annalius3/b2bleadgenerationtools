@@ -61,9 +61,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     const setupParticles = () => {
       dpr = Math.min(window.devicePixelRatio || 1, 2);
       width = wrapper.clientWidth;
-      const fontSize = width >= 1024 ? 64 : width >= 768 ? 56 : width >= 640 ? 46 : 36;
+      const fontSize = width >= 1024 ? 64 : width >= 768 ? 56 : width >= 640 ? 46 : width >= 420 ? 36 : 30;
       const lineHeight = Math.round(fontSize * 1.2);
-      const maxTextWidth = Math.max(width - 14, 280);
+      // Keep text width inside canvas on narrow screens to avoid clipping.
+      const maxTextWidth = Math.max(Math.min(width - 12, 1200), 140);
 
       const temp = document.createElement('canvas');
       const tctx = temp.getContext('2d');
