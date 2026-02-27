@@ -43,7 +43,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       return;
     }
 
-    const context = canvas.getContext('2d');
+    const context = canvas.getContext('2d', { willReadFrequently: true });
     if (!context) {
       return;
     }
@@ -55,6 +55,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     let dpr = Math.min(window.devicePixelRatio || 1, 2);
     const mouse = { x: -9999, y: -9999, active: false };
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
     let resizeRaf = 0;
 
     const setupParticles = () => {
@@ -116,7 +117,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       }
 
       // Keep visual density high, but cap total particles for smooth interaction.
-      const maxParticles = width >= 1024 ? 26000 : width >= 768 ? 22000 : 17000;
+      const maxParticles = width >= 1024 ? 26000 : width >= 768 ? 20000 : 10000;
       if (candidates.length <= maxParticles) {
         particles = candidates;
       } else {
@@ -131,7 +132,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     const tick = () => {
       context.clearRect(0, 0, width, height);
       context.fillStyle = '#000000';
-      const radius = 110;
+      const radius = coarsePointer ? 85 : 110;
       const radiusSq = radius * radius;
 
       for (const particle of particles) {
@@ -161,14 +162,14 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       raf = requestAnimationFrame(tick);
     };
 
-    const handleMove = (event: MouseEvent) => {
+    const handlePointerMove = (event: PointerEvent) => {
       const rect = canvas.getBoundingClientRect();
       mouse.x = event.clientX - rect.left;
       mouse.y = event.clientY - rect.top;
       mouse.active = true;
     };
 
-    const handleLeave = () => {
+    const handlePointerLeave = () => {
       mouse.active = false;
       mouse.x = -9999;
       mouse.y = -9999;
@@ -182,8 +183,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     setupParticles();
     tick();
 
-    canvas.addEventListener('mousemove', handleMove);
-    canvas.addEventListener('mouseleave', handleLeave);
+    canvas.addEventListener('pointermove', handlePointerMove, { passive: true });
+    canvas.addEventListener('pointerleave', handlePointerLeave, { passive: true });
+    canvas.addEventListener('pointerup', handlePointerLeave, { passive: true });
+    canvas.addEventListener('pointercancel', handlePointerLeave, { passive: true });
     window.addEventListener('resize', handleResize);
     window.addEventListener('orientationchange', handleResize);
 
@@ -193,8 +196,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     return () => {
       cancelAnimationFrame(raf);
       cancelAnimationFrame(resizeRaf);
-      canvas.removeEventListener('mousemove', handleMove);
-      canvas.removeEventListener('mouseleave', handleLeave);
+      canvas.removeEventListener('pointermove', handlePointerMove);
+      canvas.removeEventListener('pointerleave', handlePointerLeave);
+      canvas.removeEventListener('pointerup', handlePointerLeave);
+      canvas.removeEventListener('pointercancel', handlePointerLeave);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
       resizeObserver.disconnect();
