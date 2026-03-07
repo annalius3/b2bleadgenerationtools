@@ -43,7 +43,7 @@ npm run build
 ```
 
 ## Environment variables
-- `NEXT_PUBLIC_SITE_URL` (recommended: `https://b2bleadgenerationtools.com`)
+- `NEXT_PUBLIC_SITE_URL` (recommended: `https://www.b2bleadgenerationtools.com`)
 - `NEXT_PUBLIC_GA_ID` (optional, GA4 Measurement ID)
 
 ## Forms
