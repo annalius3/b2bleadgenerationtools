@@ -2220,6 +2220,384 @@ export const guides: Guide[] = [
       { question: 'Should outreach timing depend on signal recency?', answer: 'Yes. Recent signals often indicate stronger short-term conversion potential.' }
     ],
     relatedSlugs: ['data-enrichment-using-apollo', 'identifying-high-quality-leads', 'building-target-account-lists']
+  },
+  {
+    slug: 'finding-ideal-customers-with-apollo',
+    title: 'Finding Ideal Customers with Apollo',
+    description: 'How to define an ICP in Apollo, filter real accounts, and focus outbound on companies that are more likely to buy.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Start with your best customers and list shared firmographic traits.',
+      'Translate those traits into Apollo account filters for industry, headcount, and location.',
+      'Layer role filters so you only see relevant buying-side contacts.',
+      'Review the first 50 results manually before scaling the list.',
+      'Save the segment and compare reply quality against broader prospect lists.'
+    ],
+    useCases: ['Founder-led prospecting', 'Agency niche targeting', 'B2B service qualification'],
+    tips: ['Closed-won patterns matter more than assumptions.', 'Manually inspect early search results.', 'Tight ICPs usually outperform large generic lists.'],
+    faqs: [
+      { question: 'What makes an Apollo segment high quality?', answer: 'It matches your best customer profile and consistently produces relevant contacts, not just a high volume of records.' },
+      { question: 'Should small teams target multiple ICPs at once?', answer: 'Usually no. One focused ICP is easier to validate and optimize.' }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'how-to-find-companies-to-sell-to', 'building-target-account-lists']
+  },
+  {
+    slug: 'prospect-list-segmentation-strategy',
+    title: 'Prospect List Segmentation Strategy',
+    description: 'A practical segmentation framework for Apollo lists so messaging, timing, and qualification improve with every campaign.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'financial-services'],
+    steps: [
+      'Split lists by segment size, industry, and urgency level.',
+      'Create separate views for strategic accounts and fast-close opportunities.',
+      'Tag each segment by offer angle and campaign owner.',
+      'Write segment-specific messaging before launching any sequence.',
+      'Measure meetings and pipeline by segment instead of by total volume.'
+    ],
+    useCases: ['RevOps campaign planning', 'Agency outbound systems', 'SMB prospecting structure'],
+    tips: ['Do not mix startup and enterprise buyers in one sequence.', 'Segment naming should be consistent.', 'Use segment-level metrics in weekly reviews.'],
+    faqs: [
+      { question: 'How many segments should a small team run?', answer: 'Two to four segments is usually enough to stay focused without losing signal quality.' },
+      { question: 'Why segment before writing copy?', answer: 'Because the message should reflect buyer context, not generic product claims.' }
+    ],
+    relatedSlugs: ['building-contact-lists-for-b2b', 'identifying-high-quality-leads', 'email-prospecting-strategy']
+  },
+  {
+    slug: 'how-to-prioritize-accounts-for-outbound',
+    title: 'How to Prioritize Accounts for Outbound',
+    description: 'Use Apollo to rank target accounts by fit, urgency, and deal potential instead of treating every lead the same.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'manufacturing', 'financial-services'],
+    steps: [
+      'Rank accounts by ICP fit, contract value, and buying urgency.',
+      'Separate top-tier targets from testing accounts.',
+      'Assign account owners and expected next actions.',
+      'Focus research and personalization on the highest-ranked accounts first.',
+      'Re-score accounts every week based on signal changes and engagement.'
+    ],
+    useCases: ['ABM-lite outbound', 'Founder account selection', 'Sales planning for service firms'],
+    tips: ['Prioritization should be visible to the whole team.', 'Fit and urgency are more useful than raw company size.', 'Review rank changes weekly.'],
+    faqs: [
+      { question: 'What should define a tier-one account?', answer: 'Strong ICP fit, realistic deal size, and a credible reason to act now.' },
+      { question: 'How often should account scoring change?', answer: 'Weekly or after meaningful new signals appear.' }
+    ],
+    relatedSlugs: ['building-target-account-lists', 'account-based-prospecting', 'identifying-buying-signals']
+  },
+  {
+    slug: 'writing-cold-email-openers-that-get-read',
+    title: 'Writing Cold Email Openers That Get Read',
+    description: 'A simple framework for writing Apollo cold email openers that sound human, fit the segment, and earn more replies.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Start from a segment-specific problem instead of a product pitch.',
+      'Use one concrete observation about the account or role.',
+      'Keep the opener short enough to read in one glance.',
+      'Connect the observation to a clear business outcome.',
+      'Test opener angles by segment and track reply quality.'
+    ],
+    useCases: ['Apollo sequence copywriting', 'Agency cold outreach', 'Consulting email campaigns'],
+    tips: ['One strong observation beats fake personalization.', 'Avoid long intros.', 'Match opener angle to buyer context.'],
+    faqs: [
+      { question: 'How long should a cold email opener be?', answer: 'Usually one to two short sentences is enough.' },
+      { question: 'Do personalized openers always outperform simple ones?', answer: 'No. Relevance matters more than forced personalization.' }
+    ],
+    relatedSlugs: ['cold-email-with-apollo-io', 'how-to-get-replies-to-cold-emails', 'personalization-techniques']
+  },
+  {
+    slug: 'outbound-follow-up-timing-strategy',
+    title: 'Outbound Follow-Up Timing Strategy',
+    description: 'How to plan Apollo follow-up timing so sequences stay persistent without feeling random or spammy.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'it-services', 'marketing-agencies'],
+    steps: [
+      'Design follow-up timing around buyer attention windows.',
+      'Use tighter spacing in the first week and wider spacing later.',
+      'Change the angle of each follow-up instead of repeating the same ask.',
+      'Pause sequences when real interest appears and move to manual follow-up.',
+      'Review reply rates by touchpoint position every month.'
+    ],
+    useCases: ['Apollo sequence optimization', 'SDR cadence planning', 'Agency outbound operations'],
+    tips: ['Persistence without variation burns trust.', 'Later touches should add context.', 'Manual handoff matters after positive replies.'],
+    faqs: [
+      { question: 'How many follow-ups are enough?', answer: 'Five to seven touches is a practical range for many B2B offers.' },
+      { question: 'Should every follow-up ask for a meeting?', answer: 'No. Some touches should build context or reduce friction.' }
+    ],
+    relatedSlugs: ['follow-up-automation', 'building-email-sequences', 'multi-step-outreach-playbook']
+  },
+  {
+    slug: 'apollo-outreach-personalization-framework',
+    title: 'Apollo Outreach Personalization Framework',
+    description: 'A repeatable Apollo personalization system that uses role, industry, and trigger context without turning campaigns into manual work.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'healthcare', 'financial-services'],
+    steps: [
+      'Choose three personalization layers: segment, account, and contact.',
+      'Use Apollo data to build variables that actually change message meaning.',
+      'Reserve manual research for top-priority accounts only.',
+      'Create message variants for each major buyer segment.',
+      'Track meetings by personalization level to see what really matters.'
+    ],
+    useCases: ['Scaled personalization', 'Mid-market outbound', 'Founder-led prospecting'],
+    tips: ['Segment personalization is usually enough for most lists.', 'Use manual research where deal value justifies it.', 'Keep variable sets clean.'],
+    faqs: [
+      { question: 'What is the biggest personalization mistake?', answer: 'Adding weak custom details that do not change the relevance of the offer.' },
+      { question: 'Should every account get manual personalization?', answer: 'No. Reserve deep research for the highest-value targets.' }
+    ],
+    relatedSlugs: ['personalization-techniques', 'email-outreach-strategy', 'outreach-campaign-setup']
+  },
+  {
+    slug: 'pipeline-stage-definition-for-b2b-teams',
+    title: 'Pipeline Stage Definition for B2B Teams',
+    description: 'Define clear sales stages so Apollo-sourced opportunities move through the pipeline with less confusion and better forecasting.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
+    steps: [
+      'Write a clear entry and exit definition for every stage.',
+      'Match stage criteria to buyer actions, not seller optimism.',
+      'Align Apollo outreach status with CRM pipeline stages.',
+      'Train the team on stage movement rules and examples.',
+      'Audit stage leakage in weekly pipeline reviews.'
+    ],
+    useCases: ['CRM cleanup', 'Forecast discipline', 'Small-team sales process design'],
+    tips: ['Stages should reflect real deal progress.', 'Too many stages slow reporting.', 'Entry criteria must be objective.'],
+    faqs: [
+      { question: 'Why do stage definitions matter so much?', answer: 'Because unclear stages create bad forecasts and hide real pipeline risk.' },
+      { question: 'How many stages should a simple B2B process have?', answer: 'Often five to seven stages is enough.' }
+    ],
+    relatedSlugs: ['managing-sales-pipeline', 'from-lead-to-deal-using-apollo', 'how-to-build-a-sales-pipeline']
+  },
+  {
+    slug: 'how-to-score-leads-before-handoff',
+    title: 'How to Score Leads Before Handoff',
+    description: 'A practical lead scoring model for Apollo-sourced prospects before they move from outbound into active sales conversations.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'it-services', 'financial-services'],
+    steps: [
+      'Define scoring inputs around fit, intent, and timing.',
+      'Separate qualification score from engagement score.',
+      'Use Apollo data points to populate the fit layer.',
+      'Set a handoff threshold for sales follow-up.',
+      'Review closed-won and closed-lost patterns to refine scores.'
+    ],
+    useCases: ['SDR to AE handoff', 'Founder-led qualification', 'RevOps scoring design'],
+    tips: ['Simple scoring models are easier to trust.', 'Do not confuse opens with buying intent.', 'Fit should outweigh vanity engagement signals.'],
+    faqs: [
+      { question: 'What is the most useful lead scoring factor?', answer: 'ICP fit combined with a credible buying trigger is usually the strongest indicator.' },
+      { question: 'Should every replied lead go to sales?', answer: 'No. Replies still need qualification.' }
+    ],
+    relatedSlugs: ['lead-qualification-strategy', 'identifying-high-quality-leads', 'identifying-buying-signals']
+  },
+  {
+    slug: 'sales-pipeline-review-cadence',
+    title: 'Sales Pipeline Review Cadence',
+    description: 'How to run a weekly pipeline review rhythm that keeps Apollo-sourced opportunities moving and exposes stalled deals early.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Set one weekly review for deal movement and one for top-of-funnel quality.',
+      'Review stage age, next step dates, and lead sources.',
+      'Flag stalled opportunities before month-end pressure builds.',
+      'Tie outreach learnings back to pipeline quality.',
+      'Document actions and owners after every review.'
+    ],
+    useCases: ['Weekly sales operations', 'Founder pipeline reviews', 'Agency service sales management'],
+    tips: ['A short disciplined review beats a long unfocused meeting.', 'Look for aging deals first.', 'Always leave with assigned actions.'],
+    faqs: [
+      { question: 'How often should pipeline reviews happen?', answer: 'Weekly is the minimum useful cadence for active outbound teams.' },
+      { question: 'What should be tracked in every review?', answer: 'Stage age, next action, owner, and source quality are the core fields.' }
+    ],
+    relatedSlugs: ['managing-sales-pipeline', 'tracking-outreach-performance', 'closing-more-deals-with-better-leads']
+  },
+  {
+    slug: 'apollo-for-saas-lead-generation',
+    title: 'Apollo for SaaS Lead Generation',
+    description: 'How SaaS teams use Apollo to find target accounts, reach operators, and create repeatable outbound pipeline.',
+    hub: 'guides',
+    industries: ['saas-companies'],
+    steps: [
+      'Define your SaaS ICP by company stage, stack, and team size.',
+      'Use Apollo to build account lists around likely pain points.',
+      'Map operators and budget owners for each account.',
+      'Launch sequences tied to one sharp use case.',
+      'Measure qualified meetings and pipeline, not just replies.'
+    ],
+    useCases: ['PLG sales assist', 'Mid-market outbound', 'Founder-led SaaS growth'],
+    tips: ['SaaS buyers respond to speed and clarity.', 'Use tech stack context when relevant.', 'Keep one use case per sequence.'],
+    faqs: [
+      { question: 'Why does Apollo work well for SaaS teams?', answer: 'It makes account selection, contact discovery, and targeted outreach faster in one workflow.' },
+      { question: 'What SaaS segment benefits most from Apollo?', answer: 'Teams with a clear ICP and a repeatable outbound offer usually benefit first.' }
+    ],
+    relatedSlugs: ['growth-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io', 'apollo-io-for-startups']
+  },
+  {
+    slug: 'apollo-for-marketing-agencies',
+    title: 'Apollo for Marketing Agencies',
+    description: 'A practical agency playbook for using Apollo to source qualified leads, segment niches, and book more sales calls.',
+    hub: 'guides',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Choose one service line and one niche before building lists.',
+      'Create account filters around buyer fit, budget, and urgency.',
+      'Build role-based lists for founders, marketing leads, and operators.',
+      'Write proof-driven outreach using client outcomes and positioning.',
+      'Track meetings by niche to see which offers scale best.'
+    ],
+    useCases: ['Agency new business', 'Niche service expansion', 'Cold outbound for retainers'],
+    tips: ['Agencies should narrow before they scale.', 'Case-study proof matters more than clever copy.', 'Review win rate by niche.'],
+    faqs: [
+      { question: 'What is the biggest agency mistake with Apollo?', answer: 'Going too broad and writing generic outreach for every business type.' },
+      { question: 'Which agency offer works best for outbound?', answer: 'A narrowly defined, outcome-focused offer is usually easiest to sell.' }
+    ],
+    relatedSlugs: ['how-agencies-use-apollo', 'predictable-client-flow-for-agencies', 'client-acquisition-for-consultants']
+  },
+  {
+    slug: 'apollo-for-it-services-outreach',
+    title: 'Apollo for IT Services Outreach',
+    description: 'How IT services firms can use Apollo to target the right accounts, reach technical buyers, and create a predictable outbound engine.',
+    hub: 'guides',
+    industries: ['it-services'],
+    steps: [
+      'Define the technical and business signals that make an account attractive.',
+      'Build account lists by vertical, stack, and service need.',
+      'Map champions, technical evaluators, and budget owners.',
+      'Use outreach that speaks to delivery risk, speed, and outcomes.',
+      'Review meeting quality by service line and account type.'
+    ],
+    useCases: ['Managed services outbound', 'Custom development sales', 'IT consulting pipeline creation'],
+    tips: ['Technical buyers want clarity, not hype.', 'Use real delivery examples.', 'Separate project work from retainer offers.'],
+    faqs: [
+      { question: 'Who should IT services firms target first?', answer: 'Start with accounts that clearly match your best delivery pattern and margin profile.' },
+      { question: 'Should technical and executive buyers get the same message?', answer: 'No. Technical buyers and executives care about different risks and outcomes.' }
+    ],
+    relatedSlugs: ['sales-strategy-for-service-companies', 'targeting-specific-industries', 'how-to-find-companies-to-sell-to']
+  },
+  {
+    slug: 'founder-led-outbound-with-apollo',
+    title: 'Founder-Led Outbound with Apollo',
+    description: 'How founders can use Apollo to build focused prospect lists, write direct outreach, and create early sales conversations fast.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Start from one clear offer and one target buyer segment.',
+      'Use Apollo to build a small list of high-fit accounts.',
+      'Write direct founder-style outreach with a simple value angle.',
+      'Run manual follow-up before adding automation.',
+      'Track objections and use them to refine the offer.'
+    ],
+    useCases: ['Founder sales', 'Early-stage validation', 'First outbound motion'],
+    tips: ['Founders should stay close to the message.', 'Keep early outreach manual.', 'Use objections as market feedback.'],
+    faqs: [
+      { question: 'Why is founder-led outbound effective early on?', answer: 'Because it combines fast market feedback with high-context conversations.' },
+      { question: 'How many accounts should a founder start with?', answer: 'A focused batch of 50 to 100 accounts is enough to learn quickly.' }
+    ],
+    relatedSlugs: ['how-founders-get-first-customers-with-apollo', 'validating-a-startup-idea-with-outreach', 'apollo-io-for-beginners']
+  },
+  {
+    slug: 'startup-prospecting-on-a-small-team',
+    title: 'Startup Prospecting on a Small Team',
+    description: 'A lean prospecting system for startups using Apollo when there is no SDR team, no ad budget, and limited sales bandwidth.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Define one weekly prospecting target and one ICP.',
+      'Use Apollo saved searches to keep list building efficient.',
+      'Split work between list building, messaging, and follow-up.',
+      'Review qualified conversations every week, not vanity metrics.',
+      'Document what segments and messages produce real traction.'
+    ],
+    useCases: ['Two-person GTM teams', 'Bootstrapped startup sales', 'Founder plus operator outbound'],
+    tips: ['Small teams need one repeatable process.', 'Do not overbuild tooling too early.', 'Qualified conversations are the goal.'],
+    faqs: [
+      { question: 'Can a very small team run outbound effectively?', answer: 'Yes, if the team keeps the process narrow and reviews signal every week.' },
+      { question: 'What should startups avoid first?', answer: 'Avoid large generic lists and complex multi-segment campaigns.' }
+    ],
+    relatedSlugs: ['low-budget-lead-generation-for-startups', 'outbound-sales-for-startups', 'how-small-businesses-find-clients']
+  },
+  {
+    slug: 'booking-first-sales-calls-with-apollo',
+    title: 'Booking First Sales Calls with Apollo',
+    description: 'How new teams can use Apollo to book their first qualified sales calls without relying on paid traffic or broad marketing campaigns.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Choose a buyer segment where the pain is easy to explain.',
+      'Build a small Apollo list around that segment.',
+      'Write one concise outreach message with a clear reason to talk.',
+      'Follow up manually until you learn the real objections.',
+      'Refine targeting based on who actually books and shows up.'
+    ],
+    useCases: ['First 10 meetings', 'Early outbound validation', 'Service sales launch'],
+    tips: ['Meeting quality matters more than meeting count.', 'Early calls should inform positioning.', 'Tight targeting improves show rates.'],
+    faqs: [
+      { question: 'What is the fastest path to first sales calls?', answer: 'A narrow segment, a relevant message, and consistent follow-up usually beat complex funnels.' },
+      { question: 'How should startups judge early campaign success?', answer: 'By qualified conversations and learning speed, not raw open rate.' }
+    ],
+    relatedSlugs: ['first-100-customers-strategy', 'how-to-get-clients-using-apollo-io', 'founder-led-outbound-with-apollo']
+  },
+  {
+    slug: 'apollo-list-cleaning-checklist',
+    title: 'Apollo List Cleaning Checklist',
+    description: 'A practical checklist to clean Apollo prospect lists before launch so your campaigns stay targeted, credible, and easier to manage.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'healthcare'],
+    steps: [
+      'Remove duplicate accounts and duplicate contacts first.',
+      'Check role relevance against your actual offer.',
+      'Review low-confidence or weak-fit records manually.',
+      'Tag the final list by segment and campaign owner.',
+      'Run one last QA pass before sequence launch.'
+    ],
+    useCases: ['Outbound QA', 'Agency list reviews', 'Founder campaign prep'],
+    tips: ['A smaller clean list is better than a large mixed list.', 'Use QA before every launch.', 'Document why records were removed.'],
+    faqs: [
+      { question: 'How often should lists be cleaned?', answer: 'Before each campaign launch and during regular list refreshes.' },
+      { question: 'What is the first thing to remove?', answer: 'Duplicates and contacts that do not influence the buying process.' }
+    ],
+    relatedSlugs: ['building-contact-lists-for-b2b', 'finding-verified-contacts', 'prospect-list-segmentation-strategy']
+  },
+  {
+    slug: 'outbound-campaign-audit-framework',
+    title: 'Outbound Campaign Audit Framework',
+    description: 'Use this framework to audit Apollo outbound campaigns and spot problems in targeting, list quality, messaging, and follow-up timing.',
+    hub: 'guides',
+    industries: ['saas-companies', 'consulting-firms', 'financial-services'],
+    steps: [
+      'Review campaign goals and the segment definition first.',
+      'Check list quality and contact-role relevance.',
+      'Audit message clarity, opener quality, and CTA friction.',
+      'Inspect touch timing and channel mix.',
+      'Tie campaign changes back to meetings and pipeline created.'
+    ],
+    useCases: ['Monthly outbound reviews', 'Agency client audits', 'Founder GTM resets'],
+    tips: ['Audit from segment to copy to outcomes.', 'Do not optimize around opens alone.', 'Fix one major variable at a time.'],
+    faqs: [
+      { question: 'When should a campaign be audited?', answer: 'Whenever reply quality drops or after a meaningful campaign cycle finishes.' },
+      { question: 'What is the most common audit finding?', answer: 'Weak targeting usually causes more problems than minor copy issues.' }
+    ],
+    relatedSlugs: ['tracking-outreach-performance', 'email-outreach-strategy', 'outbound-follow-up-timing-strategy']
+  },
+  {
+    slug: 'b2b-prospecting-metrics-that-matter',
+    title: 'B2B Prospecting Metrics That Matter',
+    description: 'The prospecting metrics Apollo users should actually track if the goal is qualified pipeline instead of vanity activity reporting.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Define the difference between activity metrics and outcome metrics.',
+      'Track list quality, reply quality, meetings, and pipeline created.',
+      'Break metrics down by segment and campaign owner.',
+      'Review early indicators weekly and revenue indicators monthly.',
+      'Use metric reviews to make one clear process decision at a time.'
+    ],
+    useCases: ['Sales ops dashboards', 'Founder outbound reviews', 'Agency reporting'],
+    tips: ['Pipeline beats open rate.', 'Segmented reporting is more useful than totals.', 'Measure quality before quantity.'],
+    faqs: [
+      { question: 'What is the most useful outreach metric?', answer: 'Qualified pipeline created is the most useful long-term metric.' },
+      { question: 'Should opens be a core KPI?', answer: 'No. Opens are directional at best and often misleading.' }
+    ],
+    relatedSlugs: ['tracking-outreach-performance', 'sales-pipeline-review-cadence', 'outbound-campaign-audit-framework']
   }
 ];
 
