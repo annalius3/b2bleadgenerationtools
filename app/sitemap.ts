@@ -1,4 +1,4 @@
-import type { MetadataRoute } from 'next';
+﻿import type { MetadataRoute } from 'next';
 
 import { guides, industries } from '@/lib/content';
 import { siteConfig } from '@/lib/site';
@@ -6,6 +6,8 @@ import { siteConfig } from '@/lib/site';
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     '/',
+    '/about',
+    '/editorial-methodology',
     '/find-clients',
     '/outreach',
     '/sales-pipeline',
@@ -23,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticRoutes, ...guideRoutes, ...industryRoutes].map((path) => ({
     url: `${siteConfig.url}${path}`,
-    lastModified: new Date()
+    lastModified: new Date('2026-03-26')
   }));
 }
+

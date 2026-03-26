@@ -1,10 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Suspense } from 'react';
 
 import { Footer } from '@/components/footer';
 import { GA4 } from '@/components/ga4';
 import { Header } from '@/components/header';
+import { OrganizationSchema, WebSiteSchema } from '@/components/seo-schemas';
 import { siteConfig } from '@/lib/site';
 
 import './globals.css';
@@ -31,6 +32,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${inter.variable} min-h-screen`}>
+        <WebSiteSchema url={siteConfig.url} name={siteConfig.name} description={siteConfig.description} />
+        <OrganizationSchema url={siteConfig.url} name={siteConfig.name} />
         <Suspense fallback={null}>
           <GA4 />
         </Suspense>
@@ -41,3 +44,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

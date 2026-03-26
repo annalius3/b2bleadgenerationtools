@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 
 import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
@@ -32,36 +32,37 @@ export const Footer = () => (
           </Link>
         </div>
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Industries</p>
-          <Link href="/by-industry/saas-companies" className="block hover:text-blue-700">
-            SaaS
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Trust</p>
+          <Link href="/about" className="block hover:text-blue-700">
+            About
           </Link>
-          <Link href="/by-industry/marketing-agencies" className="block hover:text-blue-700">
-            Agencies
+          <Link href="/editorial-methodology" className="block hover:text-blue-700">
+            Editorial Methodology
           </Link>
-          <Link href="/by-industry/consulting-firms" className="block hover:text-blue-700">
-            Consulting
+          <Link href="/contact" className="block hover:text-blue-700">
+            Contact
           </Link>
-          <Link href="/by-industry/it-services" className="block hover:text-blue-700">
-            IT Services
+          <Link href="/affiliate-disclosure" className="block hover:text-blue-700">
+            Affiliate Disclosure
           </Link>
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Legal</p>
-          <Link href="/contact" className="block hover:text-blue-700">
-            Contact
-          </Link>
           <Link href="/privacy" className="block hover:text-blue-700">
             Privacy
           </Link>
           <Link href="/terms" className="block hover:text-blue-700">
             Terms
           </Link>
-          <Link href="/affiliate-disclosure" className="block hover:text-blue-700">
-            Affiliate Disclosure
+          <Link href="/by-industry/saas-companies" className="block hover:text-blue-700">
+            SaaS Industry Guides
+          </Link>
+          <Link href="/for-startups" className="block hover:text-blue-700">
+            Startup Guides
           </Link>
         </div>
       </div>
     </Container>
   </footer>
 );
+
