@@ -2598,6 +2598,132 @@ export const guides: Guide[] = [
       { question: 'Should opens be a core KPI?', answer: 'No. Opens are directional at best and often misleading.' }
     ],
     relatedSlugs: ['tracking-outreach-performance', 'sales-pipeline-review-cadence', 'outbound-campaign-audit-framework']
+  },
+  {
+    slug: 'how-to-research-accounts-in-apollo',
+    title: 'How to Research Accounts in Apollo',
+    description: 'A practical account research workflow in Apollo to qualify target companies faster and improve outbound relevance before launch.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'it-services', 'manufacturing'],
+    steps: [
+      'Start with one account segment that already matches your best customers.',
+      'Review company headcount, geography, growth signals, and likely use case fit.',
+      'Map the buying team before adding any contacts to a list.',
+      'Tag each account by priority and message angle.',
+      'Use the research notes to shape a more specific outreach sequence.'
+    ],
+    useCases: ['ABM account prep', 'Founder-led research', 'Service sales targeting'],
+    tips: ['Research should narrow the list, not just decorate it.', 'Good account notes make personalization easier.', 'Prioritize fit before volume.'],
+    faqs: [
+      { question: 'How much account research is enough?', answer: 'Enough to understand fit, likely pain, and the right stakeholders without turning prospecting into a slow manual process.' },
+      { question: 'Should every account get the same depth of research?', answer: 'No. Top-priority accounts deserve deeper research than broad test segments.' }
+    ],
+    relatedSlugs: ['finding-ideal-customers-with-apollo', 'how-to-prioritize-accounts-for-outbound', 'account-based-prospecting']
+  },
+  {
+    slug: 'apollo-email-deliverability-best-practices',
+    title: 'Apollo Email Deliverability Best Practices',
+    description: 'How to protect deliverability in Apollo with cleaner lists, better sequencing, and smarter campaign setup decisions.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Start with smaller, cleaner prospect segments instead of large cold batches.',
+      'Separate domains, audiences, and sequence goals to avoid mixed signals.',
+      'Review contact quality before every campaign launch.',
+      'Keep copy clear and natural instead of overly optimized or spammy.',
+      'Watch reply quality, bounce patterns, and domain health every week.'
+    ],
+    useCases: ['Cold email setup', 'Agency outreach operations', 'Founder outbound quality control'],
+    tips: ['List quality is the first deliverability lever.', 'Smaller campaign batches are easier to debug.', 'Write for humans, not filters.'],
+    faqs: [
+      { question: 'What hurts deliverability fastest?', answer: 'Poor list quality and inconsistent sending patterns usually cause the fastest damage.' },
+      { question: 'Should teams scale volume immediately after launch?', answer: 'No. It is better to validate list quality and reply quality first.' }
+    ],
+    relatedSlugs: ['finding-verified-contacts', 'cold-email-with-apollo-io', 'apollo-list-cleaning-checklist']
+  },
+  {
+    slug: 'pipeline-forecasting-for-outbound-teams',
+    title: 'Pipeline Forecasting for Outbound Teams',
+    description: 'A simple forecasting model for Apollo-driven outbound teams that want more realistic pipeline expectations and better weekly decisions.',
+    hub: 'sales-pipeline',
+    industries: ['saas-companies', 'consulting-firms', 'financial-services'],
+    steps: [
+      'Start with segment-level conversion rates instead of one blended forecast.',
+      'Map each stage to real historical movement and deal age.',
+      'Separate likely pipeline from upside pipeline in weekly reviews.',
+      'Tie outbound campaign quality back to forecast confidence.',
+      'Update the model when segment mix or targeting changes.'
+    ],
+    useCases: ['Weekly forecasting', 'Founder sales planning', 'RevOps pipeline reviews'],
+    tips: ['Forecast by segment whenever possible.', 'Confidence matters more than optimistic coverage.', 'Stage aging reveals risk early.'],
+    faqs: [
+      { question: 'Why do outbound forecasts often miss?', answer: 'Because they rely on broad averages and ignore differences between segments, stages, and lead quality.' },
+      { question: 'What should teams review first in a forecast?', answer: 'Stage conversion and stage age usually reveal the biggest risks first.' }
+    ],
+    relatedSlugs: ['sales-pipeline-review-cadence', 'managing-sales-pipeline', 'tracking-outreach-performance']
+  },
+  {
+    slug: 'apollo-for-healthcare-lead-generation',
+    title: 'Apollo for Healthcare Lead Generation',
+    description: 'How healthcare-focused B2B teams can use Apollo to find qualified accounts, reach decision-makers, and build cleaner outbound campaigns.',
+    hub: 'guides',
+    industries: ['healthcare'],
+    steps: [
+      'Define the healthcare buyer type and target organization profile first.',
+      'Build narrow account lists around service fit and sales feasibility.',
+      'Map operations, growth, and commercial stakeholders by account.',
+      'Write outreach that focuses on workflow impact and business outcomes.',
+      'Review lead quality carefully before scaling list volume.'
+    ],
+    useCases: ['Healthcare SaaS sales', 'Healthcare services outbound', 'Niche account targeting'],
+    tips: ['Healthcare segments need precise targeting.', 'Use practical business language.', 'Do not treat all healthcare organizations the same.'],
+    faqs: [
+      { question: 'What matters most in healthcare prospecting?', answer: 'Clear segmentation and relevance matter most because buyer roles and priorities vary widely across organizations.' },
+      { question: 'Should healthcare outreach be more niche?', answer: 'Yes. Narrower targeting usually produces better conversations than broad outreach.' }
+    ],
+    relatedSlugs: ['targeting-specific-industries', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo']
+  },
+  {
+    slug: 'startup-outbound-kpi-dashboard',
+    title: 'Startup Outbound KPI Dashboard',
+    description: 'The startup outbound KPI dashboard that keeps Apollo prospecting tied to qualified meetings, pipeline, and learning speed.',
+    hub: 'for-startups',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    steps: [
+      'Choose a short list of KPIs tied to qualified conversations and pipeline.',
+      'Track metrics by segment instead of blending all outbound activity together.',
+      'Review meetings booked, show rates, and next-step quality every week.',
+      'Use objection patterns and reply quality as learning metrics.',
+      'Remove vanity metrics that do not influence strategy decisions.'
+    ],
+    useCases: ['Founder reporting', 'Small-team GTM reviews', 'Startup outbound management'],
+    tips: ['A short dashboard is easier to use.', 'Measure quality before volume.', 'Learning speed is a real startup KPI.'],
+    faqs: [
+      { question: 'What should be on a startup outbound dashboard?', answer: 'Qualified replies, meetings, show rates, pipeline created, and segment performance are the most useful core metrics.' },
+      { question: 'What should startups avoid tracking too closely?', answer: 'Pure activity metrics without context often distract from real progress.' }
+    ],
+    relatedSlugs: ['b2b-prospecting-metrics-that-matter', 'startup-prospecting-on-a-small-team', 'booking-first-sales-calls-with-apollo']
+  },
+  {
+    slug: 'weekly-apollo-prospecting-workflow',
+    title: 'Weekly Apollo Prospecting Workflow',
+    description: 'A repeatable weekly Apollo workflow for building lists, launching outreach, reviewing results, and improving prospect quality over time.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    steps: [
+      'Set one weekly prospecting target linked to pipeline goals.',
+      'Build and clean lists at the start of the week.',
+      'Launch or refresh one focused campaign per segment.',
+      'Review replies, meetings, and list quality midweek.',
+      'End the week with one clear process change based on results.'
+    ],
+    useCases: ['Solo outbound workflow', 'Small SDR team process', 'Agency lead gen operations'],
+    tips: ['Consistency compounds faster than random bursts.', 'A weekly rhythm keeps campaigns easier to debug.', 'One improvement per week is enough.'],
+    faqs: [
+      { question: 'Why use a weekly workflow?', answer: 'A weekly rhythm creates enough repetition to improve targeting, messaging, and reporting without overcomplicating the process.' },
+      { question: 'What should happen at the end of each week?', answer: 'Review the signal, decide one process improvement, and carry it into the next cycle.' }
+    ],
+    relatedSlugs: ['outbound-campaign-audit-framework', 'apollo-list-cleaning-checklist', 'tracking-outreach-performance']
   }
 ];
 
