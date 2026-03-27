@@ -1441,6 +1441,266 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo prospecting metrics are most useful when the team tracks fewer metrics but ties them more directly to commercial outcomes.',
       'A smaller dashboard with better decision value usually beats a large dashboard full of weak signals.'
     ]
+  },
+  'how-founders-get-first-customers-with-apollo': {
+    summary: [
+      'Founders get first customers faster when outbound is treated as a learning loop, not just a pipeline source. The first customer motion should make the market clearer, the offer sharper, and the objections easier to understand.',
+      'Apollo helps because it lets founders move from market hypothesis to live conversations quickly without building a heavy sales stack.'
+    ],
+    customSections: [
+      {
+        title: 'Why founders should stay close to outbound',
+        paragraphs: [
+          'Early outbound is usually more valuable as market feedback than as pure lead generation. Founders hear objections directly, see which segments engage, and refine the offer faster.',
+          'Apollo supports that by keeping targeting, list building, and outreach in one workflow the founder can actually manage.'
+        ]
+      },
+      {
+        title: 'What first-customer outreach should optimize for',
+        paragraphs: [
+          'The goal is not volume. The goal is qualified conversations with the right buyer profile. Every early conversation should improve the next campaign.',
+          'That is why narrower targeting and simpler campaigns usually outperform broader outreach for founders.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a strong founder tool when the goal is to learn quickly and book the first qualified conversations without overbuilding process.',
+      'The first customers usually come from focus, not from scale.'
+    ]
+  },
+  'customer-acquisition-for-startups': {
+    summary: [
+      'Startup customer acquisition works best when the team chooses one realistic growth motion and learns from it aggressively. Trying too many channels too early usually slows down the path to repeatable growth.',
+      'Apollo fits the early customer acquisition stage because it helps small teams build a direct outbound engine without waiting for long content or paid acquisition loops.'
+    ],
+    customSections: [
+      {
+        title: 'What startups should optimize first',
+        paragraphs: [
+          'The first goal is not broad awareness. It is finding a buyer segment that consistently turns into useful conversations and then improving conversion quality inside that segment.',
+          'Apollo helps by making the first prospecting motion easier to launch and review.'
+        ]
+      },
+      {
+        title: 'Why startup acquisition gets noisy',
+        paragraphs: [
+          'Acquisition gets noisy when the startup changes target buyer, message, offer, and workflow at the same time. That makes every campaign hard to interpret.',
+          'A narrower outbound loop creates more useful feedback and better resource allocation.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is useful for startup customer acquisition when the team wants a direct and measurable route to early pipeline.',
+      'The cleaner the segment logic, the faster the startup learns where real demand exists.'
+    ]
+  },
+  'growth-strategy-using-apollo': {
+    summary: [
+      'A growth strategy using Apollo should connect market focus, outbound execution, and learning speed. The tool matters most when it helps the team test strategic assumptions faster than slower channels would allow.',
+      'Apollo is not the strategy itself. It is the operating layer that makes a focused outbound strategy easier to run, inspect, and improve.'
+    ],
+    customSections: [
+      {
+        title: 'When Apollo belongs in a growth strategy',
+        paragraphs: [
+          'Apollo belongs in the strategy when direct outreach is a valid way to reach the buyer and the team needs faster market feedback. It is especially useful when a startup or lean sales team cannot wait on slower inbound channels.',
+          'That does not mean every growth problem should be solved with outbound. It means Apollo is a strong choice when the strategy is already outbound-compatible.'
+        ]
+      },
+      {
+        title: 'What strategic value Apollo adds',
+        paragraphs: [
+          'The strategic value is speed to insight. The team can define a segment, launch outreach, and learn what the market cares about far faster than with broader brand-only tactics.',
+          'That kind of speed is often a competitive advantage for small teams.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports growth strategy well when the business needs a faster path from hypothesis to buyer response.',
+      'The tool is most valuable when the strategy is focused enough to benefit from fast iteration.'
+    ]
+  },
+  'low-budget-lead-generation-for-startups': {
+    summary: [
+      'Low-budget lead generation for startups works when the team trades spend for precision instead of trying to compete on volume. A narrow, disciplined outbound motion usually creates better early signal than a broad cheap campaign.',
+      'Apollo helps because it reduces manual prospecting time and makes it easier for a small team to run a useful lead generation process without a large marketing budget.'
+    ],
+    customSections: [
+      {
+        title: 'What low-budget teams should prioritize',
+        paragraphs: [
+          'Low-budget teams should prioritize fit, speed, and follow-through. Every wasted contact, weak segment, or messy campaign costs more when resources are tight.',
+          'Apollo creates leverage when it makes the prospecting process smaller, cleaner, and faster to review.'
+        ]
+      },
+      {
+        title: 'Why cheap lead generation often gets expensive',
+        paragraphs: [
+          'Cheap lead generation becomes expensive when the quality is low and the team spends time chasing weak-fit conversations. That hidden cost matters more than tool price for many startups.',
+          'A better approach is to keep the segment narrow enough that every outreach touch has a reason behind it.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a good low-budget startup tool when it helps the team replace wasted manual effort with cleaner prospecting discipline.',
+      'The lower the budget, the more important targeting quality becomes.'
+    ]
+  },
+  'building-pipeline-without-marketing': {
+    summary: [
+      'Building pipeline without marketing means the sales process itself has to carry more weight. The business needs a direct way to identify prospects, start conversations, and move those conversations into qualified opportunities.',
+      'Apollo fits because it gives lean teams a way to create top-of-funnel momentum without waiting for large inbound programs.'
+    ],
+    customSections: [
+      {
+        title: 'What replaces marketing in this model',
+        paragraphs: [
+          'When there is no meaningful marketing engine, targeting quality and outbound consistency have to do more of the work. The process needs clear ownership and a short review loop.',
+          'Apollo helps by making the account-to-outreach path faster and more organized.'
+        ]
+      },
+      {
+        title: 'Why pipeline without marketing often stalls',
+        paragraphs: [
+          'It stalls when the team mistakes activity for progress. Without strong qualification and follow-up, a lot of outreach can still produce weak pipeline.',
+          'That is why the transition from reply to qualified opportunity matters so much in no-marketing environments.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help build pipeline without marketing when the team is disciplined enough to run a focused outbound system.',
+      'The missing marketing layer makes process quality even more important.'
+    ]
+  },
+  'validating-a-startup-idea-with-outreach': {
+    summary: [
+      'Outreach is one of the fastest ways to validate a startup idea because it forces the company to test a market thesis in real conversations. The point is not just to book calls. The point is to see whether the problem, audience, and message resonate outside the team?s assumptions.',
+      'Apollo helps by letting founders and small teams find likely buyers and reach them quickly enough to learn in short cycles.'
+    ],
+    customSections: [
+      {
+        title: 'What outreach validation should prove',
+        paragraphs: [
+          'The best outreach validation proves that a specific buyer group cares enough about a problem to respond, engage, or take a next step. That is much stronger than internal enthusiasm about the idea.',
+          'Apollo is useful because it makes those tests faster and more structured.'
+        ]
+      },
+      {
+        title: 'What invalidation looks like',
+        paragraphs: [
+          'Invalidation is not a failure. It is a useful result. Weak engagement, wrong objections, or low problem urgency all help the startup refine the market thesis.',
+          'The faster the team sees that signal, the faster it can adjust.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is well suited for startup idea validation when the team wants real market feedback instead of internal debate.',
+      'Good validation comes from clear hypotheses and honest interpretation of responses.'
+    ]
+  },
+  'first-100-customers-strategy': {
+    summary: [
+      'The first 100 customers usually come from process focus, not channel sprawl. The company needs one or two acquisition motions that produce enough repeatable signal to improve each month.',
+      'Apollo helps because it gives startups a direct path to target buyers when they still need controlled, measurable customer acquisition.'
+    ],
+    customSections: [
+      {
+        title: 'What the first 100 really require',
+        paragraphs: [
+          'The first 100 customers usually require a clear niche, a compelling enough offer, and a disciplined acquisition loop that the team can sustain without burning out.',
+          'Apollo supports that loop when outbound is the chosen motion and the target market is clear enough to segment.'
+        ]
+      },
+      {
+        title: 'Why the first 100 strategy often breaks',
+        paragraphs: [
+          'It usually breaks when the startup keeps broadening the audience or changing the offer before learning enough from the current segment. That resets the learning cycle constantly.',
+          'A better model is to narrow, validate, then scale one motion at a time.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can support the first 100 customers strategy well when the startup uses outbound as a learning and acquisition engine together.',
+      'Consistency and focus matter more than trying every growth tactic at once.'
+    ]
+  },
+  'b2b-sales-strategy-for-new-companies': {
+    summary: [
+      'New B2B companies need sales strategies that are simple enough to execute and clear enough to learn from quickly. Complex enterprise-style processes usually slow down the first stage of market discovery.',
+      'Apollo is useful because it helps a new company create a direct path from target market assumptions to real sales conversations.'
+    ],
+    customSections: [
+      {
+        title: 'What new companies should build first',
+        paragraphs: [
+          'The first sales strategy should build a repeatable way to find prospects, frame the offer, handle replies, and qualify interest. That is enough to create meaningful learning and early pipeline.',
+          'Apollo supports this well when the team keeps the process narrow and operationally simple.'
+        ]
+      },
+      {
+        title: 'Why new-company sales strategies go off track',
+        paragraphs: [
+          'They go off track when the company copies a process built for a much more mature organization. That usually adds complexity before the company has enough market signal to justify it.',
+          'A smaller but clearer sales strategy tends to outperform a more sophisticated but unstable one.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a strong early-stage sales tool when the company needs to turn strategy into direct prospecting action quickly.',
+      'The best early sales strategy is one the team can actually run and improve every week.'
+    ]
+  },
+  'startup-prospecting-on-a-small-team': {
+    summary: [
+      'Prospecting on a small startup team works when the process is light enough to maintain and structured enough to learn from. Small teams do not need more moving parts. They need more clarity on where to focus effort each week.',
+      'Apollo helps because it gives a tiny team one place to build lists, run outreach, and review signal without a large ops layer.'
+    ],
+    customSections: [
+      {
+        title: 'What small startup teams should simplify',
+        paragraphs: [
+          'Small teams should simplify segments, workflows, and metrics. The more complexity they add early, the harder it becomes to stay consistent long enough to learn anything useful.',
+          'Apollo creates leverage when the team uses it to support one clean operating rhythm.'
+        ]
+      },
+      {
+        title: 'Where tiny teams lose momentum',
+        paragraphs: [
+          'Tiny teams lose momentum when prospecting is treated as a side task with no clear owner or no fixed review cadence. That creates inconsistent campaigns and inconsistent learning.',
+          'A repeatable weekly loop is usually more valuable than better tooling alone.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a good fit for small startup prospecting when the company wants a compact system that one or two people can actually run.',
+      'The smaller the team, the more important process simplicity becomes.'
+    ]
+  },
+  'startup-outbound-kpi-dashboard': {
+    summary: [
+      'A startup outbound KPI dashboard should help the team make better weekly decisions, not just report activity. The right dashboard makes it easier to see whether targeting, outreach, and qualification are producing useful pipeline signal.',
+      'Apollo helps because it gives the team a workable source of prospecting and outreach data that can be tied back to commercial outcomes.'
+    ],
+    customSections: [
+      {
+        title: 'What a startup dashboard should show',
+        paragraphs: [
+          'The best startup dashboard shows only a few things clearly: reply quality, meetings, show rate, qualified pipeline created, and segment performance. Those are the metrics that change real decisions.',
+          'A bigger dashboard is not automatically a better one.'
+        ]
+      },
+      {
+        title: 'Why startup dashboards become noise',
+        paragraphs: [
+          'Dashboards become noise when they emphasize activity over learning. Opens, sends, and list size can matter, but they do not matter enough to drive strategy by themselves.',
+          'Apollo becomes more useful when its metrics are used to support harder quality decisions, not just progress optics.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports a strong startup KPI dashboard when the team focuses on decision value rather than metric volume.',
+      'The smaller the team, the more important it is to track only what changes next week?s actions.'
+    ]
   }
 
 };
