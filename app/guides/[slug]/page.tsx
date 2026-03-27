@@ -153,6 +153,51 @@ const hubSpecificCopy = (hub: (typeof guides)[number]['hub']) => {
   }
 };
 
+const kindSpecificCopy = (kind: GuideKind) => {
+  switch (kind) {
+    case 'review':
+      return {
+        badge: 'Review Guide',
+        featuresIntro: 'This section highlights what matters most in real use, not just feature count.',
+        pricingIntro: 'Pricing matters here in terms of practical fit, not just listed plans.',
+        comparisonIntro: 'A useful review should position the tool against realistic alternatives, not in isolation.',
+        checklistIntro: 'Use this checklist to decide whether the tool is a good fit before you commit more time or budget.'
+      };
+    case 'pricing':
+      return {
+        badge: 'Pricing Guide',
+        featuresIntro: 'These are the cost drivers and workflow levers that affect total spend most often.',
+        pricingIntro: 'This section is about cost logic and plan fit, not just headline pricing.',
+        comparisonIntro: 'Plan comparisons are useful only when tied to how the team actually works.',
+        checklistIntro: 'Use this checklist before changing plans, adding seats, or increasing spend.'
+      };
+    case 'tutorial':
+      return {
+        badge: 'Tutorial',
+        featuresIntro: 'Focus on the minimum setup and workflow pieces required to get the first result.',
+        pricingIntro: 'For tutorials, the important question is usually what tooling is truly necessary to complete the workflow.',
+        comparisonIntro: 'This comparison helps decide which workflow path is easiest to execute first.',
+        checklistIntro: 'Use this checklist to confirm the setup is complete enough to launch and review.'
+      };
+    case 'strategy':
+      return {
+        badge: 'Strategy Guide',
+        featuresIntro: 'These are the strategic levers that most change quality, focus, and operating speed.',
+        pricingIntro: 'Resource tradeoffs matter here because strategy is constrained by time, budget, and team capacity.',
+        comparisonIntro: 'This comparison is meant to clarify which strategic approach fits the current stage best.',
+        checklistIntro: 'Use this checklist to make sure strategy turns into an executable operating plan.'
+      };
+    default:
+      return {
+        badge: 'Playbook',
+        featuresIntro: 'These are the practical workflow elements that usually matter most in execution.',
+        pricingIntro: 'Even in playbooks, pricing should be judged in the context of workflow efficiency and signal quality.',
+        comparisonIntro: 'This comparison helps frame tradeoffs between doing it manually, using Apollo, or using a heavier stack.',
+        checklistIntro: 'Use this checklist to make the workflow easier to run consistently each week.'
+      };
+  }
+};
+
 const buildComparisonRows = (hub: (typeof guides)[number]['hub']) => {
   switch (hub) {
     case 'find-clients':
@@ -231,11 +276,12 @@ export default async function GuidePage({ params }: Props) {
 
   const guideKind = inferGuideKind(guide);
   const toc = buildToc(guideKind);
+  const kindCopy = kindSpecificCopy(guideKind);
   const hubCopy = hubSpecificCopy(guide.hub);
   const override = guideOverrides[guide.slug];
   const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
-  const isHowTo = /^how to/i.test(guide.title) || /guide|workflow|playbook|strategy/i.test(guide.title);
+  const isHowTo = guideKind === 'tutorial' || guideKind === 'playbook' || /^how to/i.test(guide.title);
   const summaryParagraphs =
     override?.summary ?? [
       hubCopy.verdict,
@@ -335,6 +381,7 @@ export default async function GuidePage({ params }: Props) {
           <div className="mt-5 flex flex-wrap gap-2 text-xs">
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Reviewed by B2B Lead Gen Tools Editorial</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Updated {UPDATED_LABEL}</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">{kindCopy.badge}</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">US B2B focus</span>
           </div>
         </div>
@@ -387,6 +434,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
 
           <h2 id="features">{toc.find((item) => item.id === 'features')?.label ?? 'Key features'}</h2>
+          <p>{kindCopy.featuresIntro}</p>
           <ul>
             <li>{renderApolloText(guide.steps[0] ?? 'Define a tighter target before scaling execution.')}</li>
             <li>{renderApolloText(guide.steps[1] ?? 'Use practical filtering and segmentation logic.')}</li>
@@ -416,6 +464,7 @@ export default async function GuidePage({ params }: Props) {
           </div>
 
           <h2 id="pricing">{toc.find((item) => item.id === 'pricing')?.label ?? 'Pricing snapshot'}</h2>
+          <p>{kindCopy.pricingIntro}</p>
           {pricingParagraphs.map((paragraph) => (
             <p key={paragraph}>{renderApolloText(paragraph)}</p>
           ))}
@@ -501,6 +550,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
 
           <h2 id="comparison">{toc.find((item) => item.id === 'comparison')?.label ?? 'Comparison table'}</h2>
+          <p>{kindCopy.comparisonIntro}</p>
           <table>
             <thead>
               <tr>
@@ -568,6 +618,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
 
           <h2 id="checklist">{toc.find((item) => item.id === 'checklist')?.label ?? 'Implementation checklist'}</h2>
+          <p>{kindCopy.checklistIntro}</p>
           <ul>
             {checklistItems.map((item) => (
               <li key={item}>{renderApolloText(item)}</li>
