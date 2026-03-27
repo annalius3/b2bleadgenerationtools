@@ -1181,6 +1181,266 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo can be useful for healthcare lead generation when the campaign is built around a very specific buyer and use case.',
       'The narrower the healthcare segment, the easier it is to create commercially relevant outbound.'
     ]
+  },
+  'how-to-find-business-emails-with-apollo': {
+    summary: [
+      'Finding business emails with Apollo works best when the team starts from account fit and role relevance, not from a raw contact hunt. The goal is not just to collect addresses. The goal is to identify reachable people who actually belong in the buying process.',
+      'Apollo helps because it makes contact discovery part of a broader targeting workflow rather than a separate manual task.'
+    ],
+    customSections: [
+      {
+        title: 'What makes an email useful',
+        paragraphs: [
+          'A business email is only useful if the account fits, the contact is relevant, and the message angle makes sense for that role. Without those three conditions, even a valid address is low-value.',
+          'Apollo is most useful when it helps the team keep contact discovery connected to the account selection logic.'
+        ]
+      },
+      {
+        title: 'Why email collection goes wrong',
+        paragraphs: [
+          'Email collection goes wrong when teams treat address volume as the goal. That usually leads to mixed-quality lists and weak campaign performance.',
+          'The better path is to build smaller, role-specific contact sets that are easier to message and review.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is effective for finding business emails when the team keeps contact discovery tied to a real targeting strategy.',
+      'The best email list is not the biggest one. It is the one that supports more relevant outreach.'
+    ]
+  },
+  'building-contact-lists-for-b2b': {
+    summary: [
+      'Building contact lists for B2B is fundamentally a qualification problem. The list should reflect who is likely to buy, who influences the decision, and what type of campaign the team plans to run.',
+      'Apollo helps because it lets teams move from account logic to contact selection quickly, but the commercial quality still depends on how well the segment is defined.'
+    ],
+    customSections: [
+      {
+        title: 'What a B2B contact list should do',
+        paragraphs: [
+          'A strong B2B contact list should make the campaign simpler, not more complicated. It should support one message angle, one buyer problem, and one clear operating goal.',
+          'If the list requires multiple unrelated offers, the targeting is probably too broad.'
+        ]
+      },
+      {
+        title: 'Why lists become noisy',
+        paragraphs: [
+          'Lists become noisy when more contacts are added without enough review of what the previous campaign actually taught the team.',
+          'Apollo accelerates list building, so the discipline has to come from how the team filters and reviews those records.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is strong for B2B contact list building when the team treats list quality as a strategic asset.',
+      'Better contact lists usually lead to better reply quality, not just higher send volume.'
+    ]
+  },
+  'data-enrichment-using-apollo': {
+    summary: [
+      'Data enrichment only creates value when the added fields improve targeting, qualification, or personalization decisions. Enrichment for its own sake usually increases complexity without improving outcomes.',
+      'Apollo helps because it keeps enrichment close to prospecting and segmentation, which makes it easier to use the data in real workflows.'
+    ],
+    customSections: [
+      {
+        title: 'What enrichment should change',
+        paragraphs: [
+          'Good enrichment should help the team make a better decision: keep this account, drop it, prioritize it, or message it differently.',
+          'If added data does not influence any real campaign or qualification choice, it is probably not worth collecting.'
+        ]
+      },
+      {
+        title: 'Why enrichment gets overused',
+        paragraphs: [
+          'Teams often enrich more fields than they actually use. That creates extra cost and extra noise without improving sales performance.',
+          'A better model is to enrich only the attributes that influence segmentation, qualification, or prioritization directly.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo enrichment is useful when the team knows exactly which fields support better prospecting decisions.',
+      'The best enrichment program is small, deliberate, and tied to conversion quality.'
+    ]
+  },
+  'finding-verified-contacts': {
+    summary: [
+      'Finding verified contacts matters because outbound quality starts with contact quality. A campaign can have decent copy and still fail if the wrong or unreliable contacts make up too much of the list.',
+      'Apollo is helpful when it lets the team combine fit, role relevance, and contact confidence in one workflow before launch.'
+    ],
+    customSections: [
+      {
+        title: 'Why verified contacts matter operationally',
+        paragraphs: [
+          'Verified contacts protect deliverability, reduce wasted follow-up, and make campaign feedback easier to trust. When contact quality is low, the team cannot tell whether the message or the data is the real problem.',
+          'That is why verified contacts are not just a data issue. They are an execution issue.'
+        ]
+      },
+      {
+        title: 'What teams should review before launch',
+        paragraphs: [
+          'Before launch, the team should review fit, role relevance, duplication risk, and overall contact confidence. A short QA pass usually saves much more time than it costs.',
+          'Apollo supports this well when list building and verification remain part of the same review cycle.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help find verified contacts effectively when the team prioritizes list quality over campaign volume.',
+      'Higher-confidence contacts usually make every later part of outbound easier to evaluate.'
+    ]
+  },
+  'account-based-prospecting': {
+    summary: [
+      'Account-based prospecting works when the team treats the account as the primary unit of outbound, not the contact. That means account selection, stakeholder mapping, and multi-threaded messaging matter more than raw list size.',
+      'Apollo helps because it gives teams a practical way to organize account-first prospecting without building a heavy enterprise process from day one.'
+    ],
+    customSections: [
+      {
+        title: 'What changes in an account-based motion',
+        paragraphs: [
+          'In account-based prospecting, the question is not ?who can we contact?? but ?which accounts deserve more time and which stakeholders matter inside them?? That shifts the focus from volume to strategic coverage.',
+          'Apollo is useful when it helps the team map that coverage faster and keep the account set organized.'
+        ]
+      },
+      {
+        title: 'Why AB prospecting can fail',
+        paragraphs: [
+          'AB prospecting often fails when teams choose too many accounts or when they do not differentiate messages enough across stakeholders. The result is heavier work without better outcomes.',
+          'The better model is a smaller account set with clearer ownership and more thoughtful message variation.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a strong fit for account-based prospecting when the team wants a practical middle ground between simple outbound and enterprise ABM complexity.',
+      'The more intentional the account selection, the more value this motion creates.'
+    ]
+  },
+  'building-target-account-lists': {
+    summary: [
+      'Target account lists are only useful when they reflect strategic intent, not just broad market coverage. The list should make it obvious where the team will spend time and why those accounts matter commercially.',
+      'Apollo helps because it turns account selection from a spreadsheet exercise into a more dynamic operating workflow.'
+    ],
+    customSections: [
+      {
+        title: 'What a target account list should accomplish',
+        paragraphs: [
+          'A target account list should give the team a clear map of where to focus effort, what kind of deals it expects, and which accounts deserve deeper research or more personalized follow-up.',
+          'It is not just a larger company list with a better name.'
+        ]
+      },
+      {
+        title: 'Why target account lists lose value',
+        paragraphs: [
+          'These lists lose value when they are not re-ranked based on new signal or when they grow faster than the team can actually work them.',
+          'Apollo supports better maintenance when account selection, signals, and contact mapping stay in one process.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is useful for building target account lists when the team wants a more deliberate prospecting model than broad list export.',
+      'A shorter, better-ranked account list is usually worth more than a large unprioritized one.'
+    ]
+  },
+  'identifying-buying-signals': {
+    summary: [
+      'Buying signals matter because timing changes conversion quality. A decent prospecting message sent to the right account at the right time usually outperforms a better message sent without context.',
+      'Apollo can help teams organize signal-based targeting and prioritize accounts that are more likely to be worth immediate attention.'
+    ],
+    customSections: [
+      {
+        title: 'What a useful buying signal looks like',
+        paragraphs: [
+          'A useful buying signal increases confidence that the account has an active reason to change, evaluate, or purchase. It should influence prioritization or message angle directly.',
+          'If the signal does not change a real campaign decision, it is probably not useful enough.'
+        ]
+      },
+      {
+        title: 'Why teams misuse intent signals',
+        paragraphs: [
+          'Teams misuse signals when they treat them as proof instead of directional context. Signals should sharpen judgment, not replace qualification.',
+          'Apollo is most useful here when the signal data is used to focus outreach rather than to justify poor-fit targeting.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports buying-signal prospecting well when signals are used to improve prioritization and timing rather than to excuse weak segmentation.',
+      'The best signal is one that changes what the team does next.'
+    ]
+  },
+  'apollo-list-cleaning-checklist': {
+    summary: [
+      'List cleaning is one of the simplest ways to improve outbound performance because it removes weak-fit records before they distort reply quality and deliverability. A smaller clean list usually beats a bigger mixed one.',
+      'Apollo helps when cleaning is treated as a repeatable workflow step, not an occasional cleanup project.'
+    ],
+    customSections: [
+      {
+        title: 'Why list cleaning matters more than teams think',
+        paragraphs: [
+          'List cleaning improves message relevance, response trustworthiness, and the quality of all later campaign decisions. Dirty lists create false negatives and false positives at the same time.',
+          'That is why list cleaning is not just an admin task. It is a sales quality task.'
+        ]
+      },
+      {
+        title: 'What should be removed first',
+        paragraphs: [
+          'Start with duplicates, weak-fit accounts, low-confidence contacts, and roles that do not matter to the buying process. Those create the most noise relative to their value.',
+          'Apollo makes that work easier when the team applies the same checklist before each campaign launch.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo list cleaning creates real value when it becomes part of every campaign prep cycle.',
+      'Cleaner lists usually lead to cleaner signal and faster campaign improvement.'
+    ]
+  },
+  'outbound-campaign-audit-framework': {
+    summary: [
+      'An outbound campaign audit works when it starts with target quality and follows the chain all the way to pipeline quality. If the audit starts with copy alone, it often misses the real source of underperformance.',
+      'Apollo helps because the underlying prospecting and execution data sit close enough together to make that audit faster and more actionable.'
+    ],
+    customSections: [
+      {
+        title: 'What a useful audit should answer',
+        paragraphs: [
+          'A useful audit should answer three things clearly: is the segment right, is the message right for that segment, and is the campaign creating qualified commercial conversations.',
+          'Everything else should support those questions, not distract from them.'
+        ]
+      },
+      {
+        title: 'Why audits go shallow',
+        paragraphs: [
+          'Audits go shallow when they focus only on open rates, send counts, or minor line edits. Those symptoms matter less than the underlying fit of the campaign.',
+          'Apollo is most useful in audits when the team traces performance back to segmentation and process quality.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports a strong outbound audit process when the team reviews targeting, messaging, and pipeline quality together.',
+      'The best audit improves one high-impact variable, not ten cosmetic ones.'
+    ]
+  },
+  'b2b-prospecting-metrics-that-matter': {
+    summary: [
+      'The prospecting metrics that matter are the ones that help the team make better operating decisions. Activity metrics are useful only if they lead to better understanding of quality, conversion, and pipeline creation.',
+      'Apollo helps because it makes it easier to connect top-of-funnel effort with downstream outcomes inside one working environment.'
+    ],
+    customSections: [
+      {
+        title: 'What metrics deserve attention',
+        paragraphs: [
+          'The most useful metrics are usually reply quality, meeting quality, show rate, qualified pipeline created, and segment-level performance. Those metrics tell the team whether the motion is commercially viable.',
+          'Raw send counts and list size only matter when interpreted alongside quality signals.'
+        ]
+      },
+      {
+        title: 'Why teams get trapped by vanity metrics',
+        paragraphs: [
+          'Teams get trapped by vanity metrics when they need signs of activity more than signs of progress. That is understandable, but it often hides the real state of the pipeline.',
+          'Apollo becomes more valuable when the dashboard is used to support harder quality decisions instead of just reporting effort.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo prospecting metrics are most useful when the team tracks fewer metrics but ties them more directly to commercial outcomes.',
+      'A smaller dashboard with better decision value usually beats a large dashboard full of weak signals.'
+    ]
   }
 
 };
