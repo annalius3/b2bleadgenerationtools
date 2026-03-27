@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
+import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
@@ -323,19 +324,7 @@ export default async function GuidePage({ params }: Props) {
             ))}
           </section>
 
-          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">{guidePanels.top.label}</p>
-            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{guidePanels.top.title}</h2>
-            <p className="mt-3 text-sm text-slate-700">{renderApolloText(guidePanels.top.intro ?? '')}</p>
-            <div className="mt-4 grid gap-3 md:grid-cols-3">
-              {guidePanels.top.cards?.map((card) => (
-                <div key={card.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-                  <p className="text-sm font-semibold text-slate-900">{card.title}</p>
-                  <p className="mt-2 text-sm text-slate-700">{renderApolloText(card.body)}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <GuideTopPanel panel={guidePanels.top} />
 
           <h2 id="who-for">Who this is for</h2>
           <p>
@@ -537,13 +526,10 @@ export default async function GuidePage({ params }: Props) {
             <Link href="/for-startups">For Startups</Link>.
           </p>
 
-          <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{guidePanels.bottom.label}</p>
-            <h3 className="mt-2 text-xl font-semibold text-slate-900">{guidePanels.bottom.title}</h3>
-            <p className="mt-3 text-sm text-slate-700">
-              {renderApolloText(`${guide.title} should support a cleaner ${titleCaseHub(guide.hub).toLowerCase()} workflow, not just create more activity.`)}
-            </p>
-          </section>
+          <GuideBottomPanel
+            panel={guidePanels.bottom}
+            body={`${guide.title} should support a cleaner ${titleCaseHub(guide.hub).toLowerCase()} workflow, not just create more activity.`}
+          />
 
           <h2 id="checklist">{toc.find((item) => item.id === 'checklist')?.label ?? 'Implementation checklist'}</h2>
           <p>{kindCopy.checklistIntro}</p>

@@ -1,11 +1,11 @@
 export type GuideKind = 'review' | 'pricing' | 'tutorial' | 'strategy' | 'playbook';
 
-type GuidePanelCard = {
+export type GuidePanelCard = {
   title: string;
   body: string;
 };
 
-type GuidePanel = {
+export type GuidePanel = {
   label: string;
   title: string;
   intro?: string;
