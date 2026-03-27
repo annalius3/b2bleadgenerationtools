@@ -18,7 +18,7 @@ export const guideOverrides: Record<string, GuideOverride> = {
   'what-is-apollo-io': {
     summary: [
       'Apollo.io is best understood as an outbound operating platform, not just a contact database. The value is in how quickly a small team can go from target account definition to live prospecting and follow-up.',
-      'For most US B2B teams, the practical question is not “does Apollo have data?” but “does Apollo reduce the number of tools and manual steps between list building and first qualified conversation?”'
+      'For most US B2B teams, the practical question is not "does Apollo have data?" but "does Apollo reduce the number of tools and manual steps between list building and first qualified conversation?"'
     ],
     customSections: [
       {
@@ -393,13 +393,273 @@ export const guideOverrides: Record<string, GuideOverride> = {
         title: 'When the tutorial becomes a system',
         paragraphs: [
           'The tutorial becomes a real system once the team can repeat the process with another segment without rebuilding everything from scratch.',
-          'That is when Apollo stops being “new software” and starts becoming part of the operating model.'
+          'That is when Apollo stops being "new software" and starts becoming part of the operating model.'
         ]
       }
     ],
     finalVerdict: [
       'A strong Apollo tutorial should create a repeatable first workflow, not just familiarity with the UI.',
       'If the team leaves with one clear process and one clear review rhythm, the tutorial did its job.'
+    ]
+  },
+  'how-to-find-b2b-leads-with-apollo-io': {
+    summary: [
+      'The fastest way to find B2B leads with Apollo is to start with the right accounts, not the largest possible contact export. Teams usually get better results when they narrow company fit first and map contacts second.',
+      'Apollo works well here because it compresses segmentation, list building, and first-pass contact discovery into one workflow. That saves time, but only if the ICP is already directionally clear.'
+    ],
+    customSections: [
+      {
+        title: 'What separates good lead finding from bad lead collection',
+        paragraphs: [
+          'Good lead finding produces accounts that actually resemble likely buyers. Bad lead collection produces large lists with weak fit and no clear prioritization.',
+          'Apollo helps with speed, but the real quality comes from how carefully you define company fit, role relevance, and campaign purpose before export.'
+        ]
+      },
+      {
+        title: 'The account-first method',
+        paragraphs: [
+          'Teams that start with companies and only then identify contacts usually produce cleaner outbound. This reduces wasted effort on the wrong businesses and makes personalization easier.',
+          'The practical order is simple: define the segment, shortlist accounts, map buying roles, then build a campaign around that slice.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is strong for finding B2B leads when the team uses an account-first workflow and reviews fit before scale.',
+      'If you just need more names, it will feel easy. If you need qualified leads, segmentation discipline matters much more.'
+    ]
+  },
+  'how-to-get-clients-using-apollo-io': {
+    summary: [
+      'Apollo can help you get clients, but only by supporting the full client acquisition process: targeting, outreach, qualification, and follow-up. It is not a shortcut around positioning or offer quality.',
+      'The teams that win with Apollo usually combine clear targeting with direct, practical outreach that leads to qualified conversations rather than generic meetings.'
+    ],
+    customSections: [
+      {
+        title: 'The real path from Apollo to clients',
+        paragraphs: [
+          'Apollo helps create pipeline, not magic demand. The path to clients still runs through a clear niche, a credible offer, and consistent reply handling.',
+          'That is why the best use of Apollo is to shorten the path between market identification and conversation quality, not simply to automate more activity.'
+        ]
+      },
+      {
+        title: 'Why teams stall before client acquisition',
+        paragraphs: [
+          'Most stalls happen after prospecting: weak qualification, slow follow-up, or poor conversion from interest to next step. Those are client acquisition problems, not list problems.',
+          'Apollo helps reveal them faster, but the team still has to solve them operationally.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is useful for getting clients when it supports a clear outbound system and a specific offer.',
+      'If client acquisition is inconsistent, do not just add volume. Fix the handoff from prospect to opportunity.'
+    ]
+  },
+  'generate-sales-leads-with-apollo': {
+    summary: [
+      'Generating sales leads with Apollo is less about volume and more about building segments that can realistically convert into pipeline. Teams that chase high lead counts usually create more noise than revenue.',
+      'Apollo becomes valuable when lead generation is tied to targeting rules, message fit, and a repeatable review loop.'
+    ],
+    customSections: [
+      {
+        title: 'Sales lead generation versus list generation',
+        paragraphs: [
+          'A list is not the same thing as a sales lead. A sales lead should have at least directional account fit, role relevance, and a reason why outreach makes sense now.',
+          'Apollo is most useful when you treat list building as the first filter in lead generation, not the final result.'
+        ]
+      },
+      {
+        title: 'How to improve lead quality over time',
+        paragraphs: [
+          'The easiest way to improve lead quality is to review who replies positively, who books, and which accounts move forward. Then push that learning back into the next segment definition.',
+          'That loop matters more than adding more filters for the sake of complexity.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can generate sales leads effectively when the team defines lead quality upfront and reviews downstream conversion honestly.',
+      'The best lead generation process is the one that gets cleaner every week, not just bigger.'
+    ]
+  },
+  'how-to-build-a-lead-list-in-apollo': {
+    summary: [
+      'A strong lead list in Apollo starts with a business hypothesis about who should buy, not just a set of filters. The list should make the campaign easier to run, easier to personalize, and easier to qualify.',
+      'List quality usually matters more than list size. Small, tight lists often outperform broad exports because the message can stay more relevant.'
+    ],
+    customSections: [
+      {
+        title: 'What a good lead list should contain',
+        paragraphs: [
+          'A good lead list contains accounts that resemble your best buyers and contacts who are actually connected to the buying process. It should also be segmented clearly enough that one message angle still makes sense across the whole list.',
+          'If the list requires multiple unrelated offers or copy angles, it is probably too broad.'
+        ]
+      },
+      {
+        title: 'Why most lead lists decay fast',
+        paragraphs: [
+          'Lead lists decay because teams keep adding records without reviewing what the last campaign taught them. The result is a growing asset that becomes less useful over time.',
+          'Apollo helps you build lists quickly, but you still need a cleanup and prioritization process to keep them commercially useful.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is very effective for list building if the team treats lists as strategic assets, not disposable exports.',
+      'The best list is one you can explain in one sentence: who it contains, why it exists, and what campaign it is for.'
+    ]
+  },
+  'finding-decision-makers-with-apollo': {
+    summary: [
+      'Finding decision-makers with Apollo works best when you map the buying process at the account level instead of searching titles in isolation. The right person depends on the offer, deal size, and buying complexity.',
+      'In many B2B motions, there is no single decision-maker. There is a buying path with champions, evaluators, and final approvers.'
+    ],
+    customSections: [
+      {
+        title: 'Why title-only prospecting underperforms',
+        paragraphs: [
+          'Teams often search for the most senior title and assume that is enough. In practice, seniority without relevance usually produces weaker conversations and slower progress.',
+          'Apollo is more useful when it helps you map influence, role fit, and stakeholder coverage instead of just finding executives.'
+        ]
+      },
+      {
+        title: 'How to multithread smartly',
+        paragraphs: [
+          'Smart multithreading means speaking differently to different stakeholders. Operators, leaders, and executives usually care about different parts of the same business problem.',
+          'If Apollo helps you identify those people quickly, the next job is message relevance, not just contact volume.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is strong for finding decision-makers when the team understands the buying map and avoids title-only thinking.',
+      'The point is not just to find senior people. It is to find the right stakeholders for the deal motion.'
+    ]
+  },
+  'how-to-find-companies-to-sell-to': {
+    summary: [
+      'Finding companies to sell to is one of the highest-leverage parts of outbound because good company selection improves every downstream metric. Bad company selection makes every later step harder.',
+      'Apollo helps by making it easier to narrow account criteria and test vertical or segment hypotheses quickly.'
+    ],
+    customSections: [
+      {
+        title: 'The difference between a market and a target account set',
+        paragraphs: [
+          'A market may be large, but a useful target account set is small enough to prioritize and learn from. That is where many teams go wrong: they choose a market, not a target set.',
+          'Apollo is useful because it lets you move from broad category thinking into concrete account selection.'
+        ]
+      },
+      {
+        title: 'What to evaluate before outreach',
+        paragraphs: [
+          'Before outreach, assess fit, likely need, stakeholder accessibility, and sales feasibility. A company can look interesting on paper but still be a poor outbound target.',
+          'That filtering step is where most of the economic value of prospecting is created.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo helps teams find companies to sell to faster, but the real win comes from being more selective, not less.',
+      'Better account choice usually improves replies, meetings, and close rate at the same time.'
+    ]
+  },
+  'prospecting-with-apollo-io': {
+    summary: [
+      'Prospecting with Apollo works best when it is treated as a weekly operating process rather than a one-time campaign launch. The tool is useful, but the operating rhythm is what creates consistency.',
+      'The strongest prospecting motions combine clean account selection, role mapping, disciplined follow-up, and regular campaign review.'
+    ],
+    customSections: [
+      {
+        title: 'What good prospecting feels like',
+        paragraphs: [
+          'Good prospecting feels focused. The team knows who they are targeting, why that segment matters, and what kind of reply would count as progress.',
+          'Apollo supports that focus when campaigns are organized around segments instead of broad undifferentiated lists.'
+        ]
+      },
+      {
+        title: 'Where prospecting usually breaks',
+        paragraphs: [
+          'Prospecting usually breaks when there is no link between list quality and reply handling. Teams launch quickly, but nobody reviews whether the conversations are improving.',
+          'The platform can support the process, but it cannot create prospecting discipline on its own.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a strong prospecting platform when the team uses it inside a repeatable weekly system.',
+      'If the workflow is inconsistent, the tool will mirror that inconsistency.'
+    ]
+  },
+  'how-to-build-a-sales-pipeline': {
+    summary: [
+      'A sales pipeline is not just a list of deals. It is a process for moving qualified opportunities forward with clear stage rules, next actions, and conversion visibility. Apollo can help fill the pipeline, but the pipeline itself still needs structure.',
+      'Teams get better pipeline results when they define what should happen after the first positive reply, not just how to generate outreach activity.'
+    ],
+    customSections: [
+      {
+        title: 'Where pipeline actually starts',
+        paragraphs: [
+          'Pipeline starts when interest becomes qualified commercial movement, not when a message is sent. That distinction matters because a full top-of-funnel does not guarantee a healthy pipeline.',
+          'Apollo contributes to pipeline when the team handles replies well and moves good-fit conversations into a disciplined follow-up path.'
+        ]
+      },
+      {
+        title: 'How to avoid fake pipeline',
+        paragraphs: [
+          'Fake pipeline appears when teams count weak conversations as opportunities. That inflates activity and damages forecast quality.',
+          'A stronger approach is to define stage entry rules clearly and apply them consistently, even when the pipeline feels light.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help build a pipeline, but only when qualification and stage discipline are built into the process.',
+      'The goal is not more opportunity records. It is more credible revenue progression.'
+    ]
+  },
+  'lead-generation-strategy-using-apollo': {
+    summary: [
+      'A lead generation strategy using Apollo should answer four questions clearly: who to target, why now, what message angle to use, and how success will be reviewed. Without those answers, strategy turns into activity.',
+      'Apollo gives teams a practical execution layer, but the strategy still has to define what a qualified lead looks like and why the team believes that segment is worth pursuing.'
+    ],
+    customSections: [
+      {
+        title: 'Strategy before tooling',
+        paragraphs: [
+          'Lead generation strategy starts with market and offer decisions. Apollo is most useful after the team has already chosen a segment and can explain why that segment should respond.',
+          'That sequence matters because good tooling cannot rescue a weak strategic premise.'
+        ]
+      },
+      {
+        title: 'How Apollo changes strategy execution',
+        paragraphs: [
+          'Apollo shortens the distance between strategy and market feedback. That means a team can test assumptions faster, see reply quality sooner, and adjust list logic more quickly.',
+          'This is a major advantage for lean teams that need learning speed as much as lead volume.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo fits lead generation strategy well when the team already has a segment thesis and needs faster execution.',
+      'The strongest strategy is one that learns from each campaign and gets narrower, not broader.'
+    ]
+  },
+  'how-to-scale-client-acquisition': {
+    summary: [
+      'Scaling client acquisition is usually a process problem before it becomes a tooling problem. Teams scale best when they first stabilize targeting, outreach, qualification, and sales follow-up in one repeatable loop.',
+      'Apollo helps because it reduces workflow friction, but the real scaling requirement is operational consistency.'
+    ],
+    customSections: [
+      {
+        title: 'What should be stable before scaling',
+        paragraphs: [
+          'Before scaling, the team should know which segment responds, which message angles work, and what a qualified next step looks like. Without that foundation, scale amplifies waste.',
+          'Apollo can support scale only when the underlying process is already directionally valid.'
+        ]
+      },
+      {
+        title: 'How scale usually breaks a team',
+        paragraphs: [
+          'Scale usually breaks teams through duplicated work, inconsistent follow-up, poor list hygiene, and weak qualification. Those are operational failures, not software failures.',
+          'A better approach is to scale only the parts of the system that are already producing qualified outcomes.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help scale client acquisition if the team scales proven segments and protects quality controls as volume rises.',
+      'The safest kind of scale is controlled scale: more of what already works, not more of everything.'
     ]
   }
 };
