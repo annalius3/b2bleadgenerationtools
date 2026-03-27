@@ -198,6 +198,41 @@ const kindSpecificCopy = (kind: GuideKind) => {
   }
 };
 
+const buildQuickFacts = (kind: GuideKind, title: string) => {
+  switch (kind) {
+    case 'review':
+      return [
+        'Best used to judge fit before committing to a longer workflow.',
+        'Focus on tradeoffs, not feature hype.',
+        `${title} should be evaluated against real alternatives, not in isolation.`
+      ];
+    case 'pricing':
+      return [
+        'Judge price in the context of workflow efficiency.',
+        'Credits, seat count, and process discipline usually matter more than headline plan names.',
+        'Cheaper is not better if quality drops.'
+      ];
+    case 'tutorial':
+      return [
+        'Keep the first launch narrow enough to review quickly.',
+        'Aim for one working workflow, not complete feature coverage.',
+        'Use the first week to learn, not to scale.'
+      ];
+    case 'strategy':
+      return [
+        'A strategy page should improve decision quality, not just activity.',
+        'Segment clarity matters more than channel volume.',
+        'The best strategic change is usually the one the team can sustain weekly.'
+      ];
+    default:
+      return [
+        'Use this page as an operating playbook, not just a reference document.',
+        'Tighter process usually beats more volume.',
+        'Weekly review is part of execution, not an optional extra.'
+      ];
+  }
+};
+
 const buildComparisonRows = (hub: (typeof guides)[number]['hub']) => {
   switch (hub) {
     case 'find-clients':
@@ -278,6 +313,7 @@ export default async function GuidePage({ params }: Props) {
   const toc = buildToc(guideKind);
   const kindCopy = kindSpecificCopy(guideKind);
   const hubCopy = hubSpecificCopy(guide.hub);
+  const quickFacts = buildQuickFacts(guideKind, guide.title);
   const override = guideOverrides[guide.slug];
   const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
@@ -414,6 +450,14 @@ export default async function GuidePage({ params }: Props) {
               <p key={paragraph} className="mt-2 text-sm text-slate-700">
                 {renderApolloText(paragraph)}
               </p>
+            ))}
+          </section>
+
+          <section className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-3">
+            {quickFacts.map((fact) => (
+              <div key={fact} className="rounded-xl border border-slate-200 bg-white p-4">
+                <p className="text-sm font-medium text-slate-900">{renderApolloText(fact)}</p>
+              </div>
             ))}
           </section>
 
