@@ -119,6 +119,49 @@ export const HowToSchema = ({
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 };
 
+export const ReviewSchema = ({
+  title,
+  description,
+  url,
+  itemName,
+  image
+}: {
+  title: string;
+  description: string;
+  url: string;
+  itemName: string;
+  image: string;
+}) => {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    name: title,
+    description,
+    url,
+    author: {
+      '@type': 'Organization',
+      name: 'B2B Lead Gen Tools Editorial'
+    },
+    itemReviewed: {
+      '@type': 'SoftwareApplication',
+      name: itemName,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      image
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'B2B Lead Generation Tools',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.b2bleadgenerationtools.com/icon.svg'
+      }
+    }
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
+};
+
 export const WebSiteSchema = ({
   url,
   name,
