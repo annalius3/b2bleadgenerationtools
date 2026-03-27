@@ -921,7 +921,266 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo can support predictable client flow for agencies when the outbound process is niche-specific and reviewed consistently.',
       'The more stable the offer and targeting, the more predictable client flow becomes.'
     ]
+  },
+  'apollo-io-for-small-business': {
+    summary: [
+      'Apollo can work well for small businesses when the team keeps the prospecting motion narrow and practical. The value is not in acting like a big sales org. The value is in finding the right accounts faster and turning that into a manageable flow of conversations.',
+      'For small businesses, Apollo is most useful when time is scarce, the target market is clear enough to segment, and outbound needs to be run by one or two people without heavy overhead.'
+    ],
+    customSections: [
+      {
+        title: 'Why Apollo fits many small businesses',
+        paragraphs: [
+          'Small businesses usually do not need a sprawling sales stack. They need one system that helps them identify prospects, reach the right people, and keep execution organized.',
+          'Apollo fits that need well when the team already knows which type of buyer is most likely to convert.'
+        ]
+      },
+      {
+        title: 'What small businesses should avoid',
+        paragraphs: [
+          'The common mistake is trying to prospect too broadly. Small businesses get more value from clear niche focus and repeatable follow-up than from large contact volume.',
+          'Apollo becomes expensive and noisy if it is used without enough discipline around segmentation and list review.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is often a strong small-business outbound tool because it helps a lean team do more with less operational friction.',
+      'It works best when the business is focused enough to run one clean prospecting motion at a time.'
+    ]
+  },
+  'how-small-businesses-find-clients': {
+    summary: [
+      'Small businesses usually find clients fastest when they combine a narrow target market with a practical outbound process. Generic marketing spread across too many channels often creates motion without enough sales signal.',
+      'Apollo helps when it supports direct prospecting into a specific segment, especially if the business cannot rely on paid ads or inbound yet.'
+    ],
+    customSections: [
+      {
+        title: 'Why focus beats reach for small businesses',
+        paragraphs: [
+          'A small business rarely wins by being visible everywhere. It wins by becoming relevant to a specific buyer group and keeping follow-up tighter than larger competitors.',
+          'That is why outbound can work well for small firms: it forces the business to be explicit about who it serves and why.'
+        ]
+      },
+      {
+        title: 'Where small business client acquisition usually breaks',
+        paragraphs: [
+          'The breakdown usually happens when the business has no clear offer angle or when follow-up is too inconsistent to turn interest into opportunities.',
+          'Apollo helps with targeting and workflow speed, but it does not remove the need for clear positioning and persistent execution.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Small businesses find clients more predictably when they target narrowly and run a simple repeatable outbound loop.',
+      'Apollo is useful when it supports that loop instead of turning prospecting into a broad random task.'
+    ]
+  },
+  'client-acquisition-for-consultants': {
+    summary: [
+      'Consultants usually win clients through specificity, credibility, and direct relevance. The offer has to feel practical and close to a real business problem, not broad and abstract.',
+      'Apollo is useful for consultants because it helps narrow the right buyer segment and organize outreach around a more focused service proposition.'
+    ],
+    customSections: [
+      {
+        title: 'Why consultants need tighter targeting',
+        paragraphs: [
+          'Consulting is usually bought on trust and relevance. That means consultants need to sound more precise than generic service providers.',
+          'Apollo helps when it is used to build narrow account sets around one consulting angle, not a vague list of businesses that might be interested.'
+        ]
+      },
+      {
+        title: 'How consultants should frame outreach',
+        paragraphs: [
+          'The strongest outreach usually leads with a specific business issue, not the consultant?s capabilities list. Buyers respond better when the consultant sounds like they understand the problem already.',
+          'That positioning step matters more than any individual tool feature.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports consultant client acquisition well when the consultant is niche enough to sound credible in outbound.',
+      'The narrower the problem and buyer, the easier it is to turn outreach into conversations.'
+    ]
+  },
+  'sales-strategy-for-service-companies': {
+    summary: [
+      'Service companies need sales strategies that make the offer easy to understand, easy to qualify, and easy to follow up on. Broad sales motions usually create weak lead quality because the buyer cannot tell why the service matters right now.',
+      'Apollo helps when the company uses it to target one service line or one buyer segment at a time.'
+    ],
+    customSections: [
+      {
+        title: 'The right sales strategy for service businesses',
+        paragraphs: [
+          'The best sales strategy for many service companies is to anchor the outreach around one business outcome and one target buyer type. That keeps the prospecting system simpler and more believable.',
+          'Apollo supports this by making it easier to organize outreach around segment-specific lists and campaigns.'
+        ]
+      },
+      {
+        title: 'Why service companies lose pipeline quality',
+        paragraphs: [
+          'Pipeline quality usually drops when the company tries to sell too many services to too many types of businesses at once. The result is weak relevance and poor qualification.',
+          'A better path is to create one repeatable outbound motion for the highest-converting service angle first.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo works well for service-company sales strategy when it supports a narrower and more disciplined offer-led approach.',
+      'The more focused the service message, the better the downstream pipeline tends to look.'
+    ]
+  },
+  'growing-a-consulting-business': {
+    summary: [
+      'Growing a consulting business usually depends on making acquisition more repeatable, not just doing more networking. A consulting firm grows faster when it can define its best-fit client and create a consistent prospecting rhythm around that segment.',
+      'Apollo can help because it gives the business a faster way to turn niche targeting into an outbound system that is easier to run every week.'
+    ],
+    customSections: [
+      {
+        title: 'What growth really requires',
+        paragraphs: [
+          'Consulting growth usually comes from better positioning, stronger referrals, and more repeatable outbound around a clear niche. Random outreach rarely creates durable growth.',
+          'Apollo is useful when it helps convert the niche into a real target account list and a manageable campaign system.'
+        ]
+      },
+      {
+        title: 'What slows consulting growth down',
+        paragraphs: [
+          'Growth slows when the business keeps changing audience, offer, and outreach logic at the same time. That makes it hard to learn from any campaign.',
+          'The better path is to stabilize one acquisition motion and make that motion more efficient over time.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can support consulting growth when the firm already has a clear niche and wants a more repeatable outbound channel.',
+      'Predictable growth comes from consistency and clarity, not just more prospecting activity.'
+    ]
+  },
+  'lead-generation-for-freelancers': {
+    summary: [
+      'Freelancers usually need a very lean lead generation process: one clear niche, one practical message angle, and a manageable number of outreach conversations. Complexity is usually the enemy early on.',
+      'Apollo is useful for freelancers when it helps them focus on the right buyers instead of wasting time prospecting manually across too many possible clients.'
+    ],
+    customSections: [
+      {
+        title: 'What freelancers should optimize for',
+        paragraphs: [
+          'Freelancers should optimize for fit and speed, not scale. The goal is to find a small number of strong-fit prospects and turn them into meaningful conversations.',
+          'Apollo helps if it reduces research time and keeps the outreach process organized enough to follow through consistently.'
+        ]
+      },
+      {
+        title: 'Why freelance lead generation often fails',
+        paragraphs: [
+          'Freelance lead generation often fails when the service is described too broadly or when the target buyer is not specific enough to message clearly.',
+          'The better the freelancer can explain the niche problem they solve, the more useful Apollo becomes.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can be useful for freelancers if it helps them narrow the buyer list and run outreach with less manual friction.',
+      'The simplest outreach system is usually the one that gets results fastest.'
+    ]
+  },
+  'how-to-build-a-client-base-from-scratch': {
+    summary: [
+      'Building a client base from scratch requires a direct path from market focus to conversations. Teams that start from nothing need clarity and consistency more than they need a complicated GTM stack.',
+      'Apollo helps by turning that first market focus into target accounts, contact lists, and a manageable outbound workflow.'
+    ],
+    customSections: [
+      {
+        title: 'What the first client base should look like',
+        paragraphs: [
+          'The first client base should be built around a small set of buyers with similar needs. That makes the offer sharper, the outreach clearer, and the learning faster.',
+          'A scattered client base creates scattered messaging and slows down every later growth step.'
+        ]
+      },
+      {
+        title: 'Why early outbound should stay narrow',
+        paragraphs: [
+          'Narrow outbound is easier to improve because every conversation teaches something useful about one buyer type. Broad outbound creates too much mixed signal.',
+          'Apollo is most valuable when it helps the business stay focused long enough to see what actually works.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help build a client base from scratch if the business starts narrow and keeps the learning loop short.',
+      'The first durable clients usually come from specificity, not reach.'
+    ]
+  },
+  'b2b-marketing-without-ads': {
+    summary: [
+      'B2B marketing without ads usually depends on outbound, content, partnerships, and direct relationship-building. The common requirement is clarity: the business has to know exactly whom it wants to reach and what message belongs to that segment.',
+      'Apollo is useful in this model because it can become the prospecting engine behind a no-ads acquisition strategy.'
+    ],
+    customSections: [
+      {
+        title: 'Why no-ads growth can work well',
+        paragraphs: [
+          'No-ads growth can work because it forces the business to be more deliberate about niche focus and buyer relevance. That often creates better commercial discipline than spraying budget across broad paid channels.',
+          'Apollo strengthens this approach when it helps the team create a repeatable prospecting motion without a large media budget.'
+        ]
+      },
+      {
+        title: 'What replaces paid traffic',
+        paragraphs: [
+          'When ads are not the engine, outreach and relationship-led channels have to be stronger. That means targeting, message quality, and follow-up become even more important.',
+          'The companies that win without ads usually have a sharper target market and a clearer sales story.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo fits B2B marketing without ads when the business wants to create a more direct acquisition engine around targeted outbound.',
+      'The less budget the team has, the more important precision becomes.'
+    ]
+  },
+  'targeting-specific-industries': {
+    summary: [
+      'Industry targeting works when the business uses the vertical as a real message filter, not just a list filter. The point is not just to contact companies in an industry. The point is to sound relevant to how that industry buys and operates.',
+      'Apollo is useful because it makes vertical segmentation and account selection faster, which is especially helpful when testing a new niche.'
+    ],
+    customSections: [
+      {
+        title: 'Why industry targeting improves outbound',
+        paragraphs: [
+          'A good industry target gives the campaign a clearer language, clearer proof, and a clearer pain point. That usually improves message quality immediately.',
+          'Apollo helps by making it easier to build cleaner vertical slices and keep the campaign organized around one market at a time.'
+        ]
+      },
+      {
+        title: 'Where vertical targeting goes wrong',
+        paragraphs: [
+          'Industry targeting goes wrong when the business treats every company in the vertical as the same buyer. Even within one industry, company size, role, and use case still matter.',
+          'That is why industry should be a filter layer, not the whole targeting model.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is strong for industry targeting when the team combines vertical logic with buyer-role and account-fit discipline.',
+      'The best industry campaigns feel tailored because the underlying segment really is tighter.'
+    ]
+  },
+  'apollo-for-healthcare-lead-generation': {
+    summary: [
+      'Apollo can support healthcare lead generation when the business narrows the market carefully and focuses on commercial relevance rather than broad outreach. Healthcare is too varied for generic prospecting to work well.',
+      'The strongest results usually come from tight account selection, clearer role mapping, and industry-specific messaging that reflects how healthcare organizations actually operate.'
+    ],
+    customSections: [
+      {
+        title: 'Why healthcare requires tighter targeting',
+        paragraphs: [
+          'Healthcare is not one uniform market. Different buyer groups, organization types, and commercial contexts create very different outreach conditions.',
+          'Apollo is useful when it helps the team narrow those differences into a workable target account set instead of treating the vertical as one broad segment.'
+        ]
+      },
+      {
+        title: 'What a realistic healthcare workflow looks like',
+        paragraphs: [
+          'A realistic healthcare prospecting workflow starts with one buyer type and one commercial angle. From there, the team can build a tighter list, map stakeholders, and run more credible outreach.',
+          'That discipline matters much more than large-scale outreach volume in this vertical.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can be useful for healthcare lead generation when the campaign is built around a very specific buyer and use case.',
+      'The narrower the healthcare segment, the easier it is to create commercially relevant outbound.'
+    ]
   }
 
 };
-
