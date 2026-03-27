@@ -661,6 +661,267 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo can help scale client acquisition if the team scales proven segments and protects quality controls as volume rises.',
       'The safest kind of scale is controlled scale: more of what already works, not more of everything.'
     ]
+  },
+  'cold-email-with-apollo-io': {
+    summary: [
+      'Cold email with Apollo works when the team treats messaging, list quality, and follow-up as one connected system. Most poor cold email results come from bad fit, not from the sending tool itself.',
+      'Apollo helps because targeting, sequence building, and reply handling live close together, which makes weekly iteration faster.'
+    ],
+    customSections: [
+      {
+        title: 'What makes Apollo useful for cold email',
+        paragraphs: [
+          'Apollo is useful for cold email because it shortens the distance between choosing a segment and launching a sequence. That speed matters when the team is still learning which audience and angle will convert.',
+          'The workflow becomes more effective when the same operator can review list quality, adjust copy, and inspect reply patterns without switching systems constantly.'
+        ]
+      },
+      {
+        title: 'What usually breaks cold email first',
+        paragraphs: [
+          'The first failure point is almost always list relevance or message relevance. If the wrong people are receiving the email, better cadence or more automation will not rescue the campaign.',
+          'That is why the best Apollo cold email setups stay narrow early and optimize quality before volume.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is strong for cold email when the team uses it as a workflow system rather than a bulk sending shortcut.',
+      'The better the segmentation and offer clarity, the better Apollo cold email performs.'
+    ]
+  },
+  'how-to-send-cold-emails-using-apollo': {
+    summary: [
+      'Sending cold emails with Apollo is straightforward technically, but the real result depends on who you target, how specific the message is, and how replies are handled after launch.',
+      'The best process is simple: pick one segment, write one relevant angle, launch carefully, and review responses before scaling.'
+    ],
+    customSections: [
+      {
+        title: 'The right order of operations',
+        paragraphs: [
+          'The right order is target first, message second, launch third. Teams that reverse the order usually end up writing generic copy for a mixed list.',
+          'Apollo makes it easy to launch quickly, which is useful only if the list and message are already aligned.'
+        ]
+      },
+      {
+        title: 'Why first-launch discipline matters',
+        paragraphs: [
+          'The first launch should be small enough to inspect. If the team starts broad, it becomes harder to tell whether the issue is targeting, copy, or follow-up timing.',
+          'A controlled launch gives cleaner signal and leads to better process decisions.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is effective for sending cold emails when the team keeps the first sequence simple and reviewable.',
+      'The highest-ROI improvement is usually not sending more. It is sending to a better segment with a better reason.'
+    ]
+  },
+  'email-outreach-strategy': {
+    summary: [
+      'A good email outreach strategy defines audience, message angle, CTA, and review logic before a campaign starts. Without those four pieces, outreach becomes activity without learning.',
+      'Apollo helps execute the strategy faster, but it does not replace the need for a clear segment thesis and a specific business reason for outreach.'
+    ],
+    customSections: [
+      {
+        title: 'What strategy should answer before launch',
+        paragraphs: [
+          'The strategy should answer who you are targeting, what pain or opportunity you believe they have, what offer angle you will use, and what counts as a positive signal.',
+          'If any of those points are unclear, the campaign usually becomes harder to diagnose after launch.'
+        ]
+      },
+      {
+        title: 'Why Apollo helps strategy execution',
+        paragraphs: [
+          'Apollo shortens the path from strategy to live test. That makes it easier to validate assumptions about market segments and message fit quickly.',
+          'For lean teams, that faster feedback loop can be more valuable than feature depth alone.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo fits email outreach strategy well when the team already has a directional thesis and needs faster execution.',
+      'The strategy wins when each campaign teaches the team something usable for the next one.'
+    ]
+  },
+  'building-email-sequences': {
+    summary: [
+      'Building email sequences in Apollo is less about stacking more touches and more about creating a clear narrative across touches. Each step should add context, reduce friction, or create a better reason to reply.',
+      'The strongest sequences feel like a thoughtful progression, not repeated pressure.'
+    ],
+    customSections: [
+      {
+        title: 'What a good sequence does',
+        paragraphs: [
+          'A good sequence explains the problem clearly, gives a relevant reason for contact, and changes angle slightly as the touches progress. It earns attention instead of demanding it.',
+          'Apollo is helpful here because the team can connect list quality and sequence structure in the same workflow.'
+        ]
+      },
+      {
+        title: 'Why sequences get stale',
+        paragraphs: [
+          'Sequences get stale when every touch says the same thing with slightly different wording. That creates repetition without more relevance.',
+          'A better pattern is to let each touch advance the conversation: context, pain, proof, alternative angle, softer CTA.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a practical place to build sequences if the team focuses on clarity and progression instead of volume.',
+      'The best sequence is usually the simplest one that still gives the buyer a reason to care.'
+    ]
+  },
+  'follow-up-automation': {
+    summary: [
+      'Follow-up automation is valuable when it protects consistency, not when it replaces judgment. Good automation makes sure quality opportunities do not get missed while still allowing manual intervention when context matters.',
+      'Apollo is useful here because it can hold the sequence logic close to targeting and reply handling.'
+    ],
+    customSections: [
+      {
+        title: 'What should be automated',
+        paragraphs: [
+          'The best candidates for automation are routine follow-up timing, sequence progression, and reminder logic. These are consistency problems that software handles well.',
+          'The worst things to automate blindly are judgment-heavy replies and nuanced qualification decisions.'
+        ]
+      },
+      {
+        title: 'Where automation becomes a liability',
+        paragraphs: [
+          'Automation becomes a liability when the team uses it to avoid looking at campaign quality. More automated follow-up to the wrong list just creates more bad activity.',
+          'The quality review still has to happen weekly, regardless of how much of the cadence is automated.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo follow-up automation is strongest when it supports a human-reviewed outbound system.',
+      'Automation should protect consistency, not excuse weak targeting or lazy review.'
+    ]
+  },
+  'personalization-techniques': {
+    summary: [
+      'Personalization works when it changes relevance, not when it just adds surface-level detail. The goal is to make the message more specific to the buyer context, not simply more customized-looking.',
+      'Apollo helps by making it easier to segment accounts and contacts in ways that support useful message variation.'
+    ],
+    customSections: [
+      {
+        title: 'What good personalization actually changes',
+        paragraphs: [
+          'Good personalization changes the reason the buyer should care. It might shift the pain point, proof point, or message angle based on vertical, role, or company context.',
+          'Weak personalization only changes the opener while leaving the rest of the email generic.'
+        ]
+      },
+      {
+        title: 'How to personalize without slowing to a stop',
+        paragraphs: [
+          'The practical way to personalize at scale is to do most of it at the segment level, then reserve deeper account-level work for the highest-value opportunities.',
+          'Apollo supports this by helping teams organize campaigns around segments that share the same reason to respond.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo supports useful personalization when the team uses segmentation as the core of message relevance.',
+      'The best personalization usually happens before the email is written, inside the segment logic.'
+    ]
+  },
+  'how-to-get-replies-to-cold-emails': {
+    summary: [
+      'Getting replies to cold emails depends more on relevance and clarity than on clever writing tricks. Buyers reply when the message feels timely, specific, and easy to respond to.',
+      'Apollo can help teams improve reply rates by tightening the connection between segment quality, message angle, and follow-up consistency.'
+    ],
+    customSections: [
+      {
+        title: 'What drives replies most often',
+        paragraphs: [
+          'Replies usually come from a strong combination of fit, timing, and a low-friction CTA. If even one of those is weak, the campaign often underperforms.',
+          'That is why reply strategy starts with list quality, not with copy tricks.'
+        ]
+      },
+      {
+        title: 'How to improve reply quality',
+        paragraphs: [
+          'Improving reply quality means getting more relevant responses, not just more responses. That comes from tighter targeting, clearer offers, and more realistic asks.',
+          'Apollo helps when it is used to keep the campaign narrow enough that the message can stay believable.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can help increase replies when the team treats reply generation as a fit and clarity problem, not just a cadence problem.',
+      'Better replies usually come from better segments and cleaner asks.'
+    ]
+  },
+  'outbound-sales-for-startups': {
+    summary: [
+      'Outbound sales for startups works when the company uses it as a fast learning system, not just a lead source. The early goal is to understand who responds, what message lands, and where real buying urgency exists.',
+      'Apollo is a strong fit for startups because it helps compress research, targeting, and outreach into a workflow that a small team can actually run.'
+    ],
+    customSections: [
+      {
+        title: 'Why startups should keep outbound simple',
+        paragraphs: [
+          'Startups lose time when they copy mature sales teams too early. They usually need one segment, one offer angle, and one review rhythm more than they need a complex stack.',
+          'Apollo supports this by making it easier to run a lean outbound system without too much operational overhead.'
+        ]
+      },
+      {
+        title: 'What outbound should teach a startup',
+        paragraphs: [
+          'Outbound should teach the startup which type of buyer responds, what problem framing gets attention, and what objections appear repeatedly. Those lessons are as valuable as the meetings themselves.',
+          'If the team is not learning from each sprint, outbound is probably too broad or poorly reviewed.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a good startup outbound platform when the company uses it to learn quickly and focus tightly.',
+      'The best startup outbound system is small, measurable, and easy to improve.'
+    ]
+  },
+  'how-agencies-use-apollo': {
+    summary: [
+      'Agencies get the most value from Apollo when they narrow their niche, define one clear service angle, and build prospecting around specific buyer problems. Broad agency outreach usually underperforms because the message becomes too generic.',
+      'Apollo is helpful because it lets agencies organize targets, offers, and outbound execution around one niche at a time.'
+    ],
+    customSections: [
+      {
+        title: 'Why niche focus matters more for agencies',
+        paragraphs: [
+          'Agencies usually win when they sound specific. That means they need lists, messaging, and proof aligned to one buyer type or service line instead of trying to speak to every business at once.',
+          'Apollo helps when it is used to reinforce that niche discipline.'
+        ]
+      },
+      {
+        title: 'What a good agency Apollo workflow looks like',
+        paragraphs: [
+          'A strong agency workflow usually starts with a service-offer segment, moves into targeted list building, then uses outreach that references outcomes and pain points the niche already understands.',
+          'The easier the team can explain why this niche should care, the better the outbound tends to perform.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo is a strong fit for agencies when it is used to support niche-specific outbound rather than broad prospecting.',
+      'Agency performance improves when lists, proof, and offers stay tightly aligned.'
+    ]
+  },
+  'predictable-client-flow-for-agencies': {
+    summary: [
+      'Predictable client flow for agencies comes from process discipline more than from one campaign. The agency needs repeatable list logic, a clear positioning angle, and a consistent follow-up system.',
+      'Apollo helps create that repeatability by keeping targeting and outreach close together, which makes the weekly client acquisition loop easier to run.'
+    ],
+    customSections: [
+      {
+        title: 'What predictable flow actually means',
+        paragraphs: [
+          'Predictable flow does not mean a perfectly even number of clients every week. It means the agency has a repeatable system for generating qualified conversations and knows which levers to review when results change.',
+          'That kind of predictability comes from process clarity, not from hope or sporadic outbound bursts.'
+        ]
+      },
+      {
+        title: 'How agencies lose consistency',
+        paragraphs: [
+          'Agencies lose consistency when they change niche, offer, and message at the same time. That makes it hard to know what is actually driving outcomes.',
+          'Apollo is useful when it helps the team stay organized enough to test one meaningful variable at a time.'
+        ]
+      }
+    ],
+    finalVerdict: [
+      'Apollo can support predictable client flow for agencies when the outbound process is niche-specific and reviewed consistently.',
+      'The more stable the offer and targeting, the more predictable client flow becomes.'
+    ]
   }
+
 };
 
