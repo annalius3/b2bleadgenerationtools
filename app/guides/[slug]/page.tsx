@@ -322,6 +322,50 @@ export default async function GuidePage({ params }: Props) {
             ))}
           </section>
 
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">{guideKind === 'review' ? 'Review Lens' : guideKind === 'pricing' ? 'Pricing Lens' : guideKind === 'tutorial' ? 'Tutorial Lens' : guideKind === 'strategy' ? 'Strategy Lens' : 'Playbook Lens'}</p>
+            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{guideKind === 'review' ? 'How to evaluate this tool without overrating feature breadth' : guideKind === 'pricing' ? 'What usually drives real Apollo cost' : guideKind === 'tutorial' ? 'What needs to be true before this workflow goes live' : guideKind === 'strategy' ? 'What changes decision quality in this motion' : 'How to make this workflow usable in the real week'}</h2>
+            <p className="mt-3 text-sm text-slate-700">
+              {renderApolloText(guideKind === 'review' ? 'A strong review should help you judge fit, operating friction, and tradeoffs. The goal is not to admire the product. The goal is to decide whether it belongs in your workflow.' : guideKind === 'pricing' ? 'Pricing pages are most useful when they explain operational cost, not only plan names. Teams overspend more often because of weak process than because of the wrong tier.' : guideKind === 'tutorial' ? 'A tutorial should reduce setup friction. The first version does not need to be complete. It only needs to be stable enough to launch, review, and improve.' : guideKind === 'strategy' ? 'Strategy content should narrow choices. The practical question is which operating lever improves outcomes most: targeting, messaging, process ownership, or review cadence.' : 'A playbook page should help the team execute with less confusion. That means clearer ownership, fewer moving parts, and a tighter weekly review loop.')}
+            </p>
+            <div className="mt-4 grid gap-3 md:grid-cols-3">
+              {(guideKind === 'review'
+                ? [
+                    ['Best fit', 'Lean B2B teams that need faster prospecting and outreach execution without building a heavy stack first.'],
+                    ['Biggest risk', 'Teams often mistake fast setup for durable performance. Weak targeting still produces weak pipeline.'],
+                    ['Real decision', 'Judge whether the workflow becomes cleaner, faster, and easier to inspect after rollout.']
+                  ]
+                : guideKind === 'pricing'
+                  ? [
+                      ['Cost driver', 'Loose segmentation burns credits and enriches contacts that never should have entered the workflow.'],
+                      ['Budget mistake', 'Expanding seats before the team has one stable prospecting process usually increases noise faster than pipeline.'],
+                      ['Good purchase logic', 'Buy the tier that supports one clean workflow first. Expand only when execution quality is stable.']
+                    ]
+                  : guideKind === 'tutorial'
+                    ? [
+                        ['Start small', 'Use one segment, one offer angle, and one CTA so results are easier to interpret after the first week.'],
+                        ['Fastest win', 'Get to one working list and one working sequence before exploring edge features.'],
+                        ['Common mistake', 'Teams overconfigure the tool before they know whether the segment or message is good enough.']
+                      ]
+                    : guideKind === 'strategy'
+                      ? [
+                          ['Primary lever', 'Most teams should fix account selection and role relevance before increasing outbound activity.'],
+                          ['Constraint to watch', 'If no one owns qualification and reply handling, strong top-of-funnel work still stalls downstream.'],
+                          ['Best outcome', 'A strategy is working when decisions get simpler and weekly execution gets more consistent.']
+                        ]
+                      : [
+                          ['Best use', 'Treat this page as an operating reference for one workflow, not as a theory document.'],
+                          ['Process rule', 'The workflow should be narrow enough that one person can explain what changed from last week.'],
+                          ['What wins', 'Simple repeatable steps usually beat more channels, more tools, or more volume.']
+                        ]).map(([title, body]) => (
+                <div key={title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+                  <p className="text-sm font-semibold text-slate-900">{title}</p>
+                  <p className="mt-2 text-sm text-slate-700">{renderApolloText(body)}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           <h2 id="who-for">Who this is for</h2>
           <p>
             This guide is best for B2B teams in{' '}
@@ -521,6 +565,14 @@ export default async function GuidePage({ params }: Props) {
             <Link href="/outreach">Outreach</Link>, <Link href="/sales-pipeline">Sales Pipeline</Link>, and{' '}
             <Link href="/for-startups">For Startups</Link>.
           </p>
+
+          <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">{guideKind === 'review' ? 'Review Checklist' : guideKind === 'pricing' ? 'Budget Discipline' : guideKind === 'tutorial' ? 'Launch Readiness' : guideKind === 'strategy' ? 'Execution Logic' : 'Operating Notes'}</p>
+            <h3 className="mt-2 text-xl font-semibold text-slate-900">{guideKind === 'review' ? 'What to verify before you commit' : guideKind === 'pricing' ? 'How smart teams keep spend under control' : guideKind === 'tutorial' ? 'What to confirm before week one starts' : guideKind === 'strategy' ? 'How to turn strategy into weekly operating rhythm' : 'What keeps this playbook durable over time'}</h3>
+            <p className="mt-3 text-sm text-slate-700">
+              {renderApolloText(`${guide.title} should support a cleaner ${titleCaseHub(guide.hub).toLowerCase()} workflow, not just create more activity.`)}
+            </p>
+          </section>
 
           <h2 id="checklist">{toc.find((item) => item.id === 'checklist')?.label ?? 'Implementation checklist'}</h2>
           <p>{kindCopy.checklistIntro}</p>
