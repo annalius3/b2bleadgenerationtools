@@ -8,6 +8,7 @@ import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
+import { guideOverrides } from '@/lib/guide-overrides';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -183,9 +184,68 @@ export default async function GuidePage({ params }: Props) {
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
   const hubCopy = hubSpecificCopy(guide.hub);
-  const comparisonRows = buildComparisonRows(guide.hub);
+  const override = guideOverrides[guide.slug];
+  const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
   const isHowTo = /^how to/i.test(guide.title) || /guide|workflow|playbook|strategy/i.test(guide.title);
+  const summaryParagraphs =
+    override?.summary ?? [
+      hubCopy.verdict,
+      `If you are working on ${titleCaseHub(guide.hub).toLowerCase()}, the best results usually come from narrower segmentation, clearer ownership, and more honest review of what is or is not working.`
+    ];
+  const prosList = override?.pros ?? [
+    'Creates a clearer decision path instead of generic best-practice advice.',
+    'Fits lean teams that need practical process improvements quickly.',
+    'Connects prospecting activity to sales outcomes and follow-up discipline.'
+  ];
+  const consList = override?.cons ?? [
+    'Will not fix weak positioning or a poorly defined offer.',
+    'Needs process ownership to work consistently.',
+    'Usually underperforms when teams chase volume before fit.'
+  ];
+  const pricingParagraphs =
+    override?.pricing ?? [
+      'For most teams, the main cost is not just software. It is also the operating cost of bad targeting, weak messaging, and slow follow-up. That is why list quality and campaign structure usually matter before expanding the stack.',
+      'Always validate current pricing and plan limits directly on vendor sites before making a purchase decision.'
+    ];
+  const qualitySignals = override?.qualitySignals ?? hubCopy.signals;
+  const hiddenDrawbacks =
+    override?.hiddenDrawbacks ?? [
+      hubCopy.drawback,
+      'Internal links help users navigate, but they do not replace genuinely strong page-level depth.',
+      'A process can look busy and still produce weak sales outcomes if qualification criteria are vague.'
+    ];
+  const whenNotParagraphs =
+    override?.whenNot ?? [
+      hubCopy.notFor,
+      'Also pause if no one owns reply handling, list QA, or handoff into pipeline. Outbound gets expensive when execution is fragmented.'
+    ];
+  const scenarioParagraphs =
+    override?.scenario ?? [
+      'A realistic way to apply this guide is to choose one segment, one offer angle, and one next-step goal for the week. Start with the smallest useful operating loop: list quality review, message refinement, follow-up consistency, and then pipeline review.',
+      'When a team changes fewer variables at once, it becomes much easier to see what is actually helping.'
+    ];
+  const checklistItems =
+    override?.checklist ?? [
+      'Define one segment, one buyer problem, and one clear offer angle.',
+      'Review account fit before expanding contact volume.',
+      'Map roles and next-step ownership before launch.',
+      'Write one clear CTA linked to a specific business problem.',
+      'Review reply quality, meeting quality, and qualification notes weekly.',
+      'Document one process change at a time.',
+      'Use internal links to connect this workflow to the next operational problem.',
+      'Update the page when the workflow or recommendation materially changes.'
+    ];
+  const alternativesParagraphs =
+    override?.alternatives ?? [
+      `If this exact workflow is not the right fit, move one level up to the broader ${titleCaseHub(guide.hub)} hub or compare it against adjacent guides in the same cluster.`,
+      'In larger deal environments, more account-based motion may be a better choice. In earlier-stage teams, a simpler founder-led version may perform better.'
+    ];
+  const finalVerdictParagraphs =
+    override?.finalVerdict ?? [
+      `This guide should help if the goal is to make ${guide.title.toLowerCase()} more repeatable and easier to inspect.`,
+      'The highest-ROI move is usually not doing more. It is building a narrower, more honest workflow that the team can actually sustain and review.'
+    ];
 
   return (
     <Container>
@@ -255,11 +315,11 @@ export default async function GuidePage({ params }: Props) {
 
           <section id="summary" className="rounded-xl border border-blue-100 bg-blue-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Summary / Verdict</p>
-            <p className="mt-2 text-sm text-slate-700">{renderApolloText(hubCopy.verdict)}</p>
-            <p className="mt-2 text-sm text-slate-700">
-              If you are working on <strong>{titleCaseHub(guide.hub).toLowerCase()}</strong>, the best results usually come from narrower
-              segmentation, clearer ownership, and more honest review of what is or is not working.
-            </p>
+            {summaryParagraphs.map((paragraph) => (
+              <p key={paragraph} className="mt-2 text-sm text-slate-700">
+                {renderApolloText(paragraph)}
+              </p>
+            ))}
           </section>
 
           <h2 id="who-for">Who this is for</h2>
@@ -292,27 +352,25 @@ export default async function GuidePage({ params }: Props) {
             <section className="rounded-xl border border-emerald-100 bg-emerald-50 p-4">
               <p className="text-sm font-semibold text-emerald-800">Pros</p>
               <ul className="mt-2 text-sm">
-                <li>Creates a clearer decision path instead of generic best-practice advice.</li>
-                <li>Fits lean teams that need practical process improvements quickly.</li>
-                <li>Connects prospecting activity to sales outcomes and follow-up discipline.</li>
+                {prosList.map((item) => (
+                  <li key={item}>{renderApolloText(item)}</li>
+                ))}
               </ul>
             </section>
             <section className="rounded-xl border border-rose-100 bg-rose-50 p-4">
               <p className="text-sm font-semibold text-rose-800">Cons</p>
               <ul className="mt-2 text-sm">
-                <li>Will not fix weak positioning or a poorly defined offer.</li>
-                <li>Needs process ownership to work consistently.</li>
-                <li>Usually underperforms when teams chase volume before fit.</li>
+                {consList.map((item) => (
+                  <li key={item}>{renderApolloText(item)}</li>
+                ))}
               </ul>
             </section>
           </div>
 
           <h2 id="pricing">Pricing snapshot</h2>
-          <p>
-            For most teams, the main cost is not just software. It is also the operating cost of bad targeting, weak messaging, and slow
-            follow-up. That is why list quality and campaign structure usually matter before expanding the stack. Always validate current
-            pricing and plan limits directly on vendor sites before making a purchase decision.
-          </p>
+          {pricingParagraphs.map((paragraph) => (
+            <p key={paragraph}>{renderApolloText(paragraph)}</p>
+          ))}
 
           <section id="problem" className="rounded-xl border border-amber-100 bg-amber-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-amber-700">Problem</p>
@@ -332,6 +390,15 @@ export default async function GuidePage({ params }: Props) {
             Another thing that matters: the best teams make one strong process decision at a time. They do not change targeting, copy,
             cadence, and qualification all at once. They isolate one constraint, fix it, then review the result.
           </p>
+
+          {override?.customSections?.map((section) => (
+            <section key={section.title}>
+              <h2>{section.title}</h2>
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{renderApolloText(paragraph)}</p>
+              ))}
+            </section>
+          ))}
 
           <h3>Internal navigation</h3>
           <ul>
@@ -413,7 +480,7 @@ export default async function GuidePage({ params }: Props) {
             the system is usually moving in the right direction.
           </p>
           <div className="space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
-            {hubCopy.signals.map((signal) => (
+            {qualitySignals.map((signal) => (
               <div key={signal} className="rounded-xl border border-slate-200 bg-white p-3">
                 <p className="text-sm font-medium text-slate-900">{signal}</p>
                 <p className="mt-1 text-sm text-slate-600">This should become easier to observe week by week if the process is improving.</p>
@@ -432,24 +499,20 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="hidden-drawbacks">Hidden drawbacks</h2>
           <ul>
-            <li>{renderApolloText(hubCopy.drawback)}</li>
-            <li>Internal links help users navigate, but they do not replace genuinely strong page-level depth.</li>
-            <li>A process can look busy and still produce weak sales outcomes if qualification criteria are vague.</li>
+            {hiddenDrawbacks.map((item) => (
+              <li key={item}>{renderApolloText(item)}</li>
+            ))}
           </ul>
 
           <h2 id="when-not">When NOT to use this approach</h2>
-          <p>{renderApolloText(hubCopy.notFor)}</p>
-          <p>
-            Also pause if no one owns reply handling, list QA, or handoff into pipeline. Outbound gets expensive when execution is
-            fragmented.
-          </p>
+          {whenNotParagraphs.map((paragraph) => (
+            <p key={paragraph}>{renderApolloText(paragraph)}</p>
+          ))}
 
           <h2 id="scenario">Real scenario walkthrough</h2>
-          <p>
-            A realistic way to apply this guide is to choose one segment, one offer angle, and one next-step goal for the week. Start with
-            the smallest useful operating loop: list quality review, message refinement, follow-up consistency, and then pipeline review.
-            When a team changes fewer variables at once, it becomes much easier to see what is actually helping.
-          </p>
+          {scenarioParagraphs.map((paragraph) => (
+            <p key={paragraph}>{renderApolloText(paragraph)}</p>
+          ))}
           <p>
             If you need adjacent playbooks, compare this guide with <Link href="/find-clients">Find Clients</Link>,{' '}
             <Link href="/outreach">Outreach</Link>, <Link href="/sales-pipeline">Sales Pipeline</Link>, and{' '}
@@ -458,22 +521,15 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="checklist">Implementation checklist</h2>
           <ul>
-            <li>Define one segment, one buyer problem, and one clear offer angle.</li>
-            <li>Review account fit before expanding contact volume.</li>
-            <li>Map roles and next-step ownership before launch.</li>
-            <li>Write one clear CTA linked to a specific business problem.</li>
-            <li>Review reply quality, meeting quality, and qualification notes weekly.</li>
-            <li>Document one process change at a time.</li>
-            <li>Use internal links to connect this workflow to the next operational problem.</li>
-            <li>Update the page when the workflow or recommendation materially changes.</li>
+            {checklistItems.map((item) => (
+              <li key={item}>{renderApolloText(item)}</li>
+            ))}
           </ul>
 
           <h2 id="alternatives">Alternatives and strategy options</h2>
-          <p>
-            If this exact workflow is not the right fit, move one level up to the broader <Link href={hubPath[guide.hub]}>{titleCaseHub(guide.hub)}</Link>{' '}
-            hub or compare it against adjacent guides in the same cluster. In larger deal environments, more account-based motion may be a
-            better choice. In earlier-stage teams, a simpler founder-led version may perform better.
-          </p>
+          {alternativesParagraphs.map((paragraph) => (
+            <p key={paragraph}>{renderApolloText(paragraph)}</p>
+          ))}
 
           <h2 id="related">Related Guides</h2>
           <ul>
@@ -495,11 +551,9 @@ export default async function GuidePage({ params }: Props) {
           </div>
 
           <h2 id="final-verdict">Final verdict</h2>
-          <p>
-            This guide should help if the goal is to make <strong>{guide.title.toLowerCase()}</strong> more repeatable and easier to
-            inspect. The highest-ROI move is usually not doing more. It is building a narrower, more honest workflow that the team can
-            actually sustain and review.
-          </p>
+          {finalVerdictParagraphs.map((paragraph) => (
+            <p key={paragraph}>{renderApolloText(paragraph)}</p>
+          ))}
         </article>
 
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
@@ -536,4 +590,5 @@ export default async function GuidePage({ params }: Props) {
     </Container>
   );
 }
+
 
