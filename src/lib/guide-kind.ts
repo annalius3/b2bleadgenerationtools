@@ -1,5 +1,17 @@
 export type GuideKind = 'review' | 'pricing' | 'tutorial' | 'strategy' | 'playbook';
 
+type GuidePanelCard = {
+  title: string;
+  body: string;
+};
+
+type GuidePanel = {
+  label: string;
+  title: string;
+  intro?: string;
+  cards?: GuidePanelCard[];
+};
+
 export const inferGuideKind = (slug: string, title: string): GuideKind => {
   const source = `${slug} ${title}`.toLowerCase();
   if (source.includes('review') || source.includes('pros-and-cons') || source.includes('worth-it')) return 'review';
@@ -145,4 +157,92 @@ export const buildQuickFacts = (kind: GuideKind, title: string) => {
         'Weekly review is part of execution, not an optional extra.'
       ];
   }
+};
+
+export const buildGuidePanels = (kind: GuideKind) => {
+  const topPanels: Record<GuideKind, GuidePanel> = {
+    review: {
+      label: 'Review Lens',
+      title: 'How to evaluate this tool without overrating feature breadth',
+      intro:
+        'A strong review should help you judge fit, operating friction, and tradeoffs. The goal is not to admire the product. The goal is to decide whether it belongs in your workflow.',
+      cards: [
+        { title: 'Best fit', body: 'Lean B2B teams that need faster prospecting and outreach execution without building a heavy stack first.' },
+        { title: 'Biggest risk', body: 'Teams often mistake fast setup for durable performance. Weak targeting still produces weak pipeline.' },
+        { title: 'Real decision', body: 'Judge whether the workflow becomes cleaner, faster, and easier to inspect after rollout.' }
+      ]
+    },
+    pricing: {
+      label: 'Pricing Lens',
+      title: 'What usually drives real Apollo cost',
+      intro:
+        'Pricing pages are most useful when they explain operational cost, not only plan names. Teams overspend more often because of weak process than because of the wrong tier.',
+      cards: [
+        { title: 'Cost driver', body: 'Loose segmentation burns credits and enriches contacts that never should have entered the workflow.' },
+        { title: 'Budget mistake', body: 'Expanding seats before the team has one stable prospecting process usually increases noise faster than pipeline.' },
+        { title: 'Good purchase logic', body: 'Buy the tier that supports one clean workflow first. Expand only when execution quality is stable.' }
+      ]
+    },
+    tutorial: {
+      label: 'Tutorial Lens',
+      title: 'What needs to be true before this workflow goes live',
+      intro:
+        'A tutorial should reduce setup friction. The first version does not need to be complete. It only needs to be stable enough to launch, review, and improve.',
+      cards: [
+        { title: 'Start small', body: 'Use one segment, one offer angle, and one CTA so results are easier to interpret after the first week.' },
+        { title: 'Fastest win', body: 'Get to one working list and one working sequence before exploring edge features.' },
+        { title: 'Common mistake', body: 'Teams overconfigure the tool before they know whether the segment or message is good enough.' }
+      ]
+    },
+    strategy: {
+      label: 'Strategy Lens',
+      title: 'What changes decision quality in this motion',
+      intro:
+        'Strategy content should narrow choices. The practical question is which operating lever improves outcomes most: targeting, messaging, process ownership, or review cadence.',
+      cards: [
+        { title: 'Primary lever', body: 'Most teams should fix account selection and role relevance before increasing outbound activity.' },
+        { title: 'Constraint to watch', body: 'If no one owns qualification and reply handling, strong top-of-funnel work still stalls downstream.' },
+        { title: 'Best outcome', body: 'A strategy is working when decisions get simpler and weekly execution gets more consistent.' }
+      ]
+    },
+    playbook: {
+      label: 'Playbook Lens',
+      title: 'How to make this workflow usable in the real week',
+      intro:
+        'A playbook page should help the team execute with less confusion. That means clearer ownership, fewer moving parts, and a tighter weekly review loop.',
+      cards: [
+        { title: 'Best use', body: 'Treat this page as an operating reference for one workflow, not as a theory document.' },
+        { title: 'Process rule', body: 'The workflow should be narrow enough that one person can explain what changed from last week.' },
+        { title: 'What wins', body: 'Simple repeatable steps usually beat more channels, more tools, or more volume.' }
+      ]
+    }
+  };
+
+  const bottomPanels: Record<GuideKind, Omit<GuidePanel, 'intro' | 'cards'>> = {
+    review: {
+      label: 'Review Checklist',
+      title: 'What to verify before you commit'
+    },
+    pricing: {
+      label: 'Budget Discipline',
+      title: 'How smart teams keep spend under control'
+    },
+    tutorial: {
+      label: 'Launch Readiness',
+      title: 'What to confirm before week one starts'
+    },
+    strategy: {
+      label: 'Execution Logic',
+      title: 'How to turn strategy into weekly operating rhythm'
+    },
+    playbook: {
+      label: 'Operating Notes',
+      title: 'What keeps this playbook durable over time'
+    }
+  };
+
+  return {
+    top: topPanels[kind],
+    bottom: bottomPanels[kind]
+  };
 };
