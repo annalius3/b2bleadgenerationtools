@@ -7,10 +7,11 @@ import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
+import { GuideSectionLead } from '@/components/guide-section-lead';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
-import { buildGuidePanels, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
+import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -168,6 +169,10 @@ export default async function GuidePage({ params }: Props) {
   const hubCopy = hubSpecificCopy(guide.hub);
   const quickFacts = buildQuickFacts(guideKind, guide.title);
   const guidePanels = buildGuidePanels(guideKind);
+  const featuresLead = buildGuideSectionLead(guideKind, 'features');
+  const pricingLead = buildGuideSectionLead(guideKind, 'pricing');
+  const comparisonLead = buildGuideSectionLead(guideKind, 'comparison');
+  const checklistLead = buildGuideSectionLead(guideKind, 'checklist');
   const override = guideOverrides[guide.slug];
   const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
@@ -343,6 +348,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
 
           <h2 id="features">{toc.find((item) => item.id === 'features')?.label ?? 'Key features'}</h2>
+          <GuideSectionLead section="features" tone="blue" eyebrow={featuresLead.eyebrow} title={featuresLead.title} body={featuresLead.body} />
           <p>{kindCopy.featuresIntro}</p>
           <ul>
             <li>{renderApolloText(guide.steps[0] ?? 'Define a tighter target before scaling execution.')}</li>
@@ -373,6 +379,7 @@ export default async function GuidePage({ params }: Props) {
           </div>
 
           <h2 id="pricing">{toc.find((item) => item.id === 'pricing')?.label ?? 'Pricing snapshot'}</h2>
+          <GuideSectionLead section="pricing" eyebrow={pricingLead.eyebrow} title={pricingLead.title} body={pricingLead.body} />
           <p>{kindCopy.pricingIntro}</p>
           {pricingParagraphs.map((paragraph) => (
             <p key={paragraph}>{renderApolloText(paragraph)}</p>
@@ -459,6 +466,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
 
           <h2 id="comparison">{toc.find((item) => item.id === 'comparison')?.label ?? 'Comparison table'}</h2>
+          <GuideSectionLead section="comparison" eyebrow={comparisonLead.eyebrow} title={comparisonLead.title} body={comparisonLead.body} />
           <p>{kindCopy.comparisonIntro}</p>
           <table>
             <thead>
@@ -532,6 +540,7 @@ export default async function GuidePage({ params }: Props) {
           />
 
           <h2 id="checklist">{toc.find((item) => item.id === 'checklist')?.label ?? 'Implementation checklist'}</h2>
+          <GuideSectionLead section="checklist" eyebrow={checklistLead.eyebrow} title={checklistLead.title} body={checklistLead.body} />
           <p>{kindCopy.checklistIntro}</p>
           <ul>
             {checklistItems.map((item) => (

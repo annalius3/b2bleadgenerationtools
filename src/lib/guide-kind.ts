@@ -246,3 +246,123 @@ export const buildGuidePanels = (kind: GuideKind) => {
     bottom: bottomPanels[kind]
   };
 };
+
+
+export type GuideSectionKey = 'features' | 'pricing' | 'comparison' | 'checklist';
+
+export const buildGuideSectionLead = (kind: GuideKind, section: GuideSectionKey) => {
+  const copy: Record<GuideKind, Record<GuideSectionKey, { eyebrow: string; title: string; body: string }>> = {
+    review: {
+      features: {
+        eyebrow: 'Review Focus',
+        title: 'What actually matters in product fit',
+        body: 'For review pages, the feature list should clarify practical value, workflow friction, and where the tool creates leverage over simpler alternatives.'
+      },
+      pricing: {
+        eyebrow: 'Review Pricing Lens',
+        title: 'Judge fit, not only list price',
+        body: 'A review page should connect pricing to process quality, expected team usage, and whether the platform reduces enough friction to justify the spend.'
+      },
+      comparison: {
+        eyebrow: 'Review Comparison Lens',
+        title: 'Compare realistic substitutes',
+        body: 'The right comparison is not feature count versus feature count. It is whether another approach would serve the same team with less cost or less operational drag.'
+      },
+      checklist: {
+        eyebrow: 'Review Decision Check',
+        title: 'Use this before making the call',
+        body: 'A review checklist is most useful when it helps the buyer say no quickly to a poor-fit tool and move forward with confidence on a good-fit one.'
+      }
+    },
+    pricing: {
+      features: {
+        eyebrow: 'Cost Drivers',
+        title: 'Which capabilities affect spend most',
+        body: 'On pricing pages, the important features are the ones that change seat usage, credits, list discipline, and the amount of manual work still left in the workflow.'
+      },
+      pricing: {
+        eyebrow: 'Budget Fit',
+        title: 'Translate plans into operating cost',
+        body: 'Good pricing analysis explains how team behavior changes real cost over time. Weak pricing analysis repeats plan names without talking about usage patterns.'
+      },
+      comparison: {
+        eyebrow: 'Plan Tradeoffs',
+        title: 'Compare budget paths, not only vendors',
+        body: 'The useful comparison is whether Apollo, a lighter manual workflow, or a heavier stack creates the best cost-to-output ratio for the current stage.'
+      },
+      checklist: {
+        eyebrow: 'Budget Control',
+        title: 'Keep spend tied to output',
+        body: 'This checklist should protect budget discipline before the team adds more seats, burns more credits, or expands workflow complexity.'
+      }
+    },
+    tutorial: {
+      features: {
+        eyebrow: 'Setup Priority',
+        title: 'Start with the minimum working pieces',
+        body: 'Tutorial content should highlight only the features required to launch the first usable workflow. Everything else can wait until the first review cycle.'
+      },
+      pricing: {
+        eyebrow: 'Tooling Note',
+        title: 'Know what is actually required to launch',
+        body: 'In tutorial pages, pricing matters mainly to confirm whether the setup can run on the current stack or whether extra tooling is truly necessary.'
+      },
+      comparison: {
+        eyebrow: 'Workflow Choice',
+        title: 'Pick the easiest path to first results',
+        body: 'Tutorial comparisons should help the reader choose the least fragile workflow, not the most impressive one.'
+      },
+      checklist: {
+        eyebrow: 'Launch Check',
+        title: 'Confirm the workflow is ready to run',
+        body: 'Before launch, the checklist should reduce preventable setup mistakes and make the first week easier to inspect.'
+      }
+    },
+    strategy: {
+      features: {
+        eyebrow: 'Strategic Lever',
+        title: 'Focus on the few changes that move outcomes',
+        body: 'Strategy pages should emphasize the workflow levers that change decision quality, segmentation clarity, and downstream pipeline quality the most.'
+      },
+      pricing: {
+        eyebrow: 'Resource Tradeoff',
+        title: 'Match strategy to team capacity',
+        body: 'Pricing and resourcing matter in strategy content because the best plan is often the one the team can sustain consistently, not the most ambitious one.'
+      },
+      comparison: {
+        eyebrow: 'Strategic Options',
+        title: 'Compare operating models, not tactics in isolation',
+        body: 'A good strategic comparison helps decide whether to go narrower, go multi-channel, stay founder-led, or systemize with a larger outbound workflow.'
+      },
+      checklist: {
+        eyebrow: 'Execution Discipline',
+        title: 'Turn the strategy into weekly behavior',
+        body: 'A strategic checklist is useful when it forces ownership, review cadence, and a smaller number of inspectable changes.'
+      }
+    },
+    playbook: {
+      features: {
+        eyebrow: 'Workflow Focus',
+        title: 'Keep the operating loop practical',
+        body: 'Playbook pages work best when they spotlight the workflow elements that make execution more stable from week to week.'
+      },
+      pricing: {
+        eyebrow: 'Efficiency Lens',
+        title: 'Protect simple workflows from hidden cost',
+        body: 'Even on practical playbooks, pricing should be viewed through wasted activity, bad segmentation, and duplicated work.'
+      },
+      comparison: {
+        eyebrow: 'Operating Tradeoffs',
+        title: 'Pick the workflow with the least friction',
+        body: 'The best playbook comparison shows which operating model keeps execution simplest while still producing enough signal.'
+      },
+      checklist: {
+        eyebrow: 'Execution Checklist',
+        title: 'Make the workflow repeatable',
+        body: 'The final checklist should support consistent weekly execution, not just one good launch.'
+      }
+    }
+  };
+
+  return copy[kind][section];
+};
