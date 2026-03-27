@@ -15,28 +15,74 @@ import { siteConfig } from '@/lib/site';
 
 type Props = { params: Promise<{ slug: string }> };
 
-const toc = [
-  { id: 'summary', label: 'Summary / Verdict' },
-  { id: 'who-for', label: 'Who is it for' },
-  { id: 'features', label: 'Key features' },
-  { id: 'pros-cons', label: 'Pros & Cons' },
-  { id: 'pricing', label: 'Pricing snapshot' },
-  { id: 'problem', label: 'Problem' },
-  { id: 'solution', label: 'Solution Framework' },
-  { id: 'steps', label: 'Actionable Steps' },
-  { id: 'use-cases', label: 'Real business use cases' },
-  { id: 'comparison', label: 'Comparison table' },
-  { id: 'benchmarks', label: 'What good looks like' },
-  { id: 'tips', label: 'Execution tips' },
-  { id: 'hidden-drawbacks', label: 'Hidden drawbacks' },
-  { id: 'when-not', label: 'When NOT to use' },
-  { id: 'scenario', label: 'Real scenario walkthrough' },
-  { id: 'checklist', label: 'Implementation checklist' },
-  { id: 'alternatives', label: 'Alternatives' },
-  { id: 'related', label: 'Related Guides' },
-  { id: 'faq', label: 'FAQ' },
-  { id: 'final-verdict', label: 'Final verdict' }
-];
+type GuideKind = 'review' | 'pricing' | 'tutorial' | 'strategy' | 'playbook';
+
+const inferGuideKind = (guide: (typeof guides)[number]): GuideKind => {
+  const source = `${guide.slug} ${guide.title}`.toLowerCase();
+  if (source.includes('review') || source.includes('pros-and-cons') || source.includes('worth-it')) return 'review';
+  if (source.includes('pricing')) return 'pricing';
+  if (source.includes('tutorial') || source.includes('setup-guide') || source.includes('for-beginners')) return 'tutorial';
+  if (source.includes('strategy')) return 'strategy';
+  return 'playbook';
+};
+
+const buildToc = (kind: GuideKind) => {
+  const labels: Record<GuideKind, { features: string; pricing: string; comparison: string; checklist: string }> = {
+    review: {
+      features: 'What stands out',
+      pricing: 'Pricing reality',
+      comparison: 'Alternatives snapshot',
+      checklist: 'Evaluation checklist'
+    },
+    pricing: {
+      features: 'Cost drivers',
+      pricing: 'Pricing breakdown',
+      comparison: 'Plan comparison',
+      checklist: 'Budget checklist'
+    },
+    tutorial: {
+      features: 'What you need first',
+      pricing: 'Tooling notes',
+      comparison: 'Workflow options',
+      checklist: 'Launch checklist'
+    },
+    strategy: {
+      features: 'Strategic levers',
+      pricing: 'Resource tradeoffs',
+      comparison: 'Approach comparison',
+      checklist: 'Execution checklist'
+    },
+    playbook: {
+      features: 'Key features',
+      pricing: 'Pricing snapshot',
+      comparison: 'Comparison table',
+      checklist: 'Implementation checklist'
+    }
+  };
+
+  return [
+    { id: 'summary', label: 'Summary / Verdict' },
+    { id: 'who-for', label: 'Who is it for' },
+    { id: 'features', label: labels[kind].features },
+    { id: 'pros-cons', label: 'Pros & Cons' },
+    { id: 'pricing', label: labels[kind].pricing },
+    { id: 'problem', label: 'Problem' },
+    { id: 'solution', label: 'Solution Framework' },
+    { id: 'steps', label: 'Actionable Steps' },
+    { id: 'use-cases', label: 'Real business use cases' },
+    { id: 'comparison', label: labels[kind].comparison },
+    { id: 'benchmarks', label: 'What good looks like' },
+    { id: 'tips', label: 'Execution tips' },
+    { id: 'hidden-drawbacks', label: 'Hidden drawbacks' },
+    { id: 'when-not', label: 'When NOT to use' },
+    { id: 'scenario', label: 'Real scenario walkthrough' },
+    { id: 'checklist', label: labels[kind].checklist },
+    { id: 'alternatives', label: 'Alternatives' },
+    { id: 'related', label: 'Related Guides' },
+    { id: 'faq', label: 'FAQ' },
+    { id: 'final-verdict', label: 'Final verdict' }
+  ];
+};
 
 const hubPath: Record<(typeof guides)[number]['hub'], Route> = {
   'find-clients': '/find-clients',
@@ -183,6 +229,8 @@ export default async function GuidePage({ params }: Props) {
     .map((industrySlug) => industries.find((item) => item.slug === industrySlug))
     .filter((item): item is NonNullable<typeof item> => Boolean(item));
 
+  const guideKind = inferGuideKind(guide);
+  const toc = buildToc(guideKind);
   const hubCopy = hubSpecificCopy(guide.hub);
   const override = guideOverrides[guide.slug];
   const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
@@ -338,7 +386,7 @@ export default async function GuidePage({ params }: Props) {
             {` ${hubCopy.notFor}`}
           </p>
 
-          <h2 id="features">Key features used in this workflow</h2>
+          <h2 id="features">{toc.find((item) => item.id === 'features')?.label ?? 'Key features'}</h2>
           <ul>
             <li>{renderApolloText(guide.steps[0] ?? 'Define a tighter target before scaling execution.')}</li>
             <li>{renderApolloText(guide.steps[1] ?? 'Use practical filtering and segmentation logic.')}</li>
@@ -367,7 +415,7 @@ export default async function GuidePage({ params }: Props) {
             </section>
           </div>
 
-          <h2 id="pricing">Pricing snapshot</h2>
+          <h2 id="pricing">{toc.find((item) => item.id === 'pricing')?.label ?? 'Pricing snapshot'}</h2>
           {pricingParagraphs.map((paragraph) => (
             <p key={paragraph}>{renderApolloText(paragraph)}</p>
           ))}
@@ -452,7 +500,7 @@ export default async function GuidePage({ params }: Props) {
             tighter ICP, making messages more relevant, reducing follow-up confusion, or improving how early opportunities are qualified.
           </p>
 
-          <h2 id="comparison">Comparison table</h2>
+          <h2 id="comparison">{toc.find((item) => item.id === 'comparison')?.label ?? 'Comparison table'}</h2>
           <table>
             <thead>
               <tr>
@@ -519,7 +567,7 @@ export default async function GuidePage({ params }: Props) {
             <Link href="/for-startups">For Startups</Link>.
           </p>
 
-          <h2 id="checklist">Implementation checklist</h2>
+          <h2 id="checklist">{toc.find((item) => item.id === 'checklist')?.label ?? 'Implementation checklist'}</h2>
           <ul>
             {checklistItems.map((item) => (
               <li key={item}>{renderApolloText(item)}</li>
