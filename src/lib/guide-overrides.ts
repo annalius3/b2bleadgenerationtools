@@ -574,6 +574,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The lead list starts with a narrow account set before contacts are added.',
+      'Positive replies come from accounts that actually resemble likely buyers.',
+      'Lead quality is reviewed weekly and weak-fit segments are removed fast.'
+    ],
+    comparisonRows: [
+      ['Apollo account-first lead search', 'Lean teams that want speed with segmentation control', 'Low to mid', 'Best when the ICP is already directionally clear'],
+      ['Manual spreadsheet prospecting', 'Very small high-ticket account sets', 'Low cash, high labor cost', 'Can work, but usually slower and harder to scale'],
+      ['Broad database export', 'Teams optimizing for raw volume', 'Varies', 'Usually creates more list noise than qualified lead flow']
+    ],
+    checklist: [
+      'Define one ICP and one use case before touching filters.',
+      'Shortlist accounts before exporting contacts.',
+      'Score leads by fit and urgency before outreach starts.',
+      'Sample-check records before scaling the campaign.',
+      'Review meeting quality, not just reply count, after the first week.'
+    ],
+    alternatives: [
+      'If the main job is list construction, compare with <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.',
+      'If the issue is stakeholder coverage, move next to <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If the broader outbound motion still needs work, compare with <a href="/guides/generate-sales-leads-with-apollo">Generate Sales Leads with Apollo</a>.'
+    ],
     finalVerdict: [
       'Apollo is strong for finding B2B leads when the team uses an account-first workflow and reviews fit before scale.',
       'If you just need more names, it will feel easy. If you need qualified leads, segmentation discipline matters much more.'
@@ -599,6 +621,27 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo helps reveal them faster, but the team still has to solve them operationally.'
         ]
       }
+    ],
+    qualitySignals: [
+      'Replies convert into real qualification conversations instead of vague interest.',
+      'The team can explain how Apollo supports the client acquisition system end to end.',
+      'Client wins are tied to targeting and follow-up discipline, not just higher send volume.'
+    ],
+    comparisonRows: [
+      ['Apollo with one clear offer and fast follow-up', 'Founder-led teams, agencies, consultants', 'Low to mid', 'Best path when speed and direct outreach matter most'],
+      ['Apollo with weak qualification process', 'Teams that prospect well but stall after replies', 'Low to mid', 'Creates activity but not enough client conversion'],
+      ['Referral-only or network-led growth', 'Teams with strong existing inbound relationships', 'Low cash, high dependency', 'Useful, but usually less predictable than a repeatable outbound system']
+    ],
+    scenario: [
+      'A consulting founder can use Apollo to target one niche, run one offer-led sequence, and convert positive replies into short qualification calls within a single weekly operating rhythm.',
+      'An agency can use Apollo to build a client acquisition lane around one service line, one ICP, one CTA, and one follow-up owner instead of spreading effort across too many offers at once.'
+    ],
+    checklist: [
+      'Choose one service offer and one buying audience first.',
+      'Define what counts as a qualified client conversation before launching outreach.',
+      'Assign fast response ownership to positive replies.',
+      'Review where leads stall between reply and booked call.',
+      'Use objections from real conversations to improve the next campaign.'
     ],
     finalVerdict: [
       'Apollo is useful for getting clients when it supports a clear outbound system and a specific offer.',
@@ -626,6 +669,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'Lead generation produces segments that actually move into pipeline stages.',
+      'The team can explain why each lead set exists and what campaign it supports.',
+      'Lead quality improves over time because downstream conversion is reviewed honestly.'
+    ],
+    comparisonRows: [
+      ['Apollo with lead quality controls', 'Teams that care about pipeline contribution, not only top-of-funnel volume', 'Low to mid', 'Best for steady qualified lead flow'],
+      ['Apollo with raw export mentality', 'Teams trying to maximize contact count fast', 'Low to mid', 'Usually weak on downstream conversion'],
+      ['Manual niche sourcing', 'Very narrow high-value verticals', 'Low cash, high time cost', 'Can be higher quality, but slower and harder to systemize']
+    ],
+    checklist: [
+      'Define what qualifies as a sales lead before list building starts.',
+      'Separate priority segments from nurture segments.',
+      'Validate segment quality before scaling contact volume.',
+      'Track movement from lead to meeting to opportunity.',
+      'Kill segments that create activity without pipeline progress.'
+    ],
+    alternatives: [
+      'If you are still working on top-of-funnel discovery, compare with <a href="/guides/how-to-find-b2b-leads-with-apollo-io">How to Find B2B Leads with Apollo.io</a>.',
+      'If list structure is the bottleneck, move next to <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.',
+      'If the bigger question is ongoing outbound system design, compare with <a href="/guides/lead-generation-strategy-using-apollo">Lead Generation Strategy Using Apollo</a>.'
+    ],
     finalVerdict: [
       'Apollo can generate sales leads effectively when the team defines lead quality upfront and reviews downstream conversion honestly.',
       'The best lead generation process is the one that gets cleaner every week, not just bigger.'
@@ -652,6 +717,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'Every list can be explained by one ICP, one campaign purpose, and one offer angle.',
+      'Duplicate, weak-fit, and mismatched records are removed before launch.',
+      'List naming and ownership stay clean enough for repeatable use.'
+    ],
+    comparisonRows: [
+      ['Apollo list with account-first logic', 'Teams that want smaller, tighter, campaign-ready lists', 'Low to mid', 'Best for quality and personalization'],
+      ['Large mixed export', 'Teams optimizing for speed without enough filtering', 'Low to mid', 'Usually weaker because messaging has to become too generic'],
+      ['Manually curated list', 'High-value enterprise or niche campaigns', 'Low cash, high labor cost', 'Often strongest on fit, but hard to scale consistently']
+    ],
+    checklist: [
+      'Name the list by segment, offer, and owner.',
+      'Keep the first build narrow enough for manual QA.',
+      'Remove titles and industries that do not match the campaign.',
+      'Check duplicates before enrichment and launch.',
+      'Refresh the list after each campaign cycle based on reply quality.'
+    ],
+    alternatives: [
+      'If you already have the list but not the right stakeholders, continue with <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If you are still working on broader lead discovery, compare with <a href="/guides/how-to-find-b2b-leads-with-apollo-io">How to Find B2B Leads with Apollo.io</a>.',
+      'If the next issue is using the list in a working workflow, move to <a href="/guides/apollo-io-tutorial-step-by-step">Apollo.io Tutorial Step-by-Step</a>.'
+    ],
     finalVerdict: [
       'Apollo is very effective for list building if the team treats lists as strategic assets, not disposable exports.',
       'The best list is one you can explain in one sentence: who it contains, why it exists, and what campaign it is for.'
@@ -677,6 +764,32 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'If Apollo helps you identify those people quickly, the next job is message relevance, not just contact volume.'
         ]
       }
+    ],
+    qualitySignals: [
+      'The team targets stakeholders based on buying influence, not just title prestige.',
+      'Multithread outreach improves conversation quality rather than creating duplicate noise.',
+      'Different stakeholders receive different messages tied to their role in the deal.'
+    ],
+    comparisonRows: [
+      ['Apollo with buying-map approach', 'Teams that understand stakeholder roles inside the account', 'Low to mid', 'Best for real multithread prospecting'],
+      ['Title-only prospecting', 'Teams chasing seniority without context', 'Low to mid', 'Fast, but usually weaker on reply quality and progression'],
+      ['Manual account research', 'Strategic enterprise deals with few accounts', 'Low cash, high labor cost', 'Can add depth, but much slower to scale']
+    ],
+    scenario: [
+      'A consulting team can use Apollo to identify an operational champion, a budget owner, and a final approver inside each target account, then tailor the outreach path to each role instead of sending one generic message to everyone.',
+      'An IT services team can use Apollo to multithread into technical and commercial stakeholders at the same account, reducing the chance that one silent contact blocks the whole opportunity.'
+    ],
+    checklist: [
+      'Map likely champions, evaluators, and approvers before exporting contacts.',
+      'Check whether the chosen roles reflect your real deal motion.',
+      'Use multithread sets instead of one single contact per account.',
+      'Write different messages for different stakeholder concerns.',
+      'Review which role combinations create better progression after replies.'
+    ],
+    alternatives: [
+      'If the missing step is building the account set first, compare with <a href="/guides/how-to-find-companies-to-sell-to">How to Find Companies to Sell To</a>.',
+      'If the list itself still needs work, move to <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.',
+      'If you are designing a broader ABM motion, compare with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.'
     ],
     finalVerdict: [
       'Apollo is strong for finding decision-makers when the team understands the buying map and avoids title-only thinking.',
