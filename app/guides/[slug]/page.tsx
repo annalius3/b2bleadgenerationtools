@@ -7,11 +7,12 @@ import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
+import { GuidePriorityMap } from '@/components/guide-priority-map';
 import { GuideSectionLead } from '@/components/guide-section-lead';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
-import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
+import { buildGuidePanels, buildGuidePrioritySections, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -169,6 +170,7 @@ export default async function GuidePage({ params }: Props) {
   const hubCopy = hubSpecificCopy(guide.hub);
   const quickFacts = buildQuickFacts(guideKind, guide.title);
   const guidePanels = buildGuidePanels(guideKind);
+  const guidePriorities = buildGuidePrioritySections(guideKind);
   const featuresLead = buildGuideSectionLead(guideKind, 'features');
   const pricingLead = buildGuideSectionLead(guideKind, 'pricing');
   const comparisonLead = buildGuideSectionLead(guideKind, 'comparison');
@@ -330,6 +332,8 @@ export default async function GuidePage({ params }: Props) {
           </section>
 
           <GuideTopPanel panel={guidePanels.top} />
+
+          <GuidePriorityMap items={guidePriorities} />
 
           <h2 id="who-for">Who this is for</h2>
           <p>

@@ -55,28 +55,38 @@ export const buildGuideToc = (kind: GuideKind) => {
     }
   };
 
-  return [
-    { id: 'summary', label: 'Summary / Verdict' },
-    { id: 'who-for', label: 'Who is it for' },
-    { id: 'features', label: labels[kind].features },
-    { id: 'pros-cons', label: 'Pros & Cons' },
-    { id: 'pricing', label: labels[kind].pricing },
-    { id: 'problem', label: 'Problem' },
-    { id: 'solution', label: 'Solution Framework' },
-    { id: 'steps', label: 'Actionable Steps' },
-    { id: 'use-cases', label: 'Real business use cases' },
-    { id: 'comparison', label: labels[kind].comparison },
-    { id: 'benchmarks', label: 'What good looks like' },
-    { id: 'tips', label: 'Execution tips' },
-    { id: 'hidden-drawbacks', label: 'Hidden drawbacks' },
-    { id: 'when-not', label: 'When NOT to use' },
-    { id: 'scenario', label: 'Real scenario walkthrough' },
-    { id: 'checklist', label: labels[kind].checklist },
-    { id: 'alternatives', label: 'Alternatives' },
-    { id: 'related', label: 'Related Guides' },
-    { id: 'faq', label: 'FAQ' },
-    { id: 'final-verdict', label: 'Final verdict' }
-  ];
+  const itemMap = {
+    summary: { id: 'summary', label: 'Summary / Verdict' },
+    'who-for': { id: 'who-for', label: 'Who is it for' },
+    features: { id: 'features', label: labels[kind].features },
+    'pros-cons': { id: 'pros-cons', label: 'Pros & Cons' },
+    pricing: { id: 'pricing', label: labels[kind].pricing },
+    problem: { id: 'problem', label: 'Problem' },
+    solution: { id: 'solution', label: 'Solution Framework' },
+    steps: { id: 'steps', label: 'Actionable Steps' },
+    'use-cases': { id: 'use-cases', label: 'Real business use cases' },
+    comparison: { id: 'comparison', label: labels[kind].comparison },
+    benchmarks: { id: 'benchmarks', label: 'What good looks like' },
+    tips: { id: 'tips', label: 'Execution tips' },
+    'hidden-drawbacks': { id: 'hidden-drawbacks', label: 'Hidden drawbacks' },
+    'when-not': { id: 'when-not', label: 'When NOT to use' },
+    scenario: { id: 'scenario', label: 'Real scenario walkthrough' },
+    checklist: { id: 'checklist', label: labels[kind].checklist },
+    alternatives: { id: 'alternatives', label: 'Alternatives' },
+    related: { id: 'related', label: 'Related Guides' },
+    faq: { id: 'faq', label: 'FAQ' },
+    'final-verdict': { id: 'final-verdict', label: 'Final verdict' }
+  } as const;
+
+  const order: Record<GuideKind, Array<keyof typeof itemMap>> = {
+    review: ['summary', 'who-for', 'pros-cons', 'features', 'pricing', 'comparison', 'problem', 'solution', 'benchmarks', 'steps', 'use-cases', 'tips', 'hidden-drawbacks', 'when-not', 'scenario', 'checklist', 'alternatives', 'related', 'faq', 'final-verdict'],
+    pricing: ['summary', 'pricing', 'comparison', 'features', 'who-for', 'problem', 'solution', 'benchmarks', 'steps', 'use-cases', 'tips', 'hidden-drawbacks', 'when-not', 'scenario', 'checklist', 'alternatives', 'related', 'faq', 'final-verdict', 'pros-cons'],
+    tutorial: ['summary', 'who-for', 'steps', 'checklist', 'features', 'pricing', 'use-cases', 'comparison', 'tips', 'benchmarks', 'problem', 'solution', 'hidden-drawbacks', 'when-not', 'scenario', 'alternatives', 'related', 'faq', 'final-verdict', 'pros-cons'],
+    strategy: ['summary', 'problem', 'solution', 'who-for', 'features', 'comparison', 'benchmarks', 'steps', 'use-cases', 'pricing', 'tips', 'hidden-drawbacks', 'when-not', 'scenario', 'checklist', 'alternatives', 'related', 'faq', 'final-verdict', 'pros-cons'],
+    playbook: ['summary', 'who-for', 'features', 'steps', 'use-cases', 'comparison', 'pricing', 'benchmarks', 'tips', 'problem', 'solution', 'hidden-drawbacks', 'when-not', 'scenario', 'checklist', 'alternatives', 'related', 'faq', 'final-verdict', 'pros-cons']
+  };
+
+  return order[kind].map((key) => itemMap[key]);
 };
 
 export const kindSpecificCopy = (kind: GuideKind) => {
@@ -365,4 +375,37 @@ export const buildGuideSectionLead = (kind: GuideKind, section: GuideSectionKey)
   };
 
   return copy[kind][section];
+};
+
+
+export const buildGuidePrioritySections = (kind: GuideKind) => {
+  const priorities: Record<GuideKind, Array<{ id: string; title: string; reason: string }>> = {
+    review: [
+      { id: 'pros-cons', title: 'Start with the tradeoffs', reason: 'Reviews should help the reader judge fit quickly before they get lost in feature detail.' },
+      { id: 'pricing', title: 'Then look at cost reality', reason: 'The important question is whether the workflow value justifies the spend for the team stage.' },
+      { id: 'comparison', title: 'Finish with real alternatives', reason: 'Good review decisions happen in context, not in isolation.' }
+    ],
+    pricing: [
+      { id: 'pricing', title: 'Start with pricing logic', reason: 'This page type should clarify what really drives spend and where teams overpay.' },
+      { id: 'comparison', title: 'Then compare budget paths', reason: 'The useful choice is usually between different operating models, not just different tools.' },
+      { id: 'checklist', title: 'Use the budget checklist last', reason: 'This helps turn pricing analysis into a disciplined buying decision.' }
+    ],
+    tutorial: [
+      { id: 'steps', title: 'Start with the launch steps', reason: 'Tutorial readers usually want to get to a working workflow first.' },
+      { id: 'checklist', title: 'Use the launch checklist', reason: 'The checklist reduces preventable setup mistakes before week one starts.' },
+      { id: 'features', title: 'Only then review supporting features', reason: 'Feature breadth matters after the first workflow is already clear.' }
+    ],
+    strategy: [
+      { id: 'problem', title: 'Start with the bottleneck', reason: 'Strategy only works when the team is solving the right constraint first.' },
+      { id: 'solution', title: 'Then choose the operating model', reason: 'The solution framework clarifies which strategic lever matters most now.' },
+      { id: 'comparison', title: 'Compare strategic options', reason: 'This is where the team decides which path fits stage, budget, and execution capacity.' }
+    ],
+    playbook: [
+      { id: 'features', title: 'Start with the core workflow', reason: 'Playbooks should clarify the operating loop before anything else.' },
+      { id: 'steps', title: 'Then move into execution', reason: 'The action sequence should be easy to follow and review weekly.' },
+      { id: 'checklist', title: 'Use the checklist to keep it durable', reason: 'The final check keeps the workflow stable over time.' }
+    ]
+  };
+
+  return priorities[kind];
 };
