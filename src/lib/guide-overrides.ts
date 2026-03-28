@@ -1414,6 +1414,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The agency can explain its niche, service angle, and proof without sounding generic.',
+      'Apollo helps the team organize outreach by service line and buyer problem instead of random list volume.',
+      'Meetings are qualified by retainer fit, not just by reply count.'
+    ],
+    comparisonRows: [
+      ['Apollo with niche-specific agency workflow', 'Agencies that sell one clear service to one clear buyer type', 'Low to mid', 'Best when the agency wants repeatable outbound without heavy overhead'],
+      ['Generic agency outreach', 'Agencies selling too many services to too many audiences', 'Low to mid', 'Usually weak because the message loses specificity'],
+      ['Referral-only agency growth', 'Agencies with strong word-of-mouth but inconsistent pipeline', 'Low cash, low predictability', 'Useful, but rarely enough for stable growth alone']
+    ],
+    checklist: [
+      'Define one niche and one core service angle first.',
+      'Use lists and copy that match the same buyer problem.',
+      'Track meetings by service line or niche, not just total volume.',
+      'Review whether proof and case evidence are strong enough for the target segment.',
+      'Tighten the offer before broadening the target market.'
+    ],
+    alternatives: [
+      'If the next challenge is agency consistency, compare with <a href="/guides/predictable-client-flow-for-agencies">Predictable Client Flow for Agencies</a>.',
+      'If the main issue is small-business client acquisition, continue with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.',
+      'If the broader problem is service-led sales strategy, compare with <a href="/guides/sales-strategy-for-service-companies">Sales Strategy for Service Companies</a>.'
+    ],
     finalVerdict: [
       'Apollo is a strong fit for agencies when it is used to support niche-specific outbound rather than broad prospecting.',
       'Agency performance improves when lists, proof, and offers stay tightly aligned.'
@@ -1439,6 +1461,27 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo is useful when it helps the team stay organized enough to test one meaningful variable at a time.'
         ]
       }
+    ],
+    qualitySignals: [
+      'The agency can forecast client flow from repeatable weekly execution, not hope.',
+      'Apollo supports a stable niche-specific outreach cadence rather than sporadic campaign bursts.',
+      'Qualification rules protect delivery capacity as pipeline grows.'
+    ],
+    comparisonRows: [
+      ['Apollo with weekly agency sprint rhythm', 'Agencies that want predictable monthly pipeline', 'Low to mid', 'Best when the offer and niche are already relatively stable'],
+      ['Random outreach bursts', 'Agencies relying on inconsistent outbound effort', 'Low to mid', 'Usually produces unstable pipeline and harder forecasting'],
+      ['Referral-only flow', 'Agencies with good reputation but inconsistent deal timing', 'Low cash, low predictability', 'Helpful, but rarely enough for predictable monthly growth']
+    ],
+    scenario: [
+      'A small agency can use Apollo to run the same niche-specific outreach sprint every week, track which stage is weakest, and build a more predictable monthly retainer flow without constantly reinventing the offer.',
+      'A services team can stabilize client flow by keeping segmentation, messaging, and follow-up cadence consistent enough that changes become measurable instead of random.'
+    ],
+    checklist: [
+      'Set monthly client flow targets before building the campaign rhythm.',
+      'Keep one niche-specific outbound motion stable long enough to measure it.',
+      'Protect team capacity with fit-based qualification rules.',
+      'Review the weakest funnel stage every week.',
+      'Forecast from stage conversion trends, not from top-of-funnel optimism.'
     ],
     finalVerdict: [
       'Apollo can support predictable client flow for agencies when the outbound process is niche-specific and reviewed consistently.',
@@ -1466,6 +1509,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The small business uses Apollo to create one clean prospecting motion rather than a complex sales system.',
+      'Time saved by Apollo translates into better follow-up and more qualified conversations.',
+      'The team stays focused on a narrow segment instead of chasing volume.'
+    ],
+    comparisonRows: [
+      ['Apollo with simple small-business workflow', 'Small teams that need faster direct prospecting', 'Low to mid', 'Best when one or two people own the full motion'],
+      ['Too-broad prospecting with Apollo', 'Small businesses trying to target everyone', 'Low to mid', 'Usually adds cost and confusion without improving pipeline'],
+      ['Fully manual small-business outreach', 'Very small teams with tiny target volume', 'Low cash, high labor cost', 'Can work, but usually wastes time that Apollo could save']
+    ],
+    checklist: [
+      'Choose one buyer segment and one offer before expanding the workflow.',
+      'Keep the first Apollo motion simple enough to review weekly.',
+      'Measure qualified conversations, not just activity totals.',
+      'Protect time by disqualifying weak-fit accounts early.',
+      'Add more complexity only after the first motion is stable.'
+    ],
+    alternatives: [
+      'If the next question is how small firms actually win clients, compare with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.',
+      'If the business is closer to founder-led startup selling, continue with <a href="/guides/outbound-sales-for-startups">Outbound Sales for Startups</a>.',
+      'If the issue is tighter list quality, compare with <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.'
+    ],
     finalVerdict: [
       'Apollo is often a strong small-business outbound tool because it helps a lean team do more with less operational friction.',
       'It works best when the business is focused enough to run one clean prospecting motion at a time.'
@@ -1491,6 +1556,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo helps with targeting and workflow speed, but it does not remove the need for clear positioning and persistent execution.'
         ]
       }
+    ],
+    qualitySignals: [
+      'Client acquisition improves because the business stays focused on one niche and one offer angle.',
+      'Apollo is used to support a repeatable outbound loop, not random prospecting.',
+      'Follow-up speed and message clarity improve meeting quality together.'
+    ],
+    comparisonRows: [
+      ['Apollo with niche-specific small-business outbound', 'Small firms that need direct and practical client acquisition', 'Low to mid', 'Best when focus matters more than broad reach'],
+      ['Broad small-business marketing spread', 'Firms trying many channels without enough consistency', 'Mid', 'Usually creates motion without enough sales signal'],
+      ['Pure relationship-led sales', 'Small firms relying mainly on warm intros', 'Low cash, low predictability', 'Helpful, but less controllable than a repeatable outbound system']
+    ],
+    checklist: [
+      'Define the strongest use case and buyer niche first.',
+      'Build one focused list before trying multiple segments.',
+      'Use a short, practical outreach offer with one CTA.',
+      'Reply to interest the same business day when possible.',
+      'Review which client conversations actually turn into proposals or closes.'
+    ],
+    alternatives: [
+      'If the business needs a simpler Apollo-specific workflow, compare with <a href="/guides/apollo-io-for-small-business">Apollo.io for Small Business</a>.',
+      'If the next step is building the first real client base, continue with <a href="/guides/how-to-build-a-client-base-from-scratch">How to Build a Client Base from Scratch</a>.',
+      'If the company is closer to a services firm with a sales process issue, compare with <a href="/guides/sales-strategy-for-service-companies">Sales Strategy for Service Companies</a>.'
     ],
     finalVerdict: [
       'Small businesses find clients more predictably when they target narrowly and run a simple repeatable outbound loop.',
@@ -1518,6 +1605,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'Consultant outreach sounds like a specific business diagnosis, not a broad capability pitch.',
+      'Apollo helps keep the target account set narrow enough for credibility to show up in the message.',
+      'Discovery calls are qualified by urgency and fit before proposal effort is spent.'
+    ],
+    comparisonRows: [
+      ['Apollo with niche consultant positioning', 'Consultants with a focused service angle and target buyer', 'Low to mid', 'Best when specificity and credibility drive conversion'],
+      ['Generic consultant outreach', 'Consultants describing too many capabilities at once', 'Low to mid', 'Usually weak because the buyer cannot see why it matters now'],
+      ['Referral-only consultant growth', 'Consultants with strong network but inconsistent pipeline', 'Low cash, low predictability', 'Useful, but less controllable than targeted outbound']
+    ],
+    checklist: [
+      'Define one consulting outcome before building the list.',
+      'Target one buyer type that should already feel the problem.',
+      'Lead with issue diagnosis, not service menu language.',
+      'Qualify urgency before spending time on proposals.',
+      'Use outreach objections to sharpen the consulting angle.'
+    ],
+    alternatives: [
+      'If the next issue is scaling the consulting business, compare with <a href="/guides/growing-a-consulting-business">Growing a Consulting Business</a>.',
+      'If the problem is broader small-firm client acquisition, continue with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.',
+      'If the challenge is building first traction from zero, compare with <a href="/guides/how-to-build-a-client-base-from-scratch">How to Build a Client Base from Scratch</a>.'
+    ],
     finalVerdict: [
       'Apollo supports consultant client acquisition well when the consultant is niche enough to sound credible in outbound.',
       'The narrower the problem and buyer, the easier it is to turn outreach into conversations.'
@@ -1543,6 +1652,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'A better path is to create one repeatable outbound motion for the highest-converting service angle first.'
         ]
       }
+    ],
+    qualitySignals: [
+      'The service company can explain one clear buyer, one clear service outcome, and one clear qualification path.',
+      'Apollo supports a focused service-led sales motion rather than a scattered multi-offer pitch.',
+      'Proposal time is protected by stronger qualification upstream.'
+    ],
+    comparisonRows: [
+      ['Apollo with one service-led sales motion', 'Service companies that want a practical, narrower pipeline strategy', 'Low to mid', 'Best when one service angle can be sold clearly'],
+      ['Multi-offer scattered sales motion', 'Service companies trying to sell too many things at once', 'Mid', 'Usually weakens relevance and hurts pipeline quality'],
+      ['Relationship-led sales only', 'Service firms relying mostly on warm inbound or referrals', 'Low cash, low predictability', 'Can help, but harder to scale deliberately']
+    ],
+    checklist: [
+      'Pick one service angle and one buyer type first.',
+      'Use Apollo to support that service-led targeting, not to broaden it.',
+      'Build qualification gates before proposal stage begins.',
+      'Review where deals stall in the pipeline, not just where replies appear.',
+      'Tighten the offer if proposal conversion remains weak.'
+    ],
+    alternatives: [
+      'If the company is still building early client flow, compare with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.',
+      'If the next issue is pipeline structure, continue with <a href="/guides/how-to-build-a-sales-pipeline">How to Build a Sales Pipeline</a>.',
+      'If the business is more consultative than general service-led, compare with <a href="/guides/client-acquisition-for-consultants">Client Acquisition for Consultants</a>.'
     ],
     finalVerdict: [
       'Apollo works well for service-company sales strategy when it supports a narrower and more disciplined offer-led approach.',
@@ -1570,6 +1701,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'Consulting growth is coming from one repeatable acquisition motion, not scattered networking alone.',
+      'Apollo helps convert niche positioning into a stable weekly outbound rhythm.',
+      'The firm can explain which type of consulting engagement is most scalable and profitable.'
+    ],
+    comparisonRows: [
+      ['Apollo with repeatable consulting niche motion', 'Consultants and boutique firms with a defined offer', 'Low to mid', 'Best when the goal is consistent pipeline without broad paid acquisition'],
+      ['Random consulting outreach', 'Firms changing audience and offer too often', 'Low to mid', 'Usually slows learning and weakens growth consistency'],
+      ['Pure referral-led consulting growth', 'Firms with strong network but unstable pipeline timing', 'Low cash, low predictability', 'Helpful, but not enough for consistent scaling alone']
+    ],
+    checklist: [
+      'Stabilize one consulting niche before trying to broaden the market.',
+      'Use Apollo to build the same acquisition rhythm each week.',
+      'Track which engagement types create the strongest pipeline and closes.',
+      'Systemize qualification before adding team complexity.',
+      'Improve one acquisition variable at a time.'
+    ],
+    alternatives: [
+      'If the immediate challenge is winning more consulting clients, compare with <a href="/guides/client-acquisition-for-consultants">Client Acquisition for Consultants</a>.',
+      'If the next step is scaling client acquisition more broadly, continue with <a href="/guides/how-to-scale-client-acquisition">How to Scale Client Acquisition</a>.',
+      'If the company still needs a better small-business sales loop, compare with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.'
+    ],
     finalVerdict: [
       'Apollo can support consulting growth when the firm already has a clear niche and wants a more repeatable outbound channel.',
       'Predictable growth comes from consistency and clarity, not just more prospecting activity.'
@@ -1595,6 +1748,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'The better the freelancer can explain the niche problem they solve, the more useful Apollo becomes.'
         ]
       }
+    ],
+    qualitySignals: [
+      'Freelancer lead generation stays simple enough to run consistently alongside client work.',
+      'Apollo reduces research waste by narrowing the right buyer set earlier.',
+      'The freelancer can explain one clear offer and one clear buyer problem in outreach.'
+    ],
+    comparisonRows: [
+      ['Apollo with lean freelancer workflow', 'Freelancers who need targeted outbound without heavy ops', 'Low to mid', 'Best when simplicity and focus matter more than scale'],
+      ['Broad freelance prospecting', 'Freelancers pitching too many services to too many buyers', 'Low to mid', 'Usually weak because the message loses specificity'],
+      ['Pure manual freelancer outreach', 'Very small weekly prospecting volume', 'Low cash, high labor cost', 'Can work, but often wastes time Apollo could save']
+    ],
+    checklist: [
+      'Choose one freelance offer before building the list.',
+      'Target one buyer type that should clearly value that offer.',
+      'Keep the outreach message short and practical.',
+      'Track which niches create stronger close rates, not just more replies.',
+      'Protect follow-up consistency even during client delivery weeks.'
+    ],
+    alternatives: [
+      'If the next goal is building a broader client base, compare with <a href="/guides/how-to-build-a-client-base-from-scratch">How to Build a Client Base from Scratch</a>.',
+      'If the freelancer is closer to a small-business motion, continue with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.',
+      'If the issue is service positioning, compare with <a href="/guides/client-acquisition-for-consultants">Client Acquisition for Consultants</a>.'
     ],
     finalVerdict: [
       'Apollo can be useful for freelancers if it helps them narrow the buyer list and run outreach with less manual friction.',
@@ -1622,6 +1797,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The business is learning from one focused niche instead of chasing many possible buyers.',
+      'Apollo turns the early market focus into a repeatable outreach loop.',
+      'Each new client teaches something specific about targeting, offer, or qualification.'
+    ],
+    comparisonRows: [
+      ['Apollo with narrow zero-to-first-clients motion', 'New businesses that need direct market access fast', 'Low to mid', 'Best when the team wants a controllable way to create first traction'],
+      ['Broad early market outreach', 'Businesses trying multiple segments before one is working', 'Low to mid', 'Usually creates mixed signal and slower progress'],
+      ['Passive wait-for-referrals approach', 'New firms hoping the first clients appear without outreach', 'Low cash, slow feedback', 'Less demanding, but usually too slow and unpredictable']
+    ],
+    checklist: [
+      'Choose one niche and one problem statement before list building.',
+      'Build the first client base around similar buyers, not random reachable buyers.',
+      'Run one outreach loop long enough to learn from it.',
+      'Track objections and buying signals from every early call.',
+      'Stay narrow until the first real traction is repeatable.'
+    ],
+    alternatives: [
+      'If the next milestone is first 100 customers, compare with <a href="/guides/first-100-customers-strategy">First 100 Customers Strategy</a>.',
+      'If the main seller is still the founder, continue with <a href="/guides/how-founders-get-first-customers-with-apollo">How Founders Get First Customers with Apollo</a>.',
+      'If the business is really a freelancer or consultant motion, compare with <a href="/guides/lead-generation-for-freelancers">Lead Generation for Freelancers</a>.'
+    ],
     finalVerdict: [
       'Apollo can help build a client base from scratch if the business starts narrow and keeps the learning loop short.',
       'The first durable clients usually come from specificity, not reach.'
@@ -1647,6 +1844,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'The companies that win without ads usually have a sharper target market and a clearer sales story.'
         ]
       }
+    ],
+    qualitySignals: [
+      'The business can generate pipeline through targeted outbound without depending on paid traffic.',
+      'Apollo is used to support a disciplined no-ads acquisition engine, not scattered prospecting.',
+      'Campaign improvements come from response data and conversion analysis, not from spend increases.'
+    ],
+    comparisonRows: [
+      ['Apollo with no-ads outbound engine', 'Bootstrapped B2B teams that need direct acquisition without media spend', 'Low to mid', 'Best when precision is more available than budget'],
+      ['Broad unpaid marketing without targeting discipline', 'Teams avoiding ads but still lacking message-market fit', 'Low to mid', 'Usually creates activity without enough commercial signal'],
+      ['Paid acquisition-first model', 'Teams with more budget than segmentation discipline', 'Mid to high', 'Can scale later, but often less efficient early on']
+    ],
+    checklist: [
+      'Define whom you want to reach before replacing ads with outreach.',
+      'Use Apollo to build a direct-response list, not a vague awareness list.',
+      'Track pipeline contribution instead of clicks or vanity engagement.',
+      'Review which outreach assumptions outperform the no-ads alternatives.',
+      'Keep the no-ads system simple enough to maintain every week.'
+    ],
+    alternatives: [
+      'If the next issue is pipeline structure without inbound, compare with <a href="/guides/building-pipeline-without-marketing">Building Pipeline Without Marketing</a>.',
+      'If the broader acquisition model still needs work, continue with <a href="/guides/lead-generation-strategy-using-apollo">Lead Generation Strategy Using Apollo</a>.',
+      'If the focus is small-business client acquisition, compare with <a href="/guides/how-small-businesses-find-clients">How Small Businesses Find Clients</a>.'
     ],
     finalVerdict: [
       'Apollo fits B2B marketing without ads when the business wants to create a more direct acquisition engine around targeted outbound.',
