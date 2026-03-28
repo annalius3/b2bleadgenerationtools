@@ -817,6 +817,28 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The account list gets narrower and more commercially relevant over time.',
+      'The team can explain why each company fits the offer now, not just eventually.',
+      'Target company selection improves reply quality and meeting quality together.'
+    ],
+    comparisonRows: [
+      ['Apollo with selective account scoring', 'Teams that want practical high-fit company targeting', 'Low to mid', 'Best when account quality matters more than account count'],
+      ['Broad market export', 'Teams still thinking in categories instead of account sets', 'Low to mid', 'Usually creates too much noise for good outbound economics'],
+      ['Manual account research', 'Very high-value niche opportunities', 'Low cash, high labor cost', 'Adds depth, but slower and harder to maintain weekly']
+    ],
+    checklist: [
+      'Define what makes a company commercially attractive before filtering.',
+      'Use past wins or competitor patterns to narrow the first set.',
+      'Score companies by fit, likely need, and stakeholder accessibility.',
+      'Keep a disqualification list as tightly as the inclusion list.',
+      'Review whether better company selection improves meetings, not just replies.'
+    ],
+    alternatives: [
+      'If the next bottleneck is list construction, compare with <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.',
+      'If the challenge is stakeholder mapping inside those accounts, continue with <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If you are moving toward an ABM motion, compare with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.'
+    ],
     finalVerdict: [
       'Apollo helps teams find companies to sell to faster, but the real win comes from being more selective, not less.',
       'Better account choice usually improves replies, meetings, and close rate at the same time.'
@@ -842,6 +864,27 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'The platform can support the process, but it cannot create prospecting discipline on its own.'
         ]
       }
+    ],
+    qualitySignals: [
+      'Prospecting runs as a weekly operating rhythm rather than ad hoc campaign bursts.',
+      'Segment performance changes how time is allocated the following week.',
+      'Reply quality improves because list logic and message logic stay linked.'
+    ],
+    comparisonRows: [
+      ['Apollo with weekly review cadence', 'Teams that want a repeatable prospecting system', 'Low to mid', 'Best when one process owner can inspect results weekly'],
+      ['Apollo as one-off campaign launcher', 'Teams treating prospecting as sporadic activity', 'Low to mid', 'Usually weaker because learning does not compound'],
+      ['Manual prospecting plus separate outreach tools', 'Teams with narrow volumes or heavier customization needs', 'Mid', 'Can work, but usually adds more friction between stages']
+    ],
+    scenario: [
+      'A small agency team can use Apollo to run two prospecting segments each week, compare reply quality across them, and reallocate time toward the segment that produces better meeting quality instead of just better opens.',
+      'A recruiter can use Apollo prospecting as a weekly loop: shortlist accounts, map contacts, launch role-based outreach, review objections, then narrow the next week\'s segment.'
+    ],
+    checklist: [
+      'Pick only two or three active prospecting segments at once.',
+      'Tie each segment to one message angle and one desired next step.',
+      'Review reply quality before adding more volume.',
+      'Log objections and non-response patterns each week.',
+      'Cut underperforming segments before they drain attention.'
     ],
     finalVerdict: [
       'Apollo is a strong prospecting platform when the team uses it inside a repeatable weekly system.',
@@ -895,6 +938,32 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+    qualitySignals: [
+      'The team can define what a qualified lead is before campaign launch.',
+      'Strategy decisions become easier because campaign feedback is reviewed every week.',
+      'The system gets narrower and sharper instead of broader and noisier over time.'
+    ],
+    comparisonRows: [
+      ['Apollo with clear segment thesis', 'Lean teams that need faster strategy execution and feedback', 'Low to mid', 'Best when the team already knows what it wants to test'],
+      ['Apollo without strategic hypothesis', 'Teams launching campaigns before defining lead quality', 'Low to mid', 'Usually produces activity without enough learning value'],
+      ['Manual strategy plus slower market feedback', 'Teams still validating a new market carefully', 'Low cash, high time cost', 'Can work, but much slower to iterate']
+    ],
+    scenario: [
+      'A consulting firm can use Apollo to test two lead-generation theses across adjacent verticals, then use reply quality, booked meetings, and qualification notes to choose the better strategic direction by the end of the month.',
+      'A SaaS team can use Apollo as the execution layer for one ICP hypothesis at a time, making strategy changes only after weekly review instead of reacting to every single campaign data point.'
+    ],
+    checklist: [
+      'Define the segment thesis before building any list.',
+      'Specify what will count as a qualified lead and what will count as noise.',
+      'Tie each campaign to one strategic question, not five.',
+      'Review reply quality, meetings, and pipeline movement together.',
+      'Let campaign feedback sharpen the strategy rather than widen it.'
+    ],
+    alternatives: [
+      'If the strategy question is still mostly about discovery, compare with <a href="/guides/how-to-find-b2b-leads-with-apollo-io">How to Find B2B Leads with Apollo.io</a>.',
+      'If the next issue is repeatable execution, compare with <a href="/guides/prospecting-with-apollo-io">Prospecting with Apollo.io</a>.',
+      'If the real challenge is scaling what already works, continue with <a href="/guides/how-to-scale-client-acquisition">How to Scale Client Acquisition</a>.'
+    ],
     finalVerdict: [
       'Apollo fits lead generation strategy well when the team already has a segment thesis and needs faster execution.',
       'The strongest strategy is one that learns from each campaign and gets narrower, not broader.'
@@ -920,6 +989,27 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'A better approach is to scale only the parts of the system that are already producing qualified outcomes.'
         ]
       }
+    ],
+    qualitySignals: [
+      'More volume does not reduce conversion quality across the core segment.',
+      'Team roles and ownership stay clear as activity increases.',
+      'The scaling motion protects quality controls instead of dropping them for speed.'
+    ],
+    comparisonRows: [
+      ['Scale proven segment with Apollo workflow', 'Teams with one stable outbound motion already working', 'Low to mid', 'Best path because process quality is protected while volume rises'],
+      ['Scale too early', 'Teams adding volume before signal is stable', 'Low to mid', 'Usually multiplies waste faster than it multiplies clients'],
+      ['Referral-led only growth', 'Teams that can grow from network alone for now', 'Low cash, high dependency', 'Can work, but less predictable once the network slows down']
+    ],
+    scenario: [
+      'A startup moving beyond founder-led sales can use Apollo to scale only one proven segment first, keeping the same messaging rules and follow-up discipline while gradually adding more list volume and one extra operator.',
+      'An agency can scale client acquisition by cloning one proven outbound workflow into a second niche only after the first one holds steady on meeting quality and proposal conversion.'
+    ],
+    checklist: [
+      'Do not scale until one segment produces repeatable qualified pipeline.',
+      'Document the acquisition loop before adding headcount or segments.',
+      'Increase volume in steps, not in one jump.',
+      'Watch list quality and reply handling as closely as send counts.',
+      'Scale what is proven, not what is merely active.'
     ],
     finalVerdict: [
       'Apollo can help scale client acquisition if the team scales proven segments and protects quality controls as volume rises.',
@@ -1570,6 +1660,32 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'The better model is a smaller account set with clearer ownership and more thoughtful message variation.'
         ]
       }
+    ],
+    qualitySignals: [
+      'The team knows why each account is on the list and which stakeholders matter inside it.',
+      'Account-level progression is measured, not just contact-level activity.',
+      'Smaller account sets produce better conversation quality because messaging is more intentional.'
+    ],
+    comparisonRows: [
+      ['Apollo with focused account-based motion', 'Teams that want ABM-style discipline without enterprise overhead', 'Low to mid', 'Best when the account set is small enough to work intentionally'],
+      ['Broad contact-led outbound', 'Teams still optimizing mainly for volume', 'Low to mid', 'Faster to launch, but usually weaker for strategic accounts'],
+      ['Heavy enterprise ABM stack', 'Larger teams with deeper ops support and account routing complexity', 'High', 'Potentially powerful, but often too heavy for lean teams']
+    ],
+    scenario: [
+      'A manufacturing team can use Apollo to run an account-based motion across a shortlist of strategic buyers, mapping technical and commercial stakeholders for each account and measuring progression at the account level instead of by send count.',
+      'A consulting firm can use Apollo to multithread into a small number of high-value accounts, customizing value by stakeholder role while keeping ownership clear for each target account.'
+    ],
+    checklist: [
+      'Choose fewer accounts than you think you need.',
+      'Map stakeholders before writing messages.',
+      'Create role-based variants instead of one generic outreach angle.',
+      'Track account-level next steps, not only contact-level replies.',
+      'Prune accounts that consume time without real progression.'
+    ],
+    alternatives: [
+      'If the first missing asset is the account list itself, compare with <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.',
+      'If the contact coverage inside each account is still weak, continue with <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If the broader question is company selection before ABM, compare with <a href="/guides/how-to-find-companies-to-sell-to">How to Find Companies to Sell To</a>.'
     ],
     finalVerdict: [
       'Apollo is a strong fit for account-based prospecting when the team wants a practical middle ground between simple outbound and enterprise ABM complexity.',
