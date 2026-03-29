@@ -1893,6 +1893,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'Each vertical has its own buyer logic, message angle, and performance review.',
+      'Industry campaigns are validated one segment at a time rather than merged into generic outbound.',
+      'Vertical language improves relevance without turning the copy into jargon.'
+    ],
+    comparisonRows: [
+      ['Apollo vertical targeting with industry-specific messaging', 'Teams expanding into one defined niche at a time', 'Low to mid', 'Best for controlled vertical testing'],
+      ['Generic multi-industry campaign', 'Teams that want scale before vertical learning', 'Low to mid', 'Usually weak because pains and priorities are too mixed'],
+      ['Manual vertical research', 'Enterprise or deeply specialized offers', 'Low cash, high labor cost', 'Can add depth, but hard to repeat consistently']
+    ],
+    checklist: [
+      'Validate one industry at a time before adding more verticals.',
+      'Document what buyers in that market actually care about.',
+      'Adjust filters, messaging, and CTA to the industry context.',
+      'Review response quality by vertical, not just total replies.',
+      'Scale only after one niche produces stable signal.'
+    ],
+    alternatives: [
+      'If the issue is account selection, compare with <a href="/guides/how-to-find-companies-to-sell-to">How to Find Companies to Sell To</a>.',
+      'If you need tighter account prioritization, continue with <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.',
+      'If healthcare is the immediate vertical, go next to <a href="/guides/apollo-for-healthcare-lead-generation">Apollo for Healthcare Lead Generation</a>.'
+    ],
     finalVerdict: [
       'Apollo is strong for industry targeting when the team combines vertical logic with buyer-role and account-fit discipline.',
       'The best industry campaigns feel tailored because the underlying segment really is tighter.'
@@ -1918,6 +1941,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'That discipline matters much more than large-scale outreach volume in this vertical.'
         ]
       }
+    ],
+
+    qualitySignals: [
+      'Healthcare targeting is narrowed by buyer type, organization profile, and practical sales feasibility.',
+      'Outreach language reflects operational or commercial outcomes instead of generic healthcare buzzwords.',
+      'The team reviews subsegments carefully because healthcare categories vary too much for one-size-fits-all outreach.'
+    ],
+    comparisonRows: [
+      ['Apollo with narrow healthcare segmentation', 'Healthcare SaaS and services teams targeting specific buyer types', 'Low to mid', 'Best for precise niche testing'],
+      ['Broad healthcare outreach', 'Teams treating the market as one category', 'Low to mid', 'Usually weak because buyer needs differ too much'],
+      ['Manual healthcare account research', 'Very strategic niche segments', 'Low cash, high labor cost', 'Useful for depth, but slow for repeatable outbound']
+    ],
+    checklist: [
+      'Define the exact healthcare buyer and organization type first.',
+      'Build smaller lists around commercial feasibility, not just industry labels.',
+      'Map stakeholder roles before writing one generic sequence.',
+      'Review subsegment performance separately.',
+      'Scale only after one healthcare niche shows reliable signal.'
+    ],
+    alternatives: [
+      'If the broader skill is vertical targeting, compare with <a href="/guides/targeting-specific-industries">Targeting Specific Industries</a>.',
+      'If account discovery still needs work, continue with <a href="/guides/how-to-find-companies-to-sell-to">How to Find Companies to Sell To</a>.',
+      'If stakeholder mapping is the next bottleneck, move to <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.'
     ],
     finalVerdict: [
       'Apollo can be useful for healthcare lead generation when the campaign is built around a very specific buyer and use case.',
@@ -1945,6 +1991,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'Email discovery is tied to account fit and role relevance before volume scaling starts.',
+      'List QA reduces bounce risk before the first campaign goes live.',
+      'Email sourcing improves campaign readiness instead of becoming a disconnected data task.'
+    ],
+    comparisonRows: [
+      ['Apollo email discovery with account-first filters', 'Teams that want campaign-ready contact lists fast', 'Low to mid', 'Best mix of speed and targeting control'],
+      ['Broad email scraping mentality', 'Teams optimizing for raw contact count', 'Low to mid', 'Usually creates more bounce risk and weaker reply quality'],
+      ['Manual research plus selective validation', 'Niche or high-ticket campaigns with small volumes', 'Low cash, high labor cost', 'Potentially high quality, but much slower to scale']
+    ],
+    checklist: [
+      'Define the target account and role before collecting emails.',
+      'Validate a smaller batch before wider launch.',
+      'Remove low-fit and duplicate records before sequence setup.',
+      'Tie each contact batch to a specific campaign purpose.',
+      'Review deliverability and reply quality together after launch.'
+    ],
+    alternatives: [
+      'If data quality is the next bottleneck, continue with <a href="/guides/finding-verified-contacts">Finding Verified Contacts</a>.',
+      'If the broader list structure is weak, compare with <a href="/guides/building-contact-lists-for-b2b">Building Contact Lists for B2B</a>.',
+      'If the real issue is finding better accounts, move to <a href="/guides/how-to-find-b2b-leads-with-apollo-io">How to Find B2B Leads with Apollo.io</a>.'
+    ],
     finalVerdict: [
       'Apollo is effective for finding business emails when the team keeps contact discovery tied to a real targeting strategy.',
       'The best email list is not the biggest one. It is the one that supports more relevant outreach.'
@@ -1970,6 +2039,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo accelerates list building, so the discipline has to come from how the team filters and reviews those records.'
         ]
       }
+    ],
+
+    qualitySignals: [
+      'Lists are organized by campaign logic rather than accumulated as generic exports.',
+      'Role coverage improves message relevance and qualification speed.',
+      'List maintenance is part of weekly outbound operations, not an occasional cleanup task.'
+    ],
+    comparisonRows: [
+      ['Apollo contact lists with account-first rules', 'Teams building repeatable outbound campaigns', 'Low to mid', 'Best for clean segmentation and reusable campaign assets'],
+      ['Mixed contact export', 'Teams trying to save time by combining unrelated segments', 'Low to mid', 'Usually weakens messaging and list ownership'],
+      ['Spreadsheet-managed contact lists', 'Very small teams with extremely low send volume', 'Low cash, high maintenance cost', 'Can work briefly, but quickly becomes messy']
+    ],
+    checklist: [
+      'Build lists around one campaign purpose at a time.',
+      'Map contacts by role relevance, not only seniority.',
+      'Remove duplicates and weak-fit records before launch.',
+      'Name lists clearly by segment and owner.',
+      'Refresh lists based on reply quality and pipeline contribution.'
+    ],
+    alternatives: [
+      'If you need a more tactical list-building workflow, compare with <a href="/guides/how-to-build-a-lead-list-in-apollo">How to Build a Lead List in Apollo</a>.',
+      'If verification is the next issue, continue with <a href="/guides/finding-verified-contacts">Finding Verified Contacts</a>.',
+      'If ABM structure matters more than raw contacts, move next to <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.'
     ],
     finalVerdict: [
       'Apollo is strong for B2B contact list building when the team treats list quality as a strategic asset.',
@@ -1997,6 +2089,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'Enrichment fields are selected because they improve targeting, prioritization, or personalization decisions.',
+      'Enriched data changes how the team segments or qualifies accounts in practice.',
+      'The workflow avoids enriching everything equally without regard to commercial value.'
+    ],
+    comparisonRows: [
+      ['Apollo enrichment for priority segments', 'Teams that want better qualification and segmentation without overcomplicating ops', 'Low to mid', 'Best when enrichment is tied to clear decisions'],
+      ['Enrich-all workflow', 'Teams chasing more fields without enough operational discipline', 'Mid', 'Adds cost and noise faster than value'],
+      ['Manual enrichment research', 'Niche enterprise motions with small volumes', 'Low cash, high labor cost', 'Can add depth, but slower and harder to standardize']
+    ],
+    checklist: [
+      'Pick only the fields that improve a real sales decision.',
+      'Apply enrichment first to high-value or high-priority segments.',
+      'Use enriched fields to improve segmentation or qualification rules.',
+      'Track whether enriched records progress better than non-priority records.',
+      'Drop enrichment routines that do not change campaign quality.'
+    ],
+    alternatives: [
+      'If enrichment is mainly about timing and urgency, compare with <a href="/guides/identifying-buying-signals">Identifying Buying Signals</a>.',
+      'If the bigger issue is contact confidence, continue with <a href="/guides/finding-verified-contacts">Finding Verified Contacts</a>.',
+      'If the real bottleneck is better qualification logic, compare with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.'
+    ],
     finalVerdict: [
       'Apollo enrichment is useful when the team knows exactly which fields support better prospecting decisions.',
       'The best enrichment program is small, deliberate, and tied to conversion quality.'
@@ -2022,6 +2137,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo supports this well when list building and verification remain part of the same review cycle.'
         ]
       }
+    ],
+
+    qualitySignals: [
+      'Verification happens before launch, not after bounce problems appear.',
+      'The team treats verified contacts as a deliverability and reputation control, not just a data hygiene preference.',
+      'List confidence is reviewed together with campaign performance, not in isolation.'
+    ],
+    comparisonRows: [
+      ['Apollo workflow with verification before launch', 'Teams that care about deliverability and clean first-touch execution', 'Low to mid', 'Best path for protecting sending quality'],
+      ['Launch-first, clean-later workflow', 'Teams prioritizing speed over QA', 'Low to mid', 'Often creates bounce issues and wasted outbound effort'],
+      ['Manual contact checking', 'Very small strategic campaigns', 'Low cash, high labor cost', 'Can work on tiny lists, but not efficient at scale']
+    ],
+    checklist: [
+      'Validate records before new sequences go live.',
+      'Remove duplicates and low-confidence entries first.',
+      'Separate high-confidence launch lists from records needing more review.',
+      'Track bounce and reply quality by list source or segment.',
+      'Keep verification as a recurring pre-launch process.'
+    ],
+    alternatives: [
+      'If the next issue is campaign QA, move to <a href="/guides/apollo-list-cleaning-checklist">Apollo List Cleaning Checklist</a>.',
+      'If you still need the emails themselves, compare with <a href="/guides/how-to-find-business-emails-with-apollo">How to Find Business Emails with Apollo</a>.',
+      'If the broader workflow is performance review, continue with <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.'
     ],
     finalVerdict: [
       'Apollo can help find verified contacts effectively when the team prioritizes list quality over campaign volume.',
@@ -2101,6 +2239,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'Target accounts are ranked by realistic commercial value and follow-up capacity, not optimism.',
+      'Account lists stay small enough to support disciplined ownership and multithread outreach.',
+      'The team updates account priority based on pipeline movement, not static assumptions.'
+    ],
+    comparisonRows: [
+      ['Apollo target account list with ranking logic', 'Teams running ABM-lite or focused outbound motions', 'Low to mid', 'Best when account priority is explicit and maintained'],
+      ['Large unranked target list', 'Teams wanting broad market coverage without enough owner discipline', 'Low to mid', 'Usually creates list sprawl and weak account progression'],
+      ['Manually curated strategic account book', 'Enterprise sales teams with small account universes', 'Low cash, high labor cost', 'Can be strong, but slower to update and harder to scale']
+    ],
+    checklist: [
+      'Define account fit and strategic priority separately.',
+      'Rank accounts before assigning outreach volume.',
+      'Match list size to real team capacity.',
+      'Assign ownership to every active account cluster.',
+      'Refresh rankings based on pipeline movement and new signal.'
+    ],
+    alternatives: [
+      'If the issue is account discovery, compare with <a href="/guides/how-to-find-companies-to-sell-to">How to Find Companies to Sell To</a>.',
+      'If timing and urgency matter more, continue with <a href="/guides/identifying-buying-signals">Identifying Buying Signals</a>.',
+      'If the workflow is broader account-led outbound, move next to <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.'
+    ],
     finalVerdict: [
       'Apollo is useful for building target account lists when the team wants a more deliberate prospecting model than broad list export.',
       'A shorter, better-ranked account list is usually worth more than a large unprioritized one.'
@@ -2126,6 +2287,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo is most useful here when the signal data is used to focus outreach rather than to justify poor-fit targeting.'
         ]
       }
+    ],
+
+    qualitySignals: [
+      'Signals are tied to specific outreach decisions rather than treated as abstract data points.',
+      'The team distinguishes strong, weak, and stale signals before prioritizing accounts.',
+      'Signal-driven campaigns produce better timing and higher-quality conversations than generic outbound.'
+    ],
+    comparisonRows: [
+      ['Apollo signal-based prioritization', 'Teams timing outreach around active change or urgency', 'Low to mid', 'Best when signal quality is judged carefully'],
+      ['Signal collection without action rules', 'Teams gathering more data than they can use', 'Low to mid', 'Interesting on paper, weak in execution'],
+      ['Static ICP-only prioritization', 'Teams with long cycles and limited urgency variance', 'Low', 'Simpler, but can miss near-term openings']
+    ],
+    checklist: [
+      'Define which signals actually change outreach priority.',
+      'Rank signal strength and recency before launch.',
+      'Use signal context in the message, not just in filtering.',
+      'Track meetings and pipeline by signal type.',
+      'Drop signals that do not improve timing or conversion.'
+    ],
+    alternatives: [
+      'If better account structure comes first, compare with <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.',
+      'If the signal problem is really data depth, continue with <a href="/guides/data-enrichment-using-apollo">Data Enrichment Using Apollo</a>.',
+      'If qualification is still weak after signal filtering, move next to <a href="/guides/identifying-high-quality-leads">Identifying High-Quality Leads</a>.'
     ],
     finalVerdict: [
       'Apollo supports buying-signal prospecting well when signals are used to improve prioritization and timing rather than to excuse weak segmentation.',
@@ -2153,6 +2337,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'List cleaning reduces campaign risk before launch instead of serving as a reactive cleanup task.',
+      'The team removes records based on commercial relevance, not just formatting issues.',
+      'QA steps are simple enough to repeat before every campaign.'
+    ],
+    comparisonRows: [
+      ['Pre-launch Apollo list cleaning', 'Teams that care about clean campaign starts and easier QA', 'Low', 'Best way to reduce avoidable outbound noise'],
+      ['Cleanup after weak results', 'Teams reviewing lists only once problems appear', 'Low', 'Usually too late to protect first-touch quality'],
+      ['No formal list QA', 'Teams moving fast without process discipline', 'Low', 'Fast at first, but costly in wasted sends and confusion']
+    ],
+    checklist: [
+      'Remove duplicates first.',
+      'Remove contacts and accounts that do not match the actual offer.',
+      'Review weak-fit records manually before launch.',
+      'Confirm ownership and campaign purpose for the final list.',
+      'Treat QA as mandatory before every new sequence.'
+    ],
+    alternatives: [
+      'If the bigger issue is building the list itself, compare with <a href="/guides/building-contact-lists-for-b2b">Building Contact Lists for B2B</a>.',
+      'If the main concern is confidence in contact data, continue with <a href="/guides/finding-verified-contacts">Finding Verified Contacts</a>.',
+      'If list structure across accounts matters more, move to <a href="/guides/prospect-list-segmentation-strategy">Prospect List Segmentation Strategy</a>.'
+    ],
     finalVerdict: [
       'Apollo list cleaning creates real value when it becomes part of every campaign prep cycle.',
       'Cleaner lists usually lead to cleaner signal and faster campaign improvement.'
@@ -2179,6 +2386,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
         ]
       }
     ],
+
+    qualitySignals: [
+      'Audits start with targeting and list quality before touching minor copy tweaks.',
+      'The team can connect each audit finding to a concrete process change.',
+      'Campaign reviews focus on qualified outcomes, not vanity metrics.'
+    ],
+    comparisonRows: [
+      ['Apollo campaign audit from segment to pipeline', 'Teams running repeatable outbound and monthly reviews', 'Low', 'Best for finding the true performance bottleneck'],
+      ['Copy-only audit', 'Teams overfocusing on wording while ignoring targeting', 'Low', 'Easy to run, usually misses the bigger problem'],
+      ['No structured audit process', 'Teams reacting to weak results ad hoc', 'Low', 'Usually creates repeated mistakes across campaigns']
+    ],
+    checklist: [
+      'Review segment definition before messaging.',
+      'Check list fit and stakeholder relevance before sequence tweaks.',
+      'Audit CTA friction and timing only after targeting is confirmed.',
+      'Tie every fix to meetings, opportunities, or pipeline movement.',
+      'Change one major variable at a time.'
+    ],
+    alternatives: [
+      'If the issue is weekly performance review, compare with <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.',
+      'If the audit reveals timing problems, continue with <a href="/guides/outbound-follow-up-timing-strategy">Outbound Follow-Up Timing Strategy</a>.',
+      'If the core problem is broader outreach structure, move next to <a href="/guides/email-outreach-strategy">Email Outreach Strategy</a>.'
+    ],
     finalVerdict: [
       'Apollo supports a strong outbound audit process when the team reviews targeting, messaging, and pipeline quality together.',
       'The best audit improves one high-impact variable, not ten cosmetic ones.'
@@ -2204,6 +2434,29 @@ export const guideOverrides: Record<string, GuideOverride> = {
           'Apollo becomes more valuable when the dashboard is used to support harder quality decisions instead of just reporting effort.'
         ]
       }
+    ],
+
+    qualitySignals: [
+      'Metrics distinguish activity from commercial progress instead of mixing them into one score.',
+      'Performance is reviewed by segment and owner, not only in totals.',
+      'Metric reviews drive process decisions rather than dashboard vanity.'
+    ],
+    comparisonRows: [
+      ['Apollo metrics tied to qualified pipeline', 'Teams that want operational clarity and better weekly decisions', 'Low', 'Best for separating useful signal from noise'],
+      ['Activity-heavy reporting', 'Teams optimizing for sends and touches alone', 'Low', 'Easy to produce, weak for decision-making'],
+      ['Revenue-only lagging view', 'Teams that ignore early funnel quality signals', 'Low', 'Useful eventually, but too late for weekly improvements']
+    ],
+    checklist: [
+      'Track reply quality, meetings, and pipeline before vanity counts.',
+      'Break metrics down by segment, owner, and campaign type.',
+      'Review leading indicators weekly and revenue outcomes monthly.',
+      'Tie every KPI to one operating decision.',
+      'Remove dashboards that do not change behavior.'
+    ],
+    alternatives: [
+      'If the issue is broader review cadence, compare with <a href="/guides/sales-pipeline-review-cadence">Sales Pipeline Review Cadence</a>.',
+      'If you need a campaign-level diagnostic, continue with <a href="/guides/outbound-campaign-audit-framework">Outbound Campaign Audit Framework</a>.',
+      'If the bigger question is outreach measurement, move next to <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.'
     ],
     finalVerdict: [
       'Apollo prospecting metrics are most useful when the team tracks fewer metrics but ties them more directly to commercial outcomes.',
