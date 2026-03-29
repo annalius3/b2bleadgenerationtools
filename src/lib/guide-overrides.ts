@@ -4708,5 +4708,293 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo is useful for finding CEOs and founders when the team is disciplined about when executive outreach actually makes sense. Seniority alone is not a strategy.',
       'If the message is not executive-relevant, a founder list will not save the campaign.'
     ]
+  },
+  'startup-outbound-first-customers': {
+    summary: [
+      'Winning the first 20 customers with startup outbound works when the team treats outreach as a focused learning engine, not a brute-force channel. Early outbound should sharpen the offer, reveal the right segment, and create the first repeatable sales conversations.',
+      'Apollo is useful because a startup can go from idea-level targeting to real conversations quickly without carrying a heavy stack or a large sales team.'
+    ],
+    customSections: [
+      {
+        title: 'What first-customer outbound should optimize for',
+        paragraphs: [
+          'The real objective is not activity volume. It is enough qualified conversations to understand which buyer profile, message angle, and offer framing deserve more attention. Every early campaign should teach the team something commercial.',
+          'That is why one clear ICP and one clear offer usually outperform multiple half-formed experiments.'
+        ]
+      },
+      {
+        title: 'Why early outbound gets noisy',
+        paragraphs: [
+          'It gets noisy when founders chase too many segments, automate too much before they understand objections, or confuse early meetings with real customer fit. That leads to more motion but less learning.',
+          'A better model is narrow targeting, simple sequences, and fast review of what qualified buyers actually say.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each outbound cycle produces market feedback that changes the next one.',
+      'The team stays narrow enough to spot which segment is truly responding.',
+      'Apollo shortens the learning loop instead of adding process overhead.'
+    ],
+    comparisonRows: [
+      ['Apollo startup outbound for first customers', 'Founders and lean teams still validating segment and offer', 'Low to mid', 'Best for fast learning-driven customer acquisition'],
+      ['Broad startup outbound', 'Teams trying to cover multiple markets immediately', 'Low', 'Creates noise faster than customer insight'],
+      ['Inbound wait-and-see strategy', 'Teams delaying direct outreach until marketing matures', 'Low cash, slow feedback', 'Lower effort now, slower learning and slower pipeline']
+    ],
+    checklist: [
+      'Choose one ICP and one problem statement first.',
+      'Build a small Apollo list around that hypothesis.',
+      'Run a short sequence with one clear offer.',
+      'Log objections and pattern-match them weekly.',
+      'Scale only after one repeatable customer path appears.'
+    ],
+    alternatives: [
+      'If the founder should stay closer to the outreach, compare with <a href="/guides/founder-led-outbound-with-apollo">Founder-Led Outbound with Apollo</a>.',
+      'If budget constraints are the main issue, continue with <a href="/guides/low-budget-lead-generation-startups">Low-Budget Lead Generation Strategies for Startups</a>.',
+      'If the next milestone is call volume, move next to <a href="/guides/booking-first-sales-calls-with-apollo">Booking First Sales Calls with Apollo</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is a strong fit for startup outbound to win the first 20 customers because it keeps the process compact enough to learn fast. Early wins come from clarity and iteration, not from volume.',
+      'If the team cannot explain what it learned from the last campaign, it is still moving too broadly.'
+    ]
+  },
+  'low-budget-lead-generation-startups': {
+    summary: [
+      'Low-budget lead generation for startups works when the team keeps the stack small, the ICP narrow, and the review loop disciplined. Efficiency comes from clarity and process, not from squeezing more activity out of a weak system.',
+      'Apollo is useful because it can cover prospecting, list building, and first-touch outbound without forcing an early-stage company into expensive tool sprawl.'
+    ],
+    customSections: [
+      {
+        title: 'What low-budget lead generation should prioritize',
+        paragraphs: [
+          'The priorities are simple: one reliable database, one simple sending workflow, and one repeatable qualification process. Every extra tool should be justified by a real bottleneck, not by curiosity.',
+          'The most capital-efficient teams improve segment quality and offer clarity before adding more software or channels.'
+        ]
+      },
+      {
+        title: 'Why budget constraints create bad process',
+        paragraphs: [
+          'Budget constraints create bad process when the team overcompensates with scattered free tools or tries to run too many channels without a stable core motion. That often costs more time than it saves in cash.',
+          'A better model is one compact system that is boring enough to run every week.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The startup can run outbound consistently without a bloated stack.',
+      'Apollo replaces manual work instead of becoming another unused login.',
+      'Weekly metrics are tied to qualified conversations and pipeline, not vanity counts.'
+    ],
+    comparisonRows: [
+      ['Apollo-based low-budget outbound stack', 'Bootstrapped and early-stage teams needing one compact system', 'Low to mid', 'Best for reducing tool sprawl while preserving speed'],
+      ['Many small cheap tools stitched together', 'Teams optimizing for cost line-by-line', 'Low cash, high maintenance cost', 'Often cheaper on paper, slower in practice'],
+      ['Heavy sales stack too early', 'Startups adding tooling before process fit', 'High', 'Usually increases cost faster than pipeline quality']
+    ],
+    checklist: [
+      'Keep the stack narrow until the real bottleneck is visible.',
+      'Spend effort on ICP and offer quality before extra tooling.',
+      'Track only the core weekly metrics that change decisions.',
+      'Reinvest only after one motion becomes repeatable.',
+      'Treat simplicity as a growth advantage, not a limitation.'
+    ],
+    alternatives: [
+      'If the broader startup motion is the issue, compare with <a href="/guides/apollo-io-for-startups">Apollo.io for Startups</a>.',
+      'If the first-customer motion matters most, continue with <a href="/guides/startup-outbound-first-customers">Startup Outbound Playbook to Win First 20 Customers</a>.',
+      'If the team is tiny, move next to <a href="/guides/startup-prospecting-on-a-small-team">Startup Prospecting on a Small Team</a>.'
+    ],
+    finalVerdict: [
+      'Apollo works well for low-budget startup lead generation when the company needs one practical system instead of a fragmented cheap stack. Lower cost becomes an advantage only when the workflow stays simple enough to run well.',
+      'If the team is saving money but losing operational clarity, the stack is still too messy.'
+    ]
+  },
+  'apollo-guide-for-agencies': {
+    summary: [
+      'An Apollo guide for agencies is useful only if it reflects how agencies actually sell: by service line, niche, proof, and retainer fit. The strongest agency workflows use Apollo to create predictable conversations that can convert into recurring work, not just one-off projects.',
+      'Apollo is valuable because it helps agencies organize niche prospecting, role-specific lists, and repeatable outreach without depending entirely on referrals.'
+    ],
+    customSections: [
+      {
+        title: 'What an agency Apollo workflow should accomplish',
+        paragraphs: [
+          'A good agency workflow should connect prospecting to offer quality and retainer fit. It should make it easier to identify buyers who match the service model and easier to qualify for recurring potential, not just first-call volume.',
+          'The best agency setups tie niche, proof, and outreach angle together before the first sequence is launched.'
+        ]
+      },
+      {
+        title: 'Why agencies struggle with Apollo',
+        paragraphs: [
+          'Agencies struggle when they use the same outreach for every service line, target too many niches at once, or chase project-fit leads that do not convert into strong retainer economics. That creates effort without predictable growth.',
+          'A better model is one service line, one niche, and one proof-driven campaign at a time.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Lists and campaigns are built around specific service lines and buyer types.',
+      'Qualification includes recurring-fit and budget-fit, not just interest.',
+      'Agency proof is used in a niche-specific way rather than as generic credibility.'
+    ],
+    comparisonRows: [
+      ['Apollo guide for niche agency outbound', 'Agencies wanting predictable prospect-to-retainer workflow', 'Low to mid', 'Best for structured new-business motion'],
+      ['Broad agency outreach', 'Agencies pitching many services across mixed niches', 'Low', 'Usually generic and hard to scale well'],
+      ['Referral-only agency growth', 'Agencies relying on network-led deal flow', 'Low cash, high dependency', 'Useful, but less controllable than outbound discipline']
+    ],
+    checklist: [
+      'Start with one service line and one niche.',
+      'Build proof-led role-specific lists in Apollo.',
+      'Qualify for retainer potential, not just initial project interest.',
+      'Track meetings and wins by niche and offer.',
+      'Scale only what supports predictable recurring revenue.'
+    ],
+    alternatives: [
+      'If the agency-specific playbook is narrower, compare with <a href="/guides/apollo-for-marketing-agencies">Apollo for Marketing Agencies</a>.',
+      'If the operational workflow matters more, continue with <a href="/guides/how-agencies-use-apollo">How Agencies Use Apollo</a>.',
+      'If client flow predictability is the main issue, move next to <a href="/guides/predictable-client-flow-for-agencies">Predictable Client Flow for Agencies</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is strong for agencies when it is used to build a narrow proof-driven path from prospect to retainer. Agencies grow faster when the outreach mirrors the business model they actually want.',
+      'If the pipeline is full of weak project-fit leads, the targeting and qualification rules still need tightening.'
+    ]
+  },
+  'apollo-io-for-startups': {
+    summary: [
+      'Apollo.io is a strong fit for startups when the team needs one practical outbound operating layer instead of multiple disconnected tools. The product becomes most useful when the startup already has a directionally clear ICP and needs a faster path from list building to qualified conversations.',
+      'For startups, the real value is not feature breadth. It is reducing the friction between market hypothesis and real buyer feedback.'
+    ],
+    customSections: [
+      {
+        title: 'What startups actually need from Apollo',
+        paragraphs: [
+          'Most startups need a compact workflow that covers prospect discovery, list building, simple sequencing, and weekly review. They do not need a fully mature sales stack on day one.',
+          'Apollo works well when it helps the startup stay focused on one segment, one offer, and one clean outbound rhythm.'
+        ]
+      },
+      {
+        title: 'Why startups misuse Apollo',
+        paragraphs: [
+          'Startups misuse Apollo when they bring too much complexity into the workflow too early, run too many segments at once, or treat the tool as a substitute for offer clarity. That creates fast activity without meaningful learning.',
+          'A better model is simple process first, then gradual expansion after one motion becomes repeatable.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Apollo replaces early spreadsheet and tool chaos with one repeatable workflow.',
+      'The startup uses the platform to tighten learning loops, not just increase send volume.',
+      'Qualified replies and meetings improve because targeting stays narrow enough to inspect.'
+    ],
+    comparisonRows: [
+      ['Apollo.io as startup outbound operating layer', 'Lean teams needing one practical prospecting and outreach workflow', 'Low to mid', 'Best for faster learning and cleaner early execution'],
+      ['Many separate startup tools', 'Teams assembling a stack before process fit exists', 'Mid in maintenance cost', 'Flexible, but slower and noisier operationally'],
+      ['Manual-only startup prospecting', 'Teams delaying tooling until after first sales motion', 'Low cash, high labor cost', 'Can work briefly, but scales poorly']
+    ],
+    checklist: [
+      'Use Apollo for one clean ICP and one offer first.',
+      'Keep the initial workflow simple enough to run weekly.',
+      'Track qualified replies and meetings, not just output.',
+      'Iterate one variable at a time.',
+      'Expand only after the first segment becomes predictable.'
+    ],
+    alternatives: [
+      'If the founder-led angle matters more, compare with <a href="/guides/founder-led-outbound-with-apollo">Founder-Led Outbound with Apollo</a>.',
+      'If budget constraints are the main issue, continue with <a href="/guides/low-budget-lead-generation-startups">Low-Budget Lead Generation Strategies for Startups</a>.',
+      'If the first-customer motion is the next focus, move next to <a href="/guides/startup-outbound-first-customers">Startup Outbound Playbook to Win First 20 Customers</a>.'
+    ],
+    finalVerdict: [
+      'Apollo.io is a strong startup tool when the company wants one compact system that can turn a market hypothesis into real conversations quickly. Startups benefit most when they use Apollo to simplify, not to over-engineer.',
+      'If the process is already too complex for the team to review weekly, the startup is asking the tool to solve the wrong problem.'
+    ]
+  },
+  'b2b-sales-process-optimization': {
+    summary: [
+      'B2B sales process optimization works when the team improves one meaningful bottleneck at a time instead of redesigning the whole system every month. The strongest improvements usually come from tighter qualification, clearer stage rules, and more honest conversion feedback loops.',
+      'Apollo helps because it keeps top-of-funnel quality visible, which makes it easier to see whether process problems start in targeting, handoff, or later-stage execution.'
+    ],
+    customSections: [
+      {
+        title: 'What process optimization should improve',
+        paragraphs: [
+          'A useful optimization effort should improve speed, clarity, or conversion in a way the team can actually feel in weekly operations. If it only adds documentation or tools without better execution, it is not real optimization.',
+          'The best process work removes friction and ambiguity rather than adding more layers of control.'
+        ]
+      },
+      {
+        title: 'Why sales process projects stall',
+        paragraphs: [
+          'They stall when the team tries to optimize too many stages at once or when no one agrees on the real bottleneck. That creates more meetings and more process language without better revenue outcomes.',
+          'A better model is one bottleneck, one hypothesis, and one weekly review loop at a time.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Optimization work targets a specific high-impact bottleneck.',
+      'Conversion data, not opinions, drives prioritization.',
+      'Changes improve weekly execution rather than just documentation quality.'
+    ],
+    comparisonRows: [
+      ['Focused B2B process optimization', 'Teams improving one high-impact stage or handoff at a time', 'Low', 'Best for durable operational gains'],
+      ['Broad process redesign', 'Teams trying to rebuild the whole sales system at once', 'Mid in organizational cost', 'Can feel strategic, often slows execution'],
+      ['Tool-led optimization', 'Teams hoping software alone fixes process ambiguity', 'Mid', 'Can help, but rarely solves root issues without discipline']
+    ],
+    checklist: [
+      'Identify the highest-impact bottleneck first.',
+      'Standardize only what the team can enforce.',
+      'Tie process changes to stage-level metrics.',
+      'Run weekly experiments, not quarterly overhauls.',
+      'Keep only the changes that improve real execution.'
+    ],
+    alternatives: [
+      'If the issue is qualification, compare with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.',
+      'If the problem is pipeline control, continue with <a href="/guides/managing-sales-pipeline">Managing Sales Pipeline</a>.',
+      'If the team wants conversion leverage first, move next to <a href="/guides/increasing-conversion-rates">Increasing Conversion Rates</a>.'
+    ],
+    finalVerdict: [
+      'B2B sales process optimization works best when the team improves the system in controlled weekly steps. Good process work makes decisions clearer and execution faster, not more ceremonial.',
+      'If the optimization project adds more complexity than clarity, it is heading in the wrong direction.'
+    ]
+  },
+  'sales-automation-with-apollo': {
+    summary: [
+      'Sales automation with Apollo works when the team automates repetitive workflow steps without automating judgment. The biggest gains usually come from consistent list handling, sequence logic, and reply routing, not from trying to automate qualification or deal strategy completely.',
+      'Apollo is useful because it makes it possible to automate top-of-funnel execution while keeping human review where it matters most.'
+    ],
+    customSections: [
+      {
+        title: 'What should be automated first',
+        paragraphs: [
+          'The best first automation targets repetitive, low-judgment work: list prep steps, sequence triggers, branch logic, and reminders. Those save time without forcing the team to give up control of critical decisions.',
+          'The goal is to reduce friction, not to remove human thinking from the process.'
+        ]
+      },
+      {
+        title: 'Why automation hurts quality',
+        paragraphs: [
+          'Automation hurts quality when the team uses it to hide weak segmentation, skip QA, or route every reply the same way. That usually scales mistakes faster instead of improving results.',
+          'A better model uses automation where the rules are clear and manual review where context still matters.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Automation saves time without reducing reply or lead quality.',
+      'Guardrails and pause rules protect warm conversations.',
+      'The team audits automation output regularly instead of trusting it blindly.'
+    ],
+    comparisonRows: [
+      ['Apollo automation with clear guardrails', 'Lean teams wanting productivity without quality drift', 'Low to mid', 'Best for safe scalable process automation'],
+      ['Over-automation of judgment-heavy steps', 'Teams automating qualification and nuance too early', 'Low', 'Fast, but risky for pipeline quality'],
+      ['Manual-only sales workflow', 'Teams avoiding automation entirely', 'Low cash, high labor cost', 'Can preserve quality, but caps operational leverage']
+    ],
+    checklist: [
+      'Automate repetitive workflow before strategic decisions.',
+      'Use stop and pause logic aggressively for replies.',
+      'Review automation output quality weekly.',
+      'Keep manual checkpoints in qualification-heavy moments.',
+      'Remove automations that save time but damage lead quality.'
+    ],
+    alternatives: [
+      'If the issue is campaign design first, compare with <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.',
+      'If reply handling needs work, continue with <a href="/guides/reply-strategy-for-b2b-outreach">Reply Strategy for B2B Outreach Conversations</a>.',
+      'If the team needs stronger process discipline overall, move next to <a href="/guides/b2b-sales-process-optimization">B2B Sales Process Optimization</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is effective for sales automation when it automates the right layer of work: repetitive execution, not commercial judgment. Good automation increases leverage without making the system harder to trust.',
+      'If automation is creating more cleanup than speed, the rules are still too loose.'
+    ]
   }
 };
