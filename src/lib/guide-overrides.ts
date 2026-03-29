@@ -2885,4 +2885,292 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'If the motion is still broad and unfocused, adding more phone touches usually adds noise, not pipeline.'
     ]
   },
+  'finding-ideal-customers-with-apollo': {
+    summary: [
+      'Finding ideal customers with Apollo works best when the team starts from closed-won patterns instead of vague assumptions. The goal is not to find more companies. The goal is to identify the narrow slice of accounts that can realistically turn into qualified pipeline.',
+      'Apollo is valuable here because it turns ICP thinking into something operational: saved account filters, stakeholder mapping, and reusable segments that can be reviewed weekly.'
+    ],
+    customSections: [
+      {
+        title: 'What ideal customer definition should change',
+        paragraphs: [
+          'A strong ideal-customer definition should change who enters the list, how outreach is written, and which accounts deserve deeper follow-up. If it only creates a nicer label for the market, it is not specific enough.',
+          'The best Apollo workflows use ICP rules to remove weak-fit accounts early rather than to justify larger exports.'
+        ]
+      },
+      {
+        title: 'Why teams choose the wrong customers',
+        paragraphs: [
+          'Teams often choose the wrong customers because they copy competitors, overvalue total market size, or confuse interest with fit. That usually creates broad lists and weak campaigns.',
+          'A better model is to define the segment around real buyer behavior, commercial viability, and repeatable use-case fit.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The ICP narrows prospecting enough to make messaging clearer and list QA easier.',
+      'Apollo filters are based on real customer patterns rather than broad category guesses.',
+      'Ideal-customer segments produce better replies and better meetings than generic market lists.'
+    ],
+    comparisonRows: [
+      ['Apollo with closed-won ICP logic', 'Teams that already know which customers create good outcomes', 'Low to mid', 'Best for building focused, reusable outbound segments'],
+      ['Broad market targeting', 'Teams still chasing awareness or volume', 'Low to mid', 'Usually produces more names but weaker pipeline quality'],
+      ['Manual research only', 'Very small account sets or strategic enterprise motions', 'Low cash, high labor cost', 'Can work, but slower and harder to repeat']
+    ],
+    checklist: [
+      'Start from your best customers, not your biggest market.',
+      'Translate ICP rules into account filters before collecting contacts.',
+      'Manually inspect the first results before saving the segment.',
+      'Document why the segment should convert better than a broader list.',
+      'Review pipeline quality by ICP segment every week.'
+    ],
+    alternatives: [
+      'If you need account ranking after ICP definition, continue with <a href="/guides/how-to-prioritize-accounts-for-outbound">How to Prioritize Accounts for Outbound</a>.',
+      'If the broader lead-finding workflow is still unclear, compare with <a href="/guides/how-to-find-b2b-leads-with-apollo-io">How to Find B2B Leads with Apollo.io</a>.',
+      'If the next step is building target accounts, move to <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is strong for finding ideal customers when the team uses real customer evidence to shape segmentation. The tighter the ICP, the easier it becomes to run useful outbound.',
+      'If your definition of an ideal customer still feels broad, the list will feel broad too.'
+    ]
+  },
+  'prospect-list-segmentation-strategy': {
+    summary: [
+      'Prospect list segmentation matters because one list rarely supports one clear message. The better the segmentation, the easier it becomes to personalize sensibly, qualify replies, and understand which part of the market is actually responding.',
+      'Apollo helps because segmentation can be turned into saved views, reusable campaigns, and repeatable weekly reporting instead of staying inside spreadsheets.'
+    ],
+    customSections: [
+      {
+        title: 'What segmentation should improve',
+        paragraphs: [
+          'Good segmentation should make the message simpler, not more complicated. It should also make campaign performance easier to interpret because each segment exists for one specific reason.',
+          'If the segment does not change targeting, copy, or prioritization, it is usually not a useful segment.'
+        ]
+      },
+      {
+        title: 'Why teams over-segment or under-segment',
+        paragraphs: [
+          'Under-segmentation leads to generic outreach and muddy results. Over-segmentation creates operational drag and too many tiny experiments to manage well.',
+          'The practical middle ground is a small set of segments that actually map to different buyer context, urgency, or offer fit.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each segment supports a distinct message angle or campaign decision.',
+      'Segment reporting makes it easier to see where meetings and pipeline actually come from.',
+      'The team can explain why each segment exists in one sentence.'
+    ],
+    comparisonRows: [
+      ['Apollo segmentation with clear offer logic', 'Teams running repeatable outbound with multiple buyer slices', 'Low to mid', 'Best for clearer messaging and cleaner measurement'],
+      ['One large blended list', 'Teams optimizing for speed before insight', 'Low', 'Fast to launch, but hard to learn from'],
+      ['Too many micro-segments', 'Teams over-engineering outbound before signal exists', 'Mid in time cost', 'Often creates admin work without better results']
+    ],
+    checklist: [
+      'Create only the segments that change message or priority.',
+      'Name segments consistently so the team can review them quickly.',
+      'Keep strategic and fast-close opportunities separate.',
+      'Measure meetings and pipeline by segment, not just totals.',
+      'Delete segments that never change decisions.'
+    ],
+    alternatives: [
+      'If list building itself is the bottleneck, compare with <a href="/guides/building-contact-lists-for-b2b">Building Contact Lists for B2B</a>.',
+      'If priority ranking matters more than segmentation, continue with <a href="/guides/how-to-prioritize-accounts-for-outbound">How to Prioritize Accounts for Outbound</a>.',
+      'If the next step is message design, move to <a href="/guides/email-prospecting-strategy">Email Prospecting Strategy</a>.'
+    ],
+    finalVerdict: [
+      'Apollo list segmentation works best when it reduces confusion and improves campaign relevance. The right number of segments is the number that changes behavior, not the number that looks sophisticated.',
+      'Segmentation should make your next outbound decision easier, not harder.'
+    ]
+  },
+  'how-to-prioritize-accounts-for-outbound': {
+    summary: [
+      'Prioritizing accounts for outbound is where most teams decide whether Apollo becomes a pipeline tool or just a list tool. Strong prioritization makes the same database more valuable because the team spends attention where conversion odds are better.',
+      'The best model combines fit, urgency, and realistic deal value rather than relying on company size or title prestige alone.'
+    ],
+    customSections: [
+      {
+        title: 'What account priority should control',
+        paragraphs: [
+          'Priority should control how much research the account gets, who is contacted first, how personalized the message becomes, and how fast the team follows up. Without those consequences, the ranking does not matter enough.',
+          'Apollo makes prioritization useful when the ranking can be tied to saved account views and weekly outbound execution.'
+        ]
+      },
+      {
+        title: 'Why account scores become decorative',
+        paragraphs: [
+          'Account scoring becomes decorative when every account ends up labeled as high priority or when the team never revisits the ranking after new signals appear.',
+          'A useful system stays simple enough to update and strict enough to remove weak accounts from focus.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The team can explain why a tier-one account deserves more time than a test account.',
+      'Priority changes the workflow, not just the spreadsheet label.',
+      'High-priority accounts are reviewed regularly instead of staying static.'
+    ],
+    comparisonRows: [
+      ['Apollo account prioritization with fit and urgency', 'Teams running ABM-lite or focused outbound motions', 'Low to mid', 'Best for improving attention allocation'],
+      ['Flat list with no priority tiers', 'Teams treating every account the same', 'Low', 'Simple, but wastes research and follow-up effort'],
+      ['Overcomplicated scoring model', 'Teams building heavy scoring before enough signal exists', 'Mid in ops cost', 'Looks rigorous, often hard to maintain']
+    ],
+    checklist: [
+      'Define top-tier accounts by fit, urgency, and realistic deal value.',
+      'Limit how many accounts can hold top priority at one time.',
+      'Assign more research and faster follow-up to higher tiers.',
+      'Re-score accounts when new signals appear.',
+      'Drop decorative tiers that do not change action.'
+    ],
+    alternatives: [
+      'If target account design comes first, compare with <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.',
+      'If the motion is broader account-led outbound, continue with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.',
+      'If timing data matters most, move to <a href="/guides/identifying-buying-signals">Identifying Buying Signals</a>.'
+    ],
+    finalVerdict: [
+      'Apollo helps teams prioritize outbound accounts well when ranking logic changes how campaigns are run in practice. Good prioritization saves more time than it costs.',
+      'If all accounts look equally important, none of them really are.'
+    ]
+  },
+  'writing-cold-email-openers-that-get-read': {
+    summary: [
+      'A cold email opener gets read when it sounds like it belongs to the buyer?s situation, not when it sounds clever. The job of the opener is to earn the next sentence, not to explain the whole offer up front.',
+      'Apollo matters here because better segmentation makes opener quality easier. The tighter the list, the easier it is to write one observation that feels relevant across the segment.'
+    ],
+    customSections: [
+      {
+        title: 'What a strong opener actually does',
+        paragraphs: [
+          'A strong opener proves that the email is for this type of buyer and this type of problem. It creates just enough relevance to keep reading without sounding overproduced.',
+          'In practice, short specific openers usually outperform long context-setting paragraphs because they respect the buyer?s attention.'
+        ]
+      },
+      {
+        title: 'Why openers fail even on good lists',
+        paragraphs: [
+          'Openers fail when they try to impress, force personalization, or repeat generic market language. They also fail when the list itself is too mixed for one opening angle to make sense.',
+          'That is why list quality and opener quality have to be reviewed together.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The opener is segment-specific enough that it could not fit every prospect equally.',
+      'The first sentence earns curiosity without sounding manufactured.',
+      'Reply quality improves because the right buyers keep reading instead of skimming past generic intros.'
+    ],
+    comparisonRows: [
+      ['Apollo segment-specific opener', 'Teams with clear ICPs and focused campaigns', 'Low', 'Best for relevance and reply quality'],
+      ['Generic benefit-led opener', 'Teams using broader lists or weak segmentation', 'Low', 'Easy to write, weaker on trust'],
+      ['Heavy manual personalization opener', 'Top-tier account motions only', 'High time cost', 'Can work for strategic accounts, not ideal for broad scale']
+    ],
+    checklist: [
+      'Start from a real buyer observation, not a product pitch.',
+      'Keep the opener to one or two short sentences.',
+      'Check whether the opener still fits every record in the segment.',
+      'Remove fake personalization that does not change meaning.',
+      'Judge success by reply quality, not only open rate.'
+    ],
+    alternatives: [
+      'If sequence design is the bigger issue, compare with <a href="/guides/building-email-sequences">Building Email Sequences</a>.',
+      'If personalization strategy matters more, continue with <a href="/guides/apollo-outreach-personalization-framework">Apollo Outreach Personalization Framework</a>.',
+      'If you need stronger reply conversion, move next to <a href="/guides/how-to-get-replies-to-cold-emails">How to Get Replies to Cold Emails</a>.'
+    ],
+    finalVerdict: [
+      'The best Apollo cold email openers sound specific, simple, and commercially aware. Relevance beats cleverness almost every time.',
+      'If the opener still looks like it could fit any buyer, it probably is not strong enough yet.'
+    ]
+  },
+  'outbound-follow-up-timing-strategy': {
+    summary: [
+      'Follow-up timing is one of the highest-leverage sequence decisions because it controls persistence without making the campaign feel random or desperate. Good timing improves reply quality; bad timing makes even decent messaging easier to ignore.',
+      'Apollo helps when follow-up logic is tied to segment behavior, positive signals, and manual handoff rules rather than fixed automation for every prospect.'
+    ],
+    customSections: [
+      {
+        title: 'What timing strategy should optimize for',
+        paragraphs: [
+          'The goal is not maximum touches. The goal is to stay present long enough to earn a response while giving each touch a reason to exist. Timing should reflect buyer attention and message variation together.',
+          'The best cadence leaves room for manual takeover when interest appears instead of forcing the prospect through automation.'
+        ]
+      },
+      {
+        title: 'Why follow-up sequences become noisy',
+        paragraphs: [
+          'Noise appears when follow-ups repeat the same ask, ignore campaign context, or keep firing after a signal that the buyer needs a different treatment. That makes the sequence feel machine-led instead of useful.',
+          'A better system changes angle over time and treats replies as workflow triggers, not interruptions.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each follow-up adds context or a new angle instead of repeating the first email.',
+      'Timing decisions reflect buyer behavior and segment fit, not arbitrary defaults.',
+      'Positive signals trigger faster manual follow-up instead of more automation.'
+    ],
+    comparisonRows: [
+      ['Apollo cadence with signal-aware spacing', 'Teams that want persistence without sequence fatigue', 'Low', 'Best for balancing consistency and relevance'],
+      ['Rigid fixed-gap follow-up', 'Teams using one template for every segment', 'Low', 'Easy to manage, weaker for higher-fit accounts'],
+      ['Manual-only follow-up', 'Very small strategic account sets', 'High time cost', 'Can work well, but hard to scale beyond a narrow list']
+    ],
+    checklist: [
+      'Plan tighter spacing early and wider spacing later.',
+      'Change the reason for each follow-up, not just the wording.',
+      'Pause automation when real intent appears.',
+      'Review reply quality by touchpoint number.',
+      'Remove touches that add persistence without value.'
+    ],
+    alternatives: [
+      'If the broader automation model matters, continue with <a href="/guides/follow-up-automation">Follow-Up Automation</a>.',
+      'If sequence structure still needs work, compare with <a href="/guides/building-email-sequences">Building Email Sequences</a>.',
+      'If the campaign needs a full-channel design, move next to <a href="/guides/multi-step-outreach-playbook">Multi-Step Outreach Playbook</a>.'
+    ],
+    finalVerdict: [
+      'Apollo follow-up timing works best when each touch has a job and the spacing reflects how buyers actually engage. Persistence is useful only when it still feels intentional.',
+      'If every touch asks for the same thing at the same pace, the sequence is probably doing too much automation and not enough thinking.'
+    ]
+  },
+  'apollo-outreach-personalization-framework': {
+    summary: [
+      'A usable personalization framework separates what should be personalized at the segment level, the account level, and the contact level. Without that structure, teams either over-personalize low-value accounts or under-personalize strategic ones.',
+      'Apollo becomes useful here because it gives the team enough context to personalize where it matters without turning every campaign into manual research.'
+    ],
+    customSections: [
+      {
+        title: 'What personalization should change',
+        paragraphs: [
+          'Good personalization changes the commercial meaning of the message. It does not just add trivia or superficial context. The best version helps the buyer see why the outreach is relevant right now.',
+          'That usually means segment logic first, account nuance second, and deep manual research only for high-value targets.'
+        ]
+      },
+      {
+        title: 'Why teams waste time on personalization',
+        paragraphs: [
+          'Teams waste time when they personalize details that do not affect response quality or qualification quality. That often feels sophisticated but does not improve pipeline enough to justify the effort.',
+          'A better system uses scalable variables for most accounts and reserves high-effort personalization for accounts that deserve it.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Personalization changes meaning, not just wording.',
+      'The team can explain which accounts deserve deeper research and why.',
+      'Meetings improve because the message reflects role and market context more accurately.'
+    ],
+    comparisonRows: [
+      ['Apollo layered personalization framework', 'Teams needing relevance without full manual research', 'Low to mid', 'Best for balancing scale and context'],
+      ['Generic merge-field personalization', 'Teams optimizing for speed over relevance', 'Low', 'Fast, but easy for buyers to ignore'],
+      ['Manual deep research for every account', 'Teams over-personalizing broad outbound', 'High time cost', 'Usually unsustainable except for very small target sets']
+    ],
+    checklist: [
+      'Define what belongs at segment, account, and contact level.',
+      'Use Apollo variables only when they change the message meaningfully.',
+      'Reserve manual research for high-priority accounts.',
+      'Track results by personalization depth.',
+      'Cut personalization steps that do not improve meetings.'
+    ],
+    alternatives: [
+      'If the broader copy problem starts in the opener, compare with <a href="/guides/writing-cold-email-openers-that-get-read">Writing Cold Email Openers That Get Read</a>.',
+      'If strategy matters more than variables, continue with <a href="/guides/email-outreach-strategy">Email Outreach Strategy</a>.',
+      'If campaign setup is still messy, move next to <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.'
+    ],
+    finalVerdict: [
+      'Apollo personalization works best when the team treats it as a decision framework instead of a bag of custom fields. The right structure saves time and improves message relevance at the same time.',
+      'If you personalize everything equally, you are probably personalizing the wrong things.'
+    ]
+  }
 };
