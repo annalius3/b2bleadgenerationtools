@@ -2583,5 +2583,53 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'The smaller the team, the more important it is to track only what changes next week?s actions.'
     ]
   }
-
+,
+  'finding-phone-numbers-of-decision-makers': {
+    summary: [
+      'Finding phone numbers in Apollo only creates value when the team already knows why a call belongs in the motion. Phone data is most useful for high-value accounts, stalled opportunities, and multichannel follow-up rather than broad cold calling for its own sake.',
+      'The strongest workflow is role-aware and account-aware: identify the right stakeholders, decide where a phone touch fits the sequence, and use calling to improve conversation timing instead of replacing targeted email.'
+    ],
+    customSections: [
+      {
+        title: 'When phone data actually helps',
+        paragraphs: [
+          'Phone numbers matter most when the account value justifies an extra touch and when the team has a clear reason to call. That usually means high-fit target accounts, late follow-up on warm interest, or multithreaded outreach where email alone is too fragile.',
+          'Apollo is useful here because it keeps stakeholder mapping and contact discovery close together. The operational win is not more calls. It is better-timed calls to the right people.'
+        ]
+      },
+      {
+        title: 'Where teams misuse phone-first outreach',
+        paragraphs: [
+          'Teams misuse phone data when they treat every number as a reason to dial. That usually creates low-context conversations, weak conversion, and too much activity disconnected from account strategy.',
+          'A better approach is to decide in advance which accounts deserve a phone touch, which role should be contacted first, and what message the call is meant to advance.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Phone touches are reserved for accounts and roles where speed or account value justifies them.',
+      'Call outcomes are reviewed alongside email performance rather than treated as a separate motion.',
+      'The team can explain why a phone step belongs in the sequence and what result it is meant to produce.'
+    ],
+    comparisonRows: [
+      ['Apollo phone data inside a multichannel sequence', 'Teams working strategic accounts with clear follow-up logic', 'Low to mid', 'Best when calls support account progression, not random dialing'],
+      ['Phone-first volume outreach', 'Teams optimizing for activity before relevance', 'Low to mid', 'Usually produces weak conversation quality and poor efficiency'],
+      ['Email-only outreach', 'Teams selling lower-complexity offers or working small account sets', 'Low', 'Simpler to run, but easier to ignore in high-value motions']
+    ],
+    checklist: [
+      'Choose which accounts actually deserve a phone touch before exporting data.',
+      'Map the right stakeholder and likely call objective first.',
+      'Use phone outreach as part of a coordinated sequence, not a separate random tactic.',
+      'Track call outcomes by segment and account value.',
+      'Remove phone steps that add activity without improving progression.'
+    ],
+    alternatives: [
+      'If the bigger issue is stakeholder mapping, compare with <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If the workflow needs full multichannel structure, continue with <a href="/guides/multi-step-outreach-playbook">Multi-Step Outreach Playbook</a>.',
+      'If account selection is still too broad, tighten the motion first with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.'
+    ],
+    finalVerdict: [
+      'Apollo phone data is most valuable as a precision tool inside high-fit outbound workflows. It works best when the team knows which accounts matter, which stakeholders matter, and when a call improves timing.',
+      'If the motion is still broad and unfocused, adding more phone touches usually adds noise, not pipeline.'
+    ]
+  },
 };
