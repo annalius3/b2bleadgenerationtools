@@ -4180,5 +4180,341 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Closing more deals with better leads is one of the most reliable ways to improve revenue efficiency. Better pipeline inputs usually beat harder downstream effort.',
       'If the sales team keeps fighting weak-fit opportunities, lead quality is still not strict enough.'
     ]
+  },
+  'apollo-cold-email-sequence-template': {
+    summary: [
+      'A cold email sequence template only works when each step has a specific job. The strongest Apollo sequences are not just multiple reminders. They move the buyer from recognition to relevance to low-friction response with clear intent at each touch.',
+      'Apollo helps because sequence logic, pause rules, and reply handling can be managed in one workflow instead of scattered tools.'
+    ],
+    customSections: [
+      {
+        title: 'What a sequence template should solve',
+        paragraphs: [
+          'A useful sequence template should solve the most common early outbound problem: what to say next without repeating yourself. Each step should either add context, reduce friction, or change the reason to respond.',
+          'If every touch asks for the same meeting in the same way, the sequence is not really a strategy. It is just repetition.'
+        ]
+      },
+      {
+        title: 'Why templates stop working',
+        paragraphs: [
+          'Templates stop working when teams keep reusing them across segments that need different context. The problem is often not the sequence format itself but the weak fit between the message and the audience.',
+          'A better model is one reusable structure with segment-specific angles inside it.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each touchpoint has a distinct purpose instead of repeating the same ask.',
+      'Sequence reply quality improves because the structure matches the segment context.',
+      'Apollo pause and branch rules are used to protect warm conversations from over-automation.'
+    ],
+    comparisonRows: [
+      ['Apollo sequence template with role-specific intent', 'Teams needing a reusable cold email structure', 'Low', 'Best for consistent outbound execution'],
+      ['One-message repeated across touches', 'Teams optimizing for speed over message depth', 'Low', 'Easy to launch, weaker on reply quality'],
+      ['Fully custom sequence per campaign', 'Teams overbuilding every workflow from scratch', 'High time cost', 'Can work, but slows learning and consistency']
+    ],
+    checklist: [
+      'Define the job of each touch before writing copy.',
+      'Vary the angle, not just the wording.',
+      'Use pause rules when positive replies appear.',
+      'Review reply quality by step position weekly.',
+      'Keep the structure reusable but the segment angle specific.'
+    ],
+    alternatives: [
+      'If the broader sequence strategy is the issue, compare with <a href="/guides/building-email-sequences">Building Email Sequences</a>.',
+      'If timing is the weak point, continue with <a href="/guides/outbound-follow-up-timing-strategy">Outbound Follow-Up Timing Strategy</a>.',
+      'If the next challenge is reply handling, move next to <a href="/guides/reply-strategy-for-b2b-outreach">Reply Strategy for B2B Outreach Conversations</a>.'
+    ],
+    finalVerdict: [
+      'A strong Apollo cold email sequence template creates a repeatable structure without making the outreach feel robotic. The best template gives each touch a reason to exist.',
+      'If all steps sound interchangeable, the sequence still needs more intent.'
+    ]
+  },
+  'personalization-at-scale-with-apollo': {
+    summary: [
+      'Personalization at scale works when the team knows what can be standardized and what still needs judgment. Apollo is useful because it lets teams combine segment rules, account context, and lightweight variables without forcing fully manual outreach on every record.',
+      'The real goal is not more tokens. It is better relevance at a scale the team can sustain.'
+    ],
+    customSections: [
+      {
+        title: 'What scalable personalization should preserve',
+        paragraphs: [
+          'Scalable personalization should preserve relevance, not mimic one-to-one research badly. The best system keeps segment and account context intact while reserving manual effort for truly high-value accounts.',
+          'If a personalization layer does not improve response quality or qualification quality, it probably does not belong in the workflow.'
+        ]
+      },
+      {
+        title: 'Why teams misuse scale',
+        paragraphs: [
+          'Teams misuse scale when they automate details that do not matter and ignore the deeper segmentation issues that actually drive relevance. That creates a lot of activity without much signal improvement.',
+          'A better system uses strong segmentation first and only then adds the smallest useful personalization layer.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Segment-level context does most of the relevance work before manual effort is added.',
+      'High-effort personalization is reserved for high-value accounts only.',
+      'The team can measure which personalization layer actually improves meetings.'
+    ],
+    comparisonRows: [
+      ['Apollo personalization with layered depth', 'Teams balancing scale and relevance', 'Low to mid', 'Best for sustainable personalization'],
+      ['Token-heavy pseudo-personalization', 'Teams optimizing for visible customization over true relevance', 'Low', 'Looks personal, often feels generic'],
+      ['Manual research for every prospect', 'Teams over-personalizing beyond team capacity', 'High time cost', 'Can be strong for strategic accounts, weak for scale']
+    ],
+    checklist: [
+      'Start with segmentation before variable design.',
+      'Use account context only where it changes the message meaningfully.',
+      'Reserve deep research for top-tier accounts.',
+      'Benchmark results by personalization depth.',
+      'Remove personalization layers that add effort without better outcomes.'
+    ],
+    alternatives: [
+      'If the core framework is needed, compare with <a href="/guides/apollo-outreach-personalization-framework">Apollo Outreach Personalization Framework</a>.',
+      'If opener quality matters more, continue with <a href="/guides/writing-cold-email-openers-that-get-read">Writing Cold Email Openers That Get Read</a>.',
+      'If the next step is campaign design, move next to <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.'
+    ],
+    finalVerdict: [
+      'Apollo supports personalization at scale when the team treats personalization as a layered system, not as a collection of random tokens. Relevance scales best when segmentation stays strong.',
+      'If the message still feels generic after personalization, the segment likely still is too broad.'
+    ]
+  },
+  'reply-strategy-for-b2b-outreach': {
+    summary: [
+      'A reply strategy matters because most outbound value is decided after the prospect answers, not before. Warm replies need fast classification, clear qualification, and the right next step so that interest turns into revenue instead of inbox noise.',
+      'Apollo helps indirectly by preserving context from the outreach sequence, which makes reply handling faster and more consistent.'
+    ],
+    customSections: [
+      {
+        title: 'What a reply strategy should optimize for',
+        paragraphs: [
+          'A strong reply strategy should optimize for qualified conversations, not just fast responses. That means the team needs a simple way to separate interested, unsure, objection-based, and low-fit replies quickly.',
+          'The best systems protect calendar quality by qualifying before booking whenever the situation is ambiguous.'
+        ]
+      },
+      {
+        title: 'Why warm replies get wasted',
+        paragraphs: [
+          'Warm replies get wasted when teams respond slowly, send calendar links too early, or fail to ask the one question that would clarify fit. That lets interest cool down without creating a real opportunity.',
+          'A better model uses response templates as a starting point but keeps qualification logic human-led.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Warm replies are handled within a consistent response window.',
+      'Reply classification leads to clear next-step decisions.',
+      'Calendar quality improves because booking follows qualification, not just enthusiasm.'
+    ],
+    comparisonRows: [
+      ['Structured reply handling with qualification-first logic', 'Teams wanting better conversion from warm responses', 'Low', 'Best for protecting meeting quality'],
+      ['Fast but unstructured replies', 'Teams responding quickly without enough qualification', 'Low', 'Creates meetings, weaker on opportunity quality'],
+      ['Slow manual inbox handling', 'Teams without a reply workflow', 'Low', 'Usually loses warm signal before it becomes pipeline']
+    ],
+    checklist: [
+      'Classify replies into clear buckets first.',
+      'Ask one key qualification question when needed.',
+      'Do not send a booking link before fit is clear.',
+      'Respond to warm replies the same day where possible.',
+      'Track which reply types actually become opportunities.'
+    ],
+    alternatives: [
+      'If the sequence itself is weak, compare with <a href="/guides/apollo-cold-email-sequence-template">Apollo Cold Email Sequence Template That Gets Replies</a>.',
+      'If the problem starts in campaign design, continue with <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.',
+      'If the broader outcome tracking is weak, move next to <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.'
+    ],
+    finalVerdict: [
+      'A strong reply strategy turns interest into qualified momentum instead of inbox clutter. Fast response matters, but useful response matters more.',
+      'If warm replies are not becoming good meetings, the reply workflow is still too shallow.'
+    ]
+  },
+  'email-prospecting-strategy': {
+    summary: [
+      'An email prospecting strategy matters because campaigns perform better when segmentation, sequence logic, and qualification flow are designed together instead of in isolated steps. A good strategy explains who to contact, why now, and what happens after the reply.',
+      'Apollo helps because list building, sequence execution, and early outcome review can live inside the same operating layer.'
+    ],
+    customSections: [
+      {
+        title: 'What prospecting strategy should decide',
+        paragraphs: [
+          'A useful strategy should decide which segments matter most, what offer angle each one gets, and how reply handling will protect calendar quality. Without those decisions, even well-written campaigns become inconsistent.',
+          'The strongest teams connect prospecting strategy directly to pipeline math and follow-up capacity.'
+        ]
+      },
+      {
+        title: 'Why email prospecting strategies fail',
+        paragraphs: [
+          'They fail when the team adds too many segments too early, runs sequences without clear qualification, or optimizes for activity instead of opportunity creation. That usually creates noisy reporting and weak learning.',
+          'A better model is one or two strong segments with clear follow-through before expansion.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Segment priorities are tied to realistic deal value and follow-up capacity.',
+      'Sequence design and reply handling support the same strategy.',
+      'Winning segments are scaled only after qualified outcomes hold up.'
+    ],
+    comparisonRows: [
+      ['Apollo-based email prospecting strategy', 'Teams building structured email-first outbound', 'Low to mid', 'Best for aligning targeting, messaging, and qualification'],
+      ['Tactic-only email sending', 'Teams running campaigns without a clear segmentation strategy', 'Low', 'Fast to launch, hard to improve'],
+      ['Too many segments at once', 'Teams trying to cover the whole market immediately', 'Mid in time cost', 'Often reduces clarity and execution quality']
+    ],
+    checklist: [
+      'Choose segment priorities before writing copy.',
+      'Match sequence logic to segment context and buyer stage.',
+      'Define reply-handling rules before launch.',
+      'Review qualified outcomes by segment weekly.',
+      'Scale only the segments that create real pipeline.'
+    ],
+    alternatives: [
+      'If the campaign build is the issue, compare with <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.',
+      'If the sequence template needs work, continue with <a href="/guides/apollo-cold-email-sequence-template">Apollo Cold Email Sequence Template That Gets Replies</a>.',
+      'If the next challenge is performance review, move next to <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.'
+    ],
+    finalVerdict: [
+      'A strong email prospecting strategy ties segmentation, sequence design, and qualification into one system. Apollo becomes more valuable when those choices are connected instead of improvised.',
+      'If the team cannot explain why a segment deserves outbound now, the strategy is still too loose.'
+    ]
+  },
+  'outreach-campaign-setup': {
+    summary: [
+      'Outreach campaign setup matters because launch quality determines how useful the first week of data will be. A well-set-up Apollo campaign makes it easier to trust early results and faster to see whether the issue is list quality, message quality, or follow-up logic.',
+      'The best setup is controlled, narrow, and easy to inspect before the team adds more volume.'
+    ],
+    customSections: [
+      {
+        title: 'What campaign setup should lock in',
+        paragraphs: [
+          'A useful setup should lock in objective, segment, list quality, sequence logic, and reply ownership before launch. If any of those are vague, the first results will be hard to interpret honestly.',
+          'The setup phase matters because it decides whether the campaign starts clean or starts confused.'
+        ]
+      },
+      {
+        title: 'Why launches create bad signal',
+        paragraphs: [
+          'Launches create bad signal when the segment is too broad, the reply workflow is undefined, or the team scales before list QA is finished. That makes it easy to blame copy for problems created much earlier.',
+          'A better model is one narrow sprint, one clear owner, and one fast review loop.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Campaign objective, ICP slice, and reply workflow are defined before launch.',
+      'First-week results are interpretable because the campaign scope is controlled.',
+      'The setup supports fast diagnosis instead of broad noisy activity.'
+    ],
+    comparisonRows: [
+      ['Controlled Apollo campaign setup', 'Teams launching a new segment or new offer angle', 'Low', 'Best for clean first-week learning'],
+      ['Broad launch without QA', 'Teams eager to ship before setup discipline exists', 'Low', 'Fast, but often creates misleading data'],
+      ['Overbuilt setup with too many variables', 'Teams over-planning before real signal exists', 'Mid in time cost', 'Can delay learning without better results']
+    ],
+    checklist: [
+      'Define the objective and target segment first.',
+      'Run list QA before launch.',
+      'Assign reply handling ownership in advance.',
+      'Launch in smaller controlled batches.',
+      'Schedule first review within one week.'
+    ],
+    alternatives: [
+      'If the campaign needs a broader system, compare with <a href="/guides/email-prospecting-strategy">Email Prospecting Strategy</a>.',
+      'If the sequence needs stronger structure, continue with <a href="/guides/apollo-cold-email-sequence-template">Apollo Cold Email Sequence Template That Gets Replies</a>.',
+      'If the next issue is multi-touch design, move next to <a href="/guides/multi-step-outreach-playbook">Multi-Step Outreach Playbook</a>.'
+    ],
+    finalVerdict: [
+      'Good outreach campaign setup creates cleaner first data and faster iteration. Apollo campaigns perform better when launch quality is treated as part of strategy, not just admin.',
+      'If the team launches without knowing how it will judge success, setup is not done yet.'
+    ]
+  },
+  'multi-step-outreach-playbook': {
+    summary: [
+      'A multi-step outreach playbook matters because consistent replies usually come from structured persistence, not from one perfect message. The best playbooks create a clear rhythm across touches without turning the campaign into repetitive noise.',
+      'Apollo helps because step timing, stop logic, and response handling can be documented and reused as one repeatable operating pattern.'
+    ],
+    customSections: [
+      {
+        title: 'What a playbook should standardize',
+        paragraphs: [
+          'A useful playbook should standardize sequence intent, timing logic, qualification flow, and review rhythm. That makes it easier to onboard new operators and compare performance across campaigns fairly.',
+          'The goal is not rigidity. The goal is having a reliable default that can still adapt by segment.'
+        ]
+      },
+      {
+        title: 'Why multi-step playbooks become stale',
+        paragraphs: [
+          'Playbooks become stale when each step stops adding a new reason to engage or when the team keeps running the same sequence against markets that need different context. The structure may still be fine while the relevance decays.',
+          'A better model keeps the skeleton reusable while changing the offer angle and buyer context by segment.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each step contributes a new reason to reply or continue reading.',
+      'The playbook can be reused without becoming generic.',
+      'Weekly metrics clearly show where the sequence needs adjustment.'
+    ],
+    comparisonRows: [
+      ['Apollo multi-step playbook with documented logic', 'Teams standardizing outbound execution', 'Low', 'Best for repeatable sequence quality'],
+      ['Ad hoc multi-touch campaigns', 'Teams rewriting process from scratch each time', 'Low', 'Flexible, but hard to scale or teach'],
+      ['Static playbook for every segment', 'Teams using one sequence without context adaptation', 'Low', 'Efficient, often weaker on relevance']
+    ],
+    checklist: [
+      'Document the purpose of each step.',
+      'Use timing rules that reflect buyer attention, not habit.',
+      'Build stop logic for replies and warm signals.',
+      'Review weak steps weekly, not only monthly.',
+      'Keep the playbook updated as segments evolve.'
+    ],
+    alternatives: [
+      'If the setup needs tightening first, compare with <a href="/guides/outreach-campaign-setup">Outreach Campaign Setup</a>.',
+      'If follow-up timing is the main weakness, continue with <a href="/guides/outbound-follow-up-timing-strategy">Outbound Follow-Up Timing Strategy</a>.',
+      'If performance diagnosis is next, move next to <a href="/guides/tracking-outreach-performance">Tracking Outreach Performance</a>.'
+    ],
+    finalVerdict: [
+      'A strong multi-step outreach playbook makes outbound more repeatable without making it more robotic. The best playbooks help teams persist with intention, not just with more touches.',
+      'If the playbook can no longer explain why each step exists, it needs a rewrite.'
+    ]
+  },
+  'tracking-outreach-performance': {
+    summary: [
+      'Tracking outreach performance matters because outbound gets stronger only when the team knows which stage is weak and why. A useful tracking system connects positive replies, meetings, and qualified pipeline instead of stopping at activity counts.',
+      'Apollo helps because campaign context, segment context, and early outcomes can all be reviewed together instead of spread across disconnected dashboards.'
+    ],
+    customSections: [
+      {
+        title: 'What performance tracking should reveal',
+        paragraphs: [
+          'Good tracking should reveal which segments create qualified signal, which sequences underperform, and where conversion leakage is strongest. It should support action, not just reporting.',
+          'The best teams use performance review to make one clear operating decision each week.'
+        ]
+      },
+      {
+        title: 'Why outreach dashboards become vanity tools',
+        paragraphs: [
+          'Dashboards become vanity tools when they emphasize sends, opens, or list size without tying those numbers to meetings and pipeline quality. That creates movement without clarity.',
+          'A better model tracks fewer metrics but ties them more tightly to commercial outcomes.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Performance review highlights stage-level weak points, not just totals.',
+      'Metrics are segmented by campaign or segment so patterns stay useful.',
+      'Weekly reviews turn the dashboard into concrete process changes.'
+    ],
+    comparisonRows: [
+      ['Apollo performance tracking tied to pipeline', 'Teams wanting cleaner weekly optimization decisions', 'Low', 'Best for useful operational reporting'],
+      ['Activity-only dashboard', 'Teams measuring effort without commercial context', 'Low', 'Easy to build, weak for decision quality'],
+      ['Too many metrics at once', 'Teams over-reporting before they know what matters', 'Mid in cognitive cost', 'Can reduce clarity and actionability']
+    ],
+    checklist: [
+      'Track positive replies, meetings, and qualified pipeline together.',
+      'Break performance down by segment and campaign type.',
+      'Review one weak stage every week.',
+      'Use dashboard insights to make one process change at a time.',
+      'Cut vanity metrics that do not change behavior.'
+    ],
+    alternatives: [
+      'If the team needs a broader KPI view, compare with <a href="/guides/b2b-prospecting-metrics-that-matter">B2B Prospecting Metrics That Matter</a>.',
+      'If campaigns need diagnosis, continue with <a href="/guides/outbound-campaign-audit-framework">Outbound Campaign Audit Framework</a>.',
+      'If the next issue is pipeline inspection, move next to <a href="/guides/sales-pipeline-review-cadence">Sales Pipeline Review Cadence</a>.'
+    ],
+    finalVerdict: [
+      'Strong outreach performance tracking helps teams improve faster because it turns campaign data into clearer operating choices. The best dashboard is the one that changes next week?s behavior.',
+      'If the numbers do not lead to decisions, the dashboard is still too weak.'
+    ]
   }
 };
