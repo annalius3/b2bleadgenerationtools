@@ -10,6 +10,12 @@ export type Industry = {
   slug: string;
   name: string;
   description: string;
+  audience: string;
+  painPoints: string[];
+  strategy: string[];
+  subtopics: string[];
+  featuredSlugs: string[];
+  imageAlt: string;
 };
 
 export type Guide = {
@@ -95,14 +101,94 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
 };
 
 export const industries: Industry[] = [
-  { slug: 'saas-companies', name: 'SaaS Companies', description: 'Target ICP accounts and scale outbound for subscription products.' },
-  { slug: 'marketing-agencies', name: 'Marketing Agencies', description: 'Build client pipeline with offer-led outreach and better positioning.' },
-  { slug: 'consulting-firms', name: 'Consulting Firms', description: 'Use expert authority messaging and warm outbound frameworks.' },
-  { slug: 'it-services', name: 'IT Services', description: 'Find technical buyers and create intent-based outreach offers.' },
-  { slug: 'recruiters', name: 'Recruiters', description: 'Map hiring teams and reach decision-makers with candidate-centric value.' },
-  { slug: 'healthcare', name: 'Healthcare', description: 'Design compliant outreach motions for healthcare buyers and operators.' },
-  { slug: 'financial-services', name: 'Financial Services', description: 'Generate qualified meetings in regulated and trust-heavy markets.' },
-  { slug: 'manufacturing', name: 'Manufacturing', description: 'Find operations and procurement contacts for long-cycle B2B deals.' }
+  {
+    slug: 'saas-companies',
+    name: 'SaaS Companies',
+    description: 'Target ICP accounts and scale outbound for subscription products.',
+    audience: 'B2B SaaS teams that need a repeatable outbound motion around one clear use case, segment, and buyer path.',
+    painPoints: ['Crowded market positioning', 'Mixed buyer personas', 'Weak outbound-to-pipeline handoff'],
+    strategy: ['Narrow by use case before list size', 'Map operators and budget owners separately', 'Track qualified meetings by segment, not just replies'],
+    subtopics: ['ICP definition', 'Product-led outbound', 'Mid-market prospecting'],
+    featuredSlugs: ['apollo-for-saas-lead-generation', 'how-to-find-b2b-leads-with-apollo-io', 'growth-strategy-using-apollo'],
+    imageAlt: 'SaaS team reviewing target accounts and outbound pipeline'
+  },
+  {
+    slug: 'marketing-agencies',
+    name: 'Marketing Agencies',
+    description: 'Build client pipeline with offer-led outreach and better positioning.',
+    audience: 'Agencies that want predictable client acquisition through niche targeting, proof-led messaging, and retainer-fit qualification.',
+    painPoints: ['Generic agency outreach', 'Weak niche positioning', 'Unpredictable client flow'],
+    strategy: ['Pick one service line and niche first', 'Use proof that fits the target segment', 'Qualify for recurring-fit, not just project interest'],
+    subtopics: ['Offer-led outreach', 'Retainer qualification', 'Agency pipeline design'],
+    featuredSlugs: ['apollo-for-marketing-agencies', 'apollo-guide-for-agencies', 'predictable-client-flow-for-agencies'],
+    imageAlt: 'Marketing agency team planning client acquisition campaigns'
+  },
+  {
+    slug: 'consulting-firms',
+    name: 'Consulting Firms',
+    description: 'Use expert authority messaging and warm outbound frameworks.',
+    audience: 'Consulting teams that sell expertise-led offers where credibility, fit, and clear business outcomes matter more than broad outbound volume.',
+    painPoints: ['Hard-to-explain advisory offers', 'Weak fit qualification', 'Low predictability from referrals alone'],
+    strategy: ['Lead with business outcomes, not credentials alone', 'Target narrower buyer contexts', 'Use qualification to protect calendar quality'],
+    subtopics: ['Authority-based messaging', 'Consulting client acquisition', 'High-ticket qualification'],
+    featuredSlugs: ['client-acquisition-for-consultants', 'growing-a-consulting-business', 'how-to-build-a-client-base-from-scratch'],
+    imageAlt: 'Consulting firm team discussing B2B outreach strategy'
+  },
+  {
+    slug: 'it-services',
+    name: 'IT Services',
+    description: 'Find technical buyers and create intent-based outreach offers.',
+    audience: 'IT services teams that need to map technical and executive buyers while keeping outreach tied to delivery fit and commercial reality.',
+    painPoints: ['Selling broad capabilities instead of clear services', 'Targeting the wrong stakeholder first', 'Weak service-fit account selection'],
+    strategy: ['Choose accounts that match delivery pattern', 'Separate technical and executive messaging', 'Review meeting quality by service line'],
+    subtopics: ['Technical buyer outreach', 'Service-fit account selection', 'Multithread prospecting'],
+    featuredSlugs: ['apollo-for-it-services-outreach', 'sales-strategy-for-service-companies', 'how-to-find-companies-to-sell-to'],
+    imageAlt: 'IT services team reviewing technical buyer outreach plan'
+  },
+  {
+    slug: 'recruiters',
+    name: 'Recruiters',
+    description: 'Map hiring teams and reach decision-makers with candidate-centric value.',
+    audience: 'Recruiters and staffing teams that need to target hiring owners, speak to urgency, and qualify accounts where recruiting pain is active and commercial.',
+    painPoints: ['Generic recruiter outreach', 'Weak urgency timing', 'Targeting too broad a set of stakeholders'],
+    strategy: ['Use hiring context and role urgency', 'Contact the real hiring owner first', 'Keep outreach tied to placement value and speed'],
+    subtopics: ['Hiring-team mapping', 'Recruiter outreach timing', 'High-intent account selection'],
+    featuredSlugs: ['finding-phone-numbers-of-decision-makers', 'finding-decision-makers-with-apollo', 'reply-strategy-for-b2b-outreach'],
+    imageAlt: 'Recruiting team mapping hiring decision-makers and outreach steps'
+  },
+  {
+    slug: 'healthcare',
+    name: 'Healthcare',
+    description: 'Design compliant outreach motions for healthcare buyers and operators.',
+    audience: 'Healthcare-focused B2B teams that need narrower segmentation, practical business language, and careful stakeholder mapping.',
+    painPoints: ['Treating healthcare as one market', 'Weak subsegment clarity', 'Generic outreach to regulated buyers'],
+    strategy: ['Choose one healthcare niche first', 'Use business outcomes and workflow impact', 'Map operators and commercial stakeholders separately'],
+    subtopics: ['Healthcare niche segmentation', 'Operational buyer messaging', 'Trust-heavy outbound'],
+    featuredSlugs: ['apollo-for-healthcare-lead-generation', 'targeting-specific-industries', 'finding-decision-makers-with-apollo'],
+    imageAlt: 'Healthcare business team reviewing outbound strategy and account priorities'
+  },
+  {
+    slug: 'financial-services',
+    name: 'Financial Services',
+    description: 'Generate qualified meetings in regulated and trust-heavy markets.',
+    audience: 'Financial services teams selling into risk-aware buyers where trust, timing, and qualification quality matter more than broad campaign volume.',
+    painPoints: ['Trust-heavy buyer skepticism', 'Longer decision cycles', 'Generic messaging in regulated segments'],
+    strategy: ['Use narrow segmentation and business-case messaging', 'Track signal and urgency carefully', 'Qualify harder before pipeline entry'],
+    subtopics: ['Trust-led outreach', 'Regulated-market qualification', 'Signal-based prioritization'],
+    featuredSlugs: ['identifying-buying-signals', 'lead-qualification-strategy', 'pipeline-forecasting-for-outbound-teams'],
+    imageAlt: 'Financial services team reviewing account qualification and outreach signals'
+  },
+  {
+    slug: 'manufacturing',
+    name: 'Manufacturing',
+    description: 'Find operations and procurement contacts for long-cycle B2B deals.',
+    audience: 'Manufacturing-focused sellers who need to balance operational relevance, long deal cycles, and multistakeholder buying paths.',
+    painPoints: ['Long sales cycles', 'Operational buyer complexity', 'Weak account prioritization'],
+    strategy: ['Use account-first targeting', 'Map operations and procurement stakeholders separately', 'Review account progression, not just contact replies'],
+    subtopics: ['Procurement outreach', 'Operations stakeholder mapping', 'Long-cycle account selection'],
+    featuredSlugs: ['account-based-prospecting-framework', 'building-target-account-lists', 'deal-closing-strategies-b2b'],
+    imageAlt: 'Manufacturing sales team planning account-based outreach'
+  }
 ];
 
 export const guides: Guide[] = [
