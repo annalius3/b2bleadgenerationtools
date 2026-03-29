@@ -4516,5 +4516,197 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Strong outreach performance tracking helps teams improve faster because it turns campaign data into clearer operating choices. The best dashboard is the one that changes next week?s behavior.',
       'If the numbers do not lead to decisions, the dashboard is still too weak.'
     ]
+  },
+  'how-to-find-b2b-leads-fast': {
+    summary: [
+      'Finding B2B leads fast with Apollo only works when speed does not destroy fit. The fastest reliable workflow is usually account-first: narrow the market, score the accounts, then map the right people instead of exporting a large mixed list.',
+      'Apollo is useful here because it combines segmentation, enrichment, and list building tightly enough that a team can move quickly without losing all quality control.'
+    ],
+    customSections: [
+      {
+        title: 'What fast lead finding should optimize for',
+        paragraphs: [
+          'The goal is not the biggest list by the end of the day. The goal is the fastest path to a campaign-ready list that still has a realistic chance to create qualified conversations.',
+          'The best fast workflows remove weak-fit accounts early so the team does not waste credits and messaging effort downstream.'
+        ]
+      },
+      {
+        title: 'Why speed creates bad leads',
+        paragraphs: [
+          'Speed creates bad leads when teams skip account review, ignore weak-fit records, or use too many filters without a clear buyer hypothesis. That often produces lists that feel efficient but convert poorly.',
+          'A better model is fast narrowing first, then fast validation, then scale.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Lead speed is paired with account-first filtering and quick manual QA.',
+      'Credits are spent on segments likely to create meetings, not just names.',
+      'The first campaign batch is usable immediately without major list cleanup.'
+    ],
+    comparisonRows: [
+      ['Apollo fast account-first workflow', 'Teams needing speed without losing too much quality', 'Low to mid', 'Best for clean fast list production'],
+      ['Raw export-first workflow', 'Teams optimizing for maximum list size', 'Low', 'Fast, but usually weak on conversion quality'],
+      ['Manual-only fast research', 'Very small niche campaigns', 'Low cash, high labor cost', 'Can be accurate, but usually slower and harder to repeat']
+    ],
+    checklist: [
+      'Define the ICP before touching filters.',
+      'Build accounts first, contacts second.',
+      'Use growth and fit signals to narrow fast.',
+      'Run quick QA before full launch.',
+      'Score leads by priority before outreach.'
+    ],
+    alternatives: [
+      'If the goal is stronger fit rather than pure speed, compare with <a href="/guides/finding-ideal-customers-with-apollo">Finding Ideal Customers with Apollo</a>.',
+      'If the motion is broader account-led prospecting, continue with <a href="/guides/account-based-prospecting-framework">Account-Based Prospecting Framework for Small B2B Teams</a>.',
+      'If the next issue is quality scoring, move to <a href="/guides/identifying-high-quality-leads">Identifying High-Quality Leads</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is strong for finding B2B leads fast when the team protects fit while moving quickly. The best fast list is one that can actually be used without a second cleanup project.',
+      'If the list feels fast but vague, it is probably too broad to be worth the saved time.'
+    ]
+  },
+  'account-based-prospecting-framework': {
+    summary: [
+      'A lightweight account-based prospecting framework works when a small team treats the account as the core unit of effort and keeps the active account set small enough to manage well. The benefit is better message relevance and better account progression, not just a more strategic label.',
+      'Apollo helps because it gives smaller teams a practical way to map stakeholders and account priority without needing a heavy ABM stack.'
+    ],
+    customSections: [
+      {
+        title: 'What a small-team AB framework should control',
+        paragraphs: [
+          'The framework should control account selection, stakeholder mapping, role-specific messaging, and account-level progression review. If it does not change those behaviors, it is not really an account-based system.',
+          'Small teams win here by focusing on fewer better accounts, not by copying enterprise ABM complexity.'
+        ]
+      },
+      {
+        title: 'Why AB frameworks fail for small teams',
+        paragraphs: [
+          'They fail when the active account set is too large, ownership is fuzzy, or personalization is too heavy for team capacity. That creates ABM effort without ABM quality.',
+          'A better model is a smaller list, clear owners, and role-based messaging that is practical to repeat.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The team knows exactly why each active account is on the list.',
+      'Stakeholder mapping changes how outreach is written and sequenced.',
+      'Account-level meetings and opportunities are tracked separately from generic replies.'
+    ],
+    comparisonRows: [
+      ['Apollo framework for small-team AB prospecting', 'Founder-led and lean B2B teams targeting high-value accounts', 'Low to mid', 'Best for practical AB discipline without heavy stack cost'],
+      ['Broad contact-led outbound', 'Teams optimizing for volume over account depth', 'Low', 'Simpler, but weaker on strategic-account progression'],
+      ['Enterprise ABM process', 'Large teams with specialized ops and account orchestration', 'High', 'Powerful, but often too heavy for small teams']
+    ],
+    checklist: [
+      'Keep the active account set small enough to manage.',
+      'Map champions, blockers, and approvers clearly.',
+      'Use different value angles by stakeholder role.',
+      'Track progression at the account level.',
+      'Prune accounts that consume time without momentum.'
+    ],
+    alternatives: [
+      'If target selection is the first issue, compare with <a href="/guides/building-target-account-lists">Building Target Account Lists</a>.',
+      'If the broader method is already in place, continue with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.',
+      'If prioritization is the real bottleneck, move to <a href="/guides/how-to-prioritize-accounts-for-outbound">How to Prioritize Accounts for Outbound</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is a strong fit for a small-team account-based prospecting framework when the account set stays controlled and the messaging stays role-aware. The framework only works if it changes how the team allocates effort.',
+      'If every account is active at once, the framework has already become too loose.'
+    ]
+  },
+  'identifying-high-quality-leads': {
+    summary: [
+      'Identifying high-quality leads is mostly about fit, urgency, and realistic deal potential, not about finding the most engaged-looking names. The strongest Apollo workflows use simple quality rules early so weak leads never absorb too much campaign or sales attention.',
+      'The value is not only better meetings. It is a cleaner pipeline with fewer false positives.'
+    ],
+    customSections: [
+      {
+        title: 'What a high-quality lead should signal',
+        paragraphs: [
+          'A high-quality lead should signal that the account resembles a likely buyer, the role matters to the buying process, and there is some practical reason the problem deserves attention now. If one of those layers is missing, the lead often looks stronger than it really is.',
+          'Apollo helps when the team keeps those three layers visible during sourcing and review.'
+        ]
+      },
+      {
+        title: 'Why teams overestimate lead quality',
+        paragraphs: [
+          'Teams overestimate quality when they rely too heavily on surface activity, broad firmographic fit, or title prestige without checking whether the offer actually matches the buying situation.',
+          'A better model is stricter filtering with frequent recalibration from real opportunity outcomes.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Lead quality rules are tied to actual win patterns, not only assumptions.',
+      'Weak-fit leads are removed early enough to protect campaign quality.',
+      'Quality scoring improves meeting quality and pipeline efficiency together.'
+    ],
+    comparisonRows: [
+      ['Apollo lead quality model with fit and signal rules', 'Teams prioritizing pipeline quality over list volume', 'Low to mid', 'Best for cleaner downstream conversion'],
+      ['Engagement-looking lead selection', 'Teams overvaluing shallow activity', 'Low', 'Easy to rationalize, weaker on opportunity quality'],
+      ['Broad role-based lead collection', 'Teams using job titles as the main quality filter', 'Low', 'Fast, but often too noisy for serious outbound']
+    ],
+    checklist: [
+      'Define quality using fit, urgency, and buying reality.',
+      'Score leads into clear quality tiers.',
+      'Exclude weak-fit records before outreach.',
+      'Compare quality tiers against sales outcomes monthly.',
+      'Keep the model simple enough to enforce.'
+    ],
+    alternatives: [
+      'If the broader qualification model is needed, compare with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.',
+      'If signal timing matters more, continue with <a href="/guides/identifying-buying-signals">Identifying Buying Signals</a>.',
+      'If the goal is faster lead discovery, move to <a href="/guides/how-to-find-b2b-leads-fast">How to Find B2B Leads Fast Without Wasting Credits</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is useful for identifying high-quality leads when the team uses a clear model for fit and practical buying relevance. Better lead quality pays off in every later stage of the funnel.',
+      'If a lead looks promising but rarely becomes real pipeline, the quality model is still too loose.'
+    ]
+  },
+  'finding-ceos-and-founders': {
+    summary: [
+      'Finding CEOs and founders with Apollo is valuable when the offer actually deserves executive attention. Executive outreach works best for high-value offers, founder-led motions, and situations where strategic ownership is likely to sit near the top.',
+      'The biggest mistake is targeting founders or CEOs just because they are senior. The role only works when the problem and message fit executive priorities.'
+    ],
+    customSections: [
+      {
+        title: 'When executive targeting makes sense',
+        paragraphs: [
+          'Executive targeting makes sense when the decision is likely founder-owned, when the account is still small enough for leaders to stay close to operations, or when the value proposition has obvious business-level impact.',
+          'Apollo helps because it keeps executive contact discovery tied to account quality rather than turning it into random title hunting.'
+        ]
+      },
+      {
+        title: 'Why CEO outreach underperforms',
+        paragraphs: [
+          'CEO and founder outreach underperforms when the message is too long, too product-led, or too generic for an executive to care. It also fails when the offer should really be discussed first with an operator or department lead.',
+          'A better model is role-aware outreach: executive message for executive problems, operator message for operator problems.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Executive targeting is used only where the buying context justifies it.',
+      'Messages are shorter and more outcome-focused than standard role-based outreach.',
+      'CEO and founder campaigns are reviewed separately because the response pattern differs by seniority.'
+    ],
+    comparisonRows: [
+      ['Apollo executive targeting for founder-level relevance', 'Teams with high-value offers and strong business-case messaging', 'Low to mid', 'Best for focused executive outreach'],
+      ['Executive-first outreach without role fit', 'Teams chasing seniority for its own sake', 'Low', 'Usually weak on response quality'],
+      ['Department-lead-first outreach', 'Teams selling operational improvements', 'Low', 'Often stronger when the problem is owned below the CEO level']
+    ],
+    checklist: [
+      'Check whether the offer truly belongs at executive level.',
+      'Keep the outreach shorter and outcome-led.',
+      'Prioritize growth and fit signals before contacting founders.',
+      'Track executive response quality separately.',
+      'Use operator-first outreach when the problem is not founder-owned.'
+    ],
+    alternatives: [
+      'If the broader stakeholder question matters, compare with <a href="/guides/finding-decision-makers-with-apollo">Finding Decision Makers with Apollo</a>.',
+      'If the motion is account-based, continue with <a href="/guides/account-based-prospecting">Account-Based Prospecting</a>.',
+      'If the outreach is founder-led, move to <a href="/guides/founder-led-outbound-with-apollo">Founder-Led Outbound with Apollo</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is useful for finding CEOs and founders when the team is disciplined about when executive outreach actually makes sense. Seniority alone is not a strategy.',
+      'If the message is not executive-relevant, a founder list will not save the campaign.'
+    ]
   }
 };
