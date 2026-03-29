@@ -3748,5 +3748,437 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo is a strong platform for a weekly prospecting workflow because it keeps the loop compact enough to repeat consistently. Outbound gets stronger when the cycle becomes boring in the right way.',
       'If each week feels like a new system, there is too much change and not enough operating discipline.'
     ]
+  },
+  'pipeline-management-playbook': {
+    summary: [
+      'A pipeline management playbook matters because outbound teams do not lose revenue only at the top of funnel. They lose it in slow follow-up, weak stage hygiene, and poor inspection rhythm. A good playbook turns lead flow into a controlled operating system.',
+      'Apollo helps because outreach context and early pipeline behavior can be reviewed together instead of in separate tools with separate owners.'
+    ],
+    customSections: [
+      {
+        title: 'What a pipeline playbook should standardize',
+        paragraphs: [
+          'A useful playbook should standardize stage rules, response-time expectations, ownership, and the weekly review rhythm. If those are inconsistent, even strong lead generation creates unstable revenue outcomes.',
+          'The goal is not bureaucracy. The goal is fewer preventable leaks between positive reply and real opportunity progress.'
+        ]
+      },
+      {
+        title: 'Why pipeline discipline breaks down',
+        paragraphs: [
+          'Pipeline discipline usually breaks down when the team treats every opportunity as unique and avoids enforcing clear next-step and stage rules. That creates stale deals and forecast noise quickly.',
+          'A better model uses simple standards that can survive busy weeks and still reveal where the real bottleneck is.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Stage rules, SLAs, and owners are clear enough that deals do not drift silently.',
+      'Apollo-sourced opportunities move through the same operating discipline as every other source.',
+      'Weekly reviews expose stage risk early instead of at quarter end.'
+    ],
+    comparisonRows: [
+      ['Apollo-driven playbook with clear SLAs', 'Teams building repeatable outbound pipeline operations', 'Low to mid', 'Best for turning lead flow into controlled execution'],
+      ['Loose pipeline management', 'Teams relying on rep memory and ad hoc follow-up', 'Low', 'Easy to run, but expensive in missed deals'],
+      ['Heavy revops playbook', 'Larger teams with specialized operations support', 'High', 'Can add depth, but often too heavy for lean teams']
+    ],
+    checklist: [
+      'Define stage rules and response-time SLAs first.',
+      'Assign clear ownership for every active opportunity.',
+      'Track time in stage and next-step discipline weekly.',
+      'Fix one recurring leak at a time.',
+      'Keep the playbook simple enough that the whole team follows it.'
+    ],
+    alternatives: [
+      'If the issue starts with stage design, compare with <a href="/guides/pipeline-stage-definition-for-b2b-teams">Pipeline Stage Definition for B2B Teams</a>.',
+      'If weekly inspection is weak, continue with <a href="/guides/sales-pipeline-review-cadence">Sales Pipeline Review Cadence</a>.',
+      'If forecast reliability is the next problem, move to <a href="/guides/pipeline-forecasting-for-outbound-teams">Pipeline Forecasting for Outbound Teams</a>.'
+    ],
+    finalVerdict: [
+      'A pipeline management playbook becomes valuable when it reduces preventable deal leakage and makes weekly decisions easier. The best playbook is the one the team can actually enforce.',
+      'If pipeline hygiene only happens when results look bad, the system is still too reactive.'
+    ]
+  },
+  'lead-qualification-system': {
+    summary: [
+      'A lead qualification system matters because opportunity quality determines whether the sales team spends time on revenue potential or on calendar noise. The strongest systems protect capacity by filtering earlier and more honestly.',
+      'Apollo helps because fit, segment context, and response history can all be used to make qualification more consistent before handoff.'
+    ],
+    customSections: [
+      {
+        title: 'What a qualification system should decide',
+        paragraphs: [
+          'A useful qualification system should decide whether the lead moves forward now, needs nurture, or should be removed from near-term attention. If it does not change those decisions, it is too soft to matter.',
+          'The best systems are simple enough for the team to trust and strong enough to reduce wasted selling time.'
+        ]
+      },
+      {
+        title: 'Why qualification systems get ignored',
+        paragraphs: [
+          'Qualification systems get ignored when they are too abstract, too detailed, or clearly disconnected from what eventually closes. Reps stop trusting the model when it feels like admin instead of judgment support.',
+          'A better model uses a small set of criteria tied directly to fit, pain, timing, and deal feasibility.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The system changes who gets follow-up attention and who does not.',
+      'Qualification rules are easy enough to explain in one minute.',
+      'Closed-won and closed-lost data influence the model over time.'
+    ],
+    comparisonRows: [
+      ['Apollo qualification system with clear thresholds', 'Teams needing cleaner pipeline entry and handoff', 'Low', 'Best for protecting sales capacity'],
+      ['Intuition-only qualification', 'Teams deciding deal quality informally', 'Low', 'Fast, but inconsistent and hard to improve'],
+      ['Overbuilt scoring framework', 'Teams adding complexity before enough signal exists', 'Mid in ops cost', 'Looks rigorous, often underused in practice']
+    ],
+    checklist: [
+      'Define four to six qualification dimensions only.',
+      'Separate high-potential leads from nurture leads clearly.',
+      'Review whether qualified leads actually convert better.',
+      'Update the system with win/loss evidence monthly.',
+      'Keep the model strict enough to say no often.'
+    ],
+    alternatives: [
+      'If handoff scoring is the issue, compare with <a href="/guides/how-to-score-leads-before-handoff">How to Score Leads Before Handoff</a>.',
+      'If the bigger challenge is broader qualification logic, continue with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.',
+      'If pipeline leakage happens later, move to <a href="/guides/managing-sales-pipeline">Managing Sales Pipeline</a>.'
+    ],
+    finalVerdict: [
+      'A qualification system is useful when it helps the team spend time where revenue odds are strongest. Simpler systems usually outperform complex ones if they are enforced consistently.',
+      'If every lead still looks equally promising, the system is not doing enough filtering.'
+    ]
+  },
+  'deal-closing-strategies-b2b': {
+    summary: [
+      'Closing strategies in B2B work best when they reduce uncertainty and keep multi-stakeholder deals moving with clear next steps. Most closing problems start earlier than the final stage and show up as missing alignment, weak urgency, or unclear ownership.',
+      'Apollo supports this indirectly by improving lead quality and stakeholder context earlier, but deal control still depends on disciplined opportunity management.'
+    ],
+    customSections: [
+      {
+        title: 'What closing strategy should really do',
+        paragraphs: [
+          'A good closing strategy should make the buyer?s next decision easier, not pressure the buyer into a premature decision. That usually means clearer stakeholder alignment, clearer timeline realism, and clearer commercial tradeoffs.',
+          'The strongest teams treat closing as controlled progression rather than end-stage persuasion.'
+        ]
+      },
+      {
+        title: 'Why deals slip late',
+        paragraphs: [
+          'Deals slip late when the team mistakes positive sentiment for commitment, fails to map the real buying path, or ignores missing stakeholders until procurement or final approval. Those are process gaps, not bad luck.',
+          'A better model forces explicit next steps and tests commitment earlier.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each late-stage deal has clear stakeholders, next steps, and timeline realism.',
+      'The team is managing risk before the quarter-end rush.',
+      'Opportunity progression is based on buyer commitment, not rep optimism.'
+    ],
+    comparisonRows: [
+      ['Structured B2B closing process', 'Teams selling multi-stakeholder mid-market deals', 'Low to mid', 'Best for reducing avoidable slippage'],
+      ['Reactive close attempts', 'Teams relying on end-stage pressure or discounts', 'Low', 'Can create movement, often weak on deal quality'],
+      ['Heavy enterprise close process', 'Large complex procurement motions', 'High in process cost', 'Useful when deal complexity truly requires it']
+    ],
+    checklist: [
+      'Map the full buying path before late stage.',
+      'Confirm next step ownership on every call.',
+      'Surface commercial and implementation risk early.',
+      'Use quantified outcomes to anchor urgency.',
+      'Treat slippage as a process signal, not just a closing issue.'
+    ],
+    alternatives: [
+      'If the issue starts with lead quality, compare with <a href="/guides/closing-more-deals-with-better-leads">Closing More Deals with Better Leads</a>.',
+      'If pipeline management is weak overall, continue with <a href="/guides/pipeline-management-playbook">Pipeline Management Playbook</a>.',
+      'If the full lead-to-opportunity flow needs work, move to <a href="/guides/from-lead-to-deal-using-apollo">From Lead to Deal Using Apollo</a>.'
+    ],
+    finalVerdict: [
+      'Good B2B closing strategy is mostly about earlier control of stakeholders, next steps, and decision risk. Strong closes usually look boring because the hard work happened before the contract stage.',
+      'If the deal only becomes concrete at the end, it probably started drifting much earlier.'
+    ]
+  },
+  'building-a-sales-funnel-with-apollo': {
+    summary: [
+      'Building a sales funnel with Apollo works best when the team thinks in stages, not just campaigns. Apollo can drive the top of the funnel well, but the value comes from connecting outreach, qualification, and opportunity movement into one simple operating model.',
+      'The strongest funnels are narrow enough to inspect, predictable enough to review weekly, and disciplined enough that handoffs do not create leaks.'
+    ],
+    customSections: [
+      {
+        title: 'What a usable sales funnel should accomplish',
+        paragraphs: [
+          'A good funnel should make it clear where a lead becomes a qualified conversation, where a conversation becomes an opportunity, and what must happen for that opportunity to move forward. Without that clarity, more activity just creates more confusion.',
+          'Apollo is useful here because it can support the transition from target list to qualified response without forcing a fragmented top-of-funnel stack.'
+        ]
+      },
+      {
+        title: 'Why sales funnels stay theoretical',
+        paragraphs: [
+          'Funnels stay theoretical when they are built as diagrams rather than as operating rules. Teams then track stages loosely, hand off leads inconsistently, and review results too late.',
+          'A better funnel is one that changes how the team works every week, not just how the dashboard looks.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Each funnel stage has a clear practical rule.',
+      'Apollo-sourced leads move through the same qualification and handoff logic consistently.',
+      'Weekly funnel review reveals one clear bottleneck at a time.'
+    ],
+    comparisonRows: [
+      ['Apollo-led funnel with clear handoffs', 'Lean B2B teams building first repeatable outbound funnel', 'Low to mid', 'Best for simple, inspectable funnel design'],
+      ['Campaign-heavy no-funnel model', 'Teams focused on replies without downstream structure', 'Low', 'Can create activity, weak on pipeline clarity'],
+      ['Complex multi-system funnel', 'Mature teams with deeper ops support', 'High', 'Potentially powerful, but heavier to manage']
+    ],
+    checklist: [
+      'Define funnel stages before scaling campaigns.',
+      'Set rules for when replies become qualified conversations.',
+      'Make the handoff to pipeline explicit.',
+      'Track stage conversion and time in stage weekly.',
+      'Fix the biggest leak before adding more volume.'
+    ],
+    alternatives: [
+      'If pipeline stage logic is still weak, compare with <a href="/guides/pipeline-stage-definition-for-b2b-teams">Pipeline Stage Definition for B2B Teams</a>.',
+      'If the broader process needs cleanup, continue with <a href="/guides/pipeline-management-playbook">Pipeline Management Playbook</a>.',
+      'If the question is full lead progression, move next to <a href="/guides/from-lead-to-deal-using-apollo">From Lead to Deal Using Apollo</a>.'
+    ],
+    finalVerdict: [
+      'Apollo is useful for building a sales funnel when the team uses it as the top-of-funnel engine inside a disciplined stage model. Funnel clarity matters more than funnel complexity.',
+      'If the team cannot explain where leads stall, the funnel is still too vague.'
+    ]
+  },
+  'lead-qualification-strategy': {
+    summary: [
+      'A lead qualification strategy matters because pipeline quality is decided earlier than most teams admit. The best strategy protects sales capacity by filtering hard enough at the top while still capturing real opportunities that deserve attention.',
+      'Apollo helps because fit, segment context, and early engagement can all be used to make qualification more consistent before opportunities get expensive.'
+    ],
+    customSections: [
+      {
+        title: 'What qualification strategy should optimize for',
+        paragraphs: [
+          'A strong strategy should optimize for revenue potential, not for meeting volume. That means it should help the team prioritize leads with real fit, real pain, and real likelihood of progressing within a realistic time frame.',
+          'If the strategy only increases activity, it is not doing enough to protect pipeline quality.'
+        ]
+      },
+      {
+        title: 'Why qualification strategies drift',
+        paragraphs: [
+          'Qualification drift happens when teams keep relaxing standards to preserve volume or when different people apply different definitions of a good lead. That makes every downstream metric noisier.',
+          'A better strategy uses a small set of enforced criteria tied to actual close patterns.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The team uses consistent criteria across reps and weeks.',
+      'Qualification standards protect calendar quality and opportunity quality together.',
+      'Closed-won patterns influence the strategy rather than volume pressure alone.'
+    ],
+    comparisonRows: [
+      ['Apollo-based qualification strategy', 'Teams needing better lead-to-opportunity discipline', 'Low', 'Best for cleaner pipeline entry'],
+      ['Loose qualification by intuition', 'Teams prioritizing speed over consistency', 'Low', 'Fast, but hard to improve or trust'],
+      ['Overcomplicated qualification rubric', 'Teams adding too many variables too early', 'Mid in ops cost', 'Can reduce adoption and clarity']
+    ],
+    checklist: [
+      'Choose only the criteria that predict opportunity quality.',
+      'Enforce standards consistently across the team.',
+      'Review whether qualified leads actually close better.',
+      'Reduce criteria if no one can apply them consistently.',
+      'Protect quality before scaling volume.'
+    ],
+    alternatives: [
+      'If the model needs a more formal system, compare with <a href="/guides/lead-qualification-system">Lead Qualification System to Focus on Revenue Potential</a>.',
+      'If the handoff threshold is the issue, continue with <a href="/guides/how-to-score-leads-before-handoff">How to Score Leads Before Handoff</a>.',
+      'If better lead discovery comes first, move next to <a href="/guides/identifying-high-quality-leads">Identifying High-Quality Leads</a>.'
+    ],
+    finalVerdict: [
+      'A strong lead qualification strategy keeps pipeline cleaner and sales attention better allocated. The strategy becomes valuable when it helps the team say no earlier and more confidently.',
+      'If qualification still bends every time volume dips, the strategy is not strong enough yet.'
+    ]
+  },
+  'managing-sales-pipeline': {
+    summary: [
+      'Managing a sales pipeline well means controlling ownership, stage health, and weekly next-step discipline before deals age into noise. Good pipeline management is less about dashboards and more about repeatable operating habits.',
+      'Apollo helps by giving the team earlier visibility into lead source quality and conversation history, which improves how opportunities are judged once they enter pipeline.'
+    ],
+    customSections: [
+      {
+        title: 'What pipeline management should create',
+        paragraphs: [
+          'Strong pipeline management should create clarity on who owns the deal, what needs to happen next, and where risk is building. It should reduce ambiguity, not create more status fields to ignore.',
+          'The best systems make weak deals easier to spot and good deals easier to advance.'
+        ]
+      },
+      {
+        title: 'Why pipelines get messy',
+        paragraphs: [
+          'Pipelines get messy when stage rules are soft, next steps are vague, or no one reviews age and risk often enough. That creates a backlog of opportunities that look alive but are not truly progressing.',
+          'A better approach is strict weekly inspection and fast removal of false pipeline.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Ownership and next steps are explicit on active deals.',
+      'Stage health is reviewed weekly rather than reactively.',
+      'False pipeline is removed fast enough that forecast quality stays credible.'
+    ],
+    comparisonRows: [
+      ['Disciplined weekly pipeline management', 'Teams that want cleaner forecast and opportunity control', 'Low', 'Best for exposing risk early'],
+      ['Passive pipeline maintenance', 'Teams cleaning deals only when reports look bad', 'Low', 'Easy to tolerate, costly over time'],
+      ['Overbuilt admin-heavy pipeline process', 'Teams overcompensating with too many fields and meetings', 'Mid in time cost', 'Can reduce clarity instead of improving it']
+    ],
+    checklist: [
+      'Assign owner and next step to every active deal.',
+      'Track stage age every week.',
+      'Remove stale deals before they poison the forecast.',
+      'Separate healthy pipeline from hopeful pipeline.',
+      'Treat pipeline hygiene as an operating task, not a cleanup project.'
+    ],
+    alternatives: [
+      'If the team needs a full operating model, compare with <a href="/guides/pipeline-management-playbook">Pipeline Management Playbook</a>.',
+      'If stage rules are the root issue, continue with <a href="/guides/pipeline-stage-definition-for-b2b-teams">Pipeline Stage Definition for B2B Teams</a>.',
+      'If review cadence is weak, move next to <a href="/guides/sales-pipeline-review-cadence">Sales Pipeline Review Cadence</a>.'
+    ],
+    finalVerdict: [
+      'Good sales pipeline management is mostly about clear ownership, clean stage discipline, and weekly honesty. The more accurately the team sees reality, the easier it becomes to improve it.',
+      'If the pipeline always looks fuller than it feels, too many weak deals are probably still being carried.'
+    ]
+  },
+  'from-lead-to-deal-using-apollo': {
+    summary: [
+      'The path from lead to deal with Apollo only works when prospecting, qualification, and pipeline movement are connected by clear rules. Apollo is strong at the front of the motion, but revenue quality depends on what happens after the first positive response.',
+      'The most effective teams use Apollo to improve not just lead volume, but the handoff clarity and learning loop between top-of-funnel and close outcomes.'
+    ],
+    customSections: [
+      {
+        title: 'What the lead-to-deal path should reveal',
+        paragraphs: [
+          'A useful lead-to-deal workflow should reveal where quality is being created and where it is being lost. If the team cannot tell whether the issue is targeting, qualification, or deal execution, the path is too opaque.',
+          'Apollo helps most when the account and outreach context stays visible after the handoff instead of disappearing into CRM abstraction.'
+        ]
+      },
+      {
+        title: 'Why handoffs break the system',
+        paragraphs: [
+          'Handoffs break the system when the meaning of a qualified lead is unclear or when opportunity owners do not trust the context they receive. That turns the path from lead to deal into separate disconnected workflows.',
+          'A better model uses explicit handoff rules and feeds closed-loop learning back into prospecting.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The team can explain what turns a lead into a true opportunity.',
+      'Apollo context survives the handoff and improves downstream execution.',
+      'Won and lost outcomes influence how future leads are sourced and qualified.'
+    ],
+    comparisonRows: [
+      ['Connected Apollo lead-to-deal workflow', 'Teams wanting tighter alignment between prospecting and revenue outcomes', 'Low to mid', 'Best for closed-loop improvement'],
+      ['Disconnected lead handoff', 'Teams separating SDR and sales logic too loosely', 'Low', 'Common, but noisy and hard to optimize'],
+      ['Heavy handoff process with weak feedback loop', 'Teams adding procedure without learning', 'Mid in ops cost', 'Can slow the system without improving quality']
+    ],
+    checklist: [
+      'Define exactly when a lead becomes an opportunity.',
+      'Pass context, not just status, at handoff.',
+      'Review where leads stall after handoff.',
+      'Tie win/loss patterns back to sourcing logic.',
+      'Keep the path visible enough to diagnose the real bottleneck.'
+    ],
+    alternatives: [
+      'If the funnel structure is still weak, compare with <a href="/guides/building-a-sales-funnel-with-apollo">Building a Sales Funnel with Apollo</a>.',
+      'If qualification is the real leak, continue with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.',
+      'If the team needs broader pipeline discipline, move next to <a href="/guides/managing-sales-pipeline">Managing Sales Pipeline</a>.'
+    ],
+    finalVerdict: [
+      'Apollo can support the path from lead to deal very well when the handoff logic is clear and the team learns from downstream outcomes. The value comes from continuity, not just lead generation speed.',
+      'If the path breaks after the reply stage, the system still needs stronger operating rules.'
+    ]
+  },
+  'increasing-conversion-rates': {
+    summary: [
+      'Increasing conversion rates in B2B usually starts with improving lead quality and stage discipline before rewriting everything else. Conversion gains compound when the team fixes the earliest meaningful leak first instead of chasing random optimizations.',
+      'Apollo helps because better targeting and cleaner reply handling can improve the first half of the funnel, which makes later-stage conversion work more effective.'
+    ],
+    customSections: [
+      {
+        title: 'What conversion work should focus on first',
+        paragraphs: [
+          'The first job is to find the highest-leverage stage where volume and leakage are both meaningful. In many outbound funnels, that is qualified reply to meeting or meeting to opportunity, not the final close rate alone.',
+          'The best teams treat conversion as a chain, not a single number.'
+        ]
+      },
+      {
+        title: 'Why conversion projects disappoint',
+        paragraphs: [
+          'Conversion projects disappoint when teams change too many variables at once or try to rescue weak lead quality with late-stage tactics. That makes it hard to see what actually improved.',
+          'A better model is one stage, one hypothesis, and one measurement loop at a time.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'The team knows which stage deserves the next optimization effort.',
+      'Conversion changes are measured against quality-adjusted outcomes, not vanity lifts.',
+      'Apollo targeting improvements and pipeline improvements are reviewed together.'
+    ],
+    comparisonRows: [
+      ['Stage-by-stage conversion improvement', 'Teams that want durable funnel gains', 'Low', 'Best for clear diagnosis and compounding wins'],
+      ['Random conversion tweaks', 'Teams changing copy, process, and qualification at once', 'Low', 'Feels active, weak on learning'],
+      ['Late-stage-only conversion push', 'Teams ignoring earlier quality problems', 'Low', 'Can help temporarily, rarely fixes root causes']
+    ],
+    checklist: [
+      'Identify the biggest conversion leak with real volume behind it.',
+      'Improve lead quality before late-stage tactics where needed.',
+      'Change one stage variable at a time.',
+      'Measure conversion impact with quality context.',
+      'Carry forward only the fixes that hold up over time.'
+    ],
+    alternatives: [
+      'If the root issue is lead quality, compare with <a href="/guides/closing-more-deals-with-better-leads">Closing More Deals with Better Leads</a>.',
+      'If the bigger challenge is process structure, continue with <a href="/guides/b2b-sales-process-optimization">B2B Sales Process Optimization</a>.',
+      'If the team needs a full funnel view, move next to <a href="/guides/building-a-sales-funnel-with-apollo">Building a Sales Funnel with Apollo</a>.'
+    ],
+    finalVerdict: [
+      'Conversion rates improve fastest when the team works stage by stage and respects lead quality as the foundation. Small improvements compound when they happen in the right order.',
+      'If you cannot explain which stage matters most, you are probably optimizing too broadly.'
+    ]
+  },
+  'closing-more-deals-with-better-leads': {
+    summary: [
+      'Better leads improve close rates because they reduce downstream friction before sales even starts managing the deal. Cleaner ICP fit, stronger role targeting, and clearer pain alignment usually matter more than end-stage persuasion tricks.',
+      'Apollo helps because it improves who enters the funnel and what context the team has before the first real opportunity conversation.'
+    ],
+    customSections: [
+      {
+        title: 'Why lead quality changes close rate',
+        paragraphs: [
+          'Lead quality changes close rate because stronger-fit accounts move with less confusion, fewer weak meetings, and clearer buying reasons. That gives the pipeline better raw material from the start.',
+          'The highest-impact close-rate gains often come from targeting and qualification improvements that happen weeks before the deal reaches late stage.'
+        ]
+      },
+      {
+        title: 'Why teams focus too late',
+        paragraphs: [
+          'Teams focus too late when they try to rescue poor-fit opportunities with pricing tactics, more meetings, or better scripts. Those can help, but they rarely overcome weak top-of-funnel quality consistently.',
+          'A better model starts by improving who becomes a lead in the first place.'
+        ]
+      }
+    ],
+    qualitySignals: [
+      'Lead quality changes are reflected in higher opportunity quality and cleaner close patterns.',
+      'Apollo filters and qualification rules are tied to real closed-won evidence.',
+      'The team treats lead quality as a close-rate lever, not only a top-of-funnel lever.'
+    ],
+    comparisonRows: [
+      ['Apollo with tighter lead quality controls', 'Teams trying to improve close rate through better pipeline inputs', 'Low to mid', 'Best for cleaner downstream conversion'],
+      ['Same lead quality with harder closing effort', 'Teams pushing late-stage tactics on weak opportunities', 'Low', 'Can create activity, weaker on durable gains'],
+      ['Volume-first pipeline model', 'Teams preferring more deals over better-fit deals', 'Low to mid', 'Often hurts close rate and seller efficiency']
+    ],
+    checklist: [
+      'Audit current leads against closed-won patterns.',
+      'Tighten ICP and role filters before scaling outreach.',
+      'Improve qualification before advancing weak opportunities.',
+      'Measure close-rate change after lead quality changes.',
+      'Treat targeting as a revenue lever, not just a list lever.'
+    ],
+    alternatives: [
+      'If the issue is identifying better-fit prospects, compare with <a href="/guides/identifying-high-quality-leads">Identifying High-Quality Leads</a>.',
+      'If the team needs stronger qualification, continue with <a href="/guides/lead-qualification-strategy">Lead Qualification Strategy</a>.',
+      'If late-stage control is weak, move next to <a href="/guides/deal-closing-strategies-b2b">Deal Closing Strategies for Mid-Market B2B Sales</a>.'
+    ],
+    finalVerdict: [
+      'Closing more deals with better leads is one of the most reliable ways to improve revenue efficiency. Better pipeline inputs usually beat harder downstream effort.',
+      'If the sales team keeps fighting weak-fit opportunities, lead quality is still not strict enough.'
+    ]
   }
 };
