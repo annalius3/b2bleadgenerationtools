@@ -54,7 +54,7 @@ export const Footer = () => (
           <Link href="/terms" className="block hover:text-blue-700">
             Terms
           </Link>
-          <Link href="/by-industry/saas-companies" className="block hover:text-blue-700">
+          <Link href="/business-types/saas-companies" className="block hover:text-blue-700">
             SaaS Industry Guides
           </Link>
           <Link href="/for-startups" className="block hover:text-blue-700">

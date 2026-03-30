@@ -109,7 +109,7 @@ export default function HomePage() {
       <section className="py-8">
         <div className="mb-5 flex items-center justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">By Industry</h2>
-          <Link href="/by-industry" className="btn-ghost text-sm">
+          <Link href="/business-types" className="btn-ghost text-sm">
             Browse industries
           </Link>
         </div>
@@ -117,7 +117,7 @@ export default function HomePage() {
           {industries.map((industry) => (
             <Link
               key={industry.slug}
-              href={`/by-industry/${industry.slug}`}
+              href={`/business-types/${industry.slug}`}
               className="rounded-2xl border border-slate-200 bg-white p-4 text-sm shadow-sm transition hover:border-blue-200"
             >
               <p className="font-semibold text-slate-900">{industry.name}</p>

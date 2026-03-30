@@ -69,8 +69,8 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
     ]
   },
   'by-industry': {
-    title: 'By Industry',
-    description: 'Lead generation playbooks adapted to each vertical with practical outbound examples.',
+    title: 'Business Types',
+    description: 'Client acquisition playbooks organized by business type so teams can find the right outbound approach for their market.',
     subtopics: [
       'SaaS companies',
       'Marketing agencies',

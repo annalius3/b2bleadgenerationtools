@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/find-clients',
     '/outreach',
     '/sales-pipeline',
-    '/by-industry',
+    '/business-types',
     '/for-startups',
     '/guides',
     '/contact',
@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const guideRoutes = guides.map((guide) => `/guides/${guide.slug}`);
-  const industryRoutes = industries.map((industry) => `/by-industry/${industry.slug}`);
+  const industryRoutes = industries.map((industry) => `/business-types/${industry.slug}`);
 
   return [...staticRoutes, ...guideRoutes, ...industryRoutes].map((path) => ({
     url: `${siteConfig.url}${path}`,

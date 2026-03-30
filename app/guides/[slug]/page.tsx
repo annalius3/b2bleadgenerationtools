@@ -341,7 +341,7 @@ export default async function GuidePage({ params }: Props) {
             {industryRefs.map((item, index) => (
               <span key={item.slug}>
                 {index > 0 ? ', ' : ''}
-                <Link href={`/by-industry/${item.slug}`}>{item.name}</Link>
+                <Link href={`/business-types/${item.slug}`}>{item.name}</Link>
               </span>
             ))}{' '}
             that need a clearer operating model around <strong>{guide.title.toLowerCase()}</strong>.
@@ -427,7 +427,7 @@ export default async function GuidePage({ params }: Props) {
               {industryRefs.map((item, index) => (
                 <span key={item.slug}>
                   {index > 0 ? ', ' : ''}
-                  <Link href={`/by-industry/${item.slug}`}>{item.name}</Link>
+                  <Link href={`/business-types/${item.slug}`}>{item.name}</Link>
                 </span>
               ))}
             </li>

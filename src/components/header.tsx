@@ -8,12 +8,12 @@ import { useRouter } from 'next/navigation';
 import { ApolloButton } from '@/components/apollo-button';
 import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
+import { industries } from '@/lib/content';
 
 const menu: Array<{ href: Route; label: string }> = [
   { href: '/find-clients', label: 'Find Clients' },
   { href: '/outreach', label: 'Outreach' },
   { href: '/sales-pipeline', label: 'Sales Pipeline' },
-  { href: '/by-industry', label: 'By Industry' },
   { href: '/for-startups', label: 'For Startups' },
   { href: '/guides', label: 'Guides' }
 ];
@@ -39,6 +39,25 @@ export const Header = () => {
                 {item.label}
               </Link>
             ))}
+            <div className="group relative">
+              <Link href="/business-types" className="transition hover:text-blue-700">
+                Business Types
+              </Link>
+              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-[720px] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-6 opacity-0 shadow-[0_30px_70px_-35px_rgba(15,23,42,0.35)] transition-all duration-200 group-hover:visible group-hover:opacity-100">
+                <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+                  {industries.map((industry) => (
+                    <Link
+                      key={industry.slug}
+                      href={`/business-types/${industry.slug}` as Route}
+                      className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm transition hover:border-blue-200 hover:bg-blue-50/60"
+                    >
+                      <p className="font-semibold text-slate-900">{industry.name}</p>
+                      <p className="mt-1 text-xs leading-5 text-slate-600">{industry.description}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
           </nav>
           <div className="flex items-center gap-2">
             <form onSubmit={handleSearch} className="hidden items-center gap-2 sm:flex">
@@ -81,6 +100,9 @@ export const Header = () => {
                 {item.label}
               </Link>
             ))}
+            <Link href="/business-types" className="btn-pill">
+              Business Types
+            </Link>
           </div>
         </div>
       </Container>
