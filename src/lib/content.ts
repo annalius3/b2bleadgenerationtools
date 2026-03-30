@@ -102,6 +102,49 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
 
 export const industries: Industry[] = [
   {
+    slug: 'construction-companies',
+    name: 'Construction Companies',
+    description: 'Use targeted outbound to win more commercial construction leads and project-fit opportunities.',
+    audience: 'Construction businesses that need more predictable project pipeline around commercial, contractor, development, and specialty build opportunities.',
+    painPoints: ['Broad prospecting with weak project fit', 'Low decision-maker visibility', 'Inconsistent qualification around timing and budget'],
+    strategy: ['Choose one construction segment first', 'Map developers, owners, and operations stakeholders separately', 'Qualify for project timing, fit, and commercial value before scaling'],
+    subtopics: ['Commercial construction outreach', 'Developer prospecting', 'Project-fit qualification'],
+    featuredSlugs: ['apollo-for-construction-companies', 'lead-generation-for-construction-companies', 'how-construction-companies-get-first-clients'],
+    imageAlt: 'Construction company team planning outbound strategy and target projects'
+  },
+  {
+    slug: 'logistics-companies',
+    name: 'Logistics Companies',
+    description: 'Build outbound systems for logistics companies targeting shippers, operations teams, and supply chain buyers.',
+    audience: 'Logistics businesses that need tighter segment focus, stronger shipper targeting, and cleaner qualification around lane, capacity, and service fit.',
+    painPoints: ['Generic shipper targeting', 'Weak buyer-role mapping', 'Low qualification discipline around account value'],
+    strategy: ['Target one logistics segment first', 'Map operations, procurement, and supply chain stakeholders separately', 'Qualify for recurring lane and service fit before scaling'],
+    subtopics: ['Shipper prospecting', 'Supply chain outreach', 'Recurring lane qualification'],
+    featuredSlugs: ['apollo-for-logistics-companies', 'lead-generation-for-logistics-companies', 'how-logistics-companies-get-first-clients'],
+    imageAlt: 'Logistics team reviewing shipper pipeline and outbound strategy'
+  },
+  {
+    slug: 'business-coaches',
+    name: 'Business Coaches',
+    description: 'Use niche outbound and authority-led messaging to win better-fit coaching clients.',
+    audience: 'Business coaches and advisory operators that want more predictable client acquisition around one transformation, niche, and commercial outcome.',
+    painPoints: ['Generic coach positioning', 'Weak niche targeting', 'Unclear qualification around buyer readiness and fit'],
+    strategy: ['Choose one buyer transformation and niche first', 'Lead with outcomes, not motivational language', 'Qualify hard for urgency, budget, and implementation fit'],
+    subtopics: ['Coach niche positioning', 'Authority-led outreach', 'Transformation-based messaging'],
+    featuredSlugs: ['apollo-for-business-coaches', 'lead-generation-for-business-coaches', 'how-business-coaches-get-first-clients'],
+    imageAlt: 'Business coach team planning outbound client acquisition strategy'
+  },
+  {
+    slug: 'managed-service-providers',
+    name: 'Managed Service Providers',
+    description: 'Use outbound systems to win higher-fit MSP accounts and recurring contract pipeline.',
+    audience: 'Managed service providers that need stronger account selection, clearer buyer mapping, and more predictable recurring commercial pipeline.',
+    painPoints: ['Broad targeting with weak service fit', 'Unclear stakeholder ownership', 'Low qualification around recurring contract value'],
+    strategy: ['Target one MSP buyer profile first', 'Map technical and commercial stakeholders separately', 'Qualify for recurring-fit accounts before scaling outreach'],
+    subtopics: ['MSP prospecting', 'Recurring IT contract pipeline', 'Service-fit account targeting'],
+    featuredSlugs: ['apollo-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'how-msps-get-first-clients'],
+    imageAlt: 'Managed service provider team reviewing account targeting and outbound pipeline'
+  },  {
     slug: 'insurance-agencies',
     name: 'Insurance Agencies',
     description: 'Use trust-led outbound and niche targeting to win better-fit insurance clients.',
@@ -3973,6 +4016,306 @@ export const guides: Guide[] = [
       { question: 'Should new HVAC businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over the first stage of pipeline.' }
     ],
     relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'lead-generation-for-hvac-companies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-construction-companies',
+    title: 'How to Find Clients for Construction Companies',
+    description: 'A practical outbound framework for construction companies that need better project-fit leads and more predictable commercial pipeline.',
+    hub: 'find-clients',
+    industries: ['construction-companies'],
+    steps: ['Choose one construction segment and one project type first.', 'Use Apollo to build account lists around developers, owners, and likely-fit projects.', 'Map operations, ownership, and procurement stakeholders separately.', 'Write outreach around timing, build outcomes, and commercial fit.', 'Review which segments create the strongest qualified project conversations.'],
+    useCases: ['Construction lead generation', 'Commercial project prospecting', 'Developer outreach'],
+    tips: ['Project fit matters more than list size.', 'Construction outreach should start account-first.', 'Review by segment and project type.'],
+    faqs: [
+      { question: 'How do construction companies find clients?', answer: 'They usually improve faster when they choose one segment, build account-first lists, and use outreach tied to timing and project fit.' },
+      { question: 'Should construction prospecting start broad?', answer: 'No. Narrower segment targeting usually creates better-fit pipeline and less wasted effort.' }
+    ],
+    relatedSlugs: ['lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'apollo-for-construction-companies', 'how-construction-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-construction-companies',
+    title: 'Lead Generation for Construction Companies',
+    description: 'How construction businesses can generate stronger leads with better account targeting, stakeholder mapping, and project-fit qualification.',
+    hub: 'find-clients',
+    industries: ['construction-companies'],
+    steps: ['Define the construction service and ideal project profile clearly.', 'Build Apollo account lists around segment, ownership model, and project fit.', 'Separate developer, owner, and operations stakeholders before launch.', 'Use outreach that connects your offer to timing, build quality, or execution outcomes.', 'Track qualified pipeline by segment and project type.'],
+    useCases: ['Construction lead generation', 'Project-fit targeting', 'Commercial build pipeline'],
+    tips: ['Account quality matters more than raw activity.', 'Stakeholder mapping should happen early.', 'Project-fit qualification protects close rate.'],
+    faqs: [
+      { question: 'What matters most in construction lead generation?', answer: 'Project fit matters most because not every interested account has the right timing, scope, or commercial value.' },
+      { question: 'How should construction companies segment leads?', answer: 'They should segment by project type, buyer role, company model, and likely timing.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-construction-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-construction-companies',
+    title: 'Cold Email for Construction Companies',
+    description: 'A cold email framework for construction companies that need better-fit buyers, stronger project relevance, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['construction-companies'],
+    steps: ['Lead with one timing, build, or delivery issue the buyer recognizes.', 'Use one proof point tied to speed, quality, or commercial outcome.', 'Write role-based versions for developers, owners, and operators.', 'Follow up with relevant context instead of generic persistence.', 'Review which segments create responses from real project stakeholders.'],
+    useCases: ['Construction cold outreach', 'Developer emails', 'Commercial build prospecting'],
+    tips: ['Construction emails should stay practical.', 'Timing matters in the message.', 'Keep follow-ups concise and useful.'],
+    faqs: [
+      { question: 'What should construction cold emails focus on?', answer: 'They should focus on the project or commercial issue, the likely business outcome, and one reason the company is a fit.' },
+      { question: 'Should construction emails be long?', answer: 'Usually no. Shorter, more direct emails tend to create better first replies.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'email-outreach-strategy', 'apollo-for-construction-companies']
+  },
+  {
+    slug: 'apollo-for-construction-companies',
+    title: 'Apollo for Construction Companies',
+    description: 'How construction companies can use Apollo to target better accounts, map buying roles, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['construction-companies'],
+    steps: ['Define the construction segment and project type before building lists.', 'Use Apollo to narrow accounts by company fit, buyer role, and likely project relevance.', 'Map developers, owners, and operations stakeholders separately.', 'Launch role-based outreach tied to one clear commercial or delivery outcome.', 'Review account quality before scaling list volume.'],
+    useCases: ['Construction Apollo workflow', 'Project stakeholder mapping', 'Commercial account targeting'],
+    tips: ['Apollo works best when segment fit is already clear.', 'Map the buying path before outreach.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Can construction companies use Apollo effectively?', answer: 'Yes. Apollo helps construction teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What construction teams get value fastest from Apollo?', answer: 'Teams with a clear project type, segment, and buyer path usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'how-construction-companies-get-first-clients']
+  },
+  {
+    slug: 'how-construction-companies-get-first-clients',
+    title: 'How Construction Companies Get First Clients',
+    description: 'A founder-led outbound system for construction businesses that need first commercial clients, stronger fit, and cleaner project signal.',
+    hub: 'for-startups',
+    industries: ['construction-companies'],
+    steps: ['Choose one construction segment and one ideal project profile first.', 'Build a short Apollo list of likely-fit target accounts.', 'Use direct outreach around one build outcome and one trust signal.', 'Take early calls manually and note which project contexts respond best.', 'Refine the segment around the accounts that create the strongest fit.'],
+    useCases: ['New construction business launch', 'First commercial projects', 'Founder-led market validation'],
+    tips: ['Start with one project type.', 'Early qualification matters a lot.', 'Buyer feedback should shape the target segment.'],
+    faqs: [
+      { question: 'How do construction companies get first clients?', answer: 'They usually get there faster by choosing one segment, targeting likely-fit accounts, and using direct outreach around a clear project or commercial outcome.' },
+      { question: 'Should new construction businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and a more repeatable path to early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'lead-generation-for-construction-companies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-logistics-companies',
+    title: 'How to Find Clients for Logistics Companies',
+    description: 'A practical outbound framework for logistics companies that need better shipper targeting, cleaner qualification, and more predictable pipeline.',
+    hub: 'find-clients',
+    industries: ['logistics-companies'],
+    steps: ['Choose one logistics segment and one shipper profile first.', 'Use Apollo to build account lists around company type, shipping context, and likely fit.', 'Map operations, procurement, and supply chain stakeholders separately.', 'Write outreach around service reliability, lane fit, or commercial outcomes.', 'Review which segments create the strongest recurring-fit shipper conversations.'],
+    useCases: ['Logistics lead generation', 'Shipper prospecting', 'Supply chain outreach'],
+    tips: ['Logistics prospecting should stay segment-specific.', 'Lane and service fit matter early.', 'Review by shipper type.'],
+    faqs: [
+      { question: 'How do logistics companies find clients?', answer: 'They usually improve faster when they target one shipper segment, qualify for service fit, and use outbound tied to a clear logistics outcome.' },
+      { question: 'Should logistics prospecting start broad?', answer: 'No. Narrower targeting improves both reply quality and account economics.' }
+    ],
+    relatedSlugs: ['lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'apollo-for-logistics-companies', 'how-logistics-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-logistics-companies',
+    title: 'Lead Generation for Logistics Companies',
+    description: 'How logistics businesses can generate stronger leads with tighter segment focus, better buyer mapping, and recurring-fit qualification.',
+    hub: 'find-clients',
+    industries: ['logistics-companies'],
+    steps: ['Define the logistics service and ideal shipper profile clearly.', 'Build Apollo account lists around company type, shipping need, and likely fit.', 'Separate operations, procurement, and supply chain contacts before launch.', 'Use outreach tied to service quality, reliability, or savings.', 'Track qualified pipeline by shipper segment and buyer type.'],
+    useCases: ['Logistics lead generation', 'Shipper targeting', 'Recurring lane pipeline'],
+    tips: ['Service-fit qualification matters early.', 'Buyer roles differ by shipper type.', 'Review by segment, not only by meetings.'],
+    faqs: [
+      { question: 'What matters most in logistics lead generation?', answer: 'Service fit matters most because not every shipper has the right recurring potential or lane relevance.' },
+      { question: 'How should logistics companies segment leads?', answer: 'They should segment by shipper type, buyer role, service need, and likely account value.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-logistics-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-logistics-companies',
+    title: 'Cold Email for Logistics Companies',
+    description: 'A cold email framework for logistics companies that need stronger shipper relevance and more qualified replies from supply chain buyers.',
+    hub: 'outreach',
+    industries: ['logistics-companies'],
+    steps: ['Lead with one shipping, capacity, or service issue the buyer recognizes.', 'Use one proof point tied to reliability, speed, or savings.', 'Write separate versions for operations, procurement, and supply chain stakeholders.', 'Follow up with relevant context instead of generic reminders.', 'Review which shipper segments create real recurring-fit conversations.'],
+    useCases: ['Logistics cold outreach', 'Shipper emails', 'Supply chain prospecting'],
+    tips: ['Logistics emails should stay practical.', 'Service outcomes matter most.', 'Keep sequences concise and useful.'],
+    faqs: [
+      { question: 'What should logistics cold emails focus on?', answer: 'They should focus on the shipping or service issue, the likely business result, and one reason the company can help.' },
+      { question: 'Should logistics emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'email-outreach-strategy', 'apollo-for-logistics-companies']
+  },
+  {
+    slug: 'apollo-for-logistics-companies',
+    title: 'Apollo for Logistics Companies',
+    description: 'How logistics companies can use Apollo to target better shipper accounts, map buying roles, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['logistics-companies'],
+    steps: ['Define the logistics segment and service motion before building lists.', 'Use Apollo to narrow accounts by company fit, buyer role, and likely shipping relevance.', 'Map operations, procurement, and supply chain stakeholders separately.', 'Launch role-based outreach tied to one clear service or commercial outcome.', 'Review account quality before scaling volume.'],
+    useCases: ['Logistics Apollo workflow', 'Shipper account targeting', 'Supply chain outreach'],
+    tips: ['Apollo helps most when the service segment is already clear.', 'Map real buyers before launch.', 'Review recurring fit early.'],
+    faqs: [
+      { question: 'Can logistics companies use Apollo effectively?', answer: 'Yes. Apollo helps logistics teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What logistics teams get value fastest from Apollo?', answer: 'Teams with a clear shipper segment, service line, and buyer path usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'how-logistics-companies-get-first-clients']
+  },
+  {
+    slug: 'how-logistics-companies-get-first-clients',
+    title: 'How Logistics Companies Get First Clients',
+    description: 'A founder-led outbound system for logistics businesses that need first shipper accounts, better fit, and cleaner early pipeline.',
+    hub: 'for-startups',
+    industries: ['logistics-companies'],
+    steps: ['Choose one logistics segment and one ideal shipper profile first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one service outcome and one trust signal.', 'Take early calls manually and note which shipper contexts respond best.', 'Refine the segment around the accounts that create the strongest recurring-fit traction.'],
+    useCases: ['New logistics business launch', 'First shipper accounts', 'Founder-led service validation'],
+    tips: ['Start with one shipper segment.', 'Recurring fit matters early.', 'Buyer feedback should sharpen the target account profile.'],
+    faqs: [
+      { question: 'How do logistics companies get first clients?', answer: 'They usually get there faster by choosing one shipper segment, targeting likely-fit accounts, and using direct outreach tied to a clear logistics outcome.' },
+      { question: 'Should new logistics businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over the early commercial motion.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'lead-generation-for-logistics-companies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-business-coaches',
+    title: 'How to Find Clients for Business Coaches',
+    description: 'A practical outbound framework for business coaches that need stronger niche focus, clearer positioning, and better-fit client conversations.',
+    hub: 'find-clients',
+    industries: ['business-coaches'],
+    steps: ['Choose one coaching niche and one transformation outcome first.', 'Use Apollo to build account lists around business type, stage, and likely fit.', 'Map founders, leaders, and operators separately.', 'Write outreach around business results, clarity, and implementation outcomes.', 'Review which niches create the strongest qualified conversations.'],
+    useCases: ['Coach client acquisition', 'Authority-led outreach', 'Niche transformation offers'],
+    tips: ['Coaches should narrow the niche early.', 'Business outcomes beat motivational language.', 'Review by niche, not just by call count.'],
+    faqs: [
+      { question: 'How do business coaches find clients?', answer: 'They usually improve faster when they choose one niche, one transformation outcome, and use outbound tied to a clear business result.' },
+      { question: 'Should business coaches target everyone?', answer: 'No. Narrower targeting usually produces stronger trust and better-fit clients.' }
+    ],
+    relatedSlugs: ['lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'apollo-for-business-coaches', 'how-business-coaches-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-business-coaches',
+    title: 'Lead Generation for Business Coaches',
+    description: 'How business coaches can generate stronger leads with better niche selection, clearer authority, and stronger buyer qualification.',
+    hub: 'find-clients',
+    industries: ['business-coaches'],
+    steps: ['Define the coaching offer and target buyer profile clearly.', 'Build Apollo account lists around company stage, role, and likely fit.', 'Separate founders, executives, and operators before launch.', 'Use outreach tied to one business transformation and one clear outcome.', 'Track lead quality by niche and buyer role.'],
+    useCases: ['Coach lead generation', 'Founder coaching outreach', 'Niche advisory growth'],
+    tips: ['Niche fit matters early.', 'Authority should be practical, not abstract.', 'Qualification protects calendar quality.'],
+    faqs: [
+      { question: 'What matters most in business coach lead generation?', answer: 'Niche clarity and buyer readiness matter most because generic coaching outreach rarely creates strong commercial intent.' },
+      { question: 'How should business coaches segment leads?', answer: 'They should segment by niche, business stage, buyer role, and likely urgency.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'client-acquisition-for-consultants', 'how-business-coaches-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-business-coaches',
+    title: 'Cold Email for Business Coaches',
+    description: 'A cold email framework for business coaches that need better-fit buyers, stronger trust, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['business-coaches'],
+    steps: ['Lead with one business issue the buyer already feels.', 'Use one credibility signal tied to results or implementation outcomes.', 'Write role-specific emails for founders, leaders, and operators.', 'Follow up with useful angle changes instead of generic reminders.', 'Review which niches create replies from real buying stakeholders.'],
+    useCases: ['Coach cold outreach', 'Founder coaching emails', 'Authority-led prospecting'],
+    tips: ['Coach emails should stay practical and commercial.', 'Transformation language must stay concrete.', 'Short sequences are easier to improve.'],
+    faqs: [
+      { question: 'What should business coach cold emails focus on?', answer: 'They should focus on the business problem, the likely result, and one reason the coach can help in that exact context.' },
+      { question: 'Should coaching emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'email-outreach-strategy', 'apollo-for-business-coaches']
+  },
+  {
+    slug: 'apollo-for-business-coaches',
+    title: 'Apollo for Business Coaches',
+    description: 'How business coaches can use Apollo to target better accounts, map buyer roles, and build cleaner outbound client acquisition.',
+    hub: 'guides',
+    industries: ['business-coaches'],
+    steps: ['Define the coaching niche and offer before building lists.', 'Use Apollo to narrow accounts by business type, stage, and likely fit.', 'Map founders, executives, and operational stakeholders separately.', 'Launch trust-led outreach tied to one clear business transformation.', 'Review which niches produce the best-fit coaching conversations.'],
+    useCases: ['Coaching Apollo workflow', 'Authority-led targeting', 'Niche client acquisition'],
+    tips: ['Apollo is strongest when the coaching niche is clear.', 'Map real buyers early.', 'Review fit before scaling volume.'],
+    faqs: [
+      { question: 'Can business coaches use Apollo effectively?', answer: 'Yes. Apollo helps business coaches combine account targeting, contact mapping, and outbound execution in one workflow.' },
+      { question: 'What coaches get value fastest from Apollo?', answer: 'Coaches with a clear niche, transformation outcome, and buyer profile usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'how-business-coaches-get-first-clients']
+  },
+  {
+    slug: 'how-business-coaches-get-first-clients',
+    title: 'How Business Coaches Get First Clients',
+    description: 'A founder-led outbound system for business coaches that need first clients, better niche signal, and cleaner early pipeline.',
+    hub: 'for-startups',
+    industries: ['business-coaches'],
+    steps: ['Choose one coaching niche and one ideal buyer outcome first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one business result and one trust signal.', 'Take early calls manually and note which buyer contexts respond best.', 'Refine the niche around the accounts that create the strongest fit.'],
+    useCases: ['New coach launch', 'First coaching clients', 'Founder-led niche validation'],
+    tips: ['Start with one transformation outcome.', 'Early client conversations should shape the offer.', 'Niche clarity beats broad reach.'],
+    faqs: [
+      { question: 'How do business coaches get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit buyers, and using direct outreach tied to a clear business result.' },
+      { question: 'Should new coaches rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'lead-generation-for-business-coaches', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-managed-service-providers',
+    title: 'How to Find Clients for Managed Service Providers',
+    description: 'A practical outbound framework for MSPs that need better-fit accounts, stronger buyer mapping, and more recurring contract pipeline.',
+    hub: 'find-clients',
+    industries: ['managed-service-providers'],
+    steps: ['Choose one MSP buyer profile and one service motion first.', 'Use Apollo to build account lists around company size, technical fit, and likely need.', 'Map technical leaders, operators, and commercial stakeholders separately.', 'Write outreach around uptime, reliability, security, or support outcomes.', 'Review which segments create the strongest recurring-fit conversations.'],
+    useCases: ['MSP lead generation', 'Recurring contract prospecting', 'Service-fit account targeting'],
+    tips: ['MSPs should start with one clear buyer profile.', 'Recurring-fit matters most.', 'Technical and commercial roles need different messaging.'],
+    faqs: [
+      { question: 'How do MSPs find clients?', answer: 'They usually improve faster when they target one buyer segment, qualify for service fit, and use outbound tied to a clear operational outcome.' },
+      { question: 'Should MSP prospecting stay broad?', answer: 'No. Narrower targeting usually improves both reply quality and contract fit.' }
+    ],
+    relatedSlugs: ['lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'apollo-for-managed-service-providers', 'how-msps-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-managed-service-providers',
+    title: 'Lead Generation for Managed Service Providers',
+    description: 'How MSPs can generate stronger leads with better account selection, clearer buyer mapping, and recurring-fit qualification.',
+    hub: 'find-clients',
+    industries: ['managed-service-providers'],
+    steps: ['Define the MSP service line and ideal account profile clearly.', 'Build Apollo account lists around company type, technical fit, and likely contract value.', 'Separate IT, operations, and executive stakeholders before launch.', 'Use outreach tied to uptime, support quality, or cost control.', 'Track qualified recurring pipeline by segment and buyer type.'],
+    useCases: ['MSP lead generation', 'Recurring service pipeline', 'Technical account targeting'],
+    tips: ['Service-fit qualification matters early.', 'Role mapping protects sales quality.', 'Review pipeline by segment, not just total meetings.'],
+    faqs: [
+      { question: 'What matters most in MSP lead generation?', answer: 'Recurring-fit account quality matters most because not every technically interested company is commercially valuable.' },
+      { question: 'How should MSPs segment leads?', answer: 'They should segment by buyer profile, company type, service fit, and likely contract value.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'apollo-for-it-services', 'how-msps-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-managed-service-providers',
+    title: 'Cold Email for Managed Service Providers',
+    description: 'A cold email framework for MSPs that need stronger account relevance and more qualified replies from technical and business buyers.',
+    hub: 'outreach',
+    industries: ['managed-service-providers'],
+    steps: ['Lead with one support, security, or uptime issue the buyer recognizes.', 'Use one proof point tied to reliability, speed, or cost control.', 'Write separate versions for IT, operations, and executive stakeholders.', 'Follow up with relevant context instead of generic reminders.', 'Review which account segments create real recurring-fit conversations.'],
+    useCases: ['MSP cold outreach', 'IT services emails', 'Recurring contract prospecting'],
+    tips: ['MSP emails should stay practical and specific.', 'Support outcomes matter in the message.', 'Keep sequences concise and useful.'],
+    faqs: [
+      { question: 'What should MSP cold emails focus on?', answer: 'They should focus on the technical or business issue, the likely service outcome, and one reason the MSP can help in that exact environment.' },
+      { question: 'Should MSP emails be highly technical?', answer: 'Only where needed. Clear operational and business language usually works better first.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'apollo-email-deliverability-best-practices', 'apollo-for-managed-service-providers']
+  },
+  {
+    slug: 'apollo-for-managed-service-providers',
+    title: 'Apollo for Managed Service Providers',
+    description: 'How MSPs can use Apollo to target better accounts, map buying roles, and build cleaner outbound recurring pipeline.',
+    hub: 'guides',
+    industries: ['managed-service-providers'],
+    steps: ['Define the MSP segment and service motion before building lists.', 'Use Apollo to narrow accounts by company fit, buyer role, and likely service need.', 'Map technical, operations, and executive stakeholders separately.', 'Launch role-based outreach tied to one clear service or business outcome.', 'Review recurring-fit pipeline before scaling list volume.'],
+    useCases: ['MSP Apollo workflow', 'Recurring account targeting', 'Technical buyer mapping'],
+    tips: ['Apollo helps most when service fit is already clear.', 'Map real buyers before launch.', 'Review recurring contract fit early.'],
+    faqs: [
+      { question: 'Can MSPs use Apollo effectively?', answer: 'Yes. Apollo helps MSPs combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What MSP teams get value fastest from Apollo?', answer: 'Teams with a clear service line, buyer profile, and recurring contract motion usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'how-msps-get-first-clients']
+  },
+  {
+    slug: 'how-msps-get-first-clients',
+    title: 'How MSPs Get First Clients',
+    description: 'A founder-led outbound system for MSPs that need first recurring clients, better fit, and cleaner early pipeline.',
+    hub: 'for-startups',
+    industries: ['managed-service-providers'],
+    steps: ['Choose one MSP buyer profile and one ideal service motion first.', 'Build a short Apollo list of likely-fit target accounts.', 'Use direct outreach around one reliability or support outcome and one trust signal.', 'Take early calls manually and note which buyer contexts respond best.', 'Refine the segment around the accounts that create the strongest recurring-fit traction.'],
+    useCases: ['New MSP launch', 'First recurring clients', 'Founder-led service validation'],
+    tips: ['Start with one buyer profile.', 'Recurring-fit matters early.', 'Manual selling sharpens the offer faster.'],
+    faqs: [
+      { question: 'How do MSPs get first clients?', answer: 'They usually get there faster by choosing one buyer segment, targeting likely-fit accounts, and using direct outreach tied to a clear support or business outcome.' },
+      { question: 'Should new MSPs rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early recurring pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'how-to-build-a-client-base-from-scratch']
   }
 ];
 
