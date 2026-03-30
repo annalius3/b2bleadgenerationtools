@@ -102,6 +102,38 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
 
 export const industries: Industry[] = [
   {
+    slug: 'insurance-agencies',
+    name: 'Insurance Agencies',
+    description: 'Use trust-led outbound and niche targeting to win better-fit insurance clients.',
+    audience: 'Insurance agencies and brokerages that need more predictable client acquisition around commercial lines, benefits, risk, and specialty coverage.',
+    painPoints: ['Overreliance on referrals', 'Generic outreach in trust-heavy markets', 'Weak qualification around account quality and policy fit'],
+    strategy: ['Lead with risk reduction and commercial clarity', 'Target one insurance niche first', 'Qualify for long-term account value before scaling'],
+    subtopics: ['Commercial insurance prospecting', 'Benefits outreach', 'Risk-led messaging'],
+    featuredSlugs: ['apollo-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'how-insurance-agencies-get-first-clients'],
+    imageAlt: 'Insurance agency team reviewing outbound strategy and client pipeline'
+  },
+  {
+    slug: 'solar-companies',
+    name: 'Solar Companies',
+    description: 'Build targeted outbound systems for solar companies selling into commercial and local business markets.',
+    audience: 'Solar companies and solar service providers that need clearer segment focus, stronger outreach relevance, and more predictable pipeline.',
+    painPoints: ['Broad targeting with weak fit', 'Low reply quality from generic outreach', 'Inconsistent qualification around project readiness'],
+    strategy: ['Pick one solar buyer segment first', 'Map property, operations, and commercial stakeholders separately', 'Qualify for timing, economics, and project fit'],
+    subtopics: ['Commercial solar outreach', 'Facility buyer targeting', 'Project-fit qualification'],
+    featuredSlugs: ['apollo-for-solar-companies', 'lead-generation-for-solar-companies', 'how-solar-companies-get-first-clients'],
+    imageAlt: 'Solar company team planning outbound growth and target accounts'
+  },
+  {
+    slug: 'hvac-companies',
+    name: 'HVAC Companies',
+    description: 'Create outbound systems for HVAC businesses targeting commercial, property, and facility buyers.',
+    audience: 'HVAC businesses that want to win more commercial accounts through tighter segment targeting, clearer offer positioning, and better prospecting rhythm.',
+    painPoints: ['Broad prospecting across low-fit accounts', 'Weak decision-maker targeting', 'Unclear qualification around service and contract fit'],
+    strategy: ['Choose one HVAC segment and service motion first', 'Map facility, property, and operations buyers separately', 'Qualify for recurring-fit commercial opportunities'],
+    subtopics: ['Commercial HVAC prospecting', 'Facility manager outreach', 'Recurring contract pipeline'],
+    featuredSlugs: ['apollo-for-hvac-companies', 'lead-generation-for-hvac-companies', 'how-hvac-companies-get-first-clients'],
+    imageAlt: 'HVAC company team planning commercial outreach and client acquisition'
+  },  {
     slug: 'law-firms',
     name: 'Law Firms',
     description: 'Use trust-led outbound and niche positioning to win higher-fit legal clients.',
@@ -3641,6 +3673,306 @@ export const guides: Guide[] = [
       { question: 'Should new real estate service teams rely only on referrals?', answer: 'No. Focused outbound creates faster learning and a more repeatable early pipeline.' }
     ],
     relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'lead-generation-for-real-estate-services', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-financial-services',
+    title: 'How to Find Clients for Financial Services',
+    description: 'A practical outbound framework for financial services teams that need stronger trust, better segmentation, and higher-quality pipeline.',
+    hub: 'find-clients',
+    industries: ['financial-services'],
+    steps: ['Choose one financial service niche and one buyer problem first.', 'Use Apollo to build account lists around company size, role, and likely financial need.', 'Map founders, finance leaders, and risk-aware stakeholders separately.', 'Write outreach around trust, clarity, and business outcomes.', 'Review which segments create real qualified conversations before scaling.'],
+    useCases: ['Financial services pipeline', 'Commercial finance outreach', 'Trust-led prospecting'],
+    tips: ['Trust-heavy niches need narrower targeting.', 'Role mapping matters early.', 'Review by segment, not just by volume.'],
+    faqs: [
+      { question: 'How do financial services firms find clients?', answer: 'They usually improve faster when they pick one niche, target accounts with a real business need, and use trust-led outreach.' },
+      { question: 'Should financial services teams prospect broadly?', answer: 'No. Broad targeting usually weakens trust and qualification quality.' }
+    ],
+    relatedSlugs: ['lead-generation-for-financial-services', 'cold-email-for-financial-services', 'apollo-for-financial-services', 'how-financial-services-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-financial-services',
+    title: 'Lead Generation for Financial Services',
+    description: 'How financial services teams can generate stronger leads with narrower targeting, better buyer mapping, and cleaner qualification.',
+    hub: 'find-clients',
+    industries: ['financial-services'],
+    steps: ['Define the financial offer and target business profile clearly.', 'Build Apollo account lists around likely need, size, and segment fit.', 'Separate founders, finance leaders, and operators before launch.', 'Use outreach that speaks to financial clarity, risk, or growth impact.', 'Track lead quality by segment and buyer type.'],
+    useCases: ['Financial lead generation', 'Commercial finance targeting', 'Trust-led client acquisition'],
+    tips: ['Lead quality matters more than activity volume.', 'Segment by buyer context.', 'Qualification discipline protects pipeline quality.'],
+    faqs: [
+      { question: 'What matters most in financial services lead generation?', answer: 'Niche clarity and trust matter most because buyers are usually skeptical of generic outreach.' },
+      { question: 'How should financial services teams segment leads?', answer: 'They should segment by offer, buyer role, urgency, and likely commercial fit.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'identifying-buying-signals', 'how-financial-services-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-financial-services',
+    title: 'Cold Email for Financial Services',
+    description: 'A cold email framework for financial services teams that need stronger trust, clearer relevance, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['financial-services'],
+    steps: ['Lead with one business or financial issue the buyer already recognizes.', 'Use one credibility point tied to outcomes or risk reduction.', 'Write different versions for founders, finance owners, and operators.', 'Follow up with useful context instead of generic reminders.', 'Review which segments create replies from real buying stakeholders.'],
+    useCases: ['Finance cold outreach', 'Trust-led email campaigns', 'B2B financial prospecting'],
+    tips: ['Financial emails should stay simple and credible.', 'Use practical business language.', 'Shorter sequences are easier to improve.'],
+    faqs: [
+      { question: 'What should financial services cold emails focus on?', answer: 'They should focus on the business problem, the likely financial outcome, and one reason the team understands that context.' },
+      { question: 'Should financial cold emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'email-outreach-strategy', 'apollo-for-financial-services']
+  },
+  {
+    slug: 'apollo-for-financial-services',
+    title: 'Apollo for Financial Services',
+    description: 'How financial services teams can use Apollo to target stronger accounts, map real decision-makers, and build cleaner outbound workflow.',
+    hub: 'guides',
+    industries: ['financial-services'],
+    steps: ['Define the financial service and buyer context before building lists.', 'Use Apollo filters to narrow accounts by size, segment, and likely fit.', 'Map founders, finance leaders, and business stakeholders separately.', 'Launch trust-led outreach tied to one clear business outcome.', 'Review which account types produce the best qualified pipeline.'],
+    useCases: ['Financial Apollo workflow', 'Trust-led prospecting', 'Regulated-market account targeting'],
+    tips: ['Apollo is strongest when the offer and segment are already clear.', 'Map real buyers early.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Can financial services teams use Apollo effectively?', answer: 'Yes. Apollo is useful when the team needs cleaner account targeting, contact mapping, and outbound execution in one workflow.' },
+      { question: 'What financial services teams get value fastest from Apollo?', answer: 'Teams with a clear niche, offer, and buyer situation usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'cold-email-for-financial-services', 'how-financial-services-companies-get-first-clients']
+  },
+  {
+    slug: 'how-financial-services-companies-get-first-clients',
+    title: 'How Financial Services Companies Get First Clients',
+    description: 'A founder-led outbound system for financial services businesses that need first clients, stronger trust, and faster segment signal.',
+    hub: 'for-startups',
+    industries: ['financial-services'],
+    steps: ['Choose one financial niche and one buyer problem first.', 'Build a short Apollo list of likely-fit target accounts.', 'Use direct outreach around one business outcome and one trust signal.', 'Take early calls manually and document what buyers actually respond to.', 'Refine the segment around the accounts that create the best-fit conversations.'],
+    useCases: ['Financial services startup sales', 'First advisory clients', 'Founder-led trust validation'],
+    tips: ['Start with one clear niche.', 'Early trust comes from relevance.', 'Manual selling sharpens the offer faster.'],
+    faqs: [
+      { question: 'How do financial services businesses get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit accounts, and using direct outreach built on trust and clarity.' },
+      { question: 'Should new financial services teams wait for referrals first?', answer: 'Usually no. Focused outbound creates faster market learning and a more repeatable early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'lead-generation-for-financial-services', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-insurance-agencies',
+    title: 'How to Find Clients for Insurance Agencies',
+    description: 'A practical outbound framework for insurance agencies that need better-fit accounts, stronger trust, and more predictable pipeline.',
+    hub: 'find-clients',
+    industries: ['insurance-agencies'],
+    steps: ['Choose one insurance niche and one policy problem first.', 'Use Apollo to build account lists around company type, size, and likely coverage need.', 'Map founders, finance owners, HR leaders, and operations contacts separately.', 'Write outreach around risk reduction, clarity, and policy fit.', 'Review which segments create recurring-fit commercial conversations.'],
+    useCases: ['Insurance client acquisition', 'Commercial lines prospecting', 'Benefits outreach'],
+    tips: ['Insurance prospecting needs a narrow niche.', 'Trust and clarity matter more than volume.', 'Review account quality before scale.'],
+    faqs: [
+      { question: 'How do insurance agencies find clients?', answer: 'They usually improve faster when they focus on one niche, target likely-fit accounts, and use trust-led outreach around a specific risk or policy issue.' },
+      { question: 'Should insurance agencies prospect broadly?', answer: 'No. Narrow targeting usually creates stronger trust and better conversion quality.' }
+    ],
+    relatedSlugs: ['lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-insurance-agencies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-insurance-agencies',
+    title: 'Lead Generation for Insurance Agencies',
+    description: 'How insurance agencies can generate stronger leads with niche targeting, trust-led messaging, and better buyer mapping.',
+    hub: 'find-clients',
+    industries: ['insurance-agencies'],
+    steps: ['Define the insurance offer and buyer niche before list building.', 'Build Apollo account lists around company fit, policy need, and buyer role.', 'Separate finance, HR, operations, and founder contacts by relevance.', 'Use outreach that speaks to risk, protection, and commercial clarity.', 'Track qualified conversations by niche and buyer type.'],
+    useCases: ['Insurance lead generation', 'Commercial policy outreach', 'Benefits pipeline growth'],
+    tips: ['Niche fit matters early.', 'Trust-heavy offers need practical language.', 'Review lead quality by account type.'],
+    faqs: [
+      { question: 'What matters most in insurance lead generation?', answer: 'Niche relevance and buyer trust matter most because generic insurance outreach often fails to create strong intent.' },
+      { question: 'How should insurance agencies segment leads?', answer: 'They should segment by niche, buyer role, company type, and likely policy need.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-to-find-clients-for-financial-services', 'how-insurance-agencies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-insurance-agencies',
+    title: 'Cold Email for Insurance Agencies',
+    description: 'A cold email framework for insurance agencies that need more trust, better-fit buyers, and stronger reply quality.',
+    hub: 'outreach',
+    industries: ['insurance-agencies'],
+    steps: ['Lead with one risk or coverage issue the buyer already cares about.', 'Use one credibility point tied to protection, savings, or clarity.', 'Write role-based versions for founders, HR leaders, and finance contacts.', 'Follow up with useful context instead of generic nudges.', 'Review which niches create real commercial responses.'],
+    useCases: ['Insurance cold outreach', 'Commercial lines emails', 'Benefits prospecting'],
+    tips: ['Insurance copy should stay calm and clear.', 'Risk framing should feel practical, not alarmist.', 'Keep sequences concise.'],
+    faqs: [
+      { question: 'What should insurance cold emails focus on?', answer: 'They should focus on the coverage or business risk issue, the likely outcome, and one reason the agency can help.' },
+      { question: 'Should insurance emails be long?', answer: 'Usually no. Shorter, clearer emails build trust faster.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'email-outreach-strategy', 'apollo-for-insurance-agencies']
+  },
+  {
+    slug: 'apollo-for-insurance-agencies',
+    title: 'Apollo for Insurance Agencies',
+    description: 'How insurance agencies can use Apollo to target better accounts, map decision-makers, and build more repeatable outbound workflow.',
+    hub: 'guides',
+    industries: ['insurance-agencies'],
+    steps: ['Define the insurance niche and client profile before building lists.', 'Use Apollo filters to narrow accounts by size, industry, and likely policy fit.', 'Map founders, HR, finance, and operations stakeholders separately.', 'Launch trust-led outreach tied to one clear risk or business issue.', 'Review which segments create the best recurring-fit conversations.'],
+    useCases: ['Insurance Apollo workflow', 'Commercial policy targeting', 'Benefits prospecting'],
+    tips: ['Apollo is strongest when the insurance niche is already clear.', 'Map real buyers early.', 'Review account quality before scale.'],
+    faqs: [
+      { question: 'Can insurance agencies use Apollo effectively?', answer: 'Yes. Apollo helps insurance agencies combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What insurance teams get value fastest from Apollo?', answer: 'Teams with a clear niche, offer, and buyer context usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'how-insurance-agencies-get-first-clients']
+  },
+  {
+    slug: 'how-insurance-agencies-get-first-clients',
+    title: 'How Insurance Agencies Get First Clients',
+    description: 'A founder-led outbound system for insurance agencies that need first clients, stronger trust, and better niche signal.',
+    hub: 'for-startups',
+    industries: ['insurance-agencies'],
+    steps: ['Choose one insurance niche and one target buyer problem first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one policy or risk outcome and one trust signal.', 'Take early calls manually and document which buyer contexts respond best.', 'Refine the niche around the accounts that create the strongest commercial fit.'],
+    useCases: ['New insurance agency launch', 'First commercial accounts', 'Founder-led niche validation'],
+    tips: ['Start with one niche.', 'Trust comes from clarity and fit.', 'Manual selling helps sharpen the offer.'],
+    faqs: [
+      { question: 'How do insurance agencies get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit accounts, and using direct outreach tied to a real business risk or coverage need.' },
+      { question: 'Should new insurance agencies wait for referrals only?', answer: 'No. Focused outbound creates faster learning and more control over the early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-solar-companies',
+    title: 'How to Find Clients for Solar Companies',
+    description: 'A practical outbound framework for solar companies that need better-fit projects, stronger buyer targeting, and more predictable pipeline.',
+    hub: 'find-clients',
+    industries: ['solar-companies'],
+    steps: ['Choose one solar buyer segment and one project type first.', 'Use Apollo to build account lists around company profile, facilities, and likely fit.', 'Map operations, facilities, finance, and ownership stakeholders separately.', 'Write outreach around economics, savings, or project viability.', 'Review which segments create the strongest qualified project conversations.'],
+    useCases: ['Commercial solar prospecting', 'B2B solar client acquisition', 'Project-fit targeting'],
+    tips: ['Solar prospecting works best when segment focus is tight.', 'Project fit matters more than broad volume.', 'Map buyer roles early.'],
+    faqs: [
+      { question: 'How do solar companies find clients?', answer: 'They usually improve faster when they target one buyer segment, qualify for project fit, and use outbound tied to a clear commercial or savings outcome.' },
+      { question: 'Should solar outreach stay broad?', answer: 'No. Narrower targeting usually improves reply quality and project relevance.' }
+    ],
+    relatedSlugs: ['lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'apollo-for-solar-companies', 'how-solar-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-solar-companies',
+    title: 'Lead Generation for Solar Companies',
+    description: 'How solar companies can generate stronger leads with tighter project qualification, clearer segment targeting, and better buyer mapping.',
+    hub: 'find-clients',
+    industries: ['solar-companies'],
+    steps: ['Define the solar offer and target account profile clearly.', 'Build Apollo lists around facilities, company size, and commercial fit.', 'Separate finance, facilities, operations, and ownership contacts.', 'Use outreach that connects your offer to savings, resilience, or ROI.', 'Track which segments create qualified project pipeline.'],
+    useCases: ['Solar lead generation', 'Commercial energy prospecting', 'Project-fit account targeting'],
+    tips: ['Project-fit qualification matters early.', 'Buyer roles differ by deal type.', 'Review by segment, not only by meetings.'],
+    faqs: [
+      { question: 'What matters most in solar lead generation?', answer: 'Project fit and buyer relevance matter most because not every interested company is commercially viable.' },
+      { question: 'How should solar companies segment leads?', answer: 'They should segment by project type, buyer role, facility context, and likely economics.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'how-to-find-clients-for-real-estate-services', 'how-solar-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-solar-companies',
+    title: 'Cold Email for Solar Companies',
+    description: 'A cold email framework for solar companies that need better-fit buyers, clearer project relevance, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['solar-companies'],
+    steps: ['Lead with one facility, savings, or project issue the buyer recognizes.', 'Use one proof point tied to ROI, energy cost, or implementation value.', 'Write different versions for facilities, finance, and ownership stakeholders.', 'Follow up with useful context instead of generic persistence.', 'Review which segments create replies from real project stakeholders.'],
+    useCases: ['Solar cold outreach', 'Commercial solar emails', 'Project-based prospecting'],
+    tips: ['Solar emails should stay practical and commercial.', 'Economics matter in the message.', 'Keep follow-ups short and specific.'],
+    faqs: [
+      { question: 'What should solar cold emails focus on?', answer: 'They should focus on the facility or business problem, the likely savings or business outcome, and one reason the offer fits that account.' },
+      { question: 'Should solar emails be highly technical?', answer: 'Only where needed. Practical commercial language usually works better first.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'email-outreach-strategy', 'apollo-for-solar-companies']
+  },
+  {
+    slug: 'apollo-for-solar-companies',
+    title: 'Apollo for Solar Companies',
+    description: 'How solar companies can use Apollo to target better accounts, map project stakeholders, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['solar-companies'],
+    steps: ['Define the solar segment and project type before building lists.', 'Use Apollo to narrow accounts by fit, facilities, and likely commercial value.', 'Map finance, facilities, operations, and owner stakeholders separately.', 'Launch role-based outreach tied to project economics and business outcomes.', 'Review account quality before scaling volume.'],
+    useCases: ['Solar Apollo workflow', 'Commercial energy targeting', 'Project stakeholder mapping'],
+    tips: ['Apollo helps most when project-fit logic is clear.', 'Map real buyers early.', 'Review qualified pipeline by segment.'],
+    faqs: [
+      { question: 'Can solar companies use Apollo effectively?', answer: 'Yes. Apollo helps solar teams combine account targeting, buyer mapping, and outbound execution in one workflow.' },
+      { question: 'What solar teams get value fastest from Apollo?', answer: 'Teams with a clear project type, target segment, and buyer path usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'how-solar-companies-get-first-clients']
+  },
+  {
+    slug: 'how-solar-companies-get-first-clients',
+    title: 'How Solar Companies Get First Clients',
+    description: 'A founder-led outbound system for solar companies that need first projects, better segment signal, and cleaner qualification.',
+    hub: 'for-startups',
+    industries: ['solar-companies'],
+    steps: ['Choose one solar segment and one ideal project profile first.', 'Build a short Apollo list of likely-fit target accounts.', 'Use direct outreach around one business case and one implementation outcome.', 'Take early calls manually and note what buyers actually care about.', 'Refine the segment around the accounts that create the best project fit.'],
+    useCases: ['New solar company launch', 'First commercial projects', 'Founder-led market validation'],
+    tips: ['Start with one project type.', 'Qualification matters early.', 'Buyer feedback should shape the offer.'],
+    faqs: [
+      { question: 'How do solar companies get first clients?', answer: 'They usually get there faster by choosing one buyer segment, qualifying for project fit, and using direct outreach tied to a clear business case.' },
+      { question: 'Should solar startups automate early outbound heavily?', answer: 'Usually no. Early manual outreach helps clarify the segment and project economics faster.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'lead-generation-for-solar-companies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-hvac-companies',
+    title: 'How to Find Clients for HVAC Companies',
+    description: 'A practical outbound framework for HVAC businesses that need more commercial accounts, better-fit buyers, and cleaner pipeline.',
+    hub: 'find-clients',
+    industries: ['hvac-companies'],
+    steps: ['Choose one HVAC segment and one service motion first.', 'Use Apollo to build account lists around property type, company profile, and likely need.', 'Map facilities, operations, property, and ownership stakeholders separately.', 'Write outreach around uptime, maintenance, or cost outcomes.', 'Review which segments create recurring-fit commercial conversations.'],
+    useCases: ['Commercial HVAC prospecting', 'Facility-targeted outreach', 'Recurring contract pipeline'],
+    tips: ['HVAC prospecting should stay segment-specific.', 'Recurring-fit matters more than one-off interest.', 'Map decision-makers early.'],
+    faqs: [
+      { question: 'How do HVAC companies find clients?', answer: 'They usually improve faster when they target one commercial segment, qualify for recurring-fit work, and use direct outreach tied to a real service need.' },
+      { question: 'Should HVAC outreach stay broad?', answer: 'No. Narrower targeting usually creates stronger pipeline quality.' }
+    ],
+    relatedSlugs: ['lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'apollo-for-hvac-companies', 'how-hvac-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-hvac-companies',
+    title: 'Lead Generation for HVAC Companies',
+    description: 'How HVAC businesses can generate stronger leads with tighter segment focus, better buyer mapping, and recurring-fit qualification.',
+    hub: 'find-clients',
+    industries: ['hvac-companies'],
+    steps: ['Define the HVAC service and target buyer context clearly.', 'Build Apollo account lists around facilities, property profiles, and likely commercial fit.', 'Separate operations, facilities, and property stakeholders before launch.', 'Use outreach tied to uptime, maintenance, or contract value.', 'Track which segments create qualified recurring pipeline.'],
+    useCases: ['HVAC lead generation', 'Commercial maintenance prospecting', 'Property-service pipeline'],
+    tips: ['Recurring-fit accounts are the right priority.', 'Buyer roles matter.', 'Review by segment, not just by total volume.'],
+    faqs: [
+      { question: 'What matters most in HVAC lead generation?', answer: 'Commercial fit and recurring opportunity quality matter most because one-off jobs often do not create the best long-term value.' },
+      { question: 'How should HVAC businesses segment leads?', answer: 'They should segment by property type, buyer role, service need, and likely contract fit.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'how-to-find-clients-for-real-estate-services', 'how-hvac-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-hvac-companies',
+    title: 'Cold Email for HVAC Companies',
+    description: 'A cold email framework for HVAC businesses that need stronger commercial relevance and more qualified replies from facility buyers.',
+    hub: 'outreach',
+    industries: ['hvac-companies'],
+    steps: ['Lead with one maintenance, uptime, or facility issue the buyer recognizes.', 'Use one proof point tied to service quality, reliability, or savings.', 'Write separate versions for facilities, operations, and property stakeholders.', 'Follow up with relevant context instead of generic reminders.', 'Review which segments create real recurring-fit conversations.'],
+    useCases: ['HVAC cold outreach', 'Facility manager prospecting', 'Commercial service emails'],
+    tips: ['HVAC emails should stay practical.', 'Operational outcomes matter most.', 'Keep sequences short and useful.'],
+    faqs: [
+      { question: 'What should HVAC cold emails focus on?', answer: 'They should focus on the facility problem, the likely service outcome, and one reason the business can help reliably.' },
+      { question: 'Should HVAC emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface tokens.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'email-outreach-strategy', 'apollo-for-hvac-companies']
+  },
+  {
+    slug: 'apollo-for-hvac-companies',
+    title: 'Apollo for HVAC Companies',
+    description: 'How HVAC businesses can use Apollo to target commercial accounts, map buying roles, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['hvac-companies'],
+    steps: ['Define the HVAC segment and service motion before building lists.', 'Use Apollo to narrow accounts by property type, fit, and likely need.', 'Map facilities, operations, ownership, and property stakeholders separately.', 'Launch role-based outreach tied to service outcomes and commercial value.', 'Review account quality and recurring-fit pipeline before scaling volume.'],
+    useCases: ['HVAC Apollo workflow', 'Commercial account targeting', 'Recurring contract prospecting'],
+    tips: ['Apollo helps most when the service motion is already clear.', 'Map real buyers before launch.', 'Review recurring fit early.'],
+    faqs: [
+      { question: 'Can HVAC businesses use Apollo effectively?', answer: 'Yes. Apollo helps HVAC teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What HVAC teams get value fastest from Apollo?', answer: 'Teams with a clear commercial segment, service line, and buyer path usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'how-hvac-companies-get-first-clients']
+  },
+  {
+    slug: 'how-hvac-companies-get-first-clients',
+    title: 'How HVAC Companies Get First Clients',
+    description: 'A founder-led outbound system for HVAC businesses that need first commercial clients, stronger fit, and cleaner early pipeline.',
+    hub: 'for-startups',
+    industries: ['hvac-companies'],
+    steps: ['Choose one HVAC segment and one ideal service need first.', 'Build a short Apollo list of likely-fit commercial accounts.', 'Use direct outreach around one maintenance, uptime, or cost outcome.', 'Take early calls manually and document what buyer types respond best.', 'Refine the segment around the accounts that create the strongest recurring-fit traction.'],
+    useCases: ['New HVAC business launch', 'First commercial contracts', 'Founder-led service validation'],
+    tips: ['Start with one commercial segment.', 'Recurring-fit matters early.', 'Buyer feedback should sharpen the offer.'],
+    faqs: [
+      { question: 'How do HVAC companies get first clients?', answer: 'They usually get there faster by choosing one commercial segment, targeting likely-fit accounts, and using direct outreach around a clear service outcome.' },
+      { question: 'Should new HVAC businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over the first stage of pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'lead-generation-for-hvac-companies', 'how-to-build-a-client-base-from-scratch']
   }
 ];
 
