@@ -102,6 +102,38 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
 
 export const industries: Industry[] = [
   {
+    slug: 'staffing-agencies',
+    name: 'Staffing Agencies',
+    description: 'Use niche outbound to win better-fit staffing clients and recurring recruiting demand.',
+    audience: 'Staffing agencies that need more predictable client acquisition around one niche, stronger hiring urgency, and better-fit accounts.',
+    painPoints: ['Generic staffing outreach', 'Weak urgency targeting', 'Low qualification around fee potential and client fit'],
+    strategy: ['Choose one staffing niche first', 'Target accounts with real hiring pressure', 'Qualify for urgency, fee potential, and client quality before scaling'],
+    subtopics: ['Staffing client acquisition', 'Hiring urgency targeting', 'Niche recruiting pipeline'],
+    featuredSlugs: ['apollo-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'how-staffing-agencies-get-first-clients'],
+    imageAlt: 'Staffing agency team reviewing hiring-account targeting and outbound strategy'
+  },
+  {
+    slug: 'ecommerce-services',
+    name: 'Ecommerce Services',
+    description: 'Build outbound systems for ecommerce service firms targeting brands, operators, and growth teams.',
+    audience: 'Ecommerce service businesses that need clearer niche targeting, stronger buyer mapping, and more predictable outbound client acquisition.',
+    painPoints: ['Broad targeting across low-fit brands', 'Weak role targeting', 'Inconsistent qualification around service and revenue fit'],
+    strategy: ['Choose one ecommerce segment and service first', 'Map founders, growth leaders, and operators separately', 'Qualify for recurring-fit client opportunities before scaling'],
+    subtopics: ['Brand prospecting', 'Ecommerce operator outreach', 'Recurring agency-style pipeline'],
+    featuredSlugs: ['apollo-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients'],
+    imageAlt: 'Ecommerce services team planning outbound growth and brand targeting'
+  },
+  {
+    slug: 'financial-advisors',
+    name: 'Financial Advisors',
+    description: 'Use trust-led outbound and niche targeting to win stronger-fit advisory clients.',
+    audience: 'Financial advisors and advisory firms that need more predictable client acquisition around one niche, one offer, and one buyer profile.',
+    painPoints: ['Broad outreach in trust-heavy markets', 'Weak niche positioning', 'Low qualification around advisory fit and buyer readiness'],
+    strategy: ['Pick one advisory niche first', 'Lead with clarity and business outcomes', 'Qualify for trust, readiness, and long-term value before scaling'],
+    subtopics: ['Advisor niche positioning', 'Trust-led prospecting', 'High-fit advisory outreach'],
+    featuredSlugs: ['apollo-for-financial-advisors', 'lead-generation-for-financial-advisors', 'how-financial-advisors-get-first-clients'],
+    imageAlt: 'Financial advisor team reviewing outbound strategy and target client pipeline'
+  },  {
     slug: 'construction-companies',
     name: 'Construction Companies',
     description: 'Use targeted outbound to win more commercial construction leads and project-fit opportunities.',
@@ -4316,6 +4348,231 @@ export const guides: Guide[] = [
       { question: 'Should new MSPs rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early recurring pipeline.' }
     ],
     relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-staffing-agencies',
+    title: 'How to Find Clients for Staffing Agencies',
+    description: 'A practical outbound framework for staffing agencies that need stronger hiring-account targeting and more predictable client pipeline.',
+    hub: 'find-clients',
+    industries: ['staffing-agencies'],
+    steps: ['Choose one staffing niche and one type of urgent hiring need first.', 'Use Apollo to build account lists around company growth, hiring pattern, and likely fit.', 'Map talent leaders, founders, and department heads separately.', 'Write outreach around speed, candidate quality, or hiring pressure.', 'Review which niches create the strongest qualified staffing conversations.'],
+    useCases: ['Staffing client acquisition', 'Hiring-account targeting', 'Niche staffing pipeline'],
+    tips: ['Urgency matters early.', 'Niche focus improves reply quality.', 'Map the real hiring owner before launch.'],
+    faqs: [
+      { question: 'How do staffing agencies find clients?', answer: 'They usually improve faster when they choose one niche, target accounts with real hiring pressure, and use outbound tied to that specific staffing need.' },
+      { question: 'Should staffing agencies target every open role?', answer: 'No. Better-fit niches and stronger urgency usually create healthier commercial outcomes.' }
+    ],
+    relatedSlugs: ['lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'apollo-for-staffing-agencies', 'how-staffing-agencies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-staffing-agencies',
+    title: 'Lead Generation for Staffing Agencies',
+    description: 'How staffing agencies can generate stronger leads with niche targeting, hiring urgency signals, and better buyer mapping.',
+    hub: 'find-clients',
+    industries: ['staffing-agencies'],
+    steps: ['Define the staffing niche and ideal client profile clearly.', 'Build Apollo account lists around company type, hiring context, and likely fit.', 'Separate talent, operations, and business buyers before launch.', 'Use outreach tied to staffing speed, quality, and urgency.', 'Track lead quality by niche and hiring signal.'],
+    useCases: ['Staffing lead generation', 'Recruitment account targeting', 'Urgency-led pipeline'],
+    tips: ['Niche fit matters more than list size.', 'Hiring urgency should shape segmentation.', 'Review by segment, not by total volume.'],
+    faqs: [
+      { question: 'What matters most in staffing lead generation?', answer: 'Hiring urgency and client fit matter most because not every company with open roles becomes a strong staffing account.' },
+      { question: 'How should staffing agencies segment leads?', answer: 'They should segment by niche, buyer role, hiring urgency, and fee potential.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-recruiters', 'how-staffing-agencies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-staffing-agencies',
+    title: 'Cold Email for Staffing Agencies',
+    description: 'A cold email framework for staffing agencies that need better-fit buyers and more qualified replies from hiring teams.',
+    hub: 'outreach',
+    industries: ['staffing-agencies'],
+    steps: ['Lead with one hiring issue the buyer already feels.', 'Use one proof point tied to speed, quality, or candidate access.', 'Write role-specific versions for talent leaders, founders, and department heads.', 'Follow up with urgency-based context instead of generic reminders.', 'Review which niches create real staffing conversations.'],
+    useCases: ['Staffing cold outreach', 'Talent team emails', 'Hiring-account prospecting'],
+    tips: ['Staffing emails should stay direct.', 'Urgency creates relevance.', 'Keep the first CTA simple.'],
+    faqs: [
+      { question: 'What should staffing agency cold emails focus on?', answer: 'They should focus on the hiring problem, the likely staffing outcome, and one reason the agency can help in that exact context.' },
+      { question: 'Should staffing emails be long?', answer: 'Usually no. Shorter, more direct messages often create better first replies.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'reply-strategy-for-b2b-outreach', 'apollo-for-staffing-agencies']
+  },
+  {
+    slug: 'apollo-for-staffing-agencies',
+    title: 'Apollo for Staffing Agencies',
+    description: 'How staffing agencies can use Apollo to target stronger hiring accounts, map buyer roles, and build cleaner outbound workflow.',
+    hub: 'guides',
+    industries: ['staffing-agencies'],
+    steps: ['Define the staffing niche and ideal client profile before building lists.', 'Use Apollo to narrow accounts by company type, hiring signal, and likely fit.', 'Map talent leaders, founders, and operators separately.', 'Launch outreach tied to one clear hiring or staffing outcome.', 'Review which account types create the best-fit recurring staffing pipeline.'],
+    useCases: ['Staffing Apollo workflow', 'Hiring-account targeting', 'Niche recruiting outreach'],
+    tips: ['Apollo is strongest when the staffing niche is already clear.', 'Map real hiring owners before launch.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Can staffing agencies use Apollo effectively?', answer: 'Yes. Apollo helps staffing teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What staffing teams get value fastest from Apollo?', answer: 'Teams with a clear niche, buyer profile, and hiring problem usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'how-staffing-agencies-get-first-clients']
+  },
+  {
+    slug: 'how-staffing-agencies-get-first-clients',
+    title: 'How Staffing Agencies Get First Clients',
+    description: 'A founder-led outbound system for staffing agencies that need first clients, better niche signal, and cleaner commercial fit.',
+    hub: 'for-startups',
+    industries: ['staffing-agencies'],
+    steps: ['Choose one staffing niche and one ideal client profile first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one hiring outcome and one trust signal.', 'Take early calls manually and note what buyer contexts respond best.', 'Refine the niche around the accounts that create the strongest commercial fit.'],
+    useCases: ['New staffing agency launch', 'First staffing clients', 'Founder-led recruiting validation'],
+    tips: ['Start with one hiring niche.', 'Urgency matters more than volume.', 'Manual selling sharpens the niche faster.'],
+    faqs: [
+      { question: 'How do staffing agencies get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit hiring accounts, and using direct outreach tied to a clear staffing outcome.' },
+      { question: 'Should new staffing agencies wait for inbound first?', answer: 'No. Focused outbound creates faster learning and a more predictable early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-ecommerce-services',
+    title: 'How to Find Clients for Ecommerce Services',
+    description: 'A practical outbound framework for ecommerce service firms that need better-fit brands, stronger role targeting, and more predictable client pipeline.',
+    hub: 'find-clients',
+    industries: ['ecommerce-services'],
+    steps: ['Choose one ecommerce service and one brand segment first.', 'Use Apollo to build account lists around brand type, size, and likely fit.', 'Map founders, growth leaders, and operators separately.', 'Write outreach around revenue, conversion, retention, or operations outcomes.', 'Review which segments create the strongest qualified ecommerce conversations.'],
+    useCases: ['Ecommerce client acquisition', 'Brand prospecting', 'Growth services pipeline'],
+    tips: ['Ecommerce outreach should stay segment-specific.', 'Role mapping matters early.', 'Review by brand type, not just by total replies.'],
+    faqs: [
+      { question: 'How do ecommerce service firms find clients?', answer: 'They usually improve faster when they target one brand segment, map the right buyers, and use outbound tied to one commercial outcome.' },
+      { question: 'Should ecommerce services target every online brand?', answer: 'No. Better-fit segments usually create stronger pipeline and easier delivery.' }
+    ],
+    relatedSlugs: ['lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-ecommerce-services',
+    title: 'Lead Generation for Ecommerce Services',
+    description: 'How ecommerce service businesses can generate stronger leads with tighter segment focus, better buyer mapping, and recurring-fit qualification.',
+    hub: 'find-clients',
+    industries: ['ecommerce-services'],
+    steps: ['Define the ecommerce offer and target brand profile clearly.', 'Build Apollo lists around brand size, growth stage, and likely service fit.', 'Separate founders, growth leaders, and operators before launch.', 'Use outreach that connects your offer to revenue, efficiency, or retention.', 'Track qualified conversations by segment and buyer role.'],
+    useCases: ['Ecommerce lead generation', 'Brand targeting', 'Recurring service pipeline'],
+    tips: ['Brand fit matters more than list size.', 'Map real buyers before launch.', 'Review by segment and commercial fit.'],
+    faqs: [
+      { question: 'What matters most in ecommerce services lead generation?', answer: 'Segment fit and buyer relevance matter most because not every brand has the same growth problems or service needs.' },
+      { question: 'How should ecommerce service teams segment leads?', answer: 'They should segment by brand type, growth stage, buyer role, and likely service fit.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-to-find-clients-for-marketing-agencies', 'how-ecommerce-agencies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-ecommerce-services',
+    title: 'Cold Email for Ecommerce Services',
+    description: 'A cold email framework for ecommerce service firms that need stronger brand relevance and more qualified replies.',
+    hub: 'outreach',
+    industries: ['ecommerce-services'],
+    steps: ['Lead with one brand growth or operational issue the buyer recognizes.', 'Use one proof point tied to revenue, efficiency, or conversion.', 'Write role-specific versions for founders, growth leaders, and operators.', 'Follow up with useful context instead of generic reminders.', 'Review which brand segments create real commercial conversations.'],
+    useCases: ['Ecommerce cold outreach', 'Brand emails', 'Growth service prospecting'],
+    tips: ['Ecommerce emails should stay commercial and specific.', 'Brand context matters in the opener.', 'Keep follow-ups concise.'],
+    faqs: [
+      { question: 'What should ecommerce service cold emails focus on?', answer: 'They should focus on the growth or operational problem, the likely business result, and one reason the service fits that exact brand context.' },
+      { question: 'Should ecommerce emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'email-outreach-strategy', 'apollo-for-ecommerce-services']
+  },
+  {
+    slug: 'apollo-for-ecommerce-services',
+    title: 'Apollo for Ecommerce Services',
+    description: 'How ecommerce service businesses can use Apollo to target better brands, map buying roles, and build cleaner outbound client acquisition.',
+    hub: 'guides',
+    industries: ['ecommerce-services'],
+    steps: ['Define the ecommerce niche and service before building lists.', 'Use Apollo to narrow accounts by brand type, stage, and likely fit.', 'Map founders, growth leaders, and operators separately.', 'Launch role-based outreach tied to one clear commercial outcome.', 'Review account quality before scaling volume.'],
+    useCases: ['Ecommerce Apollo workflow', 'Brand account targeting', 'Growth services outreach'],
+    tips: ['Apollo helps most when brand fit is already clear.', 'Map the buying path before launch.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Can ecommerce service firms use Apollo effectively?', answer: 'Yes. Apollo helps ecommerce service firms combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What ecommerce service teams get value fastest from Apollo?', answer: 'Teams with a clear segment, offer, and buyer path usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients']
+  },
+  {
+    slug: 'how-ecommerce-agencies-get-first-clients',
+    title: 'How Ecommerce Agencies Get First Clients',
+    description: 'A founder-led outbound system for ecommerce service firms that need first clients, better niche signal, and cleaner early pipeline.',
+    hub: 'for-startups',
+    industries: ['ecommerce-services'],
+    steps: ['Choose one ecommerce niche and one ideal brand profile first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one growth or operations outcome and one trust signal.', 'Take early calls manually and note which buyer contexts respond best.', 'Refine the niche around the brands that create the strongest fit.'],
+    useCases: ['New ecommerce agency launch', 'First brand clients', 'Founder-led service validation'],
+    tips: ['Start with one ecommerce niche.', 'Commercial fit matters early.', 'Buyer feedback should shape the offer.'],
+    faqs: [
+      { question: 'How do ecommerce agencies get first clients?', answer: 'They usually get there faster by choosing one brand segment, targeting likely-fit accounts, and using direct outreach tied to a clear commercial outcome.' },
+      { question: 'Should new ecommerce agencies rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'how-to-build-a-client-base-from-scratch']
+  },
+  {
+    slug: 'how-to-find-clients-for-financial-advisors',
+    title: 'How to Find Clients for Financial Advisors',
+    description: 'A practical outbound framework for financial advisors that need stronger niche fit, better trust signals, and more qualified client conversations.',
+    hub: 'find-clients',
+    industries: ['financial-advisors'],
+    steps: ['Choose one advisory niche and one buyer profile first.', 'Use Apollo to build account lists around company type, role, and likely advisory fit.', 'Map founders, owners, and finance-minded stakeholders separately.', 'Write outreach around clarity, financial outcomes, or planning needs.', 'Review which segments create the strongest qualified advisory conversations.'],
+    useCases: ['Advisor client acquisition', 'Trust-led prospecting', 'Niche advisory outreach'],
+    tips: ['Advisors should start with one niche.', 'Trust and clarity matter more than volume.', 'Review by segment and buyer readiness.'],
+    faqs: [
+      { question: 'How do financial advisors find clients?', answer: 'They usually improve faster when they choose one niche, target likely-fit buyers, and use trust-led outreach tied to a clear advisory outcome.' },
+      { question: 'Should financial advisors prospect broadly?', answer: 'No. Narrower targeting usually creates better trust and stronger commercial fit.' }
+    ],
+    relatedSlugs: ['lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'apollo-for-financial-advisors', 'how-financial-advisors-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-financial-advisors',
+    title: 'Lead Generation for Financial Advisors',
+    description: 'How financial advisors can generate stronger leads with tighter niche focus, better buyer mapping, and trust-led qualification.',
+    hub: 'find-clients',
+    industries: ['financial-advisors'],
+    steps: ['Define the advisory offer and target buyer profile clearly.', 'Build Apollo account lists around company type, role, and likely need.', 'Separate owners, founders, and finance-oriented stakeholders before launch.', 'Use outreach tied to clarity, planning, or financial decision quality.', 'Track qualified advisory conversations by niche and buyer type.'],
+    useCases: ['Advisor lead generation', 'Trust-led account targeting', 'High-fit advisory pipeline'],
+    tips: ['Niche fit matters early.', 'Buyer readiness should shape qualification.', 'Review by segment, not only by replies.'],
+    faqs: [
+      { question: 'What matters most in advisor lead generation?', answer: 'Niche relevance and buyer trust matter most because generic advisory outreach rarely creates strong intent.' },
+      { question: 'How should financial advisors segment leads?', answer: 'They should segment by niche, buyer role, company type, and likely advisory fit.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'how-to-find-clients-for-financial-services', 'how-financial-advisors-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-financial-advisors',
+    title: 'Cold Email for Financial Advisors',
+    description: 'A cold email framework for financial advisors that need stronger trust, clearer niche fit, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['financial-advisors'],
+    steps: ['Lead with one financial planning or business issue the buyer recognizes.', 'Use one credibility point tied to clarity, outcomes, or decision quality.', 'Write role-specific versions for founders, owners, and finance-minded contacts.', 'Follow up with useful context instead of generic check-ins.', 'Review which niches create real advisory conversations.'],
+    useCases: ['Advisor cold outreach', 'Trust-led emails', 'Niche advisory prospecting'],
+    tips: ['Advisor emails should stay calm and practical.', 'Trust signals should be specific.', 'Keep sequences concise.'],
+    faqs: [
+      { question: 'What should financial advisor cold emails focus on?', answer: 'They should focus on the financial issue, the likely advisory outcome, and one reason the advisor is relevant to that context.' },
+      { question: 'Should advisor emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'email-outreach-strategy', 'apollo-for-financial-advisors']
+  },
+  {
+    slug: 'apollo-for-financial-advisors',
+    title: 'Apollo for Financial Advisors',
+    description: 'How financial advisors can use Apollo to target better accounts, map buyer roles, and build cleaner outbound client acquisition.',
+    hub: 'guides',
+    industries: ['financial-advisors'],
+    steps: ['Define the advisory niche and buyer profile before building lists.', 'Use Apollo to narrow accounts by company type, role, and likely fit.', 'Map founders, owners, and finance-minded stakeholders separately.', 'Launch trust-led outreach tied to one clear advisory outcome.', 'Review which segments create the best-fit advisory conversations.'],
+    useCases: ['Advisor Apollo workflow', 'Trust-led targeting', 'Niche client acquisition'],
+    tips: ['Apollo is strongest when the advisory niche is already clear.', 'Map real buyers before launch.', 'Review fit before scaling volume.'],
+    faqs: [
+      { question: 'Can financial advisors use Apollo effectively?', answer: 'Yes. Apollo helps advisors combine account targeting, buyer mapping, and outbound execution in one workflow.' },
+      { question: 'What advisors get value fastest from Apollo?', answer: 'Advisors with a clear niche, offer, and buyer profile usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'how-financial-advisors-get-first-clients']
+  },
+  {
+    slug: 'how-financial-advisors-get-first-clients',
+    title: 'How Financial Advisors Get First Clients',
+    description: 'A founder-led outbound system for financial advisors that need first clients, stronger trust, and cleaner early niche signal.',
+    hub: 'for-startups',
+    industries: ['financial-advisors'],
+    steps: ['Choose one advisory niche and one ideal buyer profile first.', 'Build a short Apollo list of likely-fit accounts.', 'Use direct outreach around one financial outcome and one trust signal.', 'Take early calls manually and note which buyer contexts respond best.', 'Refine the niche around the accounts that create the strongest fit.'],
+    useCases: ['New advisor launch', 'First advisory clients', 'Founder-led niche validation'],
+    tips: ['Start with one advisory niche.', 'Trust comes from clarity and fit.', 'Manual selling sharpens the offer faster.'],
+    faqs: [
+      { question: 'How do financial advisors get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit buyers, and using direct outreach tied to a clear advisory outcome.' },
+      { question: 'Should new advisors rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'lead-generation-for-financial-advisors', 'how-to-build-a-client-base-from-scratch']
   }
 ];
 
