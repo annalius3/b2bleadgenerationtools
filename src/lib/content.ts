@@ -2810,6 +2810,516 @@ export const guides: Guide[] = [
       { question: 'What should happen at the end of each week?', answer: 'Review the signal, decide one process improvement, and carry it into the next cycle.' }
     ],
     relatedSlugs: ['outbound-campaign-audit-framework', 'apollo-list-cleaning-checklist', 'tracking-outreach-performance']
+  },
+  {
+    slug: 'how-to-find-clients-for-marketing-agencies',
+    title: 'How to Find Clients for Marketing Agencies',
+    description: 'A practical outbound system for agencies that need steady retainer-fit clients without relying only on referrals.',
+    hub: 'find-clients',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Choose one agency offer and one buyer segment before building lists.',
+      'Use Apollo filters to build accounts by niche, size, and service fit.',
+      'Map founders, marketing leaders, and operators separately.',
+      'Write proof-based outreach around business outcomes, not generic capabilities.',
+      'Review booked calls by niche so you can double down on the best segment.'
+    ],
+    useCases: ['Agency new business', 'Retainer-focused outbound', 'Niche service positioning'],
+    tips: ['Agencies win faster when they narrow the offer first.', 'Case-study proof beats clever copy.', 'Review meetings by niche, not only total volume.'],
+    faqs: [
+      {
+        question: 'What is the fastest way for an agency to find clients?',
+        answer: 'The fastest route is usually one narrow offer, one niche, and outbound aimed at buyers that already feel the problem.'
+      },
+      {
+        question: 'Should agencies target every kind of company?',
+        answer: 'No. Agencies usually perform better when they pick one segment where the proof and messaging are easier to trust.'
+      }
+    ],
+    relatedSlugs: ['lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'how-marketing-agencies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-marketing-agencies',
+    title: 'Lead Generation for Marketing Agencies',
+    description: 'How agencies can build a repeatable lead generation engine around one offer, one niche, and one clear buyer problem.',
+    hub: 'find-clients',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Pick a service line that solves an urgent commercial problem.',
+      'Build account lists around companies that already match the service economics.',
+      'Create contact lists for founders, VPs, and operators with different decision roles.',
+      'Use Apollo segmentation to separate retainer-fit and project-fit prospects.',
+      'Track qualified pipeline by service line to see where agency demand is strongest.'
+    ],
+    useCases: ['Agency lead generation system', 'Outbound retainer pipeline', 'Niche agency growth'],
+    tips: ['A repeatable niche is easier to scale than broad agency outreach.', 'Segment by service economics, not only by industry.', 'Keep project-fit and retainer-fit lists separate.'],
+    faqs: [
+      {
+        question: 'What kind of agency lead generation works best?',
+        answer: 'The strongest systems usually combine niche targeting, proof-led outreach, and qualification that filters out low-fit one-off work.'
+      },
+      {
+        question: 'How many segments should an agency test?',
+        answer: 'Most agencies should start with one or two segments instead of trying to sell every service to every market.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'how-marketing-agencies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-marketing-agencies',
+    title: 'Cold Email for Marketing Agencies',
+    description: 'A cold email framework for agencies that need more qualified conversations with ideal-fit clients.',
+    hub: 'outreach',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Lead with the specific business problem your agency solves best.',
+      'Use one short proof point that matches the target niche.',
+      'Write different email angles for founders and marketing leads.',
+      'Follow up with one useful observation instead of generic reminders.',
+      'Review reply quality and meeting quality every week.'
+    ],
+    useCases: ['Agency cold email launch', 'Retainer client outreach', 'Proof-led agency messaging'],
+    tips: ['Agency emails should sound commercial, not promotional.', 'One relevant proof point is enough.', 'Shorter sequences are easier to debug.'],
+    faqs: [
+      {
+        question: 'What should agencies say in a cold email?',
+        answer: 'Agencies should focus on the buyer problem, the likely outcome, and one reason to trust the offer.'
+      },
+      {
+        question: 'Do agencies need heavy personalization?',
+        answer: 'Not always. Clear niche fit usually matters more than excessive personalization.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'apollo-cold-email-sequence-template', 'how-marketing-agencies-get-first-clients']
+  },
+  {
+    slug: 'apollo-outbound-for-marketing-agencies',
+    title: 'Apollo Outbound for Marketing Agencies',
+    description: 'How marketing agencies can use Apollo to find niche accounts, reach the right buyers, and create predictable outbound pipeline.',
+    hub: 'guides',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Define the agency offer and target segment before list building.',
+      'Use Apollo to filter for account fit, size, and geography.',
+      'Build separate lists for founders, marketing owners, and operations leaders.',
+      'Launch proof-led outreach that matches the service line.',
+      'Review which niches create the highest quality sales conversations.'
+    ],
+    useCases: ['Agency outbound stack', 'Client acquisition workflow', 'Niche outreach campaigns'],
+    tips: ['Apollo is strongest for agencies that already know their best niche.', 'Separate audiences by role.', 'Keep proof close to the offer.'],
+    faqs: [
+      {
+        question: 'Is Apollo good for agencies?',
+        answer: 'Yes, especially for agencies that want one workflow for list building, segmentation, and outbound execution.'
+      },
+      {
+        question: 'What agencies benefit most from Apollo?',
+        answer: 'Agencies with a clear offer, niche, and proof usually get value fastest.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'how-marketing-agencies-get-first-clients']
+  },
+  {
+    slug: 'how-marketing-agencies-get-first-clients',
+    title: 'How Marketing Agencies Get First Clients',
+    description: 'A focused playbook for new agencies that need their first clients without waiting for referrals or paid traffic to work.',
+    hub: 'for-startups',
+    industries: ['marketing-agencies'],
+    steps: [
+      'Choose one service offer that solves an urgent business problem.',
+      'Build a small Apollo list of ideal early accounts.',
+      'Write direct outreach around one clear outcome and one proof point.',
+      'Book calls manually and use objections to refine positioning.',
+      'Double down on the segment that creates the best-fit conversations.'
+    ],
+    useCases: ['New agency launch', 'First retainer clients', 'Founder-led sales'],
+    tips: ['New agencies should sell one thing clearly.', 'Manual follow-up is useful early.', 'The first niche often matters more than the first logo.'],
+    faqs: [
+      {
+        question: 'How do agencies get first clients fastest?',
+        answer: 'The fastest route is usually a narrow offer, a short list of ideal accounts, and direct outreach tied to one business result.'
+      },
+      {
+        question: 'Should new agencies use paid ads first?',
+        answer: 'Usually no. Outbound and direct network-based prospecting are often faster at the beginning.'
+      }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'lead-generation-for-marketing-agencies']
+  },
+  {
+    slug: 'how-to-find-clients-for-consulting-firms',
+    title: 'How to Find Clients for Consulting Firms',
+    description: 'A practical client acquisition framework for consulting firms that sell expertise-led offers and need better outbound focus.',
+    hub: 'find-clients',
+    industries: ['consulting-firms'],
+    steps: ['Choose one consulting offer and one buyer situation with clear urgency.', 'Build account lists around companies that already match the problem pattern.', 'Map decision-makers and internal champions before writing outreach.', 'Use messages that lead with business outcomes, not credentials alone.', 'Track which buyer contexts lead to the strongest discovery calls.'],
+    useCases: ['Consulting client acquisition', 'Expert-led outbound', 'High-ticket service sales'],
+    tips: ['Consulting outreach should sound practical, not academic.', 'Choose one buyer context first.', 'Strong qualification protects calendar quality.'],
+    faqs: [
+      { question: 'What is the best way for consulting firms to find clients?', answer: 'Most firms improve fastest when they narrow the offer, target a specific buyer situation, and use outreach tied to clear business outcomes.' },
+      { question: 'Should consultants sell credentials first?', answer: 'No. Outcomes and context usually create more traction than credentials alone.' }
+    ],
+    relatedSlugs: ['lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'apollo-for-consulting-firms', 'how-consulting-firms-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-consulting-firms',
+    title: 'Lead Generation for Consulting Firms',
+    description: 'How consulting firms can build a steady lead generation system around narrow positioning, account fit, and trust-based outreach.',
+    hub: 'find-clients',
+    industries: ['consulting-firms'],
+    steps: ['Clarify the consulting problem you solve and who feels it first.', 'Use Apollo to create account lists by size, complexity, and likely advisory need.', 'Separate sponsor, user, and blocker roles before outreach begins.', 'Use proof and outcome framing to create stronger first-touch relevance.', 'Review opportunity quality, not only reply volume.'],
+    useCases: ['Advisory growth', 'Boutique consulting outreach', 'Outbound business development'],
+    tips: ['Consulting lead gen starts with clear positioning.', 'High-fit lists beat large lists.', 'Track opportunity quality by offer line.'],
+    faqs: [
+      { question: 'What makes consulting lead generation hard?', answer: 'Advisory offers are often abstract, so firms need much clearer buyer context and qualification than generic services businesses.' },
+      { question: 'How should consulting firms qualify leads?', answer: 'They should qualify for urgency, budget fit, buyer access, and likelihood of recurring value.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'how-consulting-firms-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-consulting-firms',
+    title: 'Cold Email for Consulting Firms',
+    description: 'A simple cold email approach for consulting firms that need more qualified conversations with buyers who already feel the problem.',
+    hub: 'outreach',
+    industries: ['consulting-firms'],
+    steps: ['Open with the business issue the buyer likely recognizes already.', 'Use one credibility point that matches the offer and the segment.', 'Write messages in plain business language instead of consulting jargon.', 'Follow up with angle changes, not repeated reminders.', 'Review positive reply quality before adding more volume.'],
+    useCases: ['Consulting outreach', 'Advisory client acquisition', 'High-trust email campaigns'],
+    tips: ['Plain language beats abstract consulting phrases.', 'Reference one business outcome clearly.', 'Test one narrow segment at a time.'],
+    faqs: [
+      { question: 'What should consulting cold emails focus on?', answer: 'They should focus on the buyer problem, the likely outcome, and one reason the consulting firm understands that context.' },
+      { question: 'Should consulting firms use long emails?', answer: 'Usually no. Shorter, more direct messages tend to create better first replies.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'apollo-cold-email-sequence-template', 'apollo-for-consulting-firms']
+  },
+  {
+    slug: 'apollo-for-consulting-firms',
+    title: 'Apollo for Consulting Firms',
+    description: 'How consulting firms can use Apollo to target better accounts, find decision-makers, and build a cleaner outbound workflow.',
+    hub: 'guides',
+    industries: ['consulting-firms'],
+    steps: ['Define the consulting offer and target scenario before building lists.', 'Use Apollo filters to narrow accounts by fit, size, and likely advisory need.', 'Map sponsors, champions, and economic buyers separately.', 'Launch trust-led outreach with a clear problem and outcome angle.', 'Review which account types produce real consulting opportunities.'],
+    useCases: ['Consulting outbound workflow', 'Advisory prospecting', 'Boutique firm growth'],
+    tips: ['Apollo helps most when the consulting offer is already clear.', 'Map real buyer paths early.', 'Review meetings for fit, not just count.'],
+    faqs: [
+      { question: 'Can consulting firms use Apollo effectively?', answer: 'Yes. Apollo is useful for consulting firms that want better account selection, contact mapping, and outreach execution in one workflow.' },
+      { question: 'What consulting firms get the most value from Apollo?', answer: 'Firms with a clear niche, offer, and ideal buyer context usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'how-consulting-firms-get-first-clients']
+  },
+  {
+    slug: 'how-consulting-firms-get-first-clients',
+    title: 'How Consulting Firms Get First Clients',
+    description: 'A founder-led outbound system for consulting firms that need their first clients and cleaner market feedback.',
+    hub: 'for-startups',
+    industries: ['consulting-firms'],
+    steps: ['Start with one consulting offer that solves a concrete business problem.', 'Build a short list of likely-fit accounts in Apollo.', 'Use direct outreach that explains the problem, outcome, and reason to talk now.', 'Take calls manually and document objections carefully.', 'Refine positioning around the segment that shows the strongest traction.'],
+    useCases: ['Solo consultant launch', 'Boutique firm setup', 'Early consulting sales'],
+    tips: ['The first consulting clients usually come from a narrow problem set.', 'Manual calls create better learning.', 'Clarity matters more than brand at the start.'],
+    faqs: [
+      { question: 'How do consulting firms get first clients?', answer: 'They usually get first clients by narrowing the offer, targeting one buyer situation, and running direct outreach with clear business language.' },
+      { question: 'Should new consulting firms wait for referrals?', answer: 'No. Referrals help, but direct outreach creates faster market feedback and more predictable pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'lead-generation-for-consulting-firms']
+  },
+  {
+    slug: 'how-to-find-clients-for-it-services',
+    title: 'How to Find Clients for IT Services',
+    description: 'A practical outbound playbook for IT services firms that need better-fit accounts and more qualified technical sales conversations.',
+    hub: 'find-clients',
+    industries: ['it-services'],
+    steps: ['Choose one service line and one target account profile first.', 'Build Apollo lists around size, stack, and delivery-fit signals.', 'Map technical buyers and commercial stakeholders separately.', 'Use outreach tied to delivery outcomes, risk reduction, and speed.', 'Review which account types create the strongest qualified meetings.'],
+    useCases: ['Managed services growth', 'IT consulting outbound', 'Technical account targeting'],
+    tips: ['Service-fit matters more than list size.', 'Separate technical and executive messaging.', 'Review pipeline by service line.'],
+    faqs: [
+      { question: 'How do IT services companies find clients?', answer: 'They usually perform best when they target accounts that fit delivery patterns, then write outreach for both technical and commercial buyers.' },
+      { question: 'Should IT services target every company with tech needs?', answer: 'No. Better-fit accounts close faster and produce healthier delivery economics.' }
+    ],
+    relatedSlugs: ['lead-generation-for-it-services', 'cold-email-for-it-services', 'apollo-for-it-services', 'how-it-services-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-it-services',
+    title: 'Lead Generation for IT Services',
+    description: 'How IT services firms can generate qualified leads by matching account selection to delivery fit and buyer complexity.',
+    hub: 'find-clients',
+    industries: ['it-services'],
+    steps: ['Start with one service category and define ideal account fit clearly.', 'Use Apollo to create segmented lists by vertical, tech environment, and buyer role.', 'Separate project-led opportunities from retainer-led opportunities.', 'Write outreach around operational pain and commercial outcomes.', 'Track meetings and pipeline by service line to see where demand is real.'],
+    useCases: ['IT services lead generation', 'MSP client pipeline', 'Technical sales campaigns'],
+    tips: ['Lead generation should match delivery economics.', 'Not every qualified contact is a qualified account.', 'Retainer and project motions should stay separate.'],
+    faqs: [
+      { question: 'What matters most in IT services lead generation?', answer: 'Account fit matters most because weak-fit accounts often create long sales cycles and poor delivery quality later.' },
+      { question: 'How should IT services firms segment leads?', answer: 'They should segment by service type, buyer role, technical environment, and likely urgency.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'how-it-services-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-it-services',
+    title: 'Cold Email for IT Services',
+    description: 'A cold email framework for IT services teams that need stronger technical relevance and more qualified replies.',
+    hub: 'outreach',
+    industries: ['it-services'],
+    steps: ['Open with a problem the buyer can recognize immediately.', 'Use one service outcome or delivery proof point that fits the segment.', 'Write separate versions for technical stakeholders and business owners.', 'Follow up with operational relevance instead of generic persistence.', 'Review reply quality by segment before increasing volume.'],
+    useCases: ['MSP cold outreach', 'IT consulting emails', 'Service-led technical outreach'],
+    tips: ['Technical buyers want clarity, not hype.', 'Reference one delivery risk or outcome.', 'Keep follow-ups useful.'],
+    faqs: [
+      { question: 'What should IT services cold emails include?', answer: 'They should include the business or technical problem, the likely outcome, and a reason the team understands the delivery context.' },
+      { question: 'Should IT services emails sound highly technical?', answer: 'Only where needed. Relevance matters more than jargon.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'apollo-email-deliverability-best-practices', 'apollo-for-it-services']
+  },
+  {
+    slug: 'apollo-for-it-services',
+    title: 'Apollo for IT Services',
+    description: 'How IT services firms can use Apollo to target better accounts, map technical buyers, and launch cleaner outbound campaigns.',
+    hub: 'guides',
+    industries: ['it-services'],
+    steps: ['Choose a service line and define what good-fit accounts look like.', 'Use Apollo filters for company fit, stack clues, and buyer role targeting.', 'Map technical, operational, and executive stakeholders separately.', 'Launch outreach that connects delivery capability to business outcomes.', 'Review opportunity quality by account type and service line.'],
+    useCases: ['IT services Apollo workflow', 'Technical account targeting', 'MSP prospecting'],
+    tips: ['Apollo is most useful when account fit is already defined.', 'Map roles before writing sequences.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Is Apollo useful for IT services firms?', answer: 'Yes. Apollo helps IT services firms combine account targeting, buyer mapping, and outbound execution in one system.' },
+      { question: 'What IT services motion works best with Apollo?', answer: 'A service-line-specific motion with clear account fit and role-based outreach usually works best.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'cold-email-for-it-services', 'how-it-services-companies-get-first-clients']
+  },
+  {
+    slug: 'how-it-services-companies-get-first-clients',
+    title: 'How IT Services Companies Get First Clients',
+    description: 'A lean outbound system for IT services teams that need their first clients without waiting for referrals to do all the work.',
+    hub: 'for-startups',
+    industries: ['it-services'],
+    steps: ['Start with one service offer and one target account type.', 'Use Apollo to build a short list of high-fit businesses.', 'Write direct outreach around a delivery outcome or problem you can solve fast.', 'Take early calls manually and document what buyers actually care about.', 'Refine the offer around the segment that creates real traction.'],
+    useCases: ['New IT services launch', 'First MSP clients', 'Founder-led technical sales'],
+    tips: ['Clarity beats breadth in the first 10 clients.', 'Early conversations should sharpen the offer.', 'Target service-fit accounts only.'],
+    faqs: [
+      { question: 'How do IT services firms get first clients?', answer: 'Most get there faster by targeting one service-friendly segment and running direct outreach tied to a clear operational result.' },
+      { question: 'Should new IT services firms rely on referrals only?', answer: 'No. Referrals help, but outbound creates faster feedback and more control over the pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'lead-generation-for-it-services']
+  },
+  {
+    slug: 'how-to-find-clients-for-saas-companies',
+    title: 'How to Find Clients for SaaS Companies',
+    description: 'A practical outbound framework for SaaS teams that need qualified pipeline from the right ICP instead of broad list volume.',
+    hub: 'find-clients',
+    industries: ['saas-companies'],
+    steps: ['Define one ICP, one use case, and one business problem first.', 'Use Apollo to build account lists by firmographic and buying-fit filters.', 'Map operators, managers, and budget owners separately.', 'Write outreach around the use case that matters most to the segment.', 'Review meetings and opportunities by ICP slice each week.'],
+    useCases: ['B2B SaaS outbound', 'First SDR workflow', 'ICP-based client acquisition'],
+    tips: ['SaaS teams should narrow by use case before they scale.', 'Operators and budget owners need different messages.', 'Review pipeline by segment.'],
+    faqs: [
+      { question: 'How do SaaS companies find clients faster?', answer: 'They usually improve faster when they narrow the ICP, map the right stakeholders, and run use-case-specific outreach.' },
+      { question: 'Should SaaS teams prioritize volume first?', answer: 'No. Better account selection usually beats higher contact volume.' }
+    ],
+    relatedSlugs: ['lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-saas-startups-get-first-customers']
+  },
+  {
+    slug: 'lead-generation-for-saas-companies',
+    title: 'Lead Generation for SaaS Companies',
+    description: 'How SaaS teams can generate stronger leads with tighter ICP logic, better role mapping, and more useful prospecting workflows.',
+    hub: 'find-clients',
+    industries: ['saas-companies'],
+    steps: ['Choose the customer segment where the product already creates clear value.', 'Build Apollo account lists around fit, maturity, and likely buying trigger.', 'Separate contact lists by operational user, manager, and budget owner.', 'Launch targeted outreach around one use case at a time.', 'Track qualified pipeline by segment instead of blended totals.'],
+    useCases: ['SaaS pipeline generation', 'ICP refinement', 'Mid-market prospecting'],
+    tips: ['A strong ICP is a lead generation multiplier.', 'Use-case messaging usually outperforms generic product copy.', 'Segment reporting is critical.'],
+    faqs: [
+      { question: 'What matters most in SaaS lead generation?', answer: 'Clear ICP selection and use-case relevance matter most because broad SaaS outreach often creates noise instead of real opportunities.' },
+      { question: 'How many ICPs should a SaaS team run at once?', answer: 'Most teams should focus on one or two ICP slices until the motion is repeatable.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'apollo-for-saas-lead-generation', 'how-saas-startups-get-first-customers']
+  },
+  {
+    slug: 'cold-email-for-saas-companies',
+    title: 'Cold Email for SaaS Companies',
+    description: 'A cold email framework for SaaS teams that need more qualified replies from the right accounts and buyer roles.',
+    hub: 'outreach',
+    industries: ['saas-companies'],
+    steps: ['Lead with one use case and one problem the segment already recognizes.', 'Use one credibility point tied to the target buyer context.', 'Write separate email versions for operators and economic buyers.', 'Follow up with useful relevance, not repeated generic nudges.', 'Review positive replies by segment to sharpen ICP fit.'],
+    useCases: ['SaaS cold outbound', 'Use-case-led campaigns', 'ICP email testing'],
+    tips: ['Shorter SaaS emails often work better.', 'Use cases are stronger than generic feature lists.', 'Role-based messaging matters.'],
+    faqs: [
+      { question: 'What should SaaS cold emails say?', answer: 'They should explain the problem, the likely outcome, and why the use case is relevant to that buyer.' },
+      { question: 'Should SaaS emails focus on product features?', answer: 'Only where they support a clear business outcome. Use-case relevance is usually stronger.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'how-to-get-replies-to-cold-emails', 'apollo-outbound-for-saas-companies']
+  },
+  {
+    slug: 'apollo-outbound-for-saas-companies',
+    title: 'Apollo Outbound for SaaS Companies',
+    description: 'How SaaS teams can use Apollo to define ICP, build cleaner lists, and run repeatable outbound for real pipeline growth.',
+    hub: 'guides',
+    industries: ['saas-companies'],
+    steps: ['Start with one ICP and one use-case-led value proposition.', 'Use Apollo to build account lists around firmographic fit and signals.', 'Map operators, evaluators, and budget owners before outreach.', 'Launch role-based sequences with one clear CTA.', 'Review qualified meetings and pipeline by ICP slice.'],
+    useCases: ['SaaS outbound workflow', 'ICP prospecting', 'Lean SDR operations'],
+    tips: ['Apollo is strongest when the ICP is already directionally clear.', 'Review results by segment.', 'Use one CTA per motion.'],
+    faqs: [
+      { question: 'Is Apollo good for SaaS companies?', answer: 'Yes. Apollo works well for SaaS teams that need one system for list building, segmentation, and top-of-funnel outbound execution.' },
+      { question: 'What SaaS teams benefit most from Apollo?', answer: 'Teams with a defined use case and a clear buyer profile usually get value fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'how-saas-startups-get-first-customers']
+  },
+  {
+    slug: 'how-saas-startups-get-first-customers',
+    title: 'How SaaS Startups Get First Customers',
+    description: 'A founder-led outbound framework for SaaS startups that need first customers, fast learning, and a narrow ICP.',
+    hub: 'for-startups',
+    industries: ['saas-companies'],
+    steps: ['Choose one ICP and one painful use case worth solving now.', 'Build a small Apollo list of ideal early accounts.', 'Write direct outreach around the use case, not the whole product.', 'Run manual follow-up and document objections carefully.', 'Refine positioning around the segment that produces the best calls.'],
+    useCases: ['First SaaS customers', 'Founder-led sales', 'Pre-repeatable GTM'],
+    tips: ['Narrower ICP creates faster learning.', 'Manual selling is useful early.', 'Use objections as product and positioning feedback.'],
+    faqs: [
+      { question: 'How do SaaS startups get first customers?', answer: 'They usually get there faster with one ICP, one use case, and direct outreach that creates high-context feedback loops.' },
+      { question: 'Should SaaS startups automate early outbound heavily?', answer: 'Usually no. Early manual outreach helps refine both the offer and the segment.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-saas-companies']
+  },
+  {
+    slug: 'how-to-find-clients-for-recruiters',
+    title: 'How to Find Clients for Recruiters',
+    description: 'A practical client acquisition process for recruiters that need better hiring-account targeting and stronger decision-maker access.',
+    hub: 'find-clients',
+    industries: ['recruiters'],
+    steps: ['Choose one hiring niche and one type of recruiting pain to solve.', 'Use Apollo to build account lists around hiring patterns and business fit.', 'Map hiring owners, department heads, and talent leaders separately.', 'Write outreach tied to role urgency and hiring risk.', 'Review meetings by hiring niche to see where urgency is real.'],
+    useCases: ['Recruiting client acquisition', 'Staffing business development', 'Hiring-account targeting'],
+    tips: ['Recruiters need urgency, not broad lists.', 'Target the real hiring owner first.', 'Keep niche focus tight.'],
+    faqs: [
+      { question: 'How do recruiters find clients faster?', answer: 'Recruiters usually find clients faster when they focus on a specific hiring niche and target accounts with clear urgency.' },
+      { question: 'Should recruiters target every company with open roles?', answer: 'No. Role urgency, fee potential, and buyer access matter more than raw hiring volume.' }
+    ],
+    relatedSlugs: ['lead-generation-for-recruiters', 'cold-email-for-recruiters', 'apollo-for-recruiters', 'how-recruiters-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-recruiters',
+    title: 'Lead Generation for Recruiters',
+    description: 'How recruiters can generate better leads by targeting hiring urgency, buyer access, and higher-value recruiting contexts.',
+    hub: 'find-clients',
+    industries: ['recruiters'],
+    steps: ['Define the candidate niche and target account profile clearly.', 'Build Apollo lists around company growth, role urgency, and likely recruiter usage.', 'Segment contacts by hiring ownership and influence.', 'Launch outreach that connects recruiting pain to business outcomes.', 'Track client opportunities by niche and urgency level.'],
+    useCases: ['Recruiter lead generation', 'Agency recruiting outbound', 'Staffing niche growth'],
+    tips: ['Urgency is the core recruiting signal.', 'Segment by niche and account type.', 'Opportunity quality beats list size.'],
+    faqs: [
+      { question: 'What matters most in recruiter lead generation?', answer: 'Urgency and buyer access matter most because recruiting demand changes fast and not every open role leads to commercial value.' },
+      { question: 'How should recruiters qualify accounts?', answer: 'They should qualify for niche fit, fee potential, urgency, and access to the actual hiring owner.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-decision-makers-with-apollo', 'how-recruiters-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-recruiters',
+    title: 'Cold Email for Recruiters',
+    description: 'A cold email approach for recruiters that need more replies from hiring teams and fewer generic dead-end conversations.',
+    hub: 'outreach',
+    industries: ['recruiters'],
+    steps: ['Lead with the hiring problem, not a generic recruiting pitch.', 'Use one proof point tied to speed, quality, or niche candidate access.', 'Write role-specific versions for founders, talent leaders, and department heads.', 'Follow up with urgency-based context instead of repetitive reminders.', 'Review which hiring niches create the strongest positive replies.'],
+    useCases: ['Recruiting cold email', 'Hiring-team outreach', 'Staffing prospecting'],
+    tips: ['Recruiters should sound direct and useful.', 'Urgency creates relevance.', 'Different hiring owners need different language.'],
+    faqs: [
+      { question: 'What should recruiter cold emails focus on?', answer: 'They should focus on the open hiring problem, the likely recruiting outcome, and one reason the recruiter can help quickly.' },
+      { question: 'Do recruiters need long cold emails?', answer: 'Usually no. Shorter, more direct emails tend to create better responses.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'reply-strategy-for-b2b-outreach', 'apollo-for-recruiters']
+  },
+  {
+    slug: 'apollo-for-recruiters',
+    title: 'Apollo for Recruiters',
+    description: 'How recruiters can use Apollo to map hiring accounts, find decision-makers, and run more targeted outbound client acquisition.',
+    hub: 'guides',
+    industries: ['recruiters'],
+    steps: ['Choose one recruiting niche and target account profile first.', 'Use Apollo to build hiring-account lists by size, growth, and role need.', 'Map hiring owners, department leaders, and internal influencers separately.', 'Launch outreach tied to urgency, role difficulty, and business impact.', 'Review which niches create real recruiting conversations and fee potential.'],
+    useCases: ['Recruiting outbound workflow', 'Hiring decision-maker mapping', 'Staffing prospecting'],
+    tips: ['Apollo is useful when the recruiting niche is already clear.', 'Map the real hiring owner early.', 'Review urgency before scale.'],
+    faqs: [
+      { question: 'Is Apollo useful for recruiters?', answer: 'Yes. Apollo helps recruiters combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What recruiting firms get the most value from Apollo?', answer: 'Firms with a clear niche and a repeatable hiring problem usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'cold-email-for-recruiters', 'how-recruiters-get-first-clients']
+  },
+  {
+    slug: 'how-recruiters-get-first-clients',
+    title: 'How Recruiters Get First Clients',
+    description: 'A lean outbound plan for recruiters who need first clients, direct market feedback, and a repeatable niche motion.',
+    hub: 'for-startups',
+    industries: ['recruiters'],
+    steps: ['Pick one recruiting niche and one type of urgent role to focus on.', 'Build a short Apollo list of likely-fit hiring accounts.', 'Write direct outreach around the hiring pain and speed to value.', 'Take calls manually and note what buyers care about most.', 'Double down on the niche that creates the clearest urgency and fee potential.'],
+    useCases: ['New recruiting firm launch', 'First staffing clients', 'Niche recruiting setup'],
+    tips: ['Urgency matters more than volume early.', 'Manual selling creates stronger feedback.', 'Niche choice drives recruiter traction.'],
+    faqs: [
+      { question: 'How do recruiters get first clients?', answer: 'They usually get first clients by choosing a specific niche, targeting accounts with active urgency, and using direct outreach tied to that hiring pain.' },
+      { question: 'Should recruiters wait for inbound leads first?', answer: 'No. Early outbound helps recruiters learn the market and create a more predictable path to first revenue.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-phone-numbers-of-decision-makers', 'lead-generation-for-recruiters']
+  },
+  {
+    slug: 'how-to-find-clients-for-accounting-firms',
+    title: 'How to Find Clients for Accounting Firms',
+    description: 'A practical outbound strategy for accounting firms that need recurring clients and more control over pipeline than referrals alone provide.',
+    hub: 'find-clients',
+    industries: ['accounting-firms'],
+    steps: ['Choose one accounting offer and one business segment before prospecting.', 'Use Apollo to build account lists around company size, complexity, and likely need.', 'Map founders, finance leaders, and operations owners separately.', 'Write trust-led outreach around financial clarity and operational outcomes.', 'Review which account types create the strongest recurring opportunities.'],
+    useCases: ['Accounting client acquisition', 'Bookkeeping outreach', 'CFO advisory pipeline'],
+    tips: ['Accounting firms should sell one clear outcome.', 'Recurring-fit clients matter most.', 'Trust and clarity beat clever copy.'],
+    faqs: [
+      { question: 'How do accounting firms find clients?', answer: 'The strongest approach is usually a narrow offer, a defined target segment, and direct outreach built around trust and recurring value.' },
+      { question: 'Should accounting firms rely only on referrals?', answer: 'No. Referrals help, but outbound creates more control and more consistent pipeline.' }
+    ],
+    relatedSlugs: ['lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'apollo-for-accounting-firms', 'how-accounting-firms-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-accounting-firms',
+    title: 'Lead Generation for Accounting Firms',
+    description: 'How accounting firms can generate stronger leads by targeting recurring-fit clients and using trust-led outbound positioning.',
+    hub: 'find-clients',
+    industries: ['accounting-firms'],
+    steps: ['Define the accounting service that creates the strongest recurring value.', 'Use Apollo to build account lists by company size, complexity, and likely finance pain.', 'Segment contacts by founder, finance owner, and operator roles.', 'Launch outreach that speaks to financial clarity, control, and business outcomes.', 'Track which segments produce real recurring opportunities.'],
+    useCases: ['Bookkeeping lead generation', 'CFO advisory outreach', 'Recurring accounting growth'],
+    tips: ['Recurring-fit accounts are the right priority.', 'Trust-heavy outreach needs clear language.', 'Keep one-off projects separate from long-term opportunities.'],
+    faqs: [
+      { question: 'What matters most in accounting lead generation?', answer: 'Recurring fit matters most because long-term client value is usually better than chasing disconnected one-off projects.' },
+      { question: 'How should accounting firms segment leads?', answer: 'They should segment by service line, company complexity, buyer role, and likely urgency.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'client-acquisition-for-consultants', 'how-accounting-firms-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-accounting-firms',
+    title: 'Cold Email for Accounting Firms',
+    description: 'A cold email framework for accounting firms that need more trust, better-fit buyers, and more recurring client conversations.',
+    hub: 'outreach',
+    industries: ['accounting-firms'],
+    steps: ['Lead with the financial or reporting problem the buyer already feels.', 'Use one credibility point tied to clarity, control, or peace of mind.', 'Write role-specific emails for founders, finance leads, and operators.', 'Follow up with useful context instead of generic nudges.', 'Review which segments respond with real recurring-fit interest.'],
+    useCases: ['Accounting cold outreach', 'Finance services email campaigns', 'Recurring client prospecting'],
+    tips: ['Trust-heavy outreach should stay simple.', 'Use business language instead of accounting jargon.', 'Short sequences are easier to improve.'],
+    faqs: [
+      { question: 'What should accounting cold emails focus on?', answer: 'They should focus on the finance problem, the business outcome, and one reason the firm can help with that situation.' },
+      { question: 'Should accounting emails be long and detailed?', answer: 'Usually no. Shorter, clearer emails often create stronger early trust.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'email-outreach-strategy', 'apollo-for-accounting-firms']
+  },
+  {
+    slug: 'apollo-for-accounting-firms',
+    title: 'Apollo for Accounting Firms',
+    description: 'How accounting firms can use Apollo to find recurring-fit accounts, reach decision-makers, and create a cleaner outbound workflow.',
+    hub: 'guides',
+    industries: ['accounting-firms'],
+    steps: ['Define the accounting offer and target client profile before building lists.', 'Use Apollo filters to narrow accounts by size, complexity, and likely need.', 'Map founders, finance owners, and operational stakeholders separately.', 'Launch trust-led outreach tied to one clear business outcome.', 'Review which account types create the best recurring pipeline.'],
+    useCases: ['Accounting Apollo workflow', 'Recurring client targeting', 'Finance service outreach'],
+    tips: ['Apollo is most useful when the offer is already clear.', 'Map buyer roles carefully.', 'Recurring-fit matters more than raw meetings.'],
+    faqs: [
+      { question: 'Can accounting firms use Apollo effectively?', answer: 'Yes. Apollo helps accounting firms combine account research, contact mapping, and outbound execution in one workflow.' },
+      { question: 'What accounting offers work best with Apollo?', answer: 'Offers with a clear target segment and recurring client value usually work best.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'how-accounting-firms-get-first-clients']
+  },
+  {
+    slug: 'how-accounting-firms-get-first-clients',
+    title: 'How Accounting Firms Get First Clients',
+    description: 'A focused outbound plan for accounting firms that need first recurring clients and faster market feedback.',
+    hub: 'for-startups',
+    industries: ['accounting-firms'],
+    steps: ['Start with one accounting offer and one target business segment.', 'Build a short Apollo list of businesses that match that service fit.', 'Use direct outreach around one financial pain and one business result.', 'Take early calls manually and note the objections that keep repeating.', 'Refine the offer around the segment that shows the strongest recurring demand.'],
+    useCases: ['New accounting firm launch', 'First bookkeeping clients', 'Early CFO advisory sales'],
+    tips: ['The first accounting clients usually come from one clear niche.', 'Manual follow-up builds trust faster.', 'Recurring demand matters more than one-off wins.'],
+    faqs: [
+      { question: 'How do accounting firms get first clients?', answer: 'They usually get there faster by selling one clear outcome to one business segment and using direct outreach to create trust and conversations.' },
+      { question: 'Should new accounting firms wait for referrals?', answer: 'No. Outbound helps new firms learn which segments value the offer most and shortens the path to first recurring revenue.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'lead-generation-for-accounting-firms', 'growing-a-consulting-business']
   }
 ];
 
@@ -2820,3 +3330,10 @@ export const getGuideBySlug = (slug: string) => guides.find((guide) => guide.slu
 
 export const getGuidesByIndustry = (industrySlug: string) =>
   guides.filter((guide) => guide.industries.includes(industrySlug));
+
+
+
+
+
+
+
