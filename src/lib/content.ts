@@ -102,6 +102,27 @@ export const hubContent: Record<HubKey, { title: string; description: string; su
 
 export const industries: Industry[] = [
   {
+    slug: 'law-firms',
+    name: 'Law Firms',
+    description: 'Use trust-led outbound and niche positioning to win higher-fit legal clients.',
+    audience: 'Law firms and legal service providers that need more predictable client acquisition around business law, compliance, contracts, and advisory work.',
+    painPoints: ['Overdependence on referrals', 'Generic legal messaging', 'Weak qualification around ideal client fit and case economics'],
+    strategy: ['Lead with legal business outcomes and commercial clarity', 'Target by niche, case type, and urgency', 'Qualify for long-term fit and matter quality before scaling'],
+    subtopics: ['Legal niche positioning', 'Trust-led legal outreach', 'Business law client acquisition'],
+    featuredSlugs: ['apollo-for-law-firms', 'lead-generation-for-law-firms', 'how-law-firms-get-first-clients'],
+    imageAlt: 'Law firm team reviewing outbound strategy and client acquisition plan'
+  },
+  {
+    slug: 'real-estate-services',
+    name: 'Real Estate Services',
+    description: 'Build outbound systems for B2B real estate services, brokerage support, and investor-facing offers.',
+    audience: 'Real estate service businesses that need more targeted client acquisition around investors, developers, brokers, property operators, and commercial owners.',
+    painPoints: ['Broad prospecting without asset focus', 'Weak buyer-role targeting', 'Inconsistent pipeline quality'],
+    strategy: ['Target one real estate segment first', 'Map operators, investors, and commercial decision-makers separately', 'Qualify for deal relevance, timing, and asset fit'],
+    subtopics: ['Commercial real estate outreach', 'Investor prospecting', 'Property service pipeline'],
+    featuredSlugs: ['apollo-for-real-estate-services', 'lead-generation-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients'],
+    imageAlt: 'Real estate services team planning outbound pipeline and target accounts'
+  },  {
     slug: 'saas-companies',
     name: 'SaaS Companies',
     description: 'Target ICP accounts and scale outbound for subscription products.',
@@ -3320,6 +3341,306 @@ export const guides: Guide[] = [
       { question: 'Should new accounting firms wait for referrals?', answer: 'No. Outbound helps new firms learn which segments value the offer most and shortens the path to first recurring revenue.' }
     ],
     relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'lead-generation-for-accounting-firms', 'growing-a-consulting-business']
+  },
+  {
+    slug: 'how-to-find-clients-for-healthcare-services',
+    title: 'How to Find Clients for Healthcare Services',
+    description: 'A practical outbound framework for healthcare service businesses that need better targeting, stakeholder mapping, and more qualified sales conversations.',
+    hub: 'find-clients',
+    industries: ['healthcare'],
+    steps: ['Pick one healthcare segment and one operational problem first.', 'Use Apollo to build account lists around provider type, size, and commercial fit.', 'Map operators, administrators, and commercial stakeholders separately.', 'Write outreach that speaks to workflow impact and business outcomes.', 'Review which subsegments create the strongest qualified conversations.'],
+    useCases: ['Healthcare services pipeline', 'Niche provider targeting', 'Operational buyer outreach'],
+    tips: ['Healthcare outreach needs narrower segmentation.', 'Operational relevance beats generic claims.', 'Review meetings by subsegment.'],
+    faqs: [
+      { question: 'How do healthcare service businesses find clients?', answer: 'They usually improve fastest when they target one healthcare niche, map the right stakeholders, and use business-focused outreach.' },
+      { question: 'Should healthcare outreach stay broad?', answer: 'No. Narrower targeting usually creates stronger trust and better meetings.' }
+    ],
+    relatedSlugs: ['lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'apollo-for-healthcare-services', 'how-healthcare-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-healthcare-services',
+    title: 'Lead Generation for Healthcare Services',
+    description: 'How healthcare-focused B2B teams can generate stronger leads with tighter segmentation, cleaner lists, and role-based prospecting.',
+    hub: 'find-clients',
+    industries: ['healthcare'],
+    steps: ['Define the healthcare niche and target organization profile first.', 'Build Apollo account lists around service fit, buyer type, and likely urgency.', 'Separate operational and commercial contacts before launch.', 'Use messaging that connects your offer to workflow or revenue impact.', 'Track qualified pipeline by healthcare subsegment.'],
+    useCases: ['Healthcare lead generation', 'Provider targeting', 'Niche segment growth'],
+    tips: ['Healthcare is not one market.', 'Role mapping matters early.', 'Segment reporting reveals fit faster.'],
+    faqs: [
+      { question: 'What matters most in healthcare lead generation?', answer: 'Clear niche selection and stakeholder relevance matter most because buyer priorities vary widely across healthcare organizations.' },
+      { question: 'How should healthcare teams segment leads?', answer: 'They should segment by buyer type, organization type, service fit, and likely urgency.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'how-healthcare-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-healthcare-services',
+    title: 'Cold Email for Healthcare Services',
+    description: 'A cold email framework for healthcare-focused B2B teams that need stronger trust, clearer relevance, and more qualified replies.',
+    hub: 'outreach',
+    industries: ['healthcare'],
+    steps: ['Lead with one workflow or operational problem the buyer recognizes.', 'Use one proof point tied to outcomes or operational impact.', 'Write separate versions for operators and commercial stakeholders.', 'Follow up with useful relevance instead of broad generic reminders.', 'Review positive replies by healthcare subsegment before scaling.'],
+    useCases: ['Healthcare cold outreach', 'Provider email campaigns', 'Operational buyer messaging'],
+    tips: ['Healthcare copy should stay practical.', 'Trust comes from clarity and fit.', 'Keep follow-ups useful and specific.'],
+    faqs: [
+      { question: 'What should healthcare cold emails focus on?', answer: 'They should focus on the operational or business problem, the likely result, and why the offer fits that buyer context.' },
+      { question: 'Should healthcare cold emails sound highly technical?', answer: 'Only where needed. Practical business language usually works better.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'apollo-email-deliverability-best-practices', 'apollo-for-healthcare-services']
+  },
+  {
+    slug: 'apollo-for-healthcare-services',
+    title: 'Apollo for Healthcare Services',
+    description: 'How healthcare service businesses can use Apollo to target better accounts, reach decision-makers, and build cleaner outbound workflow.',
+    hub: 'guides',
+    industries: ['healthcare'],
+    steps: ['Define the healthcare niche and service offer before building lists.', 'Use Apollo filters to narrow accounts by type, size, and business fit.', 'Map operators, growth leaders, and commercial stakeholders separately.', 'Launch outreach that focuses on workflow impact and business outcomes.', 'Review account quality before scaling volume.'],
+    useCases: ['Healthcare Apollo workflow', 'Provider targeting', 'Healthcare service outreach'],
+    tips: ['Apollo is strongest when the niche is already clear.', 'Map buyer roles carefully.', 'Review fit before scale.'],
+    faqs: [
+      { question: 'Can healthcare service businesses use Apollo effectively?', answer: 'Yes. Apollo is useful when the team narrows its segment and builds role-based outreach around business needs.' },
+      { question: 'What healthcare teams get value fastest from Apollo?', answer: 'Teams with a clear buyer niche, offer, and workflow use case usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'how-healthcare-companies-get-first-clients']
+  },
+  {
+    slug: 'how-healthcare-companies-get-first-clients',
+    title: 'How Healthcare Companies Get First Clients',
+    description: 'A founder-led outbound playbook for healthcare-focused B2B teams that need first clients, early signal, and tighter niche focus.',
+    hub: 'for-startups',
+    industries: ['healthcare'],
+    steps: ['Choose one healthcare niche and one urgent operational problem.', 'Build a short Apollo list of likely-fit organizations.', 'Use direct outreach around one clear business outcome.', 'Take calls manually and note repeated objections and buyer patterns.', 'Refine the offer around the niche that creates the best early traction.'],
+    useCases: ['Healthcare startup sales', 'First provider clients', 'Founder-led niche validation'],
+    tips: ['Healthcare teams should start with one niche.', 'Manual selling builds stronger signal early.', 'Buyer pattern clarity matters more than volume.'],
+    faqs: [
+      { question: 'How do healthcare-focused B2B teams get first clients?', answer: 'They usually get there faster by narrowing the niche, targeting likely-fit accounts, and using direct outreach around one operational problem.' },
+      { question: 'Should healthcare startups wait for inbound first?', answer: 'Usually no. Founder-led outbound creates faster feedback and clearer market learning.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'lead-generation-for-healthcare-services']
+  },
+  {
+    slug: 'how-to-find-clients-for-manufacturing-companies',
+    title: 'How to Find Clients for Manufacturing Companies',
+    description: 'A practical outbound playbook for manufacturing-focused B2B teams that need better account selection and clearer buyer mapping.',
+    hub: 'find-clients',
+    industries: ['manufacturing'],
+    steps: ['Choose one manufacturing segment and one operational problem first.', 'Use Apollo to build account-first lists around company type, size, and operational fit.', 'Map procurement, operations, and commercial stakeholders separately.', 'Write outreach around production, supply, or process outcomes.', 'Review account progression by segment to see where traction is strongest.'],
+    useCases: ['Manufacturing client acquisition', 'Industrial outbound', 'Procurement-targeted prospecting'],
+    tips: ['Manufacturing deals are often account-first.', 'Operational fit matters more than contact volume.', 'Map stakeholders early.'],
+    faqs: [
+      { question: 'How do manufacturing companies find clients?', answer: 'They usually perform best when they target accounts with clear operational fit and multistakeholder buying paths.' },
+      { question: 'Should manufacturing prospecting start with contacts or accounts?', answer: 'Accounts first. Good account selection usually improves every downstream stage.' }
+    ],
+    relatedSlugs: ['lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-manufacturing-companies',
+    title: 'Lead Generation for Manufacturing Companies',
+    description: 'How manufacturing-focused sellers can generate better leads with account-first targeting, stakeholder mapping, and segment-level review.',
+    hub: 'find-clients',
+    industries: ['manufacturing'],
+    steps: ['Define the manufacturing segment and use case worth targeting first.', 'Build Apollo account lists by size, vertical, and likely process fit.', 'Separate procurement, operations, and executive contacts.', 'Launch outreach tied to operational and commercial outcomes.', 'Review account movement instead of just raw reply counts.'],
+    useCases: ['Industrial lead generation', 'Account-first prospecting', 'Manufacturing segment targeting'],
+    tips: ['Manufacturing lead gen is usually account-led.', 'Stakeholder mapping matters more than broad volume.', 'Review progression by account cluster.'],
+    faqs: [
+      { question: 'What matters most in manufacturing lead generation?', answer: 'Account fit matters most because weak-fit industrial accounts often create long cycles and poor close rates.' },
+      { question: 'How should manufacturing teams segment leads?', answer: 'They should segment by vertical, production context, buyer role, and commercial relevance.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'how-manufacturing-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-manufacturing-companies',
+    title: 'Cold Email for Manufacturing Companies',
+    description: 'A cold email framework for manufacturing and industrial sales teams that need stronger operational relevance and more qualified replies.',
+    hub: 'outreach',
+    industries: ['manufacturing'],
+    steps: ['Open with one operational or process issue the buyer recognizes.', 'Use one proof point tied to throughput, cost, or reliability.', 'Write separate versions for operations and procurement stakeholders.', 'Follow up with relevant angle changes instead of generic reminders.', 'Review replies by vertical before scaling volume.'],
+    useCases: ['Industrial cold email', 'Procurement outreach', 'Manufacturing outbound'],
+    tips: ['Industrial buyers want relevance and clarity.', 'Operational proof beats clever phrasing.', 'Keep emails concise and practical.'],
+    faqs: [
+      { question: 'What should manufacturing cold emails focus on?', answer: 'They should focus on the operational problem, the likely business result, and why the offer fits the account context.' },
+      { question: 'Should industrial outreach be highly personalized?', answer: 'Personalization helps, but account and role fit matter more than surface-level tokens.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'apollo-email-deliverability-best-practices', 'apollo-for-manufacturing-companies']
+  },
+  {
+    slug: 'apollo-for-manufacturing-companies',
+    title: 'Apollo for Manufacturing Companies',
+    description: 'How manufacturing-focused B2B teams can use Apollo to target the right accounts, map buying teams, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['manufacturing'],
+    steps: ['Start with one manufacturing segment and one strong use case.', 'Use Apollo to build account-first lists around operational fit.', 'Map procurement, operations, and executive buyers before outreach.', 'Launch role-based outreach with practical commercial language.', 'Review account progression and meeting quality by segment.'],
+    useCases: ['Manufacturing Apollo workflow', 'Industrial prospecting', 'Account-first pipeline build'],
+    tips: ['Apollo helps most when the segment is already clear.', 'Manufacturing motions need account-level review.', 'Role mapping should happen before sequences.'],
+    faqs: [
+      { question: 'Is Apollo useful for manufacturing companies?', answer: 'Yes. Apollo is useful when the team needs cleaner account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What manufacturing teams benefit most from Apollo?', answer: 'Teams with a defined industrial segment and a repeatable commercial problem usually get value fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients']
+  },
+  {
+    slug: 'how-manufacturing-companies-get-first-clients',
+    title: 'How Manufacturing Companies Get First Clients',
+    description: 'A focused outbound system for manufacturing-focused B2B teams that need first clients and cleaner account-level signal.',
+    hub: 'for-startups',
+    industries: ['manufacturing'],
+    steps: ['Choose one manufacturing segment and one urgent process problem.', 'Build a short list of target accounts in Apollo.', 'Use direct outreach tied to one operational or commercial outcome.', 'Take early calls manually and document buying-path friction.', 'Refine the target segment around the accounts that move fastest.'],
+    useCases: ['Industrial startup sales', 'First B2B manufacturing clients', 'Founder-led account development'],
+    tips: ['Start narrow in industrial markets.', 'Account quality matters more than list size.', 'Early calls should refine the segment.'],
+    faqs: [
+      { question: 'How do manufacturing-focused B2B teams get first clients?', answer: 'They usually get there faster by choosing one segment, building target-account lists, and using direct outreach around a clear operational result.' },
+      { question: 'Should industrial startups automate early outbound heavily?', answer: 'Usually no. Manual account work helps clarify the market faster.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'lead-generation-for-manufacturing-companies']
+  },
+  {
+    slug: 'how-to-find-clients-for-law-firms',
+    title: 'How to Find Clients for Law Firms',
+    description: 'A practical outbound system for law firms that need more predictable client acquisition around business-focused legal services.',
+    hub: 'find-clients',
+    industries: ['law-firms'],
+    steps: ['Choose one legal service line and one buyer segment before prospecting.', 'Use Apollo to build account lists around company type, size, and likely legal need.', 'Map founders, GCs, legal ops, and business owners separately.', 'Write outreach that focuses on business risk, clarity, and commercial outcomes.', 'Review which niches create the best-fit conversations and matter quality.'],
+    useCases: ['Business law outreach', 'Legal client acquisition', 'Law firm niche targeting'],
+    tips: ['Legal outreach should sound commercial and clear.', 'Trust and fit matter more than volume.', 'Review opportunities by matter type.'],
+    faqs: [
+      { question: 'How do law firms find clients?', answer: 'Law firms usually improve faster when they narrow the practice area, target one buyer context, and use trust-led outreach around a business issue.' },
+      { question: 'Should law firms rely only on referrals?', answer: 'No. Referrals help, but focused outbound creates more control over pipeline and client mix.' }
+    ],
+    relatedSlugs: ['lead-generation-for-law-firms', 'cold-email-for-law-firms', 'apollo-for-law-firms', 'how-law-firms-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-law-firms',
+    title: 'Lead Generation for Law Firms',
+    description: 'How law firms can build a steadier lead generation system with niche positioning, better account selection, and trust-led outreach.',
+    hub: 'find-clients',
+    industries: ['law-firms'],
+    steps: ['Define the legal service that creates the clearest commercial value.', 'Build Apollo lists around company size, sector, and likely legal trigger.', 'Segment contacts by founder, GC, operations, and executive ownership.', 'Launch outreach tied to risk reduction, clarity, or speed.', 'Track qualified conversations and matter quality by niche.'],
+    useCases: ['Legal lead generation', 'Business law pipeline', 'Practice-area outbound'],
+    tips: ['Niche positioning strengthens legal lead gen.', 'Trust starts with relevance.', 'Keep low-fit matters out of the funnel.'],
+    faqs: [
+      { question: 'What matters most in legal lead generation?', answer: 'Niche fit and trust matter most because generic legal messaging rarely creates strong buyer response.' },
+      { question: 'How should law firms qualify leads?', answer: 'They should qualify for case fit, client quality, urgency, and expected long-term value.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'client-acquisition-for-consultants', 'how-law-firms-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-law-firms',
+    title: 'Cold Email for Law Firms',
+    description: 'A cold email framework for law firms that need more trust, stronger niche fit, and higher-quality business conversations.',
+    hub: 'outreach',
+    industries: ['law-firms'],
+    steps: ['Lead with one business or compliance issue the buyer already recognizes.', 'Use one credibility signal that supports trust without sounding promotional.', 'Write different versions for founders, operators, and legal stakeholders.', 'Follow up with useful context instead of generic check-ins.', 'Review which niches respond with real legal fit, not curiosity only.'],
+    useCases: ['Legal cold outreach', 'Business law emails', 'Practice-area client acquisition'],
+    tips: ['Law firm emails should stay simple and direct.', 'Trust-heavy copy needs commercial clarity.', 'Avoid generic legal marketing language.'],
+    faqs: [
+      { question: 'What should law firm cold emails focus on?', answer: 'They should focus on the business problem, the legal or commercial outcome, and one reason the firm can help in that context.' },
+      { question: 'Should legal cold emails be long?', answer: 'Usually no. Shorter, clearer messages are easier to trust and respond to.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'email-outreach-strategy', 'apollo-for-law-firms']
+  },
+  {
+    slug: 'apollo-for-law-firms',
+    title: 'Apollo for Law Firms',
+    description: 'How law firms can use Apollo to target stronger accounts, map decision-makers, and build more repeatable outbound client acquisition.',
+    hub: 'guides',
+    industries: ['law-firms'],
+    steps: ['Define the legal offer and client profile before building lists.', 'Use Apollo to narrow accounts by size, industry, and likely legal relevance.', 'Map founders, in-house legal, and business stakeholders separately.', 'Launch trust-led outreach tied to one clear business issue.', 'Review which account types create the best-fit legal opportunities.'],
+    useCases: ['Law firm Apollo workflow', 'Legal account targeting', 'Business law outbound'],
+    tips: ['Apollo is strongest when the practice area is already clear.', 'Map real decision paths early.', 'Review fit before volume.'],
+    faqs: [
+      { question: 'Can law firms use Apollo effectively?', answer: 'Yes. Apollo is useful for law firms that want cleaner account targeting, contact mapping, and outbound execution in one place.' },
+      { question: 'What legal teams get the most value from Apollo?', answer: 'Firms with a clear niche, service line, and buyer context usually benefit fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'cold-email-for-law-firms', 'how-law-firms-get-first-clients']
+  },
+  {
+    slug: 'how-law-firms-get-first-clients',
+    title: 'How Law Firms Get First Clients',
+    description: 'A founder-led outbound system for law firms and legal service providers that need first clients and faster market signal.',
+    hub: 'for-startups',
+    industries: ['law-firms'],
+    steps: ['Start with one legal service and one ideal buyer situation.', 'Build a short Apollo list of likely-fit companies.', 'Use direct outreach around one business issue and one clear outcome.', 'Take early calls manually and document client objections carefully.', 'Refine positioning around the niche that shows the best legal fit and urgency.'],
+    useCases: ['New law firm launch', 'First business law clients', 'Niche legal validation'],
+    tips: ['Early legal client acquisition should stay narrow.', 'Manual selling builds trust faster.', 'One practice area is enough to start.'],
+    faqs: [
+      { question: 'How do law firms get first clients?', answer: 'They usually get there faster by narrowing the practice area, targeting one buyer context, and using direct outreach built on trust and relevance.' },
+      { question: 'Should new law firms wait only for referrals?', answer: 'No. Focused outbound creates faster learning and more control over early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'lead-generation-for-law-firms', 'growing-a-consulting-business']
+  },
+  {
+    slug: 'how-to-find-clients-for-real-estate-services',
+    title: 'How to Find Clients for Real Estate Services',
+    description: 'A practical outbound framework for real estate service businesses that need better segment focus, buyer mapping, and predictable pipeline.',
+    hub: 'find-clients',
+    industries: ['real-estate-services'],
+    steps: ['Choose one real estate segment and one commercial problem first.', 'Use Apollo to build account lists around asset type, role, and business fit.', 'Map investors, operators, brokers, and commercial owners separately.', 'Write outreach around asset performance, deal flow, or operational outcomes.', 'Review which segments create the strongest qualified conversations.'],
+    useCases: ['Real estate services prospecting', 'Investor-facing outreach', 'Commercial property pipeline'],
+    tips: ['Real estate outreach should stay segment-specific.', 'Buyer roles matter a lot.', 'Review traction by asset type.'],
+    faqs: [
+      { question: 'How do real estate service businesses find clients?', answer: 'They usually improve faster when they target one segment, map the right buyers, and use outbound tied to a specific commercial outcome.' },
+      { question: 'Should real estate services prospect broadly?', answer: 'No. Segment-specific targeting usually creates better meetings and higher-fit opportunities.' }
+    ],
+    relatedSlugs: ['lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'apollo-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients']
+  },
+  {
+    slug: 'lead-generation-for-real-estate-services',
+    title: 'Lead Generation for Real Estate Services',
+    description: 'How real estate service firms can generate stronger leads with narrower targeting, clearer buyer mapping, and more useful outbound process.',
+    hub: 'find-clients',
+    industries: ['real-estate-services'],
+    steps: ['Define the real estate segment and offer that create the strongest value.', 'Build Apollo lists around asset type, company profile, and likely commercial need.', 'Separate operator, investor, and owner contacts before launch.', 'Use outreach that connects your offer to deal flow, occupancy, or asset performance.', 'Track qualified conversations by segment and buyer type.'],
+    useCases: ['Real estate lead generation', 'Commercial property prospecting', 'Investor services growth'],
+    tips: ['Real estate services need narrower targeting.', 'Commercial context matters more than volume.', 'Track by segment, not just total replies.'],
+    faqs: [
+      { question: 'What matters most in real estate services lead generation?', answer: 'Segment fit matters most because investors, operators, brokers, and owners respond to very different problems and offers.' },
+      { question: 'How should real estate services teams segment leads?', answer: 'They should segment by asset type, buyer role, company model, and commercial timing.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'finding-decision-makers-with-apollo', 'how-real-estate-services-companies-get-first-clients']
+  },
+  {
+    slug: 'cold-email-for-real-estate-services',
+    title: 'Cold Email for Real Estate Services',
+    description: 'A cold email framework for real estate service businesses that need more qualified conversations with operators, investors, and owners.',
+    hub: 'outreach',
+    industries: ['real-estate-services'],
+    steps: ['Lead with one asset, occupancy, or growth problem the buyer recognizes.', 'Use one proof point tied to performance or operational outcome.', 'Write separate versions for investors, operators, and commercial owners.', 'Follow up with relevant context, not generic persistence.', 'Review which segments create the strongest positive replies.'],
+    useCases: ['Real estate cold outreach', 'Commercial property emails', 'Investor prospecting'],
+    tips: ['Real estate copy should sound practical and commercial.', 'Asset context matters.', 'Keep follow-ups short and specific.'],
+    faqs: [
+      { question: 'What should real estate service cold emails focus on?', answer: 'They should focus on the business or asset problem, the likely result, and one reason the service is relevant to that buyer.' },
+      { question: 'Should real estate service emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'email-outreach-strategy', 'apollo-for-real-estate-services']
+  },
+  {
+    slug: 'apollo-for-real-estate-services',
+    title: 'Apollo for Real Estate Services',
+    description: 'How real estate service businesses can use Apollo to target stronger accounts, map buying teams, and build cleaner outbound pipeline.',
+    hub: 'guides',
+    industries: ['real-estate-services'],
+    steps: ['Start with one real estate segment and one commercial use case.', 'Use Apollo to build account lists around asset type, buyer role, and business fit.', 'Map investors, operators, and owners before outreach.', 'Launch role-based outbound tied to asset or revenue outcomes.', 'Review meetings and pipeline quality by segment.'],
+    useCases: ['Real estate Apollo workflow', 'Commercial account targeting', 'Investor and operator outreach'],
+    tips: ['Apollo works best when the segment is already clear.', 'Map buyer roles early.', 'Review pipeline by asset cluster.'],
+    faqs: [
+      { question: 'Is Apollo useful for real estate services?', answer: 'Yes. Apollo is useful for real estate service firms that need cleaner account targeting, stakeholder mapping, and outbound execution in one workflow.' },
+      { question: 'What real estate teams benefit most from Apollo?', answer: 'Teams with a clear segment, offer, and buyer context usually get value fastest.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients']
+  },
+  {
+    slug: 'how-real-estate-services-companies-get-first-clients',
+    title: 'How Real Estate Services Companies Get First Clients',
+    description: 'A lean outbound system for real estate service businesses that need first clients, sharper segment focus, and faster market signal.',
+    hub: 'for-startups',
+    industries: ['real-estate-services'],
+    steps: ['Choose one real estate segment and one business problem worth solving.', 'Build a small Apollo list of likely-fit target accounts.', 'Use direct outreach around one commercial or operational outcome.', 'Take early calls manually and note what buyers actually care about.', 'Refine the offer around the segment that shows the best traction.'],
+    useCases: ['Real estate startup sales', 'First property-service clients', 'Founder-led segment validation'],
+    tips: ['Real estate services should start narrow.', 'Early calls should refine the segment.', 'Commercial clarity matters more than volume.'],
+    faqs: [
+      { question: 'How do real estate service businesses get first clients?', answer: 'They usually get there faster by choosing one segment, building a small list of target accounts, and using direct outreach tied to a clear business outcome.' },
+      { question: 'Should new real estate service teams rely only on referrals?', answer: 'No. Focused outbound creates faster learning and a more repeatable early pipeline.' }
+    ],
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'lead-generation-for-real-estate-services', 'how-to-build-a-client-base-from-scratch']
   }
 ];
 
