@@ -7,8 +7,8 @@ import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { HomeHeroHeading } from '@/components/home-hero-heading';
+import { HomeNewsletter } from '@/components/home-newsletter';
 import { Icons } from '@/components/icons';
-import { NewsletterForm } from '@/components/newsletter-form';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
@@ -163,7 +163,7 @@ export default function HomePage() {
       </section>
 
       <section className="py-8">
-        <NewsletterForm />
+        <HomeNewsletter />
       </section>
 
       <section className="py-12">
