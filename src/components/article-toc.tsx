@@ -56,7 +56,7 @@ export const ArticleToc = ({ items }: { items: TocItem[] }) => {
             <a
               href={`#${item.id}`}
               onClick={onAnchorClick(item.id)}
-              className={`transition hover:text-blue-700 ${activeId === item.id ? 'font-semibold text-blue-700' : ''}`}
+              className={`block break-words leading-6 transition hover:text-blue-700 ${activeId === item.id ? 'font-semibold text-blue-700' : ''}`}
             >
               {item.label}
             </a>

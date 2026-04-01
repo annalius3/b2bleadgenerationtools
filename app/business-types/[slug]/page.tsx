@@ -95,7 +95,7 @@ export default async function BusinessTypePage({ params }: Props) {
       </section>
 
       <section className="pb-8">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Featured guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">Start with these high-signal pages</h2>
@@ -112,7 +112,7 @@ export default async function BusinessTypePage({ params }: Props) {
       </section>
 
       <section className="pb-16">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">All guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">{industryGuides.length} guides for {industry.name}</h2>

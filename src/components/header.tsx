@@ -43,7 +43,7 @@ export const Header = () => {
               <Link href="/business-types" className="transition hover:text-blue-700">
                 Business Types
               </Link>
-              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-[720px] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-6 opacity-0 shadow-[0_30px_70px_-35px_rgba(15,23,42,0.35)] transition-all duration-200 group-hover:visible group-hover:opacity-100">
+              <div className="invisible absolute left-1/2 top-full z-50 mt-3 w-[min(92vw,720px)] -translate-x-1/2 rounded-3xl border border-slate-200 bg-white p-4 opacity-0 shadow-[0_30px_70px_-35px_rgba(15,23,42,0.35)] transition-all duration-200 group-hover:visible group-hover:opacity-100 lg:p-6">
                 <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
                   {industries.map((industry) => (
                     <Link
