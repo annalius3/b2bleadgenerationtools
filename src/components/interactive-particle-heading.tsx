@@ -182,6 +182,11 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     };
 
     setupParticles();
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(() => {
+        setupParticles();
+      });
+    }
     tick();
 
     canvas.addEventListener('pointermove', handlePointerMove, { passive: true });
@@ -190,9 +195,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     canvas.addEventListener('pointercancel', handlePointerLeave, { passive: true });
     window.addEventListener('resize', handleResize);
     window.addEventListener('orientationchange', handleResize);
+    window.visualViewport?.addEventListener('resize', handleResize);
 
-    const resizeObserver = new ResizeObserver(() => handleResize());
-    resizeObserver.observe(wrapper);
+    const resizeObserver = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(() => handleResize()) : null;
+    resizeObserver?.observe(wrapper);
 
     return () => {
       cancelAnimationFrame(raf);
@@ -203,14 +209,15 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       canvas.removeEventListener('pointercancel', handlePointerLeave);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
-      resizeObserver.disconnect();
+      window.visualViewport?.removeEventListener('resize', handleResize);
+      resizeObserver?.disconnect();
     };
   }, [text]);
 
   return (
     <h1 className="max-w-4xl" aria-label={text}>
       <span className="sr-only">{text}</span>
-      <div ref={wrapperRef} className="w-full">
+      <div ref={wrapperRef} className="w-full overflow-hidden">
         <canvas ref={canvasRef} className="block h-auto w-full" />
       </div>
       <noscript>
