@@ -18,12 +18,12 @@ export const HubHero = ({
   imageAlt?: string;
 }) => (
   <section className="py-8 sm:py-10">
-    <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/60 to-cyan-50/40 p-6 shadow-[0_26px_64px_-46px_rgba(37,99,235,0.55)] sm:p-8">
+    <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/60 to-cyan-50/40 p-5 shadow-[0_26px_64px_-46px_rgba(37,99,235,0.55)] sm:p-8">
       <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-200/35 blur-3xl" />
       <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
       <div className={`grid gap-5 ${imageSrc ? 'lg:grid-cols-[1.15fr_0.85fr] lg:items-center' : ''}`}>
         <div>
-          <h1 className="text-3xl font-semibold text-slate-900 sm:text-4xl">{title}</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 sm:text-4xl">{title}</h1>
           <p className="mt-3 max-w-3xl text-slate-700">{renderApolloText(description)}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {subtopics.map((topic) => (

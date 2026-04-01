@@ -63,7 +63,7 @@ export default async function IndustryPage({ params }: Props) {
       />
 
       <section className="grid gap-6 pb-8 lg:grid-cols-[1.2fr_0.8fr]">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)]">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)] sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Who this hub is for</p>
           <h2 className="mt-3 text-2xl font-semibold text-slate-900">{industry.name} outbound strategy</h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">{industry.audience}</p>
@@ -76,7 +76,7 @@ export default async function IndustryPage({ params }: Props) {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-8 text-white shadow-[0_24px_60px_-32px_rgba(15,23,42,0.42)]">
+        <div className="rounded-[2rem] border border-slate-200 bg-slate-950 p-6 text-white shadow-[0_24px_60px_-32px_rgba(15,23,42,0.42)] sm:p-8">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">Recommended motion</p>
           <ul className="mt-4 space-y-4 text-sm leading-7 text-slate-200">
             {industry.strategy.map((item, index) => (
@@ -95,7 +95,7 @@ export default async function IndustryPage({ params }: Props) {
       </section>
 
       <section className="pb-8">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Featured guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">Start with these high-signal pages</h2>
@@ -112,7 +112,7 @@ export default async function IndustryPage({ params }: Props) {
       </section>
 
       <section className="pb-16">
-        <div className="flex items-end justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">All guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">{industryGuides.length} guides for {industry.name}</h2>
