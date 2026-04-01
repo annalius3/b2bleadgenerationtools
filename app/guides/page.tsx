@@ -15,6 +15,13 @@ export const metadata = buildMetadata({
 });
 
 export default function GuidesPage() {
+  const guidePreviews = guides.map((guide) => ({
+    slug: guide.slug,
+    title: guide.title,
+    description: guide.description,
+    hub: guide.hub
+  }));
+
   return (
     <Container>
       <BreadcrumbSchema
@@ -32,7 +39,7 @@ export default function GuidesPage() {
       />
       <section className="pb-16">
         <Suspense fallback={<p className="text-sm text-slate-600">Loading guides...</p>}>
-          <GuidesList guides={guides} />
+          <GuidesList guides={guidePreviews} />
         </Suspense>
       </section>
     </Container>

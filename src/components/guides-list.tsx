@@ -4,9 +4,9 @@ import { useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 
 import { GuideCard } from '@/components/guide-card';
-import type { Guide } from '@/lib/content';
+import type { GuidePreview } from '@/lib/content';
 
-export const GuidesList = ({ guides }: { guides: Guide[] }) => {
+export const GuidesList = ({ guides }: { guides: GuidePreview[] }) => {
   const searchParams = useSearchParams();
   const queryRaw = searchParams.get('q') ?? '';
   const query = queryRaw.trim().toLowerCase();

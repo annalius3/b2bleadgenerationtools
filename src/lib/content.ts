@@ -31,6 +31,8 @@ export type Guide = {
   relatedSlugs: string[];
 };
 
+export type GuidePreview = Pick<Guide, 'slug' | 'title' | 'description' | 'hub'>;
+
 export const hubContent: Record<HubKey, { title: string; description: string; subtopics: string[] }> = {
   'find-clients': {
     title: 'Find Clients',
