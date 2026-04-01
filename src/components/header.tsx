@@ -46,7 +46,7 @@ export const Header = () => (
             </div>
           </nav>
           <div className="flex items-center gap-2">
-            <form action="/guides" method="get" className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
+            <form action="/guides/search" method="get" className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
               <input
                 name="q"
                 type="search"
@@ -65,7 +65,7 @@ export const Header = () => (
           </div>
         </div>
         <div className="space-y-2 pb-3 lg:hidden">
-          <form action="/guides" method="get" className="flex items-center gap-2" role="search" aria-label="Site search">
+          <form action="/guides/search" method="get" className="flex items-center gap-2" role="search" aria-label="Site search">
             <input
               name="q"
               type="search"

@@ -119,7 +119,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       }
 
       // Keep visual density high, but cap total particles for smooth interaction.
-      const maxParticles = width >= 1024 ? 26000 : width >= 768 ? 20000 : 10000;
+      const maxParticles = width >= 1440 ? 18000 : width >= 1024 ? 14000 : 8000;
       if (candidates.length <= maxParticles) {
         particles = candidates;
       } else {

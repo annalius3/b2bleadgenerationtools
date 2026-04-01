@@ -19,7 +19,7 @@ export function HomeHeroHeading({ text }: { text: string }) {
   const [enableInteractive, setEnableInteractive] = useState(false);
 
   useEffect(() => {
-    const media = window.matchMedia('(min-width: 768px) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+    const media = window.matchMedia('(min-width: 1024px) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
     const update = () => setEnableInteractive(media.matches);
 
     update();
