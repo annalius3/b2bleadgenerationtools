@@ -1,66 +1,6 @@
-'use client';
-
-import { MouseEvent, useEffect, useMemo, useState } from 'react';
-
 export type TocItem = { id: string; label: string };
 
 export const ArticleToc = ({ items }: { items: TocItem[] }) => {
-  const [activeId, setActiveId] = useState<string>(items[0]?.id ?? '');
-  const [enableTracking, setEnableTracking] = useState(false);
-
-  const ids = useMemo(() => items.map((item) => item.id), [items]);
-
-  useEffect(() => {
-    const media = window.matchMedia('(min-width: 1024px)');
-    const update = () => setEnableTracking(media.matches && !document.hidden);
-
-    update();
-    media.addEventListener('change', update);
-    document.addEventListener('visibilitychange', update);
-
-    return () => {
-      media.removeEventListener('change', update);
-      document.removeEventListener('visibilitychange', update);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!enableTracking) return;
-
-    const sections = ids
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => Boolean(el));
-
-    if (!sections.length) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (visible[0]?.target?.id) {
-          setActiveId(visible[0].target.id);
-        }
-      },
-      {
-        rootMargin: '-130px 0px -65% 0px',
-        threshold: [0.1, 0.4, 0.8]
-      }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
-  }, [enableTracking, ids]);
-
-  const onAnchorClick = (id: string) => (event: MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-    const target = document.getElementById(id);
-    if (!target) return;
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
-    window.history.replaceState(null, '', `#${id}`);
-  };
-
   if (!items.length) {
     return null;
   }
@@ -71,12 +11,7 @@ export const ArticleToc = ({ items }: { items: TocItem[] }) => {
       <ul className="mt-3 space-y-2 text-sm text-slate-700">
         {items.map((item) => (
           <li key={item.id}>
-            <a
-              href={`#${item.id}`}
-              onClick={onAnchorClick(item.id)}
-              aria-current={enableTracking && activeId === item.id ? 'location' : undefined}
-              className={`block break-words leading-6 transition hover:text-blue-700 ${enableTracking && activeId === item.id ? 'font-semibold text-blue-700' : ''}`}
-            >
+            <a href={`#${item.id}`} className="block break-words leading-6 transition hover:text-blue-700">
               {item.label}
             </a>
           </li>
