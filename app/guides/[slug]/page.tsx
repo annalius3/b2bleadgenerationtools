@@ -297,6 +297,7 @@ export default async function GuidePage({ params }: Props) {
             alt={`${guide.title} visual`}
             width={1400}
             height={780}
+            sizes="(max-width: 1280px) 100vw, 960px"
             className="h-auto w-full rounded-xl"
             priority
           />
@@ -449,6 +450,7 @@ export default async function GuidePage({ params }: Props) {
               alt={`${guide.title} strategy visual`}
               width={1400}
               height={780}
+              sizes="(max-width: 1280px) 100vw, 960px"
               className="h-auto w-full rounded-xl"
             />
           </div>

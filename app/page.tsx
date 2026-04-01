@@ -67,6 +67,7 @@ export default function HomePage() {
                 alt="B2B sales team reviewing outbound performance"
                 width={1024}
                 height={768}
+                sizes="(max-width: 1023px) 100vw, 40vw"
                 className="h-auto w-full rounded-xl object-cover"
                 priority
               />
@@ -131,6 +132,7 @@ export default function HomePage() {
             alt="Business team discussing growth strategy by industry"
             width={1024}
             height={768}
+            sizes="(max-width: 1280px) 100vw, 896px"
             className="h-auto w-full rounded-xl object-cover"
             loading="lazy"
           />
@@ -173,6 +175,7 @@ export default function HomePage() {
               alt="Founder analyzing pipeline metrics with modern B2B tools"
               width={1024}
               height={768}
+              sizes="(max-width: 1023px) 100vw, 40vw"
               className="h-full w-full rounded-xl object-cover"
               loading="lazy"
             />

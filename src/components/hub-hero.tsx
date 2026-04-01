@@ -64,6 +64,7 @@ export const HubHero = ({
                 alt={imageAlt ?? title}
                 width={1024}
                 height={768}
+                sizes="(max-width: 1023px) 100vw, 42vw"
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
