@@ -39,7 +39,8 @@ export const ArticleToc = ({ items }: { items: TocItem[] }) => {
     event.preventDefault();
     const target = document.getElementById(id);
     if (!target) return;
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
     window.history.replaceState(null, '', `#${id}`);
   };
 
@@ -56,6 +57,7 @@ export const ArticleToc = ({ items }: { items: TocItem[] }) => {
             <a
               href={`#${item.id}`}
               onClick={onAnchorClick(item.id)}
+              aria-current={activeId === item.id ? 'location' : undefined}
               className={`block break-words leading-6 transition hover:text-blue-700 ${activeId === item.id ? 'font-semibold text-blue-700' : ''}`}
             >
               {item.label}

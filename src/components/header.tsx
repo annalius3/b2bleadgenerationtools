@@ -33,7 +33,7 @@ export const Header = () => {
       <Container>
         <div className="flex h-16 items-center justify-between gap-3">
           <BrandLogo compact />
-          <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 lg:flex">
+          <nav aria-label="Primary" className="hidden items-center gap-6 text-sm font-medium text-slate-700 lg:flex">
             {menu.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:text-blue-700">
                 {item.label}
@@ -60,12 +60,13 @@ export const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-2">
-            <form onSubmit={handleSearch} className="hidden items-center gap-2 sm:flex">
+            <form onSubmit={handleSearch} className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
               <input
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
                 type="search"
                 placeholder="Search guides..."
+                aria-label="Search guides"
                 className="w-44 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-blue-300"
               />
               <button type="submit" aria-label="Search" className="btn-icon">
@@ -79,12 +80,13 @@ export const Header = () => {
           </div>
         </div>
         <div className="space-y-2 pb-3 lg:hidden">
-          <form onSubmit={handleSearch} className="flex items-center gap-2">
+          <form onSubmit={handleSearch} className="flex items-center gap-2" role="search" aria-label="Site search">
             <input
               value={query}
               onChange={(event) => setQuery(event.target.value)}
               type="search"
               placeholder="Search guides..."
+              aria-label="Search guides"
               className="h-9 flex-1 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-blue-300"
             />
             <button type="submit" aria-label="Search" className="btn-icon h-9 w-9">
