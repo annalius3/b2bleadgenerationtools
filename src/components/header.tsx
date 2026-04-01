@@ -1,9 +1,5 @@
-'use client';
-
 import Link from 'next/link';
 import type { Route } from 'next';
-import { FormEvent, useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 import { ApolloButton } from '@/components/apollo-button';
 import { BrandLogo } from '@/components/brand-logo';
@@ -18,17 +14,7 @@ const menu: Array<{ href: Route; label: string }> = [
   { href: '/guides', label: 'Guides' }
 ];
 
-export const Header = () => {
-  const [query, setQuery] = useState('');
-  const router = useRouter();
-
-  const handleSearch = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const value = query.trim();
-    router.push(value ? `/guides?q=${encodeURIComponent(value)}` : '/guides');
-  };
-
-  return (
+export const Header = () => (
     <header className="site-header-blur sticky top-0 z-50 border-b border-slate-200/80 bg-white/90 backdrop-blur-lg">
       <Container>
         <div className="flex h-16 items-center justify-between gap-3">
@@ -60,10 +46,9 @@ export const Header = () => {
             </div>
           </nav>
           <div className="flex items-center gap-2">
-            <form onSubmit={handleSearch} className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
+            <form action="/guides" method="get" className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
               <input
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                name="q"
                 type="search"
                 placeholder="Search guides..."
                 aria-label="Search guides"
@@ -80,10 +65,9 @@ export const Header = () => {
           </div>
         </div>
         <div className="space-y-2 pb-3 lg:hidden">
-          <form onSubmit={handleSearch} className="flex items-center gap-2" role="search" aria-label="Site search">
+          <form action="/guides" method="get" className="flex items-center gap-2" role="search" aria-label="Site search">
             <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              name="q"
               type="search"
               placeholder="Search guides..."
               aria-label="Search guides"
@@ -109,5 +93,4 @@ export const Header = () => {
         </div>
       </Container>
     </header>
-  );
-};
+);
