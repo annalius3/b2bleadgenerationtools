@@ -14,7 +14,15 @@ export const GA4 = () => {
   useEffect(() => {
     if (!gaId) return;
     const query = searchParams.toString();
-    pageview(query ? `${pathname}?${query}` : pathname);
+    const target = query ? `${pathname}?${query}` : pathname;
+
+    if (typeof window !== 'undefined' && typeof window.requestIdleCallback === 'function') {
+      const idleId = window.requestIdleCallback(() => pageview(target));
+      return () => window.cancelIdleCallback(idleId);
+    }
+
+    const timeoutId = globalThis.setTimeout(() => pageview(target), 0);
+    return () => globalThis.clearTimeout(timeoutId);
   }, [gaId, pathname, searchParams]);
 
   if (!gaId) return null;
