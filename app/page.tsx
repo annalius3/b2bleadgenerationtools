@@ -126,16 +126,22 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-        <div className="mx-auto mt-6 w-full max-w-4xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-          <Image
-            src="/images/home/industry-business.jpg"
-            alt="Business team discussing growth strategy by industry"
-            width={1024}
-            height={768}
-            sizes="(max-width: 1280px) 100vw, 896px"
-            className="h-auto w-full rounded-xl object-cover"
-            loading="lazy"
-          />
+        <div className="mx-auto mt-6 grid w-full max-w-4xl gap-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-blue-50 p-5 shadow-sm md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Industry Fit</p>
+            <p className="mt-2 text-lg font-semibold text-slate-900">Start with the right market</p>
+            <p className="mt-2 text-sm text-slate-600">Each business type hub narrows the outreach motion, buyer role, and message angle first.</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-4">
+            <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Playbooks</p>
+            <p className="mt-2 text-lg font-semibold text-slate-900">Use the shortest path to pipeline</p>
+            <p className="mt-2 text-sm text-slate-600">Find niche-specific guides for agencies, consultants, SaaS, healthcare, manufacturing, and more.</p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-slate-950 p-4 text-white">
+            <p className="text-xs font-semibold uppercase tracking-wide text-sky-300">Best Starting Point</p>
+            <p className="mt-2 text-lg font-semibold">Choose one industry, one offer, one buyer</p>
+            <p className="mt-2 text-sm text-slate-200">That makes list building, messaging, and reply handling much easier to improve week by week.</p>
+          </div>
         </div>
       </section>
 
@@ -169,16 +175,24 @@ export default function HomePage() {
       <section className="py-12">
         <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <ApolloCtaBlock title="Start generating B2B leads today with Apollo" />
-          <div className="mx-auto w-full max-w-xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-            <Image
-              src="/images/home/cta-founder.jpg"
-              alt="Founder analyzing pipeline metrics with modern B2B tools"
-              width={1024}
-              height={768}
-              sizes="(max-width: 1023px) 100vw, 40vw"
-              className="h-full w-full rounded-xl object-cover"
-              loading="lazy"
-            />
+          <div className="mx-auto flex w-full max-w-xl flex-col justify-between rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 via-blue-700 to-slate-900 p-6 text-white shadow-sm">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-100">Recommended Workflow</p>
+              <h3 className="mt-3 text-2xl font-semibold">Use one clean outbound system</h3>
+              <p className="mt-3 text-sm leading-7 text-blue-50">
+                Build lists, contact the right buyers, and review reply quality in one place before adding more tools or more process.
+              </p>
+            </div>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-blue-100">Lead Flow</p>
+                <p className="mt-2 text-sm text-white">Higher-fit accounts, cleaner list QA, and fewer wasted sequences.</p>
+              </div>
+              <div className="rounded-2xl border border-white/10 bg-white/10 p-4">
+                <p className="text-xs font-semibold uppercase tracking-wide text-blue-100">Execution</p>
+                <p className="mt-2 text-sm text-white">Faster weekly review and stronger visibility from prospecting to pipeline.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
