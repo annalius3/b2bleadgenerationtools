@@ -6,8 +6,8 @@ import { ApolloButton } from '@/components/apollo-button';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
+import { HomeHeroHeading } from '@/components/home-hero-heading';
 import { Icons } from '@/components/icons';
-import { InteractiveParticleHeading } from '@/components/interactive-particle-heading';
 import { NewsletterForm } from '@/components/newsletter-form';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
@@ -45,7 +45,7 @@ export default function HomePage() {
           <div className="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-cyan-200/25 blur-3xl" />
           <div className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div>
-              <InteractiveParticleHeading text="Get B2B Clients Faster with Proven Outbound Strategies" />
+              <HomeHeroHeading text="Get B2B Clients Faster with Proven Outbound Strategies" />
               <p className="mt-5 max-w-2xl text-slate-700">
                 {renderApolloText(
                   'Learn how to find leads, contact decision-makers, and build a predictable sales pipeline.'
