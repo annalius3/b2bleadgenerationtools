@@ -50,6 +50,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
 
     let particles: Particle[] = [];
     let raf = 0;
+    let isRunning = false;
     let width = 0;
     let height = 0;
     let dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -131,6 +132,10 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     };
 
     const tick = () => {
+      if (!isRunning) {
+        return;
+      }
+
       context.clearRect(0, 0, width, height);
       context.fillStyle = '#000000';
       const radius = coarsePointer ? 85 : 110;
@@ -163,6 +168,20 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       raf = requestAnimationFrame(tick);
     };
 
+    const startLoop = () => {
+      if (isRunning) {
+        return;
+      }
+      isRunning = true;
+      raf = requestAnimationFrame(tick);
+    };
+
+    const stopLoop = () => {
+      isRunning = false;
+      cancelAnimationFrame(raf);
+      raf = 0;
+    };
+
     const handlePointerMove = (event: PointerEvent) => {
       const rect = canvas.getBoundingClientRect();
       mouse.x = event.clientX - rect.left;
@@ -178,7 +197,21 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
 
     const handleResize = () => {
       cancelAnimationFrame(resizeRaf);
-      resizeRaf = requestAnimationFrame(setupParticles);
+      resizeRaf = requestAnimationFrame(() => {
+        setupParticles();
+        if (isRunning) {
+          stopLoop();
+          startLoop();
+        }
+      });
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        stopLoop();
+      } else {
+        startLoop();
+      }
     };
 
     setupParticles();
@@ -187,7 +220,7 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
         setupParticles();
       });
     }
-    tick();
+    startLoop();
 
     canvas.addEventListener('pointermove', handlePointerMove, { passive: true });
     canvas.addEventListener('pointerleave', handlePointerLeave, { passive: true });
@@ -196,12 +229,27 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
     window.addEventListener('resize', handleResize);
     window.addEventListener('orientationchange', handleResize);
     window.visualViewport?.addEventListener('resize', handleResize);
+    document.addEventListener('visibilitychange', handleVisibilityChange);
 
     const resizeObserver = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(() => handleResize()) : null;
     resizeObserver?.observe(wrapper);
+    const intersectionObserver =
+      typeof IntersectionObserver !== 'undefined'
+        ? new IntersectionObserver(
+            ([entry]) => {
+              if (entry?.isIntersecting && !document.hidden) {
+                startLoop();
+              } else {
+                stopLoop();
+              }
+            },
+            { threshold: 0.05 }
+          )
+        : null;
+    intersectionObserver?.observe(wrapper);
 
     return () => {
-      cancelAnimationFrame(raf);
+      stopLoop();
       cancelAnimationFrame(resizeRaf);
       canvas.removeEventListener('pointermove', handlePointerMove);
       canvas.removeEventListener('pointerleave', handlePointerLeave);
@@ -210,7 +258,9 @@ export const InteractiveParticleHeading = ({ text }: { text: string }) => {
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
       window.visualViewport?.removeEventListener('resize', handleResize);
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
       resizeObserver?.disconnect();
+      intersectionObserver?.disconnect();
     };
   }, [text]);
 
