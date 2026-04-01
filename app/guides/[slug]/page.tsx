@@ -7,12 +7,11 @@ import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { ArticleToc } from '@/components/article-toc';
 import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
-import { GuidePriorityMap } from '@/components/guide-priority-map';
 import { GuideSectionLead } from '@/components/guide-section-lead';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
-import { buildGuidePanels, buildGuidePrioritySections, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
+import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -170,7 +169,6 @@ export default async function GuidePage({ params }: Props) {
   const hubCopy = hubSpecificCopy(guide.hub);
   const quickFacts = buildQuickFacts(guideKind, guide.title);
   const guidePanels = buildGuidePanels(guideKind);
-  const guidePriorities = buildGuidePrioritySections(guideKind);
   const featuresLead = buildGuideSectionLead(guideKind, 'features');
   const pricingLead = buildGuideSectionLead(guideKind, 'pricing');
   const comparisonLead = buildGuideSectionLead(guideKind, 'comparison');
@@ -306,15 +304,6 @@ export default async function GuidePage({ params }: Props) {
 
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
         <article className="article-content rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
-          <section className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Why trust this guide</p>
-            <p className="mt-2 text-sm text-slate-700">
-              This page was reviewed against our <Link href="/editorial-methodology">editorial methodology</Link> for search intent,
-              workflow clarity, fit guidance, and internal linking. We use affiliate disclosures where relevant and avoid guaranteed claims
-              about deliverability, compliance, or revenue outcomes.
-            </p>
-          </section>
-
           <section id="summary" className="rounded-xl border border-blue-100 bg-blue-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Summary / Verdict</p>
             {summaryParagraphs.map((paragraph) => (
@@ -322,6 +311,10 @@ export default async function GuidePage({ params }: Props) {
                 {renderApolloText(paragraph)}
               </p>
             ))}
+            <p className="mt-2 text-sm text-slate-700">
+              Reviewed against our <Link href="/editorial-methodology">editorial methodology</Link> for search intent, workflow clarity,
+              fit guidance, and internal linking.
+            </p>
           </section>
 
           <section className="grid gap-3 rounded-xl border border-slate-200 bg-slate-50 p-4 md:grid-cols-3">
@@ -331,10 +324,6 @@ export default async function GuidePage({ params }: Props) {
               </div>
             ))}
           </section>
-
-          <GuideTopPanel panel={guidePanels.top} />
-
-          <GuidePriorityMap items={guidePriorities} />
 
           <h2 id="who-for">Who this is for</h2>
           <p>
@@ -408,6 +397,8 @@ export default async function GuidePage({ params }: Props) {
             Another thing that matters: the best teams make one strong process decision at a time. They do not change targeting, copy,
             cadence, and qualification all at once. They isolate one constraint, fix it, then review the result.
           </p>
+
+          <GuideTopPanel panel={guidePanels.top} />
 
           {override?.customSections?.map((section) => (
             <section key={section.title}>

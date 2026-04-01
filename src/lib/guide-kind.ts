@@ -377,35 +377,3 @@ export const buildGuideSectionLead = (kind: GuideKind, section: GuideSectionKey)
   return copy[kind][section];
 };
 
-
-export const buildGuidePrioritySections = (kind: GuideKind) => {
-  const priorities: Record<GuideKind, Array<{ id: string; title: string; reason: string }>> = {
-    review: [
-      { id: 'pros-cons', title: 'Start with the tradeoffs', reason: 'Reviews should help the reader judge fit quickly before they get lost in feature detail.' },
-      { id: 'pricing', title: 'Then look at cost reality', reason: 'The important question is whether the workflow value justifies the spend for the team stage.' },
-      { id: 'comparison', title: 'Finish with real alternatives', reason: 'Good review decisions happen in context, not in isolation.' }
-    ],
-    pricing: [
-      { id: 'pricing', title: 'Start with pricing logic', reason: 'This page type should clarify what really drives spend and where teams overpay.' },
-      { id: 'comparison', title: 'Then compare budget paths', reason: 'The useful choice is usually between different operating models, not just different tools.' },
-      { id: 'checklist', title: 'Use the budget checklist last', reason: 'This helps turn pricing analysis into a disciplined buying decision.' }
-    ],
-    tutorial: [
-      { id: 'steps', title: 'Start with the launch steps', reason: 'Tutorial readers usually want to get to a working workflow first.' },
-      { id: 'checklist', title: 'Use the launch checklist', reason: 'The checklist reduces preventable setup mistakes before week one starts.' },
-      { id: 'features', title: 'Only then review supporting features', reason: 'Feature breadth matters after the first workflow is already clear.' }
-    ],
-    strategy: [
-      { id: 'problem', title: 'Start with the bottleneck', reason: 'Strategy only works when the team is solving the right constraint first.' },
-      { id: 'solution', title: 'Then choose the operating model', reason: 'The solution framework clarifies which strategic lever matters most now.' },
-      { id: 'comparison', title: 'Compare strategic options', reason: 'This is where the team decides which path fits stage, budget, and execution capacity.' }
-    ],
-    playbook: [
-      { id: 'features', title: 'Start with the core workflow', reason: 'Playbooks should clarify the operating loop before anything else.' },
-      { id: 'steps', title: 'Then move into execution', reason: 'The action sequence should be easy to follow and review weekly.' },
-      { id: 'checklist', title: 'Use the checklist to keep it durable', reason: 'The final check keeps the workflow stable over time.' }
-    ]
-  };
-
-  return priorities[kind];
-};
