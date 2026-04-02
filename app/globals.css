@@ -92,6 +92,11 @@ select {
   margin-top: 1rem;
 }
 
+.article-content > section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 .article-content h2,
 .article-content h3 {
   scroll-margin-top: 100px;
