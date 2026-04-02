@@ -55,8 +55,6 @@ export default async function GuideSearchPage({ searchParams }: Props) {
             : 'Search guide results by topic, workflow, or business problem.'
         }
         subtopics={query ? [`${filtered.length} matching guides`, 'Apollo', 'Outbound', 'Pipeline'] : hubContent.guides.subtopics}
-        imageSrc="/images/menu/guides.jpg"
-        imageAlt="Team reviewing tutorial resources and campaign playbooks"
       />
       <section className="pb-16">
         {query ? (
