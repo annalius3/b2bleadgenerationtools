@@ -34,6 +34,7 @@ export default function BusinessTypesPage() {
             <Link
               key={industry.slug}
               href={`/business-types/${industry.slug}`}
+              prefetch={false}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200"
             >
               <div className="mb-3 block">{Icons.industry()}</div>

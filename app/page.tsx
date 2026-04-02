@@ -119,6 +119,7 @@ export default function HomePage() {
             <Link
               key={industry.slug}
               href={`/business-types/${industry.slug}`}
+              prefetch={false}
               className="rounded-2xl border border-slate-200 bg-white p-4 text-sm shadow-sm transition hover:border-blue-200"
             >
               <p className="font-semibold text-slate-900">{industry.name}</p>
