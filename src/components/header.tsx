@@ -35,6 +35,7 @@ export const Header = () => (
                     <Link
                       key={industry.slug}
                       href={`/business-types/${industry.slug}` as Route}
+                      prefetch={false}
                       className="rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm transition hover:border-blue-200 hover:bg-blue-50/60"
                     >
                       <p className="font-semibold text-slate-900">{industry.name}</p>
