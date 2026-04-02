@@ -58,8 +58,6 @@ export default async function BusinessTypePage({ params }: Props) {
         title={industry.name}
         description={industry.description}
         subtopics={industry.subtopics}
-        imageSrc="/images/menu/by-industry.jpg"
-        imageAlt={industry.imageAlt}
       />
 
       <section className="grid gap-6 pb-8 lg:grid-cols-[1.2fr_0.8fr]">

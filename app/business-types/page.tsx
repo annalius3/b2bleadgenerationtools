@@ -27,8 +27,6 @@ export default function BusinessTypesPage() {
         title={hubContent['by-industry'].title}
         description={hubContent['by-industry'].description}
         subtopics={hubContent['by-industry'].subtopics}
-        imageSrc="/images/menu/by-industry.jpg"
-        imageAlt="Business leaders from different industries planning outbound growth"
       />
       <section className="pb-16">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
