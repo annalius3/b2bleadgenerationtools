@@ -60,7 +60,7 @@ export default async function BusinessTypePage({ params }: Props) {
         subtopics={industry.subtopics}
       />
 
-      <section className="grid gap-6 pb-8 lg:grid-cols-[1.2fr_0.8fr]">
+      <section className="defer-section grid gap-6 pb-8 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)]">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Who this hub is for</p>
           <h2 className="mt-3 text-2xl font-semibold text-slate-900">{industry.name} outbound strategy</h2>
@@ -92,7 +92,7 @@ export default async function BusinessTypePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="pb-8">
+      <section className="defer-section pb-8">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Featured guides</p>
@@ -109,7 +109,7 @@ export default async function BusinessTypePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="pb-16">
+      <section className="defer-section pb-16">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">All guides</p>

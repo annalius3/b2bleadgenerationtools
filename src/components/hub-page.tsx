@@ -9,7 +9,7 @@ export const HubPage = ({ hub }: { hub: Exclude<HubKey, 'by-industry'> }) => {
   return (
     <>
       <HubHero title={config.title} description={config.description} subtopics={config.subtopics} />
-      <section className="pb-16">
+      <section className="defer-section pb-16">
         <div className="mb-5">
           <h2 className="text-2xl font-semibold text-slate-900">Featured articles</h2>
         </div>

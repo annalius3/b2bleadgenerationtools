@@ -97,6 +97,11 @@ select {
   contain-intrinsic-size: 1px 900px;
 }
 
+.defer-section {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
 .article-content h2,
 .article-content h3 {
   scroll-margin-top: 100px;

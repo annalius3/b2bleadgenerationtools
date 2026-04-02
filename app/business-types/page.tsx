@@ -28,7 +28,7 @@ export default function BusinessTypesPage() {
         description={hubContent['by-industry'].description}
         subtopics={hubContent['by-industry'].subtopics}
       />
-      <section className="pb-16">
+      <section className="defer-section pb-16">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {industries.map((industry) => (
             <Link

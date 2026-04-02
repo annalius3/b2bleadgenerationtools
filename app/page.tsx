@@ -76,7 +76,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="defer-section py-8">
         <h2 className="text-2xl font-semibold text-slate-900">Top Solutions</h2>
         <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {topSolutions.map((item) => (
@@ -93,7 +93,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="defer-section py-8">
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">Featured Guides</h2>
           <Link href="/guides" className="btn-ghost text-sm">
@@ -107,7 +107,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="defer-section py-8">
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <h2 className="text-2xl font-semibold text-slate-900">By Industry</h2>
           <Link href="/business-types" className="btn-ghost text-sm">
@@ -145,7 +145,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-8">
+      <section className="defer-section py-8">
         <h2 className="text-2xl font-semibold text-slate-900">Growth Resources</h2>
         <div className="mt-5 grid gap-4 md:grid-cols-3">
           <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -168,11 +168,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="newsletter" className="py-8">
+      <section id="newsletter" className="defer-section py-8">
         <NewsletterForm />
       </section>
 
-      <section className="py-12">
+      <section className="defer-section py-12">
         <div className="grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
           <ApolloCtaBlock title="Start generating B2B leads today with Apollo" />
           <div className="mx-auto flex w-full max-w-xl flex-col justify-between rounded-2xl border border-slate-200 bg-gradient-to-br from-blue-600 via-blue-700 to-slate-900 p-6 text-white shadow-sm">
