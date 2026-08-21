@@ -17,52 +17,129 @@
 export const guideOverrides: Record<string, GuideOverride> = {
   'what-is-apollo-io': {
     summary: [
-      'Apollo.io is an outbound operating platform that combines contact discovery, list building, email sequences, and basic enrichment in one subscription. Pricing ranges from Free ($0) to $119/user/month (Organization) on annual billing.',
+      'Apollo.io is an outbound operating platform that combines a 275M+ contact database, email sequences, a built-in dialer, data enrichment, and basic pipeline reporting in one subscription. Pricing ranges from Free ($0) to $119/user/month (Organization) on annual billing.',
       'For most US B2B teams, the practical question is not "does Apollo have data?" but "does Apollo reduce the number of tools and manual steps between list building and first qualified conversation?"'
+    ],
+    pros: [
+      'All-in-one platform: contact database, email sequences, dialer, and enrichment in a single login, replacing 3-5 separate tools for lean teams.',
+      'Low entry price: Basic plan at $49/user/month (annual) with 30,000 credits/year makes real outbound accessible to solo founders and small agencies.',
+      'Fast workflow: a single operator can define an ICP, build a list, write a sequence, and start learning from replies in under 30 minutes.',
+      'Strong US B2B data: 275M+ contacts with good coverage for director-level and above at companies with 50+ employees.',
+      'Built-in sequences with A/B testing, LinkedIn tasks, and call steps — no need for a separate outreach tool at early stages.'
+    ],
+    cons: [
+      'Credit consumption is aggressive: mobile number enrichment costs 9 credits per record, so a 1,000-contact enrichment run can burn through monthly allocation quickly.',
+      'Data quality varies outside the US and below director level — international contacts and SMB roles often need manual verification.',
+      'AI email personalization is not as deep as specialized tools like Clay or Smartwriter — good enough for basics, not for hyper-personalized campaigns.',
+      'Requires separate domain warmup infrastructure (Mailreef, Warmy, or Smartlead) — Apollo does not handle cold email deliverability for you.',
+      'Organization plan requires 3-user minimum ($4,284/year entry cost) — overkill for teams that only need advanced reporting.'
+    ],
+    pricing: [
+      'Apollo Free: $0, 900 credits/year (granted monthly at 75), 2 active sequences, basic filtering. Enough to test data quality, not enough for real outbound.',
+      'Apollo Basic: $49/user/month (annual) or $59 month-to-month. 30,000 credits/year (~2,500/month per seat), unlimited sequences, Salesforce/HubSpot integration.',
+      'Apollo Professional: $79/user/month (annual) or $99 month-to-month. 48,000 credits/year, built-in US dialer with call recording, AI-assisted email writing.',
+      'Apollo Organization: $119/user/month (annual) or $149 month-to-month. 72,000 credits/year, 3-user minimum ($4,284/year entry), international dialer, custom reports.',
+      'Credit costs: email reveal = 1 credit, phone reveal = 1 credit, enrichment = 1 credit (email/demographics) or 9 credits (mobile number returned).'
+    ],
+    comparisonRows: [
+      ['Apollo Basic ($49/user/mo)', 'Solo founders, small teams with clear ICP', 'Low', 'Best entry point; replace spreadsheet prospecting with real tooling'],
+      ['Apollo Professional ($79/user/mo)', 'Active sales teams needing dialer + sequences', 'Mid', 'Most teams land here; good balance of credits and features'],
+      ['ZoomInfo ($15K+/year)', 'Large enterprise teams with big budgets', 'High', 'More data depth, much higher cost, more operational weight'],
+      ['LinkedIn Sales Navigator ($99/mo)', 'Social sellers and account researchers', 'Mid', 'Great for research, no built-in sequencing or enrichment'],
+      ['Manual/outbound-only stack', 'Teams under 200 target accounts', 'Low cash, high time', 'Fine for tiny markets, does not scale']
     ],
     customSections: [
       {
         title: 'What Apollo actually does',
         paragraphs: [
-          'Apollo combines several jobs that many teams split across separate tools: company search, contact discovery, list building, basic enrichment, sequence launch, and workflow reporting. That combination is why it is attractive to founder-led and lean SDR teams.',
-          'The real advantage is operational speed. When one person can define a segment, save the list, write a sequence, and start learning from replies inside one workflow, the team usually gets to a usable outbound process faster.'
+          'Apollo combines several jobs that many teams split across separate tools: company search by industry, revenue, headcount, and tech stack; contact discovery with verified emails and phone numbers; list building with saved searches that refresh in real-time; basic enrichment that appends missing firmographic data; email sequence execution with multi-step cadences; and basic pipeline reporting.',
+          'The real advantage is operational speed. When one person can define a segment, save the list, write a sequence, and start learning from replies inside one workflow, the team usually gets to a usable outbound process faster than stitching together ZoomInfo plus Outreach plus a separate dialer.'
         ]
       },
       {
         title: 'Where Apollo fits in a GTM stack',
         paragraphs: [
-          'Apollo usually fits between strategy and CRM. It helps teams identify the market, build prospect lists, and create first-touch outbound motion. It does not replace clear ICP thinking, offer quality, or disciplined opportunity management.',
-          'For startups, it can cover more of the motion early. For mature teams, it often becomes the prospecting and top-of-funnel execution layer rather than the whole revenue system.'
+          'Apollo usually sits between ICP strategy and CRM execution. It helps teams identify the total addressable market, build filtered prospect lists, enrich contact records, and create first-touch outbound motion. It does not replace clear ICP thinking, offer quality, or disciplined opportunity management.',
+          'For startups, it can cover more of the motion early — sometimes serving as a light CRM for the first 6-12 months. For mature teams, it becomes the prospecting and top-of-funnel execution layer that feeds HubSpot or Salesforce, not the whole revenue system.'
         ]
       },
       {
         title: 'Who usually gets value fastest',
         paragraphs: [
-          'The fastest wins usually come from teams that already know whom they should sell to and what business problem they solve. In that situation, Apollo saves time and reduces process friction.',
-          'Teams with vague positioning or poor sales follow-up often overestimate the tool and underestimate the operational work required to make outbound consistent.'
+          'The fastest wins come from teams that already know whom they should sell to and what business problem they solve. A founder with a clear offer, a tight 500-company target list, and discipline to review campaign quality weekly can book meetings within the first two weeks of Apollo usage.',
+          'Teams with vague positioning, unvalidated offers, or no process ownership often overestimate the tool and underestimate the operational work required to make outbound consistent. The software speeds up good processes — it does not create them.'
+        ]
+      },
+      {
+        title: 'How to start with Apollo in the first 14 days',
+        paragraphs: [
+          'Day 1-3: Connect your CRM (HubSpot or Salesforce), set up 3-6 secondary email domains, and warm them up using Apollo warmup or a separate tool like Mailreef or Warmy. Configure SPF, DKIM, and DMARC for each sending domain.',
+          'Day 4-7: Define your ICP with firmographic filters (industry, headcount, revenue, geography, tech stack). Build a saved search of 500-1,500 target accounts. Manually review 50 accounts to verify fit before exporting.',
+          'Day 8-10: Find contacts at those accounts by role (decision-maker + influencer + technical evaluator). Launch a 5-step sequence at 25 sends/inbox/day maximum. Write trigger-based openers, not generic pitches.',
+          'Day 11-14: Monitor reply rates, meeting bookings, and credit usage. Adjust targeting or messaging based on early signal. Compare against baseline metrics: 1.5-4% reply rate, 0.5-1.2% positive reply rate, 1 meeting per 200-400 sends.'
+        ]
+      },
+      {
+        title: 'Common mistakes that waste credits and domains',
+        paragraphs: [
+          'The biggest mistake is exporting 5,000 contacts without manual QA. Broad lists burn credits on enrichment and produce low-fit outreach that damages domain reputation. Always review a sample of 50 accounts before scaling.',
+          'Other costly errors: sending from your primary brand domain (kills it if flagged), skipping warmup (4-6x higher spam rate), enabling open tracking on cold email (cuts inbox placement 15-30%), and running single-step sequences instead of 5-6 step cadences.'
+        ]
+      },
+      {
+        title: 'Apollo vs the rest of the market',
+        paragraphs: [
+          'Apollo occupies the middle ground between lightweight list providers (Hunter, Lusha at $49-99/mo) and enterprise platforms (ZoomInfo at $15K+/year, Outreach/Salesloft). For 90% of SMB and mid-market B2B teams, Apollo provides 70% of the capability at 20% of the enterprise cost.',
+          'The tradeoff is depth. Enterprise teams that need advanced routing, deep intent data, or Fortune 500 contact accuracy will find Apollo insufficient. But for founder-led and lean SDR teams doing SMB outbound in the US, it is the pragmatic starting point.'
         ]
       }
     ],
     qualitySignals: [
       'The team can explain where Apollo starts and where CRM ownership begins.',
       'A pilot segment reaches first outreach without spreadsheet-heavy handoffs.',
-      'Prospecting, sequencing, and reply handling are reviewed as one loop.'
+      'Prospecting, sequencing, and reply handling are reviewed as one loop.',
+      'Reply rate exceeds 1.5% and meeting conversion exceeds 1 per 300 sends within 30 days.',
+      'Credit usage is tracked weekly and tied to qualified pipeline, not just activity volume.'
     ],
-    alternatives: [
-      'If you mainly need a high-level list source, a lighter prospecting workflow may be enough before adopting Apollo fully.',
-      'If you already run complex enterprise routing and strict account orchestration, compare Apollo against a heavier stack before standardizing around it.',
-      'Most lean teams should also compare Apollo with the broader <a href="/guides/apollo-io-review-2026">Apollo.io Review (2026)</a> and <a href="/guides/is-apollo-io-worth-it">Is Apollo.io Worth It</a> to decide whether they need an operating platform or only better list building.'
+    hiddenDrawbacks: [
+      'Credit costs compound silently: enriching 1,000 contacts with mobile numbers costs 9,000 credits — nearly a third of the Basic plan annual allocation.',
+      'Annual billing locks you in: switching mid-year or canceling means losing unused credits and paying the difference.',
+      'The "Unlimited" plan label is governed by Fair Use Policy: 10,000 credits/month for non-paying accounts, or the lesser of amount paid/$0.025 or 1M credits/year for paying accounts.',
+      'CRM sync can create duplicates if field mapping is not configured carefully — especially when contacts exist in both Apollo and HubSpot.',
+      'Apollo warmup network is functional but not best-in-class: supplementing with Mailreach or Warmy is recommended for teams sending more than 500 emails/week.'
+    ],
+    whenNot: [
+      'Do not buy Apollo if your ICP is still undefined or your offer is unvalidated. The tool speeds up execution — it does not fix strategic clarity.',
+      'Do not buy Apollo if you need enterprise-grade routing, deep intent data, or Fortune 500 contact accuracy. ZoomInfo or a heavier stack will serve you better.',
+      'Do not buy Apollo if nobody on the team owns outreach, qualification, or weekly review. Without process ownership, the tool becomes an expensive contact list.',
+      'Do not buy Apollo if your total addressable market is under 500 companies. A manual approach may be faster and cheaper than setting up any platform.'
+    ],
+    scenario: [
+      'Monday morning: log into Apollo, open your saved search for "Marketing agencies, 10-50 employees, US, using HubSpot." The list refreshes automatically with 1,200 matching accounts.',
+      'You review 50 new accounts, filter out 15 that are clearly bad fit (wrong geography, too small, wrong tech stack), and approve 35 for enrichment.',
+      'Apollo enriches those 35 contacts with verified emails (1 credit each = 35 credits). You skip mobile numbers to save credits.',
+      'You write a 5-step sequence: cold email on Day 1, LinkedIn connection request on Day 3, follow-up email on Day 5, LinkedIn message on Day 9, breakup email on Day 14.',
+      'At 25 sends/inbox/day across 4 inboxes, you reach 100 prospects per day. After two weeks, you have 3-4% reply rate and 2 booked meetings — enough signal to decide whether to scale this segment.'
     ],
     checklist: [
-      'Define whether Apollo is solving data access, workflow speed, or both.',
-      'Run one narrow pilot segment before wider team rollout.',
-      'Document where qualification and CRM ownership begin.',
-      'Review whether Apollo reduces tool sprawl in practice, not only in theory.',
-      'Compare against one lighter and one heavier alternative before committing.'
+      'Define your ICP with 3-5 firmographic filters before touching Apollo.',
+      'Set up 3-6 secondary email domains and warm them for 21-28 days.',
+      'Configure SPF, DKIM, and DMARC for each sending domain.',
+      'Connect your CRM (HubSpot or Salesforce) with bi-directional sync.',
+      'Build one saved search and manually review 50 accounts for fit.',
+      'Write a 5-6 step sequence with trigger-based openers.',
+      'Cap sends at 25-30 per inbox per day.',
+      'Review list quality, reply rate, and credit usage weekly.'
+    ],
+    alternatives: [
+      'If you mainly need a high-level list source and your team is under 5 people, a lighter workflow using Hunter.io ($49/mo) plus manual outreach may be enough before adopting Apollo fully.',
+      'If you already run complex enterprise routing and strict account orchestration, compare Apollo against ZoomInfo plus Outreach before standardizing.',
+      'If you need deep AI personalization at scale, layer Clay or Smartwriter on top of Apollo for the research and writing, then use Apollo only for data and sequencing.',
+      'For a full comparison, see <a href="/guides/apollo-io-review-2026">Apollo.io Review (2026)</a>, <a href="/guides/is-apollo-io-worth-it">Is Apollo.io Worth It</a>, and <a href="/guides/apollo-io-pricing-explained">Apollo.io Pricing Explained</a>.'
     ],
     finalVerdict: [
-      'Apollo is worth understanding as a workflow accelerator for modern outbound teams. If your ICP is already taking shape, it can simplify list building and execution materially.',
-      'If your offer is still fuzzy, learn the market first. Apollo can speed up a good process, but it cannot create one from nothing.'
+      'Apollo is the most practical all-in-one outbound platform for lean B2B teams in 2026. At $49-$119/user/month, it compresses several outbound tasks into one operating layer and gets founders, agencies, and early SDR teams to market faster than a stitched-together stack.',
+      'It is not a substitute for GTM clarity. If your offer is weak, your ICP is undefined, or nobody owns follow-up, Apollo will only reveal those problems faster. Fix strategy first, then let the tool accelerate execution.'
     ]
   },
   'apollo-io-review-2026': {

@@ -643,38 +643,60 @@ export const guides: Guide[] = [
   },
   {
     slug: 'what-is-apollo-io',
-    title: 'What is Apollo.io',
-    description: 'A plain-English breakdown of what Apollo.io does, who it is for, and where it fits in a B2B GTM stack.',
+    title: 'What Is Apollo.io?',
+    description: 'A plain-English guide to Apollo.io: what it does, how much it costs in 2026, who it is for, and where it fits in a B2B outbound stack.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    publishedAt: '2026-01-15',
+    updatedAt: '2026-08-21',
     steps: [
-      'Define Apollo as a prospecting and outbound execution platform.',
-      'Map its role in your stack: data, enrichment, sequencing, and workflow speed.',
-      'Identify core jobs-to-be-done for your sales motion.',
-      'Compare Apollo use by team stage: founder-led, SDR team, and RevOps-led.',
-      'Run a 14-day pilot with one segment before broader rollout.'
+      'Define Apollo as a combined prospecting database and outbound execution platform.',
+      'Understand the four plan tiers: Free ($0), Basic ($49), Professional ($79), and Organization ($119) per user per month.',
+      'Learn the credit system: email reveals cost 1 credit, phone reveals cost 1 credit, enrichment with mobile costs 9 credits.',
+      'Map the core workflow: build account list, find contacts, enrich data, launch email sequences, track replies.',
+      'Compare Apollo by team stage: founder-led (Basic), growing SDR team (Professional), RevOps-led (Organization).',
+      'Run a 14-day pilot with one tight ICP segment before broader team rollout.',
+      'Review weekly: list quality, reply rates, meeting conversion, and credit burn.'
     ],
     useCases: [
-      'New SaaS team building first outbound process',
-      'Agency owner creating repeatable lead sourcing',
-      'IT services team improving decision-maker coverage'
+      'Solo founder building first outbound process without a sales team',
+      'SaaS startup launching cold email to validate ICP and offer-market fit',
+      'Marketing agency replacing manual prospecting with automated list building',
+      'IT services company mapping technical and executive buyers across target accounts',
+      'Consulting firm building a repeatable pipeline from niche outbound',
+      'Recruiter using job posting signals to find companies actively hiring for roles they fill'
     ],
     tips: [
-      'Start with one ICP and one offer before scaling.',
+      'Start with one ICP, one offer, and one segment before scaling list size.',
       'Use Apollo as an operating layer, not only a contact list.',
-      'Track meeting quality, not just activity volume.'
+      'Track meeting quality and pipeline contribution, not just open rates or reply volume.',
+      'Never send from your primary domain — use 3-6 secondary domains warmed for 21-28 days.',
+      'Cap sends at 25-30 per inbox per day to protect deliverability.',
+      'Review credit usage weekly — enrichment with mobile numbers burns credits 9x faster than email-only.'
     ],
     faqs: [
       {
         question: 'Is Apollo.io only a lead database?',
-        answer: 'No. It combines contact data, enrichment, and outbound execution workflows.'
+        answer: 'No. Apollo combines a 275M+ contact database with email sequences, a built-in dialer (on paid plans), data enrichment, and basic pipeline reporting. It is closer to an outbound operating platform than a static list provider.'
+      },
+      {
+        question: 'How much does Apollo.io cost in 2026?',
+        answer: 'Apollo offers four tiers: Free ($0, 900 credits/year), Basic ($49/user/month, 30K credits/year), Professional ($79/user/month, 48K credits/year with US dialer), and Organization ($119/user/month, 72K credits/year, 3-user minimum). Annual billing applies to all paid plans.'
       },
       {
         question: 'Who should use Apollo first?',
-        answer: 'Startup and SMB teams that need speed and clear outbound process ownership.'
+        answer: 'Solo founders, early-stage startups, agencies, and lean B2B sales teams that need speed and clear outbound process ownership. Apollo is strongest for teams under 20 people doing SMB or mid-market outbound in the US.'
+      },
+      {
+        question: 'What are the biggest limitations of Apollo?',
+        answer: 'Data quality varies outside the US and at enterprise level. Credit consumption can be fast if enrichment habits are sloppy (mobile number reveals cost 9 credits each). The AI personalization is not as deep as specialized tools like Clay. You still need separate domain warmup for cold email deliverability.'
+      },
+      {
+        question: 'Can Apollo replace a CRM like HubSpot or Salesforce?',
+        answer: 'Not fully. Apollo has basic deal tracking and pipeline views, but for mature teams it works best as a prospecting and top-of-funnel layer that syncs bi-directionally with HubSpot or Salesforce. Teams under $2M ARR can sometimes run Apollo as a light CRM temporarily.'
       }
     ],
-    relatedSlugs: ['apollo-io-review-2026', 'how-apollo-io-works', 'apollo-io-features-overview']
+    relatedSlugs: ['apollo-io-review-2026', 'is-apollo-io-worth-it', 'apollo-io-pricing-explained', 'how-apollo-io-works', 'apollo-io-features-overview', 'apollo-io-for-beginners']
   },
   {
     slug: 'apollo-io-review-2026',
