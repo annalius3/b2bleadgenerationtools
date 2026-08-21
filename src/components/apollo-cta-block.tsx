@@ -7,6 +7,6 @@ export const ApolloCtaBlock = ({ title = 'Recommended Tool: Apollo.io - Try Free
     <p className="mt-2 text-sm text-slate-700">
       Use Apollo to find decision-makers, enrich lead data, and launch outbound sequences from one place.
     </p>
-    <ApolloButton className="mt-4" label="Try Apollo Free" />
+    <ApolloButton className="mt-4" label="Try Apollo Free" location="apollo_cta_block" />
   </section>
 );

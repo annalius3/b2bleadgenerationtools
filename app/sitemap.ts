@@ -20,12 +20,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/affiliate-disclosure'
   ];
 
-  const guideRoutes = guides.map((guide) => `/guides/${guide.slug}`);
-  const industryRoutes = industries.map((industry) => `/business-types/${industry.slug}`);
+  const guideRoutes = guides.map((guide) => ({
+    url: `${siteConfig.url}/guides/${guide.slug}`,
+    lastModified: guide.updatedAt ? new Date(guide.updatedAt) : new Date('2026-03-26')
+  }));
 
-  return [...staticRoutes, ...guideRoutes, ...industryRoutes].map((path) => ({
-    url: `${siteConfig.url}${path}`,
+  const industryRoutes = industries.map((industry) => ({
+    url: `${siteConfig.url}/business-types/${industry.slug}`,
     lastModified: new Date('2026-03-26')
+  }));
+
+  return [...staticRoutes, ...guideRoutes, ...industryRoutes].map((route) => ({
+    url: typeof route === 'string' ? `${siteConfig.url}${route}` : route.url,
+    lastModified: typeof route === 'string' ? new Date('2026-03-26') : route.lastModified
   }));
 }
 

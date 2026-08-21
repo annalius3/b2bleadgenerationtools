@@ -4,6 +4,7 @@ import type { Route } from 'next';
 import { ApolloButton } from '@/components/apollo-button';
 import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
+import { SearchForm } from '@/components/search-form';
 import { industries } from '@/lib/content';
 
 const menu: Array<{ href: Route; label: string }> = [
@@ -47,40 +48,12 @@ export const Header = () => (
             </div>
           </nav>
           <div className="flex items-center gap-2">
-            <form action="/guides/search" method="get" className="hidden items-center gap-2 sm:flex" role="search" aria-label="Site search">
-              <input
-                name="q"
-                type="search"
-                placeholder="Search guides..."
-                aria-label="Search guides"
-                className="w-44 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 outline-none transition focus:border-blue-300"
-              />
-              <button type="submit" aria-label="Search" className="btn-icon">
-                <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="11" cy="11" r="7" />
-                  <path d="m20 20-3.5-3.5" />
-                </svg>
-              </button>
-            </form>
+            <SearchForm className="hidden items-center gap-2 sm:flex" />
             <ApolloButton />
           </div>
         </div>
         <div className="space-y-2 pb-3 lg:hidden">
-          <form action="/guides/search" method="get" className="flex items-center gap-2" role="search" aria-label="Site search">
-            <input
-              name="q"
-              type="search"
-              placeholder="Search guides..."
-              aria-label="Search guides"
-              className="h-9 flex-1 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-800 outline-none transition focus:border-blue-300"
-            />
-            <button type="submit" aria-label="Search" className="btn-icon h-9 w-9">
-              <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="11" cy="11" r="7" />
-                <path d="m20 20-3.5-3.5" />
-              </svg>
-            </button>
-          </form>
+          <SearchForm className="flex items-center gap-2" />
           <div className="flex gap-2 overflow-x-auto">
             {menu.map((item) => (
               <Link key={item.href} href={item.href} className="btn-pill">

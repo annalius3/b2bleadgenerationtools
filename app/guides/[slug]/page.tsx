@@ -4,7 +4,7 @@ import type { Route } from 'next';
 import { notFound } from 'next/navigation';
 
 import { ApolloCtaBlock } from '@/components/apollo-cta-block';
-import { ArticleToc } from '@/components/article-toc';
+import { TrackedToc } from '@/components/tracked-toc';
 import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
 import { GuideSectionLead } from '@/components/guide-section-lead';
@@ -26,8 +26,8 @@ const hubPath: Record<(typeof guides)[number]['hub'], Route> = {
   guides: '/guides'
 };
 
-const UPDATED_DATE = '2026-03-26';
-const PUBLISHED_DATE = '2026-01-15';
+const DEFAULT_PUBLISHED_DATE = '2026-01-15';
+const DEFAULT_UPDATED_DATE = '2026-03-26';
 const UPDATED_LABEL = 'March 26, 2026';
 
 const titleCaseHub = (hub: (typeof guides)[number]['hub']) => hubContent[hub].title;
@@ -250,8 +250,8 @@ export default async function GuidePage({ params }: Props) {
         description={guide.description}
         url={`${siteConfig.url}/guides/${guide.slug}`}
         image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
-        datePublished={PUBLISHED_DATE}
-        dateModified={UPDATED_DATE}
+        datePublished={guide.publishedAt ?? DEFAULT_PUBLISHED_DATE}
+        dateModified={guide.updatedAt ?? DEFAULT_UPDATED_DATE}
         section={titleCaseHub(guide.hub)}
         keywords={keywordSet}
       />
@@ -576,7 +576,7 @@ export default async function GuidePage({ params }: Props) {
         </article>
 
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
-          <ArticleToc items={toc} />
+          <TrackedToc items={toc} />
           <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Quick Facts</p>
             <ul className="mt-3 space-y-2 text-sm text-slate-700">

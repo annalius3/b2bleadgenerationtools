@@ -17,7 +17,7 @@
 export const guideOverrides: Record<string, GuideOverride> = {
   'what-is-apollo-io': {
     summary: [
-      'Apollo.io is best understood as an outbound operating platform, not just a contact database. The value is in how quickly a small team can go from target account definition to live prospecting and follow-up.',
+      'Apollo.io is an outbound operating platform that combines contact discovery, list building, email sequences, and basic enrichment in one subscription. Pricing ranges from Free ($0) to $119/user/month (Organization) on annual billing.',
       'For most US B2B teams, the practical question is not "does Apollo have data?" but "does Apollo reduce the number of tools and manual steps between list building and first qualified conversation?"'
     ],
     customSections: [
@@ -104,8 +104,9 @@ export const guideOverrides: Record<string, GuideOverride> = {
       }
     ],
     comparisonRows: [
-      ['Apollo', 'Lean B2B outbound teams', 'Low to mid', 'Best all-around balance of speed and usability'],
-      ['ZoomInfo-style enterprise workflow', 'Large teams with bigger budgets', 'High', 'More depth, more cost, more operational weight'],
+      ['Apollo (Free/$49-$119/user/mo)', 'Lean B2B outbound teams', 'Low to mid', 'Best all-around balance of speed and usability for SMBs'],
+      ['ZoomInfo ($15K+/year)', 'Large teams with bigger budgets', 'High', 'More data depth, much higher cost, more operational weight'],
+      ['Apollo + LinkedIn Sales Navigator', 'Teams needing social + email combo', 'Mid', 'Wider coverage but higher total cost and more tool complexity'],
       ['Separate database + outreach tools', 'Ops-heavy teams that want modular control', 'Mid', 'Flexible but slower to manage']
     ],
     hiddenDrawbacks: [
@@ -120,14 +121,15 @@ export const guideOverrides: Record<string, GuideOverride> = {
   },
   'is-apollo-io-worth-it': {
     summary: [
-      'Apollo is worth it when the team already has a clear buyer profile, a usable offer, and enough discipline to review what is working each week. In that context, the time saved across research, list building, and outreach can be significant.',
+      'Apollo is worth it when the team already has a clear buyer profile, a usable offer, and enough discipline to review what is working each week. At $49-$119/user/month, the entry cost is low compared to the manual time it replaces.',
       'It is not worth it when the core GTM problem is still unresolved. A weak offer, unclear ICP, or poor follow-up process will make any outbound platform look worse than it actually is.'
     ],
     customSections: [
       {
         title: 'When the ROI case is strong',
         paragraphs: [
-          'The ROI case is usually strongest for founder-led teams, agencies, and early SDR functions that are currently doing too much work manually. If Apollo replaces spreadsheet prospecting and fragmented workflows, the value is easier to justify.',
+          'The ROI case is usually strongest for founder-led teams, agencies, and early SDR functions that are currently doing too much work manually. A solo founder on Basic at $480/year replacing spreadsheet prospecting can recover the cost within weeks.',
+          'For a 5-person team on Professional ($4,740/year), the ROI math is straightforward: if Apollo helps close even one additional client per year, the platform pays for itself many times over.',
           'It also makes sense when one team member owns execution and needs fewer tools between market research and first outreach.'
         ]
       },
@@ -135,7 +137,7 @@ export const guideOverrides: Record<string, GuideOverride> = {
         title: 'When the ROI case is weak',
         paragraphs: [
           'Apollo is a weak buy if there is no stable offer or if the team has not yet identified which segment is most likely to convert. In that case, the bottleneck is strategic clarity, not software.',
-          'It is also a weak buy when the team never reviews campaign quality. Without process inspection, tool spend becomes harder to defend.'
+          'It is also a weak buy when the team never reviews campaign quality. Without process inspection, tool spend becomes harder to defend. An Organization plan at $4,284/year minimum makes no sense for a team that does not review weekly.'
         ]
       },
       {
@@ -148,7 +150,8 @@ export const guideOverrides: Record<string, GuideOverride> = {
     ],
     whenNot: [
       'Do not buy Apollo because it feels like the next obvious growth tool. Buy it only when you already know what good execution should look like.',
-      'If nobody owns outreach, qualification, or weekly reviews, solve that first.'
+      'If nobody owns outreach, qualification, or weekly reviews, solve that first.',
+      'If your total addressable market is tiny (under 500 companies), a manual approach may be faster and cheaper than setting up any platform.'
     ],
     qualitySignals: [
       'The team saves meaningful operating time each week compared with the old workflow.',
@@ -156,8 +159,9 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo ownership is clear enough that the ROI can actually be reviewed.'
     ],
     comparisonRows: [
-      ['Apollo as core outbound stack', 'Lean teams with clear ICP and weekly review discipline', 'Low to mid', 'Best when speed and consolidation are the main ROI drivers'],
-      ['Apollo plus manual validation', 'Teams still refining segment fit', 'Low to mid', 'Good when quality matters more than speed'],
+      ['Apollo Basic ($49/user/mo)', 'Solo founders, small teams with clear ICP', 'Low', 'Best entry point; replace spreadsheet prospecting with real tooling'],
+      ['Apollo Professional ($79/user/mo)', 'Active sales teams needing dialer + sequences', 'Mid', 'Most teams land here; good balance of credits and features'],
+      ['Manual/outbound-only stack', 'Teams under 200 target accounts', 'Low cash, high time', 'Fine for tiny markets, does not scale'],
       ['Heavier multi-tool stack', 'Mature teams with strict routing and deeper ops support', 'Mid to high', 'Worth it only if the added complexity creates better pipeline economics']
     ],
     checklist: [
@@ -174,45 +178,52 @@ export const guideOverrides: Record<string, GuideOverride> = {
   },
   'apollo-io-pricing-explained': {
     summary: [
-      'Apollo pricing makes the most sense when you treat cost as a workflow issue, not only a subscription issue. Teams usually overspend because their segmentation is weak, their exports are messy, or multiple people duplicate work.',
+      'Apollo.io offers four plans in 2026: Free ($0), Basic ($49/user/month), Professional ($79/user/month), and Organization ($119/user/month) on annual billing. Monthly billing adds roughly 20% to each tier.',
       'The headline plan matters, but the bigger cost question is whether the team uses credits and seats with enough discipline to turn activity into qualified pipeline.'
     ],
     pricing: [
-      'Most teams should evaluate Apollo pricing by workflow maturity, not by feature envy. A smaller plan with better segmentation often outperforms a larger plan with weak list discipline.',
-      'The practical cost drivers are seat allocation, credit burn, enrichment volume, and duplicate prospecting effort. Those are operational variables, not just billing variables.'
+      'Apollo Free includes 900 credits per year (granted monthly, 75/month), limited to 2 active sequences and basic filtering. Enough to test, not enough to run a real outbound motion.',
+      'Apollo Basic at $49/user/month (annual) or $59/month-to-month gives 30,000 credits per year (~2,500/month per seat), unlimited sequences, and Salesforce/HubSpot integration. This is where small teams can run real campaigns.',
+      'Apollo Professional at $79/user/month (annual) or $99/month-to-month raises credits to 48,000 per year, adds a built-in US dialer with call recording, AI-assisted email writing, and all integrations. This is the most popular plan.',
+      'Apollo Organization at $119/user/month (annual) or $149/month-to-month requires a minimum of 3 users ($4,284/year entry cost), includes international dialer, custom reports, advanced security, and 72,000 credits per year.',
+      'Credit consumption: email reveal costs 1 credit, phone reveal costs 1 credit, contact enrichment costs 1 credit for email/demographics or 9 credits if a mobile number is returned. Skipping phone data saves 89% per record during enrichment.'
     ],
     customSections: [
       {
         title: 'What actually drives cost',
         paragraphs: [
           'The biggest driver is not always the plan tier. It is how many contacts a team touches without enough filtering discipline. Broad prospecting quickly turns into unnecessary credit usage.',
-          'Another cost driver is duplicate work. When reps export overlapping segments or enrich records without a clear campaign owner, spend rises without improving results.'
+          'For a 5-person team on Basic ($49/user/month), annual cost is $2,940. With 30,000 credits shared across the team, each rep gets roughly 500 reveals per month before rationing. That is enough for focused niche outbound, not for mass blasting.',
+          'Organization requires a 3-user minimum, so its real entry point is $357/month or $4,284/year before any overages or add-ons.'
         ]
       },
       {
         title: 'How smaller teams should think about pricing',
         paragraphs: [
           'Smaller teams should start by matching the tool to one core workflow: build list, launch campaign, qualify replies. If Apollo covers that motion well, the price is easier to justify.',
-          'If the team is still experimenting with who to target, it is smarter to control workflow complexity before expanding spend.'
+          'A solo founder can run effective outbound on Basic at $480/year. A 10-person team on Professional costs $9,480/year but gains a US dialer and higher credit allocation. Model against the manual time Apollo replaces, not against abstract ROI.',
+          'Always start with Free to validate data quality in your target market before committing to a paid tier.'
         ]
       },
       {
-        title: 'How to keep Apollo affordable',
+        title: 'Hidden costs most teams miss',
         paragraphs: [
-          'Use tight ICP filters, clear ownership, and a short list QA process. Those three habits usually do more for cost control than plan upgrades or downgrades alone.',
-          'Review spend against qualified meetings and pipeline quality, not against total sends or exports.'
+          'Credits are consumed by enrichment, not just by outreach. If your team enriches records with mobile phone numbers (9 credits each instead of 1), your budget burns 9x faster per record.',
+          'Annual plans grant credits upfront for the full year, not monthly. A team that burns through credits in Q1 has no replenishment until renewal.',
+          'The "Unlimited" plan label is governed by a Fair Use Policy: 10,000 credits/month for non-paying accounts, or the lesser of amount paid/$0.025 or 1 million credits/year for paying accounts. At $0.025 per credit, every $100 of monthly spend buys 4,000 credits of fair use.'
         ]
       }
     ],
     hiddenDrawbacks: [
       'Teams often blame plan price when the real problem is poor prospecting discipline.',
-      'Cheap-looking outbound becomes expensive if credits are wasted on low-fit records.',
-      'Seat growth should follow process maturity, not optimism.'
+      'Annual billing locks you in: switching mid-year or canceling means losing unused credits.',
+      'Credit costs can compound when enrichment and export habits are sloppy.'
     ],
     comparisonRows: [
-      ['Apollo with tight segmentation', 'Teams with one owned workflow and simple governance', 'Low to mid', 'Usually the best budget-to-speed tradeoff'],
-      ['Apollo with loose exports', 'Teams chasing volume without QA', 'Mid', 'Looks affordable at first, becomes expensive fast'],
-      ['Heavier prospecting stack', 'Teams with advanced routing and separate ops ownership', 'High', 'Potentially justified only when complexity already exists']
+      ['Apollo Basic ($49/user/mo)', 'Solo founders, small agencies with 1-3 users', 'Low', 'Best entry point for real outbound; 30K credits/year is enough for focused campaigns'],
+      ['Apollo Professional ($79/user/mo)', 'Growing teams needing dialer + more credits', 'Mid', 'Most popular tier; 48K credits/year + US dialer is the sweet spot for active sales teams'],
+      ['Apollo Organization ($119/user/mo)', 'Multi-person teams needing reports + SSO', 'Mid-high', 'Only justified at 3+ users; entry cost is $4,284/year minimum'],
+      ['Separate data + outreach stack', 'Ops-heavy teams wanting modular control', 'Mid-high', 'Can be cheaper per tool but slower and more complex to manage']
     ],
     qualitySignals: [
       'Credits are tied to qualified work, not broad low-fit activity.',
@@ -220,14 +231,15 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Monthly spend review is tied to pipeline quality and campaign ownership.'
     ],
     checklist: [
-      'Estimate credit burn from one realistic segment, not from a theoretical maximum.',
+      'Estimate credit burn from one realistic segment: how many contacts do you need to reveal per qualified meeting?',
       'Check if seat allocation matches actual campaign ownership.',
       'Review whether duplicate work is inflating spend.',
       'Compare Apollo cost to the manual time it replaces.',
+      'Start Free, then Basic, and upgrade only when workflow is proven.',
       'Re-evaluate plan fit after the first full month of disciplined usage.'
     ],
     finalVerdict: [
-      'Apollo pricing is usually reasonable for teams that use it as an operating system rather than a bulk export tool.',
+      'Apollo pricing is reasonable for teams that use it as an operating system rather than a bulk export tool. At $49-$119/user/month, the real cost depends on credit discipline, not plan tier.',
       'If your workflow is messy, the platform can feel more expensive than it really is. Fix process first, then evaluate spend.'
     ]
   },

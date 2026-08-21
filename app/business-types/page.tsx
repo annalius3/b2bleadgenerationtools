@@ -1,8 +1,7 @@
-import Link from 'next/link';
-
 import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
 import { Icons } from '@/components/icons';
+import { TrackedIndustryLink } from '@/components/tracked-industry-link';
 import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { getGuidesByIndustry, hubContent, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
@@ -31,17 +30,18 @@ export default function BusinessTypesPage() {
       <section className="defer-section pb-16">
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {industries.map((industry) => (
-            <Link
+            <TrackedIndustryLink
               key={industry.slug}
               href={`/business-types/${industry.slug}`}
-              prefetch={false}
+              slug={industry.slug}
+              name={industry.name}
               className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200"
             >
               <div className="mb-3 block">{Icons.industry()}</div>
               <h2 className="text-lg font-semibold text-slate-900">{industry.name}</h2>
               <p className="mt-2 text-sm text-slate-600">{industry.description}</p>
               <p className="mt-3 text-xs font-medium text-blue-700">{getGuidesByIndustry(industry.slug).length} related guides</p>
-            </Link>
+            </TrackedIndustryLink>
           ))}
         </div>
       </section>

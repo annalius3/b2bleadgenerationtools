@@ -9,6 +9,7 @@ import { ApolloCtaBlock } from '@/components/apollo-cta-block';
 import { HomeHeroHeading } from '@/components/home-hero-heading';
 import { Icons } from '@/components/icons';
 import { NewsletterForm } from '@/components/newsletter-form';
+import { TrackedIndustryLink } from '@/components/tracked-industry-link';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
 import { guides, industries } from '@/lib/content';
@@ -116,15 +117,16 @@ export default function HomePage() {
         </div>
         <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {industries.map((industry) => (
-            <Link
+            <TrackedIndustryLink
               key={industry.slug}
               href={`/business-types/${industry.slug}`}
-              prefetch={false}
+              slug={industry.slug}
+              name={industry.name}
               className="rounded-2xl border border-slate-200 bg-white p-4 text-sm shadow-sm transition hover:border-blue-200"
             >
               <p className="font-semibold text-slate-900">{industry.name}</p>
               <p className="mt-2 text-slate-600">{industry.description}</p>
-            </Link>
+            </TrackedIndustryLink>
           ))}
         </div>
         <div className="mx-auto mt-6 grid w-full max-w-4xl gap-4 rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-blue-50 p-5 shadow-sm md:grid-cols-3">

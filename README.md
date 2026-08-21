@@ -12,16 +12,17 @@ Production-ready Next.js App Router project for an English SEO authority site fo
 ## Routes
 - `/` homepage
 - Intent hubs: `/find-clients`, `/outreach`, `/sales-pipeline`, `/for-startups`, `/guides`
-- Industry hub: `/by-industry` and `/by-industry/[slug]`
+- Business types: `/business-types` and `/business-types/[slug]`
 - Guide pages: `/guides/[slug]`
-- Legal/contact: `/contact`, `/privacy`, `/terms`, `/affiliate-disclosure`
+- Legal/trust: `/about`, `/editorial-methodology`, `/contact`, `/privacy`, `/terms`, `/affiliate-disclosure`
 - SEO feeds: `/sitemap.xml`, `/robots.txt`, `/rss.xml`
 
 ## Content model
 - `src/lib/content.ts` contains:
   - `hubContent`
-  - `industries`
-  - `guides[]` with `slug/title/description/hub/industries/steps/useCases/tips/faqs/relatedSlugs`
+  - `industries` (20 industries)
+  - `guides[]` (226 guides) with `slug/title/description/hub/industries/steps/useCases/tips/faqs/relatedSlugs`
+- `src/lib/guide-overrides.ts` contains per-guide overrides for top-priority pages
 
 ## Local setup
 1. Install dependencies:
@@ -45,32 +46,32 @@ npm run build
 ## Environment variables
 - `NEXT_PUBLIC_SITE_URL` (recommended: `https://www.b2bleadgenerationtools.com`)
 - `NEXT_PUBLIC_GA_ID` (optional, GA4 Measurement ID)
+- `CONVERTKIT_API_KEY` (required for production newsletter)
+- `CONVERTKIT_FORM_ID` (required for production newsletter)
 
-## Forms
-### Newsletter (`/api/subscribe`)
+## Newsletter (`/api/subscribe`)
 - Validates email.
+- Honeypot field (`website`) for spam protection.
 - In development, writes subscribers to `data/subscribers-dev.json`.
-- In production, returns success response (placeholder for provider integration).
-
-### Contact (`/api/contact`)
-- Validates `name/email/message`.
-- Honeypot field: `website` (hidden input).
-- Returns mock success payload.
-
-## Integrating ConvertKit or Beehiiv later
-Replace logic in `app/api/subscribe/route.ts`:
-1. Keep current email validation.
-2. Add provider API call using server-side secret env vars.
-3. Return provider error or success payload.
+- In production, subscribes via ConvertKit API (double opt-in handled by Kit).
+- Redirects with `?subscribed=1` on success or `?error=...` on failure.
 
 ## SEO implemented
 - Canonical URLs via metadata
 - OpenGraph + Twitter metadata (+ OG image)
 - JSON-LD:
   - `WebSite` on home
+  - `Organization` on all pages
   - `Article` on guide pages
   - `BreadcrumbList` on internal routes
+  - `FAQPage` on guide pages with FAQs
+  - `HowTo` on tutorial/playbook guides
+  - `Review` on review-type guides
 - `app/sitemap.ts`, `app/robots.ts`, `app/rss.xml/route.ts`
+
+## Analytics (GA4)
+- Lazy-loaded, production-only (loads only on `www.b2bleadgenerationtools.com`)
+- Custom events: `newsletter_submit`, `apollo_referral_click`
 
 ## Deploy to Vercel
 1. Push repository to GitHub.
@@ -88,6 +89,7 @@ Replace logic in `app/api/subscribe/route.ts`:
 - `npm run build`
 - `npm run start`
 - `npm run lint`
-- `npm run check:images`
-- `npm run check:interlinking`
-- `npm run publish:check`
+- `npm run check:images` — validate no duplicate images
+- `npm run check:interlinking` — validate all guides have ≥2 related slugs
+- `npm run check:guide-hrefs` — validate no broken `/guides/` hrefs
+- `npm run publish:check` — full validation pipeline (lint + build + all checks)

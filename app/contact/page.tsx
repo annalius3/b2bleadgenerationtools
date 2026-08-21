@@ -1,6 +1,5 @@
-import Link from 'next/link';
-
 import { Container } from '@/components/container';
+import { TrackedMailto } from '@/components/tracked-mailto';
 import { BreadcrumbSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -29,9 +28,7 @@ export default function ContactPage() {
           </p>
           <div className="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-5">
             <p className="text-sm font-semibold text-slate-900">Email</p>
-            <Link href="mailto:vladkatintam@gmail.com" className="mt-2 inline-flex text-lg font-semibold text-sky-700 transition hover:text-sky-900">
-              vladkatintam@gmail.com
-            </Link>
+            <TrackedMailto email="vladkatintam@gmail.com" />
           </div>
           <div className="mt-6 space-y-3 text-sm leading-7 text-slate-600">
             <p>
