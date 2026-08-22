@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { HubHero } from '@/components/hub-hero';
+import { ShareButtons } from '@/components/share-buttons';
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, getGuidesByIndustry, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
@@ -132,6 +133,8 @@ export default async function BusinessTypePage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      <ShareButtons title={`${industry.name} Lead Generation Guides`} path={`/business-types/${industry.slug}`} />
     </Container>
   );
 }

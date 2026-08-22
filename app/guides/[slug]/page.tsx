@@ -8,6 +8,7 @@ import { TrackedToc } from '@/components/tracked-toc';
 import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
 import { GuideSectionLead } from '@/components/guide-section-lead';
+import { ShareButtons } from '@/components/share-buttons';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
@@ -573,6 +574,8 @@ export default async function GuidePage({ params }: Props) {
           {finalVerdictParagraphs.map((paragraph) => (
             <p key={paragraph}>{renderApolloText(paragraph)}</p>
           ))}
+
+          <ShareButtons title={guide.title} path={`/guides/${guide.slug}`} />
         </article>
 
         <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">

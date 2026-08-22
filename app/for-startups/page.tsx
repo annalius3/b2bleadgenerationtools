@@ -1,5 +1,6 @@
 import { Container } from '@/components/container';
 import { HubPage } from '@/components/hub-page';
+import { ShareButtons } from '@/components/share-buttons';
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
 import { guides } from '@/lib/content';
@@ -33,6 +34,7 @@ export default function ForStartupsPage() {
         }))}
       />
       <HubPage hub="for-startups" />
+      <ShareButtons title="For Startups Hub" path="/for-startups" />
     </Container>
   );
 }

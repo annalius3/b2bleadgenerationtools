@@ -1,5 +1,6 @@
 import { Container } from '@/components/container';
 import { HubPage } from '@/components/hub-page';
+import { ShareButtons } from '@/components/share-buttons';
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
 import { guides } from '@/lib/content';
@@ -33,6 +34,7 @@ export default function OutreachPage() {
         }))}
       />
       <HubPage hub="outreach" />
+      <ShareButtons title="Outreach Hub" path="/outreach" />
     </Container>
   );
 }
