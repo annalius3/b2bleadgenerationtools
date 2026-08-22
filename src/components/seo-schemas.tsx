@@ -179,7 +179,7 @@ export const WebSiteSchema = ({
     description,
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${url}/guides?q={search_term_string}`,
+      target: `${url}/guides/search?q={search_term_string}`,
       'query-input': 'required name=search_term_string'
     }
   };
@@ -199,7 +199,44 @@ export const OrganizationSchema = ({
     name,
     url,
     logo: `${url}/icon.svg`,
-    sameAs: [url]
+    description: 'Apollo.io guides, cold email templates, and B2B lead generation strategies for small businesses and startups.',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      email: 'vladkatintam@gmail.com'
+    },
+    sameAs: [
+      url,
+      'https://github.com/annalius3/b2bleadgenerationtools'
+    ]
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
+};
+
+export const ItemListSchema = ({
+  name,
+  description,
+  url,
+  items
+}: {
+  name: string;
+  description: string;
+  url: string;
+  items: Array<{ name: string; url: string; description?: string }>;
+}) => {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    description,
+    url,
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      url: item.url,
+      description: item.description
+    }))
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 };

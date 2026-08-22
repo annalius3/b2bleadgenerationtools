@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { Container } from '@/components/container';
 import { GuideCard } from '@/components/guide-card';
 import { HubHero } from '@/components/hub-hero';
-import { BreadcrumbSchema } from '@/components/seo-schemas';
+import { BreadcrumbSchema, ItemListSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, getGuidesByIndustry, industries } from '@/lib/content';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
@@ -53,6 +53,16 @@ export default async function BusinessTypePage({ params }: Props) {
           { name: 'Business Types', item: `${siteConfig.url}/business-types` },
           { name: industry.name, item: `${siteConfig.url}/business-types/${industry.slug}` }
         ]}
+      />
+      <ItemListSchema
+        name={`${industry.name} Lead Generation Guides`}
+        description={industry.description}
+        url={`${siteConfig.url}/business-types/${industry.slug}`}
+        items={industryGuides.map((g) => ({
+          name: g.title,
+          url: `${siteConfig.url}/guides/${g.slug}`,
+          description: g.description
+        }))}
       />
       <HubHero
         title={industry.name}
