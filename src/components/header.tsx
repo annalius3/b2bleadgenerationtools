@@ -12,7 +12,9 @@ const menu: Array<{ href: Route; label: string }> = [
   { href: '/outreach', label: 'Outreach' },
   { href: '/sales-pipeline', label: 'Sales Pipeline' },
   { href: '/for-startups', label: 'For Startups' },
-  { href: '/guides', label: 'Guides' }
+  { href: '/guides', label: 'Guides' },
+  { href: '/compare', label: 'Compare' },
+  { href: '/glossary', label: 'Glossary' }
 ];
 
 export const Header = () => (

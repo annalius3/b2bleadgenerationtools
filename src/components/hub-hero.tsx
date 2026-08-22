@@ -66,7 +66,7 @@ export const HubHero = ({
                 height={768}
                 sizes="(max-width: 1023px) 100vw, 42vw"
                 className="h-full w-full object-cover"
-                loading="lazy"
+                priority
               />
             </div>
           </div>

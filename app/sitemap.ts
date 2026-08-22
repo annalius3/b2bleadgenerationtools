@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/business-types', changeFrequency: 'monthly' as const, priority: 0.6 },
     { path: '/for-startups', changeFrequency: 'weekly' as const, priority: 0.7 },
     { path: '/guides', changeFrequency: 'weekly' as const, priority: 0.7 },
+    { path: '/compare', changeFrequency: 'monthly' as const, priority: 0.7 },
+    { path: '/glossary', changeFrequency: 'monthly' as const, priority: 0.6 },
     { path: '/contact', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.2 },
     { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.2 },

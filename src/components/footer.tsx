@@ -20,21 +20,18 @@ export const Footer = () => (
           </p>
         </div>
         <div className="space-y-2">
-          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Navigation</p>
-          <Link href="/find-clients" className="block hover:text-blue-700">
-            Find Clients
-          </Link>
-          <Link href="/outreach" className="block hover:text-blue-700">
-            Outreach
-          </Link>
-          <Link href="/sales-pipeline" className="block hover:text-blue-700">
-            Sales Pipeline
-          </Link>
-          <Link href="/for-startups" className="block hover:text-blue-700">
-            For Startups
-          </Link>
+          <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Resources</p>
           <Link href="/guides" className="block hover:text-blue-700">
             All Guides
+          </Link>
+          <Link href="/compare" className="block hover:text-blue-700">
+            Tool Comparisons
+          </Link>
+          <Link href="/glossary" className="block hover:text-blue-700">
+            Glossary
+          </Link>
+          <Link href="/editorial-methodology" className="block hover:text-blue-700">
+            Editorial Methodology
           </Link>
         </div>
         <div className="space-y-2">

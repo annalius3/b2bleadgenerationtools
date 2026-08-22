@@ -194,60 +194,69 @@ export default async function GuidePage({ params }: Props) {
   const summaryParagraphs =
     override?.summary ?? [
       hubCopy.verdict,
+      `This guide covers ${guide.title.toLowerCase()} with a focus on practical execution for ${industryRefs.length > 0 ? industryRefs.map(i => i.name.toLowerCase()).join(', ') : 'B2B teams'}. The goal is to give you a clear workflow you can implement this week, not another generic overview.`,
       `If you are working on ${titleCaseHub(guide.hub).toLowerCase()}, the best results usually come from narrower segmentation, clearer ownership, and more honest review of what is or is not working.`
     ];
   const prosList = override?.pros ?? [
-    'Creates a clearer decision path instead of generic best-practice advice.',
+    `Specifically addresses ${guide.title.toLowerCase()} with actionable steps, not theory.`,
     'Fits lean teams that need practical process improvements quickly.',
-    'Connects prospecting activity to sales outcomes and follow-up discipline.'
+    `Connects ${titleCaseHub(guide.hub).toLowerCase()} activity to sales outcomes and follow-up discipline.`,
+    'Includes comparison tables, checklists, and FAQ sections for quick reference.'
   ];
   const consList = override?.cons ?? [
     'Will not fix weak positioning or a poorly defined offer.',
     'Needs process ownership to work consistently.',
-    'Usually underperforms when teams chase volume before fit.'
+    'Usually underperforms when teams chase volume before fit.',
+    'Requires adapting the framework to your specific industry and buyer profile.'
   ];
   const pricingParagraphs =
     override?.pricing ?? [
-      'For most teams, the main cost is not just software. It is also the operating cost of bad targeting, weak messaging, and slow follow-up. That is why list quality and campaign structure usually matter before expanding the stack.',
+      `The real cost of ${guide.title.toLowerCase()} is not just software — it is also the operating cost of bad targeting, weak messaging, and slow follow-up. List quality and campaign structure usually matter before expanding the stack.`,
+      'For teams evaluating tools, start with the free tier or trial period. Validate that the workflow fits your process before committing to an annual plan.',
       'Always validate current pricing and plan limits directly on vendor sites before making a purchase decision.'
     ];
   const qualitySignals = override?.qualitySignals ?? hubCopy.signals;
   const hiddenDrawbacks =
     override?.hiddenDrawbacks ?? [
       hubCopy.drawback,
-      'Internal links help users navigate, but they do not replace genuinely strong page-level depth.',
-      'A process can look busy and still produce weak sales outcomes if qualification criteria are vague.'
+      `Most teams underestimate the setup time for ${guide.title.toLowerCase()}. The first iteration usually takes 2-3x longer than expected.`,
+      'A process can look busy and still produce weak sales outcomes if qualification criteria are vague.',
+      'Template-based approaches work best when adapted to your specific buyer profile, not copied verbatim.'
     ];
   const whenNotParagraphs =
     override?.whenNot ?? [
       hubCopy.notFor,
-      'Also pause if no one owns reply handling, list QA, or handoff into pipeline. Outbound gets expensive when execution is fragmented.'
+      'Also pause if no one owns reply handling, list QA, or handoff into pipeline. Outbound gets expensive when execution is fragmented.',
+      `Skip this approach if you have not yet validated product-market fit or if your target customer profile is still changing frequently.`
     ];
   const scenarioParagraphs =
     override?.scenario ?? [
-      'A realistic way to apply this guide is to choose one segment, one offer angle, and one next-step goal for the week. Start with the smallest useful operating loop: list quality review, message refinement, follow-up consistency, and then pipeline review.',
+      `A realistic way to apply ${guide.title.toLowerCase()} is to choose one segment, one offer angle, and one next-step goal for the week. Start with the smallest useful operating loop: list quality review, message refinement, follow-up consistency, and then pipeline review.`,
+      'For example: pick 50 accounts in your target industry, write 3 personalized angles, send on Tuesday morning, and review replies by Thursday. That single cycle teaches more than reading 10 more guides.',
       'When a team changes fewer variables at once, it becomes much easier to see what is actually helping.'
     ];
   const checklistItems =
     override?.checklist ?? [
-      'Define one segment, one buyer problem, and one clear offer angle.',
+      `Define one segment, one buyer problem, and one clear offer angle for ${guide.title.toLowerCase()}.`,
       'Review account fit before expanding contact volume.',
       'Map roles and next-step ownership before launch.',
       'Write one clear CTA linked to a specific business problem.',
+      'Set up tracking for opens, replies, and meetings booked.',
       'Review reply quality, meeting quality, and qualification notes weekly.',
       'Document one process change at a time.',
-      'Use internal links to connect this workflow to the next operational problem.',
-      'Update the page when the workflow or recommendation materially changes.'
+      `Use internal links to connect this ${titleCaseHub(guide.hub).toLowerCase()} workflow to the next operational problem.`
     ];
   const alternativesParagraphs =
     override?.alternatives ?? [
       `If this exact workflow is not the right fit, move one level up to the broader ${titleCaseHub(guide.hub)} hub or compare it against adjacent guides in the same cluster.`,
+      `For teams in ${industryRefs.length > 0 ? industryRefs[0].name.toLowerCase() : 'your industry'}, consider starting with an industry-specific playbook before applying this general framework.`,
       'In larger deal environments, more account-based motion may be a better choice. In earlier-stage teams, a simpler founder-led version may perform better.'
     ];
   const finalVerdictParagraphs =
     override?.finalVerdict ?? [
       `This guide should help if the goal is to make ${guide.title.toLowerCase()} more repeatable and easier to inspect.`,
-      'The highest-ROI move is usually not doing more. It is building a narrower, more honest workflow that the team can actually sustain and review.'
+      `The highest-ROI move is usually not doing more — it is building a narrower, more honest workflow that the team can actually sustain and review. Start with one segment, one message angle, and one weekly review cadence.`,
+      'If this guide was useful, explore related workflows in the links below or return to the hub for the next priority problem.'
     ];
 
   return (
