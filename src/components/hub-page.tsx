@@ -10,8 +10,11 @@ export const HubPage = ({ hub }: { hub: Exclude<HubKey, 'by-industry'> }) => {
     <>
       <HubHero title={config.title} description={config.description} subtopics={config.subtopics} />
       <section className="defer-section pb-16">
-        <div className="mb-5">
-          <h2 className="text-2xl font-semibold text-slate-900">Featured articles</h2>
+        <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <h2 className="text-2xl font-semibold text-slate-900">Featured articles</h2>
+            <p className="mt-1 text-sm text-slate-600">{hubGuides.length} guides available in this hub</p>
+          </div>
         </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {hubGuides.map((guide) => (

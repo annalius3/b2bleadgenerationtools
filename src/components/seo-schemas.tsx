@@ -43,7 +43,10 @@ export const ArticleSchema = ({
     '@type': 'Article',
     headline: title,
     description,
-    mainEntityOfPage: url,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url
+    },
     image,
     dateModified,
     datePublished,
@@ -124,13 +127,15 @@ export const ReviewSchema = ({
   description,
   url,
   itemName,
-  image
+  image,
+  rating = 5
 }: {
   title: string;
   description: string;
   url: string;
   itemName: string;
   image: string;
+  rating?: number;
 }) => {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -141,6 +146,11 @@ export const ReviewSchema = ({
     author: {
       '@type': 'Organization',
       name: 'B2B Lead Gen Tools Editorial'
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: rating,
+      bestRating: 5
     },
     itemReviewed: {
       '@type': 'SoftwareApplication',
@@ -198,7 +208,12 @@ export const OrganizationSchema = ({
     '@type': 'Organization',
     name,
     url,
-    logo: `${url}/icon.svg`,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${url}/icon.svg`,
+      width: 512,
+      height: 512
+    },
     description: 'Apollo.io guides, cold email templates, and B2B lead generation strategies for small businesses and startups.',
     contactPoint: {
       '@type': 'ContactPoint',
@@ -206,7 +221,6 @@ export const OrganizationSchema = ({
       email: 'vladkatintam@gmail.com'
     },
     sameAs: [
-      url,
       'https://github.com/annalius3/b2bleadgenerationtools'
     ]
   };

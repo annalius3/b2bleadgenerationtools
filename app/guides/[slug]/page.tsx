@@ -27,9 +27,20 @@ const hubPath: Record<(typeof guides)[number]['hub'], Route> = {
   guides: '/guides'
 };
 
-const DEFAULT_PUBLISHED_DATE = '2026-01-15';
-const DEFAULT_UPDATED_DATE = '2026-03-26';
-const UPDATED_LABEL = 'March 26, 2026';
+  const DEFAULT_PUBLISHED_DATE = '2026-01-15';
+  const DEFAULT_UPDATED_DATE = '2026-03-26';
+  const UPDATED_LABEL = 'March 26, 2026';
+
+  const estimateReadingTime = (g:typeof guides[0]) => {
+    const wordCount = [
+      g.description,
+      ...g.steps,
+      ...g.useCases,
+      ...g.tips,
+      ...g.faqs.map(f => f.question + ' ' + f.answer)
+    ].join(' ').split(/\s+/).length;
+    return Math.max(5, Math.round(wordCount / 200));
+  };
 
 const titleCaseHub = (hub: (typeof guides)[number]['hub']) => hubContent[hub].title;
 
@@ -137,7 +148,9 @@ export async function generateMetadata({ params }: Props) {
     description: guide.description,
     path: `/guides/${guide.slug}`,
     type: 'article',
-    image: `/images/guides/${guide.slug}-1.jpg`
+    image: `/images/guides/${guide.slug}-1.jpg`,
+    publishedTime: guide.publishedAt ?? DEFAULT_PUBLISHED_DATE,
+    modifiedTime: guide.updatedAt ?? DEFAULT_UPDATED_DATE
   });
 }
 
@@ -287,13 +300,14 @@ export default async function GuidePage({ params }: Props) {
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Reviewed by B2B Lead Gen Tools Editorial</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Updated {UPDATED_LABEL}</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">{kindCopy.badge}</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">{estimateReadingTime(guide)} min read</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">US B2B focus</span>
           </div>
         </div>
         <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
           <Image
             src={`/images/guides/${guide.slug}-1.jpg`}
-            alt={`${guide.title} visual`}
+            alt={`Illustration for ${guide.title} — visual guide overview`}
             width={1400}
             height={780}
             sizes="(max-width: 1280px) 100vw, 960px"
@@ -437,14 +451,14 @@ export default async function GuidePage({ params }: Props) {
           </ol>
 
           <div className="my-6 overflow-hidden rounded-2xl border border-slate-200 bg-white p-2 shadow-sm">
-            <Image
-              src={`/images/guides/${guide.slug}-2.jpg`}
-              alt={`${guide.title} strategy visual`}
-              width={1400}
-              height={780}
-              sizes="(max-width: 1280px) 100vw, 960px"
-              className="h-auto w-full rounded-xl"
-            />
+          <Image
+            src={`/images/guides/${guide.slug}-2.jpg`}
+            alt={`Step-by-step strategy breakdown for ${guide.title}`}
+            width={1400}
+            height={780}
+            sizes="(max-width: 1280px) 100vw, 960px"
+            className="h-auto w-full rounded-xl"
+          />
           </div>
 
           <section className="rounded-xl border border-blue-100 bg-blue-50 p-4">

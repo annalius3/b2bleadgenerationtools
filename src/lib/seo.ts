@@ -7,13 +7,17 @@ export const buildMetadata = ({
   description,
   path,
   type = 'website',
-  image = '/images/home/hero-team.jpg'
+  image = '/images/home/hero-team.jpg',
+  publishedTime,
+  modifiedTime
 }: {
   title: string;
   description: string;
   path: string;
   type?: 'website' | 'article';
   image?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
 }): Metadata => ({
   title,
   description,
@@ -37,7 +41,9 @@ export const buildMetadata = ({
         height: 630,
         alt: title
       }
-    ]
+    ],
+    ...(publishedTime ? { publishedTime } : {}),
+    ...(modifiedTime ? { modifiedTime } : {})
   },
   twitter: {
     card: 'summary_large_image',

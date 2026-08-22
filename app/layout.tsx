@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+﻿import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { Suspense } from 'react';
 
@@ -15,6 +15,13 @@ const inter = Inter({
   variable: '--font-sans'
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#2563eb'
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -23,17 +30,18 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: '/icon.svg',
+    icon: '/favicon.png',
     apple: '/apple-icon.svg'
-  },
-  other: {
-    'google-site-verification': ''
   }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      </head>
       <body className={`${inter.variable} min-h-screen`}>
         <WebSiteSchema url={siteConfig.url} name={siteConfig.name} description={siteConfig.description} />
         <OrganizationSchema url={siteConfig.url} name={siteConfig.name} />
