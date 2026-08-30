@@ -5085,5 +5085,281 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Apollo is effective for sales automation when it automates the right layer of work: repetitive execution, not commercial judgment. Good automation increases leverage without making the system harder to trust.',
       'If automation is creating more cleanup than speed, the rules are still too loose.'
     ]
+  },
+  'cold-email-templates-for-accounting-firms': {
+    summary: [
+      'Cold email remains one of the most effective client acquisition channels for accounting firms, with average response rates of 8-15% when properly personalized.',
+      'The key to success is timing outreach around tax deadlines, referencing specific business triggers, and leading with compliance expertise rather than sales pitches.'
+    ],
+    pros: [
+      'Direct access to business owners and CFOs who need accounting services.',
+      'Scalable: can reach 50-100 prospects per day with proper personalization.',
+      'Cost-effective compared to referral fees or paid advertising.',
+      'Measurable: track opens, replies, and appointment bookings precisely.'
+    ],
+    cons: [
+      'Requires careful compliance with CAN-SPAM and state regulations.',
+      'Response rates vary by industry and season—tax season has higher engagement.',
+      'May damage reputation if outreach feels impersonal or spammy.',
+      'Needs ongoing list maintenance and verification for deliverability.'
+    ],
+    pricing: [
+      'Email tools: $50-200/month for basic platforms, $300-500/month for advanced sequences.',
+      'Data providers: $100-300/month for verified business contact information.',
+      'Time investment: 2-3 hours daily for research, personalization, and follow-ups.',
+      'ROI benchmark: expect 3-5x return within 6 months of consistent outreach.'
+    ],
+    scenario: [
+      'A CPA firm targeting medical practices sends 50 personalized emails per day referencing recent regulatory changes in healthcare billing.',
+      'They include a specific offer: free 30-minute compliance audit for practices with 10-50 employees.',
+      'Within 3 weeks, they book 8 consultations and convert 3 into monthly retainer clients worth $2,500/month each.'
+    ],
+    finalVerdict: [
+      'Cold email works exceptionally well for accounting firms when timing, personalization, and value proposition align.',
+      'Focus on tax season urgency, compliance expertise, and specific business outcomes to stand out from generic financial services outreach.'
+    ]
+  },
+  'linkedin-lead-generation-for-cybersecurity-companies': {
+    summary: [
+      'LinkedIn is the most effective channel for cybersecurity companies to reach CISOs, IT directors, and security managers who control security budgets.',
+      'Success requires building credibility through content before direct outreach, as security professionals are naturally skeptical of unsolicited pitches.'
+    ],
+    pros: [
+      'Direct access to security decision-makers who control budgets.',
+      'Content marketing builds trust and authority before outreach.',
+      'LinkedIn groups and communities provide warm introduction opportunities.',
+      'Visual content (case studies, threat analysis) performs well on the platform.'
+    ],
+    cons: [
+      'Slower than email—relationship building takes 2-4 weeks before conversion.',
+      'LinkedIn limits daily connection requests to 100 per account.',
+      'Security professionals are inundated with sales pitches—differentiation is critical.',
+      'Requires consistent content creation to maintain visibility.'
+    ],
+    scenario: [
+      'A cybersecurity consultancy shares weekly threat analysis posts targeting healthcare CISOs.',
+      'After 3 weeks of consistent posting, they send 50 personalized connection requests to CISOs at hospitals with 200+ beds.',
+      'They book 6 security assessment consultations and close 2 engagements worth $75,000 each.'
+    ],
+    finalVerdict: [
+      'LinkedIn lead generation works best for cybersecurity companies when combined with educational content marketing.',
+      'Build authority first through threat intelligence and compliance insights, then convert connections into consultations.'
+    ]
+  },
+  'referral-system-for-consulting-firms': {
+    summary: [
+      'A systematic referral program can generate 40-60% of consulting firm revenue, but most firms rely on random word-of-mouth instead of structured processes.',
+      'The key is creating a repeatable system for requesting, tracking, and nurturing referrals from satisfied clients and complementary service providers.'
+    ],
+    pros: [
+      'Highest conversion rate of any lead generation channel (30-50%).',
+      'Lower cost than outbound or paid advertising.',
+      'Builds trust through existing relationships.',
+      'Creates sustainable, predictable revenue streams.'
+    ],
+    cons: [
+      'Requires strong client satisfaction and relationship management.',
+      'Slower to build than outbound—takes 3-6 months to establish.',
+      'Difficult to scale without systematic processes.',
+      'Dependent on client willingness to refer.'
+    ],
+    scenario: [
+      'A management consulting firm implements quarterly referral request cadences with their top 20 clients.',
+      'They also partner with 5 accounting firms for reciprocal referrals.',
+      'Within 6 months, referrals generate 45% of new client revenue with a 35% close rate.'
+    ],
+    finalVerdict: [
+      'Referral systems are the highest-ROI lead generation channel for consulting firms, but require systematic implementation.',
+      'Combine client referral requests with partner relationships for maximum impact.'
+    ]
+  },
+  'apollo-for-architecture-firms': {
+    summary: [
+      'Architecture firms can use Apollo.io to identify active developers, construction managers, and commercial property owners who need design services.',
+      'The key is monitoring project announcements, permit filings, and development news to time outreach when projects are in planning phases.'
+    ],
+    pros: [
+      'Access to developer and construction manager contact information.',
+      'Filters for project type, company size, and geographic location.',
+      'Email sequences for nurturing long sales cycle relationships.',
+      'Integration with CRM for pipeline tracking.'
+    ],
+    cons: [
+      'Long sales cycles (3-12 months) require patient nurturing.',
+      'Portfolio quality matters more than outreach volume.',
+      'Relationship building often requires in-person meetings.',
+      'Project-based revenue creates cash flow variability.'
+    ],
+    scenario: [
+      'A commercial architecture firm uses Apollo to identify developers with active projects in their metro area.',
+      'They build a list of 200 developers and send personalized emails referencing specific projects.',
+      'Within 2 months, they book 12 consultations and win 3 commercial design projects worth $450,000 total.'
+    ],
+    finalVerdict: [
+      'Apollo.io provides architecture firms with the data and tools to systematically prospect for project-based work.',
+      'Success depends on timing outreach to project planning phases and showcasing relevant portfolio experience.'
+    ]
+  },
+  'outbound-sales-for-government-contractors': {
+    summary: [
+      'Government contracting requires a fundamentally different sales approach—compliance, certifications, and past performance matter more than traditional sales tactics.',
+      'Success comes from building relationships before RFP deadlines, not during bidding processes.'
+    ],
+    pros: [
+      'Large, stable contracts with predictable revenue.',
+      'Government agencies often become long-term clients.',
+      'Certifications and past performance create competitive moats.',
+      'Multiple pathways: prime contracts, subcontracts, and teaming agreements.'
+    ],
+    cons: [
+      'Long sales cycles (12-24 months for first contracts).',
+      'Complex compliance requirements and documentation.',
+      'Heavy competition from established contractors.',
+      'Payment terms can be slow (Net 30-60).'
+    ],
+    scenario: [
+      'An IT services company registers in SAM.gov and identifies upcoming cybersecurity contracts.',
+      'They partner with a prime contractor and submit 3 subcontracting proposals.',
+      'Within 18 months, they win their first prime contract worth $2.5 million over 3 years.'
+    ],
+    finalVerdict: [
+      'Government contracting is a long-term investment requiring patience, compliance, and relationship building.',
+      'Start with subcontracting to build past performance, then pursue prime contracts.'
+    ]
+  },
+  'inbound-lead-generation-for-b2b-saas': {
+    summary: [
+      'Inbound lead generation for B2B SaaS requires a content-first approach targeting bottom-of-funnel keywords with commercial intent.',
+      'Success depends on creating comparison pages, alternative pages, and case studies that directly address purchase decisions.'
+    ],
+    pros: [
+      'Compounds over time—content generates leads for years.',
+      'Higher quality leads than outbound (self-selected interest).',
+      'Lower customer acquisition cost at scale.',
+      'Builds brand authority and market positioning.'
+    ],
+    cons: [
+      'Slow to start—3-6 months for initial results, 12-24 months for significant pipeline.',
+      'Requires consistent content creation and SEO expertise.',
+      'Highly competitive for popular keywords.',
+      'Difficult to predict month-to-month results.'
+    ],
+    scenario: [
+      'A B2B SaaS startup creates 20 comparison pages targeting "X vs Y" keywords.',
+      'They also publish 10 case studies and 5 implementation guides.',
+      'Within 9 months, inbound leads account for 60% of qualified pipeline with 3x higher close rates than outbound.'
+    ],
+    finalVerdict: [
+      'Inbound lead generation is the highest-ROI channel for B2B SaaS at scale, but requires patience and consistent execution.',
+      'Start with bottom-of-funnel content that directly addresses purchase decisions.'
+    ]
+  },
+  'can-spam-compliance-checklist-for-cold-email': {
+    summary: [
+      'CAN-SPAM compliance is non-negotiable for cold email—violations carry penalties up to $46,517 per email and personal liability for executives.',
+      'The good news: compliance is straightforward if you follow a structured checklist.'
+    ],
+    pros: [
+      'Clear legal framework for cold email outreach.',
+      'Builds trust with recipients through transparency.',
+      'Protects your business from legal liability.',
+      'Improves deliverability by following best practices.'
+    ],
+    cons: [
+      'Requires ongoing attention to compliance updates.',
+      'Some requirements (physical address, unsubscribe) may feel counterintuitive.',
+      'Penalties are severe—ignorance is not a defense.',
+      'Different states have additional requirements beyond federal CAN-SPAM.'
+    ],
+    scenario: [
+      'A B2B SaaS company runs 10,000 cold emails per month without proper compliance.',
+      'They receive a CAN-SPAM complaint and face $50,000 in penalties.',
+      'After implementing the compliance checklist, they maintain 100% compliance while improving deliverability by 25%.'
+    ],
+    finalVerdict: [
+      'CAN-SPAM compliance is simple but critical—implement the checklist before sending any cold email.',
+      'The cost of compliance is minimal compared to the penalties and reputation damage of violations.'
+    ]
+  },
+  'multi-channel-outreach-for-manufacturing': {
+    summary: [
+      'Manufacturing buyers respond best to multi-channel outreach combining email, LinkedIn, phone, and direct mail for maximum impact.',
+      'The key is coordinating touchpoints across channels with manufacturing-specific messaging and timing.'
+    ],
+    pros: [
+      'Higher response rates than single-channel outreach (15-25% vs. 5-10%).',
+      'Direct mail works exceptionally well for physical products and samples.',
+      'Phone outreach reaches busy manufacturing professionals effectively.',
+      'Multiple touchpoints build brand recognition and trust.'
+    ],
+    cons: [
+      'More complex to manage than single-channel campaigns.',
+      'Higher cost per prospect due to multiple channel investments.',
+      'Requires coordination and timing across different platforms.',
+      'Direct mail has longer lead times and higher costs.'
+    ],
+    scenario: [
+      'An industrial equipment manufacturer runs a 4-week multi-channel campaign to 100 target accounts.',
+      'Email (Day 1), LinkedIn (Day 3), phone (Day 5), and direct mail with product samples (Day 7).',
+      'Response rate: 22% across all channels. 8 meetings booked, 3 proposals sent, 1 contract closed worth $180,000.'
+    ],
+    finalVerdict: [
+      'Multi-channel outreach is the most effective approach for manufacturing companies with longer sales cycles.',
+      'Coordinate email, LinkedIn, phone, and direct mail for maximum impact and response rates.'
+    ]
+  },
+  'customer-retention-strategies-for-b2b-agencies': {
+    summary: [
+      'Customer retention is 5-7x cheaper than acquisition for B2B agencies, yet most focus 90% of resources on getting new clients.',
+      'The key is building systematic onboarding, communication, and expansion processes that reduce churn and increase lifetime value.'
+    ],
+    pros: [
+      'Dramatically lower cost than acquisition.',
+      'Higher lifetime value from existing clients.',
+      'Referrals come from satisfied, long-term clients.',
+      'Predictable revenue for forecasting and planning.'
+    ],
+    cons: [
+      'Requires investment in customer success infrastructure.',
+      'Results take 3-6 months to materialize.',
+      'Difficult to measure and attribute revenue.',
+      'Requires cultural shift from sales-focused to client-focused.'
+    ],
+    scenario: [
+      'A marketing agency reduces churn from 25% to 12% by implementing structured onboarding and quarterly business reviews.',
+      'Client lifetime value increases from 14 months to 28 months.',
+      'Revenue grows 40% without increasing new client acquisition spending.'
+    ],
+    finalVerdict: [
+      'Customer retention is the highest-ROI investment for B2B agencies, but requires systematic implementation.',
+      'Start with onboarding optimization and quarterly business reviews for maximum impact.'
+    ]
+  },
+  'cold-calling-scripts-for-insurance-agents': {
+    summary: [
+      'Cold calling remains effective for insurance agents because trust and personal connection matter more in financial services than any other channel.',
+      'Success depends on research, timing, and practiced objection handling rather than volume.'
+    ],
+    pros: [
+      'Immediate feedback and real-time objection handling.',
+      'Personal connection builds trust faster than email.',
+      'Higher conversion rates than email for complex insurance products.',
+      'Direct access to decision-makers during business hours.'
+    ],
+    cons: [
+      'Lower contact rates than email (10-15% vs. 30-50%).',
+      'Requires thick skin—rejection rates are high.',
+      'Time-intensive: 50-100 calls per day for consistent results.',
+      'Do-not-call list compliance adds complexity.'
+    ],
+    scenario: [
+      'An insurance agent calls 75 business owners per day with a targeted commercial insurance offer.',
+      'They book 3 appointments per day and close 1 new client per week.',
+      'Monthly revenue: 4 new clients × $3,000 annual premium × 15% commission = $1,800/month recurring.'
+    ],
+    finalVerdict: [
+      'Cold calling works for insurance agents when combined with research, proper timing, and practiced scripts.',
+      'Focus on quality conversations over call volume for maximum appointments and conversions.'
+    ]
   }
 };

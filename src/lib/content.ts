@@ -392,8 +392,42 @@ export const industries: Industry[] = [
     subtopics: ['Procurement outreach', 'Operations stakeholder mapping', 'Long-cycle account selection'],
     featuredSlugs: ['account-based-prospecting-framework', 'building-target-account-lists', 'deal-closing-strategies-b2b'],
     imageAlt: 'Manufacturing sales team planning account-based outreach'
+  },
+  {
+    slug: 'accounting-firms',
+    name: 'Accounting Firms',
+    description: 'Build predictable client acquisition systems for CPA firms, bookkeepers, and tax advisory practices.',
+    audience: 'Accounting firms that need systematic prospecting around tax season timing, compliance deadlines, and business growth triggers.',
+    painPoints: ['Seasonal demand fluctuations', 'Difficulty reaching decision-makers', 'Competition from larger firms with bigger budgets'],
+    strategy: ['Time outreach around tax deadlines and fiscal year-end', 'Target businesses with growth triggers like funding or hiring', 'Build trust through educational content and compliance expertise'],
+    subtopics: ['Tax season outreach', 'Business growth targeting', 'Compliance-driven prospecting'],
+    featuredSlugs: ['cold-email-templates-for-accounting-firms', 'how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms'],
+    imageAlt: 'Accounting firm team planning client acquisition strategy'
+  },
+  {
+    slug: 'cybersecurity',
+    name: 'Cybersecurity Companies',
+    description: 'Generate security assessment leads and compliance consultation opportunities for cybersecurity firms.',
+    audience: 'Cybersecurity companies that need to reach CISOs, IT directors, and compliance officers with trust-led outreach.',
+    painPoints: ['Reaching security decision-makers', 'Building trust in a high-stakes industry', 'Differentiating from numerous competitors'],
+    strategy: ['Reference recent breaches and compliance deadlines for urgency', 'Share threat intelligence and security insights to build credibility', 'Target regulated industries with specific compliance needs'],
+    subtopics: ['CISO outreach', 'Compliance-driven prospecting', 'Security assessment lead generation'],
+    featuredSlugs: ['linkedin-lead-generation-for-cybersecurity-companies', 'apollo-for-it-services', 'cold-email-for-it-services'],
+    imageAlt: 'Cybersecurity team reviewing threat intelligence and prospecting strategy'
+  },
+  {
+    slug: 'architecture-firms',
+    name: 'Architecture Firms',
+    description: 'Connect architecture firms with developers, construction managers, and commercial property owners.',
+    audience: 'Architecture firms that need project-based lead generation around development announcements, permits, and construction timelines.',
+    painPoints: ['Project-based revenue cycles', 'Difficulty reaching developers directly', 'Long sales cycles for commercial projects'],
+    strategy: ['Monitor development announcements and permit filings', 'Build relationships with real estate agents and construction managers', 'Showcase portfolio and relevant project experience in outreach'],
+    subtopics: ['Developer outreach', 'Project-based prospecting', 'Portfolio-driven lead generation'],
+    featuredSlugs: ['apollo-for-architecture-firms', 'how-to-find-clients-for-construction-companies', 'account-based-prospecting-framework'],
+    imageAlt: 'Architecture firm team reviewing project pipeline and developer targeting'
   }
 ];
+
 
 export const guides: Guide[] = [
   {
@@ -4911,8 +4945,359 @@ export const guides: Guide[] = [
       { question: 'How should a business choose a client acquisition channel?', answer: 'Choose based on buyer behavior, deal size, trust level, sales cycle, budget, and the team capacity needed to run the channel well.' }
     ],
     relatedSlugs: ['how-to-get-b2b-clients-without-paid-ads', 'b2b-marketing-without-ads', 'how-to-build-a-b2b-client-acquisition-system', 'lead-generation-for-b2b-service-businesses']
+  },
+  {
+    slug: 'cold-email-templates-for-accounting-firms',
+    title: 'Cold Email Templates for Accounting Firms That Get Replies',
+    description: 'Proven cold email templates and sequences designed specifically for accounting firms to book client meetings and grow their practice.',
+    hub: 'outreach',
+    industries: ['financial-services', 'consulting-firms'],
+    steps: [
+      'Identify your target client profile: business size, industry, revenue range, and pain points.',
+      'Research each prospect trigger event: new funding, hiring, expansion, or tax season timing.',
+      'Personalize the first line with a specific observation about their business.',
+      'Lead with a relevant pain point like tax optimization, audit prep, or bookkeeping cleanup.',
+      'Include a clear call-to-action: 15-minute consultation or free assessment.',
+      'Follow up 3 times over 10 days with different angles and value propositions.'
+    ],
+    useCases: [
+      'CPA firms targeting small businesses',
+      'Bookkeeping services reaching startups',
+      'Tax advisory firms prospecting during Q4',
+      'Fractional CFO services targeting growth-stage companies'
+    ],
+    tips: [
+      'Timing matters: send emails Tuesday-Thursday, 8-10am local time.',
+      'Reference specific tax deadlines or regulatory changes for urgency.',
+      'Include social proof: number of clients served or industry expertise.',
+      'Keep subject lines under 50 characters for mobile optimization.'
+    ],
+    faqs: [
+      { question: 'How many cold emails should accounting firms send per day?', answer: 'Start with 30-50 personalized emails per day per sender. Focus on quality over quantity for professional services.' },
+      { question: 'What is the best time to send cold emails for accounting services?', answer: 'Tuesday through Thursday mornings work best. Avoid Monday mornings and Friday afternoons. Tax season (January-April) has higher response rates.' },
+      { question: 'Should accounting firms use email sequences or single emails?', answer: 'Use 3-4 step sequences. The first email introduces value, follow-ups address different pain points and build credibility.' }
+    ],
+    relatedSlugs: ['cold-email-with-apollo-io', 'writing-cold-email-openers-that-get-read', 'how-to-get-replies-to-cold-emails'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'linkedin-lead-generation-for-cybersecurity-companies',
+    title: 'LinkedIn Lead Generation for Cybersecurity Companies',
+    description: 'Complete LinkedIn outbound strategy for cybersecurity firms to find decision-makers, build trust, and generate qualified security assessment leads.',
+    hub: 'find-clients',
+    industries: ['it-services', 'consulting-firms'],
+    steps: [
+      'Optimize your LinkedIn profile as a cybersecurity authority page with relevant certifications and expertise.',
+      'Build a targeted list of CISOs, IT Directors, and Security Managers at companies with 50-500 employees.',
+      'Send personalized connection requests referencing their industry, recent security news, or compliance requirements.',
+      'Share valuable cybersecurity insights and threat analysis to build credibility before outreach.',
+      'Use LinkedIn messages to offer free security assessments or compliance gap analysis.',
+      'Move conversations to email or phone for detailed discussions and proposals.'
+    ],
+    useCases: [
+      'MSSPs targeting mid-market companies',
+      'Penetration testing firms finding new clients',
+      'Compliance consultants reaching regulated industries',
+      'Security awareness training companies prospecting HR leaders'
+    ],
+    tips: [
+      'Reference recent data breaches or compliance deadlines for urgency.',
+      'Join and participate in cybersecurity LinkedIn groups before direct outreach.',
+      'Share case studies and threat intelligence to demonstrate expertise.',
+      'Connect with multiple stakeholders in target accounts for broader reach.'
+    ],
+    faqs: [
+      { question: 'How many LinkedIn connection requests should cybersecurity companies send per week?', answer: 'Send 50-100 personalized connection requests per week. Focus on quality connections with decision-makers rather than volume.' },
+      { question: 'What LinkedIn content works best for cybersecurity lead generation?', answer: 'Share threat analysis, compliance updates, case studies, and security best practices. Educational content builds trust and authority.' },
+      { question: 'How long does LinkedIn lead generation take for cybersecurity firms?', answer: 'Expect 2-4 weeks to see initial responses. Build a 90-day content and outreach strategy for consistent pipeline generation.' }
+    ],
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'personalization-at-scale-with-apollo', 'finding-decision-makers-with-apollo'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'referral-system-for-consulting-firms',
+    title: 'Referral System for Consulting Firms That Generates Consistent Leads',
+    description: 'Build a systematic referral program for consulting firms that turns existing clients and partners into a predictable lead generation engine.',
+    hub: 'find-clients',
+    industries: ['consulting-firms', 'business-coaches'],
+    steps: [
+      'Identify your top 20% of clients who are most satisfied and likely to refer.',
+      'Create a structured referral request process with clear talking points and timing.',
+      'Design a referral incentive program that motivates without devaluing your services.',
+      'Build partner relationships with complementary service providers (lawyers, accountants, agencies).',
+      'Implement a tracking system to measure referral sources and conversion rates.',
+      'Follow up with every referral within 24 hours regardless of outcome.'
+    ],
+    useCases: [
+      'Management consulting firms building referral networks',
+      'IT consulting firms partnering with MSPs',
+      'Marketing consulting firms leveraging agency partnerships',
+      'HR consulting firms connecting with recruiters'
+    ],
+    tips: [
+      'Ask for referrals after successful project completions when satisfaction is highest.',
+      'Make it easy: provide specific examples of ideal clients for referral partners.',
+      'Always thank referrers regardless of whether the referral converts.',
+      'Create co-branded content with referral partners for mutual benefit.'
+    ],
+    faqs: [
+      { question: 'What percentage of consulting firm revenue should come from referrals?', answer: 'Well-run consulting firms generate 40-60% of revenue from referrals. This requires a systematic approach, not just hoping for word-of-mouth.' },
+      { question: 'How do I ask for referrals without being pushy?', answer: 'Frame it as helping their network: "Who else in your industry would benefit from this type of support?" Make it about value, not obligation.' },
+      { question: 'Should consulting firms pay referral fees?', answer: 'For professional services, relationship-based referrals often work better than financial incentives. Focus on reciprocal value and recognition instead of cash payments.' }
+    ],
+    relatedSlugs: ['predictable-client-flow-for-agencies', 'how-to-get-b2b-clients-without-paid-ads', 'client-acquisition-channels-for-b2b'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'apollo-for-architecture-firms',
+    title: 'Apollo.io for Architecture Firms: Complete Lead Generation Guide',
+    description: 'How architecture firms use Apollo.io to find project leads, connect with developers, and build a pipeline of commercial and residential design projects.',
+    hub: 'guides',
+    industries: ['consulting-firms', 'construction-companies'],
+    steps: [
+      'Define your ideal project profile: project type, budget range, location, and developer experience.',
+      'Build lists of real estate developers, construction managers, and facility directors using Apollo filters.',
+      'Enrich contacts with project history, portfolio data, and recent development announcements.',
+      'Create industry-specific email sequences highlighting relevant project experience.',
+      'Track engagement and prioritize follow-ups with active prospects.',
+      'Use Apollo data for proposal preparation and competitive intelligence.'
+    ],
+    useCases: [
+      'Commercial architecture firms targeting developers',
+      'Residential architects reaching high-net-worth individuals',
+      'Interior design firms connecting with builders',
+      'Landscape architects prospecting commercial properties'
+    ],
+    tips: [
+      'Include portfolio links and relevant project images in outreach.',
+      'Reference local development projects and zoning changes for relevance.',
+      'Build relationships with real estate agents who can provide introductions.',
+      'Follow up with project timelines and budget discussions after initial meetings.'
+    ],
+    faqs: [
+      { question: 'How do architecture firms find new clients without referrals?', answer: 'Use Apollo to identify active developers and construction projects. Research project announcements, permits, and funding news for outreach timing.' },
+      { question: 'What is the best outreach channel for architecture firms?', answer: 'Email works well for initial outreach, but LinkedIn and industry events are crucial for building relationships. Combine multiple channels for best results.' },
+      { question: 'How long is the typical sales cycle for architecture projects?', answer: 'Commercial projects: 3-12 months. Residential: 1-6 months. Plan your outreach and follow-up sequences accordingly.' }
+    ],
+    relatedSlugs: ['apollo-for-construction-companies', 'how-to-build-a-lead-list-in-apollo', 'personalization-at-scale-with-apollo'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'outbound-sales-for-government-contractors',
+    title: 'Outbound Sales for Government Contractors: How to Win Federal and State Contracts',
+    description: 'Complete outbound sales strategy for government contractors to find RFP opportunities, connect with procurement officers, and build a contract pipeline.',
+    hub: 'outreach',
+    industries: ['it-services', 'manufacturing'],
+    steps: [
+      'Register in SAM.gov and identify your NAICS codes for relevant contract opportunities.',
+      'Research upcoming RFPs and RFQs on government procurement databases.',
+      'Build targeted lists of procurement officers, contract managers, and program directors.',
+      'Create compliance-focused email sequences highlighting your certifications and past performance.',
+      'Attend government industry events and schedule meetings with decision-makers.',
+      'Develop teaming agreements with prime contractors for subcontracting opportunities.'
+    ],
+    useCases: [
+      'IT service providers seeking federal contracts',
+      'Manufacturers targeting defense procurement',
+      'Consulting firms pursuing state government projects',
+      'Construction companies bidding on public infrastructure'
+    ],
+    tips: [
+      'Highlight relevant certifications: ISO, CMMC, security clearances, small business designations.',
+      'Reference specific contract vehicles and procurement schedules in outreach.',
+      'Build relationships before RFP deadlines, not during the bidding process.',
+      'Partner with established primes to gain experience and past performance references.'
+    ],
+    faqs: [
+      { question: 'How do government contractors find new contract opportunities?', answer: 'Monitor SAM.gov, GovWin, and agency procurement sites. Set up alerts for relevant NAICS codes and contract sizes. Build relationships with procurement officers.' },
+      { question: 'What certifications help government contractors win contracts?', answer: 'CMMC, ISO 27001, SOC 2, GSA Schedule, 8(a), HUBZone, SDVOSB. Certifications vary by agency and contract type.' },
+      { question: 'How long does it take to win a government contract?', answer: 'First contract: 12-24 months. Subsequent contracts: 6-12 months. Build relationships and past performance before expecting awards.' }
+    ],
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'building-target-account-lists', 'outreach-campaign-setup'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'inbound-lead-generation-for-b2b-saas',
+    title: 'Inbound Lead Generation for B2B SaaS: Complete Strategy Guide',
+    description: 'Build a sustainable inbound lead generation engine for B2B SaaS companies using content marketing, SEO, and conversion optimization.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies'],
+    steps: [
+      'Map your buyer journey and identify content needs at each stage: awareness, consideration, decision.',
+      'Create high-value content targeting bottom-of-funnel keywords with commercial intent.',
+      'Build landing pages optimized for conversion with clear CTAs and social proof.',
+      'Implement lead scoring and qualification workflows to prioritize sales-ready leads.',
+      'Use gated content like templates, calculators, and case studies to capture leads.',
+      'Nurture leads with email sequences that educate and build trust over time.'
+    ],
+    useCases: [
+      'B2B SaaS startups building first inbound channel',
+      'Enterprise SaaS scaling content marketing',
+      'SaaS platforms competing in crowded markets',
+      'Vertical SaaS targeting specific industries'
+    ],
+    tips: [
+      'Start with bottom-of-funnel content that directly addresses purchase decisions.',
+      'Focus on long-tail keywords with clear commercial intent and low competition.',
+      'Build comparison pages, alternative pages, and pricing content.',
+      'Use customer stories and case studies to demonstrate real value.'
+    ],
+    faqs: [
+      { question: 'How long does inbound lead generation take for B2B SaaS?', answer: 'Initial results: 3-6 months. Significant pipeline: 6-12 months. Compounding growth: 12-24 months. Inbound is a long-term investment.' },
+      { question: 'What content works best for B2B SaaS inbound leads?', answer: 'Comparison pages, alternative pages, case studies, templates, and bottom-of-funnel guides. Content that directly addresses purchase decisions converts best.' },
+      { question: 'How do I measure inbound lead generation ROI?', answer: 'Track cost per lead, lead-to-customer conversion rate, customer acquisition cost, and lifetime value. Compare against outbound costs and conversion rates.' }
+    ],
+    relatedSlugs: ['b2b-marketing-without-ads', 'how-to-generate-qualified-b2b-leads', 'best-lead-generation-tools-for-small-business'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'can-spam-compliance-checklist-for-cold-email',
+    title: 'CAN-SPAM Compliance Checklist for Cold Email Campaigns',
+    description: 'Complete CAN-SPAM compliance guide with actionable checklist to ensure your cold email campaigns are legal, effective, and avoid penalties.',
+    hub: 'outreach',
+    industries: ['marketing-agencies', 'saas-companies'],
+    steps: [
+      'Include your valid physical mailing address in every email.',
+      'Add a clear and conspicuous unsubscribe mechanism in every message.',
+      'Process unsubscribe requests within 10 business days.',
+      'Use accurate From, To, and Reply-To information.',
+      'Mark promotional content clearly as advertisements when required.',
+      'Maintain clean email lists and remove bounced addresses immediately.'
+    ],
+    useCases: [
+      'Sales teams running cold email campaigns',
+      'Marketing agencies managing client outreach',
+      'SaaS companies prospecting new customers',
+      'B2B service providers building pipeline'
+    ],
+    tips: [
+      'Use double opt-in for any email collection forms.',
+      'Keep detailed records of consent and opt-out requests.',
+      'Train your team on compliance requirements before launching campaigns.',
+      'Review emails quarterly for compliance updates and best practices.'
+    ],
+    faqs: [
+      { question: 'Is cold email legal under CAN-SPAM?', answer: 'Yes, cold email is legal if you comply with CAN-SPAM requirements: valid address, unsubscribe mechanism, accurate headers, and honest subject lines.' },
+      { question: 'What are the penalties for CAN-SPAM violations?', answer: 'Penalties up to $46,517 per email violation. Individual executives can be held personally liable. Criminal penalties include fines and imprisonment.' },
+      { question: 'Does CAN-SPAM apply to B2B emails?', answer: 'Yes, CAN-SPAM applies to all commercial emails including B2B. Some B2B-specific exemptions exist but do not eliminate compliance requirements.' }
+    ],
+    relatedSlugs: ['apollo-email-deliverability-best-practices', 'cold-email-with-apollo-io', 'how-to-get-replies-to-cold-emails'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'multi-channel-outreach-for-manufacturing',
+    title: 'Multi-Channel Outreach for Manufacturing Companies',
+    description: 'Complete multi-channel outbound strategy for manufacturing companies combining email, LinkedIn, phone, and direct mail for maximum response rates.',
+    hub: 'outreach',
+    industries: ['manufacturing', 'construction-companies'],
+    steps: [
+      'Build a unified prospect database with email, phone, LinkedIn, and mailing addresses.',
+      'Create channel-specific sequences: email for initial contact, LinkedIn for relationship building, phone for follow-up.',
+      'Develop manufacturing-specific value propositions for each channel.',
+      'Implement timing rules: email Day 1, LinkedIn Day 3, phone Day 5, direct mail Day 7.',
+      'Track engagement across all channels to identify best response patterns.',
+      'Scale winning combinations and retire underperforming channels.'
+    ],
+    useCases: [
+      'Industrial manufacturers targeting distributors',
+      'Component suppliers reaching OEMs',
+      'Equipment manufacturers connecting with facility managers',
+      'Packaging companies prospecting consumer brands'
+    ],
+    tips: [
+      'Direct mail works exceptionally well for manufacturing—physical samples and catalogs create impact.',
+      'Reference industry events, trade shows, and supply chain news in outreach.',
+      'Use phone for high-value targets—manufacturing buyers often prefer personal contact.',
+      'Combine email sequences with LinkedIn content marketing for brand awareness.'
+    ],
+    faqs: [
+      { question: 'What is the best multi-channel sequence for manufacturing outreach?', answer: 'Start with email (Day 1), follow with LinkedIn connection (Day 3), phone call (Day 5), and direct mail (Day 7). Adjust timing based on response patterns.' },
+      { question: 'How many touchpoints should a manufacturing outreach sequence include?', answer: '8-12 touchpoints across channels over 21-30 days. Manufacturing sales cycles are longer, so nurture sequences should be patient and value-focused.' },
+      { question: 'Does direct mail work for B2B manufacturing outreach?', answer: 'Yes, direct mail has 5-10% response rates in manufacturing vs. 1-3% for email alone. Physical samples, catalogs, and personalized packages create memorable impressions.' }
+    ],
+    relatedSlugs: ['multi-step-outreach-playbook', 'apollo-cold-email-sequence-template', 'outbound-follow-up-timing-strategy'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'customer-retention-strategies-for-b2b-agencies',
+    title: 'Customer Retention Strategies for B2B Agencies',
+    description: 'Proven customer retention strategies for B2B agencies to reduce churn, increase lifetime value, and build sustainable recurring revenue.',
+    hub: 'sales-pipeline',
+    industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
+    steps: [
+      'Implement structured onboarding with clear milestones and success metrics.',
+      'Build quarterly business reviews with data-driven performance reporting.',
+      'Create proactive communication cadences to address issues before they escalate.',
+      'Develop expansion playbooks for upselling and cross-selling additional services.',
+      'Measure and act on Net Promoter Score (NPS) and customer satisfaction surveys.',
+      'Build customer advisory boards to gather feedback and shape service development.'
+    ],
+    useCases: [
+      'Marketing agencies reducing client churn',
+      'IT service providers increasing contract renewals',
+      'Consulting firms building long-term retainers',
+      'Staffing agencies improving client retention rates'
+    ],
+    tips: [
+      'Focus on onboarding—most churn happens in the first 90 days.',
+      'Measure leading indicators: engagement, usage, and satisfaction—not just revenue.',
+      'Build relationships at multiple levels: executive, operational, and day-to-day.',
+      'Create customer success playbooks for common scenarios and risk signals.'
+    ],
+    faqs: [
+      { question: 'What is a good retention rate for B2B agencies?', answer: 'Good: 85-90% annual retention. Excellent: 90-95%. Below 80% indicates systemic issues with onboarding, service delivery, or client fit.' },
+      { question: 'How do I calculate customer lifetime value for agency services?', answer: 'Average monthly revenue × average client lifespan in months. For example: $5,000/month × 24 months = $120,000 CLV.' },
+      { question: 'What are the biggest drivers of agency client churn?', answer: 'Poor onboarding, misaligned expectations, lack of communication, unclear ROI, and relationship breakdowns. Address these proactively.' }
+    ],
+    relatedSlugs: ['lead-qualification-system', 'increasing-conversion-rates', 'b2b-sales-process-optimization'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
+  },
+  {
+    slug: 'cold-calling-scripts-for-insurance-agents',
+    title: 'Cold Calling Scripts for Insurance Agents That Book Appointments',
+    description: 'Battle-tested cold calling scripts and frameworks for insurance agents to book appointments, overcome objections, and build a consistent pipeline.',
+    hub: 'outreach',
+    industries: ['insurance-agencies', 'financial-services'],
+    steps: [
+      'Research each prospect before calling: company size, current coverage, recent claims, or industry changes.',
+      'Open with a brief, relevant statement that establishes credibility and purpose.',
+      'Ask qualifying questions to understand their current insurance situation and pain points.',
+      'Present a specific value proposition based on their identified needs.',
+      'Handle common objections with practiced, empathetic responses.',
+      'Book the appointment immediately with a specific date, time, and agenda.'
+    ],
+    useCases: [
+      'Commercial insurance agents targeting businesses',
+      'Life insurance agents reaching high-net-worth individuals',
+      'Health insurance brokers prospecting HR directors',
+      'Specialty insurance agents targeting niche industries'
+    ],
+    tips: [
+      'Call during business hours: 8-11am and 2-4pm have highest connection rates.',
+      'Smile while you talk—it changes your tone and makes you sound more approachable.',
+      'Use a standing desk or walk while calling to maintain energy and focus.',
+      'Track call metrics: dials, connections, conversations, appointments booked.'
+    ],
+    faqs: [
+      { question: 'How many cold calls should insurance agents make per day?', answer: 'Aim for 50-100 dials per day resulting in 10-15 conversations and 2-3 appointments. Quality of conversations matters more than call volume.' },
+      { question: 'What is the best time to cold call insurance prospects?', answer: 'Tuesday-Thursday, 8-11am and 2-4pm. Avoid Monday mornings and Friday afternoons. Insurance buyers are more receptive mid-week.' },
+      { question: 'How do I handle the "I already have an agent" objection?', answer: 'Acknowledge their current relationship, then ask: "When was the last time you reviewed your coverage to ensure it still meets your needs?" Position yourself as a second opinion, not a replacement.' }
+    ],
+    relatedSlugs: ['outbound-email-vs-cold-calling', 'reply-strategy-for-b2b-outreach', 'cold-email-templates-for-accounting-firms'],
+    publishedAt: '2026-03-28',
+    updatedAt: '2026-03-28'
   }
 ];
+
 
 export const getGuidesByHub = (hub: Exclude<HubKey, 'by-industry'>) =>
   guides.filter((guide) => guide.hub === hub);
