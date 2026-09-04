@@ -10,7 +10,7 @@ import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels'
 import { GuideSectionLead } from '@/components/guide-section-lead';
 import { ShareButtons } from '@/components/share-buttons';
 import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
-import { getGuideBySlug, guides, hubContent, industries } from '@/lib/content';
+import { getGuideBySlug, getGuidesByHub, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
 import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
 import { renderApolloText } from '@/lib/render-apollo-text';
@@ -299,6 +299,15 @@ export default async function GuidePage({ params }: Props) {
       ) : null}
 
       <section className="py-10 sm:py-12">
+        <nav className="mb-4 text-sm text-slate-500" aria-label="Breadcrumb">
+          <ol className="flex flex-wrap items-center gap-1">
+            <li><Link href="/" className="hover:text-blue-700">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li><Link href={hubPath[guide.hub]} className="hover:text-blue-700">{titleCaseHub(guide.hub)}</Link></li>
+            <li aria-hidden="true">/</li>
+            <li className="font-medium text-slate-900" aria-current="page">{guide.title}</li>
+          </ol>
+        </nav>
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/55 to-cyan-50/35 p-5 shadow-[0_24px_56px_-44px_rgba(37,99,235,0.5)] sm:p-9">
           <div className="pointer-events-none absolute -right-24 -top-24 h-60 w-60 rounded-full bg-blue-200/35 blur-3xl" />
           <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
@@ -629,6 +638,32 @@ export default async function GuidePage({ params }: Props) {
               </li>
             </ul>
           </section>
+          <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Popular Guides</p>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+              {getGuidesByHub(guide.hub).filter(g => g.slug !== guide.slug).slice(0, 4).map((item) => (
+                <li key={item.slug}>
+                  <Link className="hover:text-blue-700" href={`/guides/${item.slug}`}>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+          {industryRefs.length > 0 && (
+            <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Related Industries</p>
+              <ul className="mt-3 space-y-2 text-sm text-slate-700">
+                {industryRefs.map((ind) => (
+                  <li key={ind.slug}>
+                    <Link className="hover:text-blue-700" href={`/business-types/${ind.slug}`}>
+                      {ind.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
           <ApolloCtaBlock />
         </aside>
       </div>

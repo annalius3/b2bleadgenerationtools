@@ -14,7 +14,8 @@ const menu: Array<{ href: Route; label: string }> = [
   { href: '/for-startups', label: 'For Startups' },
   { href: '/guides', label: 'Guides' },
   { href: '/compare', label: 'Compare' },
-  { href: '/glossary', label: 'Glossary' }
+  { href: '/glossary', label: 'Glossary' },
+  { href: '/start-here', label: 'Start Here' }
 ];
 
 export const Header = () => (

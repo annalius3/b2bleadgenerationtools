@@ -12,7 +12,7 @@ import { NewsletterForm } from '@/components/newsletter-form';
 import { TrackedIndustryLink } from '@/components/tracked-industry-link';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
-import { guides, industries } from '@/lib/content';
+import { guides, industries, getGuidesByHub } from '@/lib/content';
 import { siteConfig } from '@/lib/site';
 import { BreadcrumbSchema } from '@/components/seo-schemas';
 
@@ -32,10 +32,19 @@ const topSolutions: Array<{ title: string; href: Route; description: string; ico
   },
   { title: 'Start Outreach', href: '/outreach', description: 'Launch sequences, follow-ups, and reply systems.', icon: 'outreach' },
   { title: 'Build Pipeline', href: '/sales-pipeline', description: 'Turn replies into opportunities and revenue.', icon: 'pipeline' },
-  { title: 'Grow Revenue', href: '/guides', description: 'Use proven templates, frameworks, and case-driven playbooks.', icon: 'revenue' }
+  { title: 'For Startups', href: '/for-startups', description: 'Founder-led outbound, first customers, and growth playbooks.', icon: 'revenue' },
+  { title: 'All Guides', href: '/guides', description: 'Templates, frameworks, and case-driven playbooks.', icon: 'guide' }
 ];
 
 export default function HomePage() {
+  const featuredGuides = [
+    ...getGuidesByHub('find-clients').slice(0, 3),
+    ...getGuidesByHub('outreach').slice(0, 3),
+    ...getGuidesByHub('sales-pipeline').slice(0, 2),
+    ...getGuidesByHub('for-startups').slice(0, 2),
+    ...getGuidesByHub('guides').slice(0, 2),
+  ];
+
   return (
     <Container>
       <BreadcrumbSchema items={[{ name: 'Home', item: siteConfig.url }]} />
@@ -78,7 +87,7 @@ export default function HomePage() {
 
       <section className="defer-section py-8">
         <h2 className="text-2xl font-semibold text-slate-900">Top Solutions</h2>
-        <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {topSolutions.map((item) => (
             <Link
               key={item.title}
@@ -100,8 +109,8 @@ export default function HomePage() {
             View all
           </Link>
         </div>
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {guides.slice(0, 6).map((guide) => (
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {featuredGuides.map((guide) => (
             <GuideCard key={guide.slug} guide={guide} />
           ))}
         </div>

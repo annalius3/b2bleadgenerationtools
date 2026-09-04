@@ -5361,5 +5361,256 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'Cold calling works for insurance agents when combined with research, proper timing, and practiced scripts.',
       'Focus on quality conversations over call volume for maximum appointments and conversions.'
     ]
+  },
+
+  // ==================== LOW-COMPETITION KEYWORD OVERRIDES ====================
+
+  'find-companies-using-competitor-software-apollo': {
+    summary: 'Competitor displacement is 3-5x more efficient than cold prospecting. Learn to use Apollo\'s technographics to find companies using your competitor\'s software, then craft empathy-based outreach that wins them over.',
+    pros: [
+      'Targets companies with proven budget and need — they already bought the solution once',
+      'Higher response rates (8-15%) compared to generic cold outreach (2-5%)',
+      'Shorter sales cycles because the buyer already understands the category',
+      'Existing pain points make your value proposition immediately relevant'
+    ],
+    cons: [
+      'Requires accurate technographic data — Apollo\'s coverage varies by industry',
+      'Competitors may have strong contracts with penalty clauses for early termination',
+      'Some companies are loyal to their vendor and won\'t switch regardless of benefits',
+      'Legal considerations around making comparative claims about competitors'
+    ],
+    scenario: [
+      'A SaaS company uses Apollo\'s technographics to find 200 companies using HubSpot.',
+      'They send empathy-based emails referencing specific HubSpot pain points.',
+      'Result: 12% reply rate, 4% meeting booked rate — 3x their standard cold outreach performance.'
+    ],
+    finalVerdict: [
+      'Competitor displacement is the highest-ROI prospecting strategy when you have accurate technographic data.',
+      'Lead with empathy, not attacks. Reference specific pain points and provide case studies from companies that switched.'
+    ]
+  },
+
+  'apollo-intent-signals-find-buying-companies': {
+    summary: 'Apollo intent signals reveal which companies are actively researching your product category right now. Set up intent tracking, interpret signal strength, and build sequences that convert warm prospects.',
+    pros: [
+      'Targets companies actively researching your category — they\'re already interested',
+      'Real-time data lets you reach prospects at the exact moment of need',
+      'Higher conversion rates than traditional cold outreach (5x for intent-flagged companies)',
+      'Automated tracking requires minimal manual research once set up'
+    ],
+    cons: [
+      'Intent data can be noisy — some signals are false positives from casual browsing',
+      'Requires ongoing optimization of intent topics to maintain signal quality',
+      'Competitors see the same intent signals — speed of outreach matters',
+      'Signal accuracy varies by industry and product category'
+    ],
+    scenario: [
+      'A cybersecurity company sets intent topics for "endpoint protection" and "SIEM".',
+      'When a company\'s IT team researches these topics, Apollo flags them automatically.',
+      'The company reaches out within 24 hours with a relevant case study — 5x higher response rate than cold outreach.'
+    ],
+    finalVerdict: [
+      'Intent signals are the closest thing to mind-reading in B2B sales.',
+      'Set up 5-10 broad intent topics, combine with ICP filters, and build time-sensitive sequences for intent-flagged companies.'
+    ]
+  },
+
+  'ai-personalized-cold-emails-at-scale': {
+    summary: 'AI personalization enables writing hyper-personalized cold emails for hundreds of prospects in 2-3 hours. Master the prompts, tools, and workflows that make AI-generated emails feel hand-written.',
+    pros: [
+      'Write 100 personalized emails in 2-3 hours instead of 2-3 days',
+      'Consistent quality across all prospects — no more "good day" vs "great day" variations',
+      'Easy to A/B test different messaging approaches at scale',
+      'Scales without hiring more SDRs — perfect for startups with limited budget'
+    ],
+    cons: [
+      'Requires initial prompt engineering investment to get quality right',
+      'AI can make factual errors — always verify claims and details before sending',
+      'Top-tier enterprise prospects still need human touch and custom research',
+      'Over-reliance on AI can make outreach feel templated if prompts aren\'t varied'
+    ],
+    scenario: [
+      'An SDR exports 100 prospects from Apollo, enriches with Clay, and uses ChatGPT to generate personalized emails.',
+      'Result: 18% reply rate (vs 6% for their previous manual outreach), 3x more meetings booked per week.'
+    ],
+    finalVerdict: [
+      'AI personalization is the new baseline for B2B outreach.',
+      'Use AI for the 80% of mid-tier prospects while reserving human creativity for your top 20% accounts.'
+    ]
+  },
+
+  'cold-email-domain-warmup-strategy': {
+    summary: 'Sending cold emails from a new domain without warm-up is the #1 reason campaigns land in spam. Follow this 30-day warm-up schedule to build sender reputation and achieve 90%+ inbox placement.',
+    pros: [
+      'Dramatically improves inbox placement rates — from 20% to 90%+',
+      'Builds long-term sender reputation that benefits all future campaigns',
+      'Protects your domain from being blacklisted by email providers',
+      'Essential foundation for all email outreach — without it, nothing else matters'
+    ],
+    cons: [
+      'Takes 30 days before you can launch full campaigns — plan ahead',
+      'Requires dedicated warm-up tools ($30-50/month per domain)',
+      'Must maintain warm-up even after launch — you can\'t stop warming',
+      'Multiple domains needed for high-volume outreach operations'
+    ],
+    scenario: [
+      'A startup sets up 3 domains for cold outreach and begins warm-up.',
+      'After 30 days, they launch campaigns with 92% inbox placement rate.',
+      'Without warm-up, their previous campaign on a new domain had only 15% inbox placement.'
+    ],
+    finalVerdict: [
+      'Domain warm-up is non-negotiable. The 30-day investment prevents months of poor deliverability.',
+      'Use tools like Instantly or Warmbox to automate the process, and never skip SPF/DKIM/DMARC setup.'
+    ]
+  },
+
+  'b2b-objection-handling-framework': {
+    summary: 'Every "no" in B2B sales is a request for more information. Master the LAER framework to identify the real objection, handle it with empathy, and move conversations toward closing.',
+    pros: [
+      'Framework applies to any B2B sales situation — from cold calls to enterprise negotiations',
+      'Turns objections into deeper conversations that build trust and understanding',
+      'Provides consistent methodology for entire sales teams — no more winging it',
+      'Companies with structured objection handling see 25-40% higher close rates'
+    ],
+    cons: [
+      'Requires practice to execute naturally — can feel scripted at first',
+      'Some objections are genuine disqualifications that can\'t be overcome',
+      'Cannot overcome timing objections with tactics alone — sometimes patience is required',
+      'Needs ongoing updates as market conditions and competitor offerings change'
+    ],
+    scenario: [
+      'A prospect says "too expensive" during a demo call.',
+      'Using LAER: "I understand budget is a concern. What budget range were you expecting?"',
+      'The prospect reveals they expected $5K/month, not $10K. Adjust scope to fit budget — deal closes.'
+    ],
+    finalVerdict: [
+      'Objection handling is the most undervalued skill in B2B sales.',
+      'Build your objection playbook with the top 20 objections, 3 response options each, and practice weekly.'
+    ]
+  },
+
+  'b2b-proposal-template-that-closes': {
+    summary: 'A great proposal tells a story, addresses objections before they arise, and makes saying "yes" easy. Master the 7-section structure, three-option pricing, and follow-up cadence that wins deals.',
+    pros: [
+      'Story-driven structure increases proposal-to-close rates by 30-50%',
+      'Three-option pricing reduces price sensitivity and anchors value',
+      'Follow-up cadence prevents proposals from dying in inboxes',
+      'E-signature integration removes friction from the final signing step'
+    ],
+    cons: [
+      'Requires significant customization per prospect — no one-size-fits-all proposal',
+      'Storytelling takes practice to master — expect 3-5 proposals before finding your rhythm',
+      'Three-option pricing needs careful design to avoid confusion or decision paralysis',
+      'Follow-up cadence requires discipline — going dark after sending kills deals'
+    ],
+    scenario: [
+      'An agency sends a 6-page proposal with a Loom video walkthrough.',
+      'They follow up on days 1, 2, 5, 8, and 12 with case studies and urgency.',
+      'Result: 45% proposal-to-close rate (vs industry average of 20-25%).'
+    ],
+    finalVerdict: [
+      'The proposal is where deals are won or lost.',
+      'Invest in proposal quality: 7-section structure, three-option pricing, Loom walkthrough, and consistent follow-up.'
+    ]
+  },
+
+  'hire-first-sdr-startup': {
+    summary: 'Hiring your first SDR is a critical startup milestone. Get the job description, interview process, 60-day ramp program, and KPI structure right from day one.',
+    pros: [
+      'Frees founder\'s time for product, strategy, and closing deals',
+      'Doubles outreach capacity immediately — more meetings, more pipeline',
+      'Builds scalable sales infrastructure for future team growth',
+      'Creates clear career path for SDR to grow into AE role'
+    ],
+    cons: [
+      'Requires $60-80K total annual investment (salary + tools + coaching time)',
+      'First 60 days require significant founder time for hands-on coaching',
+      'First SDR may not work out — plan for 50% first-year turnover',
+      'Need process documentation before hiring — otherwise onboarding fails'
+    ],
+    scenario: [
+      'A SaaS startup with $80K MRR hires their first SDR at $48K base + $32K OTE.',
+      'After 60-day ramp, the SDR books 3 meetings per week.',
+      'Within 6 months, the SDR\'s meetings generate $200K in new pipeline.'
+    ],
+    finalVerdict: [
+      'Hire for coachability, not experience. Your first SDR should learn your process, not impose their own.',
+      'Invest in a structured 60-day ramp program — the first 60 days determine success or failure.'
+    ]
+  },
+
+  'product-led-growth-outbound-hybrid': {
+    summary: 'PLG and outbound are complementary, not competing. Learn to use free trial signups as outbound signals and build a hybrid strategy that outperforms either approach alone.',
+    pros: [
+      'Higher conversion rates than either PLG or outbound alone (5-10x for PQL-triggered outreach)',
+      'Lower blended CAC through combined efficiency — 30-50% reduction vs single-channel',
+      'Better data for targeting and personalization from product usage signals',
+      'Scalable from startup to enterprise — works at any stage'
+    ],
+    cons: [
+      'Requires product analytics infrastructure (Amplitude, Mixpanel, or Heap)',
+      'More complex than single-channel approach — needs careful coordination',
+      'Needs alignment between product, marketing, and sales teams',
+      'Requires different messaging for different PQL types and engagement levels'
+    ],
+    scenario: [
+      'A SaaS company with a free trial uses product analytics to identify PQLs.',
+      'They trigger outbound sequences when trial users hit usage thresholds.',
+      'Result: PQL-triggered outbound converts at 25% vs 3% for cold outbound.'
+    ],
+    finalVerdict: [
+      'The PLG + outbound hybrid is the most efficient growth model for SaaS companies.',
+      'Start simple: track PQLs, add outbound sequences, measure the lift vs pure PLG or pure outbound.'
+    ]
+  },
+
+  'b2b-sales-playbook-template': {
+    summary: 'A sales playbook is the difference between a team that wings it and one that executes a proven process every time. Build a comprehensive 8-chapter playbook from scratch.',
+    pros: [
+      'Reduces new rep ramp time from 3 months to 6 weeks',
+      'Creates consistency across the sales team — everyone executes the same process',
+      'Makes it easy to identify what\'s working and what\'s not across the team',
+      'Enables scaling from 1 rep to 10+ reps without losing quality'
+    ],
+    cons: [
+      'Requires significant upfront investment (2-4 weeks for basic, 2-3 months for comprehensive)',
+      'Needs ongoing updates to stay relevant — monthly reviews, quarterly revisions',
+      'Can feel restrictive if too rigid — build in flexibility for individual style',
+      'Requires buy-in from the entire sales team — top-down enforcement rarely works'
+    ],
+    scenario: [
+      'A startup with 2 sales reps documents their process in a 20-page playbook.',
+      'They hire a 3rd rep who ramps in 5 weeks instead of the industry average of 12 weeks.',
+      'The playbook saves 7 weeks of ramp time × $3K/week salary = $21K in onboarding costs.'
+    ],
+    finalVerdict: [
+      'A sales playbook is the single most important document for scaling revenue.',
+      'Start with ICP, value prop, and outreach scripts. Expand monthly based on what\'s working.'
+    ]
+  },
+
+  'apollo-vs-seamless-ai-comparison': {
+    summary: 'Apollo.io and Seamless.AI serve different use cases. Apollo is an all-in-one platform at $49/user/month; Seamless is a data provider at $147/month. Compare features, pricing, and accuracy to choose the right one.',
+    pros: [
+      'Feature-by-feature comparison covers all decision factors',
+      'Real pricing data helps with budget planning and ROI calculations',
+      'Use case recommendations clarify which platform fits your needs',
+      'Comparison reveals that many teams use both platforms together'
+    ],
+    cons: [
+      'Pricing and features change frequently — verify current data before deciding',
+      'Individual experience may vary from general comparisons based on your industry',
+      'Both platforms have limited free tiers — hard to test without committing',
+      'Integration quality depends heavily on your existing tech stack'
+    ],
+    scenario: [
+      'A 5-person startup evaluates Apollo vs Seamless for their first data platform.',
+      'Apollo: $245/month for 5 users with full workflow. Seamless: $735/month for 250 credits.',
+      'They choose Apollo for the all-in-one workflow and lower cost — Seamless for targeted enrichment on enterprise accounts.'
+    ],
+    finalVerdict: [
+      'For most SMBs and startups, Apollo.io offers better value with its all-in-one platform.',
+      'Consider using both: Apollo for daily workflow, Seamless for high-value account enrichment.'
+    ]
   }
 };
