@@ -5612,5 +5612,209 @@ export const guideOverrides: Record<string, GuideOverride> = {
       'For most SMBs and startups, Apollo.io offers better value with its all-in-one platform.',
       'Consider using both: Apollo for daily workflow, Seamless for high-value account enrichment.'
     ]
+  },
+
+  // ==================== ARCHITECTURE FIRMS OVERRIDES ====================
+
+  'how-to-find-clients-for-architecture-firms': {
+    summary: 'Architecture firms need consistent project pipelines. Learn to use Apollo.io to identify developers, real estate investors, and commercial property owners who need architectural services.',
+    pros: [
+      'Identifies developers with active projects in real-time',
+      'Filters by project type, budget range, and location',
+      'Automated prospect notifications for new matches',
+      'Industry-specific search templates ready to use'
+    ],
+    cons: [
+      'Architecture sales cycles are long (3-12 months)',
+      'Requires high-quality portfolio and case study materials',
+      'Relationship-building takes significant time investment',
+      'Competitive market in major metropolitan areas'
+    ],
+    scenario: [
+      'A commercial architecture firm uses Apollo to find 50 developers with recent land purchases.',
+      'They send personalized emails referencing each developer\'s specific project.',
+      'Result: 12% reply rate, 4% meeting booked rate — 3x their referral-only approach.'
+    ],
+    finalVerdict: [
+      'Architecture firms that systematize client acquisition through Apollo.io consistently outperform referral-only approaches.',
+      'Start with 50 targeted prospects and refine your approach based on response rates.'
+    ]
+  },
+
+  'lead-generation-for-architecture-firms': {
+    summary: 'Generate a consistent pipeline of architecture projects using Apollo.io. Covers lead sourcing, qualification, and pipeline management specifically for architecture firms.',
+    pros: [
+      'Structured pipeline management with clear stages',
+      'Industry-specific qualification criteria built-in',
+      'Automated lead scoring based on project signals',
+      'ROI tracking by campaign and channel'
+    ],
+    cons: [
+      'Requires consistent follow-up over many months',
+      'Long sales cycles test patience and cash flow',
+      'Portfolio quality directly affects conversion rates',
+      'Competitive market requires clear differentiation'
+    ],
+    scenario: [
+      'A residential architecture firm builds a pipeline of 30 qualified leads per month.',
+      'They qualify based on project budget ($200K+), timeline (active within 6 months), and location.',
+      'Result: 6 proposals per month, 2 new projects per month at $350K average project value.'
+    ],
+    finalVerdict: [
+      'Architecture lead generation is a long-game investment that pays dividends over time.',
+      'Firms that build systematic pipelines see 2-3x more qualified proposals than referral-only approaches.'
+    ]
+  },
+
+  'cold-email-for-architecture-firms': {
+    summary: 'Cold email is one of the most effective channels for architecture firms to reach developers and investors. Templates, strategies, and best practices for architecture-specific outreach.',
+    pros: [
+      'Direct access to decision-makers without gatekeepers',
+      'Cost-effective compared to referral building',
+      'Scalable with Apollo.io automation',
+      'Measurable ROI per campaign'
+    ],
+    cons: [
+      'Requires high-quality portfolio materials',
+      'Long follow-up sequences needed (4-5 touches)',
+      'Personalization takes significant time',
+      'Competitive inbox environment'
+    ],
+    scenario: [
+      'An architecture firm sends 30 personalized emails per week to local developers.',
+      'Each email references the developer\'s specific project and includes a relevant case study.',
+      'Result: 35% open rate, 8% reply rate, 2 meetings booked per week.'
+    ],
+    finalVerdict: [
+      'Cold email works for architecture firms when done with specificity and value.',
+      'Reference their projects, share relevant case studies, and always offer something free (site visit, consultation).'
+    ]
+  },
+
+  'how-architecture-firms-get-first-clients': {
+    summary: 'Starting a new architecture firm? Landing your first clients is the biggest challenge. Strategies, outreach, and pipeline building for architecture startups.',
+    pros: [
+      'Practical strategies designed for new firms',
+      'Low-budget approaches that work',
+      'Portfolio building without existing clients',
+      'Referral generation system included'
+    ],
+    cons: [
+      'Requires significant upfront effort and time',
+      'Discounted projects reduce initial revenue',
+      'Building credibility takes months',
+      'Competitive market for new firms'
+    ],
+    scenario: [
+      'A solo architect creates spec projects for ideal client types and uses Apollo.io to find 50 local developers.',
+      'They send personalized emails with portfolio links and offer free design consultations.',
+      'Result: 3 meetings booked, 1 pilot project secured within 2 months.'
+    ],
+    finalVerdict: [
+      'New architecture firms that combine network leveraging, spec projects, and targeted outreach land their first client within 3-6 months.',
+      'Focus on building credibility quickly through exceptional work and client testimonials.'
+    ]
+  },
+
+  // ==================== CYBERSECURITY OVERRIDES ====================
+
+  'how-to-find-clients-for-cybersecurity-companies': {
+    summary: 'Cybersecurity companies need to reach CISOs, IT Directors, and compliance officers. Learn to identify companies with security gaps, compliance deadlines, and active threat concerns.',
+    pros: [
+      'Identifies companies with active security needs',
+      'Compliance deadlines create natural urgency',
+      'Technographics reveal current tool gaps',
+      'High-value contracts with recurring revenue potential'
+    ],
+    cons: [
+      'Highly competitive market with established players',
+      'Technical sales require specialized knowledge',
+      'Long procurement cycles in enterprise deals',
+      'Trust-building is critical and takes time'
+    ],
+    scenario: [
+      'An MSSP uses Apollo.io to find 100 healthcare companies approaching HIPAA audits.',
+      'They send personalized emails referencing compliance deadlines and offering free gap analyses.',
+      'Result: 15% reply rate, 8 assessments booked, 3 new contracts within 60 days.'
+    ],
+    finalVerdict: [
+      'Cybersecurity companies that leverage Apollo.io\'s technographics and compliance signals outperform generic outreach.',
+      'Focus on companies with active compliance deadlines or recent security incidents for fastest conversion.'
+    ]
+  },
+
+  'lead-generation-for-cybersecurity-companies': {
+    summary: 'Generate a consistent pipeline of cybersecurity clients using Apollo.io. Covers lead sourcing, qualification, and pipeline management for MSSPs, VARs, and security vendors.',
+    pros: [
+      'Recurring revenue model with high contract values',
+      'Growing market with increasing demand',
+      'Compliance deadlines create natural urgency',
+      'Apollo.io signals reveal buying intent'
+    ],
+    cons: [
+      'Highly competitive market requires differentiation',
+      'Technical sales cycles require expertise',
+      'Trust-building is critical for security buyers',
+      'Long enterprise procurement processes'
+    ],
+    scenario: [
+      'A penetration testing firm generates 40 qualified leads per month using Apollo.io.',
+      'They qualify based on industry (regulated), company size (100-5000), and security tool gaps.',
+      'Result: 15 assessments per month, 5 new contracts at $25K average deal size.'
+    ],
+    finalVerdict: [
+      'Cybersecurity lead generation succeeds when you combine data signals with value-driven outreach.',
+      'Focus on regulated industries (healthcare, finance) for fastest conversion and highest contract values.'
+    ]
+  },
+
+  'cold-email-for-cybersecurity-companies': {
+    summary: 'Cold email is one of the most effective channels for cybersecurity companies to reach CISOs and IT decision-makers. Templates, strategies, and best practices for security-specific outreach.',
+    pros: [
+      'Direct access to CISOs and IT Directors',
+      'Cost-effective compared to events and conferences',
+      'Scalable with Apollo.io automation',
+      'Measurable ROI per campaign'
+    ],
+    cons: [
+      'Requires technical credibility upfront',
+      'CISOs are skeptical of generic pitches',
+      'Long follow-up sequences needed',
+      'Competitive inbox environment'
+    ],
+    scenario: [
+      'A cybersecurity company sends 40 personalized emails per week to CISOs in regulated industries.',
+      'Each email references specific compliance requirements and offers a free security assessment.',
+      'Result: 40% open rate, 10% reply rate, 5 assessments booked per week.'
+    ],
+    finalVerdict: [
+      'Cold email works for cybersecurity companies when done with expertise and specificity.',
+      'Reference their industry\'s compliance requirements, share threat intelligence, and always offer something free.'
+    ]
+  },
+
+  'how-cybersecurity-companies-get-first-clients': {
+    summary: 'Starting a new cybersecurity company? Landing your first clients is the biggest challenge. Strategies, outreach, and pipeline building for cybersecurity startups.',
+    pros: [
+      'Practical strategies designed for new companies',
+      'Low-budget approaches that build credibility',
+      'Free assessment model generates quick wins',
+      'Recurring revenue model from day one'
+    ],
+    cons: [
+      'Trust-building takes significant time',
+      'Certifications required for credibility',
+      'Competitive market for new firms',
+      'Long sales cycles for enterprise deals'
+    ],
+    scenario: [
+      'A cybersecurity consultant offers free security assessments to 50 local healthcare companies.',
+      'They use Apollo.io to find companies approaching HIPAA audits and send personalized outreach.',
+      'Result: 10 assessments completed, 3 paid engagements secured within 3 months.'
+    ],
+    finalVerdict: [
+      'New cybersecurity companies that combine free assessments, certifications, and targeted outreach land their first client within 2-4 months.',
+      'Focus on building credibility quickly through certifications, content, and risk-free entry points.'
+    ]
   }
 };

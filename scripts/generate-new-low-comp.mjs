@@ -76,6 +76,64 @@ const articles = [
       'Apollo.io vs Seamless.AI comparison concept with two platform interfaces side by side, B2B data platform evaluation, modern SaaS comparison, 4K quality',
       'Data accuracy comparison concept between two B2B contact data providers, modern analytics dashboard, feature comparison chart, clean design, 4K quality'
     ]
+  },
+  // Architecture Firms articles
+  {
+    slug: 'how-to-find-clients-for-architecture-firms',
+    prompts: [
+      'Architecture firm business development concept with developer client outreach, modern professional workspace, blueprints and digital tools, 4K quality',
+      'Architect presenting design portfolio to potential developer client, modern meeting room, project visualization on screen, 4K quality'
+    ]
+  },
+  {
+    slug: 'lead-generation-for-architecture-firms',
+    prompts: [
+      'Lead generation pipeline concept for architecture firms with project stages, modern CRM dashboard, blue and white design, 4K quality',
+      'Architecture firm team reviewing qualified leads on digital dashboard, modern office with project models, 4K quality'
+    ]
+  },
+  {
+    slug: 'cold-email-for-architecture-firms',
+    prompts: [
+      'Cold email outreach concept for architecture firms with portfolio links and project references, modern email interface, 4K quality',
+      'Architect crafting personalized cold email with project portfolio on laptop, modern studio workspace, 4K quality'
+    ]
+  },
+  {
+    slug: 'how-architecture-firms-get-first-clients',
+    prompts: [
+      'New architecture firm startup concept with first client meeting, modern studio workspace, portfolio presentation, 4K quality',
+      'Solo architect networking with potential clients at modern architecture event, professional setting, 4K quality'
+    ]
+  },
+  // Cybersecurity articles
+  {
+    slug: 'how-to-find-clients-for-cybersecurity-companies',
+    prompts: [
+      'Cybersecurity client acquisition concept with CISO outreach and compliance signals, modern security operations center, 4K quality',
+      'Security professional identifying potential clients through threat intelligence dashboard, modern SOC environment, 4K quality'
+    ]
+  },
+  {
+    slug: 'lead-generation-for-cybersecurity-companies',
+    prompts: [
+      'Cybersecurity lead generation pipeline with compliance deadlines and security assessments, modern analytics interface, 4K quality',
+      'Security sales team reviewing qualified leads on dashboard, modern office with security monitors, 4K quality'
+    ]
+  },
+  {
+    slug: 'cold-email-for-cybersecurity-companies',
+    prompts: [
+      'Cold email outreach concept for cybersecurity companies with compliance references and security assessments, modern email interface, 4K quality',
+      'Security professional crafting personalized cold email to CISO, modern workspace with threat intelligence feeds, 4K quality'
+    ]
+  },
+  {
+    slug: 'how-cybersecurity-companies-get-first-clients',
+    prompts: [
+      'New cybersecurity company startup concept with first client acquisition, modern security office, free assessment offering, 4K quality',
+      'Cybersecurity consultant conducting first client security assessment, modern SOC environment, professional setting, 4K quality'
+    ]
   }
 ];
 
