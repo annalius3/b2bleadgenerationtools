@@ -21,12 +21,23 @@ export type Industry = {
 export type Guide = {
   slug: string;
   title: string;
-  description: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  summary?: string;
+  description?: string;
   hub: Exclude<HubKey, 'by-industry'>;
+  image?: string;
   industries: string[];
-  steps: string[];
-  useCases: string[];
-  tips: string[];
+  difficulty?: string;
+  readTime?: number;
+  steps?: string[];
+  sections?: Array<{ title: string; content: string }>;
+  useCases?: string[];
+  tips?: string[];
+  pros?: string[];
+  cons?: string[];
+  scenarios?: string[];
+  verdict?: string;
   faqs: Array<{ question: string; answer: string }>;
   relatedSlugs: string[];
   publishedAt?: string;

@@ -14,7 +14,7 @@ export async function GET() {
       <title>${guide.title.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</title>
       <link>${siteConfig.url}/guides/${guide.slug}</link>
       <guid isPermaLink="true">${siteConfig.url}/guides/${guide.slug}</guid>
-      <description>${guide.description.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</description>
+      <description>${(guide.description ?? guide.title).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</description>
       <pubDate>${new Date(pubDate).toUTCString()}</pubDate>
       <category>${guide.hub}</category>
     </item>`;

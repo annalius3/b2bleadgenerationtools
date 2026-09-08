@@ -17,7 +17,7 @@ export const GuideCard = ({ guide }: { guide: GuidePreview }) => (
     <div className="mb-3 block">{Icons[iconByHub[guide.hub]]()}</div>
     <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
     <h3 className="mt-2 text-xl font-semibold text-slate-900 group-hover:text-blue-700">{guide.title}</h3>
-    <p className="mt-3 text-sm leading-relaxed text-slate-600">{renderApolloText(guide.description)}</p>
+    <p className="mt-3 text-sm leading-relaxed text-slate-600">{renderApolloText(guide.description ?? guide.title)}</p>
     <div className="mt-4 border-t border-slate-100 pt-4">
       <Link href={`/guides/${guide.slug}`} className="btn-ghost text-sm">
         Read guide

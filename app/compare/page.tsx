@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { Route } from 'next';
 
 import { Container } from '@/components/container';
 import { BreadcrumbSchema, ItemListSchema } from '@/components/seo-schemas';
@@ -120,7 +121,7 @@ export default function ComparePage() {
               .map((comparison) => (
                 <Link
                   key={comparison.tool}
-                  href={comparison.href}
+                  href={comparison.href as Route}
                   className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_20px_42px_-24px_rgba(37,99,235,0.35)]"
                 >
                   <h3 className="text-lg font-semibold text-slate-900 group-hover:text-blue-700">{comparison.tool}</h3>

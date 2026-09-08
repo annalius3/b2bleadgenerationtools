@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { Metadata } from 'next';
+import type { Metadata, Route } from 'next';
 
 import { Container } from '@/components/container';
 import { NewsletterForm } from '@/components/newsletter-form';
@@ -102,7 +102,7 @@ export default function StartHerePage() {
                   <h2 className="text-xl font-semibold text-slate-900">{step.title}</h2>
                   <p className="mt-2 text-slate-700">{step.description}</p>
                   <div className="mt-4 flex flex-wrap gap-3">
-                    <Link href={step.link} className="btn-primary px-4 py-2 text-sm">
+                    <Link href={step.link as Route} className="btn-primary px-4 py-2 text-sm">
                       {step.linkText} →
                     </Link>
                   </div>

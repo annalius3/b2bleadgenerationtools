@@ -33,10 +33,10 @@ const hubPath: Record<(typeof guides)[number]['hub'], Route> = {
 
   const estimateReadingTime = (g:typeof guides[0]) => {
     const wordCount = [
-      g.description,
-      ...g.steps,
-      ...g.useCases,
-      ...g.tips,
+      g.description ?? '',
+      ...(g.steps ?? []),
+      ...(g.useCases ?? []),
+      ...(g.tips ?? []),
       ...g.faqs.map(f => f.question + ' ' + f.answer)
     ].join(' ').split(/\s+/).length;
     return Math.max(5, Math.round(wordCount / 200));
@@ -145,7 +145,7 @@ export async function generateMetadata({ params }: Props) {
 
   return buildMetadata({
     title: guide.title,
-    description: guide.description,
+    description: guide.description ?? guide.title,
     path: `/guides/${guide.slug}`,
     type: 'article',
     image: `/images/guides/${guide.slug}-1.jpg`,
@@ -192,7 +192,7 @@ export default async function GuidePage({ params }: Props) {
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
   const isHowTo = guideKind === 'tutorial' || guideKind === 'playbook' || /^how to/i.test(guide.title);
   const summaryParagraphs =
-    override?.summary ?? [
+    (Array.isArray(override?.summary) ? override?.summary : override?.summary ? [override.summary] : null) ?? [
       hubCopy.verdict,
       `This guide covers ${guide.title.toLowerCase()} with a focus on practical execution for ${industryRefs.length > 0 ? industryRefs.map(i => i.name.toLowerCase()).join(', ') : 'B2B teams'}. The goal is to give you a clear workflow you can implement this week, not another generic overview.`,
       `If you are working on ${titleCaseHub(guide.hub).toLowerCase()}, the best results usually come from narrower segmentation, clearer ownership, and more honest review of what is or is not working.`
@@ -216,6 +216,9 @@ export default async function GuidePage({ params }: Props) {
       'Always validate current pricing and plan limits directly on vendor sites before making a purchase decision.'
     ];
   const qualitySignals = override?.qualitySignals ?? hubCopy.signals;
+  const guideSteps = guide.steps ?? [];
+  const guideTips = guide.tips ?? [];
+  const guideUseCases = guide.useCases ?? [];
   const hiddenDrawbacks =
     override?.hiddenDrawbacks ?? [
       hubCopy.drawback,
@@ -270,7 +273,7 @@ export default async function GuidePage({ params }: Props) {
       />
       <ArticleSchema
         title={guide.title}
-        description={guide.description}
+        description={guide.description ?? guide.title}
         url={`${siteConfig.url}/guides/${guide.slug}`}
         image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
         datePublished={guide.publishedAt ?? DEFAULT_PUBLISHED_DATE}
@@ -282,7 +285,7 @@ export default async function GuidePage({ params }: Props) {
       {guideKind === 'review' ? (
         <ReviewSchema
           title={guide.title}
-          description={guide.description}
+          description={guide.description ?? guide.title}
           url={`${siteConfig.url}/guides/${guide.slug}`}
           itemName="Apollo.io"
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
@@ -291,10 +294,10 @@ export default async function GuidePage({ params }: Props) {
       {isHowTo ? (
         <HowToSchema
           name={guide.title}
-          description={guide.description}
+          description={guide.description ?? guide.title}
           url={`${siteConfig.url}/guides/${guide.slug}`}
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
-          steps={guide.steps}
+          steps={guide.steps ?? []}
         />
       ) : null}
 
@@ -313,7 +316,7 @@ export default async function GuidePage({ params }: Props) {
           <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
           <h1 className="mt-2 max-w-4xl text-3xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
-          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description)}</p>
+          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description ?? guide.title)}</p>
           <div className="mt-5 flex flex-wrap gap-2 text-xs">
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Reviewed by B2B Lead Gen Tools Editorial</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Updated {UPDATED_LABEL}</span>
@@ -378,11 +381,11 @@ export default async function GuidePage({ params }: Props) {
           <GuideSectionLead section="features" tone="blue" eyebrow={featuresLead.eyebrow} title={featuresLead.title} body={featuresLead.body} />
           <p>{kindCopy.featuresIntro}</p>
           <ul>
-            <li>{renderApolloText(guide.steps[0] ?? 'Define a tighter target before scaling execution.')}</li>
-            <li>{renderApolloText(guide.steps[1] ?? 'Use practical filtering and segmentation logic.')}</li>
-            <li>{renderApolloText(guide.steps[2] ?? 'Map the right stakeholders before launching outreach.')}</li>
-            <li>{renderApolloText(guide.steps[3] ?? 'Review campaign quality with operational discipline.')}</li>
-            <li>{renderApolloText(guide.steps[4] ?? 'Tie activity back to pipeline quality, not vanity metrics.')}</li>
+            <li>{renderApolloText(guideSteps[0] ?? 'Define a tighter target before scaling execution.')}</li>
+            <li>{renderApolloText(guideSteps[1] ?? 'Use practical filtering and segmentation logic.')}</li>
+            <li>{renderApolloText(guideSteps[2] ?? 'Map the right stakeholders before launching outreach.')}</li>
+            <li>{renderApolloText(guideSteps[3] ?? 'Review campaign quality with operational discipline.')}</li>
+            <li>{renderApolloText(guideSteps[4] ?? 'Tie activity back to pipeline quality, not vanity metrics.')}</li>
           </ul>
 
           <h2 id="pros-cons">Pros & Cons</h2>
@@ -463,7 +466,7 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="steps">Actionable Steps</h2>
           <ol>
-            {guide.steps.map((step) => (
+            {guideSteps.map((step) => (
               <li key={step}>{renderApolloText(step)}</li>
             ))}
           </ol>
@@ -481,12 +484,12 @@ export default async function GuidePage({ params }: Props) {
 
           <section className="rounded-xl border border-blue-100 bg-blue-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Tip Box</p>
-            <p className="mt-2 text-sm text-slate-700">{renderApolloText(guide.tips[0] ?? 'Keep the workflow narrow enough to review every week.')}</p>
+            <p className="mt-2 text-sm text-slate-700">{renderApolloText(guideTips[0] ?? 'Keep the workflow narrow enough to review every week.')}</p>
           </section>
 
           <h2 id="use-cases">Real Business Use Cases</h2>
           <ul>
-            {guide.useCases.map((item) => (
+            {guideUseCases.map((item) => (
               <li key={item}>{renderApolloText(item)}</li>
             ))}
           </ul>
@@ -537,7 +540,7 @@ export default async function GuidePage({ params }: Props) {
 
           <h2 id="tips">Execution Tips</h2>
           <ul>
-            {guide.tips.map((tip) => (
+            {guideTips.map((tip) => (
               <li key={tip}>{renderApolloText(tip)}</li>
             ))}
           </ul>

@@ -1,5 +1,5 @@
 ﻿export type GuideOverride = {
-  summary?: string[];
+  summary?: string[] | string;
   pros?: string[];
   cons?: string[];
   pricing?: string[];
