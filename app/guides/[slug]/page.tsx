@@ -290,7 +290,7 @@ export default async function GuidePage({ params }: Props) {
       <PersonSchema
         name="Katya"
         jobTitle="B2B Marketing Expert & Lead Generation Strategist"
-        url={`${siteConfig.url}/about`}
+        url={`${siteConfig.url}/authors/katya`}
         description="Katya is a B2B marketing expert with 10+ years of experience building outbound systems, cold email campaigns, and lead generation pipelines for SaaS companies, agencies, and service businesses."
         knowsAbout={['B2B Lead Generation', 'Cold Email Outreach', 'Apollo.io', 'Outbound Sales', 'Sales Pipeline Management']}
       />
@@ -606,7 +606,10 @@ export default async function GuidePage({ params }: Props) {
               </div>
               <div>
                 <p className="text-sm font-semibold text-slate-900">
-                  Written by <Link href="/about" className="text-blue-700 hover:underline">Katya</Link>
+                  Written by{' '}
+                  <Link href="/authors/katya" className="text-blue-700 hover:underline">
+                    Katya
+                  </Link>
                 </p>
                 <p className="mt-0.5 text-xs font-medium uppercase tracking-wide text-blue-700">B2B Marketing Expert &amp; Lead Generation Strategist</p>
                 <p className="mt-3 text-sm leading-6 text-slate-700">

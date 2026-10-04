@@ -57,7 +57,7 @@ export const ArticleSchema = ({
       '@type': 'Person',
       name: 'Katya',
       jobTitle: 'B2B Marketing Expert',
-      url: `${siteConfig.url}/about`,
+      url: `${siteConfig.url}/authors/katya`,
       worksFor: {
         '@type': 'Organization',
         name: 'B2B Lead Generation Tools'

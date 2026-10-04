@@ -1,4 +1,6 @@
-﻿import { Container } from '@/components/container';
+﻿import Link from 'next/link';
+
+import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
 import { BreadcrumbSchema, PersonSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
@@ -22,7 +24,7 @@ export default function AboutPage() {
       <PersonSchema
         name="Katya"
         jobTitle="B2B Marketing Expert & Lead Generation Strategist"
-        url={`${siteConfig.url}/about`}
+        url={`${siteConfig.url}/authors/katya`}
         description="Katya is a B2B marketing expert with 10+ years of experience building outbound systems, cold email campaigns, and lead generation pipelines for SaaS companies, agencies, and service businesses. She founded B2B Lead Generation Tools to share the playbooks she uses with real clients."
         knowsAbout={[
           'B2B Lead Generation',
@@ -91,6 +93,7 @@ export default function AboutPage() {
             <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
               <p className="text-sm font-semibold text-blue-800">Katya — Lead Author</p>
               <p className="mt-1 text-sm text-slate-700">B2B marketing expert focused on outbound systems, Apollo workflows, and pipeline strategy.</p>
+              <Link href="/authors/katya" className="mt-2 inline-block text-sm font-medium text-blue-700 underline">Full author profile →</Link>
             </div>
             <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
               <p className="text-sm font-semibold text-slate-900">Hands-on testing</p>
