@@ -191,19 +191,33 @@ export default async function GuidePage({ params }: Props) {
   const comparisonRows = override?.comparisonRows ?? buildComparisonRows(guide.hub);
   const keywordSet = [guide.title, titleCaseHub(guide.hub), ...industryRefs.map((item) => item.name)];
   const isHowTo = guideKind === 'tutorial' || guideKind === 'playbook' || /^how to/i.test(guide.title);
+
+  // Priority: explicit override > article's own content in content.ts > generic hub copy.
+  // New-format articles write summary/pros/cons/scenarios/verdict directly in content.ts,
+  // and those must not be discarded in favour of generic fallbacks.
+  const toArray = (value: string[] | string | undefined): string[] | null =>
+    value === undefined ? null : Array.isArray(value) ? value : [value];
+
+  const guideSummary = toArray(guide.summary);
+  const guidePros = guide.pros?.length ? guide.pros : null;
+  const guideCons = guide.cons?.length ? guide.cons : null;
+  const guideScenarios = guide.scenarios?.length ? guide.scenarios : null;
+
   const summaryParagraphs =
-    (Array.isArray(override?.summary) ? override?.summary : override?.summary ? [override.summary] : null) ?? [
+    (Array.isArray(override?.summary) ? override?.summary : override?.summary ? [override.summary] : null) ??
+    guideSummary ??
+    [
       hubCopy.verdict,
       `This guide covers ${guide.title.toLowerCase()} with a focus on practical execution for ${industryRefs.length > 0 ? industryRefs.map(i => i.name.toLowerCase()).join(', ') : 'B2B teams'}. The goal is to give you a clear workflow you can implement this week, not another generic overview.`,
       `If you are working on ${titleCaseHub(guide.hub).toLowerCase()}, the best results usually come from narrower segmentation, clearer ownership, and more honest review of what is or is not working.`
     ];
-  const prosList = override?.pros ?? [
+  const prosList = override?.pros ?? guidePros ?? [
     `Specifically addresses ${guide.title.toLowerCase()} with actionable steps, not theory.`,
     'Fits lean teams that need practical process improvements quickly.',
     `Connects ${titleCaseHub(guide.hub).toLowerCase()} activity to sales outcomes and follow-up discipline.`,
     'Includes comparison tables, checklists, and FAQ sections for quick reference.'
   ];
-  const consList = override?.cons ?? [
+  const consList = override?.cons ?? guideCons ?? [
     'Will not fix weak positioning or a poorly defined offer.',
     'Needs process ownership to work consistently.',
     'Usually underperforms when teams chase volume before fit.',
@@ -238,7 +252,8 @@ export default async function GuidePage({ params }: Props) {
       `Skip this approach if you have not yet validated product-market fit or if your target customer profile is still changing frequently.`
     ];
   const scenarioParagraphs =
-    override?.scenario ?? [
+    override?.scenario ??
+    (guideScenarios ? [`Best fit when: ${guideScenarios.join(' | ')}`] : null) ?? [
       `A realistic way to apply ${guide.title.toLowerCase()} is to choose one segment, one offer angle, and one next-step goal for the week. Start with the smallest useful operating loop: list quality review, message refinement, follow-up consistency, and then pipeline review.`,
       'For example: pick 50 accounts in your target industry, write 3 personalized angles, send on Tuesday morning, and review replies by Thursday. That single cycle teaches more than reading 10 more guides.',
       'When a team changes fewer variables at once, it becomes much easier to see what is actually helping.'
@@ -261,7 +276,8 @@ export default async function GuidePage({ params }: Props) {
       'In larger deal environments, more account-based motion may be a better choice. In earlier-stage teams, a simpler founder-led version may perform better.'
     ];
   const finalVerdictParagraphs =
-    override?.finalVerdict ?? [
+    override?.finalVerdict ??
+    (guide.verdict ? [guide.verdict] : null) ?? [
       `This guide should help if the goal is to make ${guide.title.toLowerCase()} more repeatable and easier to inspect.`,
       `The highest-ROI move is usually not doing more — it is building a narrower, more honest workflow that the team can actually sustain and review. Start with one segment, one message angle, and one weekly review cadence.`,
       'If this guide was useful, explore related workflows in the links below or return to the hub for the next priority problem.'
