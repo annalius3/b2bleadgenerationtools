@@ -599,6 +599,29 @@ export default async function GuidePage({ params }: Props) {
             <p key={paragraph}>{renderApolloText(paragraph)}</p>
           ))}
 
+          <aside className="not-prose mt-10 rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50/70 to-white p-6 shadow-sm" aria-label="About the author">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-blue-700 text-xl font-bold text-white" aria-hidden="true">
+                K
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-slate-900">
+                  Written by <Link href="/about" className="text-blue-700 hover:underline">Katya</Link>
+                </p>
+                <p className="mt-0.5 text-xs font-medium uppercase tracking-wide text-blue-700">B2B Marketing Expert &amp; Lead Generation Strategist</p>
+                <p className="mt-3 text-sm leading-6 text-slate-700">
+                  Katya has spent 10+ years building outbound systems, cold email campaigns, and lead generation pipelines for SaaS
+                  companies, agencies, and service businesses. She runs every workflow in this guide against real accounts before
+                  publishing it, then updates the guide when tools, pricing, or deliverability rules change.
+                </p>
+                <p className="mt-3 text-sm text-slate-600">
+                  Questions about this playbook? <Link href="/contact" className="text-blue-700 underline hover:text-blue-900">Send them here</Link> — or start with the{' '}
+                  <Link href="/editorial-methodology" className="text-blue-700 underline hover:text-blue-900">editorial methodology</Link> behind our reviews.
+                </p>
+              </div>
+            </div>
+          </aside>
+
           <h2 id="related">Related Guides</h2>
           <ul>
             {related.concat(sameHubGuides).slice(0, 5).map((item) => (
