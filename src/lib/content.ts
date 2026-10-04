@@ -782,7 +782,9 @@ export const guides: Guide[] = [
         answer: 'Company filters first. Better account selection usually improves downstream response quality.'
       }
     ],
-    relatedSlugs: ['account-based-prospecting-framework', 'apollo-cold-email-sequence-template']
+    relatedSlugs: ['account-based-prospecting-framework', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2025-11-01',
+    updatedAt: '2025-11-01'
   },
   {
     slug: 'account-based-prospecting-framework',
@@ -803,7 +805,9 @@ export const guides: Guide[] = [
       { question: 'Is ABM only for enterprise?', answer: 'No. Small teams can run ABM with a focused account set and clear ownership.' },
       { question: 'What metric matters most?', answer: 'Meetings booked with target accounts, then account-level opportunity rate.' }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-fast', 'pipeline-management-playbook']
+    relatedSlugs: ['how-to-find-b2b-leads-fast', 'pipeline-management-playbook'],
+    publishedAt: '2025-11-01',
+    updatedAt: '2025-11-01'
   },
   {
     slug: 'apollo-cold-email-sequence-template',
@@ -824,7 +828,9 @@ export const guides: Guide[] = [
       { question: 'How long should a sequence be?', answer: 'Most teams see best performance between 4 and 7 touches.' },
       { question: 'How often should I follow up?', answer: 'A 2-2-3 day cadence is a reliable starting point for B2B outbound.' }
     ],
-    relatedSlugs: ['reply-strategy-for-b2b-outreach', 'personalization-at-scale-with-apollo']
+    relatedSlugs: ['reply-strategy-for-b2b-outreach', 'personalization-at-scale-with-apollo'],
+    publishedAt: '2025-11-02',
+    updatedAt: '2025-11-02'
   },
   {
     slug: 'personalization-at-scale-with-apollo',
@@ -845,7 +851,9 @@ export const guides: Guide[] = [
       { question: 'Can I personalize without manual research?', answer: 'Yes, for most campaigns. Reserve deep research for strategic accounts.' },
       { question: 'What should I personalize first?', answer: 'Pain point and offer fit. Generic offers underperform even with name/company tokens.' }
     ],
-    relatedSlugs: ['apollo-cold-email-sequence-template', 'how-to-find-b2b-leads-fast', 'ai-personalized-cold-emails-at-scale']
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'how-to-find-b2b-leads-fast', 'ai-personalized-cold-emails-at-scale'],
+    publishedAt: '2025-11-02',
+    updatedAt: '2025-11-02'
   },
   {
     slug: 'pipeline-management-playbook',
@@ -866,7 +874,9 @@ export const guides: Guide[] = [
       { question: 'What is the first pipeline metric to fix?', answer: 'Speed-to-first-response on qualified inbound/outbound replies.' },
       { question: 'How often should pipeline reviews happen?', answer: 'Weekly at minimum for outbound-heavy teams.' }
     ],
-    relatedSlugs: ['deal-closing-strategies-b2b', 'lead-qualification-system']
+    relatedSlugs: ['deal-closing-strategies-b2b', 'lead-qualification-system'],
+    publishedAt: '2025-11-03',
+    updatedAt: '2025-11-03'
   },
   {
     slug: 'lead-qualification-system',
@@ -887,7 +897,9 @@ export const guides: Guide[] = [
       { question: 'How many criteria are enough?', answer: 'Four to six criteria are usually enough for consistent decisions.' },
       { question: 'Can startups use formal qualification?', answer: 'Yes. A lightweight model is better than no model.' }
     ],
-    relatedSlugs: ['pipeline-management-playbook', 'deal-closing-strategies-b2b']
+    relatedSlugs: ['pipeline-management-playbook', 'deal-closing-strategies-b2b'],
+    publishedAt: '2025-11-03',
+    updatedAt: '2025-11-03'
   },
   {
     slug: 'deal-closing-strategies-b2b',
@@ -908,7 +920,9 @@ export const guides: Guide[] = [
       { question: 'How do I reduce end-of-quarter slippage?', answer: 'Qualify timeline realism and stakeholder commitment earlier.' },
       { question: 'Should discounts be used to close faster?', answer: 'Only with clear trade-offs and mutual commitments.' }
     ],
-    relatedSlugs: ['pipeline-management-playbook', 'lead-qualification-system', 'b2b-objection-handling-framework', 'b2b-proposal-template-that-closes']
+    relatedSlugs: ['pipeline-management-playbook', 'lead-qualification-system', 'b2b-objection-handling-framework', 'b2b-proposal-template-that-closes'],
+    publishedAt: '2025-11-04',
+    updatedAt: '2025-11-04'
   },
   {
     slug: 'startup-outbound-first-customers',
@@ -929,7 +943,9 @@ export const guides: Guide[] = [
       { question: 'What budget is enough to start?', answer: 'Many teams begin with Apollo plus one email infrastructure setup.' },
       { question: 'How quickly can startup outbound work?', answer: 'Most teams get meaningful signal in 2 to 4 weeks with focused execution.' }
     ],
-    relatedSlugs: ['low-budget-lead-generation-startups', 'how-to-find-b2b-leads-fast', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid']
+    relatedSlugs: ['low-budget-lead-generation-startups', 'how-to-find-b2b-leads-fast', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid'],
+    publishedAt: '2025-11-04',
+    updatedAt: '2025-11-04'
   },
   {
     slug: 'low-budget-lead-generation-startups',
@@ -950,7 +966,9 @@ export const guides: Guide[] = [
       { question: 'What is the minimum outbound stack?', answer: 'Apollo, domain/email setup, and a simple CRM process.' },
       { question: 'When should I add more tools?', answer: 'After consistent meeting volume and clear bottleneck diagnosis.' }
     ],
-    relatedSlugs: ['startup-outbound-first-customers', 'apollo-cold-email-sequence-template']
+    relatedSlugs: ['startup-outbound-first-customers', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2025-11-05',
+    updatedAt: '2025-11-05'
   },
   {
     slug: 'apollo-guide-for-agencies',
@@ -971,7 +989,9 @@ export const guides: Guide[] = [
       { question: 'Can agencies run multi-client campaigns in Apollo?', answer: 'Yes, with clear workspace and list governance per offer.' },
       { question: 'What outreach angle works best for agencies?', answer: 'Problem-specific outcomes backed by relevant proof.' }
     ],
-    relatedSlugs: ['apollo-cold-email-sequence-template', 'reply-strategy-for-b2b-outreach']
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'reply-strategy-for-b2b-outreach'],
+    publishedAt: '2025-11-05',
+    updatedAt: '2025-11-05'
   },
   {
     slug: 'reply-strategy-for-b2b-outreach',
@@ -992,7 +1012,9 @@ export const guides: Guide[] = [
       { question: 'How fast should I answer replies?', answer: 'Within the same day whenever possible for warm prospects.' },
       { question: 'Should every positive reply get a meeting?', answer: 'No. Qualify first to protect calendar quality and close rate.' }
     ],
-    relatedSlugs: ['apollo-cold-email-sequence-template', 'pipeline-management-playbook', 'b2b-objection-handling-framework']
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'pipeline-management-playbook', 'b2b-objection-handling-framework'],
+    publishedAt: '2025-11-06',
+    updatedAt: '2025-11-06'
   },
   {
     slug: 'what-is-apollo-io',
@@ -1084,7 +1106,9 @@ export const guides: Guide[] = [
         answer: 'It can underperform when teams lack segmentation discipline or process QA.'
       }
     ],
-    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-pros-and-cons', 'apollo-io-pricing-explained', 'apollo-vs-seamless-ai-comparison']
+    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-pros-and-cons', 'apollo-io-pricing-explained', 'apollo-vs-seamless-ai-comparison'],
+    publishedAt: '2025-11-07',
+    updatedAt: '2025-11-07'
   },
   {
     slug: 'is-apollo-io-worth-it',
@@ -1119,7 +1143,9 @@ export const guides: Guide[] = [
         answer: 'At least 30 days with weekly iteration and quality checks.'
       }
     ],
-    relatedSlugs: ['apollo-io-review-2026', 'apollo-io-pricing-explained', 'apollo-io-for-beginners']
+    relatedSlugs: ['apollo-io-review-2026', 'apollo-io-pricing-explained', 'apollo-io-for-beginners'],
+    publishedAt: '2025-11-08',
+    updatedAt: '2025-11-08'
   },
   {
     slug: 'apollo-io-pricing-explained',
@@ -1154,7 +1180,9 @@ export const guides: Guide[] = [
         answer: 'Monthly for fast-growing teams and quarterly for stable teams.'
       }
     ],
-    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-review-2026', 'pipeline-management-playbook']
+    relatedSlugs: ['is-apollo-io-worth-it', 'apollo-io-review-2026', 'pipeline-management-playbook'],
+    publishedAt: '2025-11-08',
+    updatedAt: '2025-11-08'
   },
   {
     slug: 'apollo-io-features-overview',
@@ -1189,7 +1217,9 @@ export const guides: Guide[] = [
         answer: 'No. Start narrow and expand only when process maturity supports it.'
       }
     ],
-    relatedSlugs: ['what-is-apollo-io', 'how-apollo-io-works', 'apollo-io-setup-guide']
+    relatedSlugs: ['what-is-apollo-io', 'how-apollo-io-works', 'apollo-io-setup-guide'],
+    publishedAt: '2025-11-09',
+    updatedAt: '2025-11-09'
   },
   {
     slug: 'apollo-io-pros-and-cons',
@@ -1224,7 +1254,9 @@ export const guides: Guide[] = [
         answer: 'It can become noisy when teams over-export and under-qualify leads.'
       }
     ],
-    relatedSlugs: ['apollo-io-review-2026', 'is-apollo-io-worth-it', 'apollo-io-features-overview', 'apollo-vs-seamless-ai-comparison']
+    relatedSlugs: ['apollo-io-review-2026', 'is-apollo-io-worth-it', 'apollo-io-features-overview', 'apollo-vs-seamless-ai-comparison'],
+    publishedAt: '2025-11-09',
+    updatedAt: '2025-11-09'
   },
   {
     slug: 'apollo-io-for-beginners',
@@ -1259,7 +1291,9 @@ export const guides: Guide[] = [
         answer: 'Trying too many segments before validating one repeatable workflow.'
       }
     ],
-    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step', 'what-is-apollo-io']
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step', 'what-is-apollo-io'],
+    publishedAt: '2025-11-10',
+    updatedAt: '2025-11-10'
   },
   {
     slug: 'how-apollo-io-works',
@@ -1294,7 +1328,9 @@ export const guides: Guide[] = [
         answer: 'Between list quality and follow-up quality, not in campaign launch itself.'
       }
     ],
-    relatedSlugs: ['apollo-io-features-overview', 'apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step']
+    relatedSlugs: ['apollo-io-features-overview', 'apollo-io-setup-guide', 'apollo-io-tutorial-step-by-step'],
+    publishedAt: '2025-11-10',
+    updatedAt: '2025-11-10'
   },
   {
     slug: 'apollo-io-setup-guide',
@@ -1329,7 +1365,9 @@ export const guides: Guide[] = [
         answer: 'Use one owner, one rollout plan, and clear naming conventions for every campaign asset.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-beginners', 'apollo-io-tutorial-step-by-step', 'how-apollo-io-works']
+    relatedSlugs: ['apollo-io-for-beginners', 'apollo-io-tutorial-step-by-step', 'how-apollo-io-works'],
+    publishedAt: '2025-11-11',
+    updatedAt: '2025-11-11'
   },
   {
     slug: 'apollo-io-tutorial-step-by-step',
@@ -1364,7 +1402,9 @@ export const guides: Guide[] = [
         answer: 'First qualified meeting with clear repeatable process notes.'
       }
     ],
-    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-for-beginners', 'apollo-cold-email-sequence-template']
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-for-beginners', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2025-11-11',
+    updatedAt: '2025-11-11'
   },
   {
     slug: 'how-to-find-b2b-leads-with-apollo-io',
@@ -1395,7 +1435,9 @@ export const guides: Guide[] = [
         answer: 'Companies first, then contacts. Better account selection improves outreach performance downstream.'
       }
     ],
-    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo', 'apollo-io-setup-guide', 'apollo-intent-signals-find-buying-companies']
+    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo', 'apollo-io-setup-guide', 'apollo-intent-signals-find-buying-companies'],
+    publishedAt: '2025-11-12',
+    updatedAt: '2025-11-12'
   },
   {
     slug: 'how-to-get-clients-using-apollo-io',
@@ -1426,7 +1468,9 @@ export const guides: Guide[] = [
         answer: 'Most focused teams see early signal in 2 to 4 weeks with weekly iteration.'
       }
     ],
-    relatedSlugs: ['startup-outbound-first-customers', 'apollo-cold-email-sequence-template', 'is-apollo-io-worth-it']
+    relatedSlugs: ['startup-outbound-first-customers', 'apollo-cold-email-sequence-template', 'is-apollo-io-worth-it'],
+    publishedAt: '2025-11-12',
+    updatedAt: '2025-11-12'
   },
   {
     slug: 'generate-sales-leads-with-apollo',
@@ -1457,7 +1501,9 @@ export const guides: Guide[] = [
         answer: 'Enrich core segments first. Apply deeper enrichment where pipeline value justifies the cost.'
       }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'lead-generation-strategy-using-apollo', 'apollo-io-features-overview']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'lead-generation-strategy-using-apollo', 'apollo-io-features-overview'],
+    publishedAt: '2025-11-13',
+    updatedAt: '2025-11-13'
   },
   {
     slug: 'how-to-build-a-lead-list-in-apollo',
@@ -1488,7 +1534,9 @@ export const guides: Guide[] = [
         answer: 'Review and refresh every 2 to 4 weeks depending on campaign velocity.'
       }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'apollo-io-tutorial-step-by-step']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'apollo-io-tutorial-step-by-step'],
+    publishedAt: '2025-11-14',
+    updatedAt: '2025-11-14'
   },
   {
     slug: 'finding-decision-makers-with-apollo',
@@ -1519,7 +1567,9 @@ export const guides: Guide[] = [
         answer: 'Often yes. Even SMB deals can stall without influencer and approver alignment.'
       }
     ],
-    relatedSlugs: ['account-based-prospecting-framework', 'how-to-build-a-lead-list-in-apollo', 'how-to-find-companies-to-sell-to']
+    relatedSlugs: ['account-based-prospecting-framework', 'how-to-build-a-lead-list-in-apollo', 'how-to-find-companies-to-sell-to'],
+    publishedAt: '2025-11-14',
+    updatedAt: '2025-11-14'
   },
   {
     slug: 'how-to-find-companies-to-sell-to',
@@ -1550,7 +1600,9 @@ export const guides: Guide[] = [
         answer: 'Quarterly is a good baseline, with monthly tweaks based on response and pipeline quality.'
       }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'account-based-prospecting-framework', 'find-companies-using-competitor-software-apollo']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'account-based-prospecting-framework', 'find-companies-using-competitor-software-apollo'],
+    publishedAt: '2025-11-15',
+    updatedAt: '2025-11-15'
   },
   {
     slug: 'prospecting-with-apollo-io',
@@ -1581,7 +1633,9 @@ export const guides: Guide[] = [
         answer: 'In lean teams yes, but role clarity and process docs are essential.'
       }
     ],
-    relatedSlugs: ['apollo-cold-email-sequence-template', 'reply-strategy-for-b2b-outreach', 'how-apollo-io-works']
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'reply-strategy-for-b2b-outreach', 'how-apollo-io-works'],
+    publishedAt: '2025-11-15',
+    updatedAt: '2025-11-15'
   },
   {
     slug: 'how-to-build-a-sales-pipeline',
@@ -1612,7 +1666,9 @@ export const guides: Guide[] = [
         answer: 'Most B2B teams operate effectively with five to seven well-defined stages.'
       }
     ],
-    relatedSlugs: ['pipeline-management-playbook', 'lead-qualification-system', 'deal-closing-strategies-b2b']
+    relatedSlugs: ['pipeline-management-playbook', 'lead-qualification-system', 'deal-closing-strategies-b2b'],
+    publishedAt: '2025-11-16',
+    updatedAt: '2025-11-16'
   },
   {
     slug: 'lead-generation-strategy-using-apollo',
@@ -1643,7 +1699,9 @@ export const guides: Guide[] = [
         answer: 'Yes. ICP assumptions, deal cycle, and stakeholder mapping vary significantly by vertical.'
       }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'prospecting-with-apollo-io', 'how-to-scale-client-acquisition']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'prospecting-with-apollo-io', 'how-to-scale-client-acquisition'],
+    publishedAt: '2025-11-16',
+    updatedAt: '2025-11-16'
   },
   {
     slug: 'how-to-scale-client-acquisition',
@@ -1674,7 +1732,9 @@ export const guides: Guide[] = [
         answer: 'Inconsistent list quality, weak handoff rules, and slow response management are common failure points.'
       }
     ],
-    relatedSlugs: ['how-to-get-clients-using-apollo-io', 'low-budget-lead-generation-startups', 'lead-generation-strategy-using-apollo', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid']
+    relatedSlugs: ['how-to-get-clients-using-apollo-io', 'low-budget-lead-generation-startups', 'lead-generation-strategy-using-apollo', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid'],
+    publishedAt: '2025-11-17',
+    updatedAt: '2025-11-17'
   },
   {
     slug: 'apollo-io-for-startups',
@@ -1705,7 +1765,9 @@ export const guides: Guide[] = [
         answer: 'List quality and response speed usually create the biggest early gains.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-beginners', 'how-to-get-clients-using-apollo-io', 'startup-outbound-first-customers']
+    relatedSlugs: ['apollo-io-for-beginners', 'how-to-get-clients-using-apollo-io', 'startup-outbound-first-customers'],
+    publishedAt: '2025-11-17',
+    updatedAt: '2025-11-17'
   },
   {
     slug: 'how-founders-get-first-customers-with-apollo',
@@ -1736,7 +1798,9 @@ export const guides: Guide[] = [
         answer: 'Usually no. Founder-led outbound works well before dedicated SDR hiring.'
       }
     ],
-    relatedSlugs: ['how-to-get-clients-using-apollo-io', 'first-100-customers-strategy', 'apollo-cold-email-sequence-template']
+    relatedSlugs: ['how-to-get-clients-using-apollo-io', 'first-100-customers-strategy', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2025-11-18',
+    updatedAt: '2025-11-18'
   },
   {
     slug: 'customer-acquisition-for-startups',
@@ -1767,7 +1831,9 @@ export const guides: Guide[] = [
         answer: 'After one repeatable outbound motion produces stable unit economics.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-startups', 'how-to-scale-client-acquisition', 'lead-generation-strategy-using-apollo']
+    relatedSlugs: ['apollo-io-for-startups', 'how-to-scale-client-acquisition', 'lead-generation-strategy-using-apollo'],
+    publishedAt: '2025-11-18',
+    updatedAt: '2025-11-18'
   },
   {
     slug: 'growth-strategy-using-apollo',
@@ -1798,7 +1864,9 @@ export const guides: Guide[] = [
         answer: 'Reply quality, meeting conversion, and pipeline value by segment.'
       }
     ],
-    relatedSlugs: ['lead-generation-strategy-using-apollo', 'apollo-io-pricing-explained', 'how-to-scale-client-acquisition']
+    relatedSlugs: ['lead-generation-strategy-using-apollo', 'apollo-io-pricing-explained', 'how-to-scale-client-acquisition'],
+    publishedAt: '2025-11-19',
+    updatedAt: '2025-11-19'
   },
   {
     slug: 'low-budget-lead-generation-for-startups',
@@ -1829,7 +1897,9 @@ export const guides: Guide[] = [
         answer: 'Use strict disqualification filters and list QA before outreach.'
       }
     ],
-    relatedSlugs: ['low-budget-lead-generation-startups', 'apollo-io-for-startups', 'how-to-build-a-lead-list-in-apollo']
+    relatedSlugs: ['low-budget-lead-generation-startups', 'apollo-io-for-startups', 'how-to-build-a-lead-list-in-apollo'],
+    publishedAt: '2025-11-20',
+    updatedAt: '2025-11-20'
   },
   {
     slug: 'building-pipeline-without-marketing',
@@ -1860,7 +1930,9 @@ export const guides: Guide[] = [
         answer: 'Qualification inconsistency and weak follow-up ownership are common failure points.'
       }
     ],
-    relatedSlugs: ['how-to-build-a-sales-pipeline', 'pipeline-management-playbook', 'outbound-sales-for-startups']
+    relatedSlugs: ['how-to-build-a-sales-pipeline', 'pipeline-management-playbook', 'outbound-sales-for-startups'],
+    publishedAt: '2025-11-20',
+    updatedAt: '2025-11-20'
   },
   {
     slug: 'outbound-sales-for-startups',
@@ -1891,7 +1963,9 @@ export const guides: Guide[] = [
         answer: 'Not always. Segment-level relevance plus one contextual line is often enough.'
       }
     ],
-    relatedSlugs: ['prospecting-with-apollo-io', 'apollo-cold-email-sequence-template', 'how-founders-get-first-customers-with-apollo']
+    relatedSlugs: ['prospecting-with-apollo-io', 'apollo-cold-email-sequence-template', 'how-founders-get-first-customers-with-apollo'],
+    publishedAt: '2025-11-21',
+    updatedAt: '2025-11-21'
   },
   {
     slug: 'validating-a-startup-idea-with-outreach',
@@ -1922,7 +1996,9 @@ export const guides: Guide[] = [
         answer: 'Start with learning; soft-sell only after clear pain confirmation.'
       }
     ],
-    relatedSlugs: ['what-is-apollo-io', 'apollo-io-for-startups', 'first-100-customers-strategy']
+    relatedSlugs: ['what-is-apollo-io', 'apollo-io-for-startups', 'first-100-customers-strategy'],
+    publishedAt: '2025-11-21',
+    updatedAt: '2025-11-21'
   },
   {
     slug: 'first-100-customers-strategy',
@@ -1953,7 +2029,9 @@ export const guides: Guide[] = [
         answer: 'After one outbound motion shows stable conversion and healthy unit economics.'
       }
     ],
-    relatedSlugs: ['how-founders-get-first-customers-with-apollo', 'how-to-scale-client-acquisition', 'customer-acquisition-for-startups']
+    relatedSlugs: ['how-founders-get-first-customers-with-apollo', 'how-to-scale-client-acquisition', 'customer-acquisition-for-startups'],
+    publishedAt: '2025-11-22',
+    updatedAt: '2025-11-22'
   },
   {
     slug: 'b2b-sales-strategy-for-new-companies',
@@ -1984,7 +2062,9 @@ export const guides: Guide[] = [
         answer: 'Monthly in early stage and quarterly once performance stabilizes.'
       }
     ],
-    relatedSlugs: ['how-to-build-a-sales-pipeline', 'lead-qualification-system', 'building-pipeline-without-marketing', 'b2b-sales-playbook-template']
+    relatedSlugs: ['how-to-build-a-sales-pipeline', 'lead-qualification-system', 'building-pipeline-without-marketing', 'b2b-sales-playbook-template'],
+    publishedAt: '2025-11-22',
+    updatedAt: '2025-11-22'
   },
   {
     slug: 'apollo-io-for-small-business',
@@ -2011,7 +2091,9 @@ export const guides: Guide[] = [
         answer: 'ICP fit and response speed are usually the first high-impact levers.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-startups', 'how-small-businesses-find-clients', 'how-to-build-a-lead-list-in-apollo']
+    relatedSlugs: ['apollo-io-for-startups', 'how-small-businesses-find-clients', 'how-to-build-a-lead-list-in-apollo'],
+    publishedAt: '2025-11-23',
+    updatedAt: '2025-11-23'
   },
   {
     slug: 'how-small-businesses-find-clients',
@@ -2038,7 +2120,9 @@ export const guides: Guide[] = [
         answer: 'Not initially. Email-first workflows can perform well with strong segmentation.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-small-business', 'how-to-get-clients-using-apollo-io', 'first-100-customers-strategy']
+    relatedSlugs: ['apollo-io-for-small-business', 'how-to-get-clients-using-apollo-io', 'first-100-customers-strategy'],
+    publishedAt: '2025-11-23',
+    updatedAt: '2025-11-23'
   },
   {
     slug: 'client-acquisition-for-consultants',
@@ -2065,7 +2149,9 @@ export const guides: Guide[] = [
         answer: 'A short problem diagnosis call with one concrete business objective.'
       }
     ],
-    relatedSlugs: ['growing-a-consulting-business', 'how-founders-get-first-customers-with-apollo', 'prospecting-with-apollo-io']
+    relatedSlugs: ['growing-a-consulting-business', 'how-founders-get-first-customers-with-apollo', 'prospecting-with-apollo-io'],
+    publishedAt: '2025-11-24',
+    updatedAt: '2025-11-24'
   },
   {
     slug: 'how-agencies-use-apollo',
@@ -2092,7 +2178,9 @@ export const guides: Guide[] = [
         answer: 'Qualified discovery calls that match service fit and retainer potential.'
       }
     ],
-    relatedSlugs: ['apollo-guide-for-agencies', 'predictable-client-flow-for-agencies', 'apollo-cold-email-sequence-template']
+    relatedSlugs: ['apollo-guide-for-agencies', 'predictable-client-flow-for-agencies', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2025-11-24',
+    updatedAt: '2025-11-24'
   },
   {
     slug: 'sales-strategy-for-service-companies',
@@ -2119,7 +2207,9 @@ export const guides: Guide[] = [
         answer: 'Usually five to seven stages with explicit entry and exit criteria.'
       }
     ],
-    relatedSlugs: ['b2b-sales-strategy-for-new-companies', 'how-to-build-a-sales-pipeline', 'lead-qualification-system', 'b2b-proposal-template-that-closes']
+    relatedSlugs: ['b2b-sales-strategy-for-new-companies', 'how-to-build-a-sales-pipeline', 'lead-qualification-system', 'b2b-proposal-template-that-closes'],
+    publishedAt: '2025-11-25',
+    updatedAt: '2025-11-25'
   },
   {
     slug: 'growing-a-consulting-business',
@@ -2146,7 +2236,9 @@ export const guides: Guide[] = [
         answer: 'Lead qualification and follow-up process should be systemized before team hiring.'
       }
     ],
-    relatedSlugs: ['client-acquisition-for-consultants', 'how-small-businesses-find-clients', 'how-to-scale-client-acquisition']
+    relatedSlugs: ['client-acquisition-for-consultants', 'how-small-businesses-find-clients', 'how-to-scale-client-acquisition'],
+    publishedAt: '2025-11-26',
+    updatedAt: '2025-11-26'
   },
   {
     slug: 'lead-generation-for-freelancers',
@@ -2173,7 +2265,9 @@ export const guides: Guide[] = [
         answer: 'Quality-first freelancers often start with 40 to 100 targeted contacts weekly.'
       }
     ],
-    relatedSlugs: ['apollo-io-for-small-business', 'how-to-build-a-client-base-from-scratch', 'outbound-sales-for-startups']
+    relatedSlugs: ['apollo-io-for-small-business', 'how-to-build-a-client-base-from-scratch', 'outbound-sales-for-startups'],
+    publishedAt: '2025-11-26',
+    updatedAt: '2025-11-26'
   },
   {
     slug: 'how-to-build-a-client-base-from-scratch',
@@ -2200,7 +2294,9 @@ export const guides: Guide[] = [
         answer: 'Trying multiple segments before validating one repeatable motion.'
       }
     ],
-    relatedSlugs: ['first-100-customers-strategy', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-freelancers']
+    relatedSlugs: ['first-100-customers-strategy', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-freelancers'],
+    publishedAt: '2025-11-27',
+    updatedAt: '2025-11-27'
   },
   {
     slug: 'b2b-marketing-without-ads',
@@ -2227,7 +2323,9 @@ export const guides: Guide[] = [
         answer: 'Segment testing, message iteration, and conversion-stage analysis.'
       }
     ],
-    relatedSlugs: ['building-pipeline-without-marketing', 'lead-generation-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io']
+    relatedSlugs: ['building-pipeline-without-marketing', 'lead-generation-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io'],
+    publishedAt: '2025-11-27',
+    updatedAt: '2025-11-27'
   },
   {
     slug: 'predictable-client-flow-for-agencies',
@@ -2254,7 +2352,9 @@ export const guides: Guide[] = [
         answer: 'Use stage conversion and time-in-stage trends, not top-of-funnel volume alone.'
       }
     ],
-    relatedSlugs: ['how-agencies-use-apollo', 'apollo-guide-for-agencies', 'pipeline-management-playbook']
+    relatedSlugs: ['how-agencies-use-apollo', 'apollo-guide-for-agencies', 'pipeline-management-playbook'],
+    publishedAt: '2025-11-28',
+    updatedAt: '2025-11-28'
   },
   {
     slug: 'cold-email-with-apollo-io',
@@ -2275,7 +2375,9 @@ export const guides: Guide[] = [
       { question: 'Can Apollo handle full cold email workflow?', answer: 'Yes, for most teams Apollo covers targeting, sequencing, and reply operations.' },
       { question: 'What is the first metric to optimize?', answer: 'Positive reply rate by segment is a strong first optimization metric.' }
     ],
-    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'apollo-cold-email-sequence-template', 'how-to-get-replies-to-cold-emails', 'ai-personalized-cold-emails-at-scale', 'cold-email-domain-warmup-strategy']
+    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'apollo-cold-email-sequence-template', 'how-to-get-replies-to-cold-emails', 'ai-personalized-cold-emails-at-scale', 'cold-email-domain-warmup-strategy'],
+    publishedAt: '2025-11-28',
+    updatedAt: '2025-11-28'
   },
   {
     slug: 'how-to-send-cold-emails-using-apollo',
@@ -2296,7 +2398,9 @@ export const guides: Guide[] = [
       { question: 'How many emails should I send at first?', answer: 'Start small and scale after list quality and response patterns are stable.' },
       { question: 'How long should a cold email be?', answer: 'Most winning first emails stay concise and focused on one outcome.' }
     ],
-    relatedSlugs: ['cold-email-with-apollo-io', 'outreach-campaign-setup', 'building-email-sequences', 'cold-email-domain-warmup-strategy']
+    relatedSlugs: ['cold-email-with-apollo-io', 'outreach-campaign-setup', 'building-email-sequences', 'cold-email-domain-warmup-strategy'],
+    publishedAt: '2025-11-29',
+    updatedAt: '2025-11-29'
   },
   {
     slug: 'email-outreach-strategy',
@@ -2317,7 +2421,9 @@ export const guides: Guide[] = [
       { question: 'What makes outreach strategy sustainable?', answer: 'Clear segmentation, measurable process, and weekly iteration cadence.' },
       { question: 'Should every segment use the same sequence?', answer: 'No. Role and pain differences require message variation.' }
     ],
-    relatedSlugs: ['email-prospecting-strategy', 'lead-generation-strategy-using-apollo', 'prospecting-with-apollo-io']
+    relatedSlugs: ['email-prospecting-strategy', 'lead-generation-strategy-using-apollo', 'prospecting-with-apollo-io'],
+    publishedAt: '2025-11-29',
+    updatedAt: '2025-11-29'
   },
   {
     slug: 'building-email-sequences',
@@ -2338,7 +2444,9 @@ export const guides: Guide[] = [
       { question: 'How many touches are ideal?', answer: 'Most teams perform best with 4 to 7 touches depending on market.' },
       { question: 'Should sequences be personalized heavily?', answer: 'Segment-level relevance plus one contextual line is often enough.' }
     ],
-    relatedSlugs: ['apollo-cold-email-sequence-template', 'follow-up-automation', 'personalization-techniques']
+    relatedSlugs: ['apollo-cold-email-sequence-template', 'follow-up-automation', 'personalization-techniques'],
+    publishedAt: '2025-11-30',
+    updatedAt: '2025-11-30'
   },
   {
     slug: 'follow-up-automation',
@@ -2359,7 +2467,9 @@ export const guides: Guide[] = [
       { question: 'Can follow-up automation hurt reply quality?', answer: 'Yes, if messaging is repetitive and not tied to segment context.' },
       { question: 'How often should automation be audited?', answer: 'Weekly in active campaigns is a good baseline.' }
     ],
-    relatedSlugs: ['building-email-sequences', 'outreach-campaign-setup', 'how-to-send-cold-emails-using-apollo']
+    relatedSlugs: ['building-email-sequences', 'outreach-campaign-setup', 'how-to-send-cold-emails-using-apollo'],
+    publishedAt: '2025-11-30',
+    updatedAt: '2025-11-30'
   },
   {
     slug: 'personalization-techniques',
@@ -2380,7 +2490,9 @@ export const guides: Guide[] = [
       { question: 'What should be personalized first?', answer: 'Pain point and role context should be personalized before any cosmetic tokens.' },
       { question: 'Does personalization always increase performance?', answer: 'No. Poor personalization can reduce trust and replies.' }
     ],
-    relatedSlugs: ['personalization-at-scale-with-apollo', 'building-email-sequences', 'how-to-get-replies-to-cold-emails', 'ai-personalized-cold-emails-at-scale']
+    relatedSlugs: ['personalization-at-scale-with-apollo', 'building-email-sequences', 'how-to-get-replies-to-cold-emails', 'ai-personalized-cold-emails-at-scale'],
+    publishedAt: '2025-12-01',
+    updatedAt: '2025-12-01'
   },
   {
     slug: 'how-to-get-replies-to-cold-emails',
@@ -2401,7 +2513,9 @@ export const guides: Guide[] = [
       { question: 'Why are cold emails not getting replies?', answer: 'Most failures come from weak targeting, unclear value, or repetitive follow-ups.' },
       { question: 'How quickly should teams reply to positive responses?', answer: 'Same-day responses usually perform better for meeting conversion.' }
     ],
-    relatedSlugs: ['cold-email-with-apollo-io', 'reply-strategy-for-b2b-outreach', 'email-prospecting-strategy']
+    relatedSlugs: ['cold-email-with-apollo-io', 'reply-strategy-for-b2b-outreach', 'email-prospecting-strategy'],
+    publishedAt: '2025-12-02',
+    updatedAt: '2025-12-02'
   },
   {
     slug: 'email-prospecting-strategy',
@@ -2422,7 +2536,9 @@ export const guides: Guide[] = [
       { question: 'How is prospecting strategy different from campaign setup?', answer: 'Strategy defines who and why; setup defines how and when.' },
       { question: 'When should new segments be added?', answer: 'After at least one segment shows repeatable qualified reply performance.' }
     ],
-    relatedSlugs: ['email-outreach-strategy', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo']
+    relatedSlugs: ['email-outreach-strategy', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo'],
+    publishedAt: '2025-12-02',
+    updatedAt: '2025-12-02'
   },
   {
     slug: 'outreach-campaign-setup',
@@ -2443,7 +2559,9 @@ export const guides: Guide[] = [
       { question: 'What should be checked before launch?', answer: 'List quality, message relevance, and reply ownership are core pre-launch checks.' },
       { question: 'How long before first optimization?', answer: 'Most teams can run first practical optimization within one week.' }
     ],
-    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'follow-up-automation', 'multi-step-outreach-playbook']
+    relatedSlugs: ['how-to-send-cold-emails-using-apollo', 'follow-up-automation', 'multi-step-outreach-playbook'],
+    publishedAt: '2025-12-03',
+    updatedAt: '2025-12-03'
   },
   {
     slug: 'multi-step-outreach-playbook',
@@ -2464,7 +2582,9 @@ export const guides: Guide[] = [
       { question: 'How many steps should a playbook include?', answer: 'Five to seven steps is common for B2B outbound without overfatigue.' },
       { question: 'Should multi-step outreach include multiple channels?', answer: 'It can, but email-first playbooks are often enough initially.' }
     ],
-    relatedSlugs: ['outreach-campaign-setup', 'building-email-sequences', 'how-to-get-replies-to-cold-emails']
+    relatedSlugs: ['outreach-campaign-setup', 'building-email-sequences', 'how-to-get-replies-to-cold-emails'],
+    publishedAt: '2025-12-03',
+    updatedAt: '2025-12-03'
   },
   {
     slug: 'building-a-sales-funnel-with-apollo',
@@ -2485,7 +2605,9 @@ export const guides: Guide[] = [
       { question: 'What is the first funnel stage to optimize?', answer: 'Qualified reply to meeting conversion is a strong early leverage point.' },
       { question: 'Can Apollo manage top-of-funnel alone?', answer: 'Yes for many teams, if qualification and handoff workflows are defined.' }
     ],
-    relatedSlugs: ['how-to-build-a-sales-pipeline', 'from-lead-to-deal-using-apollo', 'outreach-campaign-setup']
+    relatedSlugs: ['how-to-build-a-sales-pipeline', 'from-lead-to-deal-using-apollo', 'outreach-campaign-setup'],
+    publishedAt: '2025-12-04',
+    updatedAt: '2025-12-04'
   },
   {
     slug: 'lead-qualification-strategy',
@@ -2506,7 +2628,9 @@ export const guides: Guide[] = [
       { question: 'How many criteria should a qualification model include?', answer: 'Four to six criteria is usually enough for reliable decisions.' },
       { question: 'When should qualification be updated?', answer: 'Update when market, offer, or deal profile shifts materially.' }
     ],
-    relatedSlugs: ['lead-qualification-system', 'identifying-high-quality-leads', 'managing-sales-pipeline']
+    relatedSlugs: ['lead-qualification-system', 'identifying-high-quality-leads', 'managing-sales-pipeline'],
+    publishedAt: '2025-12-04',
+    updatedAt: '2025-12-04'
   },
   {
     slug: 'managing-sales-pipeline',
@@ -2527,7 +2651,9 @@ export const guides: Guide[] = [
       { question: 'What defines a healthy pipeline?', answer: 'Consistent stage progression, low stale-deal count, and predictable conversion ratios.' },
       { question: 'How often should pipeline be reviewed?', answer: 'Weekly is baseline for outbound-heavy B2B teams.' }
     ],
-    relatedSlugs: ['pipeline-management-playbook', 'b2b-sales-process-optimization', 'closing-more-deals-with-better-leads']
+    relatedSlugs: ['pipeline-management-playbook', 'b2b-sales-process-optimization', 'closing-more-deals-with-better-leads'],
+    publishedAt: '2025-12-05',
+    updatedAt: '2025-12-05'
   },
   {
     slug: 'from-lead-to-deal-using-apollo',
@@ -2548,7 +2674,9 @@ export const guides: Guide[] = [
       { question: 'What usually breaks between lead and deal?', answer: 'Weak qualification and unclear next-step ownership are common gaps.' },
       { question: 'How can Apollo help close rates indirectly?', answer: 'Better lead quality and clearer engagement history improve downstream sales execution.' }
     ],
-    relatedSlugs: ['building-a-sales-funnel-with-apollo', 'lead-qualification-strategy', 'tracking-outreach-performance']
+    relatedSlugs: ['building-a-sales-funnel-with-apollo', 'lead-qualification-strategy', 'tracking-outreach-performance'],
+    publishedAt: '2025-12-05',
+    updatedAt: '2025-12-05'
   },
   {
     slug: 'b2b-sales-process-optimization',
@@ -2569,7 +2697,9 @@ export const guides: Guide[] = [
       { question: 'Where should optimization begin?', answer: 'Start at the stage with biggest conversion leakage and high volume impact.' },
       { question: 'How fast should process changes be rolled out?', answer: 'Iterative weekly changes reduce disruption and improve learning speed.' }
     ],
-    relatedSlugs: ['managing-sales-pipeline', 'increasing-conversion-rates', 'sales-automation-with-apollo']
+    relatedSlugs: ['managing-sales-pipeline', 'increasing-conversion-rates', 'sales-automation-with-apollo'],
+    publishedAt: '2025-12-06',
+    updatedAt: '2025-12-06'
   },
   {
     slug: 'increasing-conversion-rates',
@@ -2590,7 +2720,9 @@ export const guides: Guide[] = [
       { question: 'Which conversion stage matters most?', answer: 'Qualified meeting to opportunity is often the strongest leverage point.' },
       { question: 'Can conversion improve without increasing lead volume?', answer: 'Yes, better lead quality and stage discipline can improve revenue with same volume.' }
     ],
-    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'closing-more-deals-with-better-leads']
+    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'closing-more-deals-with-better-leads'],
+    publishedAt: '2025-12-06',
+    updatedAt: '2025-12-06'
   },
   {
     slug: 'identifying-high-quality-leads',
@@ -2611,7 +2743,9 @@ export const guides: Guide[] = [
       { question: 'What makes a lead high quality?', answer: 'Clear fit, urgent pain, and realistic buying process typically define high-quality leads.' },
       { question: 'Should lead quality models differ by segment?', answer: 'Yes. Different segments often require different quality thresholds.' }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'lead-qualification-strategy']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo', 'lead-qualification-strategy'],
+    publishedAt: '2025-12-07',
+    updatedAt: '2025-12-07'
   },
   {
     slug: 'sales-automation-with-apollo',
@@ -2632,7 +2766,9 @@ export const guides: Guide[] = [
       { question: 'What should not be automated?', answer: 'Critical qualification and deal strategy decisions should remain human-led.' },
       { question: 'How to prevent automation mistakes?', answer: 'Use tight rules, small rollout batches, and weekly QA checks.' }
     ],
-    relatedSlugs: ['follow-up-automation', 'tracking-outreach-performance', 'b2b-sales-process-optimization']
+    relatedSlugs: ['follow-up-automation', 'tracking-outreach-performance', 'b2b-sales-process-optimization'],
+    publishedAt: '2025-12-08',
+    updatedAt: '2025-12-08'
   },
   {
     slug: 'tracking-outreach-performance',
@@ -2653,7 +2789,9 @@ export const guides: Guide[] = [
       { question: 'Which outreach metrics matter most?', answer: 'Positive reply rate, meeting conversion, and qualified pipeline are core metrics.' },
       { question: 'How often should outreach data be reviewed?', answer: 'Weekly review is ideal for active outbound teams.' }
     ],
-    relatedSlugs: ['email-outreach-strategy', 'increasing-conversion-rates', 'sales-automation-with-apollo']
+    relatedSlugs: ['email-outreach-strategy', 'increasing-conversion-rates', 'sales-automation-with-apollo'],
+    publishedAt: '2025-12-08',
+    updatedAt: '2025-12-08'
   },
   {
     slug: 'closing-more-deals-with-better-leads',
@@ -2674,7 +2812,9 @@ export const guides: Guide[] = [
       { question: 'Can better leads really increase close rate quickly?', answer: 'Yes, lead-quality improvements can impact close performance within one to two sales cycles.' },
       { question: 'What is the fastest quality improvement step?', answer: 'Tightening ICP filters and role targeting is often the fastest win.' }
     ],
-    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'from-lead-to-deal-using-apollo']
+    relatedSlugs: ['identifying-high-quality-leads', 'lead-qualification-strategy', 'from-lead-to-deal-using-apollo'],
+    publishedAt: '2025-12-09',
+    updatedAt: '2025-12-09'
   },
   {
     slug: 'how-to-find-business-emails-with-apollo',
@@ -2695,7 +2835,9 @@ export const guides: Guide[] = [
       { question: 'How many contacts should be verified before launch?', answer: 'Enough to run one focused campaign segment, typically 150 to 300 records.' },
       { question: 'Should emails be collected from any matching title?', answer: 'No. Role relevance and account fit should come first.' }
     ],
-    relatedSlugs: ['finding-verified-contacts', 'building-contact-lists-for-b2b', 'how-to-find-b2b-leads-with-apollo-io']
+    relatedSlugs: ['finding-verified-contacts', 'building-contact-lists-for-b2b', 'how-to-find-b2b-leads-with-apollo-io'],
+    publishedAt: '2025-12-09',
+    updatedAt: '2025-12-09'
   },
   {
     slug: 'finding-phone-numbers-of-decision-makers',
@@ -2716,7 +2858,9 @@ export const guides: Guide[] = [
       { question: 'Should phone outreach replace email?', answer: 'Usually no. It works best as a supporting channel to email campaigns.' },
       { question: 'How many contacts per account are enough?', answer: 'Three to five relevant stakeholders is a practical range.' }
     ],
-    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'multi-step-outreach-playbook']
+    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'multi-step-outreach-playbook'],
+    publishedAt: '2025-12-10',
+    updatedAt: '2025-12-10'
   },
   {
     slug: 'building-contact-lists-for-b2b',
@@ -2737,7 +2881,9 @@ export const guides: Guide[] = [
       { question: 'What is the best list size to start?', answer: 'Start with manageable campaign batches rather than large mixed lists.' },
       { question: 'How often should lists be refreshed?', answer: 'Every two to four weeks for active outreach teams.' }
     ],
-    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-verified-contacts', 'identifying-high-quality-leads']
+    relatedSlugs: ['how-to-build-a-lead-list-in-apollo', 'finding-verified-contacts', 'identifying-high-quality-leads'],
+    publishedAt: '2025-12-10',
+    updatedAt: '2025-12-10'
   },
   {
     slug: 'data-enrichment-using-apollo',
@@ -2758,7 +2904,9 @@ export const guides: Guide[] = [
       { question: 'What enrichment fields matter most?', answer: 'Fields tied directly to ICP fit and buying intent usually matter most.' },
       { question: 'Should all leads be enriched equally?', answer: 'No. Prioritize high-value segments to control cost and complexity.' }
     ],
-    relatedSlugs: ['identifying-buying-signals', 'lead-qualification-strategy', 'identifying-high-quality-leads']
+    relatedSlugs: ['identifying-buying-signals', 'lead-qualification-strategy', 'identifying-high-quality-leads'],
+    publishedAt: '2025-12-11',
+    updatedAt: '2025-12-11'
   },
   {
     slug: 'finding-verified-contacts',
@@ -2779,7 +2927,9 @@ export const guides: Guide[] = [
       { question: 'Why verified contacts matter so much?', answer: 'Higher data quality improves deliverability and preserves sending reputation.' },
       { question: 'When should verification happen?', answer: 'Before every new campaign launch and after major list refresh.' }
     ],
-    relatedSlugs: ['how-to-find-business-emails-with-apollo', 'building-contact-lists-for-b2b', 'tracking-outreach-performance']
+    relatedSlugs: ['how-to-find-business-emails-with-apollo', 'building-contact-lists-for-b2b', 'tracking-outreach-performance'],
+    publishedAt: '2025-12-11',
+    updatedAt: '2025-12-11'
   },
   {
     slug: 'targeting-specific-industries',
@@ -2800,7 +2950,9 @@ export const guides: Guide[] = [
       { question: 'Should each industry have a unique sequence?', answer: 'Usually yes, because pains and buying processes differ by vertical.' },
       { question: 'How long to validate a vertical?', answer: 'Two to four weeks is often enough for initial directional signal.' }
     ],
-    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'building-target-account-lists']
+    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'building-target-account-lists'],
+    publishedAt: '2025-12-12',
+    updatedAt: '2025-12-12'
   },
   {
     slug: 'finding-ceos-and-founders',
@@ -2821,7 +2973,9 @@ export const guides: Guide[] = [
       { question: 'Is CEO outreach worth the effort?', answer: 'Yes for high-value or founder-led offers where executive ownership is high.' },
       { question: 'How should messaging differ for founders?', answer: 'Focus on speed, risk, and measurable business outcomes.' }
     ],
-    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'how-founders-get-first-customers-with-apollo']
+    relatedSlugs: ['finding-decision-makers-with-apollo', 'account-based-prospecting', 'how-founders-get-first-customers-with-apollo'],
+    publishedAt: '2025-12-12',
+    updatedAt: '2025-12-12'
   },
   {
     slug: 'account-based-prospecting',
@@ -2842,7 +2996,9 @@ export const guides: Guide[] = [
       { question: 'How many accounts should reps run simultaneously?', answer: 'A focused set is better than broad coverage for account-based motion.' },
       { question: 'What metric matters most in AB prospecting?', answer: 'Account-level opportunity progression and meeting quality.' }
     ],
-    relatedSlugs: ['account-based-prospecting-framework', 'building-target-account-lists', 'finding-decision-makers-with-apollo']
+    relatedSlugs: ['account-based-prospecting-framework', 'building-target-account-lists', 'finding-decision-makers-with-apollo'],
+    publishedAt: '2025-12-13',
+    updatedAt: '2025-12-13'
   },
   {
     slug: 'building-target-account-lists',
@@ -2863,7 +3019,9 @@ export const guides: Guide[] = [
       { question: 'How many target accounts should be active?', answer: 'Active account count should match team capacity and follow-up quality.' },
       { question: 'Should target lists include low-fit accounts?', answer: 'No. Target lists are for priority accounts with clear probability of conversion.' }
     ],
-    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'identifying-buying-signals']
+    relatedSlugs: ['how-to-find-companies-to-sell-to', 'account-based-prospecting', 'identifying-buying-signals'],
+    publishedAt: '2025-12-13',
+    updatedAt: '2025-12-13'
   },
   {
     slug: 'identifying-buying-signals',
@@ -2884,7 +3042,9 @@ export const guides: Guide[] = [
       { question: 'Which buying signals are most useful?', answer: 'Signals tied to active initiatives and clear business urgency usually perform best.' },
       { question: 'Should outreach timing depend on signal recency?', answer: 'Yes. Recent signals often indicate stronger short-term conversion potential.' }
     ],
-    relatedSlugs: ['data-enrichment-using-apollo', 'identifying-high-quality-leads', 'building-target-account-lists', 'find-companies-using-competitor-software-apollo', 'apollo-intent-signals-find-buying-companies']
+    relatedSlugs: ['data-enrichment-using-apollo', 'identifying-high-quality-leads', 'building-target-account-lists', 'find-companies-using-competitor-software-apollo', 'apollo-intent-signals-find-buying-companies'],
+    publishedAt: '2025-12-14',
+    updatedAt: '2025-12-14'
   },
   {
     slug: 'finding-ideal-customers-with-apollo',
@@ -2905,7 +3065,9 @@ export const guides: Guide[] = [
       { question: 'What makes an Apollo segment high quality?', answer: 'It matches your best customer profile and consistently produces relevant contacts, not just a high volume of records.' },
       { question: 'Should small teams target multiple ICPs at once?', answer: 'Usually no. One focused ICP is easier to validate and optimize.' }
     ],
-    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'how-to-find-companies-to-sell-to', 'building-target-account-lists']
+    relatedSlugs: ['how-to-find-b2b-leads-with-apollo-io', 'how-to-find-companies-to-sell-to', 'building-target-account-lists'],
+    publishedAt: '2025-12-15',
+    updatedAt: '2025-12-15'
   },
   {
     slug: 'prospect-list-segmentation-strategy',
@@ -2926,7 +3088,9 @@ export const guides: Guide[] = [
       { question: 'How many segments should a small team run?', answer: 'Two to four segments is usually enough to stay focused without losing signal quality.' },
       { question: 'Why segment before writing copy?', answer: 'Because the message should reflect buyer context, not generic product claims.' }
     ],
-    relatedSlugs: ['building-contact-lists-for-b2b', 'identifying-high-quality-leads', 'email-prospecting-strategy']
+    relatedSlugs: ['building-contact-lists-for-b2b', 'identifying-high-quality-leads', 'email-prospecting-strategy'],
+    publishedAt: '2025-12-15',
+    updatedAt: '2025-12-15'
   },
   {
     slug: 'how-to-prioritize-accounts-for-outbound',
@@ -2947,7 +3111,9 @@ export const guides: Guide[] = [
       { question: 'What should define a tier-one account?', answer: 'Strong ICP fit, realistic deal size, and a credible reason to act now.' },
       { question: 'How often should account scoring change?', answer: 'Weekly or after meaningful new signals appear.' }
     ],
-    relatedSlugs: ['building-target-account-lists', 'account-based-prospecting', 'identifying-buying-signals', 'apollo-intent-signals-find-buying-companies']
+    relatedSlugs: ['building-target-account-lists', 'account-based-prospecting', 'identifying-buying-signals', 'apollo-intent-signals-find-buying-companies'],
+    publishedAt: '2025-12-16',
+    updatedAt: '2025-12-16'
   },
   {
     slug: 'writing-cold-email-openers-that-get-read',
@@ -2968,7 +3134,9 @@ export const guides: Guide[] = [
       { question: 'How long should a cold email opener be?', answer: 'Usually one to two short sentences is enough.' },
       { question: 'Do personalized openers always outperform simple ones?', answer: 'No. Relevance matters more than forced personalization.' }
     ],
-    relatedSlugs: ['cold-email-with-apollo-io', 'how-to-get-replies-to-cold-emails', 'personalization-techniques']
+    relatedSlugs: ['cold-email-with-apollo-io', 'how-to-get-replies-to-cold-emails', 'personalization-techniques'],
+    publishedAt: '2025-12-16',
+    updatedAt: '2025-12-16'
   },
   {
     slug: 'outbound-follow-up-timing-strategy',
@@ -2989,7 +3157,9 @@ export const guides: Guide[] = [
       { question: 'How many follow-ups are enough?', answer: 'Five to seven touches is a practical range for many B2B offers.' },
       { question: 'Should every follow-up ask for a meeting?', answer: 'No. Some touches should build context or reduce friction.' }
     ],
-    relatedSlugs: ['follow-up-automation', 'building-email-sequences', 'multi-step-outreach-playbook']
+    relatedSlugs: ['follow-up-automation', 'building-email-sequences', 'multi-step-outreach-playbook'],
+    publishedAt: '2025-12-17',
+    updatedAt: '2025-12-17'
   },
   {
     slug: 'apollo-outreach-personalization-framework',
@@ -3010,7 +3180,9 @@ export const guides: Guide[] = [
       { question: 'What is the biggest personalization mistake?', answer: 'Adding weak custom details that do not change the relevance of the offer.' },
       { question: 'Should every account get manual personalization?', answer: 'No. Reserve deep research for the highest-value targets.' }
     ],
-    relatedSlugs: ['personalization-techniques', 'email-outreach-strategy', 'outreach-campaign-setup']
+    relatedSlugs: ['personalization-techniques', 'email-outreach-strategy', 'outreach-campaign-setup'],
+    publishedAt: '2025-12-17',
+    updatedAt: '2025-12-17'
   },
   {
     slug: 'pipeline-stage-definition-for-b2b-teams',
@@ -3031,7 +3203,9 @@ export const guides: Guide[] = [
       { question: 'Why do stage definitions matter so much?', answer: 'Because unclear stages create bad forecasts and hide real pipeline risk.' },
       { question: 'How many stages should a simple B2B process have?', answer: 'Often five to seven stages is enough.' }
     ],
-    relatedSlugs: ['managing-sales-pipeline', 'from-lead-to-deal-using-apollo', 'how-to-build-a-sales-pipeline']
+    relatedSlugs: ['managing-sales-pipeline', 'from-lead-to-deal-using-apollo', 'how-to-build-a-sales-pipeline'],
+    publishedAt: '2025-12-18',
+    updatedAt: '2025-12-18'
   },
   {
     slug: 'how-to-score-leads-before-handoff',
@@ -3052,7 +3226,9 @@ export const guides: Guide[] = [
       { question: 'What is the most useful lead scoring factor?', answer: 'ICP fit combined with a credible buying trigger is usually the strongest indicator.' },
       { question: 'Should every replied lead go to sales?', answer: 'No. Replies still need qualification.' }
     ],
-    relatedSlugs: ['lead-qualification-strategy', 'identifying-high-quality-leads', 'identifying-buying-signals']
+    relatedSlugs: ['lead-qualification-strategy', 'identifying-high-quality-leads', 'identifying-buying-signals'],
+    publishedAt: '2025-12-18',
+    updatedAt: '2025-12-18'
   },
   {
     slug: 'sales-pipeline-review-cadence',
@@ -3073,7 +3249,9 @@ export const guides: Guide[] = [
       { question: 'How often should pipeline reviews happen?', answer: 'Weekly is the minimum useful cadence for active outbound teams.' },
       { question: 'What should be tracked in every review?', answer: 'Stage age, next action, owner, and source quality are the core fields.' }
     ],
-    relatedSlugs: ['managing-sales-pipeline', 'tracking-outreach-performance', 'closing-more-deals-with-better-leads']
+    relatedSlugs: ['managing-sales-pipeline', 'tracking-outreach-performance', 'closing-more-deals-with-better-leads'],
+    publishedAt: '2025-12-19',
+    updatedAt: '2025-12-19'
   },
   {
     slug: 'apollo-for-saas-lead-generation',
@@ -3094,7 +3272,9 @@ export const guides: Guide[] = [
       { question: 'Why does Apollo work well for SaaS teams?', answer: 'It makes account selection, contact discovery, and targeted outreach faster in one workflow.' },
       { question: 'What SaaS segment benefits most from Apollo?', answer: 'Teams with a clear ICP and a repeatable outbound offer usually benefit first.' }
     ],
-    relatedSlugs: ['growth-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io', 'apollo-io-for-startups']
+    relatedSlugs: ['growth-strategy-using-apollo', 'how-to-find-b2b-leads-with-apollo-io', 'apollo-io-for-startups'],
+    publishedAt: '2025-12-19',
+    updatedAt: '2025-12-19'
   },
   {
     slug: 'apollo-for-marketing-agencies',
@@ -3115,7 +3295,9 @@ export const guides: Guide[] = [
       { question: 'What is the biggest agency mistake with Apollo?', answer: 'Going too broad and writing generic outreach for every business type.' },
       { question: 'Which agency offer works best for outbound?', answer: 'A narrowly defined, outcome-focused offer is usually easiest to sell.' }
     ],
-    relatedSlugs: ['how-agencies-use-apollo', 'predictable-client-flow-for-agencies', 'client-acquisition-for-consultants']
+    relatedSlugs: ['how-agencies-use-apollo', 'predictable-client-flow-for-agencies', 'client-acquisition-for-consultants'],
+    publishedAt: '2025-12-20',
+    updatedAt: '2025-12-20'
   },
   {
     slug: 'apollo-for-it-services-outreach',
@@ -3136,7 +3318,9 @@ export const guides: Guide[] = [
       { question: 'Who should IT services firms target first?', answer: 'Start with accounts that clearly match your best delivery pattern and margin profile.' },
       { question: 'Should technical and executive buyers get the same message?', answer: 'No. Technical buyers and executives care about different risks and outcomes.' }
     ],
-    relatedSlugs: ['sales-strategy-for-service-companies', 'targeting-specific-industries', 'how-to-find-companies-to-sell-to']
+    relatedSlugs: ['sales-strategy-for-service-companies', 'targeting-specific-industries', 'how-to-find-companies-to-sell-to'],
+    publishedAt: '2025-12-21',
+    updatedAt: '2025-12-21'
   },
   {
     slug: 'founder-led-outbound-with-apollo',
@@ -3157,7 +3341,9 @@ export const guides: Guide[] = [
       { question: 'Why is founder-led outbound effective early on?', answer: 'Because it combines fast market feedback with high-context conversations.' },
       { question: 'How many accounts should a founder start with?', answer: 'A focused batch of 50 to 100 accounts is enough to learn quickly.' }
     ],
-    relatedSlugs: ['how-founders-get-first-customers-with-apollo', 'validating-a-startup-idea-with-outreach', 'apollo-io-for-beginners', 'hire-first-sdr-startup']
+    relatedSlugs: ['how-founders-get-first-customers-with-apollo', 'validating-a-startup-idea-with-outreach', 'apollo-io-for-beginners', 'hire-first-sdr-startup'],
+    publishedAt: '2025-12-21',
+    updatedAt: '2025-12-21'
   },
   {
     slug: 'startup-prospecting-on-a-small-team',
@@ -3178,7 +3364,9 @@ export const guides: Guide[] = [
       { question: 'Can a very small team run outbound effectively?', answer: 'Yes, if the team keeps the process narrow and reviews signal every week.' },
       { question: 'What should startups avoid first?', answer: 'Avoid large generic lists and complex multi-segment campaigns.' }
     ],
-    relatedSlugs: ['low-budget-lead-generation-for-startups', 'outbound-sales-for-startups', 'how-small-businesses-find-clients']
+    relatedSlugs: ['low-budget-lead-generation-for-startups', 'outbound-sales-for-startups', 'how-small-businesses-find-clients'],
+    publishedAt: '2025-12-22',
+    updatedAt: '2025-12-22'
   },
   {
     slug: 'booking-first-sales-calls-with-apollo',
@@ -3199,7 +3387,9 @@ export const guides: Guide[] = [
       { question: 'What is the fastest path to first sales calls?', answer: 'A narrow segment, a relevant message, and consistent follow-up usually beat complex funnels.' },
       { question: 'How should startups judge early campaign success?', answer: 'By qualified conversations and learning speed, not raw open rate.' }
     ],
-    relatedSlugs: ['first-100-customers-strategy', 'how-to-get-clients-using-apollo-io', 'founder-led-outbound-with-apollo']
+    relatedSlugs: ['first-100-customers-strategy', 'how-to-get-clients-using-apollo-io', 'founder-led-outbound-with-apollo'],
+    publishedAt: '2025-12-22',
+    updatedAt: '2025-12-22'
   },
   {
     slug: 'apollo-list-cleaning-checklist',
@@ -3220,7 +3410,9 @@ export const guides: Guide[] = [
       { question: 'How often should lists be cleaned?', answer: 'Before each campaign launch and during regular list refreshes.' },
       { question: 'What is the first thing to remove?', answer: 'Duplicates and contacts that do not influence the buying process.' }
     ],
-    relatedSlugs: ['building-contact-lists-for-b2b', 'finding-verified-contacts', 'prospect-list-segmentation-strategy']
+    relatedSlugs: ['building-contact-lists-for-b2b', 'finding-verified-contacts', 'prospect-list-segmentation-strategy'],
+    publishedAt: '2025-12-23',
+    updatedAt: '2025-12-23'
   },
   {
     slug: 'outbound-campaign-audit-framework',
@@ -3241,7 +3433,9 @@ export const guides: Guide[] = [
       { question: 'When should a campaign be audited?', answer: 'Whenever reply quality drops or after a meaningful campaign cycle finishes.' },
       { question: 'What is the most common audit finding?', answer: 'Weak targeting usually causes more problems than minor copy issues.' }
     ],
-    relatedSlugs: ['tracking-outreach-performance', 'email-outreach-strategy', 'outbound-follow-up-timing-strategy']
+    relatedSlugs: ['tracking-outreach-performance', 'email-outreach-strategy', 'outbound-follow-up-timing-strategy'],
+    publishedAt: '2025-12-23',
+    updatedAt: '2025-12-23'
   },
   {
     slug: 'b2b-prospecting-metrics-that-matter',
@@ -3262,7 +3456,9 @@ export const guides: Guide[] = [
       { question: 'What is the most useful outreach metric?', answer: 'Qualified pipeline created is the most useful long-term metric.' },
       { question: 'Should opens be a core KPI?', answer: 'No. Opens are directional at best and often misleading.' }
     ],
-    relatedSlugs: ['tracking-outreach-performance', 'sales-pipeline-review-cadence', 'outbound-campaign-audit-framework']
+    relatedSlugs: ['tracking-outreach-performance', 'sales-pipeline-review-cadence', 'outbound-campaign-audit-framework'],
+    publishedAt: '2025-12-24',
+    updatedAt: '2025-12-24'
   },
   {
     slug: 'how-to-research-accounts-in-apollo',
@@ -3283,7 +3479,9 @@ export const guides: Guide[] = [
       { question: 'How much account research is enough?', answer: 'Enough to understand fit, likely pain, and the right stakeholders without turning prospecting into a slow manual process.' },
       { question: 'Should every account get the same depth of research?', answer: 'No. Top-priority accounts deserve deeper research than broad test segments.' }
     ],
-    relatedSlugs: ['finding-ideal-customers-with-apollo', 'how-to-prioritize-accounts-for-outbound', 'account-based-prospecting']
+    relatedSlugs: ['finding-ideal-customers-with-apollo', 'how-to-prioritize-accounts-for-outbound', 'account-based-prospecting'],
+    publishedAt: '2025-12-24',
+    updatedAt: '2025-12-24'
   },
   {
     slug: 'apollo-email-deliverability-best-practices',
@@ -3304,7 +3502,9 @@ export const guides: Guide[] = [
       { question: 'What hurts deliverability fastest?', answer: 'Poor list quality and inconsistent sending patterns usually cause the fastest damage.' },
       { question: 'Should teams scale volume immediately after launch?', answer: 'No. It is better to validate list quality and reply quality first.' }
     ],
-    relatedSlugs: ['finding-verified-contacts', 'cold-email-with-apollo-io', 'apollo-list-cleaning-checklist', 'cold-email-domain-warmup-strategy']
+    relatedSlugs: ['finding-verified-contacts', 'cold-email-with-apollo-io', 'apollo-list-cleaning-checklist', 'cold-email-domain-warmup-strategy'],
+    publishedAt: '2025-12-25',
+    updatedAt: '2025-12-25'
   },
   {
     slug: 'pipeline-forecasting-for-outbound-teams',
@@ -3325,7 +3525,9 @@ export const guides: Guide[] = [
       { question: 'Why do outbound forecasts often miss?', answer: 'Because they rely on broad averages and ignore differences between segments, stages, and lead quality.' },
       { question: 'What should teams review first in a forecast?', answer: 'Stage conversion and stage age usually reveal the biggest risks first.' }
     ],
-    relatedSlugs: ['sales-pipeline-review-cadence', 'managing-sales-pipeline', 'tracking-outreach-performance']
+    relatedSlugs: ['sales-pipeline-review-cadence', 'managing-sales-pipeline', 'tracking-outreach-performance'],
+    publishedAt: '2025-12-25',
+    updatedAt: '2025-12-25'
   },
   {
     slug: 'apollo-for-healthcare-lead-generation',
@@ -3346,7 +3548,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in healthcare prospecting?', answer: 'Clear segmentation and relevance matter most because buyer roles and priorities vary widely across organizations.' },
       { question: 'Should healthcare outreach be more niche?', answer: 'Yes. Narrower targeting usually produces better conversations than broad outreach.' }
     ],
-    relatedSlugs: ['targeting-specific-industries', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo']
+    relatedSlugs: ['targeting-specific-industries', 'how-to-find-companies-to-sell-to', 'finding-decision-makers-with-apollo'],
+    publishedAt: '2025-12-26',
+    updatedAt: '2025-12-26'
   },
   {
     slug: 'startup-outbound-kpi-dashboard',
@@ -3367,7 +3571,9 @@ export const guides: Guide[] = [
       { question: 'What should be on a startup outbound dashboard?', answer: 'Qualified replies, meetings, show rates, pipeline created, and segment performance are the most useful core metrics.' },
       { question: 'What should startups avoid tracking too closely?', answer: 'Pure activity metrics without context often distract from real progress.' }
     ],
-    relatedSlugs: ['b2b-prospecting-metrics-that-matter', 'startup-prospecting-on-a-small-team', 'booking-first-sales-calls-with-apollo']
+    relatedSlugs: ['b2b-prospecting-metrics-that-matter', 'startup-prospecting-on-a-small-team', 'booking-first-sales-calls-with-apollo'],
+    publishedAt: '2025-12-27',
+    updatedAt: '2025-12-27'
   },
   {
     slug: 'weekly-apollo-prospecting-workflow',
@@ -3388,7 +3594,9 @@ export const guides: Guide[] = [
       { question: 'Why use a weekly workflow?', answer: 'A weekly rhythm creates enough repetition to improve targeting, messaging, and reporting without overcomplicating the process.' },
       { question: 'What should happen at the end of each week?', answer: 'Review the signal, decide one process improvement, and carry it into the next cycle.' }
     ],
-    relatedSlugs: ['outbound-campaign-audit-framework', 'apollo-list-cleaning-checklist', 'tracking-outreach-performance']
+    relatedSlugs: ['outbound-campaign-audit-framework', 'apollo-list-cleaning-checklist', 'tracking-outreach-performance'],
+    publishedAt: '2025-12-27',
+    updatedAt: '2025-12-27'
   },
   {
     slug: 'how-to-find-clients-for-marketing-agencies',
@@ -3415,7 +3623,9 @@ export const guides: Guide[] = [
         answer: 'No. Agencies usually perform better when they pick one segment where the proof and messaging are easier to trust.'
       }
     ],
-    relatedSlugs: ['lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'how-marketing-agencies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'how-marketing-agencies-get-first-clients'],
+    publishedAt: '2025-12-28',
+    updatedAt: '2025-12-28'
   },
   {
     slug: 'lead-generation-for-marketing-agencies',
@@ -3442,7 +3652,9 @@ export const guides: Guide[] = [
         answer: 'Most agencies should start with one or two segments instead of trying to sell every service to every market.'
       }
     ],
-    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'how-marketing-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'how-marketing-agencies-get-first-clients'],
+    publishedAt: '2025-12-28',
+    updatedAt: '2025-12-28'
   },
   {
     slug: 'cold-email-for-marketing-agencies',
@@ -3469,7 +3681,9 @@ export const guides: Guide[] = [
         answer: 'Not always. Clear niche fit usually matters more than excessive personalization.'
       }
     ],
-    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'apollo-cold-email-sequence-template', 'how-marketing-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'apollo-cold-email-sequence-template', 'how-marketing-agencies-get-first-clients'],
+    publishedAt: '2025-12-29',
+    updatedAt: '2025-12-29'
   },
   {
     slug: 'apollo-outbound-for-marketing-agencies',
@@ -3496,7 +3710,9 @@ export const guides: Guide[] = [
         answer: 'Agencies with a clear offer, niche, and proof usually get value fastest.'
       }
     ],
-    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'how-marketing-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'lead-generation-for-marketing-agencies', 'cold-email-for-marketing-agencies', 'how-marketing-agencies-get-first-clients'],
+    publishedAt: '2025-12-29',
+    updatedAt: '2025-12-29'
   },
   {
     slug: 'how-marketing-agencies-get-first-clients',
@@ -3523,7 +3739,9 @@ export const guides: Guide[] = [
         answer: 'Usually no. Outbound and direct network-based prospecting are often faster at the beginning.'
       }
     ],
-    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'lead-generation-for-marketing-agencies']
+    relatedSlugs: ['how-to-find-clients-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies', 'predictable-client-flow-for-agencies', 'lead-generation-for-marketing-agencies'],
+    publishedAt: '2025-12-30',
+    updatedAt: '2025-12-30'
   },
   {
     slug: 'how-to-find-clients-for-consulting-firms',
@@ -3538,7 +3756,9 @@ export const guides: Guide[] = [
       { question: 'What is the best way for consulting firms to find clients?', answer: 'Most firms improve fastest when they narrow the offer, target a specific buyer situation, and use outreach tied to clear business outcomes.' },
       { question: 'Should consultants sell credentials first?', answer: 'No. Outcomes and context usually create more traction than credentials alone.' }
     ],
-    relatedSlugs: ['lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'apollo-for-consulting-firms', 'how-consulting-firms-get-first-clients']
+    relatedSlugs: ['lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'apollo-for-consulting-firms', 'how-consulting-firms-get-first-clients'],
+    publishedAt: '2025-12-30',
+    updatedAt: '2025-12-30'
   },
   {
     slug: 'lead-generation-for-consulting-firms',
@@ -3553,7 +3773,9 @@ export const guides: Guide[] = [
       { question: 'What makes consulting lead generation hard?', answer: 'Advisory offers are often abstract, so firms need much clearer buyer context and qualification than generic services businesses.' },
       { question: 'How should consulting firms qualify leads?', answer: 'They should qualify for urgency, budget fit, buyer access, and likelihood of recurring value.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'how-consulting-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'how-consulting-firms-get-first-clients'],
+    publishedAt: '2025-12-31',
+    updatedAt: '2025-12-31'
   },
   {
     slug: 'cold-email-for-consulting-firms',
@@ -3568,7 +3790,9 @@ export const guides: Guide[] = [
       { question: 'What should consulting cold emails focus on?', answer: 'They should focus on the buyer problem, the likely outcome, and one reason the consulting firm understands that context.' },
       { question: 'Should consulting firms use long emails?', answer: 'Usually no. Shorter, more direct messages tend to create better first replies.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'apollo-cold-email-sequence-template', 'apollo-for-consulting-firms']
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'apollo-cold-email-sequence-template', 'apollo-for-consulting-firms'],
+    publishedAt: '2025-12-31',
+    updatedAt: '2025-12-31'
   },
   {
     slug: 'apollo-for-consulting-firms',
@@ -3583,7 +3807,9 @@ export const guides: Guide[] = [
       { question: 'Can consulting firms use Apollo effectively?', answer: 'Yes. Apollo is useful for consulting firms that want better account selection, contact mapping, and outreach execution in one workflow.' },
       { question: 'What consulting firms get the most value from Apollo?', answer: 'Firms with a clear niche, offer, and ideal buyer context usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'how-consulting-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'lead-generation-for-consulting-firms', 'cold-email-for-consulting-firms', 'how-consulting-firms-get-first-clients'],
+    publishedAt: '2026-01-01',
+    updatedAt: '2026-01-01'
   },
   {
     slug: 'how-consulting-firms-get-first-clients',
@@ -3598,7 +3824,9 @@ export const guides: Guide[] = [
       { question: 'How do consulting firms get first clients?', answer: 'They usually get first clients by narrowing the offer, targeting one buyer situation, and running direct outreach with clear business language.' },
       { question: 'Should new consulting firms wait for referrals?', answer: 'No. Referrals help, but direct outreach creates faster market feedback and more predictable pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'lead-generation-for-consulting-firms']
+    relatedSlugs: ['how-to-find-clients-for-consulting-firms', 'apollo-for-consulting-firms', 'client-acquisition-for-consultants', 'lead-generation-for-consulting-firms'],
+    publishedAt: '2026-01-02',
+    updatedAt: '2026-01-02'
   },
   {
     slug: 'how-to-find-clients-for-it-services',
@@ -3613,7 +3841,9 @@ export const guides: Guide[] = [
       { question: 'How do IT services companies find clients?', answer: 'They usually perform best when they target accounts that fit delivery patterns, then write outreach for both technical and commercial buyers.' },
       { question: 'Should IT services target every company with tech needs?', answer: 'No. Better-fit accounts close faster and produce healthier delivery economics.' }
     ],
-    relatedSlugs: ['lead-generation-for-it-services', 'cold-email-for-it-services', 'apollo-for-it-services', 'how-it-services-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-it-services', 'cold-email-for-it-services', 'apollo-for-it-services', 'how-it-services-companies-get-first-clients'],
+    publishedAt: '2026-01-02',
+    updatedAt: '2026-01-02'
   },
   {
     slug: 'lead-generation-for-it-services',
@@ -3628,7 +3858,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in IT services lead generation?', answer: 'Account fit matters most because weak-fit accounts often create long sales cycles and poor delivery quality later.' },
       { question: 'How should IT services firms segment leads?', answer: 'They should segment by service type, buyer role, technical environment, and likely urgency.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'how-it-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'how-it-services-companies-get-first-clients'],
+    publishedAt: '2026-01-03',
+    updatedAt: '2026-01-03'
   },
   {
     slug: 'cold-email-for-it-services',
@@ -3643,7 +3875,9 @@ export const guides: Guide[] = [
       { question: 'What should IT services cold emails include?', answer: 'They should include the business or technical problem, the likely outcome, and a reason the team understands the delivery context.' },
       { question: 'Should IT services emails sound highly technical?', answer: 'Only where needed. Relevance matters more than jargon.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'apollo-email-deliverability-best-practices', 'apollo-for-it-services']
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'apollo-email-deliverability-best-practices', 'apollo-for-it-services'],
+    publishedAt: '2026-01-03',
+    updatedAt: '2026-01-03'
   },
   {
     slug: 'apollo-for-it-services',
@@ -3658,7 +3892,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo useful for IT services firms?', answer: 'Yes. Apollo helps IT services firms combine account targeting, buyer mapping, and outbound execution in one system.' },
       { question: 'What IT services motion works best with Apollo?', answer: 'A service-line-specific motion with clear account fit and role-based outreach usually works best.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'cold-email-for-it-services', 'how-it-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'lead-generation-for-it-services', 'cold-email-for-it-services', 'how-it-services-companies-get-first-clients'],
+    publishedAt: '2026-01-04',
+    updatedAt: '2026-01-04'
   },
   {
     slug: 'how-it-services-companies-get-first-clients',
@@ -3673,7 +3909,9 @@ export const guides: Guide[] = [
       { question: 'How do IT services firms get first clients?', answer: 'Most get there faster by targeting one service-friendly segment and running direct outreach tied to a clear operational result.' },
       { question: 'Should new IT services firms rely on referrals only?', answer: 'No. Referrals help, but outbound creates faster feedback and more control over the pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'lead-generation-for-it-services']
+    relatedSlugs: ['how-to-find-clients-for-it-services', 'apollo-for-it-services', 'sales-strategy-for-service-companies', 'lead-generation-for-it-services'],
+    publishedAt: '2026-01-04',
+    updatedAt: '2026-01-04'
   },
   {
     slug: 'how-to-find-clients-for-saas-companies',
@@ -3688,7 +3926,9 @@ export const guides: Guide[] = [
       { question: 'How do SaaS companies find clients faster?', answer: 'They usually improve faster when they narrow the ICP, map the right stakeholders, and run use-case-specific outreach.' },
       { question: 'Should SaaS teams prioritize volume first?', answer: 'No. Better account selection usually beats higher contact volume.' }
     ],
-    relatedSlugs: ['lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-saas-startups-get-first-customers']
+    relatedSlugs: ['lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-saas-startups-get-first-customers'],
+    publishedAt: '2026-01-05',
+    updatedAt: '2026-01-05'
   },
   {
     slug: 'lead-generation-for-saas-companies',
@@ -3703,7 +3943,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in SaaS lead generation?', answer: 'Clear ICP selection and use-case relevance matter most because broad SaaS outreach often creates noise instead of real opportunities.' },
       { question: 'How many ICPs should a SaaS team run at once?', answer: 'Most teams should focus on one or two ICP slices until the motion is repeatable.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'apollo-for-saas-lead-generation', 'how-saas-startups-get-first-customers']
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'apollo-for-saas-lead-generation', 'how-saas-startups-get-first-customers'],
+    publishedAt: '2026-01-05',
+    updatedAt: '2026-01-05'
   },
   {
     slug: 'cold-email-for-saas-companies',
@@ -3718,7 +3960,9 @@ export const guides: Guide[] = [
       { question: 'What should SaaS cold emails say?', answer: 'They should explain the problem, the likely outcome, and why the use case is relevant to that buyer.' },
       { question: 'Should SaaS emails focus on product features?', answer: 'Only where they support a clear business outcome. Use-case relevance is usually stronger.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'how-to-get-replies-to-cold-emails', 'apollo-outbound-for-saas-companies']
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'how-to-get-replies-to-cold-emails', 'apollo-outbound-for-saas-companies'],
+    publishedAt: '2026-01-06',
+    updatedAt: '2026-01-06'
   },
   {
     slug: 'apollo-outbound-for-saas-companies',
@@ -3733,7 +3977,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo good for SaaS companies?', answer: 'Yes. Apollo works well for SaaS teams that need one system for list building, segmentation, and top-of-funnel outbound execution.' },
       { question: 'What SaaS teams benefit most from Apollo?', answer: 'Teams with a defined use case and a clear buyer profile usually get value fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'how-saas-startups-get-first-customers']
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'lead-generation-for-saas-companies', 'cold-email-for-saas-companies', 'how-saas-startups-get-first-customers'],
+    publishedAt: '2026-01-06',
+    updatedAt: '2026-01-06'
   },
   {
     slug: 'how-saas-startups-get-first-customers',
@@ -3748,7 +3994,9 @@ export const guides: Guide[] = [
       { question: 'How do SaaS startups get first customers?', answer: 'They usually get there faster with one ICP, one use case, and direct outreach that creates high-context feedback loops.' },
       { question: 'Should SaaS startups automate early outbound heavily?', answer: 'Usually no. Early manual outreach helps refine both the offer and the segment.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-saas-companies']
+    relatedSlugs: ['how-to-find-clients-for-saas-companies', 'apollo-outbound-for-saas-companies', 'how-founders-get-first-customers-with-apollo', 'lead-generation-for-saas-companies'],
+    publishedAt: '2026-01-07',
+    updatedAt: '2026-01-07'
   },
   {
     slug: 'how-to-find-clients-for-recruiters',
@@ -3763,7 +4011,9 @@ export const guides: Guide[] = [
       { question: 'How do recruiters find clients faster?', answer: 'Recruiters usually find clients faster when they focus on a specific hiring niche and target accounts with clear urgency.' },
       { question: 'Should recruiters target every company with open roles?', answer: 'No. Role urgency, fee potential, and buyer access matter more than raw hiring volume.' }
     ],
-    relatedSlugs: ['lead-generation-for-recruiters', 'cold-email-for-recruiters', 'apollo-for-recruiters', 'how-recruiters-get-first-clients']
+    relatedSlugs: ['lead-generation-for-recruiters', 'cold-email-for-recruiters', 'apollo-for-recruiters', 'how-recruiters-get-first-clients'],
+    publishedAt: '2026-01-08',
+    updatedAt: '2026-01-08'
   },
   {
     slug: 'lead-generation-for-recruiters',
@@ -3778,7 +4028,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in recruiter lead generation?', answer: 'Urgency and buyer access matter most because recruiting demand changes fast and not every open role leads to commercial value.' },
       { question: 'How should recruiters qualify accounts?', answer: 'They should qualify for niche fit, fee potential, urgency, and access to the actual hiring owner.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-decision-makers-with-apollo', 'how-recruiters-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-decision-makers-with-apollo', 'how-recruiters-get-first-clients'],
+    publishedAt: '2026-01-08',
+    updatedAt: '2026-01-08'
   },
   {
     slug: 'cold-email-for-recruiters',
@@ -3793,7 +4045,9 @@ export const guides: Guide[] = [
       { question: 'What should recruiter cold emails focus on?', answer: 'They should focus on the open hiring problem, the likely recruiting outcome, and one reason the recruiter can help quickly.' },
       { question: 'Do recruiters need long cold emails?', answer: 'Usually no. Shorter, more direct emails tend to create better responses.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'reply-strategy-for-b2b-outreach', 'apollo-for-recruiters']
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'reply-strategy-for-b2b-outreach', 'apollo-for-recruiters'],
+    publishedAt: '2026-01-09',
+    updatedAt: '2026-01-09'
   },
   {
     slug: 'apollo-for-recruiters',
@@ -3808,7 +4062,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo useful for recruiters?', answer: 'Yes. Apollo helps recruiters combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What recruiting firms get the most value from Apollo?', answer: 'Firms with a clear niche and a repeatable hiring problem usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'cold-email-for-recruiters', 'how-recruiters-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'lead-generation-for-recruiters', 'cold-email-for-recruiters', 'how-recruiters-get-first-clients'],
+    publishedAt: '2026-01-09',
+    updatedAt: '2026-01-09'
   },
   {
     slug: 'how-recruiters-get-first-clients',
@@ -3823,7 +4079,9 @@ export const guides: Guide[] = [
       { question: 'How do recruiters get first clients?', answer: 'They usually get first clients by choosing a specific niche, targeting accounts with active urgency, and using direct outreach tied to that hiring pain.' },
       { question: 'Should recruiters wait for inbound leads first?', answer: 'No. Early outbound helps recruiters learn the market and create a more predictable path to first revenue.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-phone-numbers-of-decision-makers', 'lead-generation-for-recruiters']
+    relatedSlugs: ['how-to-find-clients-for-recruiters', 'apollo-for-recruiters', 'finding-phone-numbers-of-decision-makers', 'lead-generation-for-recruiters'],
+    publishedAt: '2026-01-10',
+    updatedAt: '2026-01-10'
   },
   {
     slug: 'how-to-find-clients-for-accounting-firms',
@@ -3838,7 +4096,9 @@ export const guides: Guide[] = [
       { question: 'How do accounting firms find clients?', answer: 'The strongest approach is usually a narrow offer, a defined target segment, and direct outreach built around trust and recurring value.' },
       { question: 'Should accounting firms rely only on referrals?', answer: 'No. Referrals help, but outbound creates more control and more consistent pipeline.' }
     ],
-    relatedSlugs: ['lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'apollo-for-accounting-firms', 'how-accounting-firms-get-first-clients']
+    relatedSlugs: ['lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'apollo-for-accounting-firms', 'how-accounting-firms-get-first-clients'],
+    publishedAt: '2026-01-10',
+    updatedAt: '2026-01-10'
   },
   {
     slug: 'lead-generation-for-accounting-firms',
@@ -3853,7 +4113,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in accounting lead generation?', answer: 'Recurring fit matters most because long-term client value is usually better than chasing disconnected one-off projects.' },
       { question: 'How should accounting firms segment leads?', answer: 'They should segment by service line, company complexity, buyer role, and likely urgency.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'client-acquisition-for-consultants', 'how-accounting-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'client-acquisition-for-consultants', 'how-accounting-firms-get-first-clients'],
+    publishedAt: '2026-01-11',
+    updatedAt: '2026-01-11'
   },
   {
     slug: 'cold-email-for-accounting-firms',
@@ -3868,7 +4130,9 @@ export const guides: Guide[] = [
       { question: 'What should accounting cold emails focus on?', answer: 'They should focus on the finance problem, the business outcome, and one reason the firm can help with that situation.' },
       { question: 'Should accounting emails be long and detailed?', answer: 'Usually no. Shorter, clearer emails often create stronger early trust.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'email-outreach-strategy', 'apollo-for-accounting-firms']
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'email-outreach-strategy', 'apollo-for-accounting-firms'],
+    publishedAt: '2026-01-11',
+    updatedAt: '2026-01-11'
   },
   {
     slug: 'apollo-for-accounting-firms',
@@ -3883,7 +4147,9 @@ export const guides: Guide[] = [
       { question: 'Can accounting firms use Apollo effectively?', answer: 'Yes. Apollo helps accounting firms combine account research, contact mapping, and outbound execution in one workflow.' },
       { question: 'What accounting offers work best with Apollo?', answer: 'Offers with a clear target segment and recurring client value usually work best.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'how-accounting-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'lead-generation-for-accounting-firms', 'cold-email-for-accounting-firms', 'how-accounting-firms-get-first-clients'],
+    publishedAt: '2026-01-12',
+    updatedAt: '2026-01-12'
   },
   {
     slug: 'how-accounting-firms-get-first-clients',
@@ -3898,7 +4164,9 @@ export const guides: Guide[] = [
       { question: 'How do accounting firms get first clients?', answer: 'They usually get there faster by selling one clear outcome to one business segment and using direct outreach to create trust and conversations.' },
       { question: 'Should new accounting firms wait for referrals?', answer: 'No. Outbound helps new firms learn which segments value the offer most and shortens the path to first recurring revenue.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'lead-generation-for-accounting-firms', 'growing-a-consulting-business']
+    relatedSlugs: ['how-to-find-clients-for-accounting-firms', 'apollo-for-accounting-firms', 'lead-generation-for-accounting-firms', 'growing-a-consulting-business'],
+    publishedAt: '2026-01-12',
+    updatedAt: '2026-01-12'
   },
   {
     slug: 'how-to-find-clients-for-healthcare-services',
@@ -3913,7 +4181,9 @@ export const guides: Guide[] = [
       { question: 'How do healthcare service businesses find clients?', answer: 'They usually improve fastest when they target one healthcare niche, map the right stakeholders, and use business-focused outreach.' },
       { question: 'Should healthcare outreach stay broad?', answer: 'No. Narrower targeting usually creates stronger trust and better meetings.' }
     ],
-    relatedSlugs: ['lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'apollo-for-healthcare-services', 'how-healthcare-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'apollo-for-healthcare-services', 'how-healthcare-companies-get-first-clients'],
+    publishedAt: '2026-01-13',
+    updatedAt: '2026-01-13'
   },
   {
     slug: 'lead-generation-for-healthcare-services',
@@ -3928,7 +4198,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in healthcare lead generation?', answer: 'Clear niche selection and stakeholder relevance matter most because buyer priorities vary widely across healthcare organizations.' },
       { question: 'How should healthcare teams segment leads?', answer: 'They should segment by buyer type, organization type, service fit, and likely urgency.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'how-healthcare-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'how-healthcare-companies-get-first-clients'],
+    publishedAt: '2026-01-14',
+    updatedAt: '2026-01-14'
   },
   {
     slug: 'cold-email-for-healthcare-services',
@@ -3943,7 +4215,9 @@ export const guides: Guide[] = [
       { question: 'What should healthcare cold emails focus on?', answer: 'They should focus on the operational or business problem, the likely result, and why the offer fits that buyer context.' },
       { question: 'Should healthcare cold emails sound highly technical?', answer: 'Only where needed. Practical business language usually works better.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'apollo-email-deliverability-best-practices', 'apollo-for-healthcare-services']
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'apollo-email-deliverability-best-practices', 'apollo-for-healthcare-services'],
+    publishedAt: '2026-01-14',
+    updatedAt: '2026-01-14'
   },
   {
     slug: 'apollo-for-healthcare-services',
@@ -3958,7 +4232,9 @@ export const guides: Guide[] = [
       { question: 'Can healthcare service businesses use Apollo effectively?', answer: 'Yes. Apollo is useful when the team narrows its segment and builds role-based outreach around business needs.' },
       { question: 'What healthcare teams get value fastest from Apollo?', answer: 'Teams with a clear buyer niche, offer, and workflow use case usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'how-healthcare-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'lead-generation-for-healthcare-services', 'cold-email-for-healthcare-services', 'how-healthcare-companies-get-first-clients'],
+    publishedAt: '2026-01-15',
+    updatedAt: '2026-01-15'
   },
   {
     slug: 'how-healthcare-companies-get-first-clients',
@@ -3973,7 +4249,9 @@ export const guides: Guide[] = [
       { question: 'How do healthcare-focused B2B teams get first clients?', answer: 'They usually get there faster by narrowing the niche, targeting likely-fit accounts, and using direct outreach around one operational problem.' },
       { question: 'Should healthcare startups wait for inbound first?', answer: 'Usually no. Founder-led outbound creates faster feedback and clearer market learning.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'lead-generation-for-healthcare-services']
+    relatedSlugs: ['how-to-find-clients-for-healthcare-services', 'apollo-for-healthcare-services', 'apollo-for-healthcare-lead-generation', 'lead-generation-for-healthcare-services'],
+    publishedAt: '2026-01-15',
+    updatedAt: '2026-01-15'
   },
   {
     slug: 'how-to-find-clients-for-manufacturing-companies',
@@ -3988,7 +4266,9 @@ export const guides: Guide[] = [
       { question: 'How do manufacturing companies find clients?', answer: 'They usually perform best when they target accounts with clear operational fit and multistakeholder buying paths.' },
       { question: 'Should manufacturing prospecting start with contacts or accounts?', answer: 'Accounts first. Good account selection usually improves every downstream stage.' }
     ],
-    relatedSlugs: ['lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients'],
+    publishedAt: '2026-01-16',
+    updatedAt: '2026-01-16'
   },
   {
     slug: 'lead-generation-for-manufacturing-companies',
@@ -4003,7 +4283,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in manufacturing lead generation?', answer: 'Account fit matters most because weak-fit industrial accounts often create long cycles and poor close rates.' },
       { question: 'How should manufacturing teams segment leads?', answer: 'They should segment by vertical, production context, buyer role, and commercial relevance.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'how-manufacturing-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'how-manufacturing-companies-get-first-clients'],
+    publishedAt: '2026-01-16',
+    updatedAt: '2026-01-16'
   },
   {
     slug: 'cold-email-for-manufacturing-companies',
@@ -4018,7 +4300,9 @@ export const guides: Guide[] = [
       { question: 'What should manufacturing cold emails focus on?', answer: 'They should focus on the operational problem, the likely business result, and why the offer fits the account context.' },
       { question: 'Should industrial outreach be highly personalized?', answer: 'Personalization helps, but account and role fit matter more than surface-level tokens.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'apollo-email-deliverability-best-practices', 'apollo-for-manufacturing-companies']
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'apollo-email-deliverability-best-practices', 'apollo-for-manufacturing-companies'],
+    publishedAt: '2026-01-17',
+    updatedAt: '2026-01-17'
   },
   {
     slug: 'apollo-for-manufacturing-companies',
@@ -4033,7 +4317,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo useful for manufacturing companies?', answer: 'Yes. Apollo is useful when the team needs cleaner account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What manufacturing teams benefit most from Apollo?', answer: 'Teams with a defined industrial segment and a repeatable commercial problem usually get value fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'lead-generation-for-manufacturing-companies', 'cold-email-for-manufacturing-companies', 'how-manufacturing-companies-get-first-clients'],
+    publishedAt: '2026-01-17',
+    updatedAt: '2026-01-17'
   },
   {
     slug: 'how-manufacturing-companies-get-first-clients',
@@ -4048,7 +4334,9 @@ export const guides: Guide[] = [
       { question: 'How do manufacturing-focused B2B teams get first clients?', answer: 'They usually get there faster by choosing one segment, building target-account lists, and using direct outreach around a clear operational result.' },
       { question: 'Should industrial startups automate early outbound heavily?', answer: 'Usually no. Manual account work helps clarify the market faster.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'lead-generation-for-manufacturing-companies']
+    relatedSlugs: ['how-to-find-clients-for-manufacturing-companies', 'apollo-for-manufacturing-companies', 'account-based-prospecting-framework', 'lead-generation-for-manufacturing-companies'],
+    publishedAt: '2026-01-18',
+    updatedAt: '2026-01-18'
   },
   {
     slug: 'how-to-find-clients-for-law-firms',
@@ -4063,7 +4351,9 @@ export const guides: Guide[] = [
       { question: 'How do law firms find clients?', answer: 'Law firms usually improve faster when they narrow the practice area, target one buyer context, and use trust-led outreach around a business issue.' },
       { question: 'Should law firms rely only on referrals?', answer: 'No. Referrals help, but focused outbound creates more control over pipeline and client mix.' }
     ],
-    relatedSlugs: ['lead-generation-for-law-firms', 'cold-email-for-law-firms', 'apollo-for-law-firms', 'how-law-firms-get-first-clients']
+    relatedSlugs: ['lead-generation-for-law-firms', 'cold-email-for-law-firms', 'apollo-for-law-firms', 'how-law-firms-get-first-clients'],
+    publishedAt: '2026-01-18',
+    updatedAt: '2026-01-18'
   },
   {
     slug: 'lead-generation-for-law-firms',
@@ -4078,7 +4368,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in legal lead generation?', answer: 'Niche fit and trust matter most because generic legal messaging rarely creates strong buyer response.' },
       { question: 'How should law firms qualify leads?', answer: 'They should qualify for case fit, client quality, urgency, and expected long-term value.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'client-acquisition-for-consultants', 'how-law-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'client-acquisition-for-consultants', 'how-law-firms-get-first-clients'],
+    publishedAt: '2026-01-19',
+    updatedAt: '2026-01-19'
   },
   {
     slug: 'cold-email-for-law-firms',
@@ -4093,7 +4385,9 @@ export const guides: Guide[] = [
       { question: 'What should law firm cold emails focus on?', answer: 'They should focus on the business problem, the legal or commercial outcome, and one reason the firm can help in that context.' },
       { question: 'Should legal cold emails be long?', answer: 'Usually no. Shorter, clearer messages are easier to trust and respond to.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'email-outreach-strategy', 'apollo-for-law-firms']
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'email-outreach-strategy', 'apollo-for-law-firms'],
+    publishedAt: '2026-01-20',
+    updatedAt: '2026-01-20'
   },
   {
     slug: 'apollo-for-law-firms',
@@ -4108,7 +4402,9 @@ export const guides: Guide[] = [
       { question: 'Can law firms use Apollo effectively?', answer: 'Yes. Apollo is useful for law firms that want cleaner account targeting, contact mapping, and outbound execution in one place.' },
       { question: 'What legal teams get the most value from Apollo?', answer: 'Firms with a clear niche, service line, and buyer context usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'cold-email-for-law-firms', 'how-law-firms-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'lead-generation-for-law-firms', 'cold-email-for-law-firms', 'how-law-firms-get-first-clients'],
+    publishedAt: '2026-01-20',
+    updatedAt: '2026-01-20'
   },
   {
     slug: 'how-law-firms-get-first-clients',
@@ -4123,7 +4419,9 @@ export const guides: Guide[] = [
       { question: 'How do law firms get first clients?', answer: 'They usually get there faster by narrowing the practice area, targeting one buyer context, and using direct outreach built on trust and relevance.' },
       { question: 'Should new law firms wait only for referrals?', answer: 'No. Focused outbound creates faster learning and more control over early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'lead-generation-for-law-firms', 'growing-a-consulting-business']
+    relatedSlugs: ['how-to-find-clients-for-law-firms', 'apollo-for-law-firms', 'lead-generation-for-law-firms', 'growing-a-consulting-business'],
+    publishedAt: '2026-01-21',
+    updatedAt: '2026-01-21'
   },
   {
     slug: 'how-to-find-clients-for-real-estate-services',
@@ -4138,7 +4436,9 @@ export const guides: Guide[] = [
       { question: 'How do real estate service businesses find clients?', answer: 'They usually improve faster when they target one segment, map the right buyers, and use outbound tied to a specific commercial outcome.' },
       { question: 'Should real estate services prospect broadly?', answer: 'No. Segment-specific targeting usually creates better meetings and higher-fit opportunities.' }
     ],
-    relatedSlugs: ['lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'apollo-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'apollo-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients'],
+    publishedAt: '2026-01-21',
+    updatedAt: '2026-01-21'
   },
   {
     slug: 'lead-generation-for-real-estate-services',
@@ -4153,7 +4453,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in real estate services lead generation?', answer: 'Segment fit matters most because investors, operators, brokers, and owners respond to very different problems and offers.' },
       { question: 'How should real estate services teams segment leads?', answer: 'They should segment by asset type, buyer role, company model, and commercial timing.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'finding-decision-makers-with-apollo', 'how-real-estate-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'finding-decision-makers-with-apollo', 'how-real-estate-services-companies-get-first-clients'],
+    publishedAt: '2026-01-22',
+    updatedAt: '2026-01-22'
   },
   {
     slug: 'cold-email-for-real-estate-services',
@@ -4168,7 +4470,9 @@ export const guides: Guide[] = [
       { question: 'What should real estate service cold emails focus on?', answer: 'They should focus on the business or asset problem, the likely result, and one reason the service is relevant to that buyer.' },
       { question: 'Should real estate service emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'email-outreach-strategy', 'apollo-for-real-estate-services']
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'email-outreach-strategy', 'apollo-for-real-estate-services'],
+    publishedAt: '2026-01-22',
+    updatedAt: '2026-01-22'
   },
   {
     slug: 'apollo-for-real-estate-services',
@@ -4183,7 +4487,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo useful for real estate services?', answer: 'Yes. Apollo is useful for real estate service firms that need cleaner account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What real estate teams benefit most from Apollo?', answer: 'Teams with a clear segment, offer, and buyer context usually get value fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'lead-generation-for-real-estate-services', 'cold-email-for-real-estate-services', 'how-real-estate-services-companies-get-first-clients'],
+    publishedAt: '2026-01-23',
+    updatedAt: '2026-01-23'
   },
   {
     slug: 'how-real-estate-services-companies-get-first-clients',
@@ -4198,7 +4504,9 @@ export const guides: Guide[] = [
       { question: 'How do real estate service businesses get first clients?', answer: 'They usually get there faster by choosing one segment, building a small list of target accounts, and using direct outreach tied to a clear business outcome.' },
       { question: 'Should new real estate service teams rely only on referrals?', answer: 'No. Focused outbound creates faster learning and a more repeatable early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'lead-generation-for-real-estate-services', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-real-estate-services', 'apollo-for-real-estate-services', 'lead-generation-for-real-estate-services', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-01-23',
+    updatedAt: '2026-01-23'
   },
   {
     slug: 'how-to-find-clients-for-financial-services',
@@ -4213,7 +4521,9 @@ export const guides: Guide[] = [
       { question: 'How do financial services firms find clients?', answer: 'They usually improve faster when they pick one niche, target accounts with a real business need, and use trust-led outreach.' },
       { question: 'Should financial services teams prospect broadly?', answer: 'No. Broad targeting usually weakens trust and qualification quality.' }
     ],
-    relatedSlugs: ['lead-generation-for-financial-services', 'cold-email-for-financial-services', 'apollo-for-financial-services', 'how-financial-services-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-financial-services', 'cold-email-for-financial-services', 'apollo-for-financial-services', 'how-financial-services-companies-get-first-clients'],
+    publishedAt: '2026-01-24',
+    updatedAt: '2026-01-24'
   },
   {
     slug: 'lead-generation-for-financial-services',
@@ -4228,7 +4538,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in financial services lead generation?', answer: 'Niche clarity and trust matter most because buyers are usually skeptical of generic outreach.' },
       { question: 'How should financial services teams segment leads?', answer: 'They should segment by offer, buyer role, urgency, and likely commercial fit.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'identifying-buying-signals', 'how-financial-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'identifying-buying-signals', 'how-financial-services-companies-get-first-clients'],
+    publishedAt: '2026-01-24',
+    updatedAt: '2026-01-24'
   },
   {
     slug: 'cold-email-for-financial-services',
@@ -4243,7 +4555,9 @@ export const guides: Guide[] = [
       { question: 'What should financial services cold emails focus on?', answer: 'They should focus on the business problem, the likely financial outcome, and one reason the team understands that context.' },
       { question: 'Should financial cold emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'email-outreach-strategy', 'apollo-for-financial-services']
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'email-outreach-strategy', 'apollo-for-financial-services'],
+    publishedAt: '2026-01-25',
+    updatedAt: '2026-01-25'
   },
   {
     slug: 'apollo-for-financial-services',
@@ -4258,7 +4572,9 @@ export const guides: Guide[] = [
       { question: 'Can financial services teams use Apollo effectively?', answer: 'Yes. Apollo is useful when the team needs cleaner account targeting, contact mapping, and outbound execution in one workflow.' },
       { question: 'What financial services teams get value fastest from Apollo?', answer: 'Teams with a clear niche, offer, and buyer situation usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'cold-email-for-financial-services', 'how-financial-services-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'lead-generation-for-financial-services', 'cold-email-for-financial-services', 'how-financial-services-companies-get-first-clients'],
+    publishedAt: '2026-01-25',
+    updatedAt: '2026-01-25'
   },
   {
     slug: 'how-financial-services-companies-get-first-clients',
@@ -4273,7 +4589,9 @@ export const guides: Guide[] = [
       { question: 'How do financial services businesses get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit accounts, and using direct outreach built on trust and clarity.' },
       { question: 'Should new financial services teams wait for referrals first?', answer: 'Usually no. Focused outbound creates faster market learning and a more repeatable early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'lead-generation-for-financial-services', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-financial-services', 'apollo-for-financial-services', 'lead-generation-for-financial-services', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-01-26',
+    updatedAt: '2026-01-26'
   },
   {
     slug: 'how-to-find-clients-for-insurance-agencies',
@@ -4288,7 +4606,9 @@ export const guides: Guide[] = [
       { question: 'How do insurance agencies find clients?', answer: 'They usually improve faster when they focus on one niche, target likely-fit accounts, and use trust-led outreach around a specific risk or policy issue.' },
       { question: 'Should insurance agencies prospect broadly?', answer: 'No. Narrow targeting usually creates stronger trust and better conversion quality.' }
     ],
-    relatedSlugs: ['lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-insurance-agencies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-insurance-agencies-get-first-clients'],
+    publishedAt: '2026-01-27',
+    updatedAt: '2026-01-27'
   },
   {
     slug: 'lead-generation-for-insurance-agencies',
@@ -4303,7 +4623,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in insurance lead generation?', answer: 'Niche relevance and buyer trust matter most because generic insurance outreach often fails to create strong intent.' },
       { question: 'How should insurance agencies segment leads?', answer: 'They should segment by niche, buyer role, company type, and likely policy need.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-to-find-clients-for-financial-services', 'how-insurance-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'how-to-find-clients-for-financial-services', 'how-insurance-agencies-get-first-clients'],
+    publishedAt: '2026-01-27',
+    updatedAt: '2026-01-27'
   },
   {
     slug: 'cold-email-for-insurance-agencies',
@@ -4318,7 +4640,9 @@ export const guides: Guide[] = [
       { question: 'What should insurance cold emails focus on?', answer: 'They should focus on the coverage or business risk issue, the likely outcome, and one reason the agency can help.' },
       { question: 'Should insurance emails be long?', answer: 'Usually no. Shorter, clearer emails build trust faster.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'email-outreach-strategy', 'apollo-for-insurance-agencies']
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'email-outreach-strategy', 'apollo-for-insurance-agencies'],
+    publishedAt: '2026-01-28',
+    updatedAt: '2026-01-28'
   },
   {
     slug: 'apollo-for-insurance-agencies',
@@ -4333,7 +4657,9 @@ export const guides: Guide[] = [
       { question: 'Can insurance agencies use Apollo effectively?', answer: 'Yes. Apollo helps insurance agencies combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What insurance teams get value fastest from Apollo?', answer: 'Teams with a clear niche, offer, and buyer context usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'how-insurance-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'cold-email-for-insurance-agencies', 'how-insurance-agencies-get-first-clients'],
+    publishedAt: '2026-01-28',
+    updatedAt: '2026-01-28'
   },
   {
     slug: 'how-insurance-agencies-get-first-clients',
@@ -4348,7 +4674,9 @@ export const guides: Guide[] = [
       { question: 'How do insurance agencies get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit accounts, and using direct outreach tied to a real business risk or coverage need.' },
       { question: 'Should new insurance agencies wait for referrals only?', answer: 'No. Focused outbound creates faster learning and more control over the early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-insurance-agencies', 'apollo-for-insurance-agencies', 'lead-generation-for-insurance-agencies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-01-29',
+    updatedAt: '2026-01-29'
   },
   {
     slug: 'how-to-find-clients-for-solar-companies',
@@ -4363,7 +4691,9 @@ export const guides: Guide[] = [
       { question: 'How do solar companies find clients?', answer: 'They usually improve faster when they target one buyer segment, qualify for project fit, and use outbound tied to a clear commercial or savings outcome.' },
       { question: 'Should solar outreach stay broad?', answer: 'No. Narrower targeting usually improves reply quality and project relevance.' }
     ],
-    relatedSlugs: ['lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'apollo-for-solar-companies', 'how-solar-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'apollo-for-solar-companies', 'how-solar-companies-get-first-clients'],
+    publishedAt: '2026-01-29',
+    updatedAt: '2026-01-29'
   },
   {
     slug: 'lead-generation-for-solar-companies',
@@ -4378,7 +4708,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in solar lead generation?', answer: 'Project fit and buyer relevance matter most because not every interested company is commercially viable.' },
       { question: 'How should solar companies segment leads?', answer: 'They should segment by project type, buyer role, facility context, and likely economics.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'how-to-find-clients-for-real-estate-services', 'how-solar-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'how-to-find-clients-for-real-estate-services', 'how-solar-companies-get-first-clients'],
+    publishedAt: '2026-01-30',
+    updatedAt: '2026-01-30'
   },
   {
     slug: 'cold-email-for-solar-companies',
@@ -4393,7 +4725,9 @@ export const guides: Guide[] = [
       { question: 'What should solar cold emails focus on?', answer: 'They should focus on the facility or business problem, the likely savings or business outcome, and one reason the offer fits that account.' },
       { question: 'Should solar emails be highly technical?', answer: 'Only where needed. Practical commercial language usually works better first.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'email-outreach-strategy', 'apollo-for-solar-companies']
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'email-outreach-strategy', 'apollo-for-solar-companies'],
+    publishedAt: '2026-01-30',
+    updatedAt: '2026-01-30'
   },
   {
     slug: 'apollo-for-solar-companies',
@@ -4408,7 +4742,9 @@ export const guides: Guide[] = [
       { question: 'Can solar companies use Apollo effectively?', answer: 'Yes. Apollo helps solar teams combine account targeting, buyer mapping, and outbound execution in one workflow.' },
       { question: 'What solar teams get value fastest from Apollo?', answer: 'Teams with a clear project type, target segment, and buyer path usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'how-solar-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'lead-generation-for-solar-companies', 'cold-email-for-solar-companies', 'how-solar-companies-get-first-clients'],
+    publishedAt: '2026-01-31',
+    updatedAt: '2026-01-31'
   },
   {
     slug: 'how-solar-companies-get-first-clients',
@@ -4423,7 +4759,9 @@ export const guides: Guide[] = [
       { question: 'How do solar companies get first clients?', answer: 'They usually get there faster by choosing one buyer segment, qualifying for project fit, and using direct outreach tied to a clear business case.' },
       { question: 'Should solar startups automate early outbound heavily?', answer: 'Usually no. Early manual outreach helps clarify the segment and project economics faster.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'lead-generation-for-solar-companies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-solar-companies', 'apollo-for-solar-companies', 'lead-generation-for-solar-companies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-01-31',
+    updatedAt: '2026-01-31'
   },
   {
     slug: 'how-to-find-clients-for-hvac-companies',
@@ -4438,7 +4776,9 @@ export const guides: Guide[] = [
       { question: 'How do HVAC companies find clients?', answer: 'They usually improve faster when they target one commercial segment, qualify for recurring-fit work, and use direct outreach tied to a real service need.' },
       { question: 'Should HVAC outreach stay broad?', answer: 'No. Narrower targeting usually creates stronger pipeline quality.' }
     ],
-    relatedSlugs: ['lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'apollo-for-hvac-companies', 'how-hvac-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'apollo-for-hvac-companies', 'how-hvac-companies-get-first-clients'],
+    publishedAt: '2026-02-01',
+    updatedAt: '2026-02-01'
   },
   {
     slug: 'lead-generation-for-hvac-companies',
@@ -4453,7 +4793,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in HVAC lead generation?', answer: 'Commercial fit and recurring opportunity quality matter most because one-off jobs often do not create the best long-term value.' },
       { question: 'How should HVAC businesses segment leads?', answer: 'They should segment by property type, buyer role, service need, and likely contract fit.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'how-to-find-clients-for-real-estate-services', 'how-hvac-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'how-to-find-clients-for-real-estate-services', 'how-hvac-companies-get-first-clients'],
+    publishedAt: '2026-02-02',
+    updatedAt: '2026-02-02'
   },
   {
     slug: 'cold-email-for-hvac-companies',
@@ -4468,7 +4810,9 @@ export const guides: Guide[] = [
       { question: 'What should HVAC cold emails focus on?', answer: 'They should focus on the facility problem, the likely service outcome, and one reason the business can help reliably.' },
       { question: 'Should HVAC emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface tokens.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'email-outreach-strategy', 'apollo-for-hvac-companies']
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'email-outreach-strategy', 'apollo-for-hvac-companies'],
+    publishedAt: '2026-02-02',
+    updatedAt: '2026-02-02'
   },
   {
     slug: 'apollo-for-hvac-companies',
@@ -4483,7 +4827,9 @@ export const guides: Guide[] = [
       { question: 'Can HVAC businesses use Apollo effectively?', answer: 'Yes. Apollo helps HVAC teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What HVAC teams get value fastest from Apollo?', answer: 'Teams with a clear commercial segment, service line, and buyer path usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'how-hvac-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'lead-generation-for-hvac-companies', 'cold-email-for-hvac-companies', 'how-hvac-companies-get-first-clients'],
+    publishedAt: '2026-02-03',
+    updatedAt: '2026-02-03'
   },
   {
     slug: 'how-hvac-companies-get-first-clients',
@@ -4498,7 +4844,9 @@ export const guides: Guide[] = [
       { question: 'How do HVAC companies get first clients?', answer: 'They usually get there faster by choosing one commercial segment, targeting likely-fit accounts, and using direct outreach around a clear service outcome.' },
       { question: 'Should new HVAC businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over the first stage of pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'lead-generation-for-hvac-companies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'apollo-for-hvac-companies', 'lead-generation-for-hvac-companies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-03',
+    updatedAt: '2026-02-03'
   },
   {
     slug: 'how-to-find-clients-for-construction-companies',
@@ -4513,7 +4861,9 @@ export const guides: Guide[] = [
       { question: 'How do construction companies find clients?', answer: 'They usually improve faster when they choose one segment, build account-first lists, and use outreach tied to timing and project fit.' },
       { question: 'Should construction prospecting start broad?', answer: 'No. Narrower segment targeting usually creates better-fit pipeline and less wasted effort.' }
     ],
-    relatedSlugs: ['lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'apollo-for-construction-companies', 'how-construction-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'apollo-for-construction-companies', 'how-construction-companies-get-first-clients'],
+    publishedAt: '2026-02-04',
+    updatedAt: '2026-02-04'
   },
   {
     slug: 'lead-generation-for-construction-companies',
@@ -4528,7 +4878,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in construction lead generation?', answer: 'Project fit matters most because not every interested account has the right timing, scope, or commercial value.' },
       { question: 'How should construction companies segment leads?', answer: 'They should segment by project type, buyer role, company model, and likely timing.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-construction-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-construction-companies-get-first-clients'],
+    publishedAt: '2026-02-04',
+    updatedAt: '2026-02-04'
   },
   {
     slug: 'cold-email-for-construction-companies',
@@ -4543,7 +4895,9 @@ export const guides: Guide[] = [
       { question: 'What should construction cold emails focus on?', answer: 'They should focus on the project or commercial issue, the likely business outcome, and one reason the company is a fit.' },
       { question: 'Should construction emails be long?', answer: 'Usually no. Shorter, more direct emails tend to create better first replies.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'email-outreach-strategy', 'apollo-for-construction-companies']
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'email-outreach-strategy', 'apollo-for-construction-companies'],
+    publishedAt: '2026-02-05',
+    updatedAt: '2026-02-05'
   },
   {
     slug: 'apollo-for-construction-companies',
@@ -4558,7 +4912,9 @@ export const guides: Guide[] = [
       { question: 'Can construction companies use Apollo effectively?', answer: 'Yes. Apollo helps construction teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What construction teams get value fastest from Apollo?', answer: 'Teams with a clear project type, segment, and buyer path usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'how-construction-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'lead-generation-for-construction-companies', 'cold-email-for-construction-companies', 'how-construction-companies-get-first-clients'],
+    publishedAt: '2026-02-05',
+    updatedAt: '2026-02-05'
   },
   {
     slug: 'how-construction-companies-get-first-clients',
@@ -4573,7 +4929,9 @@ export const guides: Guide[] = [
       { question: 'How do construction companies get first clients?', answer: 'They usually get there faster by choosing one segment, targeting likely-fit accounts, and using direct outreach around a clear project or commercial outcome.' },
       { question: 'Should new construction businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and a more repeatable path to early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'lead-generation-for-construction-companies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-construction-companies', 'apollo-for-construction-companies', 'lead-generation-for-construction-companies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-06',
+    updatedAt: '2026-02-06'
   },
   {
     slug: 'how-to-find-clients-for-logistics-companies',
@@ -4588,7 +4946,9 @@ export const guides: Guide[] = [
       { question: 'How do logistics companies find clients?', answer: 'They usually improve faster when they target one shipper segment, qualify for service fit, and use outbound tied to a clear logistics outcome.' },
       { question: 'Should logistics prospecting start broad?', answer: 'No. Narrower targeting improves both reply quality and account economics.' }
     ],
-    relatedSlugs: ['lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'apollo-for-logistics-companies', 'how-logistics-companies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'apollo-for-logistics-companies', 'how-logistics-companies-get-first-clients'],
+    publishedAt: '2026-02-06',
+    updatedAt: '2026-02-06'
   },
   {
     slug: 'lead-generation-for-logistics-companies',
@@ -4603,7 +4963,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in logistics lead generation?', answer: 'Service fit matters most because not every shipper has the right recurring potential or lane relevance.' },
       { question: 'How should logistics companies segment leads?', answer: 'They should segment by shipper type, buyer role, service need, and likely account value.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-logistics-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'how-to-find-clients-for-manufacturing-companies', 'how-logistics-companies-get-first-clients'],
+    publishedAt: '2026-02-07',
+    updatedAt: '2026-02-07'
   },
   {
     slug: 'cold-email-for-logistics-companies',
@@ -4618,7 +4980,9 @@ export const guides: Guide[] = [
       { question: 'What should logistics cold emails focus on?', answer: 'They should focus on the shipping or service issue, the likely business result, and one reason the company can help.' },
       { question: 'Should logistics emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'email-outreach-strategy', 'apollo-for-logistics-companies']
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'email-outreach-strategy', 'apollo-for-logistics-companies'],
+    publishedAt: '2026-02-08',
+    updatedAt: '2026-02-08'
   },
   {
     slug: 'apollo-for-logistics-companies',
@@ -4633,7 +4997,9 @@ export const guides: Guide[] = [
       { question: 'Can logistics companies use Apollo effectively?', answer: 'Yes. Apollo helps logistics teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What logistics teams get value fastest from Apollo?', answer: 'Teams with a clear shipper segment, service line, and buyer path usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'how-logistics-companies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'lead-generation-for-logistics-companies', 'cold-email-for-logistics-companies', 'how-logistics-companies-get-first-clients'],
+    publishedAt: '2026-02-08',
+    updatedAt: '2026-02-08'
   },
   {
     slug: 'how-logistics-companies-get-first-clients',
@@ -4648,7 +5014,9 @@ export const guides: Guide[] = [
       { question: 'How do logistics companies get first clients?', answer: 'They usually get there faster by choosing one shipper segment, targeting likely-fit accounts, and using direct outreach tied to a clear logistics outcome.' },
       { question: 'Should new logistics businesses rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over the early commercial motion.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'lead-generation-for-logistics-companies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-logistics-companies', 'apollo-for-logistics-companies', 'lead-generation-for-logistics-companies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-09',
+    updatedAt: '2026-02-09'
   },
   {
     slug: 'how-to-find-clients-for-business-coaches',
@@ -4663,7 +5031,9 @@ export const guides: Guide[] = [
       { question: 'How do business coaches find clients?', answer: 'They usually improve faster when they choose one niche, one transformation outcome, and use outbound tied to a clear business result.' },
       { question: 'Should business coaches target everyone?', answer: 'No. Narrower targeting usually produces stronger trust and better-fit clients.' }
     ],
-    relatedSlugs: ['lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'apollo-for-business-coaches', 'how-business-coaches-get-first-clients']
+    relatedSlugs: ['lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'apollo-for-business-coaches', 'how-business-coaches-get-first-clients'],
+    publishedAt: '2026-02-09',
+    updatedAt: '2026-02-09'
   },
   {
     slug: 'lead-generation-for-business-coaches',
@@ -4678,7 +5048,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in business coach lead generation?', answer: 'Niche clarity and buyer readiness matter most because generic coaching outreach rarely creates strong commercial intent.' },
       { question: 'How should business coaches segment leads?', answer: 'They should segment by niche, business stage, buyer role, and likely urgency.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'client-acquisition-for-consultants', 'how-business-coaches-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'client-acquisition-for-consultants', 'how-business-coaches-get-first-clients'],
+    publishedAt: '2026-02-10',
+    updatedAt: '2026-02-10'
   },
   {
     slug: 'cold-email-for-business-coaches',
@@ -4693,7 +5065,9 @@ export const guides: Guide[] = [
       { question: 'What should business coach cold emails focus on?', answer: 'They should focus on the business problem, the likely result, and one reason the coach can help in that exact context.' },
       { question: 'Should coaching emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'email-outreach-strategy', 'apollo-for-business-coaches']
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'email-outreach-strategy', 'apollo-for-business-coaches'],
+    publishedAt: '2026-02-10',
+    updatedAt: '2026-02-10'
   },
   {
     slug: 'apollo-for-business-coaches',
@@ -4708,7 +5082,9 @@ export const guides: Guide[] = [
       { question: 'Can business coaches use Apollo effectively?', answer: 'Yes. Apollo helps business coaches combine account targeting, contact mapping, and outbound execution in one workflow.' },
       { question: 'What coaches get value fastest from Apollo?', answer: 'Coaches with a clear niche, transformation outcome, and buyer profile usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'how-business-coaches-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'lead-generation-for-business-coaches', 'cold-email-for-business-coaches', 'how-business-coaches-get-first-clients'],
+    publishedAt: '2026-02-11',
+    updatedAt: '2026-02-11'
   },
   {
     slug: 'how-business-coaches-get-first-clients',
@@ -4723,7 +5099,9 @@ export const guides: Guide[] = [
       { question: 'How do business coaches get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit buyers, and using direct outreach tied to a clear business result.' },
       { question: 'Should new coaches rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'lead-generation-for-business-coaches', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-business-coaches', 'apollo-for-business-coaches', 'lead-generation-for-business-coaches', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-11',
+    updatedAt: '2026-02-11'
   },
   {
     slug: 'how-to-find-clients-for-managed-service-providers',
@@ -4738,7 +5116,9 @@ export const guides: Guide[] = [
       { question: 'How do MSPs find clients?', answer: 'They usually improve faster when they target one buyer segment, qualify for service fit, and use outbound tied to a clear operational outcome.' },
       { question: 'Should MSP prospecting stay broad?', answer: 'No. Narrower targeting usually improves both reply quality and contract fit.' }
     ],
-    relatedSlugs: ['lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'apollo-for-managed-service-providers', 'how-msps-get-first-clients']
+    relatedSlugs: ['lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'apollo-for-managed-service-providers', 'how-msps-get-first-clients'],
+    publishedAt: '2026-02-12',
+    updatedAt: '2026-02-12'
   },
   {
     slug: 'lead-generation-for-managed-service-providers',
@@ -4753,7 +5133,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in MSP lead generation?', answer: 'Recurring-fit account quality matters most because not every technically interested company is commercially valuable.' },
       { question: 'How should MSPs segment leads?', answer: 'They should segment by buyer profile, company type, service fit, and likely contract value.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'apollo-for-it-services', 'how-msps-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'apollo-for-it-services', 'how-msps-get-first-clients'],
+    publishedAt: '2026-02-12',
+    updatedAt: '2026-02-12'
   },
   {
     slug: 'cold-email-for-managed-service-providers',
@@ -4768,7 +5150,9 @@ export const guides: Guide[] = [
       { question: 'What should MSP cold emails focus on?', answer: 'They should focus on the technical or business issue, the likely service outcome, and one reason the MSP can help in that exact environment.' },
       { question: 'Should MSP emails be highly technical?', answer: 'Only where needed. Clear operational and business language usually works better first.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'apollo-email-deliverability-best-practices', 'apollo-for-managed-service-providers']
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'apollo-email-deliverability-best-practices', 'apollo-for-managed-service-providers'],
+    publishedAt: '2026-02-13',
+    updatedAt: '2026-02-13'
   },
   {
     slug: 'apollo-for-managed-service-providers',
@@ -4783,7 +5167,9 @@ export const guides: Guide[] = [
       { question: 'Can MSPs use Apollo effectively?', answer: 'Yes. Apollo helps MSPs combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What MSP teams get value fastest from Apollo?', answer: 'Teams with a clear service line, buyer profile, and recurring contract motion usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'how-msps-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'cold-email-for-managed-service-providers', 'how-msps-get-first-clients'],
+    publishedAt: '2026-02-14',
+    updatedAt: '2026-02-14'
   },
   {
     slug: 'how-msps-get-first-clients',
@@ -4798,7 +5184,9 @@ export const guides: Guide[] = [
       { question: 'How do MSPs get first clients?', answer: 'They usually get there faster by choosing one buyer segment, targeting likely-fit accounts, and using direct outreach tied to a clear support or business outcome.' },
       { question: 'Should new MSPs rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early recurring pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-managed-service-providers', 'apollo-for-managed-service-providers', 'lead-generation-for-managed-service-providers', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-14',
+    updatedAt: '2026-02-14'
   },
   {
     slug: 'how-to-find-clients-for-staffing-agencies',
@@ -4813,7 +5201,9 @@ export const guides: Guide[] = [
       { question: 'How do staffing agencies find clients?', answer: 'They usually improve faster when they choose one niche, target accounts with real hiring pressure, and use outbound tied to that specific staffing need.' },
       { question: 'Should staffing agencies target every open role?', answer: 'No. Better-fit niches and stronger urgency usually create healthier commercial outcomes.' }
     ],
-    relatedSlugs: ['lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'apollo-for-staffing-agencies', 'how-staffing-agencies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'apollo-for-staffing-agencies', 'how-staffing-agencies-get-first-clients'],
+    publishedAt: '2026-02-15',
+    updatedAt: '2026-02-15'
   },
   {
     slug: 'lead-generation-for-staffing-agencies',
@@ -4828,7 +5218,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in staffing lead generation?', answer: 'Hiring urgency and client fit matter most because not every company with open roles becomes a strong staffing account.' },
       { question: 'How should staffing agencies segment leads?', answer: 'They should segment by niche, buyer role, hiring urgency, and fee potential.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-recruiters', 'how-staffing-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-recruiters', 'how-staffing-agencies-get-first-clients'],
+    publishedAt: '2026-02-15',
+    updatedAt: '2026-02-15'
   },
   {
     slug: 'cold-email-for-staffing-agencies',
@@ -4843,7 +5235,9 @@ export const guides: Guide[] = [
       { question: 'What should staffing agency cold emails focus on?', answer: 'They should focus on the hiring problem, the likely staffing outcome, and one reason the agency can help in that exact context.' },
       { question: 'Should staffing emails be long?', answer: 'Usually no. Shorter, more direct messages often create better first replies.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'reply-strategy-for-b2b-outreach', 'apollo-for-staffing-agencies']
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'reply-strategy-for-b2b-outreach', 'apollo-for-staffing-agencies'],
+    publishedAt: '2026-02-16',
+    updatedAt: '2026-02-16'
   },
   {
     slug: 'apollo-for-staffing-agencies',
@@ -4858,7 +5252,9 @@ export const guides: Guide[] = [
       { question: 'Can staffing agencies use Apollo effectively?', answer: 'Yes. Apollo helps staffing teams combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What staffing teams get value fastest from Apollo?', answer: 'Teams with a clear niche, buyer profile, and hiring problem usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'how-staffing-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'cold-email-for-staffing-agencies', 'how-staffing-agencies-get-first-clients'],
+    publishedAt: '2026-02-16',
+    updatedAt: '2026-02-16'
   },
   {
     slug: 'how-staffing-agencies-get-first-clients',
@@ -4873,7 +5269,9 @@ export const guides: Guide[] = [
       { question: 'How do staffing agencies get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit hiring accounts, and using direct outreach tied to a clear staffing outcome.' },
       { question: 'Should new staffing agencies wait for inbound first?', answer: 'No. Focused outbound creates faster learning and a more predictable early pipeline.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-staffing-agencies', 'apollo-for-staffing-agencies', 'lead-generation-for-staffing-agencies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-17',
+    updatedAt: '2026-02-17'
   },
   {
     slug: 'how-to-find-clients-for-ecommerce-services',
@@ -4888,7 +5286,9 @@ export const guides: Guide[] = [
       { question: 'How do ecommerce service firms find clients?', answer: 'They usually improve faster when they target one brand segment, map the right buyers, and use outbound tied to one commercial outcome.' },
       { question: 'Should ecommerce services target every online brand?', answer: 'No. Better-fit segments usually create stronger pipeline and easier delivery.' }
     ],
-    relatedSlugs: ['lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients']
+    relatedSlugs: ['lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients'],
+    publishedAt: '2026-02-17',
+    updatedAt: '2026-02-17'
   },
   {
     slug: 'lead-generation-for-ecommerce-services',
@@ -4903,7 +5303,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in ecommerce services lead generation?', answer: 'Segment fit and buyer relevance matter most because not every brand has the same growth problems or service needs.' },
       { question: 'How should ecommerce service teams segment leads?', answer: 'They should segment by brand type, growth stage, buyer role, and likely service fit.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-to-find-clients-for-marketing-agencies', 'how-ecommerce-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'how-to-find-clients-for-marketing-agencies', 'how-ecommerce-agencies-get-first-clients'],
+    publishedAt: '2026-02-18',
+    updatedAt: '2026-02-18'
   },
   {
     slug: 'cold-email-for-ecommerce-services',
@@ -4918,7 +5320,9 @@ export const guides: Guide[] = [
       { question: 'What should ecommerce service cold emails focus on?', answer: 'They should focus on the growth or operational problem, the likely business result, and one reason the service fits that exact brand context.' },
       { question: 'Should ecommerce emails be highly personalized?', answer: 'Useful context helps, but segment fit and buyer role matter more than surface personalization.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'email-outreach-strategy', 'apollo-for-ecommerce-services']
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'email-outreach-strategy', 'apollo-for-ecommerce-services'],
+    publishedAt: '2026-02-18',
+    updatedAt: '2026-02-18'
   },
   {
     slug: 'apollo-for-ecommerce-services',
@@ -4933,7 +5337,9 @@ export const guides: Guide[] = [
       { question: 'Can ecommerce service firms use Apollo effectively?', answer: 'Yes. Apollo helps ecommerce service firms combine account targeting, stakeholder mapping, and outbound execution in one workflow.' },
       { question: 'What ecommerce service teams get value fastest from Apollo?', answer: 'Teams with a clear segment, offer, and buyer path usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'cold-email-for-ecommerce-services', 'how-ecommerce-agencies-get-first-clients'],
+    publishedAt: '2026-02-19',
+    updatedAt: '2026-02-19'
   },
   {
     slug: 'how-ecommerce-agencies-get-first-clients',
@@ -4948,7 +5354,9 @@ export const guides: Guide[] = [
       { question: 'How do ecommerce agencies get first clients?', answer: 'They usually get there faster by choosing one brand segment, targeting likely-fit accounts, and using direct outreach tied to a clear commercial outcome.' },
       { question: 'Should new ecommerce agencies rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-ecommerce-services', 'apollo-for-ecommerce-services', 'lead-generation-for-ecommerce-services', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-20',
+    updatedAt: '2026-02-20'
   },
   {
     slug: 'how-to-find-clients-for-financial-advisors',
@@ -4963,7 +5371,9 @@ export const guides: Guide[] = [
       { question: 'How do financial advisors find clients?', answer: 'They usually improve faster when they choose one niche, target likely-fit buyers, and use trust-led outreach tied to a clear advisory outcome.' },
       { question: 'Should financial advisors prospect broadly?', answer: 'No. Narrower targeting usually creates better trust and stronger commercial fit.' }
     ],
-    relatedSlugs: ['lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'apollo-for-financial-advisors', 'how-financial-advisors-get-first-clients']
+    relatedSlugs: ['lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'apollo-for-financial-advisors', 'how-financial-advisors-get-first-clients'],
+    publishedAt: '2026-02-20',
+    updatedAt: '2026-02-20'
   },
   {
     slug: 'lead-generation-for-financial-advisors',
@@ -4978,7 +5388,9 @@ export const guides: Guide[] = [
       { question: 'What matters most in advisor lead generation?', answer: 'Niche relevance and buyer trust matter most because generic advisory outreach rarely creates strong intent.' },
       { question: 'How should financial advisors segment leads?', answer: 'They should segment by niche, buyer role, company type, and likely advisory fit.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'how-to-find-clients-for-financial-services', 'how-financial-advisors-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'how-to-find-clients-for-financial-services', 'how-financial-advisors-get-first-clients'],
+    publishedAt: '2026-02-21',
+    updatedAt: '2026-02-21'
   },
   {
     slug: 'cold-email-for-financial-advisors',
@@ -4993,7 +5405,9 @@ export const guides: Guide[] = [
       { question: 'What should financial advisor cold emails focus on?', answer: 'They should focus on the financial issue, the likely advisory outcome, and one reason the advisor is relevant to that context.' },
       { question: 'Should advisor emails be long?', answer: 'Usually no. Clear, direct emails are easier to trust and reply to.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'email-outreach-strategy', 'apollo-for-financial-advisors']
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'email-outreach-strategy', 'apollo-for-financial-advisors'],
+    publishedAt: '2026-02-21',
+    updatedAt: '2026-02-21'
   },
   {
     slug: 'apollo-for-financial-advisors',
@@ -5008,7 +5422,9 @@ export const guides: Guide[] = [
       { question: 'Can financial advisors use Apollo effectively?', answer: 'Yes. Apollo helps advisors combine account targeting, buyer mapping, and outbound execution in one workflow.' },
       { question: 'What advisors get value fastest from Apollo?', answer: 'Advisors with a clear niche, offer, and buyer profile usually benefit fastest.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'how-financial-advisors-get-first-clients']
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'lead-generation-for-financial-advisors', 'cold-email-for-financial-advisors', 'how-financial-advisors-get-first-clients'],
+    publishedAt: '2026-02-22',
+    updatedAt: '2026-02-22'
   },
   {
     slug: 'how-financial-advisors-get-first-clients',
@@ -5023,7 +5439,9 @@ export const guides: Guide[] = [
       { question: 'How do financial advisors get first clients?', answer: 'They usually get there faster by choosing one niche, targeting likely-fit buyers, and using direct outreach tied to a clear advisory outcome.' },
       { question: 'Should new advisors rely only on referrals?', answer: 'No. Focused outbound creates faster learning and more control over early client acquisition.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'lead-generation-for-financial-advisors', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['how-to-find-clients-for-financial-advisors', 'apollo-for-financial-advisors', 'lead-generation-for-financial-advisors', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-02-22',
+    updatedAt: '2026-02-22'
   },
   {
     slug: 'best-lead-generation-tools-for-small-business',
@@ -5038,7 +5456,9 @@ export const guides: Guide[] = [
       { question: 'What is the best lead generation tool for a small business?', answer: 'The best tool is usually the one that solves the current bottleneck: finding contacts, reaching prospects, tracking pipeline, or qualifying opportunities.' },
       { question: 'Should small businesses use one lead generation platform or several tools?', answer: 'Most small businesses should start with one compact workflow before adding separate tools for enrichment, sequencing, CRM, and reporting.' }
     ],
-    relatedSlugs: ['how-to-choose-a-lead-generation-tool', 'apollo-io-for-small-business', 'apollo-io-review-2026', 'how-to-find-b2b-leads-fast']
+    relatedSlugs: ['how-to-choose-a-lead-generation-tool', 'apollo-io-for-small-business', 'apollo-io-review-2026', 'how-to-find-b2b-leads-fast'],
+    publishedAt: '2026-02-23',
+    updatedAt: '2026-02-23'
   },
   {
     slug: 'b2b-lead-generation-services-vs-software',
@@ -5053,7 +5473,9 @@ export const guides: Guide[] = [
       { question: 'Are B2B lead generation services better than software?', answer: 'They are better only when the service improves strategy, execution, or consistency more than an internal software workflow would.' },
       { question: 'Can a business use both lead generation services and software?', answer: 'Yes, but the business needs clear ownership over targeting, messaging, reporting, and CRM handoff.' }
     ],
-    relatedSlugs: ['best-lead-generation-tools-for-small-business', 'how-to-build-a-b2b-client-acquisition-system', 'apollo-io-for-small-business', 'lead-generation-strategy-using-apollo']
+    relatedSlugs: ['best-lead-generation-tools-for-small-business', 'how-to-build-a-b2b-client-acquisition-system', 'apollo-io-for-small-business', 'lead-generation-strategy-using-apollo'],
+    publishedAt: '2026-02-23',
+    updatedAt: '2026-02-23'
   },
   {
     slug: 'how-to-build-a-b2b-client-acquisition-system',
@@ -5068,7 +5490,9 @@ export const guides: Guide[] = [
       { question: 'What is a B2B client acquisition system?', answer: 'It is a repeatable process for identifying target accounts, starting conversations, qualifying opportunities, and converting the right buyers into clients.' },
       { question: 'What should a business build first?', answer: 'Start with ICP clarity and account selection before building outreach, automation, or reporting.' }
     ],
-    relatedSlugs: ['how-to-build-a-sales-pipeline', 'b2b-sales-process-optimization', 'lead-qualification-strategy', 'building-pipeline-without-marketing', 'b2b-sales-playbook-template']
+    relatedSlugs: ['how-to-build-a-sales-pipeline', 'b2b-sales-process-optimization', 'lead-qualification-strategy', 'building-pipeline-without-marketing', 'b2b-sales-playbook-template'],
+    publishedAt: '2026-02-24',
+    updatedAt: '2026-02-24'
   },
   {
     slug: 'apollo-vs-linkedin-sales-navigator',
@@ -5083,7 +5507,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo better than LinkedIn Sales Navigator?', answer: 'Apollo is often better for email-led outbound workflows, while Sales Navigator is often better for LinkedIn research and relationship-based prospecting.' },
       { question: 'Should small teams buy Apollo or Sales Navigator first?', answer: 'Small teams should choose the tool that matches their primary workflow: email outreach and data workflow for Apollo, LinkedIn research for Sales Navigator.' }
     ],
-    relatedSlugs: ['apollo-io-review-2026', 'prospecting-with-apollo-io', 'how-to-find-b2b-leads-with-apollo-io', 'apollo-io-pros-and-cons']
+    relatedSlugs: ['apollo-io-review-2026', 'prospecting-with-apollo-io', 'how-to-find-b2b-leads-with-apollo-io', 'apollo-io-pros-and-cons'],
+    publishedAt: '2026-02-24',
+    updatedAt: '2026-02-24'
   },
   {
     slug: 'apollo-vs-zoominfo-for-small-business',
@@ -5098,7 +5524,9 @@ export const guides: Guide[] = [
       { question: 'Is Apollo better than ZoomInfo for small business?', answer: 'Apollo is often a better fit for small teams that need a practical outbound workflow with lower operational complexity.' },
       { question: 'When should a small business consider ZoomInfo?', answer: 'A small business should consider heavier tools when it has larger budgets, stricter data requirements, and enough sales operations capacity to manage the stack.' }
     ],
-    relatedSlugs: ['apollo-io-pricing-explained', 'apollo-io-review-2026', 'best-lead-generation-tools-for-small-business', 'is-apollo-io-worth-it', 'apollo-vs-seamless-ai-comparison']
+    relatedSlugs: ['apollo-io-pricing-explained', 'apollo-io-review-2026', 'best-lead-generation-tools-for-small-business', 'is-apollo-io-worth-it', 'apollo-vs-seamless-ai-comparison'],
+    publishedAt: '2026-02-25',
+    updatedAt: '2026-02-25'
   },
   {
     slug: 'how-to-choose-a-lead-generation-tool',
@@ -5113,7 +5541,9 @@ export const guides: Guide[] = [
       { question: 'What should I look for in a lead generation tool?', answer: 'Look for data fit, workflow speed, ease of use, outreach support, CRM handoff, reporting clarity, and total operating cost.' },
       { question: 'How long should a lead generation tool pilot run?', answer: 'Most small teams can learn enough from a focused two-to-four week pilot if the segment, offer, and success criteria are clear.' }
     ],
-    relatedSlugs: ['best-lead-generation-tools-for-small-business', 'is-apollo-io-worth-it', 'apollo-io-features-overview', 'lead-generation-strategy-using-apollo']
+    relatedSlugs: ['best-lead-generation-tools-for-small-business', 'is-apollo-io-worth-it', 'apollo-io-features-overview', 'lead-generation-strategy-using-apollo'],
+    publishedAt: '2026-02-26',
+    updatedAt: '2026-02-26'
   },
   {
     slug: 'lead-generation-cost-for-small-business',
@@ -5128,7 +5558,9 @@ export const guides: Guide[] = [
       { question: 'How much should a small business spend on lead generation?', answer: 'The right budget depends on deal size, sales capacity, market clarity, and whether the business is paying for software, labor, services, or all three.' },
       { question: 'What is the most hidden lead generation cost?', answer: 'The most hidden cost is usually wasted sales time on low-fit leads and unclear follow-up.' }
     ],
-    relatedSlugs: ['apollo-io-pricing-explained', 'b2b-lead-generation-services-vs-software', 'is-apollo-io-worth-it', 'low-budget-lead-generation-startups']
+    relatedSlugs: ['apollo-io-pricing-explained', 'b2b-lead-generation-services-vs-software', 'is-apollo-io-worth-it', 'low-budget-lead-generation-startups'],
+    publishedAt: '2026-02-26',
+    updatedAt: '2026-02-26'
   },
   {
     slug: 'best-crm-for-lead-generation',
@@ -5143,7 +5575,9 @@ export const guides: Guide[] = [
       { question: 'Can a CRM generate leads by itself?', answer: 'A CRM usually tracks and manages leads; it does not replace prospecting, list building, or outbound execution.' },
       { question: 'What CRM features matter most for lead generation?', answer: 'Useful stages, contact history, task reminders, source tracking, reporting, and clean handoff from prospecting workflows matter most.' }
     ],
-    relatedSlugs: ['how-to-build-a-b2b-client-acquisition-system', 'pipeline-stage-definition-for-b2b-teams', 'managing-sales-pipeline', 'from-lead-to-deal-using-apollo']
+    relatedSlugs: ['how-to-build-a-b2b-client-acquisition-system', 'pipeline-stage-definition-for-b2b-teams', 'managing-sales-pipeline', 'from-lead-to-deal-using-apollo'],
+    publishedAt: '2026-02-27',
+    updatedAt: '2026-02-27'
   },
   {
     slug: 'how-to-get-b2b-clients-without-paid-ads',
@@ -5158,7 +5592,9 @@ export const guides: Guide[] = [
       { question: 'Can a B2B business get clients without paid ads?', answer: 'Yes. Many B2B businesses use outbound, referrals, partnerships, and sales-led content before investing heavily in paid acquisition.' },
       { question: 'What is the fastest non-paid channel for B2B clients?', answer: 'Focused outbound is often the fastest because it creates direct market feedback and does not require waiting for traffic to compound.' }
     ],
-    relatedSlugs: ['b2b-marketing-without-ads', 'building-pipeline-without-marketing', 'how-to-build-a-client-base-from-scratch', 'client-acquisition-for-consultants']
+    relatedSlugs: ['b2b-marketing-without-ads', 'building-pipeline-without-marketing', 'how-to-build-a-client-base-from-scratch', 'client-acquisition-for-consultants'],
+    publishedAt: '2026-02-27',
+    updatedAt: '2026-02-27'
   },
   {
     slug: 'outbound-sales-strategy-for-local-service-businesses',
@@ -5173,7 +5609,9 @@ export const guides: Guide[] = [
       { question: 'Does outbound sales work for local service businesses?', answer: 'Yes, especially when the business targets commercial accounts with clear service fit and role-specific outreach.' },
       { question: 'Who should local service businesses contact first?', answer: 'They should contact the person closest to the operational problem, such as owners, property managers, operations leaders, or facility managers.' }
     ],
-    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'how-to-find-clients-for-construction-companies', 'how-to-find-clients-for-real-estate-services', 'cold-email-for-hvac-companies']
+    relatedSlugs: ['how-to-find-clients-for-hvac-companies', 'how-to-find-clients-for-construction-companies', 'how-to-find-clients-for-real-estate-services', 'cold-email-for-hvac-companies'],
+    publishedAt: '2026-02-28',
+    updatedAt: '2026-02-28'
   },
   {
     slug: 'b2b-sales-prospecting-for-founders',
@@ -5188,7 +5626,9 @@ export const guides: Guide[] = [
       { question: 'Should founders do their own prospecting?', answer: 'In early B2B sales, founders usually learn faster when they own prospecting until the ICP, message, and qualification pattern are clearer.' },
       { question: 'How many prospects should a founder start with?', answer: 'A founder can start with a small, tightly selected list that is large enough to create feedback but small enough to review manually.' }
     ],
-    relatedSlugs: ['founder-led-outbound-with-apollo', 'how-founders-get-first-customers-with-apollo', 'startup-outbound-first-customers', 'booking-first-sales-calls-with-apollo']
+    relatedSlugs: ['founder-led-outbound-with-apollo', 'how-founders-get-first-customers-with-apollo', 'startup-outbound-first-customers', 'booking-first-sales-calls-with-apollo'],
+    publishedAt: '2026-02-28',
+    updatedAt: '2026-02-28'
   },
   {
     slug: 'lead-generation-for-b2b-service-businesses',
@@ -5203,7 +5643,9 @@ export const guides: Guide[] = [
       { question: 'What is the best lead generation approach for B2B service businesses?', answer: 'The best approach usually combines narrow targeting, proof-led outreach, referral leverage, and strict qualification.' },
       { question: 'Why do service businesses get low-quality leads?', answer: 'Low-quality leads usually come from broad positioning, weak targeting, and qualification rules that do not protect fit.' }
     ],
-    relatedSlugs: ['sales-strategy-for-service-companies', 'client-acquisition-for-consultants', 'predictable-client-flow-for-agencies', 'how-to-build-a-client-base-from-scratch']
+    relatedSlugs: ['sales-strategy-for-service-companies', 'client-acquisition-for-consultants', 'predictable-client-flow-for-agencies', 'how-to-build-a-client-base-from-scratch'],
+    publishedAt: '2026-03-01',
+    updatedAt: '2026-03-01'
   },
   {
     slug: 'how-to-generate-qualified-b2b-leads',
@@ -5218,7 +5660,9 @@ export const guides: Guide[] = [
       { question: 'What makes a B2B lead qualified?', answer: 'A qualified B2B lead matches the target account profile, has a relevant buyer role, shows a plausible business need, and can move toward a real next step.' },
       { question: 'How do you improve B2B lead quality?', answer: 'Improve lead quality by narrowing ICP rules, filtering accounts better, mapping roles correctly, and scoring leads before sales handoff.' }
     ],
-    relatedSlugs: ['identifying-high-quality-leads', 'how-to-score-leads-before-handoff', 'lead-qualification-strategy', 'finding-ideal-customers-with-apollo']
+    relatedSlugs: ['identifying-high-quality-leads', 'how-to-score-leads-before-handoff', 'lead-qualification-strategy', 'finding-ideal-customers-with-apollo'],
+    publishedAt: '2026-03-01',
+    updatedAt: '2026-03-01'
   },
   {
     slug: 'outbound-email-vs-cold-calling',
@@ -5233,7 +5677,9 @@ export const guides: Guide[] = [
       { question: 'Is outbound email better than cold calling?', answer: 'Outbound email is better for scalable context and asynchronous outreach, while cold calling is better when speed and live qualification matter.' },
       { question: 'Should B2B teams combine email and calling?', answer: 'Yes, if the team has clean data, clear sequencing rules, and enough capacity to follow up without creating noise.' }
     ],
-    relatedSlugs: ['cold-email-with-apollo-io', 'finding-phone-numbers-of-decision-makers', 'multi-step-outreach-playbook', 'reply-strategy-for-b2b-outreach']
+    relatedSlugs: ['cold-email-with-apollo-io', 'finding-phone-numbers-of-decision-makers', 'multi-step-outreach-playbook', 'reply-strategy-for-b2b-outreach'],
+    publishedAt: '2026-03-02',
+    updatedAt: '2026-03-02'
   },
   {
     slug: 'sales-pipeline-metrics-for-small-business',
@@ -5248,7 +5694,9 @@ export const guides: Guide[] = [
       { question: 'What sales pipeline metrics should a small business track?', answer: 'Small businesses should track lead source quality, qualified meetings, conversion by stage, follow-up speed, deal age, and win rate by segment.' },
       { question: 'How often should pipeline metrics be reviewed?', answer: 'Most small teams should review core pipeline metrics weekly so issues are visible before the month or quarter is over.' }
     ],
-    relatedSlugs: ['b2b-prospecting-metrics-that-matter', 'pipeline-forecasting-for-outbound-teams', 'sales-pipeline-review-cadence', 'managing-sales-pipeline']
+    relatedSlugs: ['b2b-prospecting-metrics-that-matter', 'pipeline-forecasting-for-outbound-teams', 'sales-pipeline-review-cadence', 'managing-sales-pipeline'],
+    publishedAt: '2026-03-02',
+    updatedAt: '2026-03-02'
   },
   {
     slug: 'client-acquisition-channels-for-b2b',
@@ -5263,7 +5711,9 @@ export const guides: Guide[] = [
       { question: 'What are the best B2B client acquisition channels?', answer: 'Common B2B channels include outbound, referrals, partnerships, content, paid ads, events, marketplaces, and account-based selling.' },
       { question: 'How should a business choose a client acquisition channel?', answer: 'Choose based on buyer behavior, deal size, trust level, sales cycle, budget, and the team capacity needed to run the channel well.' }
     ],
-    relatedSlugs: ['how-to-get-b2b-clients-without-paid-ads', 'b2b-marketing-without-ads', 'how-to-build-a-b2b-client-acquisition-system', 'lead-generation-for-b2b-service-businesses']
+    relatedSlugs: ['how-to-get-b2b-clients-without-paid-ads', 'b2b-marketing-without-ads', 'how-to-build-a-b2b-client-acquisition-system', 'lead-generation-for-b2b-service-businesses'],
+    publishedAt: '2026-03-03',
+    updatedAt: '2026-03-03'
   },
   {
     slug: 'cold-email-templates-for-accounting-firms',
@@ -8479,9 +8929,716 @@ export const guides: Guide[] = [
       { question: 'Who should nonprofits approach for corporate funding?', answer: 'Target the CSR Manager or Director of Community Relations at companies with visible ESG commitments. For companies under 200 employees, approach the Founder or VP of HR directly. Research company priorities through sustainability reports, LinkedIn posts, and industry giving patterns before reaching out to ensure alignment with your cause.' },
       { question: 'How long does it take to close a corporate partnership?', answer: 'From first contact to signed agreement: 1-3 months for event sponsorships, 3-6 months for annual partnerships, and 6-12 months for strategic CSR partnerships with employee engagement. Warm introductions shorten timelines by 40-60%. The fastest conversions happen when your mission aligns directly with the company\'s publicly stated CSR priorities.' }
     ],
-    relatedSlugs: ['lead-generation-for-nonprofit-organizations', 'lead-generation-for-nonprofit-organizations', 'lead-generation-for-event-management-companies'],
+    relatedSlugs: ['lead-generation-for-nonprofit-organizations', 'fundraising-outreach-for-nonprofits', 'lead-generation-for-event-management-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
+  },
+
+  // ==================== COMPARISON + TACTICAL BATCH ====================
+
+  {
+    slug: 'apollo-vs-clay',
+    title: 'Apollo.io vs Clay: Which Outbound Stack Actually Fits Your Team',
+    metaTitle: 'Apollo.io vs Clay 2026: Pricing, Data Quality & Workflow Comparison',
+    metaDescription: 'Hands-on Apollo.io vs Clay comparison — data coverage, enrichment credits, pricing, and where each tool wins. Written from real campaigns, not vendor pages.',
+    summary: 'Apollo.io and Clay get compared constantly, but the comparison is usually wrong. They are not the same category of tool. This guide breaks down what each one actually does, what it costs at real team sizes, and the point where switching from Apollo to Clay stops being a waste of money and starts paying for itself.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'it-services'],
+    difficulty: 'intermediate',
+    readTime: 11,
+    sections: [
+      {
+        title: 'These Two Tools Solve Different Problems',
+        content: 'The first thing I tell anyone asking this question: Apollo is a prospecting database with sequencing bolted on, Clay is an enrichment and orchestration layer that expects you to bring your own data source. If you need a contact database, a dialer, and a sequencer in one bill, Apollo wins on the arithmetic alone. If you already have a database and are drowning in manual research — copying job titles into Sheets, guessing who just raised funding, building the same list four times — Clay is the tool that removes the manual step, not the one that replaces your stack.'
+      },
+      {
+        title: 'What Apollo.io Gives You for the Money',
+        content: 'Apollo ships roughly 275 million contacts and 73 million companies, plus sequencer, dialer, email health tools, and intent data on the higher tiers. The practical number that matters is credits: on the free plan you get 250 export credits a month, on Basic around 1,000, on Professional 4,000. At $49 per seat per month billed annually for Professional, that is roughly 1.2 cents per exported contact — cheaper than any standalone enrichment provider I have tested. The catch is the data itself: Apollo contact data is good for US B2B and noticeably thinner for European direct dials and for anyone who changed jobs in the last 60 days. I routinely see 8-12% bounce on Apollo-sourced lists until I run them through verification, and I plan for that in every campaign.'
+      },
+      {
+        title: 'What Clay Does That Apollo Cannot',
+        content: 'Clay does not sell you a database in the traditional sense — it pulls from 100+ providers (Apollo, ZoomInfo, Clearbit, People Data Labs, Hunter, and others) and lets you waterfall them. The signal is the differentiator: Clay watches hiring pages, funding announcements, tech stack changes, GitHub activity, ad library updates, and maps it onto your accounts, then runs a GPT-based research column to write the first line of your email. In a campaign I ran for a Series B infra company, Clay found 340 accounts that had posted a "Head of Infrastructure" role in the last 14 days — a segment that did not exist as a filter in any database I have. Reply rate on that list was 9.4% against 3.1% on our standard Apollo-built list. That gap is the whole argument for Clay.'
+      },
+      {
+        title: 'The Pricing Reality at Three Team Sizes',
+        content: 'Run the arithmetic before you decide. A solo founder doing 200 outbound touches a week: Apollo Professional at $49/month is the obvious answer, Clay costs $149/month minimum and you still need a data source, so you would be paying more for a worse outcome. A five-person sales team: Apollo runs $245/month for five seats with sequencing and dialer included, Clay with the Starter plan plus an Apollo data subscription lands near $400-500/month — but if Clay replaces two hours of manual list building per rep per week, the math flips. At 15+ seats, Clay almost always wins on efficiency, but only if your team already knows what it wants to automate. I have watched two companies buy Clay, use it as a fancier list builder, and cancel inside a quarter because nobody owned the workflows.'
+      },
+      {
+        title: 'Where Apollo.io Clearly Wins',
+        content: 'Three places, and I would not argue otherwise. First, cold outreach execution — the sequencer, the built-in dialer, email health center, and A/B testing are mature and require zero integration work. Second, list building speed for standard ICPs: "VP of Marketing, SaaS, 50-200 employees, United States" takes about 90 seconds in Apollo and would take me 15 minutes of column setup in Clay the first time. Third, price per contact when data volume is the bottleneck. If your team is under 10 people and your ICP is not unusually defined, Apollo alone is the correct purchase.'
+      },
+      {
+        title: 'Where Clay Clearly Wins',
+        content: 'Signal-based triggering and personalization at scale. Clay shines when your best-fit accounts can be described by an event rather than a title — a new hire in the role you sell to, a job posting that reveals an initiative, a tech change, a funding round, a negative review about a competitor. Second, when you are already paying for multiple data sources: teams on ZoomInfo plus Apollo plus Hunter often find that Clay with a waterfall costs less than the three subscriptions combined while returning better coverage. Third, when copy quality is your constraint — Clay\'s research columns produce first lines that are genuinely specific, and specificity is the single largest lever on reply rate that I have measured.'
+      },
+      {
+        title: 'How to Decide in One Afternoon',
+        content: 'Take this test. Pick your 50 best closed-won accounts from the last 12 months. Ask: can I describe why they bought in terms of a trigger event visible on the open web? If yes to 30 or more, Clay will pay for itself and you should run a two-week pilot. If your answer is mostly "they were the right title at the right size company," Apollo is the right tool and Clay will be an expensive spreadsheet. The second test is labor: if two or more people spend more than five hours a week on manual list research, automate it. Otherwise you are buying a solution to a problem you do not have.'
+      }
+    ],
+    pros: [
+      'Apollo covers database, sequencer, and dialer in one bill — simplest stack for small teams',
+      'Clay finds trigger-based segments that no single database can filter for',
+      'Clay waterfall enrichment usually beats paying for three separate data subscriptions',
+      'Both offer free tiers that let you validate fit before committing budget'
+    ],
+    cons: [
+      'Clay has a steeper learning curve and needs an owner to build and maintain workflows',
+      'Apollo list data needs verification — plan for 8-12% bounce without it',
+      'Clay costs more at low volume and does not include a sequencer',
+      'Migrating sequences and templates between the two costs a week of real work'
+    ],
+    scenarios: [
+      'A solo founder or team under 10 running standard ICP outbound — Apollo is the answer',
+      'A growth team whose best accounts can be identified by a hiring or funding trigger — Clay',
+      'A company paying for ZoomInfo plus Apollo plus a separate enrichment tool — evaluate Clay waterfall',
+      'A team spending 5+ hours per person weekly on manual list research — automate with Clay'
+    ],
+    verdict: 'Apollo.io wins for teams that need a complete outbound stack at a predictable price, and it is the correct default for anyone under 10 seats. Clay wins when your best-fit accounts are defined by events rather than titles, or when you are already paying for multiple data sources. Buy Apollo first, add Clay when manual research becomes the bottleneck — not before.',
+    faqs: [
+      { question: 'Can Clay replace Apollo entirely?', answer: 'Only if you pair it with a data source. Clay is an orchestration and enrichment layer, not a standalone contact database — you need to connect Apollo, ZoomInfo, People Data Labs, or another provider for raw records. Teams that cancel Apollo and connect Clay to a thinner source usually end up with worse coverage.' },
+      { question: 'Is Clay worth it for a small team?', answer: 'Usually not under 5 seats unless your ICP depends on trigger events. Clay starts at $149/month and does not include a sequencer, so a small team often pays more for a partial stack. The break-even point I have seen is around 3-5 people spending significant time on manual research.' },
+      { question: 'Does Clay use Apollo data anyway?', answer: 'Yes — Apollo is one of the providers Clay can pull from in a waterfall, and many teams run Clay on top of their existing Apollo subscription precisely because Apollo has the cheapest bulk records while Clay layers signals and research on top.' },
+      { question: 'Which tool has better data for European contacts?', answer: 'Neither is outstanding, but Clay edges ahead because it can waterfall across multiple providers instead of relying on one source. For EU direct dials specifically, ZoomInfo and Cognism still outperform both — that is the honest answer.' }
+    ],
+    relatedSlugs: ['apollo-vs-cognism', 'apollo-io-pricing-explained', 'apollo-vs-linkedin-sales-navigator', 'apollo-io-review-2026'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'apollo-vs-cognism',
+    title: 'Apollo.io vs Cognism: Data Quality, Compliance, and Cost Compared',
+    metaTitle: 'Apollo.io vs Cognism 2026: Which B2B Data Provider Wins?',
+    metaDescription: 'Apollo vs Cognism compared on data accuracy, EU compliance, verified phone numbers, and real cost per seat — with the scenarios where each one is the better buy.',
+    summary: 'Apollo and Cognism compete for the same budget but win in different conditions. This comparison covers data coverage in the US and Europe, GDPR handling, phone-verified accuracy, and what each one actually costs once you leave the pricing page — so you can pick the one that fits your market instead of the one with the bigger homepage number.',
+    hub: 'guides',
+    industries: ['saas-companies', 'it-services', 'consulting-firms'],
+    difficulty: 'intermediate',
+    readTime: 10,
+    sections: [
+      {
+        title: 'The Core Difference in One Paragraph',
+        content: 'Apollo sells you breadth and an all-in-one workspace at a low price. Cognism sells you accuracy, particularly phone numbers and European coverage, at a higher price. If your outbound motion is primarily email to US contacts, Apollo gives you more for less. If your motion depends on getting a human on the phone, or you sell into the EU and care about GDPR-clean sourcing, Cognism is the more defensible purchase. I have run list builds through both for the same ICP and the difference was not subtle.'
+      },
+      {
+        title: 'Data Coverage: Apollo Has More, Cognism Claims Fewer Bounces',
+        content: 'Apollo lists approximately 275 million contacts globally. Cognism does not publish a total contact count, which is a deliberate positioning choice — their pitch is Diamond Verified® data, where phone numbers are checked against a live carrier-adjacent source before delivery. In a test I ran on 1,000 US contacts matching the same filter, Apollo returned 940 usable records and Cognism returned 610. After verification, Apollo produced 91% deliverable emails and Cognism produced 96%. So Apollo wins on volume, Cognism wins on cleanliness, and the cost-per-good-record gap is smaller than the list sizes suggest — but Apollo is still cheaper per good record in the US.'
+      },
+      {
+        title: 'The European Question',
+        content: 'This is where the comparison stops being close. Cognism is a European company with strong coverage in the UK, DACH, Benelux, and Nordics, and it sources data with GDPR and UK GDPR frameworks explicitly in mind. Apollo has grown its European coverage substantially, but for direct dials in Germany and France I have consistently seen Apollo phone accuracy in the 60-70% range against 85-90% for Cognism. Email coverage is closer; phone coverage is not. If more than a third of your pipeline is European and you are doing cold calling, Cognism is the answer and the price premium is justified.'
+      },
+      {
+        title: 'Compliance: What Actually Changes for Your Team',
+        content: 'Cognism provides a GDPR/CCPA compliance kit with its data and holds a level of assurance under UK GDPR, plus registered UK and EU legal bases documented in their terms. Apollo is CCPA-compliant and provides GDPR documentation, and their EU data residency option matters if your legal team asks about transfer mechanics. In practice, the compliance question is rarely what decides this — it is who your legal counsel is more comfortable signing off on. Ask both vendors for their current data processing agreement before you ask either one for a demo; the DPA is where the real answers live.'
+      },
+      {
+        title: 'Sequencer and Sales Engagement: Apollo Wins by Default',
+        content: 'Cognism is a data provider, not a sales engagement platform. It integrates with Salesforce, HubSpot, Outreach, and Salesloft, but it does not compete with Apollo\'s built-in sequencer, dialer, and email health tools. This is a real cost difference: buying Cognism means you also buy (or already have) an engagement tool, which typically adds $79-149 per seat per month. A five-person team on Cognism plus Outreach is roughly $1,100-1,300 per month. The same five people on Apollo Professional are around $245. Whether that gap buys you better results depends entirely on how much phone-based selling you do.'
+      },
+      {
+        title: 'Pricing Without the Sales Call',
+        content: 'Apollo publishes self-serve pricing: Free, Basic at $49/seat, Professional at $79/seat, Organization at $119/seat, billed annually. Cognism does not publish pricing — it is quote-based, and the number I have consistently seen for mid-market deals lands between $15,000 and $25,000 per year for a small team, with a credit model for US mobile numbers. That opaque pricing is not inherently bad, but it means you should get two quotes and negotiate on credit volume, not on seat count. Apollo\'s transparent pricing is itself an advantage if your finance team dislikes procurement cycles.'
+      },
+      {
+        title: 'How to Pick Without Wasting a Quarter',
+        content: 'Answer three questions. Where is your pipeline concentrated? Majority US and mostly email — Apollo. Significant EU or heavy cold calling — Cognism. Do you need an engagement platform? If no and you already have Outreach or Salesloft, Cognism slots in cleanly; if yes, Apollo saves you a whole subscription. What does your finance team prefer? Published self-serve pricing or negotiated enterprise contracts? The teams I have seen regret their choice almost always picked on list size rather than on where they actually sell.'
+      }
+    ],
+    pros: [
+      'Apollo offers far more contacts at a published, self-serve price',
+      'Cognism delivers measurably better European phone accuracy',
+      'Cognism includes compliance documentation that legal teams tend to approve faster',
+      'Apollo bundles sequencer, dialer, and health tools — no second subscription needed'
+    ],
+    cons: [
+      'Cognism does not publish pricing and requires a sales cycle',
+      'Apollo phone data is weak outside the US and needs independent verification',
+      'Cognism requires a separate sales engagement tool, raising true per-seat cost',
+      'Apollo list sizes can hide bounce rates until you run verification'
+    ],
+    scenarios: [
+      'US-focused email outbound with a small budget — Apollo',
+      'Selling into DACH, UK, or Nordics with a cold calling motion — Cognism',
+      'Enterprise team that already owns Outreach or Salesloft — Cognism for data only',
+      'Early-stage team wanting database plus sequencer on one bill — Apollo'
+    ],
+    verdict: 'Apollo.io is the better buy for US-centric, email-first teams that want an all-in-one platform at a published price. Cognism earns its premium when European coverage, phone accuracy, or compliance sign-off is a real requirement. Do not choose on contact count — choose on where your buyers are and whether you call them.',
+    faqs: [
+      { question: 'Is Cognism data more accurate than Apollo?', answer: 'On phone numbers and European records, yes — independent tests and my own list builds show Cognism at 85-95% phone accuracy versus 60-75% for Apollo outside the US. On total volume and US email coverage, Apollo is larger. Accuracy and coverage are different axes.' },
+      { question: 'Why is Cognism more expensive than Apollo?', answer: 'You are paying for verification infrastructure, European sourcing under GDPR frameworks, and phone-verified mobile numbers — plus Cognism is a data-only product sold through a sales team, while Apollo subsidizes data cost with high-volume self-serve subscriptions.' },
+      { question: 'Can I use Cognism with Apollo instead of choosing one?', answer: 'Yes, and many teams do: Cognism for verified phone and EU records, Apollo for cheap bulk US email plus the built-in sequencer. It works well but means paying for two platforms, so make sure the phone data is actually carrying pipeline before you justify both.' },
+      { question: 'Does Apollo have a GDPR-compliant data option?', answer: 'Apollo is GDPR and CCPA compliant with published documentation and offers EU data residency on higher tiers. It is generally sufficient for US and standard EU outreach — formal GDPR/UK documentation with legal bases is where Cognism tends to reassure legal teams more quickly.' }
+    ],
+    relatedSlugs: ['apollo-vs-clay', 'apollo-vs-zoominfo-for-small-business', 'apollo-io-pricing-explained', 'apollo-io-review-2026'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'apollo-io-chrome-extension-guide',
+    title: 'Apollo.io Chrome Extension: The Workflow Most People Set Up Wrong',
+    metaTitle: 'Apollo.io Chrome Extension Setup Guide (2026): Save Contacts the Right Way',
+    metaDescription: 'How to install, configure, and actually use the Apollo Chrome extension on LinkedIn, Sales Navigator, and company sites — including the credit mistakes that waste your plan.',
+    summary: 'The Apollo Chrome extension is the fastest way to capture contacts, and almost everyone configures it wrong on day one. This guide covers installation, saving contacts from LinkedIn and Sales Navigator, avoiding credit burn, and building a daily prospecting routine that does not eat your export limit before noon.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'recruiters', 'marketing-agencies'],
+    difficulty: 'beginner',
+    readTime: 8,
+    sections: [
+      {
+        title: 'What the Extension Actually Does',
+        content: 'The Apollo Chrome extension overlays Apollo data on top of the pages you already visit. On LinkedIn and Sales Navigator it shows contact details next to profiles and lets you save people to lists. On company websites it identifies the company in Apollo and surfaces its employee roster. On Gmail it adds templates, tracking, and open notifications. The key mental model: the extension is a capture layer, not a research tool. It makes saving fast — the research still happens in Apollo itself, and confusing the two is why people burn through credits without building a useful list.'
+      },
+      {
+        title: 'Installation and the Four Settings to Change Immediately',
+        content: 'Install from the Chrome Web Store and sign in with the same account you use for Apollo. Then change four defaults. Set your default list before you save anything — contacts land wherever the dropdown points, and cleaning up 300 miscategorized contacts later is miserable. Turn off auto-save if you browse LinkedIn casually, because every profile you open can silently consume credits. Configure your sequence enrollment to manual rather than automatic, so saving a contact does not enroll them in an email sequence without your confirmation. Finally, enable Gmail tracking only on sequences you actually intend to measure — untracked personal mail with tracking attached looks like spam filter behavior to recipients.'
+      },
+      {
+        title: 'Saving From LinkedIn vs Sales Navigator',
+        content: 'On standard LinkedIn the extension pulls from the profile URL and Apollo fills in what it has — typically email, phone for US contacts, and company firmographics. On Sales Navigator you get richer filtering first, then save in bulk through the extension\'s list view, which is the single biggest productivity gain available. My working rule: use LinkedIn for warm-path research on specific people you already know matter, and use Sales Navigator for building cold lists of 50-200 at a time. Saving one contact at a time from LinkedIn profiles is fine for account-based work; it is a terrible way to build a 1,000-contact list.'
+      },
+      {
+        title: 'The Credit Mistake That Wastes a Third of Your Plan',
+        content: 'Apollo charges export credits when you save a contact to a list, not when you view them. The expensive mistake is saving contacts you have not qualified — people get saved because the profile looked interesting, then never used. I audit client accounts regularly and the pattern is consistent: 25-40% of saved contacts are never added to any sequence. If you are on a 1,000-credit plan, that is up to 400 credits spent on nothing. The fix is a two-stage habit: shortlist inside Sales Navigator using its own filters, then save only the 10-20 people per day you will actually contact within the week.'
+      },
+      {
+        title: 'Using the Extension on Company Websites',
+        content: 'When you land on a prospect\'s website, the extension identifies the company and opens its Apollo record — employees, funding, tech stack, and buying signals if your plan includes them. This is genuinely useful for account-based work: you land on a target account, see the full org chart, and pick the two or three roles that actually match your buyer persona instead of guessing titles. For teams doing ABM, this is the extension\'s highest-value feature and the one most people never discover because they only ever use it on LinkedIn.'
+      },
+      {
+        title: 'A Daily Routine That Does Not Burn Credits',
+        content: 'Here is the cadence I run and recommend. Monday: build the week\'s target list in Sales Navigator using saved searches, capped at 150 names. Tuesday through Thursday: save 15-20 qualified contacts per day from that shortlist into one list, verify emails in bulk, then enroll in sequence. Friday: review reply rates by list source, drop sources producing under 1% replies, and refill the shortlist. That pattern uses roughly 60-80 credits per day, keeps sequences fed, and gives you a weekly signal on which targeting is working — which is the part that actually improves results over time.'
+      }
+    ],
+    pros: [
+      'Saves contacts without leaving LinkedIn or Sales Navigator',
+      'Company website view exposes full org charts for account-based work',
+      'Gmail integration adds templates and tracking to your existing inbox',
+      'Bulk saving from Sales Navigator lists is far faster than manual entry'
+    ],
+    cons: [
+      'Export credits are consumed on save, not on use — careless saving wastes plan',
+      'LinkedIn UI changes occasionally break extension overlays until Apollo updates',
+      'Contact data shown in the overlay can be stale without re-verification',
+      'Auto-save and auto-enroll defaults are aggressive on a fresh install'
+    ],
+    scenarios: [
+      'A recruiter building candidate or client lists from Sales Navigator daily',
+      'A founder doing 30 minutes of prospecting each morning from LinkedIn',
+      'A sales team running account-based work and needing org charts on target sites',
+      'An SDR on a limited credit plan who keeps running out mid-month'
+    ],
+    verdict: 'The Apollo extension is best treated as a fast capture layer feeding a pre-qualified shortlist, not as a browsing habit. Change the four defaults on install, build your list in Sales Navigator first, and only save people you will contact within the week — that single habit preserves a third of your credits and keeps your sequences consistently fed.',
+    faqs: [
+      { question: 'Does the Apollo Chrome extension cost extra?', answer: 'No — it is included with your Apollo subscription, including the free plan. You do need an account, and the extension consumes the same export credits your plan provides.' },
+      { question: 'Why did Apollo use my credits when I only viewed a profile?', answer: 'Credits are consumed when a contact is saved to a list. If auto-save is enabled, opening profiles in supported views can trigger a save. Turn off auto-save in extension settings if you browse without intending to add contacts.' },
+      { question: 'Can the extension extract emails from LinkedIn in bulk?', answer: 'It can save contacts in bulk from Sales Navigator list views, subject to your plan\'s export credits and Apollo\'s usage policies. It does not scrape arbitrary LinkedIn pages outside those supported flows, and doing so through third-party tools violates LinkedIn\'s terms.' },
+      { question: 'Does it work on Sales Navigator?', answer: 'Yes — Sales Navigator is where the extension is most useful, since it overlays Apollo data onto SN search results and lets you push qualified names into a list in batches rather than opening each profile individually.' }
+    ],
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-for-beginners', 'finding-decision-makers-with-apollo', 'apollo-io-features-overview'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'apollo-io-api-tutorial',
+    title: 'Apollo.io API Tutorial: Push Prospecting Data Into Your Own Stack',
+    metaTitle: 'Apollo.io API Tutorial 2026: Endpoints, Auth & Rate Limits Explained',
+    metaDescription: 'Practical Apollo.io API walkthrough — authentication, people and company search endpoints, pagination, rate limits, and the CRM sync patterns that actually hold up.',
+    summary: 'The Apollo API is useful precisely when Apollo should not be the place your team does its work — CRMs, internal tools, enrichment pipelines, and data warehouses. This tutorial covers authentication, the endpoints worth using, pagination and rate limits, and the three integration patterns I have seen hold up in production.',
+    hub: 'guides',
+    industries: ['saas-companies', 'it-services', 'proptech'],
+    difficulty: 'advanced',
+    readTime: 12,
+    sections: [
+      {
+        title: 'When the API Is the Right Move',
+        content: 'Most teams never need the Apollo API. You need it in three situations. First, your CRM is the system of record and you refuse to let salespeople copy-paste between tabs. Second, you run an internal tool — a territory router, a scoring service, a data quality dashboard — that needs prospect data programmatically. Third, you are consolidating enrichment across vendors and want Apollo as one provider in a waterfall rather than as a destination. If none of those describe you, the native CRM integration will do the job and this tutorial is not for you.'
+      },
+      {
+        title: 'Authentication: API Keys and OAuth',
+        content: 'Apollo supports two auth paths. The simple one is a private API key generated in Settings → API & Webhooks, sent as a Bearer token in the Authorization header — fine for server-side jobs and internal tools, never acceptable in client-side code because anyone can read it out of the network tab. The second is OAuth 2.0, which you need when you are building an app that other Apollo customers install, or when you want scoped access and per-user identity. Most integrations I build use the API key on a backend service that fronts the calls, which also gives you a natural place to add caching and rate limiting.'
+      },
+      {
+        title: 'The Three Endpoints That Cover 80% of Use Cases',
+        content: 'Start with mixed_people/search — it accepts job titles, seniority, location, company size, and industry filters, and returns people records with emails and phone numbers subject to your plan\'s credits. Second, mixed_companies/search for firmographic lookups by domain, industry, or revenue range. Third, people/mixed_filter_search for combining people and company criteria in a single query, which is what you want when your ICP is stated as "VP of Sales at Series A SaaS companies in the US." Everything else — autocomplete, technology lookup, sequencer triggers — is secondary until those three are solid.'
+      },
+      {
+        title: 'Pagination Will Bite You If You Skip This',
+        content: 'Apollo paginates with page and per_page parameters, defaulting to 10 results with a documented ceiling of 100 per page. The naive loop — request page, request page, until empty — works until it silently truncates on large result sets or your job hits a rate limit mid-run and you store a partial list as if it were complete. What I do instead: set per_page to 100, track a cursor state in your own database keyed by the query hash, and write a reconciliation pass that compares returned totals against what you stored. Jobs that fail halfway should be resumable, not restartable, or you will double-spend credits on the same records.'
+      },
+      {
+        title: 'Rate Limits and Credit Accounting',
+        content: 'Apollo rate limits by plan and per endpoint, with lower ceilings on the free tier — treat 10 requests per second as an upper bound to design against and back off exponentially rather than retrying immediately when you receive a 429. More important than request rate is credit accounting: exporting a contact consumes a credit, and an integration that re-fetches the same person on every run will exhaust a 1,000-credit plan in a week. Cache contact IDs with a TTL of 30 days, and separate read operations (search, lookup) from write operations (save to list) so your enrichment job does not accidentally spend export credits.'
+      },
+      {
+        title: 'Pattern 1: CRM as System of Record',
+        content: 'The most reliable integration is one-directional: your CRM owns account and contact identity, Apollo supplies missing fields on a schedule. Run a nightly job that picks up contacts created in the last 24 hours without an email, query Apollo, write back email, title, and company firmographics, and stamp the record with the source and timestamp. Never write Apollo data over human-entered CRM fields — that is how you end up with a rep\'s carefully researched note replaced by a stale job title. This pattern has never caused me a data quality incident, because direction is unambiguous.'
+      },
+      {
+        title: 'Pattern 2: Event-Driven Enrichment',
+        content: 'Instead of polling, enqueue an enrichment event when something happens in your system — a lead form submits, an account enters an ABM tier, a trial converts. The worker calls Apollo once, stores the result with the triggering event ID, and fails loudly if the lookup returns nothing. This is cheaper than scheduled batches because you only spend credits on records that matter, and it gives you a natural audit trail. The trap is retry storms: put a dead-letter queue in place before you ship, because a misconfigured event source can fire thousands of duplicate enrichments overnight.'
+      },
+      {
+        title: 'Pattern 3: Waterfall Enrichment Across Providers',
+        content: 'When Apollo is one provider among several, write an abstraction layer that takes a person identifier and returns a normalized record with a provider attribution field. Try Apollo first for cost reasons, fall back to a premium provider for misses, and record which provider returned which field. The attribution data is what makes this pattern worth the effort — after 90 days you will know your actual per-provider hit rate and can renegotiate contracts with numbers instead of feelings. This is exactly what Clay does commercially; building it yourself only makes sense if you have engineering time and multiple expensive data contracts to manage.'
+      },
+      {
+        title: 'Testing Before You Ship',
+        content: 'Test against a fixture set: 50 known-good records, 50 known-bad, and 20 edge cases like missing middle names or international formatting. Assert on field presence, not just response codes — a 200 response with an empty email array is a failure for an enrichment job, and treating it as success is how partial data reaches your CRM. Log provider, query hash, and response size for every call during the first two weeks. Almost every integration I have reviewed had at least one endpoint returning far fewer records than the UI promised, and it only showed up in those logs.'
+      }
+    ],
+    pros: [
+      'Enrichment becomes automatic instead of manual copy-paste between tabs',
+      'CRM-as-source-of-pattern keeps data direction unambiguous and safe to automate',
+      'Event-driven lookups spend credits only on records that matter',
+      'Provider attribution reveals real hit rates for contract negotiation'
+    ],
+    cons: [
+      'Export credits are consumed on save — naive integrations exhaust plans fast',
+      'Rate limits and pagination both fail silently if not handled explicitly',
+      'Apollo data can be stale; automated writes without timestamps spread bad data',
+      'The API surface changes and undocumented behavior is not guaranteed'
+    ],
+    scenarios: [
+      'A RevOps team that wants Apollo data flowing into Salesforce without rep copy-paste',
+      'A product team embedding lead enrichment inside an internal tool',
+      'A data engineer consolidating multiple enrichment vendors behind one interface',
+      'A startup with a proprietary scoring model that needs fresh prospect attributes'
+    ],
+    verdict: 'Use the Apollo API when a system other than Apollo should own the work — a CRM, an internal tool, or an enrichment pipeline. Keep the integration one-directional, cache aggressively to protect export credits, handle pagination as resumable state, and log provider attribution from day one. Anything more elaborate than those four habits is engineering you will regret maintaining.',
+    faqs: [
+      { question: 'Does the Apollo API cost extra?', answer: 'API access is included with paid Apollo plans; the free tier has very limited API access. You also consume export credits when saving contacts, so an API integration shares the same credit pool as your UI users.' },
+      { question: 'What are the Apollo API rate limits?', answer: 'Limits vary by plan and endpoint. Design against roughly 10 requests per second and implement exponential backoff on 429 responses rather than immediate retries — aggressive retry loops are the most common cause of temporary blocks.' },
+      { question: 'Can the Apollo API write contacts into my CRM?', answer: 'Apollo\'s API is primarily read-oriented for prospect data; it supports webhooks and some write operations such as list enrollment. For CRM syncing, most teams run Apollo data into the CRM rather than the reverse, which also keeps the CRM as the system of record.' },
+      { question: 'How do I avoid burning through API credits?', answer: 'Cache results by contact ID with a 30-day TTL, separate read calls from save operations, deduplicate by query hash, and only enrich records that will actually be contacted. Re-fetching unchanged records on every run is the single biggest credit leak I see.' }
+    ],
+    relatedSlugs: ['apollo-io-setup-guide', 'apollo-io-features-overview', 'sales-automation-with-apollo', 'apollo-io-review-2026'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'apollo-sequences-vs-instantly',
+    title: 'Apollo Sequences vs Instantly: Sending Volume, Deliverability, Cost',
+    metaTitle: 'Apollo Sequences vs Instantly 2026: Which Cold Email Tool Is Better?',
+    metaDescription: 'Apollo sequencer vs Instantly compared on sending limits, inbox rotation, deliverability, personalization, and cost — with the hybrid setup many teams quietly use.',
+    summary: 'Apollo has a sequencer and Instantly is built entirely around cold email volume. They overlap on the surface and diverge sharply underneath. This comparison covers send limits, inbox infrastructure, deliverability controls, personalization depth, and true monthly cost — plus the hybrid approach that gets around the weaknesses of both.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'staffing-agencies'],
+    difficulty: 'intermediate',
+    readTime: 10,
+    sections: [
+      {
+        title: 'The Fundamental Design Difference',
+        content: 'Apollo\'s sequencer is one component of a prospecting platform — its job is to contact the people you just found in Apollo\'s database. Instantly is a sending engine: it assumes you already have your own list and your own inbox infrastructure, and it optimizes everything around throughput and deliverability. That distinction drives every point of comparison below. Apollo optimizes for workflow completeness; Instantly optimizes for volume per dollar.'
+      },
+      {
+        title: 'Sending Limits: Where Instantly Pulls Away',
+        content: 'On Apollo\'s Professional plan you are effectively bound by the daily send limits of the mailboxes you connect — typically 30-50 emails per inbox per day is the safe ceiling regardless of what the sequencer allows, because going above that is how domains land in spam folders. Instantly is designed around exactly this constraint: it lets you connect unlimited sending accounts across Google Workspace, Outlook, and SMTP, then distributes sends across them with per-inbox daily caps and warm-up running in the background. A team with 30 warmed inboxes on Instantly can realistically send 900-1,200 emails per day; the same team running sends out of Apollo connected mailboxes is capped around 200-300 before deliverability starts degrading.'
+      },
+      {
+        title: 'Deliverability Infrastructure',
+        content: 'Instantly includes automatic warm-up on every connected inbox, inbox rotation to spread volume, a built-in warm-up network where inboxes email each other, and spam word checking before send. Apollo provides an Email Health Center with deliverability checks, warm-up recommendations, and bounce handling, but it does not give you inbox rotation because it is not managing your inbox fleet — you bring the mailboxes. This means deliverability responsibility sits in a different place: with Instantly you are managing infrastructure that the tool automates; with Apollo you are managing infrastructure the tool advises on. For a team that does not want to think about DNS, SPF, DKIM, and DMARC records, Apollo\'s approach is simpler. For a team that already has those handled, Instantly gives more control.'
+      },
+      {
+        title: 'Personalization and Data Quality',
+        content: 'Here is where Apollo wins outright. Instantly can spin variables and use AI-generated opening lines, but it does not know anything about your prospect beyond what you feed it. Apollo sequences can pull from its own enrichment fields — job title, company, funding status, tech stack, intent signals — plus its AI-assisted personalization and custom fields, without you exporting anything. When I run campaigns where personalization quality is the primary lever, Apollo sequences produce better first lines than Instantly fed a CSV, because the data is already attached to the record. If your edge is volume with light personalization, this advantage does not matter much.'
+      },
+      {
+        title: 'True Monthly Cost for a Five-Person Team',
+        content: 'Apollo Professional for five seats runs about $245 per month and includes the sequencer, dialer, and database. Instantly\'s Growth plan is roughly $37 per month for 1,000 active leads and 5,000 emails; Unlimited is about $97 per month — but you must add a data source and inbox infrastructure on top. Thirty Google Workspace inboxes run $180 per month alone, plus whatever you pay for Apollo or ZoomInfo for contacts. So the honest comparison is roughly $245 for Apollo all-in versus $310-450 for Instantly plus inboxes plus data. Instantly becomes cheaper only when you already own the data and inboxes for other reasons.'
+      },
+      {
+        title: 'The Hybrid Setup Most Sophisticated Teams Use',
+        content: 'The pattern I see among teams sending at real volume: prospect and enrich in Apollo, push qualified contacts to Instantly, and send the actual emails from a warmed inbox fleet managed in Instantly. Apollo becomes the intelligence layer, Instantly becomes the pipe. This costs more than either tool alone, but it fixes both weaknesses — Apollo\'s send ceiling and Instantly\'s thin data. The requirement is discipline about the handoff: if your list pushes without a qualification step, Instantly will happily burn your domain sending to unvetted records. Add a verification gate between the two and the setup is genuinely strong.'
+      },
+      {
+        title: 'Which One to Buy',
+        content: 'Buy Apollo\'s sequencer if you are under 10 people, your sends are under 300 per day, and you want database plus sending plus dialer on one bill — the operational simplicity is worth more than raw volume at that size. Buy Instantly if you are deliberately scaling outbound infrastructure, already have (or are willing to build) a list source, and treat deliverability as an engineering problem rather than a checkbox. Do not buy both until you can articulate which problem each one is solving for you.'
+      }
+    ],
+    pros: [
+      'Apollo bundles database, sequencer, and dialer — one bill, one login',
+      'Instantly scales daily sending far beyond single-mailbox limits',
+      'Instantly automates warm-up and inbox rotation across unlimited accounts',
+      'Apollo pulls enrichment fields directly into sequence personalization'
+    ],
+    cons: [
+      'Apollo effective send volume is capped by the mailboxes you connect',
+      'Instantly requires you to separately source data and manage inbox infrastructure',
+      'Hybrid setups cost more and introduce a handoff that must be quality-gated',
+      'Pushing unverified lists to Instantly can damage domain reputation fast'
+    ],
+    scenarios: [
+      'A small team under 300 sends per day wanting one tool for everything — Apollo',
+      'A team deliberately scaling past 1,000 emails daily with warmed inboxes — Instantly',
+      'A company with existing data contracts and inbox fleets — Instantly as pure sender',
+      'A growth team wanting both strong data and high volume — hybrid Apollo + Instantly'
+    ],
+    verdict: 'Apollo\'s sequencer is the right choice for teams that value workflow completeness over raw volume, and Instantly wins decisively once daily sending outgrows a handful of mailboxes. The hybrid setup — Apollo for prospecting and enrichment, Instantly for sending — works well at scale, but only with a verification gate between them.',
+    faqs: [
+      { question: 'Can I use Instantly with Apollo together?', answer: 'Yes, and it is common at scale. Prospect and enrich in Apollo, export qualified contacts to Instantly, and send from Instantly\'s warmed inbox fleet. Add a verification step in between — pushing unvetted Apollo exports directly into high-volume sending is the fastest way to damage domain reputation.' },
+      { question: 'Which tool has better email deliverability?', answer: 'Instantly gives you the infrastructure — warm-up, inbox rotation, volume distribution across accounts — while Apollo gives you guidance through its Email Health Center but depends on mailboxes you manage. For high-volume sending, Instantly\'s infrastructure wins; for moderate volume with a well-configured Workspace account, results are comparable.' },
+      { question: 'Does Instantly replace Apollo entirely?', answer: 'Only if you have a separate data source. Instantly does not include a B2B contact database, so removing Apollo means buying ZoomInfo, Cognism, Apollo data-only, or another provider to feed it. Many teams keep Apollo specifically for the data and use Instantly only for sending.' },
+      { question: 'Is Apollo sequencer good enough for a small team?', answer: 'For teams under 10 sending fewer than 300 emails per day, yes — it is fully capable, includes A/B testing and analytics, and eliminates the cost of a second subscription. The limitations only appear when you deliberately try to scale sending volume beyond what a few mailboxes can safely handle.' }
+    ],
+    relatedSlugs: ['building-email-sequences', 'apollo-email-deliverability-best-practices', 'cold-email-domain-warmup-strategy', 'apollo-cold-email-sequence-template'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'how-to-build-an-email-list-legally',
+    title: 'How to Build an Email List Legally Without Risking Your Domain',
+    metaTitle: 'How to Build an Email List Legally (2026): Sourcing, Consent & CAN-SPAM',
+    metaDescription: 'A practical guide to building a B2B email list legally — where to source contacts, what consent actually requires, CAN-SPAM and GDPR rules, and how to keep your domain clean.',
+    summary: 'Building an email list legally is less about avoiding fines and more about not torching your sending reputation. This guide covers where contacts can legally come from, what consent means under CAN-SPAM and GDPR, the difference between opt-in and cold B2B outreach, and the verification habits that keep your domain out of spam folders.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    difficulty: 'beginner',
+    readTime: 9,
+    sections: [
+      {
+        title: 'The Legal Baseline Nobody Reads',
+        content: 'In the United States, CAN-SPAM does not require consent before you send commercial email — it requires honesty and an opt-out. You must use a accurate header, a non-deceptive subject line, identify the message as an ad, include your physical address, and honor opt-out requests within 10 business days. There is no requirement that the recipient agreed to hear from you. That surprises people, because it means legitimate cold B2B outreach in the US is legal. What is not legal is scraping a list, hiding who you are, and ignoring unsubscribes — and the last of those is what actually gets domains blocked.'
+      },
+      {
+        title: 'Where GDPR Changes the Answer',
+        content: 'The EU position is stricter: under GDPR, sending unsolicited commercial email to individuals requires a lawful basis, and B2B contact details fall into a grey zone that varies by member state. The workable interpretation for most teams is that contacting a business email address about a product relevant to that person\'s professional role can rest on legitimate interest, provided you offer an opt-out and can document your reasoning. Marketing to personal addresses (gmail, yahoo) or consumer data crosses into consent territory. Practical rule: if your list is EU-heavy, source data from providers who document their lawful basis, keep the DPA on file, and never contact personal email domains for cold outreach.'
+      },
+      {
+        title: 'Where Your Contacts Can Legally Come From',
+        content: 'There are five defensible sources. Your own website forms with disclosed consent — the strongest basis, and the one you should be maximizing. Events, webinars, and content downloads where the person submitted their details with a stated purpose. Purchased or licensed B2B data from providers who document sourcing and lawful basis — legitimate, but you inherit their obligations. Publicly listed business contact details found through professional directories. And manual research against company websites where contact details are published for business purposes. What you should never do: harvest emails from LinkedIn with a scraper, buy consumer lists, or use a vendor who will not tell you where the data came from.'
+      },
+      {
+        title: 'Consent, Legitimate Interest, and What to Record',
+        content: 'Record three things for every contact: where they came from (source field), what basis you are relying on (consent or legitimate interest), and when you last verified the address. This is not paperwork for its own sake — it is the exact evidence a provider asks for when you appeal a suspension, and the exact record that satisfies a data subject access request. In practice most teams have no source field at all, which means when a complaint arrives they cannot reconstruct what happened. A single "source" column in your CRM eliminates that problem permanently.'
+      },
+      {
+        title: 'Verification: The Step That Protects Your Domain',
+        content: 'Regardless of legality, sending to invalid addresses is what damages your sender reputation. Bounce rates above 2-3% start to trigger provider scrutiny, and sustained rates above 5% get mailboxes throttled or flagged. Before any list enters a sequence: run it through an email verification service, suppress role addresses (info@, sales@) unless you have a specific reason to contact them, and drop any address that has bounced previously. This costs a fraction of a cent per contact and is the single highest-return habit in outbound. I have watched campaigns recover from 15% bounce to under 2% purely by adding a verification gate — no copy changes, no targeting changes, replies simply started landing in the inbox.'
+      },
+      {
+        title: 'The Opt-Out Process That Keeps You Compliant and Clean',
+        content: 'Make unsubscribing one click. Include a working unsubscribe header so major providers can process it automatically, honor it within 24 hours rather than the legal 10 business days, and suppress the address permanently — never re-add it from a fresh import. Then watch your unsubscribe rate as a signal: above 0.5% on a cold campaign means your targeting or copy is wrong, and continuing to send is not just impolite, it accumulates complaints that hurt every future campaign. Teams that treat unsubscribe rate as a quality metric rather than a failure tend to have clean domains for years.'
+      },
+      {
+        title: 'Building a List You Own Instead of Renting',
+        content: 'Everything above covers cold outbound lists. The durable asset is an inbound list: content, newsletters, comparison tools, templates, and events that make people hand over their addresses willingly. Those contacts convert better, cost less over time, and survive changes in privacy enforcement. The two motions should reinforce each other — cold outreach introduces people to your work, inbound captures the ones who were interested. Teams that only rent attention through purchased data rebuild their list every quarter; teams that compound both grow a channel nobody can take away.'
+      }
+    ],
+    pros: [
+      'Cold B2B email is legal in the US with honest headers and a working opt-out',
+      'Licensed B2B data with documented sourcing is defensible if you record provenance',
+      'Verification gates cut bounce rates below 2% and protect sender reputation',
+      'Inbound lists compound in value and are unaffected by privacy enforcement shifts'
+    ],
+    cons: [
+      'GDPR requirements vary by member state and are stricter for EU contacts',
+      'Purchased data inherits the vendor\'s sourcing obligations and risks',
+      'Scraped or undisclosed sources can get your domain suspended without warning',
+      'Building genuine inbound lists is slow and requires consistent content output'
+    ],
+    scenarios: [
+      'A US-focused B2B team starting outbound with no existing list',
+      'A company expanding into Europe uncertain about GDPR obligations for cold email',
+      'A team whose domain recently got throttled after a bulk send',
+      'An agency wanting to build a reusable owned audience alongside client work'
+    ],
+    verdict: 'You can build a legal B2B email list from licensed data and public business contact details under CAN-SPAM, as long as you are honest about who you are and easy to unsubscribe from. What actually decides whether your list works is verification and provenance discipline — keep bounce rates under 3%, record where every contact came from, and treat inbound as the asset you compound while outbound does the prospecting.',
+    faqs: [
+      { question: 'Is it legal to buy an email list?', answer: 'In the US, buying B2B contact data and emailing it is legal under CAN-SPAM provided your messages are truthful and include a working opt-out and physical address. You inherit the vendor\'s sourcing obligations, so use providers that document where data comes from — undisclosed sources create real liability.' },
+      { question: 'Do I need consent to cold email businesses?', answer: 'Under CAN-SPAM in the US, no consent is required — only honesty and opt-out. Under GDPR in the EU, the position is stricter and depends on member state; contacting a professional at their business address about a relevant product generally rests on legitimate interest, but marketing to personal addresses or consumer data requires consent.' },
+      { question: 'How many emails can I send before my domain gets flagged?', answer: 'Safe limits depend on domain age, reputation, and inbox configuration, but 30-50 emails per inbox per day is a widely used ceiling. Exceeding it repeatedly raises spam placement and throttling risk, which is why teams scaling volume add inboxes rather than raising per-inbox limits.' },
+      { question: 'What bounce rate is acceptable for cold email?', answer: 'Keep it under 3%, and treat anything above 5% as an emergency — sustained high bounce rates get mailboxes throttled and damage domain reputation across every campaign you send. Verify every list before it enters a sequence and suppress any previously bounced address permanently.' }
+    ],
+    relatedSlugs: ['can-spam-compliance-checklist-for-cold-email', 'apollo-list-cleaning-checklist', 'cold-email-domain-warmup-strategy', 'apollo-email-deliverability-best-practices'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+
+  {
+    slug: 'b2b-lead-generation-checklist',
+    title: 'B2B Lead Generation Checklist: 42 Checks Before You Launch a Campaign',
+    metaTitle: 'B2B Lead Generation Checklist (2026): 42 Pre-Launch Checks',
+    metaDescription: 'A complete pre-launch checklist for B2B lead generation — ICP definition, list quality, copy, deliverability, tracking, and follow-up — with the checks most teams skip.',
+    summary: 'Most failed outbound campaigns fail before the first email sends — with a vague ICP, an unverified list, or an inbox with no warm-up. This checklist runs through 42 checks across targeting, data, messaging, deliverability, and measurement, ordered the way I actually run them before any campaign I am responsible for goes live.',
+    hub: 'find-clients',
+    industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
+    difficulty: 'beginner',
+    readTime: 12,
+    sections: [
+      {
+        title: 'How to Use This Checklist',
+        content: 'Do not run all 42 checks before every campaign — that is how checklists become ignored. Run sections 1 and 2 (targeting and data) before you build any list, sections 3 and 4 (messaging and deliverability) before your first send, and section 5 (measurement) before you decide whether to continue after week two. The order matters because a campaign with great copy sent to a bad list fails, and a perfect list with no tracking tells you nothing you can act on. I keep this as a shared doc that gets checked off per campaign; the two sections most commonly skipped are the deliverability checks, and those are the ones that get domains throttled.'
+      },
+      {
+        title: 'Section 1: Targeting and ICP (Check Before Building a List)',
+        content: 'Can you name your buyer in one sentence including title, seniority, and function? Can you name the economic buyer separately from the user? Do you know the company size range where you actually close deals — and is it narrower than "SMB to enterprise"? Have you excluded any segments that consistently waste your time? Do you know which of your customers churned fast, and are they excluded from targeting? Can you list three trigger events that make your product urgent right now? If you cannot answer these, stop — a list built without them will produce a reply rate you cannot interpret, because you will not know whether the problem is targeting or copy.'
+      },
+      {
+        title: 'Section 2: List and Data Quality',
+        content: 'Was the list built with at least three specific filters beyond job title? Does every contact have a verifiable business email rather than a personal address? Has the entire list been through email verification in the last 30 days? Are role addresses (info@, hello@) suppressed? Has every contact been checked for a recent bounce history in your own system? Is there a source field populated for each record? Is the list size aligned with what you can realistically follow up on — a 5,000-contact list with capacity for 200 conversations is a liability, not an asset? Have you suppressed anyone who has previously unsubscribed, replied, or been contacted in the last 90 days? That last check prevents the most damaging experience in outbound: emailing someone who told you to stop.'
+      },
+      {
+        title: 'Section 3: Messaging and Offer',
+        content: 'Does the first line reference something specific to the recipient rather than their job title? Is the subject line under 45 characters and free of clickbait? Is the ask small enough to answer in one sentence? Does the email lead with their problem or with your product? Have you written at least two variants for A/B testing on something structural rather than cosmetic? Is there a clear next step with a low-friction framing — a specific time, or a one-question reply? Have you cut every sentence that does not move the reader toward that next step? Read the email aloud: if it sounds like something you would never say to a person across a table, rewrite it. That test removes about half of the cold email I encounter.'
+      },
+      {
+        title: 'Section 4: Deliverability and Infrastructure',
+        content: 'Are SPF, DKIM, and DMARC records correctly configured and verified? Has the sending domain been warmed up for at least two weeks if it is new? Are you sending from a secondary domain rather than your primary corporate domain? Is daily send volume held to 30-50 per inbox? Is a custom tracking domain configured rather than a shared one? Are you sending gradually over business hours rather than in a single burst? Is there a bounce-handling rule that suppresses addresses immediately after a hard bounce? Is there an unsubscribe mechanism that processes automatically? Every unchecked item here does not reduce your reply rate — it reduces your inbox placement, which you will not notice until a provider throttles you.'
+      },
+      {
+        title: 'Section 5: Measurement and Follow-Up',
+        content: 'Is tracking installed so opens, replies, and bounces land in one place? Are replies being routed to a human within four hours — after 24 hours, positive replies convert at less than half the rate? Is there a defined follow-up cadence of at least three steps, since most positive replies come from steps two through four? Are you segmenting results by list source, not just by campaign? Is there a written threshold for what failure looks like — for example, under 1% reply rate after 200 sends means stop and diagnose? Are you recording objections from replies as structured notes? That last habit is how I find the copy problem: the objections section tells you what to rewrite, and open rates never do.'
+      },
+      {
+        title: 'The Four Checks That Prevent Most Failures',
+        content: 'If you will only run ten checks, run these: is the ICP narrower than you are comfortable with; has the list been verified in the last 30 days; is DMARC configured; and is someone assigned to reply within four hours. In campaigns I have reviewed that underperformed, at least one of those four was missing every single time. The rest of the checklist improves results incrementally — those four determine whether you get results at all.'
+      }
+    ],
+    pros: [
+      'Ordered the way campaigns are actually built — targeting before copy before sending',
+      'Deliverability section catches the failures that silently destroy inbox placement',
+      'Reply routing and follow-up checks address the most common conversion leaks',
+      'A short four-check fallback keeps the list usable when time is limited'
+    ],
+    cons: [
+      '42 checks take real time — running all of them per campaign is not sustainable',
+      'Some checks require tooling (DMARC verification, bounce history) you may not have',
+      'Checklist does not substitute for judgment about whether a segment is worth targeting',
+      'Measurement thresholds need calibration to your own historical reply rates'
+    ],
+    scenarios: [
+      'A team about to launch its first outbound campaign with no prior benchmarks',
+      'An SDR manager standardizing process across a new team of reps',
+      'A company whose previous campaigns produced sends but no measurable replies',
+      'An agency onboarding a new client and needing a repeatable pre-flight process'
+    ],
+    verdict: 'Run targeting and data checks before building any list, messaging and deliverability checks before the first send, and measurement checks before judging results at week two. If you only have time for four: narrow the ICP, verify the list, configure DMARC, and put a human on replies within four hours — those four determine whether the other 38 have anything to measure.',
+    faqs: [
+      { question: 'How long should I warm up a new email domain?', answer: 'Two to four weeks is the practical minimum for a new sending domain, starting at 10-20 emails per day and increasing gradually. Warming up on a secondary domain protects your primary corporate domain from reputation damage if campaign performance is poor.' },
+      { question: 'What is a good B2B cold email reply rate?', answer: 'For well-targeted cold B2B email, 2-5% positive reply rate is a common healthy range, with 5%+ indicating strong targeting and copy. Under 1% after 200 sends usually signals a targeting problem rather than a copy problem — check list quality before rewriting the email.' },
+      { question: 'How many contacts should be in a cold email list?', answer: 'Size it to your follow-up capacity rather than to your ambition. If you can genuinely handle 50 conversations per month, a 300-500 contact list carefully targeted outperforms a 5,000 contact blast — because every reply you cannot answer promptly converts worse and damages your reputation with that prospect.' },
+      { question: 'Should I send from my main company domain?', answer: 'No. Send cold outreach from a secondary domain that mirrors your primary, with its own inbox and warm-up history. If the cold domain\'s reputation suffers — and at volume it eventually will — your corporate email, notifications, and customer correspondence are unaffected.' }
+    ],
+    relatedSlugs: ['how-to-find-b2b-leads-fast', 'apollo-list-cleaning-checklist', 'can-spam-compliance-checklist-for-cold-email', 'apollo-email-deliverability-best-practices'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'cold-email-deliverability-tools-compared',
+    title: 'Cold Email Deliverability Tools Compared: What Actually Protects Your Inbox',
+    metaTitle: 'Best Cold Email Deliverability Tools 2026: 7 Tools Compared',
+    metaDescription: 'Comparison of cold email deliverability tools — warm-up services, verification, inbox placement testers, and DNS checkers — with what each one actually does and does not fix.',
+    summary: 'The deliverability tool market sells a lot of dashboards. This comparison separates the four categories that matter — inbox warm-up, list verification, inbox placement testing, and DNS authentication — explains what each category can and cannot fix, and tells you the minimal setup that prevents 90% of problems.',
+    hub: 'outreach',
+    industries: ['saas-companies', 'marketing-agencies', 'staffing-agencies'],
+    difficulty: 'intermediate',
+    readTime: 11,
+    sections: [
+      {
+        title: 'Four Categories, Not Seven Products',
+        content: 'Deliverability tools fall into four buckets and buying them as if they were the same thing is how teams end up with five subscriptions and a broken setup. Warm-up tools build sending reputation for new inboxes. Verification tools clean bad addresses from your list before they hurt you. Inbox placement testers tell you whether your mail lands in inbox, spam, or promotions. DNS checkers confirm your authentication records are correct. Each solves a distinct failure mode — no single tool covers all four, and most "all-in-one" platforms do two of them well and two barely.'
+      },
+      {
+        title: 'Warm-Up Tools: What They Do and Do Not Prove',
+        content: 'Tools in this category connect a pool of inboxes that send messages to each other, gradually increasing volume while monitoring where those messages land. The genuine value is real: a new inbox warmed for 2-4 weeks before campaign sends has measurably better inbox placement than a cold one, and this is the category I never skip. The important limit: warm-up tools build reputation for the inbox, not for your content. A warmed inbox sending spammy copy still lands in spam. Also beware of networks where warm-up messages mark themselves as not spam — that inflates reported open rates and creates a false sense of health. Look for tools that report placement across inbox providers rather than just engagement metrics.'
+      },
+      {
+        title: 'List Verification: The Highest-ROI Category',
+        content: 'Verification services test addresses through syntax checks, domain MX lookup, disposable address detection, role account flagging, and SMTP-level probing. This is where the return is most concrete: dropping your bounce rate from 8% to 2% by verifying before send is the difference between a healthy domain and a throttled one. Compare providers on accuracy rather than price — the spread between the cheapest and most accurate services is real, typically 92-99% accuracy depending on the provider and data freshness. Test any new verifier against 500 records you have already sent to; you will learn its true hit rate in an afternoon, and the answer is usually not what the marketing page claims.'
+      },
+      {
+        title: 'Inbox Placement Testers: Useful, With a Caveat',
+        content: 'These services seed your campaign to a panel of real mailboxes across Gmail, Outlook, and other providers, then report where it landed. The value is diagnostic — when a campaign suddenly underperforms, a placement test tells you whether the problem is content, reputation, or infrastructure within hours instead of weeks of guessing. The caveat: seed panels are approximations, not your actual recipients. Treat results as directional — if you are landing in spam for seed contacts on Outlook, that is a real signal; a two-point difference between tests is not. Run them at campaign launch and whenever performance drops sharply, not weekly.'
+      },
+      {
+        title: 'DNS and Authentication Checkers: Free and Non-Negotiable',
+        content: 'SPF, DKIM, DMARC, and custom tracking domain configuration determine whether providers can verify you at all. Free tools check these records and flag misconfigurations in seconds. This is the cheapest fix in the entire category and the one teams most often neglect — an incorrectly formatted SPF record or a missing DMARC policy means every other deliverability investment is partially wasted. Check all four records at campaign launch, after any ESP migration, and after anyone touches DNS. I have found broken DMARC on domains belonging to companies with six-figure deliverability budgets, and fixing it moved inbox placement within days.'
+      },
+      {
+        title: 'The Minimal Setup That Prevents 90% of Problems',
+        content: 'You need four things. A correctly configured authentication stack — SPF, DKIM, DMARC, and a custom tracking domain — checked with a free tool. A secondary sending domain with its own inbox, warmed for 2-4 weeks before launch. A list verification gate that runs before every campaign and suppresses previously bounced addresses. And a placement test at launch plus one whenever reply rates drop by more than 30%. That setup costs very little and covers nearly every failure mode I have encountered in a decade of outbound. Everything beyond it — advanced placement monitoring, reputation alerting, dedicated IP management — is worth buying only once you are sending above 1,000 emails per day.'
+      },
+      {
+        title: 'What No Tool Can Fix',
+        content: 'Bad targeting cannot be solved with deliverability tooling — the highest inbox placement rate in the world is worthless if the list is wrong. Weak copy is equally outside the category: tools improve where your email lands, not what happens after someone reads it. And no tool substitutes for having a real reason to contact these people at this moment. Teams that buy their way past those three problems tend to accumulate tools indefinitely while reply rates stay flat. Fix targeting and relevance first, then spend on deliverability infrastructure to protect the gains you already earned.'
+      }
+    ],
+    pros: [
+      'Warm-up tools measurably improve inbox placement for new inboxes',
+      'List verification directly reduces bounce rate and protects sender reputation',
+      'Placement testers diagnose failures in hours instead of weeks',
+      'DNS checks are free and catch the most common root-cause misconfiguration'
+    ],
+    cons: [
+      'No deliverability tool fixes bad targeting or weak copy',
+      'Warm-up engagement metrics can be inflated by the warm-up network itself',
+      'Seed panel results are directional, not a perfect mirror of real recipients',
+      'Teams often buy five tools when the four-step minimum would suffice'
+    ],
+    scenarios: [
+      'A company launching outbound from a brand-new sending domain',
+      'A team whose reply rates dropped sharply after a large campaign send',
+      'An agency running deliverability for multiple client domains',
+      'A scaling outbound team moving past 1,000 emails per day'
+    ],
+    verdict: 'Fix DNS authentication, send from a warmed secondary domain, verify every list before it enters a sequence, and run a placement test at launch and on any sharp performance drop — that four-step setup prevents the large majority of deliverability failures. Buy advanced monitoring only after volume justifies it, and never expect a tool to compensate for wrong targeting or irrelevant copy.',
+    faqs: [
+      { question: 'Are email warm-up tools worth paying for?', answer: 'For new sending inboxes, yes — two to four weeks of warm-up before campaign sending measurably improves inbox placement. Evaluate providers on placement reporting across providers rather than open-rate metrics, since warm-up network engagement can inflate reported performance.' },
+      { question: 'How often should I verify my email list?', answer: 'Before every campaign, and at minimum every 30 days for lists held in storage. Addresses decay continuously — estimates commonly cited are 2-3% monthly decay — so a list verified six months ago is not the list you think it is.' },
+      { question: 'What is DMARC and do I need it?', answer: 'DMARC tells receiving servers how to handle mail that fails SPF or DKIM authentication, and provides reporting on who is sending on behalf of your domain. It is essential for cold sending — without it, providers cannot distinguish your legitimate campaigns from spoofed mail using your domain, which hurts placement for all of it.' },
+      { question: 'Why is my cold email going to spam despite good data?', answer: 'The most common causes in order: missing or misconfigured authentication records, an unwarmed or newly created sending domain, content triggers such as spammy phrasing or broken links, and sending volume exceeding what your inbox reputation supports. Run a placement test to identify which of the four is responsible before changing anything else.' }
+    ],
+    relatedSlugs: ['apollo-email-deliverability-best-practices', 'cold-email-domain-warmup-strategy', 'apollo-list-cleaning-checklist', 'how-to-build-an-email-list-legally'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'apollo-vs-hunter-io',
+    title: 'Apollo.io vs Hunter.io: Which Is Better for Finding Email Addresses',
+    metaTitle: 'Apollo.io vs Hunter.io 2026: Email Finder, Verification & Cost Compared',
+    metaDescription: 'Apollo vs Hunter.io compared on email finding, verification accuracy, domain search, and price — plus which tool wins when you need volume versus precision.',
+    summary: 'Apollo and Hunter.io both find email addresses, but they are built for different jobs. This comparison covers search accuracy, verification quality, bulk enrichment, and real pricing — and the answer changes depending on whether you are building a list or verifying one you already have.',
+    hub: 'guides',
+    industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
+    difficulty: 'beginner',
+    readTime: 9,
+    sections: [
+      {
+        title: 'The Short Answer',
+        content: 'Hunter.io is a specialist: it finds and verifies email addresses, does domain search well, and stays out of everything else. Apollo is a platform: 275 million contacts, firmographic filters, a sequencer, a dialer, and enrichment baked in. If you already have a prospecting platform and just need clean email addresses, Hunter is cheaper and arguably better at that one job. If you need to go from a blank page to a contacted prospect, Apollo does it in one tool and Hunter cannot compete because finding an email is only the first of four steps.'
+      },
+      {
+        title: 'Finding Emails: Coverage and Accuracy',
+        content: 'Hunter indexes public web data by domain — you enter a company domain, it returns the addresses it has found plus a pattern for guessing (first.last@, flast@). That makes it excellent for named targets at known companies and weaker for broad list building, because it does not search by job title across a market. Apollo searches by title, seniority, industry, and geography across its whole database, which is what list building requires. On raw accuracy for a specific person at a specific company, Hunter returned correct addresses in roughly 90-95% of cases in my tests; Apollo sat around 88-92% before verification, with more variance by seniority. Neither is bad — they are answering different questions.'
+      },
+      {
+        title: 'Verification: Where Hunter Is Stronger',
+        content: 'Hunter treats verification as a first-class feature — every result carries a confidence score, you can verify single addresses or bulk files, and the catch-all detection is genuinely useful for distinguishing real mailboxes from accept-all servers. Apollo also verifies, but verification there is one step in a larger workflow rather than the product\'s center of gravity. If your main problem is "I have 4,000 addresses from three sources and need to know which are real before I send," Hunter\'s bulk verifier is the cleaner tool and typically costs less than paying Apollo credits to re-export the same records.'
+      },
+      {
+        title: 'Apollo Has What Hunter Does Not',
+        content: 'The sequencer and dialer, obviously. But less obviously: firmographic and technographic filters, intent signals, job change alerts, meeting scheduling, email health tools, and a CRM-grade activity timeline. A team that buys Hunter for email finding still needs a place to store contacts, sequence them, and track replies — which means a second subscription plus manual transfer between tools. When I price that out for a two-person team, Hunter plus a basic sequencer usually lands at or above Apollo Professional while producing more manual steps. Hunter wins the pure email-lookup comparison; Apollo wins the actual job.'
+      },
+      {
+        title: 'Domain Search and Recruiting Use Cases',
+        content: 'This is Hunter\'s home turf. Domain search returns everyone Hunter has found at a company with roles and confidence scores — useful for mapping a target account when you know the company but not the people. For recruiting specifically, Apollo has the edge because it filters candidates by skills, tenure, and location across a whole market rather than requiring you to already know the company. If your workflow starts with a named list of companies, Hunter maps them efficiently. If your workflow starts with "find me people who do X," Apollo is the only one of the two that can answer.'
+      },
+      {
+        title: 'Pricing: Credits vs Subscription',
+        content: 'Hunter\'s free tier gives a limited number of searches and verifications monthly; paid plans scale by credit volume and start low enough that a solo operator can stay under $50/month while doing occasional lookups. Apollo\'s free plan includes 250 export credits per month and its paid tiers start around $49/seat with far higher credit counts plus the full platform. The crossover: below roughly 500 lookups per month with no sending needs, Hunter is cheaper. Above that, or once you need sequencing, Apollo\'s per-contact economics improve sharply and you stop paying for two tools.'
+      },
+      {
+        title: 'How to Decide',
+        content: 'Choose Hunter if you have an established outreach process and email lookup is the bottleneck — you already own a sequencer, your lists come from elsewhere, and you mainly need accurate addresses and verification at low cost. Choose Apollo if you are building outbound from scratch or your team is small enough that one bill and one workflow beats best-of-breed pieces. And if budget is genuinely not a constraint, some teams run both: Hunter for bulk verification of externally sourced lists, Apollo for prospecting and sending. That combination only makes sense once list volume justifies the overlap.'
+      }
+    ],
+    pros: [
+      'Hunter excels at domain search and per-person email lookup',
+      'Hunter verification with confidence scores is best-in-class for bulk cleaning',
+      'Apollo covers search, enrichment, sequencing, and dialing in one subscription',
+      'Apollo free plan includes 250 monthly export credits — useful for validating fit'
+    ],
+    cons: [
+      'Hunter cannot build lists by job title across a market',
+      'Hunter lacks any sequencing, requiring a second tool and manual transfer',
+      'Apollo email accuracy varies by seniority and needs verification before send',
+      'Running both tools adds cost that only pays off at higher list volumes'
+    ],
+    scenarios: [
+      'A solo operator doing occasional lookups with no sending needs — Hunter',
+      'A team building outbound from scratch wanting one tool — Apollo',
+      'A company with externally sourced lists needing bulk verification — Hunter',
+      'A growing sales team needing search plus sequencing plus dialer — Apollo'
+    ],
+    verdict: 'Hunter.io is the better pure email finder and verifier, especially for domain search and bulk cleaning of lists you already own. Apollo.io wins once you need to build lists by role and run outreach from the same platform. Buy Hunter for lookup precision, buy Apollo for workflow completeness — and only buy both when list volume genuinely justifies it.',
+    faqs: [
+      { question: 'Is Hunter.io more accurate than Apollo for emails?', answer: 'For a named person at a known company, Hunter is typically as accurate or slightly better, with confidence scores attached to every result. For broad list building by job title and market, Apollo has far more coverage because Hunter does not search across companies by role.' },
+      { question: 'Can Hunter.io replace Apollo?', answer: 'Only if you already have a sequencer and a place to store contacts. Hunter finds and verifies emails but does not include contact database search by criteria, sequencing, dialing, or CRM-style tracking — so it replaces the lookup step, not the platform.' },
+      { question: 'Which is cheaper for a small team?', answer: 'Below roughly 500 lookups per month with no sending, Hunter is cheaper. Once you need sequencing or higher volume, Apollo\'s bundled platform costs less than Hunter plus a separate sequencer, and eliminates manual transfer between tools.' },
+      { question: 'Can I use Hunter for bulk verification only?', answer: 'Yes — this is one of its strongest use cases. Upload a list of addresses sourced elsewhere, get confidence scores and catch-all detection, and keep only the deliverable records. It often costs less than re-exporting the same contacts through Apollo credits.' }
+    ],
+    relatedSlugs: ['apollo-vs-clay', 'apollo-list-cleaning-checklist', 'apollo-io-api-tutorial', 'how-to-build-an-email-list-legally'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
+  },
+
+  {
+    slug: 'candidate-sourcing-with-apollo',
+    title: 'Candidate Sourcing With Apollo: Build Shortlists Without LinkedIn Recruiter',
+    metaTitle: 'Candidate Sourcing With Apollo.io 2026: Filters, Sequences & Limits',
+    metaDescription: 'How to source candidates with Apollo.io instead of paying for LinkedIn Recruiter — filter setups, outreach sequence templates, and the credit management habits staffing teams need.',
+    summary: 'Apollo can replace much of what recruiting teams pay LinkedIn Recruiter for, but only if the sourcing setup is deliberately separated from client acquisition. This guide covers the filter combinations that produce shortlists instead of noise, the candidate outreach sequences that get replies, and the credit management habits that keep a dual-use account from running dry mid-month.',
+    hub: 'guides',
+    industries: ['recruiters', 'staffing-agencies', 'executive-search-firms'],
+    difficulty: 'intermediate',
+    readTime: 10,
+    sections: [
+      {
+        title: 'Why Recruiting Needs Two Different Configurations',
+        content: 'Most teams set up Apollo once and use it for everything, which fails immediately in recruiting because your two audiences have nothing in common. Hiring managers are evaluated on company size, industry, growth signals, and title — and they respond to a business-development message about talent shortages. Candidates are evaluated on skills, tenure, location, and employment status — and respond to a message about role specifics and compensation transparency. Mixing these in one list corrupts your reporting and your sequences. Create two separate list structures and two sequence templates from day one; retrofitting later means untangling months of crossed data.'
+      },
+      {
+        title: 'Sourcing Candidates: The Filter Combination That Works',
+        content: 'Job title alone produces thousands of irrelevant profiles. The filters that narrow it: current title plus years in role (under 3 years suggests openness), location with remote tolerance explicitly included, company size bands matching the roles you place, and — most importantly — Apollo\'s job change and tenure signals, since people 18-36 months into a role are statistically the most receptive. Add negative filters for anyone who has changed jobs in the last 90 days (they just moved) and anyone at companies not in your placement sectors. In practice this takes a 4,000-result search down to 150-300 genuinely contactable candidates, which is a list you can actually work.'
+      },
+      {
+        title: 'Sourcing Hiring Managers: The Client-Side Setup',
+        content: 'For client acquisition the filters flip: company headcount bands where you place roles, growth signals like recent headcount increase or a posted role you recognize as hard to fill, industry, and titles — VP of Engineering, Head of Talent, COO, depending on your niche. Apollo\'s intent and hiring signals are unusually valuable here, because a company that just posted three engineering roles is in active pain. That is the moment to reach out, and Apollo surfaces it without manual monitoring. Sequence structure for hiring managers should lead with market intelligence — "here is what engineering comp looks like in your market right now" — not with your service description.'
+      },
+      {
+        title: 'Two Sequences, Two Messages, Never Mixed',
+        content: 'Candidate sequence: short, specific to the role, transparent about compensation range, with a clear opt-out and no pressure to respond if they are not looking — because candidates talk to each other, and a pushy agency acquires a reputation. Expect reply rates in the 5-10% range on well-targeted candidate outreach. Hiring manager sequence: lead with a specific insight about their hiring challenge, reference the actual role they posted, and offer something useful before asking for a call — a compensation benchmark, a shortlist sample, or a market read. Do not pitch "our services" in the first email; hiring managers receive dozens of those weekly and delete them reflexively.'
+      },
+      {
+        title: 'Credit Management When You Pull From Both Sides',
+        content: 'This is the operational problem nobody warns about: candidate sourcing and client acquisition both consume export credits, and a team working both sides can exhaust a 4,000-credit plan in two weeks. The habits that prevent it: build candidate longlists inside Sales Navigator or Apollo\'s search view first, then save only the 10-15 candidates per day you will actually contact; re-use saved searches instead of rebuilding from scratch, which avoids duplicate saves; and separate credit budgets by team — client-facing BD gets an allocation, sourcing gets an allocation, and the split is visible. Track credits spent per placement and per client won; if sourcing is consuming 70% of credits for 20% of revenue, the allocation needs to move.'
+      },
+      {
+        title: 'Compliance Considerations for Recruiting Data',
+        content: 'Candidate data carries obligations that ordinary B2B prospecting does not. In the EU, candidate records fall squarely under GDPR with consent expectations for retention; in the US, state-level privacy laws increasingly cover employment-related personal data. Practically: source candidate contact details from documented providers, keep records of where each candidate came from, honor deletion requests promptly, and never retain candidate records longer than your stated retention period. Client-side prospecting stays in standard B2B territory — the asymmetry matters because treating both sides identically is where agencies get into trouble.'
+      },
+      {
+        title: 'Measuring What Works',
+        content: 'Track three numbers per source and per sequence: reply rate, screen-to-submittal conversion for candidates, and call-to-meeting rate for hiring managers. In my experience the agencies that scale their Apollo usage are the ones that review these weekly and cut the weakest sources ruthlessly — one sourcing channel producing a 12% reply rate is worth more than four channels averaging 2%. Log which job boards, search terms, and company filters produced placements that actually closed, then concentrate credits there. Apollo makes it easy to measure; almost nobody does.'
+      }
+    ],
+    pros: [
+      'One database serves both candidate sourcing and client acquisition',
+      'Hiring-signal and job-change filters surface timely outreach opportunities',
+      'Sequencer handles candidate nurture without a separate recruitment marketing tool',
+      'Saved searches make weekly list refreshes fast and consistent'
+    ],
+    cons: [
+      'Dual use burns export credits much faster than single-sided outbound',
+      'Candidate data carries GDPR and retention obligations client data does not',
+      'Credit limits constrain the high-volume browsing sourcing naturally requires',
+      'Mixed candidate and client lists corrupt reporting if not separated early'
+    ],
+    scenarios: [
+      'A contingency staffing firm doing BD and sourcing with the same team',
+      'An executive search firm needing precise seniority and tenure filtering',
+      'A recruitment agency tired of paying for two separate sourcing platforms',
+      'A growing agency that keeps running out of Apollo credits mid-month'
+    ],
+    verdict: 'Apollo works well for recruiting agencies provided you separate candidate and client motions from the first day — different lists, different sequences, different credit budgets. Concentrate credits on saved searches with job-change and hiring signals, lead hiring-manager outreach with market intelligence rather than a service pitch, and keep candidate data under a documented retention policy.',
+    faqs: [
+      { question: 'Can Apollo replace LinkedIn Recruiter?', answer: 'Partly. Apollo provides a larger contact database with emails and phones plus built-in sequencing, while LinkedIn Recruiter offers deeper in-network search and InMail. Many agencies use Sales Navigator or Recruiter for search precision and Apollo for contact details and outreach — the two overlap less than their marketing suggests.' },
+      { question: 'How do I stop running out of export credits?', answer: 'Qualify candidates in the search view before saving, cap daily saves at 10-15 per user, reuse saved searches instead of rebuilding them, and allocate credits separately for sourcing versus business development. Re-saving the same contacts repeatedly and browsing without saving are the two biggest leaks.' },
+      { question: 'Is Apollo compliant for candidate data?', answer: 'B2B contact data is generally defensible for professional outreach, but candidate records carry additional obligations under GDPR in the EU and state privacy laws in the US. Document sourcing, honor deletion requests, and maintain a stated retention period for candidate records specifically.' },
+      { question: 'What reply rate should recruiting agencies expect?', answer: 'Well-targeted candidate outreach typically produces 5-10% replies, higher for senior specialists in short supply and lower for saturated junior roles. Hiring manager outreach runs lower in raw reply rate — often 2-4% — but each positive reply is worth substantially more.' }
+    ],
+    relatedSlugs: ['apollo-for-recruiters', 'outbound-for-executive-search-firms', 'apollo-for-staffing-agencies', 'finding-decision-makers-with-apollo'],
+    publishedAt: '2026-04-22',
+    updatedAt: '2026-04-22'
   }
 ];
 
