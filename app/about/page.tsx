@@ -1,12 +1,12 @@
 ﻿import { Container } from '@/components/container';
 import { HubHero } from '@/components/hub-hero';
-import { BreadcrumbSchema } from '@/components/seo-schemas';
+import { BreadcrumbSchema, PersonSchema } from '@/components/seo-schemas';
 import { buildMetadata } from '@/lib/seo';
 import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'About',
-  description: 'About the B2B Lead Generation Tools editorial team — who we are, how we review guides, and why teams trust our outbound playbooks.',
+  description: 'About the B2B Lead Generation Tools editorial team — Katya, B2B marketing expert, how we review guides, and why teams trust our outbound playbooks.',
   path: '/about'
 });
 
@@ -17,6 +17,24 @@ export default function AboutPage() {
         items={[
           { name: 'Home', item: siteConfig.url },
           { name: 'About', item: `${siteConfig.url}/about` }
+        ]}
+      />
+      <PersonSchema
+        name="Katya"
+        jobTitle="B2B Marketing Expert & Lead Generation Strategist"
+        url={`${siteConfig.url}/about`}
+        description="Katya is a B2B marketing expert with 10+ years of experience building outbound systems, cold email campaigns, and lead generation pipelines for SaaS companies, agencies, and service businesses. She founded B2B Lead Generation Tools to share the playbooks she uses with real clients."
+        knowsAbout={[
+          'B2B Lead Generation',
+          'Cold Email Outreach',
+          'Apollo.io',
+          'Outbound Sales',
+          'Sales Pipeline Management',
+          'Account-Based Marketing',
+          'Marketing Strategy'
+        ]}
+        sameAs={[
+          'https://github.com/annalius3/b2bleadgenerationtools'
         ]}
       />
       <HubHero
@@ -65,17 +83,29 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold text-slate-900">Who writes the content</h2>
           <p className="mt-4 text-slate-700">
-            Articles are published under <strong>B2B Lead Gen Tools Editorial</strong> and reviewed against our internal structure for search
-            intent, topical relevance, clarity, and business usefulness. Every guide goes through our{' '}
+            Every guide is written and reviewed by <strong>Katya</strong>, a B2B marketing expert with 10+ years building outbound systems,
+            cold email campaigns, and lead generation pipelines for SaaS companies, agencies, and service businesses. Katya tests every
+            workflow with real client accounts before publishing it.
+          </p>
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-blue-100 bg-blue-50 p-4">
+              <p className="text-sm font-semibold text-blue-800">Katya — Lead Author</p>
+              <p className="mt-1 text-sm text-slate-700">B2B marketing expert focused on outbound systems, Apollo workflows, and pipeline strategy.</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <p className="text-sm font-semibold text-slate-900">Hands-on testing</p>
+              <p className="mt-1 text-sm text-slate-600">Every workflow is run against real accounts before it is recommended.</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+              <p className="text-sm font-semibold text-slate-900">Editorial review</p>
+              <p className="mt-1 text-sm text-slate-600">Guides are checked against our editorial methodology before publishing.</p>
+            </div>
+          </div>
+          <p className="mt-4 text-slate-700">
+            Published guides are reviewed against our internal structure for search intent, topical relevance, clarity, and business
+            usefulness. Every guide goes through our{' '}
             <a className="text-blue-700 underline" href="/editorial-methodology">editorial methodology</a> before publishing.
           </p>
-          <div className="mt-4 rounded-xl border border-blue-100 bg-blue-50 p-4">
-            <p className="text-sm font-semibold text-blue-800">Editorial team</p>
-            <p className="mt-2 text-sm text-slate-700">
-              Our team combines experience in B2B sales, outbound strategy, and content operations. We test workflows before recommending them
-              and update guides when tools, pricing, or best practices change.
-            </p>
-          </div>
         </div>
 
         <div>

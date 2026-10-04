@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/guides', changeFrequency: 'weekly' as const, priority: 0.7 },
     { path: '/compare', changeFrequency: 'monthly' as const, priority: 0.7 },
     { path: '/glossary', changeFrequency: 'monthly' as const, priority: 0.6 },
+    { path: '/start-here', changeFrequency: 'weekly' as const, priority: 0.7 },
     { path: '/contact', changeFrequency: 'yearly' as const, priority: 0.3 },
     { path: '/privacy', changeFrequency: 'yearly' as const, priority: 0.2 },
     { path: '/terms', changeFrequency: 'yearly' as const, priority: 0.2 },
@@ -26,7 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteConfig.url}/guides/${guide.slug}`,
     lastModified: guide.updatedAt ? new Date(guide.updatedAt) : new Date('2026-03-26'),
     changeFrequency: 'weekly' as const,
-    priority: 0.8
+    priority: 0.8,
+    images: [
+      `${siteConfig.url}/images/guides/${guide.slug}-1.jpg`,
+      `${siteConfig.url}/images/guides/${guide.slug}-2.jpg`
+    ]
   }));
 
   const industryRoutes = industries.map((industry) => ({

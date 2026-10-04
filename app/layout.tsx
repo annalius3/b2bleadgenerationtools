@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
+  alternates: {
+    types: {
+      'application/rss+xml': [
+        { url: '/rss.xml', title: `${siteConfig.name} RSS Feed` }
+      ]
+    }
+  },
   icons: {
     icon: '/favicon.png',
     apple: '/apple-icon.svg'

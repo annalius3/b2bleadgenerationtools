@@ -9,7 +9,7 @@ import { Container } from '@/components/container';
 import { GuideBottomPanel, GuideTopPanel } from '@/components/guide-type-panels';
 import { GuideSectionLead } from '@/components/guide-section-lead';
 import { ShareButtons } from '@/components/share-buttons';
-import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, ReviewSchema } from '@/components/seo-schemas';
+import { ArticleSchema, BreadcrumbSchema, FAQSchema, HowToSchema, PersonSchema, ReviewSchema } from '@/components/seo-schemas';
 import { getGuideBySlug, getGuidesByHub, guides, hubContent, industries } from '@/lib/content';
 import { guideOverrides } from '@/lib/guide-overrides';
 import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
@@ -217,6 +217,11 @@ export default async function GuidePage({ params }: Props) {
     ];
   const qualitySignals = override?.qualitySignals ?? hubCopy.signals;
   const guideSteps = guide.steps ?? [];
+  // Новые статьи имеют sections, а не steps — конвертируем в HowTo шаги,
+  // иначе Google получает пустой schema и теряет rich results.
+  const howToSteps = guideSteps.length > 0
+    ? guideSteps
+    : (guide.sections ?? []).map((s) => `${s.title}. ${s.content}`);
   const guideTips = guide.tips ?? [];
   const guideUseCases = guide.useCases ?? [];
   const hiddenDrawbacks =
@@ -282,6 +287,13 @@ export default async function GuidePage({ params }: Props) {
         keywords={keywordSet}
       />
       <FAQSchema questions={guide.faqs} />
+      <PersonSchema
+        name="Katya"
+        jobTitle="B2B Marketing Expert & Lead Generation Strategist"
+        url={`${siteConfig.url}/about`}
+        description="Katya is a B2B marketing expert with 10+ years of experience building outbound systems, cold email campaigns, and lead generation pipelines for SaaS companies, agencies, and service businesses."
+        knowsAbout={['B2B Lead Generation', 'Cold Email Outreach', 'Apollo.io', 'Outbound Sales', 'Sales Pipeline Management']}
+      />
       {guideKind === 'review' ? (
         <ReviewSchema
           title={guide.title}
@@ -291,13 +303,13 @@ export default async function GuidePage({ params }: Props) {
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
         />
       ) : null}
-      {isHowTo ? (
+      {isHowTo && howToSteps.length > 0 ? (
         <HowToSchema
           name={guide.title}
           description={guide.description ?? guide.title}
           url={`${siteConfig.url}/guides/${guide.slug}`}
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
-          steps={guide.steps ?? []}
+          steps={howToSteps}
         />
       ) : null}
 
@@ -318,7 +330,8 @@ export default async function GuidePage({ params }: Props) {
           <h1 className="mt-2 max-w-4xl text-3xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
           <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description ?? guide.title)}</p>
           <div className="mt-5 flex flex-wrap gap-2 text-xs">
-            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Reviewed by B2B Lead Gen Tools Editorial</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">By Katya, B2B Marketing Expert</span>
+            <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Fact-checked by B2B Lead Gen Tools Editorial</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Updated {UPDATED_LABEL}</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">{kindCopy.badge}</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">{estimateReadingTime(guide)} min read</span>

@@ -1,4 +1,5 @@
-﻿
+﻿import { siteConfig } from '@/lib/site';
+
 type BreadcrumbItem = {
   name: string;
   item: string;
@@ -53,9 +54,14 @@ export const ArticleSchema = ({
     articleSection: section,
     keywords,
     author: {
-      '@type': 'Organization',
-      name: 'B2B Lead Gen Tools Editorial',
-      url: 'https://www.b2bleadgenerationtools.com/about'
+      '@type': 'Person',
+      name: 'Katya',
+      jobTitle: 'B2B Marketing Expert',
+      url: `${siteConfig.url}/about`,
+      worksFor: {
+        '@type': 'Organization',
+        name: 'B2B Lead Generation Tools'
+      }
     },
     publisher: {
       '@type': 'Organization',
@@ -223,6 +229,40 @@ export const OrganizationSchema = ({
     sameAs: [
       'https://github.com/annalius3/b2bleadgenerationtools'
     ]
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
+};
+
+export const PersonSchema = ({
+  name,
+  jobTitle,
+  url,
+  description,
+  knowsAbout,
+  sameAs
+}: {
+  name: string;
+  jobTitle: string;
+  url: string;
+  description?: string;
+  knowsAbout?: string[];
+  sameAs?: string[];
+}) => {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    jobTitle,
+    url,
+    image: `${siteConfig.url}/images/author/katya.jpg`,
+    description,
+    worksFor: {
+      '@type': 'Organization',
+      name: 'B2B Lead Generation Tools',
+      url: siteConfig.url
+    },
+    knowsAbout,
+    sameAs
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 };
