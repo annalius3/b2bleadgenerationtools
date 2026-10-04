@@ -29,11 +29,12 @@ export default async function GuideSearchPage({ searchParams }: Props) {
     slug: guide.slug,
     title: guide.title,
     description: guide.description,
+    metaDescription: guide.metaDescription,
     hub: guide.hub
   }));
   const filtered = query
     ? guidePreviews.filter((guide) => {
-        const haystack = `${guide.title} ${guide.description} ${guide.slug}`.toLowerCase();
+        const haystack = `${guide.title} ${guide.description} ${guide.metaDescription} ${guide.slug}`.toLowerCase();
         return haystack.includes(query);
       })
     : [];

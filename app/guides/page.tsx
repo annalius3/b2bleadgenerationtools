@@ -17,6 +17,7 @@ export default function GuidesPage() {
     slug: guide.slug,
     title: guide.title,
     description: guide.description,
+    metaDescription: guide.metaDescription,
     hub: guide.hub
   }));
 

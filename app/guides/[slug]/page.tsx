@@ -144,8 +144,8 @@ export async function generateMetadata({ params }: Props) {
   }
 
   return buildMetadata({
-    title: guide.title,
-    description: guide.description ?? guide.title,
+    title: guide.metaTitle ?? guide.title,
+    description: guide.metaDescription ?? guide.description ?? guide.title,
     path: `/guides/${guide.slug}`,
     type: 'article',
     image: `/images/guides/${guide.slug}-1.jpg`,
@@ -278,7 +278,7 @@ export default async function GuidePage({ params }: Props) {
       />
       <ArticleSchema
         title={guide.title}
-        description={guide.description ?? guide.title}
+        description={guide.metaDescription ?? guide.description ?? guide.title}
         url={`${siteConfig.url}/guides/${guide.slug}`}
         image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
         datePublished={guide.publishedAt ?? DEFAULT_PUBLISHED_DATE}
@@ -297,7 +297,7 @@ export default async function GuidePage({ params }: Props) {
       {guideKind === 'review' ? (
         <ReviewSchema
           title={guide.title}
-          description={guide.description ?? guide.title}
+          description={guide.metaDescription ?? guide.description ?? guide.title}
           url={`${siteConfig.url}/guides/${guide.slug}`}
           itemName="Apollo.io"
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
@@ -306,7 +306,7 @@ export default async function GuidePage({ params }: Props) {
       {isHowTo && howToSteps.length > 0 ? (
         <HowToSchema
           name={guide.title}
-          description={guide.description ?? guide.title}
+          description={guide.metaDescription ?? guide.description ?? guide.title}
           url={`${siteConfig.url}/guides/${guide.slug}`}
           image={`${siteConfig.url}/images/guides/${guide.slug}-1.jpg`}
           steps={howToSteps}
@@ -328,7 +328,7 @@ export default async function GuidePage({ params }: Props) {
           <div className="pointer-events-none absolute -left-24 bottom-0 h-56 w-56 rounded-full bg-cyan-200/25 blur-3xl" />
           <p className="text-sm font-semibold uppercase tracking-wide text-blue-700">{guide.hub.replace('-', ' ')}</p>
           <h1 className="mt-2 max-w-4xl text-3xl font-semibold text-slate-900 sm:text-5xl">{guide.title}</h1>
-          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.description ?? guide.title)}</p>
+          <p className="mt-4 max-w-3xl text-slate-700">{renderApolloText(guide.metaDescription ?? guide.description ?? guide.title)}</p>
           <div className="mt-5 flex flex-wrap gap-2 text-xs">
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">By Katya, B2B Marketing Expert</span>
             <span className="rounded-full border border-slate-200 bg-white/90 px-3 py-1 font-medium text-slate-700">Fact-checked by B2B Lead Gen Tools Editorial</span>

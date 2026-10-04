@@ -29,13 +29,6 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`
   },
   description: siteConfig.description,
-  alternates: {
-    types: {
-      'application/rss+xml': [
-        { url: '/rss.xml', title: `${siteConfig.name} RSS Feed` }
-      ]
-    }
-  },
   icons: {
     icon: '/favicon.png',
     apple: '/apple-icon.svg'
@@ -46,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" type="application/rss+xml" title={`${siteConfig.name} RSS Feed`} href="/rss.xml" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
