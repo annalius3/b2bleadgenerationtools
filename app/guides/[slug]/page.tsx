@@ -331,12 +331,12 @@ export default async function GuidePage({ params }: Props) {
 
       <section className="py-10 sm:py-12">
         <nav className="mb-4 text-sm text-slate-500" aria-label="Breadcrumb">
-          <ol className="flex flex-wrap items-center gap-1">
-            <li><Link href="/" className="hover:text-blue-700">Home</Link></li>
+          <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <li><Link href="/" className="inline-block py-1.5 hover:text-blue-700">Home</Link></li>
             <li aria-hidden="true">/</li>
-            <li><Link href={hubPath[guide.hub]} className="hover:text-blue-700">{titleCaseHub(guide.hub)}</Link></li>
+            <li><Link href={hubPath[guide.hub]} className="inline-block py-1.5 hover:text-blue-700">{titleCaseHub(guide.hub)}</Link></li>
             <li aria-hidden="true">/</li>
-            <li className="font-medium text-slate-900" aria-current="page">{guide.title}</li>
+            <li className="py-1.5 font-medium text-slate-900" aria-current="page">{guide.title}</li>
           </ol>
         </nav>
         <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-gradient-to-br from-white via-blue-50/55 to-cyan-50/35 p-5 shadow-[0_24px_56px_-44px_rgba(37,99,235,0.5)] sm:p-9">
@@ -368,7 +368,7 @@ export default async function GuidePage({ params }: Props) {
       </section>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_300px]">
-        <article className="article-content rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+        <article className="article-content min-w-0 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
           <section id="summary" className="rounded-xl border border-blue-100 bg-blue-50 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Summary / Verdict</p>
             {summaryParagraphs.map((paragraph) => (

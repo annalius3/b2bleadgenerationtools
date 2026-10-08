@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 
 import { BrandLogo } from '@/components/brand-logo';
 import { Container } from '@/components/container';
@@ -21,48 +21,48 @@ export const Footer = () => (
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Resources</p>
-          <Link href="/guides" className="block hover:text-blue-700">
+          <Link href="/guides" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             All Guides
           </Link>
-          <Link href="/compare" className="block hover:text-blue-700">
+          <Link href="/compare" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Tool Comparisons
           </Link>
-          <Link href="/glossary" className="block hover:text-blue-700">
+          <Link href="/glossary" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Glossary
           </Link>
-          <Link href="/editorial-methodology" className="block hover:text-blue-700">
+          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Editorial Methodology
           </Link>
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Industries</p>
           {topIndustries.map((industry) => (
-            <Link key={industry.slug} href={`/business-types/${industry.slug}`} className="block hover:text-blue-700">
+            <Link key={industry.slug} href={`/business-types/${industry.slug}`} className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
               {industry.name}
             </Link>
           ))}
-          <Link href="/business-types" className="block font-medium text-blue-700 hover:text-blue-900">
+          <Link href="/business-types" className="flex min-h-[48px] items-center font-medium text-blue-700 hover:text-blue-900 md:block md:min-h-0">
             Browse all industries →
           </Link>
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Trust &amp; Legal</p>
-          <Link href="/about" className="block hover:text-blue-700">
+          <Link href="/about" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             About
           </Link>
-          <Link href="/editorial-methodology" className="block hover:text-blue-700">
+          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Editorial Methodology
           </Link>
-          <Link href="/contact" className="block hover:text-blue-700">
+          <Link href="/contact" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Contact
           </Link>
-          <Link href="/affiliate-disclosure" className="block hover:text-blue-700">
+          <Link href="/affiliate-disclosure" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Affiliate Disclosure
           </Link>
-          <Link href="/privacy" className="block hover:text-blue-700">
+          <Link href="/privacy" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Privacy
           </Link>
-          <Link href="/terms" className="block hover:text-blue-700">
+          <Link href="/terms" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
             Terms
           </Link>
         </div>
