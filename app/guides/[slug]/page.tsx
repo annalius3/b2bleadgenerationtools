@@ -360,7 +360,7 @@ export default async function GuidePage({ params }: Props) {
             alt={`Illustration for ${guide.title} — visual guide overview`}
             width={1400}
             height={780}
-            sizes="(max-width: 1280px) 100vw, 960px"
+            sizes="(max-width: 639px) calc(100vw - 50px), (max-width: 1023px) calc(100vw - 66px), (max-width: 1279px) calc(100vw - 82px), 1198px"
             className="h-auto w-full rounded-xl"
             priority
           />
@@ -506,7 +506,7 @@ export default async function GuidePage({ params }: Props) {
             alt={`Step-by-step strategy breakdown for ${guide.title}`}
             width={1400}
             height={780}
-            sizes="(max-width: 1280px) 100vw, 960px"
+            sizes="(max-width: 639px) calc(100vw - 100px), (max-width: 1023px) calc(100vw - 132px), (max-width: 1279px) calc(100vw - 480px), 800px"
             className="h-auto w-full rounded-xl"
           />
           </div>

@@ -21,48 +21,48 @@ export const Footer = () => (
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Resources</p>
-          <Link href="/guides" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/guides" className="flex min-h-[48px] items-center hover:text-blue-700">
             All Guides
           </Link>
-          <Link href="/compare" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/compare" className="flex min-h-[48px] items-center hover:text-blue-700">
             Tool Comparisons
           </Link>
-          <Link href="/glossary" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/glossary" className="flex min-h-[48px] items-center hover:text-blue-700">
             Glossary
           </Link>
-          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700">
             Editorial Methodology
           </Link>
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Industries</p>
           {topIndustries.map((industry) => (
-            <Link key={industry.slug} href={`/business-types/${industry.slug}`} className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+            <Link key={industry.slug} href={`/business-types/${industry.slug}`} className="flex min-h-[48px] items-center hover:text-blue-700">
               {industry.name}
             </Link>
           ))}
-          <Link href="/business-types" className="flex min-h-[48px] items-center font-medium text-blue-700 hover:text-blue-900 md:block md:min-h-0">
+          <Link href="/business-types" className="flex min-h-[48px] items-center font-medium text-blue-700 hover:text-blue-900">
             Browse all industries →
           </Link>
         </div>
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Trust &amp; Legal</p>
-          <Link href="/about" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/about" className="flex min-h-[48px] items-center hover:text-blue-700">
             About
           </Link>
-          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/editorial-methodology" className="flex min-h-[48px] items-center hover:text-blue-700">
             Editorial Methodology
           </Link>
-          <Link href="/contact" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/contact" className="flex min-h-[48px] items-center hover:text-blue-700">
             Contact
           </Link>
-          <Link href="/affiliate-disclosure" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/affiliate-disclosure" className="flex min-h-[48px] items-center hover:text-blue-700">
             Affiliate Disclosure
           </Link>
-          <Link href="/privacy" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/privacy" className="flex min-h-[48px] items-center hover:text-blue-700">
             Privacy
           </Link>
-          <Link href="/terms" className="flex min-h-[48px] items-center hover:text-blue-700 md:block md:min-h-0">
+          <Link href="/terms" className="flex min-h-[48px] items-center hover:text-blue-700">
             Terms
           </Link>
         </div>

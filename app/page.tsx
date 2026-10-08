@@ -76,7 +76,7 @@ export default function HomePage() {
                 alt="B2B sales team reviewing outbound performance"
                 width={1024}
                 height={768}
-                sizes="(max-width: 1023px) 100vw, 40vw"
+                sizes="(max-width: 551px) calc(100vw - 50px), (max-width: 1023px) 502px, (max-width: 1280px) calc(40vw - 57px), 456px"
                 className="h-auto w-full rounded-xl object-cover"
                 priority
               />
