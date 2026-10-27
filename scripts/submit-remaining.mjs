@@ -122,7 +122,7 @@ async function main() {
   for (const url of allUrls) {
     try {
       console.log(`Submitting: ${url}`);
-      const result = await submitUrl(url, accessToken);
+      await submitUrl(url, accessToken);
       console.log(`  ✅ Submitted successfully`);
       success++;
     } catch (err) {

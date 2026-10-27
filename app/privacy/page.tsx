@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
-  description: 'Privacy policy for b2bleadgenerationtools.com.',
+  description: 'Privacy policy for B2B Lead Generation Tools: what data we collect, how analytics and affiliate cookies work, and how to contact us about your data.',
   path: '/privacy'
 });
 

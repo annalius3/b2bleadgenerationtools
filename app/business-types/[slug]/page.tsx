@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props) {
 
   return buildMetadata({
     title: `${industry.name} Lead Generation Guides`,
-    description: industry.description,
+    description: `${industry.description.replace(/\.\s*$/, '')}. Outreach tactics, buyer roles, and Apollo workflows.`,
     path: `/business-types/${industry.slug}`
   });
 }
@@ -73,7 +73,7 @@ export default async function BusinessTypePage({ params }: Props) {
 
       <section className="defer-section grid gap-6 pb-8 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Who this hub is for</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">Who this hub is for</p>
           <h2 className="mt-3 text-2xl font-semibold text-slate-900">{industry.name} outbound strategy</h2>
           <p className="mt-4 max-w-3xl text-sm leading-7 text-slate-600">{industry.audience}</p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -106,7 +106,7 @@ export default async function BusinessTypePage({ params }: Props) {
       <section className="defer-section pb-8">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Featured guides</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">Featured guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">Start with these high-signal pages</h2>
           </div>
           <Link href="/guides" className="text-sm font-semibold text-sky-700 transition hover:text-sky-900">
@@ -123,7 +123,7 @@ export default async function BusinessTypePage({ params }: Props) {
       <section className="defer-section pb-16">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">All guides</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">All guides</p>
             <h2 className="mt-2 text-2xl font-semibold text-slate-900">{industryGuides.length} guides for {industry.name}</h2>
           </div>
         </div>

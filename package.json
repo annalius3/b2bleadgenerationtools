@@ -10,7 +10,9 @@
     "check:images": "node scripts/check-image-duplicates.mjs",
     "check:interlinking": "node scripts/check-interlinking.mjs",
     "publish:check": "npm run lint && npm run build && npm run check:images && npm run check:interlinking && npm run check:guide-hrefs",
-    "check:guide-hrefs": "node scripts/check-guide-hrefs.mjs"
+    "check:guide-hrefs": "node scripts/check-guide-hrefs.mjs",
+    "images:dimensions": "node scripts/generate-image-dimensions.mjs",
+    "test:site": "node scripts/test-site.mjs"
   },
   "dependencies": {
     "next": "^16.1.6",

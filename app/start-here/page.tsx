@@ -28,9 +28,9 @@ const steps = [
     number: '02',
     title: 'Build Your Lead List',
     description: 'Use Apollo.io to find verified contacts that match your ideal customer profile. Focus on quality over quantity.',
-    link: '/guides/apollo-io-features-and-capabilities',
+    link: '/guides/apollo-io-features-overview',
     linkText: 'Apollo.io Features',
-    guides: ['how-to-build-a-lead-list-in-apollo', 'how-to-find-b2b-leads-with-apollo-io', 'find-decision-makers-with-apollo']
+    guides: ['how-to-build-a-lead-list-in-apollo', 'how-to-find-b2b-leads-with-apollo-io', 'finding-decision-makers-with-apollo']
   },
   {
     number: '03',
@@ -38,7 +38,7 @@ const steps = [
     description: 'Write cold emails that get replies. Personalize at scale, warm up your domain, and follow up strategically.',
     link: '/outreach',
     linkText: 'Outreach Hub',
-    guides: ['cold-email-best-practices', 'ai-personalized-cold-emails-at-scale', 'cold-email-domain-warmup-strategy']
+    guides: ['apollo-email-deliverability-best-practices', 'ai-personalized-cold-emails-at-scale', 'cold-email-domain-warmup-strategy']
   },
   {
     number: '04',
@@ -54,17 +54,17 @@ const steps = [
     description: 'Once your process works, it\'s time to scale. Hire your first SDR, automate workflows, and expand to new channels.',
     link: '/for-startups',
     linkText: 'For Startups Hub',
-    guides: ['startup-outbound-playbook', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid']
+    guides: ['how-to-scale-client-acquisition', 'hire-first-sdr-startup', 'product-led-growth-outbound-hybrid']
   }
 ];
 
 const popularGuides = [
-  { slug: 'apollo-io-features-and-capabilities', title: 'Apollo.io Features & Capabilities' },
-  { slug: 'cold-email-best-practices', title: 'Cold Email Best Practices' },
+  { slug: 'apollo-io-features-overview', title: 'Apollo.io Features Overview' },
+  { slug: 'apollo-email-deliverability-best-practices', title: 'Cold Email Deliverability Best Practices' },
   { slug: 'pipeline-management-playbook', title: 'Pipeline Management Playbook' },
   { slug: 'how-to-find-b2b-leads-with-apollo-io', title: 'How to Find B2B Leads with Apollo' },
   { slug: 'b2b-sales-process-optimization', title: 'B2B Sales Process Optimization' },
-  { slug: 'apollo-vs-zoominfo', title: 'Apollo vs ZoomInfo Comparison' },
+  { slug: 'apollo-vs-zoominfo-for-small-business', title: 'Apollo vs ZoomInfo Comparison' },
 ];
 
 export default function StartHerePage() {

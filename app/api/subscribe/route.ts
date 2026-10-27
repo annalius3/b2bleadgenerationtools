@@ -24,9 +24,13 @@ const subscribeToConvertKit = async (email: string): Promise<{ success: boolean;
   const formId = process.env.CONVERTKIT_FORM_ID;
 
   if (!apiKey || !formId) {
-    console.warn('[subscribe] CONVERTKIT_API_KEY or CONVERTKIT_FORM_ID missing — dev mode persist only');
-    persistSubscriberDev(email);
-    return { success: true };
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn('[subscribe] CONVERTKIT_API_KEY or CONVERTKIT_FORM_ID missing — dev mode persist only');
+      persistSubscriberDev(email);
+      return { success: true };
+    }
+    console.error('[subscribe] CONVERTKIT_API_KEY or CONVERTKIT_FORM_ID missing in production — refusing false success');
+    return { success: false, error: 'not_configured' };
   }
 
   try {
@@ -81,7 +85,7 @@ export async function POST(request: Request) {
 
     if (!isEmail(email)) {
       if (wantsRedirect) {
-        return NextResponse.redirect(new URL('/#newsletter?error=invalid_email', request.url), 303);
+        return NextResponse.redirect(new URL('/?error=invalid_email#newsletter', request.url), 303);
       }
       return Response.json({ success: false, error: 'invalid_email' }, { status: 400 });
     }
@@ -90,18 +94,18 @@ export async function POST(request: Request) {
 
     if (!result.success) {
       if (wantsRedirect) {
-        return NextResponse.redirect(new URL('/#newsletter?error=subscribe_failed', request.url), 303);
+        return NextResponse.redirect(new URL('/?error=subscribe_failed#newsletter', request.url), 303);
       }
       return Response.json({ success: false, error: result.error }, { status: 500 });
     }
 
     if (wantsRedirect) {
-      return NextResponse.redirect(new URL('/#newsletter?subscribed=1', request.url), 303);
+      return NextResponse.redirect(new URL('/?subscribed=1#newsletter', request.url), 303);
     }
     return Response.json({ success: true });
   } catch {
     if (wantsRedirect) {
-      return NextResponse.redirect(new URL('/#newsletter?error=server_error', request.url), 303);
+      return NextResponse.redirect(new URL('/?error=server_error#newsletter', request.url), 303);
     }
     return Response.json({ success: false, error: 'server_error' }, { status: 500 });
   }

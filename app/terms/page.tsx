@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Terms of Use',
-  description: 'Terms of use for b2bleadgenerationtools.com.',
+  description: 'Terms of use for B2B Lead Generation Tools: content licensing, acceptable use, third-party links, and limitation of liability for our guides, templates, and tools.',
   path: '/terms'
 });
 

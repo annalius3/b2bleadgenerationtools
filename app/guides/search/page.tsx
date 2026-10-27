@@ -58,6 +58,7 @@ export default async function GuideSearchPage({ searchParams }: Props) {
         subtopics={query ? [`${filtered.length} matching guides`, 'Apollo', 'Outbound', 'Pipeline'] : hubContent.guides.subtopics}
       />
       <section className="pb-16">
+        <h2 className="sr-only">{query ? 'Search results' : 'All guides'}</h2>
         {query ? (
           <p className="mb-4 text-sm text-slate-600">
             Search results for <span className="font-semibold text-slate-900">&quot;{queryRaw}&quot;</span>: {filtered.length}

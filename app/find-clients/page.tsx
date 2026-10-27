@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Find Clients Hub',
-  description: 'Find B2B leads, decision-makers, and accounts with practical prospecting systems.',
+  description: 'Find B2B leads that convert: systems for building target account lists, finding decision-makers, and enriching data with Apollo.io and modern tools.',
   path: '/find-clients'
 });
 

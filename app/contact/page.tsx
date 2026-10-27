@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Contact',
-  description: 'Contact B2B Lead Generation Tools for advertising, partnerships, and collaboration requests.',
+  description: 'Contact B2B Lead Generation Tools for advertising, partnerships, guest posts, and collaboration requests. We read every message and reply within two days.',
   path: '/contact'
 });
 
@@ -21,7 +21,7 @@ export default function ContactPage() {
       />
       <section className="py-10">
         <div className="mx-auto max-w-3xl rounded-[2rem] border border-slate-200 bg-white p-8 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.28)]">
-          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-600">Contact</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">Contact</p>
           <h1 className="mt-3 text-3xl font-semibold text-slate-900">Advertising and partnership inquiries</h1>
           <p className="mt-4 text-sm leading-7 text-slate-600">
             For advertising opportunities, affiliate partnerships, sponsored placements, business collaboration, and all other commercial inquiries, email us directly.

@@ -16,7 +16,7 @@ const comparisons = [
   {
     tool: 'Apollo.io vs ZoomInfo',
     description: 'Apollo offers a built-in sequence engine and lower entry price, while ZoomInfo focuses on deeper data coverage for enterprise accounts.',
-    href: '/guides/apollo-vs-zoominfo',
+    href: '/guides/apollo-vs-zoominfo-for-small-business',
     category: 'Data & Intelligence'
   },
   {
@@ -38,10 +38,10 @@ const comparisons = [
     category: 'Social Selling'
   },
   {
-    tool: 'Apollo.io vs Lemlist',
-    description: 'Lemlist specializes in email warmup and deliverability, while Apollo provides a broader outbound operating system.',
-    href: '/guides/apollo-vs-lemlist',
-    category: 'Email Tools'
+    tool: 'Apollo.io vs Cognism',
+    description: 'Cognism focuses on verified European phone data and compliance documentation, while Apollo provides a broader all-in-one outbound platform.',
+    href: '/guides/apollo-vs-cognism',
+    category: 'Data & Intelligence'
   },
   {
     tool: 'Apollo.io vs Lusha',
@@ -52,25 +52,25 @@ const comparisons = [
   {
     tool: 'Apollo.io vs Seamless.AI',
     description: 'Seamless.AI focuses on real-time lead finding, while Apollo combines prospecting with outreach and pipeline management.',
-    href: '/guides/apollo-vs-seamless-ai',
+    href: '/guides/apollo-vs-seamless-ai-comparison',
     category: 'Data & Intelligence'
   },
   {
     tool: 'Apollo.io vs Instantly',
     description: 'Instantly is a cold email sending platform, while Apollo provides database, sequences, and dialer in one subscription.',
-    href: '/guides/apollo-vs-instantly',
+    href: '/guides/apollo-sequences-vs-instantly',
     category: 'Email Tools'
   },
   {
-    tool: 'Apollo.io vs Salesloft',
-    description: 'Salesloft is an enterprise sales engagement platform, while Apollo offers a leaner outbound system at a lower price point.',
-    href: '/guides/apollo-vs-salesloft',
-    category: 'Sales Engagement'
+    tool: 'Apollo.io vs RocketReach',
+    description: 'RocketReach specializes in contact lookup and API-driven enrichment, while Apollo bundles database, sequences, and dialer in one subscription.',
+    href: '/guides/apollo-vs-rocketreach',
+    category: 'Data & Intelligence'
   },
   {
     tool: 'Apollo.io vs HubSpot',
     description: 'HubSpot is a full CRM and marketing platform, while Apollo specializes in outbound prospecting and sequence management.',
-    href: '/guides/apollo-vs-hubspot',
+    href: '/guides/best-crm-for-lead-generation',
     category: 'CRM & Automation'
   }
 ];

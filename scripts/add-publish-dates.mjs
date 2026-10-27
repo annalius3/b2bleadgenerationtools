@@ -45,7 +45,6 @@ for (let idx = 0; idx < guides.length; idx++) {
   if (nextSlugIdx > 0 && relIdx > nextSlugIdx) { console.log(`  !! crossed object for ${g.slug}`); continue; }
 
   const insertAt = closeIdx + 1;
-  const insertion = `,\r\n    publishedAt: '${iso}',\r\n    updatedAt: '${iso}'`;
 
   // Determine line ending style near insertion point
   const sample = content.slice(relIdx - 2, relIdx);

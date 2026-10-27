@@ -15,7 +15,10 @@ import { guideOverrides } from '@/lib/guide-overrides';
 import { buildGuidePanels, buildGuideSectionLead, buildGuideToc, buildQuickFacts, inferGuideKind, kindSpecificCopy } from '@/lib/guide-kind';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
+import imageDimensions from '@/lib/image-dimensions.json';
 import { siteConfig } from '@/lib/site';
+
+const imageDimensionMap = imageDimensions as Record<string, number[]>;
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -163,7 +166,12 @@ export default async function GuidePage({ params }: Props) {
 
   const related = guide.relatedSlugs
     .map((item) => getGuideBySlug(item))
-    .filter((item): item is NonNullable<typeof item> => Boolean(item));
+    .filter((item): item is NonNullable<typeof item> => item != null && item.slug !== guide.slug);
+
+  const heroImageName = `${guide.slug}-1.jpg`;
+  const inlineImageName = `${guide.slug}-2.jpg`;
+  const [heroWidth, heroHeight] = imageDimensionMap[heroImageName] ?? [1024, 768];
+  const [inlineWidth, inlineHeight] = imageDimensionMap[inlineImageName] ?? [1024, 768];
 
   const sameHubGuides = guides
     .filter((item) => item.hub === guide.hub && item.slug !== guide.slug && !guide.relatedSlugs.includes(item.slug))
@@ -358,8 +366,8 @@ export default async function GuidePage({ params }: Props) {
           <Image
             src={`/images/guides/${guide.slug}-1.jpg`}
             alt={`Illustration for ${guide.title} — visual guide overview`}
-            width={1400}
-            height={780}
+            width={heroWidth}
+            height={heroHeight}
             sizes="(max-width: 639px) calc(100vw - 50px), (max-width: 1023px) calc(100vw - 66px), (max-width: 1279px) calc(100vw - 82px), 1198px"
             className="h-auto w-full rounded-xl"
             priority
@@ -504,8 +512,8 @@ export default async function GuidePage({ params }: Props) {
           <Image
             src={`/images/guides/${guide.slug}-2.jpg`}
             alt={`Step-by-step strategy breakdown for ${guide.title}`}
-            width={1400}
-            height={780}
+            width={inlineWidth}
+            height={inlineHeight}
             sizes="(max-width: 639px) calc(100vw - 100px), (max-width: 1023px) calc(100vw - 132px), (max-width: 1279px) calc(100vw - 480px), 800px"
             className="h-auto w-full rounded-xl"
           />

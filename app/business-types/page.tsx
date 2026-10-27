@@ -9,7 +9,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Business Types Hub',
-  description: 'Client acquisition and outbound systems organized by business type for modern B2B teams.',
+  description: 'Client acquisition playbooks organized by business type — from SaaS and agencies to healthcare and manufacturing — with channel and outreach tactics.',
   path: '/business-types'
 });
 

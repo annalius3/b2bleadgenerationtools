@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Sales Pipeline Hub',
-  description: 'Lead qualification, conversion, and pipeline management frameworks for outbound teams.',
+  description: 'Turn replies into revenue: lead qualification, deal closing, pipeline management, and forecasting frameworks for outbound B2B sales teams.',
   path: '/sales-pipeline'
 });
 

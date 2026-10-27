@@ -31,10 +31,6 @@ const CREDENTIALS = {
 const SCOPES = ['https://www.googleapis.com/auth/indexing'];
 const TOKEN_PATH = resolve(process.cwd(), '.gsc-tokens.json');
 
-function delay(ms) {
-  return new Promise(r => setTimeout(r, ms));
-}
-
 async function getAuthorizationCode() {
   const authUrl = `https://accounts.google.com/o/oauth2/auth?` +
     `client_id=${CREDENTIALS.client_id}&` +
@@ -99,26 +95,6 @@ async function exchangeCode(code) {
   }
 
   return response.json();
-}
-
-async function refreshAccessToken(refreshToken) {
-  const response = await fetch('https://oauth2.googleapis.com/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({
-      refresh_token: refreshToken,
-      client_id: CREDENTIALS.client_id,
-      client_secret: CREDENTIALS.client_secret,
-      grant_type: 'refresh_token'
-    })
-  });
-
-  if (!response.ok) {
-    throw new Error('Failed to refresh token');
-  }
-
-  const data = await response.json();
-  return { ...data, refresh_token: refreshToken };
 }
 
 async function main() {

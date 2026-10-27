@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Guides Hub',
-  description: 'Tutorials, case studies, templates, best practices, and Apollo guides.',
+  description: 'Browse 300+ practical guides on Apollo.io, cold email, prospecting, and outbound sales — tutorials, templates, and playbooks tested on real campaigns.',
   path: '/guides'
 });
 
@@ -35,6 +35,7 @@ export default function GuidesPage() {
         subtopics={hubContent.guides.subtopics}
       />
       <section className="pb-16">
+        <h2 className="sr-only">All guides</h2>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {guidePreviews.map((guide) => (
             <GuideCard key={guide.slug} guide={guide} />

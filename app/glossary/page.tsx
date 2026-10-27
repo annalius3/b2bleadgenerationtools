@@ -20,7 +20,7 @@ const terms = [
   { term: 'Deliverability', definition: 'The ability of your emails to reach the recipient\'s inbox rather than spam or promotions folders.', slug: null },
   { term: 'Email Sequence', definition: 'A series of pre-written emails sent automatically on a schedule, designed to nurture leads through the sales process.', slug: null },
   { term: 'Enrichment', definition: 'The process of adding missing data (job title, company size, industry) to existing contact records to improve targeting.', slug: null },
-  { term: 'Hub (Content Hub)', definition: 'A central page organizing related guides around a specific topic like outreach, pipeline management, or finding clients.', slug: 'find-clients' },
+  { term: 'Hub (Content Hub)', definition: 'A central page organizing related guides around a specific topic like outreach, pipeline management, or finding clients.' },
   { term: 'ICP (Ideal Customer Profile)', definition: 'A detailed description of the type of company and buyer most likely to benefit from your product or service.', slug: null },
   { term: 'Lead Qualification', definition: 'The process of evaluating whether a prospect matches your criteria for a viable sales opportunity.', slug: null },
   { term: 'Outbound Sales', definition: 'Proactively reaching out to potential customers through cold email, calls, LinkedIn, and other direct channels.', slug: null },

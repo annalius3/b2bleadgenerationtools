@@ -104,7 +104,8 @@ export default function AuthorPage() {
             </p>
             <p>
               This site exists because most lead generation advice online is written by people who have never sent a cold email at
-              scale. You get lists of "best practices" with no numbers, no failure cases, and no mention of what breaks when you move
+              scale. You get lists of &quot;best practices&quot; with no numbers, no failure cases, and no mention of what breaks when you
+              move
               from 50 sends a day to 500.
             </p>
             <p>

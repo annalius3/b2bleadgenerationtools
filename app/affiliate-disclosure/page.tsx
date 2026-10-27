@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Affiliate Disclosure',
-  description: 'Affiliate disclosure and editorial policy.',
+  description: 'How we make money: affiliate relationships, advertising policy, and the editorial standards that keep our recommendations independent and trustworthy.',
   path: '/affiliate-disclosure'
 });
 

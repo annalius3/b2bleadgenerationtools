@@ -812,7 +812,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-cold-email-sequence-template',
     title: 'Apollo Cold Email Sequence Template That Gets Replies',
-    description: 'A sequence structure with timing and message intent for first-touch outbound campaigns.',
+    description: 'A sequence structure with timing and message intent for first-touch outbound campaigns: email angles, follow-up gaps, and reply-handling rules.',
     hub: 'outreach',
     industries: ['marketing-agencies', 'it-services', 'recruiters'],
     steps: [
@@ -881,7 +881,7 @@ export const guides: Guide[] = [
   {
     slug: 'lead-qualification-system',
     title: 'Lead Qualification System to Focus on Revenue Potential',
-    description: 'A practical qualification framework to prioritize high-value opportunities.',
+    description: 'Qualification framework to prioritize high-value opportunities: scoring criteria, discovery questions, and handoff rules that keep reps focused.',
     hub: 'sales-pipeline',
     industries: ['it-services', 'manufacturing', 'saas-companies'],
     steps: [
@@ -927,7 +927,7 @@ export const guides: Guide[] = [
   {
     slug: 'startup-outbound-first-customers',
     title: 'Startup Outbound Playbook to Win First 20 Customers',
-    description: 'A lean outbound system for early-stage founders with limited budget and time.',
+    description: 'A lean outbound system for early-stage founders with limited budget and time: ICP selection, list building, and first-touch messaging that books calls.',
     hub: 'for-startups',
     industries: ['saas-companies', 'consulting-firms'],
     steps: [
@@ -950,7 +950,7 @@ export const guides: Guide[] = [
   {
     slug: 'low-budget-lead-generation-startups',
     title: 'Low-Budget Lead Generation Strategies for Startups',
-    description: 'Reduce tool sprawl and build a compact GTM stack that still produces pipeline.',
+    description: 'Reduce tool sprawl and build a compact GTM stack that still produces pipeline: Apollo workflows, free data sources, and outreach habits for lean teams.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies'],
     steps: [
@@ -996,7 +996,7 @@ export const guides: Guide[] = [
   {
     slug: 'reply-strategy-for-b2b-outreach',
     title: 'Reply Strategy for B2B Outreach Conversations',
-    description: 'Turn replies into qualified calls with structured response playbooks.',
+    description: 'Turn replies into qualified calls with structured response playbooks: objection handling, meeting asks, and follow-up cadences for B2B outbound.',
     hub: 'guides',
     industries: ['recruiters', 'saas-companies', 'it-services'],
     steps: [
@@ -1442,7 +1442,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-get-clients-using-apollo-io',
     title: 'How to Get Clients Using Apollo.io',
-    description: 'A direct system to turn Apollo prospecting into booked meetings and paying B2B clients.',
+    description: 'A direct system to turn Apollo prospecting into booked meetings and paying B2B clients — list filters, messaging, and follow-up routines that work.',
     hub: 'for-startups',
     industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
     steps: [
@@ -1871,7 +1871,7 @@ export const guides: Guide[] = [
   {
     slug: 'low-budget-lead-generation-for-startups',
     title: 'Low-Budget Lead Generation for Startups',
-    description: 'A lean lead generation model for startups that need results without expanding tool costs.',
+    description: 'A lean lead generation model for startups that need results without expanding tool costs: Apollo credits, manual enrichment, and focused outreach.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2185,7 +2185,7 @@ export const guides: Guide[] = [
   {
     slug: 'sales-strategy-for-service-companies',
     title: 'Sales Strategy for Service Companies',
-    description: 'How service companies build a practical B2B sales strategy from targeting to close.',
+    description: 'How service companies build a practical B2B sales strategy from targeting to close — positioning, outreach channels, and proposal follow-through.',
     hub: 'sales-pipeline',
     industries: ['consulting-firms', 'it-services', 'manufacturing'],
     steps: [
@@ -2243,7 +2243,7 @@ export const guides: Guide[] = [
   {
     slug: 'lead-generation-for-freelancers',
     title: 'Lead Generation for Freelancers',
-    description: 'A lightweight outbound system for freelancers to get consistent B2B leads using Apollo.',
+    description: 'A lightweight outbound system for freelancers to get consistent B2B leads using Apollo: niche selection, list hygiene, and simple follow-up cadences.',
     hub: 'for-startups',
     industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
     steps: [
@@ -2428,7 +2428,7 @@ export const guides: Guide[] = [
   {
     slug: 'building-email-sequences',
     title: 'Building Email Sequences',
-    description: 'How to design email sequences that create conversations instead of spam-like follow-ups.',
+    description: 'How to design email sequences that create conversations instead of spam-like follow-ups — structure, timing, and message intent for B2B outbound.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
     steps: [
@@ -2451,7 +2451,7 @@ export const guides: Guide[] = [
   {
     slug: 'follow-up-automation',
     title: 'Follow-Up Automation',
-    description: 'How to automate follow-ups in Apollo while keeping messaging relevant and human.',
+    description: 'How to automate follow-ups in Apollo while keeping messaging relevant and human — sequence rules, personalization tokens, and stop conditions.',
     hub: 'outreach',
     industries: ['saas-companies', 'it-services', 'marketing-agencies'],
     steps: [
@@ -7209,7 +7209,7 @@ export const guides: Guide[] = [
       { question: 'What is the best way to find property owners to pitch?', answer: 'Combine Apollo.io company searches (LLCs with real estate SIC codes) with county assessor records for multi-property owners. LinkedIn is effective for reaching out-of-state owners who manage from a distance. The most efficient approach is building a list of 200-300 owners with 2+ properties and working it systematically.' },
       { question: 'Should property managers offer discounted fees to win contracts?', answer: 'Temporary discounts (first 3 months) can open doors with price-sensitive owners, but permanent discounting undermines profitability. Instead, emphasize value: response time, tenant screening quality, and financial reporting. Owners who switch for service quality stay longer than those who switch for price.' }
     ],
-    relatedSlugs: ['how-property-managers-get-clients', 'how-cleaning-companies-get-commercial-clients', 'lead-generation-for-proptech-companies'],
+    relatedSlugs: ['how-cleaning-companies-get-commercial-clients', 'lead-generation-for-proptech-companies', 'lead-generation-for-real-estate-services'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7275,7 +7275,7 @@ export const guides: Guide[] = [
       { question: 'What is the best way to approach property management companies?', answer: 'Direct outreach via email with a portfolio-specific reference, followed by a phone call 5 days later. Reference a comparable building you serve and offer a walkthrough of their property with a no-obligation assessment. The walkthrough converts at 40-60% because it demonstrates quality in person.' },
       { question: 'How long are typical commercial cleaning contracts?', answer: 'Most commercial cleaning contracts run 1-3 years with annual renewal options. Building management contracts often align with fiscal years. The most successful companies negotiate 3-year terms with annual price escalators to protect against labor cost increases.' }
     ],
-    relatedSlugs: ['how-cleaning-companies-get-commercial-clients', 'how-pest-control-companies-get-clients', 'how-property-managers-get-clients'],
+    relatedSlugs: ['how-pest-control-companies-get-clients', 'how-property-managers-get-clients', 'lead-generation-for-hvac-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7341,7 +7341,7 @@ export const guides: Guide[] = [
       { question: 'When is the best time to approach property managers about landscaping contracts?', answer: 'January through March for spring contracts (most properties renew before spring season), September through October for HOA annual budgets, and Q4 for municipal and government fiscal year bids. Starting outreach 60-90 days before their decision window gives you the best chance.' },
       { question: 'Should landscaping companies bid on government contracts?', answer: 'Government contracts provide stable, well-paying work but require specific certifications (minority/women-owned business status, bonding capacity) and involve lengthy RFP processes. For established companies with administrative capacity, they are excellent revenue streams. For startups, they are usually too time-consuming to pursue initially.' }
     ],
-    relatedSlugs: ['how-landscaping-companies-get-clients', 'how-landscaping-companies-get-clients', 'how-pest-control-companies-get-clients'],
+    relatedSlugs: ['how-pest-control-companies-get-clients', 'how-cleaning-companies-get-commercial-clients', 'outbound-sales-strategy-for-local-service-businesses'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7407,7 +7407,7 @@ export const guides: Guide[] = [
       { question: 'How do you get your first commercial pest control contract?', answer: 'Start by offering free inspections to property managers in your area — target 30 properties within the first month. Follow up each inspection with a written report and proposal within 48 hours. The free inspection removes the barrier to entry and demonstrates professionalism. Expect to close 20-30% of inspections as contracts.' },
       { question: 'Is pest control a seasonal business?', answer: 'Demand peaks in spring and summer, but annual contracts smooth revenue across the year. Companies with strong contract bases report only 15-20% seasonal variation versus 50-60% for those relying on one-off treatments. Building a contract portfolio is the most effective way to stabilize revenue.' }
     ],
-    relatedSlugs: ['how-pest-control-companies-get-clients', 'how-cleaning-companies-get-commercial-clients', 'how-cleaning-companies-get-commercial-clients'],
+    relatedSlugs: ['how-cleaning-companies-get-commercial-clients', 'how-landscaping-companies-get-clients', 'lead-generation-for-hvac-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7473,7 +7473,7 @@ export const guides: Guide[] = [
       { question: 'What is the best way to find freight shippers to contact?', answer: 'Use Apollo.io with NAICS codes for manufacturing (31-33), wholesale (42), and distribution companies with 50-500 employees in your target lanes. Cross-reference with LinkedIn job postings for logistics roles and company news about facility expansions. Companies opening new warehouses are guaranteed to increase shipping volume.' },
       { question: 'How do freight brokers compete with digital freight platforms?', answer: 'Compete on relationship and problem-solving, not rates. Digital platforms handle standard lanes well, but shippers need brokers for complex scenarios: capacity crunches, new lanes, specialized equipment, and exception management. Position yourself as a supply chain partner who solves problems, not a rate-quote machine. This consulting approach commands higher margins and deeper loyalty.' }
     ],
-    relatedSlugs: ['apollo-for-logistics-companies', 'outbound-for-freight-brokers', 'outbound-for-supply-chain-tech'],
+    relatedSlugs: ['apollo-for-logistics-companies', 'lead-generation-for-logistics-companies', 'outbound-for-supply-chain-tech'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7539,7 +7539,7 @@ export const guides: Guide[] = [
       { question: 'What is the best way to reach event budget holders?', answer: 'Apollo.io with title filters for Marketing Director, VP Marketing, HR Director, Director of People, and Chief of Staff at companies with 100-1,000 employees. Time outreach to their planning cycles: Q4 for annual events, 4-6 months before known event dates. LinkedIn engagement before cold email increases response rates significantly.' },
       { question: 'How long is a typical event management sales cycle?', answer: 'Sales cycles vary by event type: team offsites convert in 2-4 weeks, annual meetings in 1-3 months, product launches in 3-6 months, and conferences in 6-12 months. The fastest conversions come from prospects with a confirmed event date and budget already allocated.' }
     ],
-    relatedSlugs: ['lead-generation-for-event-management-companies', 'lead-generation-for-event-management-companies', 'lead-generation-for-corporate-training-companies'],
+    relatedSlugs: ['lead-generation-for-corporate-training-companies', 'lead-generation-for-nonprofit-organizations', 'cold-email-for-marketing-agencies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7605,7 +7605,7 @@ export const guides: Guide[] = [
       { question: 'What companies need localization services?', answer: 'SaaS companies expanding internationally, e-commerce brands entering new markets, gaming companies launching globally, medical device companies requiring regulatory-compliant translations, and legal firms needing certified translations. The highest-value targets are companies with 50-500 employees that have outgrown DIY translation but are not yet enterprise-scale.' },
       { question: 'How long is a typical localization sales cycle?', answer: 'Website localization projects convert in 2-4 weeks. Product and software localization cycles run 1-3 months due to technical scoping. Enterprise localization contracts take 3-6 months with procurement and vendor evaluation processes. The fastest conversions come from prospects with a confirmed market launch date.' }
     ],
-    relatedSlugs: ['client-acquisition-for-translation-agencies', 'client-acquisition-for-translation-agencies', 'client-acquisition-for-web-development-agencies'],
+    relatedSlugs: ['client-acquisition-for-web-development-agencies', 'how-design-agencies-get-clients', 'cold-email-for-pr-agencies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7673,7 +7673,7 @@ export const guides: Guide[] = [
       { question: 'How do PR agencies find startup clients?', answer: 'The most effective channels are: (1) tracking funding announcements through Crunchbase and PitchBook for outreach triggers, (2) LinkedIn content demonstrating media expertise, (3) founder community referrals (YC, Techstars networks), and (4) strategic partnerships with VC firms who recommend PR resources to their portfolio companies.' },
       { question: 'How long before PR results show business impact?', answer: 'Media placements can appear within 2-4 weeks of campaign start. Measurable business impact (inbound leads, traffic spikes, brand searches) typically appears within 3-6 months of consistent media presence. Retainer clients should be prepared for a 6-month horizon to see full ROI.' }
     ],
-    relatedSlugs: ['cold-email-for-pr-agencies', 'cold-email-for-pr-agencies', 'cold-email-for-insurtech-companies'],
+    relatedSlugs: ['client-acquisition-for-translation-agencies', 'cold-email-for-marketing-agencies', 'apollo-outbound-for-marketing-agencies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7739,7 +7739,7 @@ export const guides: Guide[] = [
       { question: 'How do executive search firms find clients?', answer: 'The highest-converting channels are: (1) investor and board member referrals, (2) thought leadership and content marketing, (3) alumni network relationships, and (4) direct CEO outreach timed to leadership triggers. Cold outreach to CEOs works when it demonstrates market expertise rather than sales intent.' },
       { question: 'What is the typical executive search sales cycle?', answer: 'From first contact to signed mandate: 2-6 weeks for warm referrals and inbound leads, 1-3 months for cold outreach to CEOs, and 3-6 months for enterprise procurement processes. The fastest conversions come from CEOs who have already decided to hire and are evaluating firms.' }
     ],
-    relatedSlugs: ['outbound-for-executive-search-firms', 'outbound-for-executive-search-firms', 'outbound-for-freight-brokers'],
+    relatedSlugs: ['apollo-for-recruiters', 'candidate-sourcing-with-apollo', 'how-recruiters-get-first-clients'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7805,7 +7805,7 @@ export const guides: Guide[] = [
       { question: 'How do you reach L&D directors who ignore vendor emails?', answer: 'Combine cold email with LinkedIn thought leadership — engage with their content before emailing, share relevant research, and reference specific initiatives they have mentioned publicly. The multi-channel approach (LinkedIn + email + phone) converts at 3-4x email-only outreach. Industry events and L&D conferences also provide warm meeting opportunities.' },
       { question: 'What training topics have the highest demand in 2026?', answer: 'Highest-demand topics: AI skills and tool adoption, new manager development, leadership transitions, DEI and belonging, cybersecurity awareness, and change management. Training tied to visible business problems (AI transformation, post-merger integration) commands the highest budgets and fastest approvals.' }
     ],
-    relatedSlugs: ['lead-generation-for-corporate-training-companies', 'lead-generation-for-corporate-training-companies', 'lead-generation-for-event-management-companies'],
+    relatedSlugs: ['lead-generation-for-event-management-companies', 'lead-generation-for-nonprofit-organizations', 'client-acquisition-for-consultants'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7871,7 +7871,7 @@ export const guides: Guide[] = [
       { question: 'How many clients should a fractional executive have?', answer: 'Most fractional executives work with 2-4 simultaneous clients to maintain quality and avoid burnout. The optimal number depends on time commitment per client: if each requires 2 days/week, you can realistically manage 2-3 clients while keeping a day for business development. Revenue diversification across 3+ clients reduces income risk.' },
       { question: 'What is the best channel for finding fractional executive clients?', answer: 'LinkedIn thought leadership combined with VC investor referrals produces the highest-quality clients. Cold outreach works when targeted to recently funded companies with clear trigger events. The most successful fractional executives generate 60%+ of clients through referrals and inbound within their first year of building authority.' }
     ],
-    relatedSlugs: ['client-acquisition-for-fractional-executives', 'client-acquisition-for-fractional-executives', 'lead-generation-for-hr-tech-startups'],
+    relatedSlugs: ['lead-generation-for-hr-tech-startups', 'client-acquisition-for-consultants', 'how-to-build-a-b2b-client-acquisition-system'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -7937,7 +7937,7 @@ export const guides: Guide[] = [
       { question: 'What is the average churn rate for coworking spaces?', answer: 'Individual coworking members churn at 30-50% annually. Corporate team members churn at 15-25% annually due to longer contract commitments. Spaces with active community programming see churn rates 20-30% below industry averages. The goal is 70%+ corporate membership to stabilize revenue.' },
       { question: 'How do coworking spaces attract corporate clients?', answer: 'The most effective channels are: (1) targeting recently funded startups that need space within 60-90 days, (2) partnerships with real estate agents and business incubators, (3) LinkedIn outreach to office managers and people ops leaders, and (4) offering free trial days or week-long passes that let teams experience the space before committing.' }
     ],
-    relatedSlugs: ['member-acquisition-for-coworking-spaces', 'member-acquisition-for-coworking-spaces', 'lead-generation-for-event-management-companies'],
+    relatedSlugs: ['lead-generation-for-event-management-companies', 'lead-generation-for-real-estate-services', 'cold-email-for-marketing-agencies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8003,7 +8003,7 @@ export const guides: Guide[] = [
       { question: 'How do nonprofits find corporate donors?', answer: 'Research companies with visible CSR commitments through their annual reports, ESG disclosures, and LinkedIn posts. Use Apollo.io to identify CSR managers and community relations directors at companies in your area or industry alignment. Attend local business events and chamber of commerce meetings. Partner with corporate volunteer programs as an entry point.' },
       { question: 'What is a realistic grant success rate?', answer: 'First-time applicants typically see 10-20% success rates. Nonprofits that research funder alignment, build officer relationships, and refine proposals based on feedback achieve 30-40% success rates. The key is quality over quantity — 10 well-researched applications outperform 50 generic ones.' }
     ],
-    relatedSlugs: ['lead-generation-for-nonprofit-organizations', 'fundraising-outreach-for-nonprofits', 'lead-generation-for-corporate-training-companies'],
+    relatedSlugs: ['fundraising-outreach-for-nonprofits', 'lead-generation-for-corporate-training-companies', 'lead-generation-for-event-management-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8069,7 +8069,7 @@ export const guides: Guide[] = [
       { question: 'How do biotech startups find pharma BD contacts?', answer: 'Use Apollo.io with pharmaceutical company filters, targeting VP of Business Development and therapeutic area leaders. BIO and JPM conference partnering systems provide direct access. LinkedIn is effective for relationship-building before formal meetings. Scientific publications with pharma co-authors indicate existing relationships that may be leveraged.' },
       { question: 'What is the typical structure of a biotech-pharma deal?', answer: 'Common structures: upfront payment ($1M-$50M), development milestones ($10M-$100M), regulatory milestones ($20M-$200M), commercial milestones ($50M-$500M), and royalties (2-8% of net sales). Total deal value ranges from $50M for early-stage partnerships to $1B+ for late-stage assets.' }
     ],
-    relatedSlugs: ['outbound-sales-for-biotech-startups', 'outbound-sales-for-biotech-startups', 'outbound-sales-for-medical-device-companies'],
+    relatedSlugs: ['outbound-sales-for-medical-device-companies', 'outbound-for-fintech-startups', 'cold-email-for-healthcare-services'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8135,7 +8135,7 @@ export const guides: Guide[] = [
       { question: 'How do you find out when a business\'s telecom contract expires?', answer: 'Ask directly in outreach ("When does your current contract come up for renewal?"), research LinkedIn for technology refresh announcements, check FCC Form 499 filings for carriers serving the account, and use renewal tracking tools like Datanyze or ZoomInfo. Building a renewal calendar from known data allows precise timing of follow-up outreach.' },
       { question: 'What differentiates telecom providers in B2B sales?', answer: 'Reliability metrics (uptime SLA, response time guarantees), local network performance (latency, bandwidth consistency), consolidation capabilities for multi-site businesses, and service quality (dedicated account management, proactive monitoring). Price matters but rarely wins — IT directors prioritize reliability and support quality.' }
     ],
-    relatedSlugs: ['lead-generation-for-telecom-companies', 'lead-generation-for-telecom-companies', 'lead-generation-for-hr-tech-startups'],
+    relatedSlugs: ['lead-generation-for-it-services', 'cold-email-for-it-services', 'lead-generation-for-hr-tech-startups'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8201,7 +8201,7 @@ export const guides: Guide[] = [
       { question: 'How do you approach facility managers for waste contracts?', answer: 'Lead with a free waste audit that includes cost comparison and diversion recommendations. The audit provides value regardless of whether they switch, removing the friction from the first engagement. Follow up the audit with a written proposal within 48 hours that includes service customization, pricing, and sustainability reporting options.' },
       { question: 'What role does ESG play in waste management purchasing?', answer: 'ESG is increasingly the primary differentiator in waste management procurement. Companies with sustainability mandates, LEED requirements, or ESG reporting obligations need waste partners who provide diversion data, recycling program management, and compliance reporting. This positions waste management as a sustainability service, not a commodity hauling service, and commands 15-30% price premiums.' }
     ],
-    relatedSlugs: ['b2b-lead-generation-for-waste-management', 'b2b-lead-generation-for-waste-management', 'how-cleaning-companies-get-commercial-clients'],
+    relatedSlugs: ['how-cleaning-companies-get-commercial-clients', 'lead-generation-for-hvac-companies', 'outbound-sales-strategy-for-local-service-businesses'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8267,7 +8267,7 @@ export const guides: Guide[] = [
       { question: 'How do HR tech startups compete with free tools?', answer: 'Position against the hidden costs of free tools: compliance risk, administrative time, data security, and scalability limits. "Google Sheets is free — until a compliance audit finds a classification error that costs $50,000." Quantify the risk of the status quo rather than competing on feature comparison.' },
       { question: 'What is the best channel for HR tech lead generation?', answer: 'The highest-converting channels are: (1) comparison content capturing buyers during research, (2) LinkedIn outreach to HR leaders at companies crossing headcount thresholds, (3) HR community participation (SHRM, LinkedIn HR groups), and (4) partnerships with HR consultants and PEOs who recommend technology to their clients.' }
     ],
-    relatedSlugs: ['lead-generation-for-hr-tech-startups', 'lead-generation-for-hr-tech-startups', 'outbound-for-peo-companies'],
+    relatedSlugs: ['outbound-for-peo-companies', 'lead-generation-for-saas-companies', 'how-saas-startups-get-first-customers'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8335,7 +8335,7 @@ export const guides: Guide[] = [
       { question: 'What certifications do fintech buyers require?', answer: 'SOC 2 Type II is the baseline for B2B fintech. PCI DSS Level 1 is required for payment processing. ISO 27001 adds international credibility. GDPR compliance is required for any data touching EU citizens. Displaying these prominently in outreach and on your website removes the most common early-stage objection.' },
       { question: 'How do fintech startups compete with established platforms?', answer: 'Compete on specialization and service: niche focus (a specific industry or use case the incumbent ignores), faster implementation (weeks vs. months), better support (dedicated account team vs. ticket queue), and pricing (transparent vs. enterprise negotiation). Position as "built for your specific need" versus "one platform for everyone."' }
     ],
-    relatedSlugs: ['outbound-for-fintech-startups', 'outbound-for-fintech-startups', 'cold-email-for-insurtech-companies'],
+    relatedSlugs: ['cold-email-for-insurtech-companies', 'apollo-outbound-for-saas-companies', 'lead-generation-for-saas-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8401,7 +8401,7 @@ export const guides: Guide[] = [
       { question: 'What is the typical PropTech sales cycle?', answer: 'PropTech sales cycles average 2-4 months for regional property managers (1,000-10,000 doors) and 4-8 months for enterprise operators (10,000+ doors). The security and data migration assessment adds 3-6 weeks. Pilots (60-90 days) are commonly required before full commitment.' },
       { question: 'How do you compete with established property management software?', answer: 'Position as a complement, not a replacement: integrate with their existing system (Yardi, AppFolio) and solve a specific gap. Lead with modern UX for field workers, faster implementation timelines, and measurable operational improvements. Direct competition with entrenched systems fails; specialized layering succeeds.' }
     ],
-    relatedSlugs: ['lead-generation-for-proptech-companies', 'lead-generation-for-proptech-companies', 'how-property-managers-get-clients'],
+    relatedSlugs: ['how-property-managers-get-clients', 'lead-generation-for-construction-tech-startups', 'lead-generation-for-real-estate-services'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8467,7 +8467,7 @@ export const guides: Guide[] = [
       { question: 'What is the ConTech sales cycle?', answer: 'ConTech sales cycles average 2-4 months for mid-market GCs and 4-8 months for enterprise contractors. Pilots (60-90 days) are commonly required before full contracts. The fastest conversions come from GCs experiencing a specific pain point (failed project, audit finding, major client requirement for digital processes).' },
       { question: 'How do you convince field crews to adopt new technology?', answer: 'Field adoption requires: mobile-first design that works with gloves and poor connectivity, offline capability for jobsites without wifi, 3-tap workflows (no training manual), and visible time savings in the first week. Involving superintendents in the evaluation phase and offering incentives (lunch during pilot, recognition for adoption) dramatically improve field compliance.' }
     ],
-    relatedSlugs: ['lead-generation-for-construction-tech-startups', 'lead-generation-for-construction-tech-startups', 'lead-generation-for-construction-tech-startups'],
+    relatedSlugs: ['lead-generation-for-proptech-companies', 'lead-generation-for-construction-companies', 'how-construction-companies-get-first-clients'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8533,7 +8533,7 @@ export const guides: Guide[] = [
       { question: 'How much should web development agencies charge?', answer: 'Specialized agencies charge $150-$300/hour or project-based pricing: $15,000-$50,000 for business websites, $50,000-$250,000 for web applications, and $10,000-$75,000 for e-commerce builds. Niche specialists command 30-50% premiums over generalist agencies due to demonstrated domain expertise.' },
       { question: 'What niche should a web development agency choose?', answer: 'Choose based on three factors: existing experience (what have you built the most of?), market demand (are companies in this niche actively spending on development?), and competition (can you differentiate from existing agencies in this space?). Strong niches in 2026: Shopify Plus for DTC brands, Next.js for SaaS companies, WordPress enterprise for publishers, and industry-specific compliance (healthcare, fintech).' }
     ],
-    relatedSlugs: ['client-acquisition-for-web-development-agencies', 'client-acquisition-for-web-development-agencies', 'client-acquisition-for-translation-agencies'],
+    relatedSlugs: ['client-acquisition-for-translation-agencies', 'how-design-agencies-get-clients', 'how-marketing-agencies-get-first-clients'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8599,7 +8599,7 @@ export const guides: Guide[] = [
       { question: 'How do design agencies find their first clients?', answer: 'The fastest channels: (1) LinkedIn thought leadership (UX teardowns, design process content), (2) design community participation (Dribbble, Designer News, product management groups), (3) founder network referrals, and (4) design sprints offered at competitive rates to build case studies and testimonials.' },
       { question: 'What separates design agencies from freelance designers?', answer: 'Agencies provide: team depth (multiple specialists for research, UX, UI, and systems), process rigor (discovery, research, iteration, testing), scalability (ramp up for big projects), and strategic partnership (design tied to business goals, not just visual execution). Position around these capabilities when competing against freelancers on price.' }
     ],
-    relatedSlugs: ['how-design-agencies-get-clients', 'how-design-agencies-get-clients', 'client-acquisition-for-web-development-agencies'],
+    relatedSlugs: ['client-acquisition-for-web-development-agencies', 'client-acquisition-for-translation-agencies', 'how-marketing-agencies-get-first-clients'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8665,7 +8665,7 @@ export const guides: Guide[] = [
       { question: 'When should a company switch from payroll software to a PEO?', answer: 'The PEO sweet spot is 20-50 employees with multi-state operations, complex benefits needs, or compliance concerns. Below 15 employees, payroll software is usually sufficient. Above 100, companies often transition from PEO to enterprise HRIS. The buying trigger is typically a compliance scare or benefits administration crisis.' },
       { question: 'What is the best channel for PEO lead generation?', answer: 'Accountant and bookkeeper referrals convert at 40-50% — the highest of any channel. Founder-stage targeted outreach (Apollo.io with 20-50 employee filter) produces volume. LinkedIn thought leadership on HR compliance topics generates inbound interest. A combination of referral partnerships and targeted outreach creates the most stable pipeline.' }
     ],
-    relatedSlugs: ['outbound-for-peo-companies', 'outbound-for-peo-companies', 'lead-generation-for-hr-tech-startups'],
+    relatedSlugs: ['lead-generation-for-hr-tech-startups', 'cold-email-for-financial-services', 'apollo-for-financial-services'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8731,7 +8731,7 @@ export const guides: Guide[] = [
       { question: 'Who makes technology decisions at insurance carriers?', answer: 'The buying committee typically includes: Chief Technology Officer (architecture), Chief Digital Officer or Head of Innovation (transformation strategy), business unit VPs (Claims, Underwriting for specific solutions), and Chief Risk Officer or Compliance (regulatory veto). Engaging at least three of these stakeholders simultaneously prevents deals from stalling at any single gatekeeper.' },
       { question: 'What do insurance carriers look for in technology vendors?', answer: 'Insurance carriers evaluate: legacy system integration capability (Guidewire, Duck Creek compatibility), compliance and regulatory alignment (state-specific requirements), security certifications (SOC 2, data encryption), references from recognizable insurers, vendor financial stability (they will check your balance sheet), and implementation track record (on-time, on-budget delivery proof).' }
     ],
-    relatedSlugs: ['cold-email-for-insurtech-companies', 'cold-email-for-insurtech-companies', 'outbound-for-fintech-startups'],
+    relatedSlugs: ['outbound-for-fintech-startups', 'cold-email-for-financial-services', 'apollo-for-financial-services'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8797,7 +8797,7 @@ export const guides: Guide[] = [
       { question: 'Who is the decision-maker for supply chain technology?', answer: 'The VP of Supply Chain or Chief Supply Chain Officer typically owns the budget, while the Director of Procurement or Director of Logistics runs the evaluation. IT must approve integration architecture, and the CFO approves significant investments. Successful deals engage all four stakeholders with role-specific messaging from the outset.' },
       { question: 'How do supply chain tech companies build credibility?', answer: 'Credibility comes from: specific ERP integration documentation (name your supported systems), recognizable reference customers in similar industries, industry intelligence content (weekly disruption briefings, benchmark reports), security certifications (SOC 2), and scoped pilots with performance guarantees. The combination of technical proof and market authority accelerates trust-building.' }
     ],
-    relatedSlugs: ['outbound-for-supply-chain-tech', 'outbound-for-supply-chain-tech', 'outbound-for-freight-brokers'],
+    relatedSlugs: ['outbound-for-freight-brokers', 'lead-generation-for-logistics-companies', 'apollo-for-logistics-companies'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },
@@ -8929,7 +8929,7 @@ export const guides: Guide[] = [
       { question: 'Who should nonprofits approach for corporate funding?', answer: 'Target the CSR Manager or Director of Community Relations at companies with visible ESG commitments. For companies under 200 employees, approach the Founder or VP of HR directly. Research company priorities through sustainability reports, LinkedIn posts, and industry giving patterns before reaching out to ensure alignment with your cause.' },
       { question: 'How long does it take to close a corporate partnership?', answer: 'From first contact to signed agreement: 1-3 months for event sponsorships, 3-6 months for annual partnerships, and 6-12 months for strategic CSR partnerships with employee engagement. Warm introductions shorten timelines by 40-60%. The fastest conversions happen when your mission aligns directly with the company\'s publicly stated CSR priorities.' }
     ],
-    relatedSlugs: ['lead-generation-for-nonprofit-organizations', 'fundraising-outreach-for-nonprofits', 'lead-generation-for-event-management-companies'],
+    relatedSlugs: ['lead-generation-for-nonprofit-organizations', 'lead-generation-for-event-management-companies', 'multi-step-outreach-playbook'],
     publishedAt: '2026-04-15',
     updatedAt: '2026-04-15'
   },

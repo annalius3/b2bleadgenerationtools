@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'For Startups Hub',
-  description: 'Outbound and low-budget lead generation playbooks for early-stage startups.',
+  description: 'Outbound playbooks for early-stage startups: get your first customers, build founder-led sales, and generate leads on a small budget without paid ads.',
   path: '/for-startups'
 });
 

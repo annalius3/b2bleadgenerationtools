@@ -8,7 +8,7 @@ import { siteConfig } from '@/lib/site';
 
 export const metadata = buildMetadata({
   title: 'Outreach Hub',
-  description: 'Cold email, follow-up, personalization, and reply strategy guides for B2B outbound.',
+  description: 'Cold email, follow-ups, and multichannel outreach guides that produce replies — templates, deliverability tactics, and personalization frameworks.',
   path: '/outreach'
 });
 

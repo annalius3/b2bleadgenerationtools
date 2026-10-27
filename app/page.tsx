@@ -12,7 +12,7 @@ import { NewsletterForm } from '@/components/newsletter-form';
 import { TrackedIndustryLink } from '@/components/tracked-industry-link';
 import { renderApolloText } from '@/lib/render-apollo-text';
 import { buildMetadata } from '@/lib/seo';
-import { guides, industries, getGuidesByHub } from '@/lib/content';
+import { industries, getGuidesByHub } from '@/lib/content';
 import { siteConfig } from '@/lib/site';
 import { BreadcrumbSchema } from '@/components/seo-schemas';
 
