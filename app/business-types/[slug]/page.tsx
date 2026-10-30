@@ -45,6 +45,8 @@ export default async function BusinessTypePage({ params }: Props) {
   const featuredGuides = industry.featuredSlugs
     .map((guideSlug) => getGuideBySlug(guideSlug))
     .filter((guide): guide is NonNullable<typeof guide> => Boolean(guide));
+  const featuredGuideSlugs = new Set(featuredGuides.map((guide) => guide.slug));
+  const remainingGuides = industryGuides.filter((guide) => !featuredGuideSlugs.has(guide.slug));
 
   return (
     <Container>
@@ -120,19 +122,23 @@ export default async function BusinessTypePage({ params }: Props) {
         </div>
       </section>
 
-      <section className="defer-section pb-16">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">All guides</p>
-            <h2 className="mt-2 text-2xl font-semibold text-slate-900">{industryGuides.length} guides for {industry.name}</h2>
+      {remainingGuides.length > 0 && (
+        <section className="defer-section pb-16">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-700">All guides</p>
+              <h2 className="mt-2 text-2xl font-semibold text-slate-900">
+                {remainingGuides.length} more guides for {industry.name}
+              </h2>
+            </div>
           </div>
-        </div>
-        <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {industryGuides.map((guide) => (
-            <GuideCard key={guide.slug} guide={guide} />
-          ))}
-        </div>
-      </section>
+          <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            {remainingGuides.map((guide) => (
+              <GuideCard key={guide.slug} guide={guide} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <ShareButtons title={`${industry.name} Lead Generation Guides`} path={`/business-types/${industry.slug}`} />
     </Container>
