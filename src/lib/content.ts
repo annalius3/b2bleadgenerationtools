@@ -445,7 +445,7 @@ export const industries: Industry[] = [
     painPoints: ['Seasonal client lulls', 'Heavy reliance on Google Ads with rising CPCs', 'Difficulty differentiating from nearby clinics'],
     strategy: ['Partner with pet stores, shelters, and groomers for referral pipelines', 'Use Apollo to find pet industry businesses for B2B partnerships', 'Build email sequences around pet health awareness campaigns'],
     subtopics: ['Local veterinary marketing', 'Referral partnerships', 'Pet owner retention'],
-    featuredSlugs: ['lead-generation-for-veterinary-clinics', 'how-to-get-more-veterinary-clients', 'cold-email-for-veterinary-clinics'],
+    featuredSlugs: ['lead-generation-for-veterinary-clinics', 'how-to-build-a-lead-list-in-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'Veterinary clinic team discussing client acquisition strategy'
   },
   {
@@ -456,7 +456,7 @@ export const industries: Industry[] = [
     painPoints: ['Rising patient acquisition costs', 'Low visibility in local search', 'High attrition from insurance changes'],
     strategy: ['Build referral relationships with local businesses and health practitioners', 'Use content marketing around dental health topics', 'Implement recall systems for lapsed patients'],
     subtopics: ['Patient acquisition', 'Local dental marketing', 'Referral system design'],
-    featuredSlugs: ['lead-generation-for-dental-practices', 'how-dental-practices-get-new-patients', 'apollo-for-dental-practices'],
+    featuredSlugs: ['how-dental-practices-get-new-patients', 'how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo'],
     imageAlt: 'Dental practice team reviewing patient growth strategy'
   },
   {
@@ -467,7 +467,7 @@ export const industries: Industry[] = [
     painPoints: ['Extremely long sales cycles', 'Multiple stakeholders in buying decisions', 'Strict regulatory and compliance barriers'],
     strategy: ['Map clinical, procurement, and administrative stakeholders separately', 'Use case studies with clinical outcomes to build trust', 'Target facility expansion and equipment replacement cycles'],
     subtopics: ['Hospital procurement outreach', 'Clinical decision-maker mapping', 'Regulatory-aware positioning'],
-    featuredSlugs: ['outbound-sales-for-medical-device-companies', 'apollo-for-medical-device-sales', 'lead-generation-for-medical-devices'],
+    featuredSlugs: ['outbound-sales-for-medical-device-companies', 'finding-decision-makers-with-apollo', 'lead-qualification-system'],
     imageAlt: 'Medical device sales team reviewing hospital outreach strategy'
   },
   {
@@ -478,7 +478,7 @@ export const industries: Industry[] = [
     painPoints: ['Owner acquisition cost is high', 'Long evaluation cycles for management contracts', 'Competition from established regional players'],
     strategy: ['Target property owners with multiple units who lack professional management', 'Build relationships with real estate agents and attorneys', 'Use Apollo to find LLCs and trusts that own investment properties'],
     subtopics: ['Owner outreach', 'Real estate partnership channel', 'Multi-property targeting'],
-    featuredSlugs: ['lead-generation-for-property-management', 'apollo-for-property-management-companies', 'how-property-managers-get-clients'],
+    featuredSlugs: ['how-property-managers-get-clients', 'how-cleaning-companies-get-commercial-clients', 'how-to-build-a-lead-list-in-apollo'],
     imageAlt: 'Property management team reviewing owner outreach pipeline'
   },
   {
@@ -489,7 +489,7 @@ export const industries: Industry[] = [
     painPoints: ['Winning bids on price alone', 'Difficulty reaching facility decision-makers', 'High churn when contracts come up for renewal'],
     strategy: ['Target building owners and facility managers directly', 'Use Apollo to find companies with multiple office locations', 'Build referral relationships with commercial real estate brokers'],
     subtopics: ['Facility manager outreach', 'Commercial contract acquisition', 'Building owner targeting'],
-    featuredSlugs: ['cold-email-for-commercial-cleaning-companies', 'lead-generation-for-cleaning-companies', 'how-cleaning-companies-get-commercial-clients'],
+    featuredSlugs: ['how-cleaning-companies-get-commercial-clients', 'how-property-managers-get-clients', 'cold-email-with-apollo-io'],
     imageAlt: 'Commercial cleaning company team reviewing facility contract pipeline'
   },
   {
@@ -500,7 +500,7 @@ export const industries: Industry[] = [
     painPoints: ['Seasonal revenue gaps', 'Winning jobs on lowest price', 'Difficulty reaching commercial property decision-makers'],
     strategy: ['Target commercial property managers and HOA boards', 'Build relationships with real estate developers for new property contracts', 'Create maintenance contract models for predictable revenue'],
     subtopics: ['Commercial landscaping outreach', 'HOA contract acquisition', 'Seasonal campaign planning'],
-    featuredSlugs: ['apollo-for-landscaping-companies', 'lead-generation-for-landscaping-companies', 'how-landscaping-companies-get-clients'],
+    featuredSlugs: ['how-landscaping-companies-get-clients', 'how-property-managers-get-clients', 'how-to-build-a-lead-list-in-apollo'],
     imageAlt: 'Landscaping company team planning commercial contract outreach'
   },
   {
@@ -511,7 +511,7 @@ export const industries: Industry[] = [
     painPoints: ['Revenue concentrated in one-off treatments', 'Difficulty reaching commercial property managers', 'Price competition from national franchises'],
     strategy: ['Target property managers with multi-unit portfolios', 'Offer annual service contracts for predictable revenue', 'Partner with real estate agents for pre-sale inspection referrals'],
     subtopics: ['Commercial pest control contracts', 'Property manager outreach', 'Recurring service model'],
-    featuredSlugs: ['lead-generation-for-pest-control-companies', 'cold-email-for-pest-control-services', 'how-pest-control-companies-get-clients'],
+    featuredSlugs: ['how-pest-control-companies-get-clients', 'how-property-managers-get-clients', 'cold-email-with-apollo-io'],
     imageAlt: 'Pest control company team reviewing commercial contract opportunities'
   },
   {
@@ -522,7 +522,7 @@ export const industries: Industry[] = [
     painPoints: ['Commodity pricing pressure', 'Trust barrier with new shippers', 'Difficulty reaching supply chain decision-makers at mid-size companies'],
     strategy: ['Target logistics managers at companies with visible shipping volume', 'Lead with reliability metrics and lane-specific expertise', 'Use Apollo to find companies hiring logistics and supply chain roles as growth signals'],
     subtopics: ['Shipper acquisition', 'Carrier relationship building', 'Supply chain decision-maker outreach'],
-    featuredSlugs: ['outbound-for-freight-brokers', 'lead-generation-for-freight-companies', 'apollo-for-logistics-companies'],
+    featuredSlugs: ['outbound-for-freight-brokers', 'apollo-for-logistics-companies', 'how-to-find-clients-for-logistics-companies'],
     imageAlt: 'Freight brokerage team reviewing shipper pipeline and carrier relationships'
   },
   {
@@ -533,7 +533,7 @@ export const industries: Industry[] = [
     painPoints: ['Budget cuts in economic downturns', 'Long lead times for corporate events', 'Difficulty reaching the right budget owner'],
     strategy: ['Target marketing and HR directors who own event budgets', 'Build referral partnerships with venues and caterers', 'Create case studies around ROI and attendee engagement metrics'],
     subtopics: ['Corporate event procurement', 'Marketing director outreach', 'Venue partnership channel'],
-    featuredSlugs: ['lead-generation-for-event-management-companies', 'apollo-for-event-companies', 'cold-email-for-event-planners'],
+    featuredSlugs: ['lead-generation-for-event-management-companies', 'how-to-build-a-lead-list-in-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'Event management team reviewing corporate event contract pipeline'
   },
   {
@@ -544,7 +544,7 @@ export const industries: Industry[] = [
     painPoints: ['Commodity per-word pricing', 'Difficulty differentiating on quality', 'Reaching content and product leaders who buy localization'],
     strategy: ['Target companies announcing international expansion', 'Reach localization managers and content directors', 'Position around revenue impact, not word count'],
     subtopics: ['Localization buyer mapping', 'International expansion targeting', 'Value-based positioning'],
-    featuredSlugs: ['client-acquisition-for-translation-agencies', 'lead-generation-for-translation-companies', 'apollo-for-localization-agencies'],
+    featuredSlugs: ['client-acquisition-for-translation-agencies', 'how-to-find-business-emails-with-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'Translation agency team reviewing localization contract opportunities'
   },
   {
@@ -555,7 +555,7 @@ export const industries: Industry[] = [
     painPoints: ['Retainer fatigue with prospects who tried and quit PR', 'Difficulty proving PR ROI to budget holders', 'Competition from in-house comms teams'],
     strategy: ['Target founders and marketing directors at Series A-B startups', 'Lead with specific media placement examples in their industry', 'Use Apollo to find companies that recently raised funding — they need PR now'],
     subtopics: ['Startup PR acquisition', 'Funding signal targeting', 'Retainer positioning'],
-    featuredSlugs: ['cold-email-for-pr-agencies', 'apollo-for-pr-firms', 'lead-generation-for-pr-agencies'],
+    featuredSlugs: ['cold-email-for-pr-agencies', 'how-to-build-a-lead-list-in-apollo', 'personalization-at-scale-with-apollo'],
     imageAlt: 'PR agency team reviewing new business pipeline'
   },
   {
@@ -566,7 +566,7 @@ export const industries: Industry[] = [
     painPoints: ['Contingency firms undercutting on fees', 'Long cycles between mandates', 'Reaching founders who default to internal recruiting'],
     strategy: ['Target companies with recent funding rounds — they hire leadership next', 'Reach CHRO and CEO directly, not HR coordinators', 'Build relationships with board members and investors as referral sources'],
     subtopics: ['Search mandate acquisition', 'Investor referral channel', 'Leadership hiring trigger targeting'],
-    featuredSlugs: ['outbound-for-executive-search-firms', 'apollo-for-executive-recruiters', 'lead-generation-for-search-firms'],
+    featuredSlugs: ['outbound-for-executive-search-firms', 'candidate-sourcing-with-apollo', 'how-to-build-a-lead-list-in-apollo'],
     imageAlt: 'Executive search firm team reviewing search mandate pipeline'
   },
   {
@@ -577,7 +577,7 @@ export const industries: Industry[] = [
     painPoints: ['Training budgets are first to cut', 'Reaching the actual budget owner', 'Differentiating from free and cheap alternatives'],
     strategy: ['Target L&D directors at companies with recent hiring surges', 'Tie training programs to measurable business outcomes', 'Use Apollo to find companies mentioning skills gaps in job postings'],
     subtopics: ['L&D buyer outreach', 'Skills gap positioning', 'Training ROI framing'],
-    featuredSlugs: ['lead-generation-for-corporate-training-companies', 'apollo-for-training-providers', 'cold-email-for-corporate-training'],
+    featuredSlugs: ['lead-generation-for-corporate-training-companies', 'finding-decision-makers-with-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'Corporate training company reviewing client acquisition strategy'
   },
   {
@@ -588,7 +588,7 @@ export const industries: Industry[] = [
     painPoints: ['Prospects confused by the fractional model', 'Long trust-building cycles', 'Difficulty explaining value versus hiring full-time'],
     strategy: ['Target companies that just raised seed or Series A — they need expertise before they need headcount', 'Lead with specific outcomes from previous fractional engagements', 'Build authority through LinkedIn content and founder communities'],
     subtopics: ['Fractional CMO acquisition', 'Fractional CFO outreach', 'Founder-to-founder selling'],
-    featuredSlugs: ['client-acquisition-for-fractional-executives', 'how-fractional-cmos-get-clients', 'apollo-for-fractional-cfo'],
+    featuredSlugs: ['client-acquisition-for-fractional-executives', 'how-to-build-a-lead-list-in-apollo', 'personalization-at-scale-with-apollo'],
     imageAlt: 'Fractional executive reviewing client pipeline and advisory engagements'
   },
   {
@@ -599,7 +599,7 @@ export const industries: Industry[] = [
     painPoints: ['High churn from month-to-month members', 'Competition from free home offices', 'Difficulty reaching companies, not just individuals'],
     strategy: ['Target startups and remote-first companies that just raised funding', 'Reach office managers and people ops leaders', 'Create corporate memberships for teams of 5-20'],
     subtopics: ['Corporate membership sales', 'Startup funding signal targeting', 'Member retention systems'],
-    featuredSlugs: ['member-acquisition-for-coworking-spaces', 'apollo-for-coworking-operators', 'lead-generation-for-coworking-spaces'],
+    featuredSlugs: ['member-acquisition-for-coworking-spaces', 'how-property-managers-get-clients', 'cold-email-with-apollo-io'],
     imageAlt: 'Coworking space operator reviewing membership pipeline'
   },
   {
@@ -610,7 +610,7 @@ export const industries: Industry[] = [
     painPoints: ['Donor retention below 45%', 'Over-dependence on a few major donors', 'Limited marketing budget and staff'],
     strategy: ['Build corporate partnership pipelines targeting CSR budgets', 'Use storytelling-driven outreach for major donor cultivation', 'Target companies with matching gift programs for employee giving'],
     subtopics: ['Corporate partnership outreach', 'Major donor cultivation', 'Grant pipeline management'],
-    featuredSlugs: ['lead-generation-for-nonprofit-organizations', 'apollo-for-nonprofits', 'fundraising-outreach-for-nonprofits'],
+    featuredSlugs: ['lead-generation-for-nonprofit-organizations', 'fundraising-outreach-for-nonprofits', 'how-to-build-a-lead-list-in-apollo'],
     imageAlt: 'Nonprofit team reviewing donor acquisition and partnership strategy'
   },
   {
@@ -621,7 +621,7 @@ export const industries: Industry[] = [
     painPoints: ['Extremely long development and sales cycles', 'Regulatory complexity in every conversation', 'Small addressable market per product'],
     strategy: ['Target pharma business development teams with clear mechanism-of-action positioning', 'Attend and pre-schedule meetings at JPM and BIO conferences', 'Use Apollo to find licensing and partnership teams at mid-size pharma'],
     subtopics: ['Pharma BD outreach', 'Investor relation positioning', 'CRO and research partnership'],
-    featuredSlugs: ['outbound-sales-for-biotech-startups', 'apollo-for-biotech-companies', 'lead-generation-for-biotech'],
+    featuredSlugs: ['outbound-sales-for-biotech-startups', 'finding-decision-makers-with-apollo', 'lead-qualification-system'],
     imageAlt: 'Biotech team reviewing partnership and business development pipeline'
   },
   {
@@ -632,7 +632,7 @@ export const industries: Industry[] = [
     painPoints: ['Incumbent lock-in contracts', 'Commodity perception of connectivity services', 'Reaching IT decision-makers at mid-market companies'],
     strategy: ['Target companies approaching contract renewal dates with incumbents', 'Lead with reliability SLAs and cost savings data', 'Reach IT directors through Apollo job posting and growth signals'],
     subtopics: ['IT director outreach', 'Contract renewal targeting', 'Enterprise connectivity sales'],
-    featuredSlugs: ['lead-generation-for-telecom-companies', 'apollo-for-telecom-sales', 'cold-email-for-telecommunications'],
+    featuredSlugs: ['lead-generation-for-telecom-companies', 'how-to-build-a-lead-list-in-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'Telecom sales team reviewing enterprise contract pipeline'
   },
   {
@@ -643,7 +643,7 @@ export const industries: Industry[] = [
     painPoints: ['National competitor dominance', 'Price-driven procurement decisions', 'Reaching facility decision-makers at multi-site companies'],
     strategy: ['Target multi-location businesses that need consolidated waste services', 'Reach sustainability officers at companies with ESG commitments', 'Build relationships with commercial property managers for building-level contracts'],
     subtopics: ['Facility manager outreach', 'Sustainability-driven positioning', 'Multi-site contract acquisition'],
-    featuredSlugs: ['b2b-lead-generation-for-waste-management', 'cold-email-for-waste-management-companies', 'apollo-for-waste-companies'],
+    featuredSlugs: ['b2b-lead-generation-for-waste-management', 'how-property-managers-get-clients', 'cold-email-with-apollo-io'],
     imageAlt: 'Waste management company reviewing commercial contract opportunities'
   },
   {
@@ -654,7 +654,7 @@ export const industries: Industry[] = [
     painPoints: ['HR buyers skeptical of another tool', 'Long procurement cycles with security reviews', 'Competition from established ATS and HRIS platforms'],
     strategy: ['Target CHROs at companies that recently crossed 100 employees — outgrowing spreadsheets', 'Lead with time-saving and compliance outcomes, not feature lists', 'Use Apollo to find companies hiring their first HRIS or People Ops role'],
     subtopics: ['CHRO buyer outreach', 'Growth-stage trigger targeting', 'HR tech differentiation'],
-    featuredSlugs: ['lead-generation-for-hr-tech-startups', 'apollo-for-hr-tech', 'outbound-for-hr-software'],
+    featuredSlugs: ['lead-generation-for-hr-tech-startups', 'finding-decision-makers-with-apollo', 'cold-email-with-apollo-io'],
     imageAlt: 'HR tech sales team reviewing CHRO outreach pipeline'
   },
   {
@@ -665,7 +665,7 @@ export const industries: Industry[] = [
     painPoints: ['Trust deficit with financial data', 'Compliance and regulatory objections early in cycle', 'Reaching the finance decision-maker, not just the evaluator'],
     strategy: ['Target CFOs at companies with recent growth signals (funding, hiring, expansion)', 'Lead with security certifications and compliance frameworks upfront', 'Build trust through case studies with recognizable customers'],
     subtopics: ['CFO buyer outreach', 'Trust-building positioning', 'Compliance-first sales'],
-    featuredSlugs: ['outbound-for-fintech-startups', 'apollo-for-fintech-sales', 'lead-generation-for-fintech'],
+    featuredSlugs: ['outbound-for-fintech-startups', 'lead-qualification-system', 'cold-email-with-apollo-io'],
     imageAlt: 'FinTech sales team reviewing CFO outreach strategy'
   },
   {
@@ -676,7 +676,7 @@ export const industries: Industry[] = [
     painPoints: ['Real estate industry slow to adopt new tech', 'Multi-location decision complexity', 'Legacy system lock-in'],
     strategy: ['Target property management companies scaling beyond 500 units', 'Reach VP of Operations and technology decision-makers', 'Lead with integration compatibility and migration support'],
     subtopics: ['Property tech buyer mapping', 'Operations leader outreach', 'Legacy replacement positioning'],
-    featuredSlugs: ['lead-generation-for-proptech-companies', 'apollo-for-proptech', 'outbound-sales-for-real-estate-tech'],
+    featuredSlugs: ['lead-generation-for-proptech-companies', 'how-property-managers-get-clients', 'apollo-io-api-tutorial'],
     imageAlt: 'PropTech team reviewing property management outreach pipeline'
   },
   {
@@ -687,7 +687,7 @@ export const industries: Industry[] = [
     painPoints: ['Construction industry resistant to software adoption', 'Field-to-office communication gap', 'Reaching tech-averse decision-makers'],
     strategy: ['Target GCs managing 10+ concurrent projects — complexity creates buying triggers', 'Reach VP of Operations and project directors, not just IT', 'Lead with jobsite-specific ROI examples (hours saved, RFIs reduced)'],
     subtopics: ['GC decision-maker outreach', 'Field adoption positioning', 'Project complexity targeting'],
-    featuredSlugs: ['lead-generation-for-construction-tech-startups', 'apollo-for-contech-companies', 'outbound-for-construction-software'],
+    featuredSlugs: ['lead-generation-for-construction-tech-startups', 'how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo'],
     imageAlt: 'Construction tech team reviewing GC outreach pipeline'
   },
   {
@@ -698,7 +698,7 @@ export const industries: Industry[] = [
     painPoints: ['Competition on price with offshore teams', 'No-code tools threatening commodity dev work', 'Difficulty explaining technical value to non-technical buyers'],
     strategy: ['Specialize in one industry or platform (Shopify Plus, Next.js, WordPress enterprise)', 'Target companies with outdated websites using Apollo tech stack filters', 'Build referral partnerships with marketing agencies that need dev capacity'],
     subtopics: ['Niche specialization strategy', 'Tech stack targeting', 'Agency partnership channel'],
-    featuredSlugs: ['client-acquisition-for-web-development-agencies', 'apollo-for-web-development-agencies', 'how-dev-agencies-get-clients'],
+    featuredSlugs: ['client-acquisition-for-web-development-agencies', 'how-design-agencies-get-clients', 'how-to-build-a-lead-list-in-apollo'],
     imageAlt: 'Web development agency team reviewing new business pipeline'
   },
   {
@@ -709,7 +709,7 @@ export const industries: Industry[] = [
     painPoints: ['Design work seen as discretionary', 'Prospects hiring in-house instead of agencies', 'Proving design impact on business metrics'],
     strategy: ['Target VP of Product at companies with recent funding — they need design before they hire in-house', 'Lead with conversion rate improvements and user research outcomes', 'Build case studies tied to revenue metrics, not aesthetics'],
     subtopics: ['Product leader outreach', 'ROI-driven design positioning', 'Startup funding signal targeting'],
-    featuredSlugs: ['how-design-agencies-get-clients', 'lead-generation-for-design-agencies', 'apollo-for-ux-agencies'],
+    featuredSlugs: ['how-design-agencies-get-clients', 'client-acquisition-for-web-development-agencies', 'cold-email-with-apollo-io'],
     imageAlt: 'UX design agency reviewing product leader outreach pipeline'
   },
   {
@@ -720,7 +720,7 @@ export const industries: Industry[] = [
     painPoints: ['Incumbent payroll provider lock-in', 'Price comparison shopping without value context', 'Reaching the founder or CFO directly'],
     strategy: ['Target companies that just crossed 20-50 employees — PEO inflection point', 'Reach founders directly at smaller companies, CFOs at larger ones', 'Lead with compliance risk reduction and time savings'],
     subtopics: ['Founder and CFO outreach', 'Growth stage trigger targeting', 'PEO switch positioning'],
-    featuredSlugs: ['outbound-for-peo-companies', 'lead-generation-for-payroll-services', 'apollo-for-peo-sales'],
+    featuredSlugs: ['outbound-for-peo-companies', 'how-to-build-a-lead-list-in-apollo', 'finding-decision-makers-with-apollo'],
     imageAlt: 'Payroll and PEO sales team reviewing founder outreach pipeline'
   },
   {
@@ -731,7 +731,7 @@ export const industries: Industry[] = [
     painPoints: ['Insurance industry extremely slow to adopt new tech', 'Legacy system integration objections', 'Reaching the right person in a layered organization'],
     strategy: ['Target carriers and MGAs with recent technology transformation announcements', 'Reach Chief Technology and Chief Digital Officers directly', 'Lead with regulatory compliance and integration-first messaging'],
     subtopics: ['Carrier technology buying', 'CTO and CDO outreach', 'Legacy integration positioning'],
-    featuredSlugs: ['cold-email-for-insurtech-companies', 'apollo-for-insurtech-sales', 'lead-generation-for-insurtech'],
+    featuredSlugs: ['cold-email-for-insurtech-companies', 'lead-qualification-system', 'cold-email-with-apollo-io'],
     imageAlt: 'InsurTech sales team reviewing carrier outreach pipeline'
   },
   {
@@ -742,7 +742,7 @@ export const industries: Industry[] = [
     painPoints: ['Complex multi-stakeholder buying committees', 'ROI hard to quantify before implementation', 'Incumbent ERP and WMS lock-in'],
     strategy: ['Target companies with visible supply chain disruptions or expansion signals', 'Reach VP of Supply Chain and Director of Procurement', 'Lead with time-to-value and integration capability, not features'],
     subtopics: ['Supply chain leader outreach', 'Disruption signal targeting', 'ERP integration positioning'],
-    featuredSlugs: ['outbound-for-supply-chain-tech', 'lead-generation-for-supply-chain-software', 'apollo-for-supply-chain-companies'],
+    featuredSlugs: ['outbound-for-supply-chain-tech', 'apollo-for-logistics-companies', 'b2b-lead-generation-for-distributors'],
     imageAlt: 'Supply chain technology team reviewing logistics director outreach'
   }
 ];
