@@ -63,8 +63,10 @@ export const GA4 = () => {
       if (cancelled) return;
 
       window.dataLayer = window.dataLayer || [];
-      const gtag = (...args: unknown[]) => {
-        window.dataLayer?.push(args);
+      // gtag.js only processes Arguments objects in dataLayer, not plain arrays.
+      const gtag: (...args: unknown[]) => void = function () {
+        // eslint-disable-next-line prefer-rest-params
+        window.dataLayer?.push(arguments);
       };
       window.gtag = gtag;
 
