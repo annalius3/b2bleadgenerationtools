@@ -38,6 +38,13 @@ export default function ContactPage() {
               We review inquiries related to advertising, sponsored content, affiliate partnerships, content collaboration, and strategic business cooperation.
             </p>
           </div>
+          <p className="mt-6 text-xs leading-relaxed text-slate-500">
+            We use your message only to reply. See our{' '}
+            <a href="/privacy" className="font-medium text-sky-700 underline underline-offset-2 hover:text-sky-900">
+              Privacy Policy
+            </a>{' '}
+            for how we handle personal data.
+          </p>
         </div>
       </section>
     </Container>

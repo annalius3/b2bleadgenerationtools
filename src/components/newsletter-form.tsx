@@ -1,6 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
+import Link from 'next/link';
 import { Suspense } from 'react';
 import { trackEvent } from '@/lib/analytics';
 
@@ -53,6 +54,13 @@ const NewsletterFormInner = () => {
           Subscribe
         </button>
       </div>
+      <p className="mt-3 text-xs leading-relaxed text-slate-500">
+        By subscribing you agree to our{' '}
+        <Link href="/privacy" className="font-medium text-sky-700 underline underline-offset-2 hover:text-sky-900">
+          Privacy Policy
+        </Link>
+        . Double opt-in, unsubscribe anytime.
+      </p>
     </form>
   );
 };
