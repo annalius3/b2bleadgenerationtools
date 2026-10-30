@@ -495,7 +495,7 @@ export const industries: Industry[] = [
   {
     slug: 'landscaping-companies',
     name: 'Landscaping Companies',
-    description: 'Win commercial and high-end residential landscaping contracts through seasonal outreach and property manager partnerships.',
+    description: 'Win commercial and high-end residential contracts through seasonal outreach and property manager partnerships.',
     audience: 'Landscaping companies that want to move beyond small residential jobs into recurring commercial and HOA contracts.',
     painPoints: ['Seasonal revenue gaps', 'Winning jobs on lowest price', 'Difficulty reaching commercial property decision-makers'],
     strategy: ['Target commercial property managers and HOA boards', 'Build relationships with real estate developers for new property contracts', 'Create maintenance contract models for predictable revenue'],
@@ -506,7 +506,7 @@ export const industries: Industry[] = [
   {
     slug: 'pest-control',
     name: 'Pest Control',
-    description: 'Build recurring revenue for pest control companies through property manager outreach and commercial contract acquisition.',
+    description: 'Build recurring revenue for pest control companies with property manager outreach and commercial contracts.',
     audience: 'Pest control companies looking to win recurring commercial contracts and move beyond one-off residential treatments.',
     painPoints: ['Revenue concentrated in one-off treatments', 'Difficulty reaching commercial property managers', 'Price competition from national franchises'],
     strategy: ['Target property managers with multi-unit portfolios', 'Offer annual service contracts for predictable revenue', 'Partner with real estate agents for pre-sale inspection referrals'],
@@ -583,7 +583,7 @@ export const industries: Industry[] = [
   {
     slug: 'fractional-executives',
     name: 'Fractional Executives',
-    description: 'Help fractional CMOs, CFOs, and operators find advisory clients through founder-led outreach and network-based selling.',
+    description: 'Help fractional CMOs, CFOs, and operators win advisory clients through founder-led outreach and referrals.',
     audience: 'Fractional CMOs, CFOs, and operators who sell part-time executive services to startups and SMBs that can\'t afford full-time leadership.',
     painPoints: ['Prospects confused by the fractional model', 'Long trust-building cycles', 'Difficulty explaining value versus hiring full-time'],
     strategy: ['Target companies that just raised seed or Series A — they need expertise before they need headcount', 'Lead with specific outcomes from previous fractional engagements', 'Build authority through LinkedIn content and founder communities'],
@@ -638,7 +638,7 @@ export const industries: Industry[] = [
   {
     slug: 'waste-management',
     name: 'Waste Management',
-    description: 'Win commercial waste and recycling contracts by targeting facility managers, property managers, and operations directors.',
+    description: 'Win commercial waste and recycling contracts by reaching facility, property, and operations managers.',
     audience: 'Waste management and recycling companies competing for commercial contracts against Waste Management and regional players.',
     painPoints: ['National competitor dominance', 'Price-driven procurement decisions', 'Reaching facility decision-makers at multi-site companies'],
     strategy: ['Target multi-location businesses that need consolidated waste services', 'Reach sustainability officers at companies with ESG commitments', 'Build relationships with commercial property managers for building-level contracts'],
@@ -715,7 +715,7 @@ export const industries: Industry[] = [
   {
     slug: 'payroll-peo',
     name: 'Payroll & PEO Services',
-    description: 'Win payroll and PEO contracts by reaching founders, CFOs, and HR leaders at growing companies outgrowing their current setup.',
+    description: 'Win payroll and PEO contracts by reaching founders, CFOs, and HR leaders at growing companies.',
     audience: 'Payroll providers, PEOs, and HR outsourcing companies selling to growing businesses frustrated with ADP, Gusto, or manual processes.',
     painPoints: ['Incumbent payroll provider lock-in', 'Price comparison shopping without value context', 'Reaching the founder or CFO directly'],
     strategy: ['Target companies that just crossed 20-50 employees — PEO inflection point', 'Reach founders directly at smaller companies, CFOs at larger ones', 'Lead with compliance risk reduction and time savings'],
@@ -752,7 +752,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-find-b2b-leads-fast',
     title: 'How to Find B2B Leads Fast Without Wasting Credits',
-    description: 'A practical process to build high-fit prospect lists quickly using Apollo filters and enrichment.',
+    description: 'A practical process to build high-fit prospect lists quickly using Apollo filters and enrichment, without burning credits on the wrong accounts.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -789,7 +789,7 @@ export const guides: Guide[] = [
   {
     slug: 'account-based-prospecting-framework',
     title: 'Account-Based Prospecting Framework for Small B2B Teams',
-    description: 'Use a lightweight ABM motion with Apollo to prioritize high-value accounts and decision paths.',
+    description: 'Use a lightweight ABM motion with Apollo to prioritize high-value accounts and decision paths, from account tiering to personalized first touches.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
     steps: [
@@ -835,7 +835,7 @@ export const guides: Guide[] = [
   {
     slug: 'personalization-at-scale-with-apollo',
     title: 'Personalization at Scale With Apollo Workflows',
-    description: 'Balance relevance and volume by combining segmentation rules with practical personalization tokens.',
+    description: 'Balance relevance and volume by combining segmentation rules with practical personalization tokens, without slowing campaigns down to a crawl.',
     hub: 'outreach',
     industries: ['saas-companies', 'financial-services', 'healthcare'],
     steps: [
@@ -858,7 +858,7 @@ export const guides: Guide[] = [
   {
     slug: 'pipeline-management-playbook',
     title: 'Pipeline Management Playbook for Outbound Teams',
-    description: 'Turn lead flow into predictable revenue with clear pipeline stages, SLAs, and inspection rhythm.',
+    description: 'Turn lead flow into predictable revenue with clear pipeline stages, SLAs, and inspection rhythm, plus the reports that surface stalled deals.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'financial-services'],
     steps: [
@@ -904,7 +904,7 @@ export const guides: Guide[] = [
   {
     slug: 'deal-closing-strategies-b2b',
     title: 'Deal Closing Strategies for Mid-Market B2B Sales',
-    description: 'Improve close rates by controlling multistakeholder deals with clear next-step architecture.',
+    description: 'Improve close rates by controlling multistakeholder deals with clear next-step architecture, objection maps, and mutual action plans.',
     hub: 'sales-pipeline',
     industries: ['financial-services', 'healthcare', 'manufacturing'],
     steps: [
@@ -973,7 +973,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-guide-for-agencies',
     title: 'Apollo Guide for Agencies: From Prospect to Retainer',
-    description: 'Agency-focused workflow for finding clients, running campaigns, and converting to retainers.',
+    description: 'Agency-focused workflow for finding clients, running campaigns, and converting to retainers, from niche selection to reporting and renewals.',
     hub: 'guides',
     industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
     steps: [
@@ -1113,7 +1113,7 @@ export const guides: Guide[] = [
   {
     slug: 'is-apollo-io-worth-it',
     title: 'Is Apollo.io Worth It',
-    description: 'A decision framework to evaluate Apollo ROI by team size, sales motion, and expected pipeline output.',
+    description: 'A decision framework to evaluate Apollo ROI by team size, sales motion, and expected pipeline output before you commit to an annual plan.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -1150,7 +1150,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-pricing-explained',
     title: 'Apollo.io Pricing Explained',
-    description: 'How Apollo.io pricing works in practice: plan logic, credit usage, and cost control by team type.',
+    description: 'How Apollo.io pricing works in practice: plan logic, credit usage, and cost control by team type, plus a simple way to estimate the monthly bill.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
     steps: [
@@ -1187,7 +1187,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-features-overview',
     title: 'Apollo.io Features Overview',
-    description: 'A practical features walkthrough of Apollo.io with context on what matters for real outbound execution.',
+    description: 'A practical features walkthrough of Apollo.io with context on what matters for real outbound execution and what you can safely ignore.',
     hub: 'find-clients',
     industries: ['saas-companies', 'recruiters', 'it-services'],
     steps: [
@@ -1224,7 +1224,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-pros-and-cons',
     title: 'Apollo.io Pros and Cons',
-    description: 'An honest breakdown of Apollo.io strengths and tradeoffs for startups, agencies, and scaling B2B teams.',
+    description: 'An honest breakdown of Apollo.io strengths and tradeoffs for startups, agencies, and scaling B2B teams, including where it falls short.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -1261,7 +1261,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-for-beginners',
     title: 'Apollo.io for Beginners',
-    description: 'A beginner-friendly Apollo.io guide to launch your first outbound workflow without unnecessary complexity.',
+    description: 'A beginner-friendly Apollo.io guide to launch your first outbound workflow without unnecessary complexity, from setup to the first replies.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
     steps: [
@@ -1298,7 +1298,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-apollo-io-works',
     title: 'How Apollo.io Works',
-    description: 'A practical explanation of the Apollo workflow from targeting to outreach execution and pipeline handoff.',
+    description: 'A practical explanation of the Apollo workflow from targeting to outreach execution and pipeline handoff, with the parts that actually matter.',
     hub: 'outreach',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -1335,7 +1335,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-setup-guide',
     title: 'Apollo.io Setup Guide',
-    description: 'A complete setup guide for Apollo.io including account structure, campaign foundations, and QA checks.',
+    description: 'A complete setup guide for Apollo.io including account structure, campaign foundations, and QA checks before launching your first sequence.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -1372,7 +1372,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-tutorial-step-by-step',
     title: 'Apollo.io Tutorial Step-by-Step',
-    description: 'A step-by-step Apollo tutorial from first list to first booked meeting with practical execution checkpoints.',
+    description: 'A step-by-step Apollo tutorial from first list to first booked meeting with practical execution checkpoints and common mistakes to avoid.',
     hub: 'guides',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -1409,7 +1409,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-find-b2b-leads-with-apollo-io',
     title: 'How to Find B2B Leads with Apollo.io',
-    description: 'A practical playbook to find high-fit B2B leads in Apollo.io using ICP filters, enrichment, and segmentation.',
+    description: 'A practical playbook to find high-fit B2B leads in Apollo.io using ICP filters, enrichment, and segmentation that holds up in real campaigns.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -1475,7 +1475,7 @@ export const guides: Guide[] = [
   {
     slug: 'generate-sales-leads-with-apollo',
     title: 'Generate Sales Leads with Apollo',
-    description: 'A repeatable lead generation workflow in Apollo for teams that need steady top-of-funnel pipeline.',
+    description: 'A repeatable lead generation workflow in Apollo for teams that need steady top-of-funnel pipeline without sacrificing list quality or reply rates.',
     hub: 'find-clients',
     industries: ['saas-companies', 'recruiters', 'financial-services'],
     steps: [
@@ -1508,7 +1508,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-build-a-lead-list-in-apollo',
     title: 'How to Build a Lead List in Apollo',
-    description: 'Step-by-step list building in Apollo with account filters, contact mapping, and quality control.',
+    description: 'Step-by-step list building in Apollo with account filters, contact mapping, and quality control before the first email ever goes out.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
     steps: [
@@ -1541,7 +1541,7 @@ export const guides: Guide[] = [
   {
     slug: 'finding-decision-makers-with-apollo',
     title: 'Finding Decision Makers with Apollo',
-    description: 'How to identify true decision-makers, champions, and buying influencers using Apollo filters and context.',
+    description: 'How to identify true decision-makers, champions, and buying influencers using Apollo filters and context, then sequence them correctly.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -1574,7 +1574,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-find-companies-to-sell-to',
     title: 'How to Find Companies to Sell To',
-    description: 'A practical framework to identify target companies with the highest probability of buying.',
+    description: 'A practical framework to identify target companies with the highest probability of buying: ICP filters, buying signals, and account scoring in Apollo.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
     steps: [
@@ -1607,7 +1607,7 @@ export const guides: Guide[] = [
   {
     slug: 'prospecting-with-apollo-io',
     title: 'Prospecting with Apollo.io',
-    description: 'A modern prospecting system in Apollo.io from account selection to first qualified conversation.',
+    description: 'A modern prospecting system in Apollo.io from account selection to first qualified conversation, including buying signals and sequencing logic.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
     steps: [
@@ -1640,7 +1640,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-build-a-sales-pipeline',
     title: 'How to Build a Sales Pipeline',
-    description: 'How to design a predictable B2B sales pipeline from first reply to closed-won opportunity.',
+    description: 'How to design a predictable B2B sales pipeline from first reply to closed-won opportunity, with stage definitions, SLAs, and weekly inspection.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'financial-services'],
     steps: [
@@ -1673,7 +1673,7 @@ export const guides: Guide[] = [
   {
     slug: 'lead-generation-strategy-using-apollo',
     title: 'Lead Generation Strategy Using Apollo',
-    description: 'A strategic lead generation framework using Apollo for consistent pipeline growth across outbound motions.',
+    description: 'A strategic lead generation framework using Apollo for consistent pipeline growth across outbound motions, with metrics and a review cadence.',
     hub: 'guides',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -1706,7 +1706,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-scale-client-acquisition',
     title: 'How to Scale Client Acquisition',
-    description: 'A practical scale-up model for client acquisition using Apollo workflows, process controls, and team cadence.',
+    description: 'A practical scale-up model for client acquisition using Apollo workflows, process controls, and a team cadence that survives headcount growth.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -1739,7 +1739,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-for-startups',
     title: 'Apollo.io for Startups',
-    description: 'A startup-focused Apollo playbook for lean teams that need fast, practical outbound execution.',
+    description: 'A startup-focused Apollo playbook for lean teams that need fast, practical outbound execution with limited credits, time, and headcount.',
     hub: 'for-startups',
     industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
     steps: [
@@ -1772,7 +1772,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-founders-get-first-customers-with-apollo',
     title: 'How Founders Get First Customers with Apollo',
-    description: 'A founder-first method to book early calls and close the first paying customers using Apollo.',
+    description: 'A founder-first method to book early calls and close the first paying customers using Apollo: narrow ICP, short sequences, and direct follow-up.',
     hub: 'for-startups',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -1805,7 +1805,7 @@ export const guides: Guide[] = [
   {
     slug: 'customer-acquisition-for-startups',
     title: 'Customer Acquisition for Startups',
-    description: 'A practical customer acquisition system for startups using outbound, qualification, and fast feedback loops.',
+    description: 'A practical customer acquisition system for startups using outbound, qualification, and fast feedback loops instead of channel guesswork.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
     steps: [
@@ -1838,7 +1838,7 @@ export const guides: Guide[] = [
   {
     slug: 'growth-strategy-using-apollo',
     title: 'Growth Strategy Using Apollo',
-    description: 'How to build a startup growth strategy around Apollo with clear segmentation, outreach, and pipeline metrics.',
+    description: 'How to build a startup growth strategy around Apollo with clear segmentation, outreach, and pipeline metrics, plus what to fix first.',
     hub: 'guides',
     industries: ['saas-companies', 'marketing-agencies', 'financial-services'],
     steps: [
@@ -1904,7 +1904,7 @@ export const guides: Guide[] = [
   {
     slug: 'building-pipeline-without-marketing',
     title: 'Building Pipeline Without Marketing',
-    description: 'How early-stage B2B teams can build a predictable pipeline before a full inbound marketing engine exists.',
+    description: 'How early-stage B2B teams can build a predictable pipeline before a full inbound marketing engine exists, using outbound and referrals.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -1937,7 +1937,7 @@ export const guides: Guide[] = [
   {
     slug: 'outbound-sales-for-startups',
     title: 'Outbound Sales for Startups',
-    description: 'A startup outbound sales framework using Apollo for prospecting, messaging, and meeting generation.',
+    description: 'A startup outbound sales framework using Apollo for prospecting, messaging, and meeting generation, sized for a small founder-led team.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'recruiters'],
     steps: [
@@ -1970,7 +1970,7 @@ export const guides: Guide[] = [
   {
     slug: 'validating-a-startup-idea-with-outreach',
     title: 'Validating a Startup Idea with Outreach',
-    description: 'Use Apollo outreach to validate startup ideas with real buyer feedback before scaling build and spend.',
+    description: 'Use Apollo outreach to validate startup ideas with real buyer feedback before scaling build and spend, including the questions that matter most.',
     hub: 'guides',
     industries: ['saas-companies', 'consulting-firms', 'healthcare'],
     steps: [
@@ -2069,7 +2069,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-io-for-small-business',
     title: 'Apollo.io for Small Business',
-    description: 'How small business teams use Apollo to build targeted lists, run outreach, and create steady pipeline.',
+    description: 'How small business teams use Apollo to build targeted lists, run outreach, and create steady pipeline without hiring a full sales team.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2098,7 +2098,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-small-businesses-find-clients',
     title: 'How Small Businesses Find Clients',
-    description: 'A practical outbound framework for small businesses to find and win B2B clients consistently.',
+    description: 'A practical outbound framework for small businesses to find and win B2B clients consistently without a large sales team or big tool budget.',
     hub: 'for-startups',
     industries: ['marketing-agencies', 'consulting-firms', 'it-services'],
     steps: [
@@ -2127,7 +2127,7 @@ export const guides: Guide[] = [
   {
     slug: 'client-acquisition-for-consultants',
     title: 'Client Acquisition for Consultants',
-    description: 'How consultants use Apollo to identify ideal buyers, start conversations, and close retainers.',
+    description: 'How consultants use Apollo to identify ideal buyers, start conversations, and close retainers, with positioning and follow-up cadences that fit.',
     hub: 'guides',
     industries: ['consulting-firms', 'financial-services', 'healthcare'],
     steps: [
@@ -2156,7 +2156,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-agencies-use-apollo',
     title: 'How Agencies Use Apollo',
-    description: 'A proven agency workflow in Apollo for niche targeting, outreach execution, and retainer growth.',
+    description: 'A proven agency workflow in Apollo for niche targeting, outreach execution, and retainer growth, with repeatable processes for every client.',
     hub: 'outreach',
     industries: ['marketing-agencies', 'consulting-firms', 'saas-companies'],
     steps: [
@@ -2214,7 +2214,7 @@ export const guides: Guide[] = [
   {
     slug: 'growing-a-consulting-business',
     title: 'Growing a Consulting Business',
-    description: 'A repeatable growth model for consulting businesses using Apollo for acquisition and pipeline control.',
+    description: 'A repeatable growth model for consulting businesses using Apollo for acquisition and pipeline control, from niche focus to referral loops.',
     hub: 'for-startups',
     industries: ['consulting-firms', 'financial-services', 'saas-companies'],
     steps: [
@@ -2272,7 +2272,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-build-a-client-base-from-scratch',
     title: 'How to Build a Client Base from Scratch',
-    description: 'A zero-to-first-clients framework using Apollo lists, outreach, and conversion discipline.',
+    description: 'A zero-to-first-clients framework using Apollo lists, outreach, and conversion discipline, plus the metrics that tell you when to change course.',
     hub: 'for-startups',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2359,7 +2359,7 @@ export const guides: Guide[] = [
   {
     slug: 'cold-email-with-apollo-io',
     title: 'Cold Email with Apollo.io',
-    description: 'A practical framework for running effective cold email campaigns in Apollo.io from list to reply handling.',
+    description: 'A practical framework for running effective cold email campaigns in Apollo.io from list building to reply handling, including sequence structure.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -2382,7 +2382,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-send-cold-emails-using-apollo',
     title: 'How to Send Cold Emails Using Apollo',
-    description: 'Step-by-step setup for sending cold emails in Apollo with better deliverability and response quality.',
+    description: 'Step-by-step setup for sending cold emails in Apollo with better deliverability and response quality, including domain warm-up basics.',
     hub: 'outreach',
     industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
     steps: [
@@ -2405,7 +2405,7 @@ export const guides: Guide[] = [
   {
     slug: 'email-outreach-strategy',
     title: 'Email Outreach Strategy',
-    description: 'A strategic email outreach model for B2B teams using segmentation, messaging clarity, and response workflows.',
+    description: 'A strategic email outreach model for B2B teams using segmentation, messaging clarity, and response workflows instead of volume alone.',
     hub: 'guides',
     industries: ['saas-companies', 'financial-services', 'consulting-firms'],
     steps: [
@@ -2474,7 +2474,7 @@ export const guides: Guide[] = [
   {
     slug: 'personalization-techniques',
     title: 'Personalization Techniques',
-    description: 'Practical personalization methods for cold outreach that improve replies without killing campaign speed.',
+    description: 'Practical personalization methods for cold outreach that improve replies without killing campaign speed, from segment level to first-line detail.',
     hub: 'outreach',
     industries: ['saas-companies', 'consulting-firms', 'healthcare'],
     steps: [
@@ -2543,7 +2543,7 @@ export const guides: Guide[] = [
   {
     slug: 'outreach-campaign-setup',
     title: 'Outreach Campaign Setup',
-    description: 'A complete outreach campaign setup guide in Apollo from list prep to sequence launch and QA.',
+    description: 'A complete outreach campaign setup guide in Apollo from list prep to sequence launch and QA, including deliverability checks and stop rules.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2566,7 +2566,7 @@ export const guides: Guide[] = [
   {
     slug: 'multi-step-outreach-playbook',
     title: 'Multi-Step Outreach Playbook',
-    description: 'A practical multi-step outreach playbook for consistent B2B replies and pipeline conversion.',
+    description: 'A practical multi-step outreach playbook for consistent B2B replies and pipeline conversion, with channel order, timing, and message intent.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -2589,7 +2589,7 @@ export const guides: Guide[] = [
   {
     slug: 'building-a-sales-funnel-with-apollo',
     title: 'Building a Sales Funnel with Apollo',
-    description: 'How to build a practical B2B sales funnel in Apollo from first outreach touch to qualified opportunity.',
+    description: 'How to build a practical B2B sales funnel in Apollo from first outreach touch to qualified opportunity, with conversion points to watch.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'marketing-agencies'],
     steps: [
@@ -2635,7 +2635,7 @@ export const guides: Guide[] = [
   {
     slug: 'managing-sales-pipeline',
     title: 'Managing Sales Pipeline',
-    description: 'How to manage a B2B sales pipeline with clear ownership, stage rules, and weekly inspection cadence.',
+    description: 'How to manage a B2B sales pipeline with clear ownership, stage rules, and a weekly inspection cadence that keeps late-stage deals moving.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
     steps: [
@@ -2658,7 +2658,7 @@ export const guides: Guide[] = [
   {
     slug: 'from-lead-to-deal-using-apollo',
     title: 'From Lead to Deal Using Apollo',
-    description: 'A full workflow showing how Apollo supports the path from lead sourcing to closed-won deal progression.',
+    description: 'A full workflow showing how Apollo supports the path from lead sourcing to closed-won deal progression, including handoffs and CRM hygiene.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2727,7 +2727,7 @@ export const guides: Guide[] = [
   {
     slug: 'identifying-high-quality-leads',
     title: 'Identifying High-Quality Leads',
-    description: 'A method to identify high-quality leads in Apollo based on fit, intent, and likelihood to convert.',
+    description: 'A method to identify high-quality leads in Apollo based on fit, intent, and likelihood to convert, with scoring rules you can actually maintain.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -2773,7 +2773,7 @@ export const guides: Guide[] = [
   {
     slug: 'tracking-outreach-performance',
     title: 'Tracking Outreach Performance',
-    description: 'A practical performance tracking framework for outbound campaigns and lead-to-pipeline conversion.',
+    description: 'A practical performance tracking framework for outbound campaigns and lead-to-pipeline conversion, with the metrics worth reviewing weekly.',
     hub: 'guides',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
     steps: [
@@ -2796,7 +2796,7 @@ export const guides: Guide[] = [
   {
     slug: 'closing-more-deals-with-better-leads',
     title: 'Closing More Deals with Better Leads',
-    description: 'How better lead quality improves close rates and shortens sales cycles in B2B outbound motions.',
+    description: 'How better lead quality improves close rates and shortens sales cycles in B2B outbound, with qualification criteria and handoff checks.',
     hub: 'sales-pipeline',
     industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
     steps: [
@@ -2819,7 +2819,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-to-find-business-emails-with-apollo',
     title: 'How to Find Business Emails with Apollo',
-    description: 'A practical method to find and verify business emails in Apollo for high-fit B2B outreach campaigns.',
+    description: 'A practical method to find and verify business emails in Apollo for high-fit B2B outreach campaigns, plus what to do when coverage is thin.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'it-services'],
     steps: [
@@ -2842,7 +2842,7 @@ export const guides: Guide[] = [
   {
     slug: 'finding-phone-numbers-of-decision-makers',
     title: 'Finding Phone Numbers of Decision Makers',
-    description: 'How to find decision-maker phone numbers in Apollo and use them responsibly in multichannel B2B outreach.',
+    description: 'How to find decision-maker phone numbers in Apollo and use them responsibly in multichannel B2B outreach, plus the compliance basics.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'financial-services'],
     steps: [
@@ -2865,7 +2865,7 @@ export const guides: Guide[] = [
   {
     slug: 'building-contact-lists-for-b2b',
     title: 'Building Contact Lists for B2B',
-    description: 'A repeatable framework for building clean B2B contact lists with Apollo account and role targeting.',
+    description: 'A repeatable framework for building clean B2B contact lists with Apollo account and role targeting, deduplication, and verification steps.',
     hub: 'find-clients',
     industries: ['saas-companies', 'marketing-agencies', 'manufacturing'],
     steps: [
@@ -2888,7 +2888,7 @@ export const guides: Guide[] = [
   {
     slug: 'data-enrichment-using-apollo',
     title: 'Data Enrichment Using Apollo',
-    description: 'How to enrich B2B lead data in Apollo to improve targeting, personalization, and qualification quality.',
+    description: 'How to enrich B2B lead data in Apollo to improve targeting, personalization, and qualification quality without overpaying for credits.',
     hub: 'find-clients',
     industries: ['saas-companies', 'healthcare', 'financial-services'],
     steps: [
@@ -2934,7 +2934,7 @@ export const guides: Guide[] = [
   {
     slug: 'targeting-specific-industries',
     title: 'Targeting Specific Industries',
-    description: 'How to target specific industries in Apollo with niche segmentation and tailored outbound messaging.',
+    description: 'How to target specific industries in Apollo with niche segmentation and tailored outbound messaging that survives real buyer scrutiny.',
     hub: 'guides',
     industries: ['saas-companies', 'manufacturing', 'healthcare'],
     steps: [
@@ -2957,7 +2957,7 @@ export const guides: Guide[] = [
   {
     slug: 'finding-ceos-and-founders',
     title: 'Finding CEOs and Founders',
-    description: 'How to find CEOs and founders in Apollo for founder-led and executive-level B2B outreach campaigns.',
+    description: 'How to find CEOs and founders in Apollo for founder-led and executive-level B2B outreach campaigns, with filters and verification checks.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'it-services'],
     steps: [
@@ -2980,7 +2980,7 @@ export const guides: Guide[] = [
   {
     slug: 'account-based-prospecting',
     title: 'Account-Based Prospecting',
-    description: 'A practical account-based prospecting workflow with Apollo for high-value B2B account penetration.',
+    description: 'A practical account-based prospecting workflow with Apollo for high-value B2B account penetration, from account tiering to multithreading.',
     hub: 'find-clients',
     industries: ['saas-companies', 'consulting-firms', 'manufacturing'],
     steps: [
@@ -3141,7 +3141,7 @@ export const guides: Guide[] = [
   {
     slug: 'outbound-follow-up-timing-strategy',
     title: 'Outbound Follow-Up Timing Strategy',
-    description: 'How to plan Apollo follow-up timing so sequences stay persistent without feeling random or spammy.',
+    description: 'How to plan Apollo follow-up timing so sequences stay persistent without feeling random or spammy, including gap patterns and stop rules.',
     hub: 'outreach',
     industries: ['saas-companies', 'it-services', 'marketing-agencies'],
     steps: [
@@ -3256,7 +3256,7 @@ export const guides: Guide[] = [
   {
     slug: 'apollo-for-saas-lead-generation',
     title: 'Apollo for SaaS Lead Generation',
-    description: 'How SaaS teams use Apollo to find target accounts, reach operators, and create repeatable outbound pipeline.',
+    description: 'How SaaS teams use Apollo to find target accounts, reach operators, and create repeatable outbound pipeline across several market segments.',
     hub: 'guides',
     industries: ['saas-companies'],
     steps: [
@@ -3659,7 +3659,7 @@ export const guides: Guide[] = [
   {
     slug: 'cold-email-for-marketing-agencies',
     title: 'Cold Email for Marketing Agencies',
-    description: 'A cold email framework for agencies that need more qualified conversations with ideal-fit clients.',
+    description: 'A cold email framework for agencies that need more qualified conversations with ideal-fit clients, including offer angles and reply handling.',
     hub: 'outreach',
     industries: ['marketing-agencies'],
     steps: [
@@ -3814,7 +3814,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-consulting-firms-get-first-clients',
     title: 'How Consulting Firms Get First Clients',
-    description: 'A founder-led outbound system for consulting firms that need their first clients and cleaner market feedback.',
+    description: 'A founder-led outbound system for consulting firms that need their first clients and cleaner market feedback, from niche choice to first calls.',
     hub: 'for-startups',
     industries: ['consulting-firms'],
     steps: ['Start with one consulting offer that solves a concrete business problem.', 'Build a short list of likely-fit accounts in Apollo.', 'Use direct outreach that explains the problem, outcome, and reason to talk now.', 'Take calls manually and document objections carefully.', 'Refine positioning around the segment that shows the strongest traction.'],
@@ -4154,7 +4154,7 @@ export const guides: Guide[] = [
   {
     slug: 'how-accounting-firms-get-first-clients',
     title: 'How Accounting Firms Get First Clients',
-    description: 'A focused outbound plan for accounting firms that need first recurring clients and faster market feedback.',
+    description: 'A focused outbound plan for accounting firms that need first recurring clients and faster market feedback, with niche and offer guidance.',
     hub: 'for-startups',
     industries: ['accounting-firms'],
     steps: ['Start with one accounting offer and one target business segment.', 'Build a short Apollo list of businesses that match that service fit.', 'Use direct outreach around one financial pain and one business result.', 'Take early calls manually and note the objections that keep repeating.', 'Refine the offer around the segment that shows the strongest recurring demand.'],
@@ -6072,7 +6072,7 @@ export const guides: Guide[] = [
     slug: 'find-companies-using-competitor-software-apollo',
     title: 'How to Find Companies Using Your Competitor\'s Software with Apollo',
     metaTitle: 'Find Competitor\'s Customers with Apollo | Competitor Displacement Strategy',
-    metaDescription: 'Step-by-step guide to finding and targeting companies that use your competitor\'s software. Use Apollo.io tech stack filters to steal competitors\' best customers.',
+    metaDescription: 'Step-by-step guide to finding companies that already run competing software. Use Apollo tech stack filters to win their best customers.',
     summary: 'Learn how to use Apollo.io\'s technology stack filters, job postings, and intent signals to identify companies currently using your competitors\' products — then craft outreach that wins them over.',
     hub: 'find-clients',
     image: '/images/guides/find-companies-using-competitor-software-apollo.webp',
@@ -6134,7 +6134,7 @@ export const guides: Guide[] = [
     slug: 'apollo-intent-signals-find-buying-companies',
     title: 'Using Apollo Intent Signals to Find Companies Ready to Buy',
     metaTitle: 'Apollo Intent Signals: Find Companies Ready to Buy | 2026 Guide',
-    metaDescription: 'Master Apollo.io intent signals to identify companies actively researching your product category. Learn to set up, filter, and act on buying signals for higher conversion rates.',
+    metaDescription: 'Use Apollo.io intent signals to find companies actively researching your category, then prioritize outreach for higher conversion rates.',
     summary: 'Apollo\'s intent signals reveal which companies are actively researching your product category right now. This guide shows you how to set up intent tracking, interpret signal strength, and build sequences that convert warm prospects into customers.',
     hub: 'find-clients',
     image: '/images/guides/apollo-intent-signals-find-buying-companies.webp',
@@ -6320,7 +6320,7 @@ export const guides: Guide[] = [
     slug: 'b2b-objection-handling-framework',
     title: 'B2B Objection Handling Framework for Outbound Leads',
     metaTitle: 'B2B Objection Handling Framework | Close More Deals',
-    metaDescription: 'Master the art of handling B2B sales objections. Learn the framework, common objections, and exact responses that turn "no" into "yes" for outbound leads.',
+    metaDescription: 'Master B2B sales objections with a practical framework, common pushbacks, and exact responses that turn a no into a next step.',
     summary: 'Every "no" in B2B sales is actually a request for more information. This framework teaches you to identify the real objection behind every response, handle it with empathy and data, and move the conversation forward toward a close.',
     hub: 'sales-pipeline',
     image: '/images/guides/b2b-objection-handling-framework.webp',
@@ -7082,7 +7082,7 @@ export const guides: Guide[] = [
     slug: 'outbound-sales-for-medical-device-companies',
     title: 'Outbound Sales for Medical Device Companies: A Practical Playbook',
     metaTitle: 'Medical Device Outbound Sales: Reach Hospital Decision-Makers in 2026',
-    metaDescription: 'How medical device companies build outbound pipelines — mapping clinical, procurement, and administrative stakeholders, navigating hospital sales cycles, and writing outreach that gets past the gatekeepers.',
+    metaDescription: 'How medical device companies build outbound pipelines: mapping clinical and procurement stakeholders, hospital sales cycles, and getting past gatekeepers.',
     summary: 'Selling medical devices means navigating 6-18 month sales cycles with three or four stakeholders who all have different priorities. This playbook shows you how to map the buying committee, time your outreach around capital budget cycles, and write messages that get clinical and procurement stakeholders to respond.',
     hub: 'outreach',
     image: '/images/guides/outbound-sales-for-medical-device-companies.webp',
@@ -7152,7 +7152,7 @@ export const guides: Guide[] = [
     slug: 'how-property-managers-get-clients',
     title: 'How Property Managers Get Clients: Win Management Contracts Before the Competition',
     metaTitle: 'Property Management Client Acquisition: Win More Contracts in 2026',
-    metaDescription: 'Proven strategies for property management companies to win residential and commercial contracts — owner outreach, real estate partnerships, and Apollo.io targeting techniques.',
+    metaDescription: 'Proven strategies for property management companies to win residential and commercial contracts through owner outreach and Apollo targeting.',
     summary: 'Property management contracts are won by reaching owners at the right moment — when they are frustrated with their current manager, expanding their portfolio, or inheriting a property they do not want to manage. This guide shows you how to identify those triggers and build an outbound system that puts you in front of owners before your competitors.',
     hub: 'find-clients',
     image: '/images/guides/how-property-managers-get-clients.webp',
@@ -7284,7 +7284,7 @@ export const guides: Guide[] = [
     slug: 'how-landscaping-companies-get-clients',
     title: 'How Landscaping Companies Get Commercial Clients and Recurring Contracts',
     metaTitle: 'Landscaping Lead Generation: Win Commercial & HOA Contracts in 2026',
-    metaDescription: 'Landscaping companies share how they win commercial and HOA contracts — targeting property managers, building seasonal revenue systems, and positioning beyond residential jobs.',
+    metaDescription: 'Landscaping companies share how they win commercial and HOA contracts: property manager targeting, seasonal revenue, and better positioning.',
     summary: 'Most landscaping companies are stuck doing one-off residential jobs when the real money is in recurring commercial maintenance contracts. This guide shows you how to target commercial property managers and HOA boards, time your outreach to seasonal bidding cycles, and build maintenance contracts that provide predictable monthly revenue.',
     hub: 'find-clients',
     image: '/images/guides/how-landscaping-companies-get-clients.webp',
@@ -7350,7 +7350,7 @@ export const guides: Guide[] = [
     slug: 'how-pest-control-companies-get-clients',
     title: 'How Pest Control Companies Get Clients and Build Recurring Revenue',
     metaTitle: 'Pest Control Lead Generation: Win Commercial Contracts in 2026',
-    metaDescription: 'Lead generation strategies for pest control companies — targeting property managers, building annual service contracts, and creating referral pipelines from real estate agents.',
+    metaDescription: 'Lead generation for pest control companies: targeting property managers, building annual service contracts, and referral pipelines from agents.',
     summary: 'Pest control companies that rely on one-off treatments stay small. The ones that build recurring annual contracts with property managers and real estate partnerships create predictable revenue that grows every year. This guide shows you exactly how to find those opportunities and convert them.',
     hub: 'find-clients',
     image: '/images/guides/how-pest-control-companies-get-clients.webp',
@@ -7416,7 +7416,7 @@ export const guides: Guide[] = [
     slug: 'outbound-for-freight-brokers',
     title: 'Outbound Sales for Freight Brokers: Win Shippers Without Cold-Calling Blind',
     metaTitle: 'Freight Broker Lead Generation: Win Shippers in 2026',
-    metaDescription: 'How freight brokers build shipper pipelines — identifying shipping volume signals, reaching logistics decision-makers, and writing outreach that earns trust in a relationship-driven industry.',
+    metaDescription: 'How freight brokers build shipper pipelines: shipping volume signals, logistics decision-makers, and outreach that earns trust in a relationship market.',
     summary: 'Freight broking is a trust business where shippers hand over thousands of dollars in cargo based on reliability. This guide shows you how to identify companies with visible shipping volume, reach the logistics managers who actually book freight, and write outreach that earns the first shipment — the hardest one to get.',
     hub: 'outreach',
     image: '/images/guides/outbound-for-freight-brokers.webp',
@@ -7482,7 +7482,7 @@ export const guides: Guide[] = [
     slug: 'lead-generation-for-event-management-companies',
     title: 'Lead Generation for Event Management Companies That Fills the Calendar',
     metaTitle: 'Event Management Lead Generation: Win Corporate Contracts in 2026',
-    metaDescription: 'How event management companies win corporate contracts — reaching budget holders, timing outreach to planning cycles, and building referral channels with venues and vendors.',
+    metaDescription: 'How event management companies win corporate contracts: reaching budget holders, timing outreach to planning cycles, and building venue referral channels.',
     summary: 'Event management contracts come from reaching the right budget holder at the right planning time. This guide covers how to identify who controls event budgets, time your outreach to corporate planning cycles, and build venue referral partnerships that generate qualified leads consistently.',
     hub: 'find-clients',
     image: '/images/guides/lead-generation-for-event-management-companies.webp',
@@ -7548,7 +7548,7 @@ export const guides: Guide[] = [
     slug: 'client-acquisition-for-translation-agencies',
     title: 'Client Acquisition for Translation and Localization Agencies',
     metaTitle: 'Translation Agency Lead Generation: Win Localization Contracts in 2026',
-    metaDescription: 'How translation agencies win localization contracts — targeting companies with international expansion signals, reaching localization buyers, and positioning around revenue impact.',
+    metaDescription: 'How translation agencies win localization contracts: targeting companies with international expansion signals and positioning around revenue impact.',
     summary: 'Translation agencies that compete on per-word pricing lose to machine translation and offshore competitors. The agencies that win position around revenue impact — helping companies enter new markets profitably. This guide shows you how to find companies with international expansion signals, reach the actual buyers, and reframe your value.',
     hub: 'find-clients',
     image: '/images/guides/client-acquisition-for-translation-agencies.webp',
@@ -7682,7 +7682,7 @@ export const guides: Guide[] = [
     slug: 'outbound-for-executive-search-firms',
     title: 'Outbound for Executive Search Firms: Win Search Mandates From CEOs and Boards',
     metaTitle: 'Executive Search Business Development: Win Retained Mandates in 2026',
-    metaDescription: 'How executive search firms win retained mandates — reaching CEOs at growth-stage companies, building investor referral channels, and positioning against contingency recruiters.',
+    metaDescription: 'How executive search firms win retained mandates: reaching CEOs at growth-stage companies, investor referrals, and positioning against contingency recruiters.',
     summary: 'Executive search mandates go to firms that reach the CEO before the search begins. This guide covers how to identify companies approaching leadership hiring moments, build referral relationships with investors and board members, and position your firm as the retained search partner, not another contingency recruiter.',
     hub: 'outreach',
     image: '/images/guides/outbound-for-executive-search-firms.webp',
@@ -7748,7 +7748,7 @@ export const guides: Guide[] = [
     slug: 'lead-generation-for-corporate-training-companies',
     title: 'Lead Generation for Corporate Training Companies That Win L&D Contracts',
     metaTitle: 'Corporate Training Lead Generation: Reach L&D Directors in 2026',
-    metaDescription: 'How corporate training companies win contracts — reaching L&D directors, identifying skills gap triggers, and positioning training as a business outcome, not an expense.',
+    metaDescription: 'How corporate training companies win contracts: reaching L&D directors, spotting skills gap triggers, and positioning training as a business outcome.',
     summary: 'Corporate training budgets are the first cut in downturns — unless you position training as a solution to a specific business problem. This guide covers how to reach L&D directors with the right messaging, identify companies with visible skills gaps, and present training ROI that finance teams approve.',
     hub: 'find-clients',
     image: '/images/guides/lead-generation-for-corporate-training-companies.webp',
@@ -7814,7 +7814,7 @@ export const guides: Guide[] = [
     slug: 'client-acquisition-for-fractional-executives',
     title: 'Client Acquisition for Fractional CMOs, CFOs, and Operators',
     metaTitle: 'How Fractional Executives Get Clients: A Founder-Led Playbook 2026',
-    metaDescription: 'Practical client acquisition strategies for fractional CMOs, CFOs, and operators — founder-led outreach, LinkedIn authority building, and positioning that explains the fractional model.',
+    metaDescription: 'Client acquisition for fractional CMOs, CFOs, and operators: founder-led outreach, LinkedIn authority building, and positioning the fractional model.',
     summary: 'Fractional executives sell trust in a model many prospects do not fully understand yet. This guide covers how to target companies that need expertise before headcount, build authority through content, and explain the fractional value proposition in a way that makes budget holders say yes.',
     hub: 'find-clients',
     image: '/images/guides/client-acquisition-for-fractional-executives.webp',
@@ -8210,7 +8210,7 @@ export const guides: Guide[] = [
     slug: 'lead-generation-for-hr-tech-startups',
     title: 'Lead Generation for HR Tech Startups That Reaches CHROs',
     metaTitle: 'HR Tech Lead Generation: Win CHRO Contracts in 2026',
-    metaDescription: 'How HR technology startups build pipelines — targeting CHROs at growth-stage companies, identifying HRIS replacement triggers, and positioning against established platforms.',
+    metaDescription: 'How HR tech startups build pipelines: targeting CHROs at growth-stage companies, spotting HRIS replacement triggers, and positioning against incumbents.',
     summary: 'HR tech buyers are skeptical, procurement-heavy, and tired of vendor pitches. This guide covers how to identify companies outgrowing their current HR stack, reach CHROs and People Ops leaders with outcome-focused messaging, and position your platform against established competitors like Workday and BambooHR.',
     hub: 'find-clients',
     image: '/images/guides/lead-generation-for-hr-tech-startups.webp',
@@ -8278,7 +8278,7 @@ export const guides: Guide[] = [
     slug: 'outbound-for-fintech-startups',
     title: 'Outbound for FinTech Startups: Win CFO Trust and Close Enterprise Deals',
     metaTitle: 'FinTech Outbound Sales: Reach CFOs and Close B2B Deals in 2026',
-    metaDescription: 'How fintech startups build outbound pipelines — reaching CFOs with trust-first messaging, navigating compliance objections, and positioning against established financial platforms.',
+    metaDescription: 'How fintech startups build outbound pipelines: reaching CFOs with trust-first messaging, handling compliance objections, and positioning against banks.',
     summary: 'FinTech sales lives or dies on trust — your buyer is handing over financial data and processes. This guide covers how to reach CFOs with compliance-forward messaging, handle security objections before they arise, and build the credibility that turns skeptical finance leaders into pipeline.',
     hub: 'outreach',
     image: '/images/guides/outbound-for-fintech-startups.webp',
@@ -8410,7 +8410,7 @@ export const guides: Guide[] = [
     slug: 'lead-generation-for-construction-tech-startups',
     title: 'Lead Generation for Construction Tech Startups That Reaches General Contractors',
     metaTitle: 'ConTech Lead Generation: Win General Contractor Contracts in 2026',
-    metaDescription: 'How construction technology startups build pipelines — reaching project managers and VPs of Operations at general contractors, positioning for field adoption, and navigating the industry\'s tech resistance.',
+    metaDescription: 'How construction tech startups build pipelines: reaching project managers and VPs of Operations at general contractors and positioning for field adoption.',
     summary: 'Construction tech sells into an industry where field crews still use paper and the office runs on spreadsheets. This guide covers how to reach general contractor decision-makers, design messaging around jobsite ROI instead of software features, and build field adoption strategies that prevent implementation failure.',
     hub: 'find-clients',
     image: '/images/guides/lead-generation-for-construction-tech-startups.webp',
@@ -8476,7 +8476,7 @@ export const guides: Guide[] = [
     slug: 'client-acquisition-for-web-development-agencies',
     title: 'Client Acquisition for Web Development Agencies That Actually Books Projects',
     metaTitle: 'Web Dev Agency Client Acquisition: Win Development Projects in 2026',
-    metaDescription: 'How web development agencies win projects — niche specialization, tech stack targeting with Apollo.io, and positioning against offshore competition and no-code alternatives.',
+    metaDescription: 'How web development agencies win projects: niche specialization, tech stack targeting with Apollo, and positioning against offshore and no-code options.',
     summary: 'Web development agencies compete on three fronts simultaneously: offshore teams on price, no-code tools on simplicity, and in-house hires on control. This guide covers how to escape all three battles through niche specialization, targeted tech stack prospecting, and positioning that makes your agency the obvious choice.',
     hub: 'find-clients',
     image: '/images/guides/client-acquisition-for-web-development-agencies.webp',
@@ -8608,7 +8608,7 @@ export const guides: Guide[] = [
     slug: 'outbound-for-peo-companies',
     title: 'Outbound for PEO and Payroll Companies That Reaches Founders and CFOs',
     metaTitle: 'PEO & Payroll Lead Generation: Win Growing Company Contracts in 2026',
-    metaDescription: 'How PEO and payroll companies build outbound pipelines — targeting companies at growth-stage inflection points, reaching founders directly, and positioning against ADP and Gusto.',
+    metaDescription: 'How PEO and payroll companies build outbound pipelines: targeting companies at growth inflection points, reaching founders, and positioning against ADP and Gusto.',
     summary: 'PEO and payroll contracts are won at the exact moment a company outgrows its current setup — usually 20-50 employees. This guide covers how to identify those inflection points, reach founders and CFOs with compliance-risk messaging, and position against incumbent payroll providers.',
     hub: 'outreach',
     image: '/images/guides/outbound-for-peo-companies.webp',
@@ -8674,7 +8674,7 @@ export const guides: Guide[] = [
     slug: 'cold-email-for-insurtech-companies',
     title: 'Cold Email for InsurTech Companies That Reaches Carrier Decision-Makers',
     metaTitle: 'InsurTech Cold Email: Reach Insurance Carriers and MGAs in 2026',
-    metaDescription: 'How insurtech companies reach insurance carriers, brokers, and MGAs with cold email — targeting digital transformation leaders, handling legacy objections, and building trust in a risk-averse industry.',
+    metaDescription: 'How insurtech companies reach carriers, brokers, and MGAs with cold email: targeting digital transformation leaders and handling legacy objections.',
     summary: 'Insurance carriers are among the most conservative technology buyers — and for good reason. This guide covers how to reach CTOs and digital transformation leaders at carriers and MGAs, handle the legacy system objection before it stalls the deal, and build cold email that earns trust in an industry built on risk assessment.',
     hub: 'outreach',
     image: '/images/guides/cold-email-for-insurtech-companies.webp',
@@ -8740,7 +8740,7 @@ export const guides: Guide[] = [
     slug: 'outbound-for-supply-chain-tech',
     title: 'Outbound for Supply Chain Technology Companies That Reaches Logistics Leaders',
     metaTitle: 'Supply Chain Tech Outbound: Win Logistics Director Contracts in 2026',
-    metaDescription: 'How supply chain technology companies build outbound pipelines — reaching logistics directors with disruption-based messaging, navigating ERP integration objections, and selling into multi-stakeholder buying committees.',
+    metaDescription: 'How supply chain tech companies build pipelines: reaching logistics directors with disruption messaging, handling ERP objections, and selling to buying committees.',
     summary: 'Supply chain technology sells into complex organizations with long buying cycles and deep incumbent loyalty. This guide covers how to identify companies experiencing supply chain disruption, reach logistics directors and procurement leaders, and position your platform against ERP lock-in.',
     hub: 'outreach',
     image: '/images/guides/outbound-for-supply-chain-tech.webp',
@@ -8806,7 +8806,7 @@ export const guides: Guide[] = [
     slug: 'cold-email-for-commercial-real-estate-brokers',
     title: 'Cold Email for Commercial Real Estate Brokers That Gets Investors to Reply',
     metaTitle: 'Commercial Real Estate Cold Email: Reach Investors and Owners in 2026',
-    metaDescription: 'Cold email strategies for commercial real estate brokers — targeting property investors, reaching acquisition teams, and writing outreach that earns trust in a relationship-driven market.',
+    metaDescription: 'Cold email for commercial real estate brokers: targeting property investors, reaching acquisition teams, and writing outreach that earns trust in a relationship market.',
     summary: 'Commercial real estate runs on relationships, but cold email can open doors when it demonstrates market knowledge instead of generic deal flow. This guide covers how to target active investors and acquisition teams, write market-specific outreach that earns replies, and build a referral engine from your first 20 conversations.',
     hub: 'outreach',
     image: '/images/guides/cold-email-for-commercial-real-estate-brokers.webp',
@@ -8872,7 +8872,7 @@ export const guides: Guide[] = [
     slug: 'fundraising-outreach-for-nonprofits',
     title: 'Fundraising Outreach for Nonprofits: Corporate Partnerships That Actually Close',
     metaTitle: 'Nonprofit Fundraising Outreach: Corporate Partnerships in 2026',
-    metaDescription: 'Practical fundraising outreach strategies for nonprofits — reaching CSR managers, building corporate partnership proposals, and creating employee engagement programs that funders say yes to.',
+    metaDescription: 'Fundraising outreach for nonprofits: reaching CSR managers, building corporate partnership proposals, and designing employee engagement programs funders say yes to.',
     summary: 'Corporate fundraising outreach fails when nonprofits pitch their mission instead of the company\'s CSR goals. This guide covers how to research and reach CSR decision-makers, build partnership proposals that align with corporate giving priorities, and create employee engagement programs that turn one-time sponsors into annual partners.',
     hub: 'outreach',
     image: '/images/guides/fundraising-outreach-for-nonprofits.webp',
@@ -9080,7 +9080,7 @@ export const guides: Guide[] = [
     slug: 'apollo-io-chrome-extension-guide',
     title: 'Apollo.io Chrome Extension: The Workflow Most People Set Up Wrong',
     metaTitle: 'Apollo.io Chrome Extension Setup Guide (2026): Save Contacts the Right Way',
-    metaDescription: 'How to install, configure, and actually use the Apollo Chrome extension on LinkedIn, Sales Navigator, and company sites — including the credit mistakes that waste your plan.',
+    metaDescription: 'How to install, configure, and actually use the Apollo Chrome extension on LinkedIn and company sites, including the credit mistakes that waste your plan.',
     summary: 'The Apollo Chrome extension is the fastest way to capture contacts, and almost everyone configures it wrong on day one. This guide covers installation, saving contacts from LinkedIn and Sales Navigator, avoiding credit burn, and building a daily prospecting routine that does not eat your export limit before noon.',
     hub: 'find-clients',
     industries: ['saas-companies', 'recruiters', 'marketing-agencies'],
@@ -9294,7 +9294,7 @@ export const guides: Guide[] = [
     slug: 'how-to-build-an-email-list-legally',
     title: 'How to Build an Email List Legally Without Risking Your Domain',
     metaTitle: 'How to Build an Email List Legally (2026): Sourcing, Consent & CAN-SPAM',
-    metaDescription: 'A practical guide to building a B2B email list legally — where to source contacts, what consent actually requires, CAN-SPAM and GDPR rules, and how to keep your domain clean.',
+    metaDescription: 'A practical guide to building a B2B email list legally: where to source contacts, what consent requires, CAN-SPAM and GDPR rules, and domain protection.',
     summary: 'Building an email list legally is less about avoiding fines and more about not torching your sending reputation. This guide covers where contacts can legally come from, what consent means under CAN-SPAM and GDPR, the difference between opt-in and cold B2B outreach, and the verification habits that keep your domain out of spam folders.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'consulting-firms'],
@@ -9435,7 +9435,7 @@ export const guides: Guide[] = [
     slug: 'cold-email-deliverability-tools-compared',
     title: 'Cold Email Deliverability Tools Compared: What Actually Protects Your Inbox',
     metaTitle: 'Best Cold Email Deliverability Tools 2026: 7 Tools Compared',
-    metaDescription: 'Comparison of cold email deliverability tools — warm-up services, verification, inbox placement testers, and DNS checkers — with what each one actually does and does not fix.',
+    metaDescription: 'Comparison of cold email deliverability tools: warm-up services, verification, inbox placement testers, and DNS checkers, with what each one actually fixes.',
     summary: 'The deliverability tool market sells a lot of dashboards. This comparison separates the four categories that matter — inbox warm-up, list verification, inbox placement testing, and DNS authentication — explains what each category can and cannot fix, and tells you the minimal setup that prevents 90% of problems.',
     hub: 'outreach',
     industries: ['saas-companies', 'marketing-agencies', 'staffing-agencies'],
@@ -9575,7 +9575,7 @@ export const guides: Guide[] = [
     slug: 'candidate-sourcing-with-apollo',
     title: 'Candidate Sourcing With Apollo: Build Shortlists Without LinkedIn Recruiter',
     metaTitle: 'Candidate Sourcing With Apollo.io 2026: Filters, Sequences & Limits',
-    metaDescription: 'How to source candidates with Apollo.io instead of paying for LinkedIn Recruiter — filter setups, outreach sequence templates, and the credit management habits staffing teams need.',
+    metaDescription: 'How to source candidates with Apollo instead of paying for LinkedIn Recruiter: filter setups, outreach templates, and credit habits for staffing teams.',
     summary: 'Apollo can replace much of what recruiting teams pay LinkedIn Recruiter for, but only if the sourcing setup is deliberately separated from client acquisition. This guide covers the filter combinations that produce shortlists instead of noise, the candidate outreach sequences that get replies, and the credit management habits that keep a dual-use account from running dry mid-month.',
     hub: 'guides',
     industries: ['recruiters', 'staffing-agencies', 'executive-search-firms'],
