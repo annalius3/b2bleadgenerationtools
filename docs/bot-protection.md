@@ -136,10 +136,16 @@ domain registrar, because the nameservers must change.
 ### Important: country detection behind Cloudflare
 
 Cloudflare sends `CF-IPCountry` to the origin, while Vercel's
-`x-vercel-ip-country` would only see Cloudflare's edge IP. The app already
-prefers `cf-ipcountry` in `src/lib/geo.ts`, so analytics consent and the edge
-country block keep working. Do not enable a Cloudflare transform rule that
-removes visitor IP headers.
+`x-vercel-ip-country` would only see Cloudflare's edge IP. `src/lib/geo.ts`
+therefore uses `cf-ipcountry` **only when a valid `cf-ray` header is present**;
+otherwise it uses the Vercel header. This keeps analytics consent and country
+blocking accurate behind Cloudflare, while preventing a direct client from
+flipping the Cloudflare branch with a forged `cf-ipcountry` header. Do not
+enable a Cloudflare transform rule that removes visitor IP headers.
+
+The application-level country block remains best-effort: a determined client can
+forge `cf-ray`/`cf-ipcountry`. Use Cloudflare WAF or Vercel Firewall when the
+block must be enforceable.
 
 ## 4. Monitoring
 

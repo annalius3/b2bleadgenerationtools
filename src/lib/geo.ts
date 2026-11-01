@@ -61,16 +61,30 @@ export const isAnalyticsCookieRestricted = (country: string | null | undefined) 
   return RESTRICTED_ANALYTICS_COUNTRIES.has(code);
 };
 
-/**
- * Resolves the visitor country from request headers.
- *
- * Cloudflare (when used in front of Vercel) sends `cf-ipcountry` with the real
- * client country, while Vercel's own `x-vercel-ip-country` would only see the
- * Cloudflare edge. Prefer the Cloudflare header when present.
- */
-export const getRequestCountry = (headers: Headers): string | null => {
-  const raw = headers.get('cf-ipcountry') ?? headers.get('x-vercel-ip-country');
+const normalizeCountry = (raw: string | null): string | null => {
   if (!raw) return null;
   const country = raw.trim().toUpperCase();
   return /^[A-Z]{2}$/.test(country) ? country : null;
+};
+
+// Cloudflare ray IDs look like "8a1b2c3d4e5f6a7b-SIN". Validating the shape
+// stops a direct-to-Vercel client from enabling the Cloudflare branch with a
+// throwaway header, while real Cloudflare requests always match.
+const CLOUDFLARE_RAY = /^[0-9a-f]{16}-[A-Z]{3}$/i;
+
+/**
+ * Resolves the visitor country from request headers.
+ *
+ * When Cloudflare sits in front of Vercel, `x-vercel-ip-country` only reflects
+ * the Cloudflare edge location, so `cf-ipcountry` is the accurate source. On
+ * direct Vercel traffic the Vercel header is platform-set and cannot be
+ * overridden by the client, so it is used instead.
+ */
+export const getRequestCountry = (headers: Headers): string | null => {
+  const cfRay = headers.get('cf-ray')?.trim();
+  if (cfRay && CLOUDFLARE_RAY.test(cfRay)) {
+    return normalizeCountry(headers.get('cf-ipcountry'));
+  }
+
+  return normalizeCountry(headers.get('x-vercel-ip-country'));
 };
