@@ -363,6 +363,12 @@ export default function PrivacyPage() {
             or sensitive categories of personal data.
           </p>
           <p>
+            To keep the site available, we apply automated abuse controls at the edge. Requests coming from regions,
+            networks, or user agents associated with attack traffic, requests for scanner paths, and non-browser clients
+            may be blocked before they reach the site. These checks use only the IP-derived country, the request path, the
+            user agent, and a short-lived per-IP request counter; they are not used to profile individual visitors.
+          </p>
+          <p>
             No method of transmission or storage is completely secure. If a breach affects your rights, we will notify you
             and the relevant authority where the law requires it.
           </p>

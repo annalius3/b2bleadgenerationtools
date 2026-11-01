@@ -55,5 +55,22 @@ export const RESTRICTED_ANALYTICS_COUNTRIES = new Set([
  */
 export const isAnalyticsCookieRestricted = (country: string | null | undefined) => {
   if (!country) return true;
-  return RESTRICTED_ANALYTICS_COUNTRIES.has(country.toUpperCase());
+  const code = country.toUpperCase();
+  // XX = unknown (Cloudflare), T1 = Tor. Both are treated as restricted.
+  if (code === 'XX' || code === 'T1') return true;
+  return RESTRICTED_ANALYTICS_COUNTRIES.has(code);
+};
+
+/**
+ * Resolves the visitor country from request headers.
+ *
+ * Cloudflare (when used in front of Vercel) sends `cf-ipcountry` with the real
+ * client country, while Vercel's own `x-vercel-ip-country` would only see the
+ * Cloudflare edge. Prefer the Cloudflare header when present.
+ */
+export const getRequestCountry = (headers: Headers): string | null => {
+  const raw = headers.get('cf-ipcountry') ?? headers.get('x-vercel-ip-country');
+  if (!raw) return null;
+  const country = raw.trim().toUpperCase();
+  return /^[A-Z]{2}$/.test(country) ? country : null;
 };

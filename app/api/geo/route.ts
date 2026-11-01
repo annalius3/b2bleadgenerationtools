@@ -1,16 +1,15 @@
 import { NextResponse } from 'next/server';
 
-import { isAnalyticsCookieRestricted } from '@/lib/geo';
+import { getRequestCountry, isAnalyticsCookieRestricted } from '@/lib/geo';
 
 /**
- * Returns the visitor country as seen by Vercel's edge network and whether
+ * Returns the visitor country (Cloudflare or Vercel header) and whether
  * analytics cookies are allowed for it. The GA4 component calls this before it
  * initialises Google Analytics, so consent mode can default to denied for
  * EEA/UK/Swiss visitors without showing a cookie banner.
  */
 export function GET(request: Request) {
-  const headerCountry = request.headers.get('x-vercel-ip-country');
-  const country = headerCountry ? headerCountry.toUpperCase() : null;
+  const country = getRequestCountry(request.headers);
 
   return NextResponse.json(
     {
@@ -21,7 +20,7 @@ export function GET(request: Request) {
       headers: {
         // Per-visitor value: never let a shared cache store it.
         'Cache-Control': 'private, max-age=3600',
-        Vary: 'x-vercel-ip-country'
+        Vary: 'cf-ipcountry, x-vercel-ip-country'
       }
     }
   );
